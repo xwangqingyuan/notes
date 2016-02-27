@@ -51,13 +51,13 @@ http://www.oschina.net/blog
 ## 5 famous place_to_technology
 http://alternativeto.net/
 ## 5 famous computer-projects
-http://www.openstack.org/blog/ 	http://releases.openstack.org/ https://github.com/openstack/nova
-http://blog.docker.com/ https://github.com/docker/docker
-https://github.com/kubernetes/kubernetes/releases	http://kubernetes.io/media/ https://github.com/kubernetes/kubernetes
-https://www.opencontainers.org/
-https://hadoop.apache.org/ https://github.com/apache/hadoop
-http://spark.apache.org/ https://github.com/spark/core
-https://blog.openshift.com/tag/v3/ https://github.com/openshift/origin
+ * http://www.openstack.org/blog/ 	http://releases.openstack.org/ https://github.com/openstack/nova
+ * http://blog.docker.com/ https://github.com/docker/docker
+ * https://github.com/kubernetes/kubernetes/releases	http://kubernetes.io/media/ https://github.com/kubernetes/kubernetes
+ * https://www.opencontainers.org/
+ * https://hadoop.apache.org/ https://github.com/apache/hadoop
+ * http://spark.apache.org/ https://github.com/spark/core
+ * https://blog.openshift.com/tag/v3/ https://github.com/openshift/origin
 ## 5 famous computer-scientists
 marinfowler
 http://martinfowler.com/
