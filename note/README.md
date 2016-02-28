@@ -114,6 +114,7 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
 ## markdown
  * http://ibruce.info/2013/11/26/markdown/
 ## reStructedText
+
 # network
 ## dns
 google dns 8.8.8.8 和 8.8.4.4  
@@ -122,9 +123,9 @@ links
 ### dns commands
 links
  * http://blog.sina.com.cn/s/blog_65f27fc20101fhmn.html
-1. dig
- 1. dfa
-2. nslookup
-3. host
+ 1. dig
+  1. dfa
+ 2. nslookup
+ 3. host
 ### dns server software
 
