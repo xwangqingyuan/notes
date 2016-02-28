@@ -130,8 +130,10 @@ links
 2. nslookup
     1. 查询所有 nslookup type=any
 3. host
+
 ### dns record types
 http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html  
+
 ### dns server software
 
 ### dns information links
