@@ -81,19 +81,19 @@ http://baike.baidu.com/link?url=MRD3fyaa9_kNAf6-p9NSu4bU_UuO1YvDL6O5vsUqe_PFxYmN
 # programming coding 编程
 ## coding styles
 Shell style=
-https://google.github.io/styleguide/shell.xml
-Python style=
-https://google.github.io/styleguide/pyguide.html
-https://www.python.org/dev/peps/pep-0008/
-https://wiki.openstack.org/wiki/Python3
-Python reference
-https://docs.python.org/2/library/copy.html
-go style=
-https://golang.org/doc/effective_go.html
-https://github.com/golang/go/wiki/CodeReviewComments
-Java style=
-https://google.github.io/styleguide/javaguide.html
-http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.html
+https://google.github.io/styleguide/shell.xml  
+Python style=  
+https://google.github.io/styleguide/pyguide.html  
+https://www.python.org/dev/peps/pep-0008/  
+https://wiki.openstack.org/wiki/Python3  
+Python reference  
+https://docs.python.org/2/library/copy.html  
+go style=  
+https://golang.org/doc/effective_go.html  
+https://github.com/golang/go/wiki/CodeReviewComments  
+Java style=  
+https://google.github.io/styleguide/javaguide.html  
+http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.html  
 ## Python
 ### 学习
  * http://www.jb51.net/article/33991.htm
@@ -110,6 +110,10 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * http://www.toptal.com/python/interview-questions
  * https://segmentfault.com/a/1190000000618513
 
+# markup language 标签语言
+## markdown
+ * http://ibruce.info/2013/11/26/markdown/
+## reStructedText
 # network
 ## dns
 google dns 8.8.8.8 和 8.8.4.4  
