@@ -146,4 +146,5 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
 
 ### dns information links
  * http://www.dnsstuff.com/tools/
+ * http://blog.sina.com.cn/s/blog_4607665901016jyd.html dns服务器地址
 
