@@ -123,9 +123,10 @@ links
 ### dns commands
 links
  * http://blog.sina.com.cn/s/blog_65f27fc20101fhmn.html
- 1. dig
-  1. dfa
- 2. nslookup
- 3. host
+1. dig
+    1. dig -x 210.52.83.228
+2. nslookup
+    1. 查询所有 nslookup type=any
+3. host
 ### dns server software
 
