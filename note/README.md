@@ -122,7 +122,9 @@ links
  * etc/resolv.con配置 http://www.jb51.net/LINUXjishu/63310.html http://www.centoscn.com/CentOS/config/2013/0723/443.html
 ### dns commands
 links
- * http://blog.sina.com.cn/s/blog_65f27fc20101fhmn.html
+ * http://blog.sina.com.cn/s/blog_65f27fc20101fhmn.html  
+ 
+
 1. dig
     1. dig -x 210.52.83.228
 2. nslookup
