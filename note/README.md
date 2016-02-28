@@ -123,7 +123,7 @@ links
 links
  * http://blog.sina.com.cn/s/blog_65f27fc20101fhmn.html
 1. dig
- 1.1. df
+ 1. dfa
 2. nslookup
 3. host
 ### dns server software
