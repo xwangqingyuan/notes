@@ -123,6 +123,7 @@ links
 ### dns commands
 links
  * http://blog.sina.com.cn/s/blog_65f27fc20101fhmn.html  
+ * http://tool.chinaz.com/dns/
  
 
 1. dig
@@ -135,6 +136,13 @@ links
 http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html  
 
 ### dns server software
+ * dnsmasq 适合局域网dns服务，dns缓存
+ * bind 服务器 http://www.360doc.com/content/14/0923/18/13047933_411817771.shtml
+ * dnspod-sr
+  - http://www.ttlsa.com/linux/dnspod-sr-little-dns/
+  - http://www.361way.com/dnspod-sr/4674.html
+  - https://github.com/DNSPod/dnspod-sr
+ 
 
 ### dns information links
  * http://www.dnsstuff.com/tools/
