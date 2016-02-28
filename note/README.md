@@ -130,7 +130,9 @@ links
 2. nslookup
     1. 查询所有 nslookup type=any
 3. host
+
 ### dns server software
+
 ### dns information links
  * http://www.dnsstuff.com/tools/
 
