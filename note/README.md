@@ -119,5 +119,12 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
 google dns 8.8.8.8 和 8.8.4.4  
 links  
  * etc/resolv.con配置 http://www.jb51.net/LINUXjishu/63310.html http://www.centoscn.com/CentOS/config/2013/0723/443.html
- * 
+### dns commands
+links
+ * http://blog.sina.com.cn/s/blog_65f27fc20101fhmn.html
+1. dig
+ 1.1. df
+2. nslookup
+3. host
+### dns server software
 
