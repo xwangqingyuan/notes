@@ -110,5 +110,10 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * http://www.toptal.com/python/interview-questions
  * https://segmentfault.com/a/1190000000618513
 
-
+# network
+## dns
+google dns 8.8.8.8 和 8.8.4.4  
+links
+ ＊ etc/resolv.con配置 http://www.jb51.net/LINUXjishu/63310.html
+ ＊ http://www.centoscn.com/CentOS/config/2013/0723/443.html
 
