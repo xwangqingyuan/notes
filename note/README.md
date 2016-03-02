@@ -33,13 +33,21 @@
 
 ### Openstack 架构
  * http://www.slideshare.net/mirantis/openstack-architecture-43160012
+
+### Openstack 子项目
+ * http://www.openstack.org/software/project-navigator/
+
 ### Openstack 解决方案设计
  * http://www.slideshare.net/mirantis/os-boston-meetuppreso10sept2014v2?related=1
+
 ### Swift  
+
 #### 异地  
 http://docs.openstack.org/developer/swift/replication_network.html#dedicated-replication-network
 http://docs.openstack.org/arch-design/multi-site-architecture.html
+
 ### Cinder  
+
 ### Snapshot 镜像准备，备份，快照  
  * http://docs.openstack.org/developer/tripleo-docs/post_deployment/vm_snapshot.html
  * 下载系统镜像 http://docs.openstack.org/image-guide/obtain-images.html#official-ubuntu-images
