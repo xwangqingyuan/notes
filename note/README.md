@@ -48,10 +48,16 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 
 ### Cinder  
 
-### Snapshot 镜像准备，备份，快照  
+#### Snapshot 镜像准备，备份，快照  
  * http://docs.openstack.org/developer/tripleo-docs/post_deployment/vm_snapshot.html
  * 下载系统镜像 http://docs.openstack.org/image-guide/obtain-images.html#official-ubuntu-images
  * 下载更改镜像 http://docs.openstack.org/image-guide/
+
+### Trove 数据库 
+ * 支持的数据库 https://github.com/openstack/trove/tree/master/trove/templates
+
+### Zaqar 
+ * 代码 https://github.com/openstack/zaqar
 
 
 
