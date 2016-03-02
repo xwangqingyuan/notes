@@ -10,9 +10,12 @@
 ## go 框架
 ### Go framewor
 ### Hugo
+
 # cloud 云计算
-## Docker
-## Kubernetes
+
+## Docker  
+
+## Kubernetes  
 ### concepts 概念 
  * http://www.infoq.com/cn/articles/Kubernetes-system-architecture-introduction?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global  
 
@@ -24,8 +27,7 @@
  * https://github.com/kubernetes/kubernetes/issues/14188  
 
 
-## openstack
-
+## openstack  
 ### ironic bare-metal provisioning
  * https://www.mirantis.com/blog/bare-metal-provisioning-with-openstack-cloud/
 
