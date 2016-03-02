@@ -28,6 +28,10 @@
 
 
 ## openstack  
+### release notes
+ * https://wiki.openstack.org/wiki/ReleaseNotes/Liberty
+
+
 ### ironic bare-metal provisioning
  * https://www.mirantis.com/blog/bare-metal-provisioning-with-openstack-cloud/
 
