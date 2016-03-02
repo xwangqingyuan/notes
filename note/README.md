@@ -40,7 +40,11 @@
 ### Openstack 解决方案设计
  * http://www.slideshare.net/mirantis/os-boston-meetuppreso10sept2014v2?related=1
 
-### Swift  
+### Swift    
+#### Swift performance
+ * http://www.gossamer-threads.com/lists/openstack/dev/38588
+ * https://blog.zhaw.ch/icclab/evaluating-the-performance-of-ceph-and-swift-for-object-storage-on-small-clusters/
+ * 
 
 #### 异地  
 http://docs.openstack.org/developer/swift/replication_network.html#dedicated-replication-network
