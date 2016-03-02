@@ -14,20 +14,21 @@
 ## Docker
 ## Kubernetes
 ### concepts 概念 
- * http://www.infoq.com/cn/articles/Kubernetes-system-architecture-introduction?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global
-
-## openstack
-
-### ironic bare-metal provisioning
- * https://www.mirantis.com/blog/bare-metal-provisioning-with-openstack-cloud/
+ * http://www.infoq.com/cn/articles/Kubernetes-system-architecture-introduction?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global  
 
 ### Sharding on kubernete
  * https://github.com/kubernetes/kubernetes/pull/13169
  * http://vitess.io/getting-started/
 
 ### jobs on kubernetes
- * https://github.com/kubernetes/kubernetes/issues/14188
-## Openstack
+ * https://github.com/kubernetes/kubernetes/issues/14188  
+
+
+## openstack
+
+### ironic bare-metal provisioning
+ * https://www.mirantis.com/blog/bare-metal-provisioning-with-openstack-cloud/
+
 ### Openstack 架构
  * http://www.slideshare.net/mirantis/openstack-architecture-43160012
 ### Openstack 解决方案设计
