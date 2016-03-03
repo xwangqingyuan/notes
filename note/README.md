@@ -48,7 +48,7 @@
 #### Swift performance
  * http://www.gossamer-threads.com/lists/openstack/dev/38588
  * https://blog.zhaw.ch/icclab/evaluating-the-performance-of-ceph-and-swift-for-object-storage-on-small-clusters/
- * 
+ * https://swiftstack.com/blog/2013/04/18/openstack-summit-benchmarking-swift/
 
 #### 异地  
 http://docs.openstack.org/developer/swift/replication_network.html#dedicated-replication-network
@@ -71,9 +71,14 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 
 # design prinsipals
 ## Service Design principals
-* https://github.com/kubernetes/kubernetes/blob/master/docs/design/principles.md
-* https://en.wikipedia.org/wiki/Service_level_objective
-*
+ * https://github.com/kubernetes/kubernetes/blob/master/docs/design/principles.md
+ * https://en.wikipedia.org/wiki/Service_level_objective
+
+## micro services 微服务
+ * http://www.csdn.net/article/2014-08-06/2821078
+ * http://stackoverflow.com/questions/25501098/difference-between-microservices-architecture-and-soa
+  - In short, the microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery. There is a bare mininum of centralized management of these services, which may be written in different programming languages and use different data storage technologies.
+ * In short, the microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery. There is a bare mininum of centralized management of these services, which may be written in different programming languages and use different data storage technologies.
 
 
 
