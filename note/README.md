@@ -67,8 +67,18 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 ### Zaqar 
  * 代码 https://github.com/openstack/zaqar
 
+## openshift
+### General architecture
+ * http://www.tuicool.com/articles/y6B73u
+ * http://www.tuicool.com/articles/jEF3iub
+ * https://github.com/openshift/openshift-pep/blob/master/openshift-pep-013-openshift-3.md
+ * https://github.com/openshift/origin/blob/master/docs/openshift_model.md
 
 
+### jenkins
+ * https://github.com/openshift/jenkins-plugin
+ * https://blog.openshift.com/continuous-integration-deployment-v3/
+ * 
 # design prinsipals
 ## Service Design principals
  * https://github.com/kubernetes/kubernetes/blob/master/docs/design/principles.md
