@@ -81,6 +81,9 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * http://www.oschina.net/news/70121/microservice/print
  * http://www.tuicool.com/articles/NRNrAj
 
+## Application Integration
+ * http://www.enterpriseintegrationpatterns.com/patterns/messaging/toc.html
+
 
 
 
