@@ -78,7 +78,8 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * http://www.csdn.net/article/2014-08-06/2821078
  * http://stackoverflow.com/questions/25501098/difference-between-microservices-architecture-and-soa
   - In short, the microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery. There is a bare mininum of centralized management of these services, which may be written in different programming languages and use different data storage technologies.
- * In short, the microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery. There is a bare mininum of centralized management of these services, which may be written in different programming languages and use different data storage technologies.
+ * http://www.oschina.net/news/70121/microservice/print
+ * http://www.tuicool.com/articles/NRNrAj
 
 
 
