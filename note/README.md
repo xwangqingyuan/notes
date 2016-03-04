@@ -184,6 +184,7 @@ links
 links
  * http://blog.sina.com.cn/s/blog_65f27fc20101fhmn.html  
  * http://tool.chinaz.com/dns/
+
  
 
 1. dig
@@ -207,4 +208,11 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
 ### dns information links
  * http://www.dnsstuff.com/tools/
  * http://blog.sina.com.cn/s/blog_4607665901016jyd.html dns服务器地址
+ * 
+
+## proxy tunnel 代理 穿墙
+### ssh 代理
+ * https://segmentfault.com/a/1190000002718360
+ * http://www.cnblogs.com/wangkangluo1/archive/2011/06/29/2093727.html
+ * http://blog.163.com/java_star/blog/static/11771480520108259412586/
 
