@@ -71,6 +71,10 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 ### Zaqar 
  * 代码 https://github.com/openstack/zaqar
 
+### Solum PaaS平台云
+ * https://wiki.openstack.org/wiki/Solum/HighLevelRoadmap
+ * Feature user stories https://wiki.openstack.org/wiki/Solum/FeatureBlueprints/ApplicationDeploymentAndManagement
+
 ## openshift
 ### General architecture
  * http://www.tuicool.com/articles/y6B73u
