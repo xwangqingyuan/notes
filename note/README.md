@@ -222,4 +222,5 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
   － https://help.ubuntu.com/community/SSH/OpenSSH/PortForwarding
 ### PREROUTING POSTROUTING 端口转发
  * http://blog.csdn.net/leo_wanta/article/details/7062936
-
+ * http://zhangsha1251.blog.163.com/blog/static/6262405320116201132647/
+ * http://linuxso.com/linuxxitongguanli/1066.html
