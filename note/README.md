@@ -215,4 +215,11 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
  * https://segmentfault.com/a/1190000002718360
  * http://www.cnblogs.com/wangkangluo1/archive/2011/06/29/2093727.html
  * http://blog.163.com/java_star/blog/static/11771480520108259412586/
+ * http://examplenow.com/zh-cn/package/connect-proxy/
+ * UDP forwarding
+  － http://zarb.org/~gc/html/udp-in-ssh-tunneling.html
+  － http://superuser.com/questions/53103/udp-traffic-through-ssh-tunnel
+  － https://help.ubuntu.com/community/SSH/OpenSSH/PortForwarding
+### PREROUTING POSTROUTING 端口转发
+ * http://blog.csdn.net/leo_wanta/article/details/7062936
 
