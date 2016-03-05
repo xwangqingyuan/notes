@@ -86,6 +86,7 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * http://www.ibm.com/developerworks/cn/cloud/library/cl-openstack-network/
  * https://pypi.python.org/pypi/python-openstackclient
  * floating ips
+  - subnet show ext_sub 显示floating ip分配池
  * login to server
 
 ## openshift
@@ -179,6 +180,10 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * http://www.pythonchallenge.com/
 ### list comprehesions 列表解析和生成器表达式
  * http://www.jb51.net/article/26520.htm
+
+### pip 安装
+安装不了可以将python2.7目录允许访问。安装openstackclient后可以访问openstack服务
+
 ## Go
 ### 学习
  * learn by example https://gobyexample.com/
