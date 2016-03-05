@@ -48,6 +48,12 @@
 ### Openstack 解决方案设计
  * http://www.slideshare.net/mirantis/os-boston-meetuppreso10sept2014v2?related=1
 
+
+### neutron 网络
+
+### floating ips
+ * http://www.ibm.com/developerworks/cn/cloud/library/cl-openstack-network/
+
 ### Swift    
 #### Swift performance
  * http://www.gossamer-threads.com/lists/openstack/dev/38588
@@ -75,12 +81,20 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * https://wiki.openstack.org/wiki/Solum/HighLevelRoadmap
  * Feature user stories https://wiki.openstack.org/wiki/Solum/FeatureBlueprints/ApplicationDeploymentAndManagement
 
+### openstack client 客户端
+ * http://docs.openstack.org/developer/python-openstackclient/index.html
+ * http://www.ibm.com/developerworks/cn/cloud/library/cl-openstack-network/
+ * https://pypi.python.org/pypi/python-openstackclient
+ * floating ips
+ * login to server
+
 ## openshift
 ### General architecture
  * http://www.tuicool.com/articles/y6B73u
  * http://www.tuicool.com/articles/jEF3iub
  * https://github.com/openshift/openshift-pep/blob/master/openshift-pep-013-openshift-3.md
  * https://github.com/openshift/origin/blob/master/docs/openshift_model.md
+
 
 
 ### jenkins
