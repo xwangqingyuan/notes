@@ -128,6 +128,13 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * Use Case design of micro services
   - http://eventuate.io/exampleapps.html
 
+## 软件腐蚀 software erosion
+ * 原因 https://blog.heroku.com/archives/2011/6/28/the_new_heroku_4_erosion_resistance_explicit_contracts
+  － https://en.wikipedia.org/wiki/Software_rot
+  － 环境变化 Environment change，没用的代码 Unused code，疏于维护 Rarely updated
+ * http://12factor.net/
+  － 代码库 codebase， 依赖 dependencies，配置 config，后台服务 backing services，构建，发布，运行，Build，Release/Shop，Run，进程 Stateless processes，端口绑定 Porting binding，并发 Concurrency，死掉无污染人畜无害 Disposability，开发生产环境等同 Dev/Prod parity，日志 Logs，管理流程 Admin processes
+
 ## Application Integration
  * http://www.enterpriseintegrationpatterns.com/patterns/messaging/toc.html
 
