@@ -13,6 +13,13 @@
 
 # cloud 云计算
 
+## PaaS 
+### 平台云比较
+ * http://www.chinacloud.cn/show.aspx?id=20204&cid=14
+ * Solum 流程
+  - http://www.oschina.net/p/solum
+  - 
+
 ## Desktop as a service
 ### VDI
  * http://baike.baidu.com/link?url=bQulh4Ri-8ZYvs1khfiwsPul_rPUK53ZURDdDGIq-R4UqBu8XEywq7LrkgD9yaqn5EkNgjnNO6rhQd1WRIXL3NqPMxeAwreNNzwyUAbpbza
@@ -113,6 +120,13 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
   - In short, the microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery. There is a bare mininum of centralized management of these services, which may be written in different programming languages and use different data storage technologies.
  * http://www.oschina.net/news/70121/microservice/print
  * http://www.tuicool.com/articles/NRNrAj
+ * patterns
+  - http://microservices.io/patterns/microservices.html
+  - microservice chassis 微服务底盘 http://microservices.io/patterns/microservice-chassis.html
+  - Service discovery
+   * One significant suggestion I have would be to generalize the concept of the Service Registry with the idea of a "Service Discovery Mechanism." Using a service registry (of which there is many) is only one type of service discovery mechanism. Further, service registries make certain assumptions about the infrastructure that may not be true, such that it's easy for services to be registered in a central registry, that a registry is consistently available or even that a registry is consistently at the same IP location or DNS name. I would expand the pattens to include a generalization of "Service Discovery Mechanism" with "Service Registry" to be a specialization pattern. The other obvious pattern would include "Service Probes and Responses" such as is provided by a number of "Internet of Things" discovery technologies such as AllJoyn, Multicast-DNS or DNS-Service Discovery (Apple Bonjour and Android Network Service Discovery), WS-Discovery or Simple Service Discovery Protocol (SSDP).
+ * Use Case design of micro services
+  - http://eventuate.io/exampleapps.html
 
 ## Application Integration
  * http://www.enterpriseintegrationpatterns.com/patterns/messaging/toc.html
