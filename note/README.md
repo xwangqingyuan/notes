@@ -131,6 +131,7 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
   - 海森堡bug http://www.infoq.com/cn/articles/exterminating-heisenbugs
   - https://github.com/eventstore/eventstore/wiki/Event-Sourcing-Basics
   - https://en.wikipedia.org/wiki/Domain-driven_design
+  - http://eventuate.io/exampleapps.html
 
 
 ## 软件腐蚀 software erosion
