@@ -127,6 +127,11 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
    * One significant suggestion I have would be to generalize the concept of the Service Registry with the idea of a "Service Discovery Mechanism." Using a service registry (of which there is many) is only one type of service discovery mechanism. Further, service registries make certain assumptions about the infrastructure that may not be true, such that it's easy for services to be registered in a central registry, that a registry is consistently available or even that a registry is consistently at the same IP location or DNS name. I would expand the pattens to include a generalization of "Service Discovery Mechanism" with "Service Registry" to be a specialization pattern. The other obvious pattern would include "Service Probes and Responses" such as is provided by a number of "Internet of Things" discovery technologies such as AllJoyn, Multicast-DNS or DNS-Service Discovery (Apple Bonjour and Android Network Service Discovery), WS-Discovery or Simple Service Discovery Protocol (SSDP).
  * Use Case design of micro services
   - http://eventuate.io/exampleapps.html
+ * Event sourcing
+  - 海森堡bug http://www.infoq.com/cn/articles/exterminating-heisenbugs
+  - https://github.com/eventstore/eventstore/wiki/Event-Sourcing-Basics
+  - https://en.wikipedia.org/wiki/Domain-driven_design
+
 
 ## 软件腐蚀 software erosion
  * 原因 https://blog.heroku.com/archives/2011/6/28/the_new_heroku_4_erosion_resistance_explicit_contracts
@@ -137,6 +142,9 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 
 ## Application Integration
  * http://www.enterpriseintegrationpatterns.com/patterns/messaging/toc.html
+
+## 并发编程
+ * http://www.infoq.com/cn/articles/exterminating-heisenbugs
 
 
 
@@ -165,6 +173,14 @@ Marc.Shapiro
 https://pages.lip6.fr/Marc.Shapiro/
 lamport
 http://www.lamport.org/
+
+## 著名词汇
+ * http://www.csdn.net/article/2013-04-16/2814915
+  - Yoda Notation（Yoda 表示法），Mental Speedbump（头脑减速杠），Pearl Effect （珍珠效应），Sins of our Forefathers（先辈的罪），Katrina Effect（卡特里娜飓风效应），Workaround（变通），Jenga Code，Higgs-Bugson，Heisenbug
+
+
+
+
 
 
 # github
