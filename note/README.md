@@ -250,6 +250,10 @@ deb-src http://mirrors.aliyun.com/ubuntu trusty universe
 deb http://mirrors.aliyun.com/ubuntu trusty-updates universe
 deb-src http://mirrors.aliyun.com/ubuntu trusty-updates universe
 ```
+ * 替换sources.list
+```
+sudo sed -i "s%archive.ubuntu.com%mirrors.aliyun.com%g" /etc/apt/sources.list
+```
 # markup language 标签语言
 ## markdown
  * http://ibruce.info/2013/11/26/markdown/
