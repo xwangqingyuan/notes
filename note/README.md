@@ -250,7 +250,7 @@ deb-src http://mirrors.aliyun.com/ubuntu trusty universe
 deb http://mirrors.aliyun.com/ubuntu trusty-updates universe
 deb-src http://mirrors.aliyun.com/ubuntu trusty-updates universe
 ```
- * 替换sources.list
+ * 替换sources.list 可使用/或%只要文本中不出现即可
 ```
 sudo sed -i "s%archive.ubuntu.com%mirrors.aliyun.com%g" /etc/apt/sources.list
 ```
