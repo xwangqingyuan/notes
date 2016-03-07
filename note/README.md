@@ -25,6 +25,7 @@
  * http://baike.baidu.com/link?url=bQulh4Ri-8ZYvs1khfiwsPul_rPUK53ZURDdDGIq-R4UqBu8XEywq7LrkgD9yaqn5EkNgjnNO6rhQd1WRIXL3NqPMxeAwreNNzwyUAbpbza
 
 ## Docker  
+ * docker build
 
 ## Kubernetes  
 ### concepts 概念 
