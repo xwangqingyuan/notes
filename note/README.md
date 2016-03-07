@@ -26,6 +26,7 @@
 
 ## Docker  
  * docker build
+  - docker file reference https://docs.docker.com/engine/reference/builder/
 
 ## Kubernetes  
 ### concepts 概念 
