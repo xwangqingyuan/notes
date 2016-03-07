@@ -236,6 +236,20 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * http://www.toptal.com/python/interview-questions
  * https://segmentfault.com/a/1190000000618513
 
+# linux 
+
+## /etc/apt/sources.list
+ * ali sources list
+```
+deb http://mirrors.aliyun.com/ubuntu trusty main
+deb-src http://mirrors.aliyun.com/ubuntu trusty main
+deb http://mirrors.aliyun.com/ubuntu trusty-updates main
+deb-src http://mirrors.aliyun.com/ubuntu trusty-updates main
+deb http://mirrors.aliyun.com/ubuntu trusty universe
+deb-src http://mirrors.aliyun.com/ubuntu trusty universe
+deb http://mirrors.aliyun.com/ubuntu trusty-updates universe
+deb-src http://mirrors.aliyun.com/ubuntu trusty-updates universe
+```
 # markup language 标签语言
 ## markdown
  * http://ibruce.info/2013/11/26/markdown/
