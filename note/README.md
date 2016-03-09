@@ -111,6 +111,11 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * https://github.com/openshift/jenkins-plugin
  * https://blog.openshift.com/continuous-integration-deployment-v3/
  * 
+
+## vagrant
+ *  下载box  https://vagrantcloud.com/boxes/search?utf8=%E2%9C%93&sort=&provider=&q=openshift
+ *  base boxes http://www.vagrantbox.es/
+
 # design prinsipals
 ## Service Design principals
  * https://github.com/kubernetes/kubernetes/blob/master/docs/design/principles.md
