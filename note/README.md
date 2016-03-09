@@ -243,6 +243,10 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * http://www.toptal.com/python/interview-questions
  * https://segmentfault.com/a/1190000000618513
 
+## java
+### maven
+ * docker 安装 https://github.com/carlossg/docker-maven/blob/8ab542b907e69c5269942bcc0915d8dffcc7e9fa/jdk-8/Dockerfile
+
 # linux 
 
 ## /etc/apt/sources.list
