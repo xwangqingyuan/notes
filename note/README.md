@@ -197,6 +197,13 @@ http://www.lamport.org/
 ```
 git add . && git commit -m "Add all content of $(pwd)" && git push
 ```
+## git ssh  
+### git client
+ * 生成ssh key
+```
+ssh-keygen -t rsa -C "jenkins1@qingyuanos.com" -f /home/var/jenkins_ws/jenkins_home/qykeys/jenkins_id.pem
+ssh-keygen -t rsa -C "jenkins1@qingyuanos.com" -f /root/.ssh/id_rsa -P "" -q
+```
 
 # graph editting
  * http://www.sitepoint.com/5-free-html5-presentation-systems/
