@@ -27,6 +27,7 @@
 ## Docker  
  * docker build
   - docker file reference https://docs.docker.com/engine/reference/builder/
+  - Installation 安装 docker https://docs.docker.com/linux/
 
 ## Kubernetes  
 ### concepts 概念 
