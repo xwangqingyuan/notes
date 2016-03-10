@@ -114,6 +114,13 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * https://blog.openshift.com/continuous-integration-deployment-v3/
  * 
 
+#### jenkins errors
+ * http://stackoverflow.com/questions/25738061/java-nio-file-directorynotemptyexception-when-deleting-lastsuccessful-laststable
+  - .file.DirectoryNotEmptyException 由于复制Jenkins目录造成
+```
+
+```
+
 ## vagrant
  *  下载box  https://vagrantcloud.com/boxes/search?utf8=%E2%9C%93&sort=&provider=&q=openshift
  *  base boxes http://www.vagrantbox.es/
