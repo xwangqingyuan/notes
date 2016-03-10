@@ -254,6 +254,9 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
 ### 学习
  * learn by example https://gobyexample.com/
  * https://tour.golang.org/basics/1
+### go frameworks packages library
+ * http://libs.club/golang/
+
 ## coding problems
 ### Python problems
  * http://www.toptal.com/python/interview-questions
