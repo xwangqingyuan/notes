@@ -243,6 +243,12 @@ ssh-keygen -t rsa -C "jenkins1@qingyuanos.com" -f /root/.ssh/id_rsa -P "" -q
 ### cc攻击
 http://baike.baidu.com/link?url=MRD3fyaa9_kNAf6-p9NSu4bU_UuO1YvDL6O5vsUqe_PFxYmNSV5CtNpmeb9Z6CpH5OJaHT1lLxWcBO7e_llve_
 ### high anti-DDoS DDoS高防
+
+### ssh
+ * http://www.cnblogs.com/lzjsky/archive/2010/11/14/1877143.html
+ * http://stackoverflow.com/questions/1011572/convert-pem-key-to-ssh-rsa-format
+### openssl
+
 # programming coding 编程
 ## coding styles
 Shell style=
