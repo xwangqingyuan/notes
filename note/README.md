@@ -170,12 +170,21 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 
 ## document database 文档数据库
 
-## column database 列式数据库
+## column-oriented database 列式数据库
+ * https://en.wikipedia.org/wiki/Column-oriented_DBMS
+ * https://en.wikipedia.org/wiki/List_of_column-oriented_DBMSes
 
 ## graph database 图数据库
+ * http://db-engines.com/en/ranking/graph+dbms
+ * 图数据库 http://www.infoq.com/articles/data-modeling-graph-databases
 
 ### Triplestore RDF store Resource Description Framework
  * subject, a predicate, and an object triples
+ * http://www.cs.utexas.edu/~schrum2/DBTripleStore.pdf
+
+### 
+ * http://orientdb.com/orientdb-vs-neo4j/
+ * http://db-engines.com/en/system/Neo4j%3BOrientDB
 
 # 著名网站famous sites
 ## 5 famous community
