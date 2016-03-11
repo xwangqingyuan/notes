@@ -165,7 +165,17 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 
 
 
+# database 数据库
+## relational database 关系型数据库
 
+## document database 文档数据库
+
+## column database 列式数据库
+
+## graph database 图数据库
+
+### Triplestore RDF store Resource Description Framework
+ * subject, a predicate, and an object triples
 
 # 著名网站famous sites
 ## 5 famous community
