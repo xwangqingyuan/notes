@@ -177,6 +177,7 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 ## graph database 图数据库
  * http://db-engines.com/en/ranking/graph+dbms
  * 图数据库 http://www.infoq.com/articles/data-modeling-graph-databases
+ * http://markorodriguez.com/2011/02/08/property-graph-algorithms/
 
 ### Triplestore RDF store Resource Description Framework
  * subject, a predicate, and an object triples
