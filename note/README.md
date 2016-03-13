@@ -2,6 +2,7 @@
 # artificial intelligence 人工智能
 ## alphago
  * https://en.wikipedia.org/wiki/AlphaGo
+ * http://www.dcine.com/2016/01/28/alphago/
 
 ## deep learning
  * https://en.wikipedia.org/wiki/Deep_learning#Deep_neural_networks
@@ -13,8 +14,8 @@
  * A deep neural network (DNN) is an artificial neural network (ANN) with multiple hidden layers of units between the input and output layers.
   - DNNs are typically designed as feedforward networks, but recent research has successfully applied the deep learning architecture to recurrent neural networks for applications such as language modeling.
    * A feedforward neural network is an artificial neural network where connections between the units do not form a cycle. This is different from recurrent neural networks.
- * A deep belief network (DBN) is a probabilistic, generative model made up of multiple layers of hidden units. It can be considered a composition of simple learning modules that make up each layer
- * A CNN is composed of one or more convolutional layers with fully connected layers (matching those in typical artificial neural networks) on top.In machine learning, a convolutional neural network (CNN, or ConvNet) is a type of feed-forward artificial neural network in which the connectivity pattern between its neurons is inspired by the organization of the animal visual cortex, whose individual neurons are arranged in such a way that they respond to overlapping regions tiling the visual field One major advantage of convolutional networks is the use of shared weight in convolutional layers, which means that the same filter (weights bank) is used for each pixel in the layer
+ * 深度信念网络 A deep belief network (DBN) is a probabilistic, generative model made up of multiple layers of hidden units. It can be considered a composition of simple learning modules that make up each layer
+ * 卷积 A CNN is composed of one or more convolutional layers with fully connected layers (matching those in typical artificial neural networks) on top.In machine learning, a convolutional neural network (CNN, or ConvNet) is a type of feed-forward artificial neural network in which the connectivity pattern between its neurons is inspired by the organization of the animal visual cortex, whose individual neurons are arranged in such a way that they respond to overlapping regions tiling the visual field One major advantage of convolutional networks is the use of shared weight in convolutional layers, which means that the same filter (weights bank) is used for each pixel in the layer
   - Compared to other image classification algorithms, convolutional neural networks use relatively little pre-processing. This means that the network is responsible for learning the filters that in traditional algorithms were hand-engineered. The lack of dependence on prior knowledge and human effort in designing features is a major advantage for CNNs.
   - https://en.wikipedia.org/wiki/Convolutional_neural_network
 
