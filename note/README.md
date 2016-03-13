@@ -1,3 +1,22 @@
+
+# artificial intelligence 人工智能
+## alphago
+ * https://en.wikipedia.org/wiki/AlphaGo
+
+## deep learning
+ * 
+
+## Alpha–beta pruning
+ * https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning
+ * Minimax
+  - https://en.wikipedia.org/wiki/Minimax#Minimax_algorithm_with_alternate_moves 最小最大策略
+  - maximin value of a player is the largest value that the player can be sure to get without knowing the actions of the other players 最大最小策略
+
+## Monte Carlo tree search (MCTS)
+ * https://en.wikipedia.org/wiki/Monte_Carlo_tree_search
+ * Monte Carlo tree search (MCTS) is a heuristic search algorithm for some kinds of decision processes,
+ * Monte Carlo tree search does offer significant advantages over alpha–beta pruning and similar algorithms that minimize the search space.
+
 # Application framework 开源应用框架
 ## PHP 框架
 ### word press
