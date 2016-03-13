@@ -4,18 +4,27 @@
  * https://en.wikipedia.org/wiki/AlphaGo
 
 ## deep learning
- * 
+ * https://en.wikipedia.org/wiki/Deep_learning#Deep_neural_networks
+ * 解释
+  - Universal approximation theorem interpretation广义逼近理论解释
+  - Probabilistic interpretation 概率论解释
+   * robabilistic interpretation led to the introduction of dropout as regularizer in neural networks.
 
 ## Alpha–beta pruning
  * https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning
  * Minimax
   - https://en.wikipedia.org/wiki/Minimax#Minimax_algorithm_with_alternate_moves 最小最大策略
   - maximin value of a player is the largest value that the player can be sure to get without knowing the actions of the other players 最大最小策略
+   * 手 herefore a ply in chess is a half-move. Thus, after 20 moves in a chess game, 40 plies have been completed—20 by white and 20 by black. In the game of Go, by contrast, a ply is the normal unit of counting moves; so for example to say that a game is 250 moves long is to imply 250 plies
+   * Deep Blue (the first one to beat a reigning world champion, Garry Kasparov at that time) looked ahead at least 12 plies, then applied a heuristic evaluation function.
 
 ## Monte Carlo tree search (MCTS)
  * https://en.wikipedia.org/wiki/Monte_Carlo_tree_search
  * Monte Carlo tree search (MCTS) is a heuristic search algorithm for some kinds of decision processes,
  * Monte Carlo tree search does offer significant advantages over alpha–beta pruning and similar algorithms that minimize the search space.
+ * Various modifications of the basic Monte Carlo tree search method have been proposed to shorten the search time. Some employ domain-specific expert knowledge, others do not.
+
+Monte Carlo tree search can use either light or heavy playouts. Light playouts consist of random moves while heavy playouts apply various heuristics to influence the choice of moves.[
 
 # Application framework 开源应用框架
 ## PHP 框架
