@@ -354,6 +354,11 @@ deb-src http://mirrors.aliyun.com/ubuntu trusty universe
 deb http://mirrors.aliyun.com/ubuntu trusty-updates universe
 deb-src http://mirrors.aliyun.com/ubuntu trusty-updates universe
 ```
+## linux commands  linux 命令
+### find
+```
+sudo find /var -name *.xml -type f | sudo xargs grep jenkins1
+```
  * 替换sources.list 可使用/或%只要文本中不出现即可
 ```
 sudo sed -i "s%archive.ubuntu.com%mirrors.aliyun.com%g" /etc/apt/sources.list
