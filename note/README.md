@@ -67,7 +67,9 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
   - docker file reference https://docs.docker.com/engine/reference/builder/
   - Installation 安装 docker https://docs.docker.com/linux/
   - https://docs.docker.com/linux/step_one/
-### undocker https://github.com/larsks/undocker/
+### 从镜像导出Dockerfile的方法
+ * undocker https://github.com/larsks/undocker/
+ * docker cp 命令
 
 ## Kubernetes  
 ### concepts 概念 
