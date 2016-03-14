@@ -131,6 +131,10 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * https://wiki.openstack.org/wiki/Solum/HighLevelRoadmap
  * Feature user stories https://wiki.openstack.org/wiki/Solum/FeatureBlueprints/ApplicationDeploymentAndManagement
 
+### keystone 认证
+ * https://www.mirantis.com/blog/understanding-openstack-authentication-keystone-pki/
+
+ 
 ### openstack client 客户端
  * http://docs.openstack.org/developer/python-openstackclient/index.html
  * http://www.ibm.com/developerworks/cn/cloud/library/cl-openstack-network/
@@ -169,6 +173,9 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * https://github.com/kubernetes/kubernetes/blob/master/docs/design/principles.md
  * https://en.wikipedia.org/wiki/Service_level_objective
 
+## scheduler 调度器架构发展
+ * http://www.firmament.io/blog/scheduler-architectures.html
+ 
 ## micro services 微服务
  * http://www.csdn.net/article/2014-08-06/2821078
  * http://stackoverflow.com/questions/25501098/difference-between-microservices-architecture-and-soa
