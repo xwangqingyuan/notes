@@ -166,6 +166,12 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 
 ```
 
+## ceph
+ * http://docs.ceph.com/docs/master/architecture/#mapping-pgs-to-osds
+ * http://docs.ceph.com/docs/master/rados/operations/pools/
+ * http://docs.ceph.com/docs/master/rados/operations/data-placement/
+ * http://docs.ceph.com/docs/master/rados/operations/crush-map/#jewel
+ 
 ## vagrant
  *  下载box  https://vagrantcloud.com/boxes/search?utf8=%E2%9C%93&sort=&provider=&q=openshift
  *  base boxes http://www.vagrantbox.es/
