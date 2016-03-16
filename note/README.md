@@ -123,6 +123,9 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * 下载系统镜像 http://docs.openstack.org/image-guide/obtain-images.html#official-ubuntu-images
  * 下载更改镜像 http://docs.openstack.org/image-guide/
 
+### glance 镜像
+ * windows 镜像准备 http://www.ibm.com/developerworks/cn/cloud/library/cl-openstack-images/index.html
+ * 镜像下载链接 http://docs.openstack.org/image-guide/index.html
 ### Trove 数据库 
  * 支持的数据库 https://github.com/openstack/trove/tree/master/trove/templates
 
