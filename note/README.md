@@ -290,6 +290,8 @@ git add . && git commit -m "Add all content of $(pwd)" && git push
 ssh-keygen -t rsa -C "jenkins1@qingyuanos.com" -f /home/var/jenkins_ws/jenkins_home/qykeys/jenkins_id.pem
 ssh-keygen -t rsa -C "jenkins1@qingyuanos.com" -f /root/.ssh/id_rsa -P "" -q
 ```
+### git tag
+ * http://blog.csdn.net/wangjia55/article/details/8793577
 
 # graph editting
  * http://www.sitepoint.com/5-free-html5-presentation-systems/
@@ -365,6 +367,9 @@ deb http://mirrors.aliyun.com/ubuntu trusty-updates universe
 deb-src http://mirrors.aliyun.com/ubuntu trusty-updates universe
 ```
 ## linux commands  linux 命令
+### date  
+ * https://fukun.org/archives/06112057.html  
+
 ### find
 ```
 sudo find /var -name *.xml -type f | sudo xargs grep jenkins1
