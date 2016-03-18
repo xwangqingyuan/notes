@@ -292,6 +292,8 @@ ssh-keygen -t rsa -C "jenkins1@qingyuanos.com" -f /root/.ssh/id_rsa -P "" -q
 ```
 ### git tag
  * http://blog.csdn.net/wangjia55/article/details/8793577
+### git best practice
+ * http://programmers.stackexchange.com/questions/165725/git-branching-and-tagging-best-practices
 
 # graph editting
  * http://www.sitepoint.com/5-free-html5-presentation-systems/
