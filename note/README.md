@@ -80,6 +80,25 @@ curl -L https://github.com/docker/machine/releases/download/v0.6.0/docker-machin
 chmod +x /usr/local/bin/docker-machine
 
 ```
+### docker swarm
+#### create swarm
+ * https://docs.docker.com/swarm/provision-with-machine/
+```
+docker-machine create \
+    -d virtualbox \
+    --swarm \
+    --swarm-master \
+    --swarm-discovery token://21a3c09b08b916b0285a8b51b9313dd8 \
+    swarm-master
+docker-machine create \
+    -d virtualbox \
+    --swarm \
+    --swarm-discovery token://21a3c09b08b916b0285a8b51b9313dd8 \
+    node-01
+```
+#### swarm descovery
+ * https://docs.docker.com/swarm/discovery/
+
 
 ## Kubernetes  
 ### concepts 概念 
