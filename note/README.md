@@ -71,6 +71,16 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
  * undocker https://github.com/larsks/undocker/
  * docker cp 命令
 
+### docker machine  
+#### install docker machine
+ * https://docs.docker.com/machine/install-machine/
+ * https://docs.docker.com/machine/get-started/
+```
+curl -L https://github.com/docker/machine/releases/download/v0.6.0/docker-machine-`uname -s`-`uname -m` > /usr/local/bin/docker-machine && \
+chmod +x /usr/local/bin/docker-machine
+
+```
+
 ## Kubernetes  
 ### concepts 概念 
  * http://www.infoq.com/cn/articles/Kubernetes-system-architecture-introduction?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global  
