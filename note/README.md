@@ -49,6 +49,19 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 ### Go framewor
 ### Hugo
 
+# big data 大数据  
+## data visualization 数据可视化  BI business intelligence
+### D3 Data Driven Document
+#### 主页
+ * https://d3js.org/
+ * http://idl.cs.washington.edu/  
+#### DAG 有向无环图 Directed Graph
+
+#### Tree 树状图
+
+#### Relationship 关系图
+
+
 # cloud 云计算
 
 ## PaaS 
