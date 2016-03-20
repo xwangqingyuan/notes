@@ -55,11 +55,31 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 #### 主页
  * https://d3js.org/
  * http://idl.cs.washington.edu/  
+
 #### DAG 有向无环图 Directed Graph
+ * https://github.com/cpettitt/dagre-d3/wiki
+ * https://github.com/nickholub/d3-dag-visualization/tree/master/app
+ * http://bl.ocks.org/mbostock/1153292
 
 #### Tree 树状图
+ * http://mbostock.github.io/d3/talk/20111018/tree.html
 
 #### Relationship 关系图
+
+### sigma.js
+#### 主页
+ * http://sigmajs.org/
+ * https://github.com/jacomyal/sigma.js
+
+### 几何规律
+#### 泰森多边形
+离散点的领地区域
+泰森多边形又叫冯洛诺伊图（Voronoi diagram），得名于Georgy Voronoi，是由一组由连接两邻点直线的垂直平分线组成的连续多边形组成。
+也可以有泰森多面体，离散点的垂直平分线相交，4面体的外接球面球心连接起来
+
+几何规律
+封闭N维空间，最小点数，N+1，
+最小边数 C(N+1)2，最小面数C(N+1)3
 
 
 # cloud 云计算
