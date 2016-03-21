@@ -252,6 +252,7 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * http://www.firmament.io/blog/scheduler-architectures.html
  
 ## micro services 微服务
+ * http://dockone.io/article/812 微服务架构
  * http://www.csdn.net/article/2014-08-06/2821078
  * http://stackoverflow.com/questions/25501098/difference-between-microservices-architecture-and-soa
   - In short, the microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery. There is a bare mininum of centralized management of these services, which may be written in different programming languages and use different data storage technologies.
