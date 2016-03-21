@@ -189,6 +189,8 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 ### glance 镜像
  * windows 镜像准备 http://www.ibm.com/developerworks/cn/cloud/library/cl-openstack-images/index.html
  * 镜像下载链接 http://docs.openstack.org/image-guide/index.html
+ * 保存导出镜像 http://zqfan.github.io/openstack/2014/05/20/export-openstack-instance-to-local-image/
+ * 保存到初镜像 openstack image save
 ### Trove 数据库 
  * 支持的数据库 https://github.com/openstack/trove/tree/master/trove/templates
 
