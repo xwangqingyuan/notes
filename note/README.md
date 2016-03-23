@@ -267,11 +267,13 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
    * One significant suggestion I have would be to generalize the concept of the Service Registry with the idea of a "Service Discovery Mechanism." Using a service registry (of which there is many) is only one type of service discovery mechanism. Further, service registries make certain assumptions about the infrastructure that may not be true, such that it's easy for services to be registered in a central registry, that a registry is consistently available or even that a registry is consistently at the same IP location or DNS name. I would expand the pattens to include a generalization of "Service Discovery Mechanism" with "Service Registry" to be a specialization pattern. The other obvious pattern would include "Service Probes and Responses" such as is provided by a number of "Internet of Things" discovery technologies such as AllJoyn, Multicast-DNS or DNS-Service Discovery (Apple Bonjour and Android Network Service Discovery), WS-Discovery or Simple Service Discovery Protocol (SSDP).
  * Use Case design of micro services
   - http://eventuate.io/exampleapps.html
- * Event sourcing
+ * Event sourcing CQRS Command Query Responsibility Segeragation
   - 海森堡bug http://www.infoq.com/cn/articles/exterminating-heisenbugs
   - https://github.com/eventstore/eventstore/wiki/Event-Sourcing-Basics
   - https://en.wikipedia.org/wiki/Domain-driven_design
   - http://eventuate.io/exampleapps.html
+  - http://www.cqrs.nu/Faq
+  - http://blog.jonathanoliver.com/cqrs-sagas-with-event-sourcing-part-i-of-ii/
 
 
 ## 软件腐蚀 software erosion
