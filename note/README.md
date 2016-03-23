@@ -2,8 +2,8 @@
 # artificial intelligence 人工智能
 ## alphago
  * https://en.wikipedia.org/wiki/AlphaGo
- * http://www.dcine.com/2016/01/28/alphago/
- * http://www.csdn.net/article/2015-01-15/2823577
+ * http://www.dcine.com/2016/01/28/alphago/  
+
 ## deep learning
  * https://en.wikipedia.org/wiki/Deep_learning#Deep_neural_networks
  * 解释
@@ -275,6 +275,11 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
   - http://www.cqrs.nu/Faq
   - http://blog.jonathanoliver.com/cqrs-sagas-with-event-sourcing-part-i-of-ii/
 
+## 架构参考 reference architecture  
+### 电子商务 Ecommerce
+ * http://www.csdn.net/article/2015-01-15/2823577 京东
+ * http://www.csdn.net/article/1970-01-01/2825203 京东
+ * 
 
 ## 软件腐蚀 software erosion
  * 原因 https://blog.heroku.com/archives/2011/6/28/the_new_heroku_4_erosion_resistance_explicit_contracts
