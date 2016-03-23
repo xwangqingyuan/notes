@@ -3,7 +3,7 @@
 ## alphago
  * https://en.wikipedia.org/wiki/AlphaGo
  * http://www.dcine.com/2016/01/28/alphago/
-
+ * http://www.csdn.net/article/2015-01-15/2823577
 ## deep learning
  * https://en.wikipedia.org/wiki/Deep_learning#Deep_neural_networks
  * 解释
