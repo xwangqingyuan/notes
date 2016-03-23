@@ -279,7 +279,7 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 ### 电子商务 Ecommerce
  * http://www.csdn.net/article/2015-01-15/2823577 京东
  * http://www.csdn.net/article/1970-01-01/2825203 京东
- * 
+ * http://www.csdn.net/article/2015-04-03/2824410
 
 ## 软件腐蚀 software erosion
  * 原因 https://blog.heroku.com/archives/2011/6/28/the_new_heroku_4_erosion_resistance_explicit_contracts
