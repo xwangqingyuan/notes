@@ -389,7 +389,13 @@ http://baike.baidu.com/link?url=MRD3fyaa9_kNAf6-p9NSu4bU_UuO1YvDL6O5vsUqe_PFxYmN
 
 ### ssh
  * http://www.cnblogs.com/lzjsky/archive/2010/11/14/1877143.html
- * http://stackoverflow.com/questions/1011572/convert-pem-key-to-ssh-rsa-format
+ * http://stackoverflow.com/questions/1011572/convert-pem-key-to-ssh-rsa-format  
+
+#### openssh
+ * http://sshwindows.sourceforge.net/ windows
+ * 
+
+
 ### openssl
 
 # programming coding 编程
