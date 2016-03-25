@@ -393,7 +393,8 @@ http://baike.baidu.com/link?url=MRD3fyaa9_kNAf6-p9NSu4bU_UuO1YvDL6O5vsUqe_PFxYmN
 
 #### openssh
  * http://sshwindows.sourceforge.net/ windows
- * 
+ * http://security.stackexchange.com/questions/32768/converting-keys-between-openssl-and-openssh key转换
+ * https://support.ssl.com/Knowledgebase/Article/View/19/0/der-vs-crt-vs-cer-vs-pem-certificates-and-how-to-convert-them key转换 PEM DER CER CRT
 
 
 ### openssl
