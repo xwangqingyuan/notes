@@ -294,7 +294,11 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 ## 并发编程
  * http://www.infoq.com/cn/articles/exterminating-heisenbugs
 
+## 负载均衡 load balance  
+### Haproxy
+ * http://www.oschina.net/translate/haproxy-ssl-termation-pass-through?cmp
 
+### Nginx
 
 # database 数据库
 ## relational database 关系型数据库
