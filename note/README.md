@@ -138,9 +138,10 @@ docker-machine create \
 ### concepts 概念 
  * http://www.infoq.com/cn/articles/Kubernetes-system-architecture-introduction?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global  
 
-### Sharding on kubernete
+### Sharding on kubernete 数据分片
  * https://github.com/kubernetes/kubernetes/pull/13169
- * http://vitess.io/getting-started/
+ * http://vitess.io/getting-started/  http://vitess.io/user-guide/sharding-kubernetes.html
+ * https://clusterhq.com/2016/02/11/kubernetes-redis-cluster/
 
 ### jobs on kubernetes
  * https://github.com/kubernetes/kubernetes/issues/14188 
