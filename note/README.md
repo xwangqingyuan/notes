@@ -143,7 +143,10 @@ docker-machine create \
  * http://vitess.io/getting-started/
 
 ### jobs on kubernetes
- * https://github.com/kubernetes/kubernetes/issues/14188  
+ * https://github.com/kubernetes/kubernetes/issues/14188 
+
+### 镜像广场 image repository
+ * https://hub.tenxcloud.com/repos/google_containers
 
 
 ## openstack  
