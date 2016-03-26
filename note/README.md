@@ -153,6 +153,9 @@ docker-machine create \
 ## openstack  
 ### release notes
  * https://wiki.openstack.org/wiki/ReleaseNotes/Liberty
+### configuration 配置，常用驱动 driver
+ * http://docs.openstack.org/liberty/config-reference/content/ceph-rados.html  
+ * 
 
 
 ### ironic bare-metal provisioning
