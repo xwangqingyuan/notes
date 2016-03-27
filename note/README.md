@@ -138,6 +138,10 @@ docker-machine create \
 ### concepts 概念 
  * http://www.infoq.com/cn/articles/Kubernetes-system-architecture-introduction?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global  
 
+### 部署 deploy
+ * http://www.meetup.com/OpenStack-Israel/events/228603910/
+ * http://www.slideshare.net/dfilppi/hybrid-cloud-openstack-meetup 部署 slides
+
 ### Sharding on kubernete 数据分片
  * https://github.com/kubernetes/kubernetes/pull/13169
  * http://vitess.io/getting-started/  http://vitess.io/user-guide/sharding-kubernetes.html
