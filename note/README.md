@@ -85,6 +85,12 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 
 # cloud 云计算
 
+## azure  
+ * 编排 http://windowsitpro.com/azure/orchestration-comes-microsoft-azure
+ * http://www.codetails.com/2013/06/25/automate-orchestrate-azure-deployment/
+ * http://www.theregister.co.uk/2015/04/20/microsoft_azure_service_fabric/ 声明编排
+ * http://www.cnblogs.com/redmoon/archive/2015/04/23/4452111.html Service Fabric
+ 
 ## PaaS 
 ### 平台云比较
  * http://www.chinacloud.cn/show.aspx?id=20204&cid=14
@@ -104,6 +110,9 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 ### 从镜像导出Dockerfile的方法
  * undocker https://github.com/larsks/undocker/
  * docker cp 命令
+
+### Docker Registry 镜像仓库
+ * 中文 Docker auth http://www.tuicool.com/articles/UrMFBn
 
 ### docker machine  
 #### install docker machine
@@ -215,7 +224,10 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 ### keystone 认证
  * https://www.mirantis.com/blog/understanding-openstack-authentication-keystone-pki/
 
- 
+### magnum
+ * 中文介绍 http://blog.csdn.net/lyq2013/article/details/48849411
+
+
 ### openstack client 客户端
  * http://docs.openstack.org/developer/python-openstackclient/index.html
  * http://www.ibm.com/developerworks/cn/cloud/library/cl-openstack-network/
