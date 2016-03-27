@@ -162,12 +162,16 @@ docker-machine create \
 ### 镜像广场 image repository
  * https://hub.tenxcloud.com/repos/google_containers
 
+### multi zone 多区域
+
 
 ## openstack  
 ### release notes
  * https://wiki.openstack.org/wiki/ReleaseNotes/Liberty
 ### configuration 配置，常用驱动 driver
  * http://docs.openstack.org/liberty/config-reference/content/ceph-rados.html  
+ * documents http://docs.openstack.org/
+ * APIs http://developer.openstack.org/api-ref.html
  * 
 
 
@@ -223,6 +227,7 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 
 ### keystone 认证
  * https://www.mirantis.com/blog/understanding-openstack-authentication-keystone-pki/
+ * http://blog.csdn.net/lynn_kong/article/details/9318719
 
 ### magnum
  * 中文介绍 http://blog.csdn.net/lyq2013/article/details/48849411
