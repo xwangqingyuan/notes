@@ -519,6 +519,8 @@ links
  * http://blog.sina.com.cn/s/blog_65f27fc20101fhmn.html  
  * http://tool.chinaz.com/dns/
 
+### calico
+ * http://www.tuicool.com/articles/quUfAjJ
  
 
 1. dig
