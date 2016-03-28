@@ -350,9 +350,12 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * subject, a predicate, and an object triples
  * http://www.cs.utexas.edu/~schrum2/DBTripleStore.pdf
 
-### 
+### 图数据库
  * http://orientdb.com/orientdb-vs-neo4j/
- * http://db-engines.com/en/system/Neo4j%3BOrientDB
+ * http://db-engines.com/en/system/Neo4j%3BOrientDB  
+
+#### 图数据库设计模式
+ * 如何决定一个对象是实体还是关系：原则1:两个实体之间同一类关系只能发生一次，所以只有有没有关系，没有多次关系纪录。关系不会单独持久化，只会在实体中持久化。被动关系不需要在非聚合根实体中持久化，而只需要在聚合根持久化主动方聚合根和统计结果。
 
 # 著名网站famous sites
 ## 5 famous community
