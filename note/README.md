@@ -111,6 +111,11 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
  * undocker https://github.com/larsks/undocker/
  * docker cp 命令
 
+### 案例总结 docker cases
+ * http://www.chinacloud.cn/show.aspx?id=20351&cid=16
+ * http://www.dockone.io/article/1169
+ * 
+
 ### Docker Registry 镜像仓库
  * 中文 Docker auth http://www.tuicool.com/articles/UrMFBn
 
