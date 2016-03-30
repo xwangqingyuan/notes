@@ -475,6 +475,7 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * https://tour.golang.org/basics/1
 ### go frameworks packages library
  * http://libs.club/golang/
+ * http://gorevel.cn/docs/index.html
 
 ## coding problems
 ### Python problems
