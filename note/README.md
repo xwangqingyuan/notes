@@ -152,6 +152,13 @@ docker-machine create \
 ### concepts 概念 
  * http://www.infoq.com/cn/articles/Kubernetes-system-architecture-introduction?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global  
 
+### kubectl CLI
+ * http://kubernetes.io/docs/user-guide/kubectl-overview/
+ * 
+
+### kubernetes API
+ * http://kubernetes.io/docs/api-reference/v1/operations/
+
 ### 部署 deploy
  * http://www.meetup.com/OpenStack-Israel/events/228603910/
  * http://www.slideshare.net/dfilppi/hybrid-cloud-openstack-meetup 部署 slides
