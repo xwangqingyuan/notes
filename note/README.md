@@ -118,6 +118,9 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 
 ### Docker Registry 镜像仓库
  * 中文 Docker auth http://www.tuicool.com/articles/UrMFBn
+ * Docker p2p download distribution http://www.tuicool.com/articles/Abia2u2
+ * https://github.com/docker/docker-registry  registry
+ * https://github.com/vmware/harbor
 
 ### docker machine  
 #### install docker machine
@@ -280,6 +283,8 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * http://docs.ceph.com/docs/master/rados/operations/data-placement/
  * http://docs.ceph.com/docs/master/rados/operations/crush-map/#jewel
  * http://www.wzxue.com/ceph-recovery/
+### ceph GUI
+ * https://github.com/ceph/calamari
  
 ## vagrant
  *  下载box  https://vagrantcloud.com/boxes/search?utf8=%E2%9C%93&sort=&provider=&q=openshift
@@ -476,6 +481,8 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
 ### go frameworks packages library
  * http://libs.club/golang/
  * http://gorevel.cn/docs/index.html
+ * https://github.com/gorilla/handlers
+ * 
 
 ## coding problems
 ### Python problems
