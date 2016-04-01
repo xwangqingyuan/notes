@@ -339,7 +339,7 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * https://godoc.org/google.golang.org/grpc
 ### thrift
  * https://en.wikipedia.org/wiki/Apache_Thrift
- * 
+ * http://weibo.com/1798777247/DhjihFBCe?type=comment
  
 ## message queue
 ### nanomsg
