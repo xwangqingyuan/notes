@@ -328,6 +328,9 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 
 ## distributed RPC framework
  * http://www.cnblogs.com/fxjwind/archive/2013/05/16/3082219.html
+ * http://www.open-open.com/lib/view/open1438237185863.html
+ * http://www.th7.cn/Program/go/201603/774088.shtml
+ * http://www.open-open.com/lib/view/open1454584671464.html
 ### dubbo
  * https://github.com/alibaba/dubbo
  * http://www.oschina.net/p/dubbo
