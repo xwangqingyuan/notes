@@ -326,6 +326,21 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * http://www.csdn.net/article/1970-01-01/2825203 京东
  * http://www.csdn.net/article/2015-04-03/2824410
 
+## distributed RPC framework
+ * http://www.cnblogs.com/fxjwind/archive/2013/05/16/3082219.html
+### dubbo
+ * https://github.com/alibaba/dubbo
+ * http://www.oschina.net/p/dubbo
+### ICE
+ * http://blog.csdn.net/anghlq/article/details/6682341
+ * https://en.wikipedia.org/wiki/Internet_Communications_Engine
+
+### grpc protobuf
+ * https://godoc.org/google.golang.org/grpc
+### thrift
+ * https://en.wikipedia.org/wiki/Apache_Thrift
+ * 
+
 ## 软件腐蚀 software erosion
  * 原因 https://blog.heroku.com/archives/2011/6/28/the_new_heroku_4_erosion_resistance_explicit_contracts
   － https://en.wikipedia.org/wiki/Software_rot
