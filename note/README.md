@@ -188,7 +188,8 @@ docker-machine create \
  * documents http://docs.openstack.org/
  * APIs http://developer.openstack.org/api-ref.html
  * 
-
+### openstack HA
+ * https://www.mirantis.com/blog/ha-platform-components-mysql-rabbitmq/
 
 ### ironic bare-metal provisioning
  * https://www.mirantis.com/blog/bare-metal-provisioning-with-openstack-cloud/
@@ -276,7 +277,6 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 ```
 
 ```
-
 ## ceph
  * http://docs.ceph.com/docs/master/architecture/#mapping-pgs-to-osds
  * http://docs.ceph.com/docs/master/rados/operations/pools/
