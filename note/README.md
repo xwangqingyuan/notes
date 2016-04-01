@@ -340,6 +340,13 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 ### thrift
  * https://en.wikipedia.org/wiki/Apache_Thrift
  * 
+ 
+## message queue
+### nanomsg
+ * http://bravenewgeek.com/a-look-at-nanomsg-and-scalability-protocols/
+ * https://github.com/nanomsg/nanomsg
+### zeromq
+ * http://zeromq.org/
 
 ## 软件腐蚀 software erosion
  * 原因 https://blog.heroku.com/archives/2011/6/28/the_new_heroku_4_erosion_resistance_explicit_contracts
