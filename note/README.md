@@ -413,6 +413,7 @@ http://www.lamport.org/
  * http://www.cnblogs.com/lingyunhu/p/4058182.html
  * https://shishimao.com/
  * GIPS  http://baike.baidu.com/link?url=UraNY50AIdZQgN83ZKKY6wBpxbE6a7guHRCL2o722QD205s70QaiFoYK1LOKyj1pN1LQg4etg1IJ66jJngmCD_
+ * http://baike.baidu.com/view/5855785.htm
 #### 
 
 # github
