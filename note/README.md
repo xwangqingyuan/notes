@@ -367,6 +367,9 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 ## 负载均衡 load balance  
 ### Haproxy
  * http://www.oschina.net/translate/haproxy-ssl-termation-pass-through?cmp
+### bamboo
+ * https://github.com/QubitProducts/bamboo
+ * http://www.open-open.com/lib/view/open1415511980137.html
 
 ### Nginx
 
