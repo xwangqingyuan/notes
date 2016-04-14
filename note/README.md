@@ -178,7 +178,11 @@ docker-machine create \
 ### 镜像广场 image repository
  * https://hub.tenxcloud.com/repos/google_containers
 
-### multi zone 多区域
+### multi zone 多区域  
+### monitor 监控
+ * https://github.com/kubernetes/heapster
+ * http://stackoverflow.com/questions/33749911/a-combination-for-monitoring-system-for-container-grafanaheapsterinfluxdbcad
+ * https://github.com/grafana/grafana  http://grafana.org/  http://www.dockone.io/article/569
 
 
 ## openstack  
