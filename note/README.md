@@ -621,3 +621,8 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
  * windows forwarding http://serverfault.com/questions/210755/forwarding-rdp-via-a-linux-machine-using-iptables-not-working
  * http://serverfault.com/questions/660035/redhat-iptables-forwarding-to-virtualbox-windows-server-20120-vm-for-rdp
  * http://www.systutorials.com/816/port-forwarding-using-iptables/
+
+# sales 销售
+## 客户沟通技巧
+ * http://zhidao.baidu.com/link?url=J7QM6hwwlOKnnuBkGvW4_AZcA_A8CORk48nFkEcbqcMhgyteUOCj3k-u5HJWi6M19shXwB4tzef40MJkrWgCWa
+ * http://zhidao.baidu.com/link?url=gjeUkULSWuwnuQPO_qa2SsJzz9_55B65lHvrq5WwuYgnu7MWAqesxtg3uJ6GvWmGzORS6v0bhln3vAMtbtO7_5ng83pd2tKDt20WEZLdWdS
