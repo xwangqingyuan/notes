@@ -153,7 +153,8 @@ docker-machine create \
 
 ## Kubernetes  
 ### concepts 概念 
- * http://www.infoq.com/cn/articles/Kubernetes-system-architecture-introduction?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global  
+ * http://www.infoq.com/cn/articles/Kubernetes-system-architecture-introduction?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global 
+ * http://kubernetes.io/docs/user-guide/volumes/
 
 ### kubectl CLI
  * http://kubernetes.io/docs/user-guide/kubectl-overview/
