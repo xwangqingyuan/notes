@@ -155,6 +155,7 @@ docker-machine create \
 ### concepts 概念 
  * http://www.infoq.com/cn/articles/Kubernetes-system-architecture-introduction?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global 
  * http://kubernetes.io/docs/user-guide/volumes/
+ * http://dockone.io/article/1153 比较 borg omega
 
 ### kubectl CLI
  * http://kubernetes.io/docs/user-guide/kubectl-overview/
