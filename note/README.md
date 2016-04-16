@@ -222,7 +222,7 @@ docker-machine create \
  * https://www.openstack.org/assets/presentation-media/heat-software-config.pdf
  * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-init.html http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-init.html AWS  
  * http://cloudinit.readthedocs.org/en/latest/ 通用的配置云主机的脚本
- * windows 安装软件 http://www.bubuko.com/infodetail-705509.html  https://cloudbase.it/cloudbase-init/
+ * windows 安装软件 http://www.bubuko.com/infodetail-705509.html  https://cloudbase.it/cloudbase-init/ https://github.com/openstack/cloudbase-init
 
 
 ### neutron 网络
