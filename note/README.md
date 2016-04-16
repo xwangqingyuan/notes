@@ -157,6 +157,12 @@ docker-machine create \
  * http://kubernetes.io/docs/user-guide/volumes/
  * http://dockone.io/article/1153 比较 borg omega
 
+### comparison 比较
+ * http://www.nextplatform.com/2015/09/15/kubernetes-has-a-ways-to-go-to-scale-like-google-mesos/
+ * http://www.nextplatform.com/2015/11/12/inside-ebays-shift-to-kubernetes-and-containers-atop-openstack/
+ * http://www.nextplatform.com/2015/08/13/will-openstack-kubernetes-or-mesos-control-future-clusters/
+ * 
+
 ### kubectl CLI
  * http://kubernetes.io/docs/user-guide/kubectl-overview/
  * 
@@ -209,7 +215,14 @@ docker-machine create \
 ### Openstack 解决方案设计
  * http://www.slideshare.net/mirantis/os-boston-meetuppreso10sept2014v2?related=1
 
-
+### heat openstack 编排
+ * http://hardysteven.blogspot.jp/2015/05/heat-softwareconfig-resources.html 软件配置安装
+ * https://github.com/openstack/tripleo-heat-templates 用Openstack 安装openstack
+ * http://docs.openstack.org/developer/heat/template_guide/software_deployment.html Openstack配置软件的3中方式
+ * https://www.openstack.org/assets/presentation-media/heat-software-config.pdf
+ * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-init.html http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-init.html AWS  
+ * http://cloudinit.readthedocs.org/en/latest/ 通用的配置云主机的脚本
+ * windows 安装软件 http://www.bubuko.com/infodetail-705509.html  https://cloudbase.it/cloudbase-init/
 
 
 ### neutron 网络
@@ -217,9 +230,11 @@ docker-machine create \
 ### magnum kubernetes 容器集群
  * https://review.openstack.org/#/c/204686/12/specs/container-networking-model.rst magnum设计
  * 脚本和配置 https://github.com/openstack/magnum/tree/master/magnum/templates/kubernetes/fragments
+ * https://github.com/openstack/magnum/tree/master/magnum/templates/kubernetes/fragments 常用脚本和配置
  * 网络 https://wiki.openstack.org/wiki/Magnum/Networking
  * http://www.nextplatform.com/2015/11/12/inside-ebays-shift-to-kubernetes-and-containers-atop-openstack/ ebay 案例
  * http://docs.openstack.org/developer/magnum/ 工作进度
+ * https://wiki.openstack.org/wiki/Magnum/Networking 网络
 
 ### floating ips
  * http://www.ibm.com/developerworks/cn/cloud/library/cl-openstack-network/
