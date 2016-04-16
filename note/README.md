@@ -4,6 +4,16 @@
  * https://en.wikipedia.org/wiki/AlphaGo
  * http://www.dcine.com/2016/01/28/alphago/  
 
+## machine learning go libraries
+ * https://www.quora.com/Is-Go-the-best-programming-language-for-next-generation-A-I-and-machine-learning-applications
+ * http://www.fodop.com/ar-1002
+
+## machine learning rust libraries
+ * https://github.com/maciejkula/rustlearn
+ * http://autumnai.github.io/leaf/leaf/layer/trait.ComputeInputGradient.html
+ * https://github.com/autumnai/leaf
+ * https://jaredforsyth.com/2014/03/22/rust-vs-go/
+
 ## deep learning
  * https://en.wikipedia.org/wiki/Deep_learning#Deep_neural_networks
  * 解释
