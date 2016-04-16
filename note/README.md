@@ -210,7 +210,16 @@ docker-machine create \
  * http://www.slideshare.net/mirantis/os-boston-meetuppreso10sept2014v2?related=1
 
 
+
+
 ### neutron 网络
+
+### magnum kubernetes 容器集群
+ * https://review.openstack.org/#/c/204686/12/specs/container-networking-model.rst magnum设计
+ * 脚本和配置 https://github.com/openstack/magnum/tree/master/magnum/templates/kubernetes/fragments
+ * 网络 https://wiki.openstack.org/wiki/Magnum/Networking
+ * http://www.nextplatform.com/2015/11/12/inside-ebays-shift-to-kubernetes-and-containers-atop-openstack/ ebay 案例
+ * http://docs.openstack.org/developer/magnum/ 工作进度
 
 ### floating ips
  * http://www.ibm.com/developerworks/cn/cloud/library/cl-openstack-network/
