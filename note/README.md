@@ -260,6 +260,12 @@ http://docs.openstack.org/developer/swift/replication_network.html#dedicated-rep
 http://docs.openstack.org/arch-design/multi-site-architecture.html
 
 ### Cinder  
+#### storage
+ * http://www.techrepublic.com/blog/the-enterprise-cloud/block-level-storage-vs-file-level-storage-a-comparison/
+ * http://docs.openstack.org/openstack-ops/content/storage_decision.html
+ * http://www.iscsi.com/resources/File-Level-Storage-vs-Block-Level-Storage.asp
+ * http://www.druva.com/blog/object-storage-versus-block-storage-understanding-technology-differences/
+ * https://clusterhq.com/flocker/getting-started/
 
 #### Snapshot 镜像准备，备份，快照  
  * http://docs.openstack.org/developer/tripleo-docs/post_deployment/vm_snapshot.html
