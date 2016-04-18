@@ -266,6 +266,8 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * http://www.iscsi.com/resources/File-Level-Storage-vs-Block-Level-Storage.asp
  * http://www.druva.com/blog/object-storage-versus-block-storage-understanding-technology-differences/
  * https://clusterhq.com/flocker/getting-started/
+ * http://searchdatabackup.techtarget.com/tip/Storage-snapshot-technologies-in-data-backup-and-recovery
+ * http://www.sharepointeur.com/virtual-machine-difference-snapshot-backup/
 
 #### Snapshot 镜像准备，备份，快照  
  * http://docs.openstack.org/developer/tripleo-docs/post_deployment/vm_snapshot.html
