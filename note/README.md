@@ -175,6 +175,8 @@ docker-machine create \
  * https://kismatic.com/community/apaches-mesos-vs-googles-kubernetes/
  * https://www.oreilly.com/ideas/swarm-v-fleet-v-kubernetes-v-mesos
  * http://thenewstack.io/a-brief-comparison-of-mesos-and-kubernetes/
+ * start order https://github.com/kubernetes/kubernetes/issues/1589
+ * start order https://github.com/kubernetes/kubernetes/issues/2385
 
 ### kubectl CLI
  * http://kubernetes.io/docs/user-guide/kubectl-overview/
