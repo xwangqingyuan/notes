@@ -172,7 +172,9 @@ docker-machine create \
  * http://www.nextplatform.com/2015/09/15/kubernetes-has-a-ways-to-go-to-scale-like-google-mesos/
  * http://www.nextplatform.com/2015/11/12/inside-ebays-shift-to-kubernetes-and-containers-atop-openstack/
  * http://www.nextplatform.com/2015/08/13/will-openstack-kubernetes-or-mesos-control-future-clusters/
- * 
+ * https://kismatic.com/community/apaches-mesos-vs-googles-kubernetes/
+ * https://www.oreilly.com/ideas/swarm-v-fleet-v-kubernetes-v-mesos
+ * http://thenewstack.io/a-brief-comparison-of-mesos-and-kubernetes/
 
 ### kubectl CLI
  * http://kubernetes.io/docs/user-guide/kubectl-overview/
