@@ -166,6 +166,7 @@ docker-machine create \
  * http://www.infoq.com/cn/articles/Kubernetes-system-architecture-introduction?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global 
  * http://kubernetes.io/docs/user-guide/volumes/
  * http://dockone.io/article/1153 比较 borg omega
+ * http://blog.kubernetes.io/2015/06/the-distributed-system-toolkit-patterns.html
 
 ### comparison 比较
  * http://www.nextplatform.com/2015/09/15/kubernetes-has-a-ways-to-go-to-scale-like-google-mesos/
