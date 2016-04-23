@@ -60,6 +60,10 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 ### Hugo
 
 # big data 大数据  
+## famous persons
+### infoq famous persons
+ * http://2016.qconbeijing.com/track/2769
+
 ## data visualization 数据可视化  BI business intelligence
 ### D3 Data Driven Document
 #### 主页
@@ -70,7 +74,6 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
  * https://github.com/cpettitt/dagre-d3/wiki
  * https://github.com/nickholub/d3-dag-visualization/tree/master/app
  * http://bl.ocks.org/mbostock/1153292
-
 #### Tree 树状图
  * http://mbostock.github.io/d3/talk/20111018/tree.html
  * http://bl.ocks.org/mbostock/4339083
@@ -92,6 +95,9 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 封闭N维空间，最小点数，N+1，
 最小边数 C(N+1)2，最小面数C(N+1)3
 
+## flink real time compute framework
+ * http://flink.apache.org/
+ * http://www.zhihu.com/question/30151872
 
 # cloud 云计算
 
