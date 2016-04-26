@@ -127,6 +127,11 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
  * undocker https://github.com/larsks/undocker/
  * docker cp 命令
 
+### Docker security problem
+ * http://integratedcode.us/2015/10/13/user-namespaces-have-arrived-in-docker/
+https://integratedcode.us/2016/04/08/user-namespaces-sharing-the-docker-unix-socket/
+http://man7.org/linux/man-pages/man5/subuid.5.html
+
 ### 案例总结 docker cases
  * http://www.chinacloud.cn/show.aspx?id=20351&cid=16
  * http://www.dockone.io/article/1169
