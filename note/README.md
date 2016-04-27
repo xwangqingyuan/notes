@@ -127,6 +127,10 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
  * undocker https://github.com/larsks/undocker/
  * docker cp 命令
 
+### programming docker  compile docker
+ * https://docs.docker.com/opensource/project/set-up-dev-env/
+ * https://github.com/kubernetes/kubernetes/tree/master/build
+
 ### Docker security problem
  * http://integratedcode.us/2015/10/13/user-namespaces-have-arrived-in-docker/
 https://integratedcode.us/2016/04/08/user-namespaces-sharing-the-docker-unix-socket/
@@ -178,6 +182,10 @@ docker-machine create \
  * http://kubernetes.io/docs/user-guide/volumes/
  * http://dockone.io/article/1153 比较 borg omega
  * http://blog.kubernetes.io/2015/06/the-distributed-system-toolkit-patterns.html
+
+### compile kubernetes build kubernetes
+ * https://docs.docker.com/opensource/project/set-up-dev-env/
+ * https://github.com/kubernetes/kubernetes/tree/master/build
 
 ### comparison 比较
  * http://www.nextplatform.com/2015/09/15/kubernetes-has-a-ways-to-go-to-scale-like-google-mesos/
