@@ -595,6 +595,25 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * http://www.toptal.com/python/interview-questions
  * https://segmentfault.com/a/1190000000618513
 
+## programming paradigms 编程范式
+https://en.wikipedia.org/wiki/Comparison_of_programming_paradigms
+结构化编程
+Structured programming
+过程化编程; 过程式编程
+Procedural programming
+Procedural programming languages are also imperative languages, because they make explicit references to the state of the execution environment.
+In logic programming, a program is a set of premises, and computation is performed by attempting to prove candidate theorems. From this point of view, logic programs are declarative, focusing on what the problem is, rather than on how to solve it.
+Functional
+函数式编程
+命令式编程
+Imperative
+Event-driven including time driven 事件驱动式编程
+Object-oriented
+面向对象编程
+Declarative
+声明式编程
+logic paradigm
+逻辑式编程
 ## haskell functional programming
  * http://blog.csdn.net/on_1y/article/details/8572673#sec-1
  * https://en.wikipedia.org/wiki/Monad_%28functional_programming%29
