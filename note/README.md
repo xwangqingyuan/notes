@@ -595,6 +595,11 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * http://www.toptal.com/python/interview-questions
  * https://segmentfault.com/a/1190000000618513
 
+## haskell functional programming
+ * http://blog.csdn.net/on_1y/article/details/8572673#sec-1
+ * https://en.wikipedia.org/wiki/Monad_%28functional_programming%29
+ * http://stackoverflow.com/questions/18808258/what-does-the-just-syntax-mean-in-haskell
+
 ## java
 ### maven
  * docker 安装 https://github.com/carlossg/docker-maven/blob/8ab542b907e69c5269942bcc0915d8dffcc7e9fa/jdk-8/Dockerfile
