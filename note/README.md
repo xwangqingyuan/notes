@@ -596,6 +596,7 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * https://segmentfault.com/a/1190000000618513
 
 ## programming paradigms 编程范式
+
 https://en.wikipedia.org/wiki/Comparison_of_programming_paradigms
 结构化编程
 Structured programming
