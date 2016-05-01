@@ -106,8 +106,13 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
  * http://www.codetails.com/2013/06/25/automate-orchestrate-azure-deployment/
  * http://www.theregister.co.uk/2015/04/20/microsoft_azure_service_fabric/ 声明编排
  * http://www.cnblogs.com/redmoon/archive/2015/04/23/4452111.html Service Fabric
- 
+
 ## PaaS 
+## solution 架构 解决方案
+ * http://www.cloudcomputingpatterns.org/Static_Workload  
+ * http://www.rightscale.com/blog/enterprise-cloud-strategies/identifying-workloads-cloud  
+ * solution 架构 https://msdn.microsoft.com/dn630664
+
 ### 平台云比较
  * http://www.chinacloud.cn/show.aspx?id=20204&cid=14
  * Solum 流程
@@ -727,3 +732,11 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
 ## 客户沟通技巧
  * http://zhidao.baidu.com/link?url=J7QM6hwwlOKnnuBkGvW4_AZcA_A8CORk48nFkEcbqcMhgyteUOCj3k-u5HJWi6M19shXwB4tzef40MJkrWgCWa
  * http://zhidao.baidu.com/link?url=gjeUkULSWuwnuQPO_qa2SsJzz9_55B65lHvrq5WwuYgnu7MWAqesxtg3uJ6GvWmGzORS6v0bhln3vAMtbtO7_5ng83pd2tKDt20WEZLdWdS
+
+# statistics 统计学
+## http://ec.europa.eu/eurostat/statistics-explained/index.php/Category:Glossary
+graph duration 
+accounting period/reporting period 会计期 报告期 
+basic period/reference period 参考期 统计期 基准期
+sampling frequency 采样频率 sampling rate 采样速率 sample period 采样周期 sampling cycle
+observation period observation duration 观察期
