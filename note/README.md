@@ -733,6 +733,15 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
  * http://zhidao.baidu.com/link?url=J7QM6hwwlOKnnuBkGvW4_AZcA_A8CORk48nFkEcbqcMhgyteUOCj3k-u5HJWi6M19shXwB4tzef40MJkrWgCWa
  * http://zhidao.baidu.com/link?url=gjeUkULSWuwnuQPO_qa2SsJzz9_55B65lHvrq5WwuYgnu7MWAqesxtg3uJ6GvWmGzORS6v0bhln3vAMtbtO7_5ng83pd2tKDt20WEZLdWdS
 
+# software tools 软件工具  
+## screen recorder 录屏软件  
+### 最好用的抓屏
+ * apowersoft screen recorder
+### 开源软件  
+ * http://www.opensourcesoftwaredirectory.com/Utilities/Screen-capture
+ * http://elearningindustry.com/top-10-free-camtasia-studio-alternatives
+ * http://www.shoutmeloud.com/camtasia-alternatives-free-windwows-mac.html
+
 # statistics 统计学
 ## http://ec.europa.eu/eurostat/statistics-explained/index.php/Category:Glossary
 graph duration 
