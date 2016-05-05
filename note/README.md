@@ -263,6 +263,13 @@ docker-machine create \
  * http://cloudinit.readthedocs.org/en/latest/ 通用的配置云主机的脚本
  * windows 安装软件 http://www.bubuko.com/infodetail-705509.html  https://cloudbase.it/cloudbase-init/ https://github.com/openstack/cloudbase-init
 
+### murano 应用目录
+ * https://wiki.openstack.org/wiki/Murano/ApplicationCatalog
+ * https://wiki.openstack.org/wiki/Murano
+
+### Monasca 监控服务
+ * https://wiki.openstack.org/wiki/Monasca
+ * https://wiki.openstack.org/wiki/Monasca
 
 ### neutron 网络
 
