@@ -593,6 +593,13 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
 ## coding programming online test
  * http://www.pskills.org/cinterview.jsp
 
+## data generator 数据生成  
+ * https://pypi.python.org/pypi/fake-factory
+ * http://www.json-generator.com/
+ * https://www.mockaroo.com/
+ * http://www.generatedata.com/
+ * http://c2.com/cgi/wiki?TestDataGenerator
+
 ## Python
 ### 学习
  * http://www.jb51.net/article/33991.htm
