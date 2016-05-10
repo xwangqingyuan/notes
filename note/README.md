@@ -486,6 +486,10 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 #### 图数据库设计模式
  * 如何决定一个对象是实体还是关系：原则1:两个实体之间同一类关系只能发生一次，所以只有有没有关系，没有多次关系纪录。关系不会单独持久化，只会在实体中持久化。被动关系不需要在非聚合根实体中持久化，而只需要在聚合根持久化主动方聚合根和统计结果。
 
+# desktop skills 桌面操作技巧
+## mac osx ios
+### 行首，行尾，上下翻页 fn+left fn+right fn+up fn+down
+
 # 著名网站famous sites
 ## 5 famous community
 https://www.quora.com/topic/Docker
@@ -685,6 +689,12 @@ sudo find /var -name *.xml -type f | sudo xargs grep jenkins1
  * 替换sources.list 可使用/或%只要文本中不出现即可
 ```
 sudo sed -i "s%archive.ubuntu.com%mirrors.aliyun.com%g" /etc/apt/sources.list
+```
+### sed
+```
+sed -i "3i nameserver 114.114.114.114" /etc/resolv.conf
+sed -i 3d /etc/resolv.conf
+删除文件行，插入文件行
 ```
 # markup language 标签语言
 ## markdown
