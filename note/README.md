@@ -375,6 +375,12 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  *  base boxes http://www.vagrantbox.es/
 
 # design prinsipals
+## A/B Test A/B测试
+ * 冒烟测试（smoke test）、可用性测试（sanity test）和回归测试（regression test）、灰度发布、灰度放量
+ * http://martinfowler.com/bliki/BlueGreenDeployment.html
+ * http://martinfowler.com/bliki/CanaryRelease.html
+ * http://blog.christianposta.com/deploy/blue-green-deployments-a-b-testing-and-canary-releases/ canary deployments
+
 ## Service Design principals
  * https://github.com/kubernetes/kubernetes/blob/master/docs/design/principles.md
  * https://en.wikipedia.org/wiki/Service_level_objective
