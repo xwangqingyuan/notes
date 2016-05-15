@@ -229,6 +229,7 @@ docker-machine create \
  * https://github.com/kubernetes/heapster
  * http://stackoverflow.com/questions/33749911/a-combination-for-monitoring-system-for-container-grafanaheapsterinfluxdbcad
  * https://github.com/grafana/grafana  http://grafana.org/  http://www.dockone.io/article/569
+### tracer &&monitorin
 
 
 ## openstack  
