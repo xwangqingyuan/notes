@@ -237,8 +237,13 @@ docker-machine create \
  * http://blog.csdn.net/zhanlijun/article/details/13169771
  * http://static.googleusercontent.com/external_content/untrusted_dlcp/research.google.com/zh-CN//pubs/archive/36356.pdf
  * https://github.com/openzipkin/zipkin
+  * https://twitter.github.io/zipkin/Architecture.html
+  * 
  * https://golanglibs.com/top?q=dapper
  * https://github.com/SpirentOrion/trace
+
+### paas integration
+ * https://github.com/fabric8io/fabric8
 
 
 ## openstack  
@@ -357,6 +362,9 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * http://www.tuicool.com/articles/jEF3iub
  * https://github.com/openshift/openshift-pep/blob/master/openshift-pep-013-openshift-3.md
  * https://github.com/openshift/origin/blob/master/docs/openshift_model.md
+
+### marketplace
+ * https://marketplace.openshift.com/
 
 
 
