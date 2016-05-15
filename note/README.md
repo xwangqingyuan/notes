@@ -229,7 +229,14 @@ docker-machine create \
  * https://github.com/kubernetes/heapster
  * http://stackoverflow.com/questions/33749911/a-combination-for-monitoring-system-for-container-grafanaheapsterinfluxdbcad
  * https://github.com/grafana/grafana  http://grafana.org/  http://www.dockone.io/article/569
-### tracer &&monitorin
+### tracer &&monitoring
+ * https://www.weave.works/blog/
+ * https://github.com/weaveworks/scope
+### dapper trace
+ * http://blog.csdn.net/zhanlijun/article/details/13169771
+ * http://static.googleusercontent.com/external_content/untrusted_dlcp/research.google.com/zh-CN//pubs/archive/36356.pdf
+ * https://github.com/openzipkin/zipkin
+ * https://golanglibs.com/top?q=dapper
 
 
 ## openstack  
