@@ -202,6 +202,7 @@ docker-machine create \
  * start order https://github.com/kubernetes/kubernetes/issues/1589
  * start order https://github.com/kubernetes/kubernetes/issues/2385
 
+
 ### kubectl CLI
  * http://kubernetes.io/docs/user-guide/kubectl-overview/
  * 
@@ -259,6 +260,10 @@ docker-machine create \
 
 ### ironic bare-metal provisioning
  * https://www.mirantis.com/blog/bare-metal-provisioning-with-openstack-cloud/
+
+### compare with vmware
+ * http://www.slideshare.net/mirantis/how-to-compare-vmware-and-openstack
+ * https://www.mirantis.com/blog/cloud-prizefight-vmware-vs-openstack/
 
 ### Openstack 架构
  * http://www.slideshare.net/mirantis/openstack-architecture-43160012
