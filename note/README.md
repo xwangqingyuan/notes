@@ -202,6 +202,17 @@ docker-machine create \
  * start order https://github.com/kubernetes/kubernetes/issues/1589
  * start order https://github.com/kubernetes/kubernetes/issues/2385
 
+### kubernetes storage
+ * https://docs.openshift.com/enterprise/3.1/install_config/persistent_storage/persistent_storage_ceph_rbd.html
+ * https://access.redhat.com/documentation/en/openshift-enterprise/3.1/installation-and-configuration/chapter-14-configuring-persistent-storage
+ * https://access.redhat.com/documentation/en/openshift-enterprise/3.1/installation-and-configuration/chapter-14-configuring-persistent-storage#nfs-reclaiming-resources
+ * http://www.slideshare.net/kubecon/kubecon-eu-2016-kubernetes-storage-101
+ * https://docs.google.com/spreadsheets/d/14-DEUm1HEHLn9yOEBHq9xxR6iZWdO4fYuluNClgEDYw/htmlview
+ * https://keithtenzer.com/2015/08/20/openshift-v3-unlocking-the-power-of-persistent-storage/
+ * http://accelazh.github.io/kubernetes/Play-With-Kubernetes-On-CentOS-7
+ * https://github.com/kubernetes/kubernetes/pull/12502
+ * https://github.com/kubernetes/kubernetes/issues/12338
+ * https://huaminchen.wordpress.com/2015/04/08/ceph-rbd-as-persistent-storage-for-kubernetes/
 
 ### kubectl CLI
  * http://kubernetes.io/docs/user-guide/kubectl-overview/
@@ -267,6 +278,12 @@ docker-machine create \
 
 ### Openstack 架构
  * http://www.slideshare.net/mirantis/openstack-architecture-43160012
+
+### compare openstack vmware
+ * https://cloudarchitectmusings.com/2013/06/24/openstack-for-vmware-admins-nova-compute-with-vsphere-part-1/
+ * https://cloudpundit.com/2012/04/06/ecosystems-in-conflict-amazon-vs-vmware-and-openstak/
+ * http://www.tomsitpro.com/articles/private-cloud-providers-comparison,2-899.html
+ * https://www.mirantis.com/blog/cloud-prizefight-vmware-vs-openstack/
 
 ### Openstack 子项目
  * http://www.openstack.org/software/project-navigator/
