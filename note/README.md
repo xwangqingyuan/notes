@@ -126,6 +126,7 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
  * https://www.infoq.com/research/api-documentation
  * https://github.com/apidoc/apidoc
  * http://www.mattsilverman.com/2013/02/tools-to-generate-beautiful-api-documentation.html
+ * https://github.com/swagger-api  https://github.com/swagger-api
 
 ### REST API guideline
  * http://martinfowler.com/articles/richardsonMaturityModel.html
