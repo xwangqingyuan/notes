@@ -119,6 +119,17 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
  * http://www.alauda.cn/docs/
  * http://docs.daocloud.io/api/?shell#
  * dataman
+
+### tooling comparison
+ * http://apievangelist.com/2015/06/06/comparison-of-automatic-api-code-generation-tools-for-swagger/
+ * http://www.csdn.net/article/2013-02-20/2814189-API_DOC_TOOLS
+ * https://www.infoq.com/research/api-documentation
+ * https://github.com/apidoc/apidoc
+ * http://www.mattsilverman.com/2013/02/tools-to-generate-beautiful-api-documentation.html
+
+### REST API guideline
+ * http://martinfowler.com/articles/richardsonMaturityModel.html
+ * http://www.iana.org/assignments/link-relations/link-relations.xhtml
  
 ## azure  
  * 编排 http://windowsitpro.com/azure/orchestration-comes-microsoft-azure
