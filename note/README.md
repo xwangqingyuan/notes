@@ -101,6 +101,25 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 
 # cloud 云计算
 
+## API comparison
+### rancher API
+ * http://docs.rancher.com/rancher/latest/en/api/  
+
+### kubernetes API
+ * http://kubernetes.io/docs/api/
+
+### docker API
+ * https://docs.docker.com/engine/reference/api/docker_remote_api_v1.23/
+
+### openstack API
+ * http://developer.openstack.org/api-ref.html
+
+### alaud API
+ * http://doc.tenxcloud.com/doc/v1/api/index.html
+ * http://www.alauda.cn/docs/
+ * http://docs.daocloud.io/api/?shell#
+ * dataman
+ 
 ## azure  
  * 编排 http://windowsitpro.com/azure/orchestration-comes-microsoft-azure
  * http://www.codetails.com/2013/06/25/automate-orchestrate-azure-deployment/
