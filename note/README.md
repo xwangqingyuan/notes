@@ -130,7 +130,11 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 
 ### REST API guideline
  * http://martinfowler.com/articles/richardsonMaturityModel.html
- * http://www.iana.org/assignments/link-relations/link-relations.xhtml
+ * http://www.iana.org/assignments/link-relations/link-relations.xhtml  
+#### REST API HTTP methods
+ * https://tools.ietf.org/html/rfc6902#page-12
+ * https://tools.ietf.org/html/rfc5789
+ * http://williamdurand.fr/2014/02/14/please-do-not-patch-like-an-idiot/
  
 ## azure  
  * 编排 http://windowsitpro.com/azure/orchestration-comes-microsoft-azure
