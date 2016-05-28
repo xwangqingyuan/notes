@@ -368,6 +368,10 @@ http://docs.openstack.org/developer/swift/replication_network.html#dedicated-rep
 http://docs.openstack.org/arch-design/multi-site-architecture.html
 
 ### Cinder  
+#### 本地存储优化
+ * http://cloudgeekz.com/71/how-to-setup-openstack-to-use-local-disks-for-instances.html  
+ * http://docs.ceph.com/docs/master/rbd/rbd-openstack/  
+
 #### storage
  * http://www.techrepublic.com/blog/the-enterprise-cloud/block-level-storage-vs-file-level-storage-a-comparison/
  * http://docs.openstack.org/openstack-ops/content/storage_decision.html
@@ -386,7 +390,8 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * windows 镜像准备 http://www.ibm.com/developerworks/cn/cloud/library/cl-openstack-images/index.html
  * 镜像下载链接 http://docs.openstack.org/image-guide/index.html
  * 保存导出镜像 http://zqfan.github.io/openstack/2014/05/20/export-openstack-instance-to-local-image/
- * 保存到初镜像 openstack image save
+ * 保存到初镜像 openstack image save  
+
 ### Trove 数据库 
  * 支持的数据库 https://github.com/openstack/trove/tree/master/trove/templates
 
