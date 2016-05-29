@@ -1,0 +1,360 @@
+# 轻元DCOS应用开发接口文档
+swagger: '2.0'
+
+# This is your document metadata
+info:
+  version: "1.0.0"
+  title: Qingyuan DCOS API
+
+# Describe your paths here
+basePath: /api/v1
+paths:
+  # This is a path endpoint. Change it.
+  /tokens:
+    # This is a HTTP operation
+    post:
+      # Describe this verb here. Note: you can use markdown
+      description: |
+        获取调用API的token.
+      # This is array of :
+      operationId: createToken
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: user name and password
+          required: true
+          schema:
+            $ref: '#/definitions/Token'
+      responses:
+        "default":
+          description: Success
+          schema:
+            $ref: '#/definitions/Token'
+  /objects:
+    get:
+      description: |
+        查找集群或列出所有对象。
+      operationId: listObjects
+      produces:
+        - application/json
+      responses:
+        "default":
+          description: Success
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/BaseObject'
+  /clusters:
+    get:
+      description: |
+        查找集群或列出所有集群。
+      operationId: listClusters
+      produces:
+        - application/json
+      responses:
+        "default":
+          description: Success
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Cluster'
+    post:
+      description: |
+        创建一个集群。
+      operationId: createCluster
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: 集群属性。
+          required: true
+          schema:
+            $ref: '#/definitions/Cluster'
+      responses:
+        "default":
+          description: Success
+  /clusters/{id}:
+    get:
+      description: |
+        查看一个集群。
+      operationId: getCluster
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: id
+          description: id
+          required: true
+          type: string
+      responses:
+        "default":
+          description: Success
+          schema:
+            $ref: '#/definitions/Cluster'
+    put:
+      description: |
+        完整更新一个集群。
+      operationId: updateCluster
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: id
+          description: id
+          required: true
+          type: string
+        - in: body
+          name: body
+          description: 集群属性。
+          required: true
+          schema:
+            $ref: '#/definitions/Cluster'
+      responses:
+        "default":
+          description: Success
+          schema:
+            $ref: '#/definitions/Cluster'
+    delete:
+      description: |
+        删除集群。
+      operationId: deleteCluster
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: id
+          description: id
+          required: true
+          type: string
+      responses:
+        "default":
+          description: Success
+    patch:
+      description: |
+        差分更新一个集群。
+      operationId: patchCluster
+      produces:
+        - application/json-patch+json
+      parameters:
+        - in: path
+          name: id
+          description: id
+          required: true
+          type: string
+        - in: body
+          name: body
+          description: 集群属性。
+          required: true
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/PatchOperation'
+      responses:
+        "default":
+          description: Success
+  /clusters/{clusterId}/services:
+    get:
+      description: |
+        查找或列出一个集群中的所有服务。
+      operationId: listServices
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: clusterId
+          description: 集群id
+          required: true
+          type: string
+      responses:
+        "default":
+          description: Success
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Service'
+    post:
+      description: |
+        创建一个服务。
+      operationId: createService
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: clusterId
+          description: 集群id
+          required: true
+          type: string
+        - in: body
+          name: body
+          description: 服务属性。
+          required: true
+          schema:
+            $ref: '#/definitions/Service'
+      responses:
+        "default":
+          description: Success
+  /clusters/{clusterId}/services/{id}:
+    get:
+      description: |
+        查看一个服务。
+      operationId: getService
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: clusterId
+          description: 集群id
+          required: true
+          type: string
+        - in: path
+          name: id
+          description: id
+          required: true
+          type: string
+      responses:
+        "default":
+          description: Success
+          schema:
+            $ref: '#/definitions/Service'
+    put:
+      description: |
+        完整更新一个服务。
+      operationId: updateService
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: clusterId
+          description: 集群id
+          required: true
+          type: string
+        - in: path
+          name: id
+          description: id
+          required: true
+          type: string
+        - in: body
+          name: body
+          description: 服务属性。
+          required: true
+          schema:
+            $ref: '#/definitions/Service'
+      responses:
+        "default":
+          description: Success
+          schema:
+            $ref: '#/definitions/Service'
+    delete:
+      description: |
+        删除服务。
+      operationId: deleteService
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: clusterId
+          description: 集群id
+          required: true
+          type: string
+        - in: path
+          name: id
+          description: id
+          required: true
+          type: string
+      responses:
+        "default":
+          description: Success
+    patch:
+      description: |
+        差分更新一个服务。
+      operationId: patchService
+      produces:
+        - application/json-patch+json
+      parameters:
+        - in: path
+          name: clusterId
+          description: 集群id
+          required: true
+          type: string
+        - in: path
+          name: id
+          description: id
+          required: true
+          type: string
+        - in: body
+          name: body
+          description: 服务属性。
+          required: true
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/PatchOperation'
+      responses:
+        "default":
+          description: Success
+definitions:
+  BaseObject:
+    description: 基本对象
+    type: object
+    properties:
+      name:
+        type: string
+      id:
+        type: string
+      objectType:
+        type: string
+      description:
+        type: string
+  PatchOperation:
+    description: 一个用HTTP的PATCH方法更新对象时的操作
+    type: object
+    properties:
+      op:
+        type: string
+      path:
+        type: string
+      value:
+        type: string
+  Token:
+    description: 访问API的凭证
+    type: object
+    properties:
+      name:
+        type: string
+      id:
+        type: string
+      objectType:
+        type: string
+      description:
+        type: string
+      validBy:
+        type: string
+  Cluster:
+    description: 一个集群
+    type: object
+    properties:
+      name:
+        type: string
+      id:
+        type: string
+      objectType:
+        type: string
+      description:
+        type: string
+      validBy:
+        type: string
+  Service:
+    description: 一个服务
+    type: object
+    properties:
+      name:
+        type: string
+      id:
+        type: string
+      objectType:
+        type: string
+      description:
+        type: string
