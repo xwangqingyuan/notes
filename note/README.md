@@ -662,6 +662,11 @@ http://baike.baidu.com/link?url=MRD3fyaa9_kNAf6-p9NSu4bU_UuO1YvDL6O5vsUqe_PFxYmN
 
 
 ### openssl
+#### ssl protocol illustration
+ * http://www.cisco.com/c/en/us/support/docs/security-vpn/secure-socket-layer-ssl/116181-technote-product-00.html
+ * http://www.ruanyifeng.com/blog/2014/09/illustration-ssl.html
+ * https://tools.ietf.org/html/rfc5246
+ * http://www.cisco.com/c/en/us/support/docs/security-vpn/secure-socket-layer-ssl/116181-technote-product-00.html
 
 # programming coding 编程
 ## coding styles
