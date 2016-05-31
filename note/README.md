@@ -99,6 +99,9 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
  * http://flink.apache.org/
  * http://www.zhihu.com/question/30151872
 
+# books
+ * https://en.wikipedia.org/wiki/S._%28Dorst_novel%29
+
 # cloud 云计算
 
 ## API comparison
