@@ -173,6 +173,11 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 ### 从镜像导出Dockerfile的方法
  * undocker https://github.com/larsks/undocker/
  * docker cp 命令
+### multiple processes
+ * http://tech.paulcz.net/2014/12/multi-process-docker-images-done-right/
+ * http://phusion.github.io/baseimage-docker/
+ * http://blog.chazomatic.us/2014/06/18/multiple-processes-inside-docker/
+ * https://valdhaus.co/writings/docker-misconceptions/
 
 ### programming docker  compile docker
  * https://docs.docker.com/opensource/project/set-up-dev-env/
@@ -228,7 +233,17 @@ docker-machine create \
  * http://www.infoq.com/cn/articles/Kubernetes-system-architecture-introduction?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global 
  * http://kubernetes.io/docs/user-guide/volumes/
  * http://dockone.io/article/1153 比较 borg omega
- * http://blog.kubernetes.io/2015/06/the-distributed-system-toolkit-patterns.html
+ * http://blog.kubernetes.io/2015/06/the-distributed-system-toolkit-patterns.html  
+#### kubernetes paas
+ * https://medium.com/@shijuvar/the-evolution-of-cloud-paas-to-container-ecosystem-1943a335c25b#.7gwiv5dc9
+ * http://kubernetes.io/docs/whatisk8s/
+ * https://github.com/kubernetes/kubernetes/blob/master/docs/whatisk8s.md#why-do-i-need-kubernetes-and-what-can-it-do
+ * https://www.ctl.io/developers/blog/post/what-is-kubernetes-and-how-to-use-it/
+ * https://www.sdxcentral.com/articles/news/why-docker-and-google-kubernetes-are-like-paas-done-right/2015/08/
+#### microservice platform
+ * http://wildfly.org/about/
+ * http://deis.io/overview/
+ * http://www.csdn.net/article/2015-09-28/2825811
 
 ### compile kubernetes build kubernetes
  * https://docs.docker.com/opensource/project/set-up-dev-env/
