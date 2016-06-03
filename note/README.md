@@ -193,6 +193,14 @@ http://man7.org/linux/man-pages/man5/subuid.5.html
  * http://www.dockone.io/article/1169
  * 
 
+### docker dpdk docker network
+ * http://developerblog.redhat.com/2015/06/02/can-you-run-intels-data-plane-development-kit-dpdk-in-a-docker-container-yep/
+ * https://forums.docker.com/t/dpdk-inside-container/231/6
+ * http://developerblog.redhat.com/2015/06/02/can-you-run-intels-data-plane-development-kit-dpdk-in-a-docker-container-yep/
+ * https://github.com/openvswitch/ovs/commit/ec8f0f0c24c96be434289ac18d6d064fad378827
+ * http://stackoverflow.com/questions/19077996/how-to-run-intel-dpdk-application-in-a-virtual-machine
+ * http://dpdk.org/ml/archives/dev/2015-April/016114.html
+
 ### Docker Registry 镜像仓库
  * 中文 Docker auth http://www.tuicool.com/articles/UrMFBn
  * Docker p2p download distribution http://www.tuicool.com/articles/Abia2u2
