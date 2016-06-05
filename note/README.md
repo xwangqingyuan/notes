@@ -256,6 +256,9 @@ docker-machine create \
  * http://deis.io/overview/
  * http://www.csdn.net/article/2015-09-28/2825811
 
+### petset
+ * https://github.com/kubernetes/kubernetes/pull/18016/files/cc9eb238517a1873f32a55ceb21667ffba21cb7f?short_path=61f4179#diff-61f41798f4bced6e42e45731c1494cee
+ * https://github.com/kubernetes/kubernetes/blob/dae5ac482861382e18b1e7b2943b1b7f333c6a2a/docs/proposals/federation-lite.md
 ### compile kubernetes build kubernetes
  * https://docs.docker.com/opensource/project/set-up-dev-env/
  * https://github.com/kubernetes/kubernetes/tree/master/build
