@@ -243,6 +243,7 @@ docker-machine create \
 ### concepts 概念 
  * http://www.infoq.com/cn/articles/Kubernetes-system-architecture-introduction?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global 
  * http://kubernetes.io/docs/user-guide/volumes/
+  * https://github.com/kubernetes/kubernetes/blob/bf0a5e9fac1baab23a1db007bc798e4f9630f4f2/docs/proposals/volume-selectors.md
  * http://dockone.io/article/1153 比较 borg omega
  * http://blog.kubernetes.io/2015/06/the-distributed-system-toolkit-patterns.html  
 #### kubernetes paas
