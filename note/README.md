@@ -864,6 +864,9 @@ links
 
 ### calico
  * http://www.tuicool.com/articles/quUfAjJ
+
+### SNAT DNAT REDIRECT
+ * http://serverfault.com/questions/119365/what-is-the-difference-between-a-source-nat-destination-nat-and-masquerading
  
 
 1. dig
