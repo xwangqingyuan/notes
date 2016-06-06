@@ -179,6 +179,11 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
  * http://blog.chazomatic.us/2014/06/18/multiple-processes-inside-docker/
  * https://valdhaus.co/writings/docker-misconceptions/
 
+### docker network
+#### contiv 
+ * http://blogs.cisco.com/datacenter/project-contiv  
+ * https://github.com/contiv/netplugin  
+
 ### programming docker  compile docker
  * https://docs.docker.com/opensource/project/set-up-dev-env/
  * https://github.com/kubernetes/kubernetes/tree/master/build
