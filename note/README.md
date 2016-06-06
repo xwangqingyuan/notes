@@ -345,6 +345,10 @@ docker-machine create \
  * documents http://docs.openstack.org/
  * APIs http://developer.openstack.org/api-ref.html
  * 
+
+### 配置模版格式
+ * https://github.com/toml-lang/toml/blob/master/examples/example-v0.4.0.toml  类似ini的模版格式
+
 ### openstack HA
  * https://www.mirantis.com/blog/ha-platform-components-mysql-rabbitmq/
 
