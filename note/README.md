@@ -520,6 +520,7 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
    * http://doc.appadhoc.com/firstExp/androidCode.html
    * http://www.csdn.net/article/2015-04-27/2824564
    * https://www.baidu.com/s?wd=Optimizely&rsv_spt=1&rsv_iqid=0xda45047b000354db&issp=1&f=3&rsv_bp=0&rsv_idx=2&ie=utf-8&rqlang=&tn=baiduhome_pg&rsv_enter=0
+   * https://www.optimizely.com/
 
 ## Service Design principals
  * https://github.com/kubernetes/kubernetes/blob/master/docs/design/principles.md
@@ -549,6 +550,11 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
   - http://eventuate.io/exampleapps.html
   - http://www.cqrs.nu/Faq
   - http://blog.jonathanoliver.com/cqrs-sagas-with-event-sourcing-part-i-of-ii/
+ * 微服务框架
+  *  https://www.infoq.com/news/2012/09/Eureka
+  *  https://github.com/Netflix/eureka
+  *  https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture/  服务发现概念
+  *  http://www.infoq.com/cn/articles/basis-frameworkto-implement-micro-service  微服务框架介绍
 
 ## 架构参考 reference architecture  
 ### 电子商务 Ecommerce
