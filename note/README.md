@@ -262,8 +262,14 @@ docker-machine create \
 
 ### federation ubernetes federation-lite
  * https://github.com/kubernetes/kubernetes/blob/dae5ac482861382e18b1e7b2943b1b7f333c6a2a/docs/proposals/federation-lite.md   
- * 
+ * https://github.com/kubernetes/kubernetes/blob/release-1.0/docs/admin/networking.md  kubernetes network model k8s网络模型
 
+### AZ zones regions 可用区
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html
+https://cloud.google.com/compute/docs/regions-zones/global-regional-zonal-resources#globalresources
+https://kimizhang.wordpress.com/2013/08/26/openstack-zoning-regionavailability-zonehost-aggregate/
+http://kubernetes.io/docs/admin/multi-cluster/  kubernetes multiple zones
+http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deployments/  terraform
 ### multiple platforms
  * https://github.com/kubernetes/kubernetes/pull/26863/commits/fc9f0ce0ca32fbb7f8da1fcff57393357be04ae4
 
@@ -348,6 +354,7 @@ docker-machine create \
 
 ### 配置模版格式
  * https://github.com/toml-lang/toml/blob/master/examples/example-v0.4.0.toml  类似ini的模版格式
+ * http://kubernetes.io/docs/user-guide/kubectl/kubectl_annotate/  --overwrite 在命令行覆盖配置文件中的属性
 
 ### openstack HA
  * https://www.mirantis.com/blog/ha-platform-components-mysql-rabbitmq/
