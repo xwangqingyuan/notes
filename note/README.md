@@ -264,6 +264,9 @@ docker-machine create \
  * https://github.com/kubernetes/kubernetes/blob/dae5ac482861382e18b1e7b2943b1b7f333c6a2a/docs/proposals/federation-lite.md   
  * 
 
+### multiple platforms
+ * https://github.com/kubernetes/kubernetes/pull/26863/commits/fc9f0ce0ca32fbb7f8da1fcff57393357be04ae4
+
 ### compile kubernetes build kubernetes
  * https://docs.docker.com/opensource/project/set-up-dev-env/
  * https://github.com/kubernetes/kubernetes/tree/master/build
