@@ -650,6 +650,14 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 # multimedia 多媒体
 ## 编解码格式
  * http://zhidao.baidu.com/question/371893045.html
+## 视频直播架构
+ * http://highscalability.com/blog/2010/3/16/justintvs-live-video-broadcasting-architecture.html  
+ * http://highscalability.com/youtube-architecture
+ * https://support.brightcove.com/en/video-cloud/training-videos/video-cloud-architecture-overview
+
+## big data streaming architecture
+ * http://www.confluent.io/blog/stream-data-platform-1/
+ * 
 
 # 著名网站famous sites
 ## 5 famous community
