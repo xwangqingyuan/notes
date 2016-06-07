@@ -654,6 +654,7 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * http://highscalability.com/blog/2010/3/16/justintvs-live-video-broadcasting-architecture.html  
  * http://highscalability.com/youtube-architecture
  * https://support.brightcove.com/en/video-cloud/training-videos/video-cloud-architecture-overview
+ * https://code.facebook.com/posts/1653074404941839/under-the-hood-broadcasting-live-video-to-millions/
 
 ## big data streaming architecture
  * http://www.confluent.io/blog/stream-data-platform-1/
