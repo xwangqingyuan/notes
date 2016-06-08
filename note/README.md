@@ -575,6 +575,9 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 ### dubbo
  * https://github.com/alibaba/dubbo
  * http://www.oschina.net/p/dubbo
+ * dubbo hsf 远程RPC框架
+ * http://www.zhihu.com/question/30884501?sort=created  
+
 ### ICE
  * http://blog.csdn.net/anghlq/article/details/6682341
  * https://en.wikipedia.org/wiki/Internet_Communications_Engine
@@ -655,6 +658,34 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * http://highscalability.com/youtube-architecture
  * https://support.brightcove.com/en/video-cloud/training-videos/video-cloud-architecture-overview
  * https://code.facebook.com/posts/1653074404941839/under-the-hood-broadcasting-live-video-to-millions/
+
+# Real time bidding 实时竞价广告
+https://cloud.google.com/solutions/real-time-bidder-solution-for-google-cloud-platform#third-party_database_solution
+http://www.slideshare.net/bigdatagurus_meetup/what-enterprises-can-learn-from-real-time-bidding-rtb
+http://stackoverflow.com/questions/4360134/what-software-architecture-would-you-need-to-build-a-realtime-bidding-ad-excha
+http://www.adpushup.com/blog/the-ultimate-guide-to-real-time-bidding/
+https://www.quora.com/Whats-the-best-NoSQL-database-for-building-a-Real-time-Bidding-ad-platform
+## RRD   round-robin database tool) aims to handle time series data like network bandwidth, temperatures, CPU https://en.wikipedia.org/wiki/RRDtool
+
+###实时金融交易平台
+http://www.cisco.com/c/en/us/td/docs/solutions/Verticals/Trading_Floor_Architecture-E.html
+https://en.wikipedia.org/wiki/Financial_Information_eXchange
+https://www.arista.com/assets/data/pdf/JointPapers/Arista_Solarflare_Low_Latency_10GbE.pdf
+
+###实时多用户网络游戏 online game
+multiplayer-games
+http://www.slideshare.net/josemariasaldana/online-games-traffic-characterization-and-network-support  tcp vs. udp
+http://gamedev.stackexchange.com/questions/431/is-the-tcp-protocol-good-enough-for-real-time-multiplayer-games
+http://gafferongames.com/networking-for-game-programmers/udp-vs-tcp/
+http://wenku.baidu.com/link?url=HOs2rIl5Z4yJj_MpyHeHdijbwWDJM2XnJBH3qeZrOY2udCTCNtXtOAqcbpU6Nhs69W5N6ZfLBYX8hKDdZVr4xHgjVhNBkftGgst4-AT3nLK
+http://dev.dota2.com/showthread.php?t=15261
+https://msdn.microsoft.com/en-us/library/bb742455.aspx
+https://1024monkeys.wordpress.com/2014/04/01/game-servers-udp-vs-tcp/
+
+### UDP load balance
+http://www.austintek.com/LVS/LVS-HOWTO/HOWTO/LVS-HOWTO.UDP.html
+
+
 
 ## big data streaming architecture
  * http://www.confluent.io/blog/stream-data-platform-1/
