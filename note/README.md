@@ -770,6 +770,15 @@ http://baike.baidu.com/link?url=MRD3fyaa9_kNAf6-p9NSu4bU_UuO1YvDL6O5vsUqe_PFxYmN
  * http://www.cnblogs.com/lzjsky/archive/2010/11/14/1877143.html
  * http://stackoverflow.com/questions/1011572/convert-pem-key-to-ssh-rsa-format  
 
+### homomophic
+Homomorphic-Encryption
+http://web.townsendsecurity.com/bid/72771/Homomorphic-Encryption-is-Cool-and-You-Should-NOT-Use-It
+
+format-preserving encryption (FPE) refers to encrypting in such a way that the output (the ciphertext) is in the same format as the input (the plaintext). 
+https://aws.amazon.com/marketplace/pp/B00DC7R7UY/Ref=mkt_wir_porticor
+https://github.com/shaih/HElib
+https://github.com/lducas/FHEW
+
 #### openssh
  * http://sshwindows.sourceforge.net/ windows
  * http://security.stackexchange.com/questions/32768/converting-keys-between-openssl-and-openssh key转换
