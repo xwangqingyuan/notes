@@ -114,6 +114,12 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 ### docker API
  * https://docs.docker.com/engine/reference/api/docker_remote_api_v1.23/
 
+### cloud migration
+http://www.cloudamize.com/cloud-planning-migrating-platform/
+http://www.racemi.com/cloud-migration/
+http://www.corenttech.com/index.html
+http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
+
 ### openstack API
  * http://developer.openstack.org/api-ref.html
 
