@@ -626,6 +626,10 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 # database 数据库
 ## relational database 关系型数据库
 ### mysql  
+#### tidb
+ * http://nosqldb.org/p/563f5780e13823525b000005
+ * https://news.ycombinator.com/item?id=10180503
+ * https://news.ycombinator.com/item?id=10180822
 ### galera cluster
  * 负载均衡 http://galeracluster.com/documentation-webpages/haproxy.html#configuration
  * http://www.gpfeng.com/?p=603  https://mariadb.com/kb/en/mariadb/about-galera-replication/
