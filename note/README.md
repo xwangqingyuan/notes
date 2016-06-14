@@ -921,6 +921,9 @@ sed -i "3i nameserver 114.114.114.114" /etc/resolv.conf
 sed -i 3d /etc/resolv.conf
 删除文件行，插入文件行
 ```
+## systemd
+ * http://www.linuxidc.com/Linux/2014-11/110023.htm
+ * 
 # markup language 标签语言
 ## markdown
  * http://ibruce.info/2013/11/26/markdown/
