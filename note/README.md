@@ -923,7 +923,7 @@ sed -i 3d /etc/resolv.conf
 ```
 ## systemd
  * http://www.linuxidc.com/Linux/2014-11/110023.htm
- * 
+ * https://blog.linuxeye.com/400.html
 # markup language 标签语言
 ## markdown
  * http://ibruce.info/2013/11/26/markdown/
