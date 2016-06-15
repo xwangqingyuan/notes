@@ -717,6 +717,23 @@ http://alternativeto.net/
  * https://hadoop.apache.org/ https://github.com/apache/hadoop
  * http://spark.apache.org/ https://github.com/spark/core
  * https://blog.openshift.com/tag/v3/ https://github.com/openshift/origin
+## good blogs
+Kubernetes blog
+http://blog.kubernetes.io/
+Open Container Initiative news/blog
+https://www.opencontainers.org/news/in-the-news
+Docker blog
+https://blog.docker.com/
+Docker bloger's twitter
+https://twitter.com/jpetazzo
+CoreOS blog
+https://coreos.com/blog/
+Openshift blog
+https://blog.openshift.com/
+架构师网站
+http://martinfowler.com/
+伸缩性网站有些不错的文章
+http://highscalability.com/all-posts/
 ## 5 famous computer-scientists
 marinfowler
 http://martinfowler.com/
