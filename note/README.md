@@ -249,6 +249,11 @@ docker-machine create \
 #### swarm descovery
  * https://docs.docker.com/swarm/discovery/
 
+### docker windows
+ * https://blog.docker.com/2015/08/tp-docker-engine-windows-server-2016/
+ * https://msdn.microsoft.com/virtualization/windowscontainers/containers_welcome
+ * https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server
+ * https://msdn.microsoft.com/en-us/virtualization/windowscontainers/about/faq
 
 ## Kubernetes  
 ### concepts 概念 
@@ -402,6 +407,10 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * http://cloudinit.readthedocs.org/en/latest/ 通用的配置云主机的脚本
  * windows 安装软件 http://www.bubuko.com/infodetail-705509.html  https://cloudbase.it/cloudbase-init/ https://github.com/openstack/cloudbase-init
 
+### manila share storage
+ * https://netapp.github.io/openstack-deploy-ops-guide/kilo/content/section_manila-key-concepts.html#manila.share.access_rules
+ * https://netapp.github.io/openstack-deploy-ops-guide/kilo/content/section_manila-deployment-choices.html#d6e3518
+
 ### murano 应用目录
  * https://wiki.openstack.org/wiki/Murano/ApplicationCatalog
  * https://wiki.openstack.org/wiki/Murano
@@ -508,6 +517,12 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 ```
 
 ```
+#### jenkins workflow
+ * https://jenkins.io/doc/pipeline/
+ * https://jenkins.io/blog/2015/07/24/integrating-kubernetes-and-jenkins/
+ * http://www.infoworld.com/article/2834122/application-virtualization/windows-server-is-getting-docker-says-microsoft-and-docker.html
+ * http://fabric8.io/guide/cdelivery.html
+
 ## ceph
  * http://docs.ceph.com/docs/master/architecture/#mapping-pgs-to-osds
  * http://docs.ceph.com/docs/master/rados/operations/pools/
