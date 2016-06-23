@@ -683,6 +683,7 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * http://highscalability.com/youtube-architecture
  * https://support.brightcove.com/en/video-cloud/training-videos/video-cloud-architecture-overview
  * https://code.facebook.com/posts/1653074404941839/under-the-hood-broadcasting-live-video-to-millions/
+ * http://www.ctocio.com/ccnews/19652.html
 
 # Real time bidding 实时竞价广告
 https://cloud.google.com/solutions/real-time-bidder-solution-for-google-cloud-platform#third-party_database_solution
