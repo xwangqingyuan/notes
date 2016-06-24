@@ -737,6 +737,8 @@ http://alternativeto.net/
  * Kubernetes blog http://blog.kubernetes.io/  
  * Open Container Initiative news/blog  https://www.opencontainers.org/news/in-the-news
  * Docker blog https://blog.docker.com/
+ * https://blog.docker.com/category/engineering/docker-releases/
+ * https://github.com/docker/docker/blob/master/ROADMAP.md#14-cluster-capable-engine
  * Docker bloger's twitter  https://twitter.com/jpetazzo
  * CoreOS blog  https://coreos.com/blog/
  * Openshift blog  https://blog.openshift.com/
