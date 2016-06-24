@@ -185,6 +185,8 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
  * http://blog.chazomatic.us/2014/06/18/multiple-processes-inside-docker/
  * https://valdhaus.co/writings/docker-misconceptions/
 
+### coreos rkt
+ * build tool https://coreos.com/blog/rkt-0.10.0-with-new-api-service/
 ### docker network
 #### contiv 
  * http://blogs.cisco.com/datacenter/project-contiv  
