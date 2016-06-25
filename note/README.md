@@ -175,7 +175,8 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
  * docker build
   - docker file reference https://docs.docker.com/engine/reference/builder/
   - Installation 安装 docker https://docs.docker.com/linux/
-  - https://docs.docker.com/linux/step_one/
+  - https://docs.docker.com/linux/step_one
+  - https://docs.docker.com/opensource/project/set-up-dev-env/   构建docker 环境
 ### 从镜像导出Dockerfile的方法
  * undocker https://github.com/larsks/undocker/
  * docker cp 命令
@@ -921,6 +922,12 @@ logic paradigm
   * http://www.114la.com/other/rgb.htm
   * http://tool.ganchang.cn/getcolortool.html
 
+## rust language
+### rust playground
+https://play.rust-lang.org/
+### rust by example
+http://rustbyexample.com/
+
 # linux 
 
 ## /etc/apt/sources.list
@@ -951,6 +958,8 @@ sudo sed -i "s%archive.ubuntu.com%mirrors.aliyun.com%g" /etc/apt/sources.list
 ```
 sed -i "3i nameserver 114.114.114.114" /etc/resolv.conf
 sed -i 3d /etc/resolv.conf
+sed -i 's/Do not change/Do not evet change/' filename
+
 删除文件行，插入文件行
 ```
 ## systemd
@@ -1023,6 +1032,26 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
  * windows forwarding http://serverfault.com/questions/210755/forwarding-rdp-via-a-linux-machine-using-iptables-not-working
  * http://serverfault.com/questions/660035/redhat-iptables-forwarding-to-virtualbox-windows-server-20120-vm-for-rdp
  * http://www.systutorials.com/816/port-forwarding-using-iptables/
+
+# questions and answers debug
+#### go 无法访问目录
+ * golang.org/x/tools/cmd/stringer: unrecognized import path "golang.org/x/tools/cmd/stringer
+ * clone https://github.com/golang/tools 到GOROOT 目录
+
+#### 容器内无法使用SSL curl
+ * curl: (56) SSL read: error:00000000:lib(0):func(0):reason(0), errno 104
+ * https://github.com/docker/docker/issues/2011
+ * 在 curl -fssL 前加 curl --tlsv1 -fssL
+
+#### 无法下载 storage.googleapis.com/golang
+ * 重新下载
+
+#### entrypoint 不起作用
+ * docker: Error response from daemon: rpc error: code = 2 desc = "oci runtime error: exec format error"
+ * 在脚本前加上脚本命令/bin/bash
+ 
+#### build the docker command
+ * docker client 负责命令行提示，只要替换命令行就可以验证
 
 # sales 销售
 ## 客户沟通技巧
