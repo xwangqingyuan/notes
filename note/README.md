@@ -924,9 +924,12 @@ logic paradigm
 
 ## rust language
 ### rust playground
-https://play.rust-lang.org/
+ * https://play.rust-lang.org/
+ * https://github.com/rust-lang/rust
+ * https://github.com/rust-lang/cargo/
 ### rust by example
-http://rustbyexample.com/
+ * http://rustbyexample.com/
+ * https://github.com/rust-lang/rust-by-example
 
 # linux 
 
