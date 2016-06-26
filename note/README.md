@@ -185,7 +185,11 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
  * http://phusion.github.io/baseimage-docker/
  * http://blog.chazomatic.us/2014/06/18/multiple-processes-inside-docker/
  * https://valdhaus.co/writings/docker-misconceptions/
+#### docker centos 7
+```
+docker run --privileged --name mariadb -d -e "container=docker" mariadbcentos:0.5 /usr/sbin/init
 
+```
 ### coreos rkt
  * build tool https://coreos.com/blog/rkt-0.10.0-with-new-api-service/
 ### docker network
@@ -1055,6 +1059,14 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
  
 #### build the docker command
  * docker client 负责命令行提示，只要替换命令行就可以验证
+
+#### 环境变量未设置
+ * TERM environment variable not set.
+ * export TERM=xterm
+
+#### 无法启动systemctl 控制服务
+ * Failed to get D-Bus connection: Operation not permitted
+ * 将镜像启动设置为/usr/sbin/init D-Bus会被自动设置
 
 # sales 销售
 ## 客户沟通技巧
