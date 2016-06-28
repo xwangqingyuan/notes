@@ -288,6 +288,7 @@ docker-machine create \
  * http://tech.comnews.cn/rjzx/2016-05-10/184948.html
  * amalgam8
  * https://www.amalgam8.io/
+ * https://github.com/mfornos/awesome-microservices
 
 ### petset
  * https://github.com/kubernetes/kubernetes/pull/18016/files/cc9eb238517a1873f32a55ceb21667ffba21cb7f?short_path=61f4179#diff-61f41798f4bced6e42e45731c1494cee  
