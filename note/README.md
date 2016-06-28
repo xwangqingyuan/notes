@@ -279,6 +279,15 @@ docker-machine create \
  * http://wildfly.org/about/
  * http://deis.io/overview/
  * http://www.csdn.net/article/2015-09-28/2825811
+ * OpenResty http://hot66hot.iteye.com/blog/2155036
+ * Hystrix 
+ * http://hot66hot.iteye.com/blog/2155036
+ * http://www.infoq.com/cn/news/2013/01/netflix-hystrix-fault-tolerance
+ * Motan
+ * http://www.tuicool.com/articles/qEvENr
+ * http://tech.comnews.cn/rjzx/2016-05-10/184948.html
+ * amalgam8
+ * https://www.amalgam8.io/
 
 ### petset
  * https://github.com/kubernetes/kubernetes/pull/18016/files/cc9eb238517a1873f32a55ceb21667ffba21cb7f?short_path=61f4179#diff-61f41798f4bced6e42e45731c1494cee  
