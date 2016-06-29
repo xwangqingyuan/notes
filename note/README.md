@@ -553,6 +553,10 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * 下载box  https://vagrantcloud.com/boxes/search?utf8=%E2%9C%93&sort=&provider=&q=openshift
  * base boxes http://www.vagrantbox.es/
 
+### vagrant guest additions
+ * https://coderwall.com/p/mvf0aq/vagrant-auto-update-virtualbox-guest-additions
+ * https://segmentfault.com/q/1010000001733109
+
 #### vagrant guide
  * http://www.tuicool.com/articles/NbqYFrz
 #### vagrant vbox download
