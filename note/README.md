@@ -550,8 +550,14 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * https://github.com/ceph/calamari
  
 ## vagrant
- *  下载box  https://vagrantcloud.com/boxes/search?utf8=%E2%9C%93&sort=&provider=&q=openshift
- *  base boxes http://www.vagrantbox.es/
+ * 下载box  https://vagrantcloud.com/boxes/search?utf8=%E2%9C%93&sort=&provider=&q=openshift
+ * base boxes http://www.vagrantbox.es/
+
+#### vagrant guide
+ * http://www.tuicool.com/articles/NbqYFrz
+#### vagrant vbox download
+ * http://mirrors.hypo.cn/
+ * https://vagrantcloud.com/ubuntu/boxes/trusty64
 
 # design prinsipals
 ## A/B Test A/B测试
@@ -959,6 +965,16 @@ deb-src http://mirrors.aliyun.com/ubuntu trusty universe
 deb http://mirrors.aliyun.com/ubuntu trusty-updates universe
 deb-src http://mirrors.aliyun.com/ubuntu trusty-updates universe
 ```
+#### Software mirrors
+ * 镜像源汇总 https://segmentfault.com/a/1190000000375848#articleHeader2
+ * 汇总 https://www.douban.com/note/375227086/   http://www.linuxdiyf.com/linux/15609.html
+ * http://mirrors.hypo.cn/
+ * https://mirrors.tuna.tsinghua.edu.cn/
+ * http://mirrors.ustc.edu.cn/
+ * http://mirrors.hust.edu.cn/
+ * http://mirrors.ctyun.cn/
+ * http://mirror.bit.edu.cn/web/
+
 ## linux commands  linux 命令
 ### date  
  * https://fukun.org/archives/06112057.html  
