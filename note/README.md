@@ -491,6 +491,11 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * 镜像下载链接 http://docs.openstack.org/image-guide/index.html
  * 保存导出镜像 http://zqfan.github.io/openstack/2014/05/20/export-openstack-instance-to-local-image/
  * 保存到初镜像 openstack image save  
+#### Openstack Image Signature 镜像签名
+ * http://docs.openstack.org/security-guide/instance-management/security-services-for-instances.html
+ * http://docs.openstack.org/ops-guide/ops_user_facing_operations.html
+ * http://specs.openstack.org/openstack/nova-specs/specs/mitaka/implemented/image-verification.html
+ * http://specs.openstack.org/openstack/glance-specs/specs/mitaka/implemented/image-signing-and-verification-support.html
 
 ### Trove 数据库 
  * 支持的数据库 https://github.com/openstack/trove/tree/master/trove/templates
