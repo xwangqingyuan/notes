@@ -180,6 +180,13 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
 ### 从镜像导出Dockerfile的方法
  * undocker https://github.com/larsks/undocker/
  * docker cp 命令
+### docker security
+ * https://docs.docker.com/engine/security/security/
+### docker content trust image signature docker 镜像签名
+ * https://docs.docker.com/engine/security/trust/content_trust/
+ * https://docs.docker.com/engine/security/trust/trust_automation/
+### docker user namespace
+https://success.docker.com/Datacenter/Apply/Introduction_to_User_Namespaces_in_Docker_Engine
 ### multiple processes
  * http://tech.paulcz.net/2014/12/multi-process-docker-images-done-right/
  * http://phusion.github.io/baseimage-docker/
@@ -1098,6 +1105,10 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
  * Failed to get D-Bus connection: Operation not permitted
  * 将镜像启动设置为/usr/sbin/init D-Bus会被自动设置
 
+#### VMware虚拟机无法启动
+ * Cannot power on a virtual machine because the virtual disk cannot be opened
+ * 需要释放主机空间
+ 
 # sales 销售
 ## 客户沟通技巧
  * http://zhidao.baidu.com/link?url=J7QM6hwwlOKnnuBkGvW4_AZcA_A8CORk48nFkEcbqcMhgyteUOCj3k-u5HJWi6M19shXwB4tzef40MJkrWgCWa
