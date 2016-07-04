@@ -438,10 +438,16 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
 ### murano 应用目录
  * https://wiki.openstack.org/wiki/Murano/ApplicationCatalog
  * https://wiki.openstack.org/wiki/Murano
+ * 项目详细信息  https://www.mirantis.com/blog/integrating-openstack-and-kubernetes-with-murano/
+ * 集成Kubernetes  https://www.mirantis.com/blog/integrating-openstack-and-kubernetes-with-murano/
+ * slides introduction  http://www.openstack.org/assets/vancouver-summit/slidedecks/Serg-Melikyan-Murano-Bringing-Docker-Kubernetes-to-OpenStack.pdf
+ * github https://github.com/openstack/murano-apps
 
 ### Monasca 监控服务
  * https://wiki.openstack.org/wiki/Monasca
- * https://wiki.openstack.org/wiki/Monasca
+ * 项目详细信息  https://wiki.openstack.org/wiki/Monasca
+ * docker 镜像 	 https://hub.docker.com/r/monasca/demo/
+ * Dockers 和monasca集成项目  https://github.com/hpcloud-mon/monasca-docker
 
 ### neutron 网络
 
