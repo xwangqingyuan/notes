@@ -557,6 +557,13 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * https://jenkins.io/blog/2015/07/24/integrating-kubernetes-and-jenkins/
  * http://www.infoworld.com/article/2834122/application-virtualization/windows-server-is-getting-docker-says-microsoft-and-docker.html
  * http://fabric8.io/guide/cdelivery.html
+#### jenkins + kubernetes integration
+ * https://wiki.jenkins-ci.org/display/JENKINS/Kubernetes+Plugin
+ * https://jenkins.io/blog/2015/07/24/integrating-kubernetes-and-jenkins/
+ * https://wiki.jenkins-ci.org/display/JENKINS/Kubernetes+CI+Plugin
+ * https://github.com/carlossg/jenkins
+ * https://hub.docker.com/r/csanchez/jenkins-slave/
+ * https://hub.docker.com/u/csanchez/
 
 ## ceph
  * http://docs.ceph.com/docs/master/architecture/#mapping-pgs-to-osds
