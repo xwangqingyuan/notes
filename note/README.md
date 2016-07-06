@@ -1,3 +1,6 @@
+https://msdn.microsoft.com/en-us/library/aa561967.aspx
+https://github.com/brendandburns/metaparticle
+http://www.enterpriseintegrationpatterns.com/patterns/messaging/BroadcastAggregate.html
 
 # artificial intelligence 人工智能
 ## alphago
