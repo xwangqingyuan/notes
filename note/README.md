@@ -199,6 +199,9 @@ docker run --privileged --name mariadb -d -e "container=docker" mariadbcentos:0.
 ### coreos rkt
  * build tool https://coreos.com/blog/rkt-0.10.0-with-new-api-service/
 ### docker network
+#### CNI vs CNM
+ * http://blog.kubernetes.io/2016/01/why-Kubernetes-doesnt-use-libnetwork.html
+ * http://thenewstack.io/google-wont-support-dockers-container-network-model/
 #### contiv 
  * http://blogs.cisco.com/datacenter/project-contiv  
  * https://github.com/contiv/netplugin  
