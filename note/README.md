@@ -1,7 +1,3 @@
-https://msdn.microsoft.com/en-us/library/aa561967.aspx
-https://github.com/brendandburns/metaparticle
-http://www.enterpriseintegrationpatterns.com/patterns/messaging/BroadcastAggregate.html
-
 # artificial intelligence 人工智能
 ## alphago
  * https://en.wikipedia.org/wiki/AlphaGo
@@ -680,6 +676,10 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 
 ## Application Integration
  * http://www.enterpriseintegrationpatterns.com/patterns/messaging/toc.html
+## scatter and gather pattern
+ * https://msdn.microsoft.com/en-us/library/aa561967.aspx
+ * https://github.com/brendandburns/metaparticle
+ * http://www.enterpriseintegrationpatterns.com/patterns/messaging/BroadcastAggregate.html
 
 ## 并发编程
  * http://www.infoq.com/cn/articles/exterminating-heisenbugs
@@ -1030,6 +1030,23 @@ sed -i 's/Do not change/Do not evet change/' filename
 ## systemd
  * http://www.linuxidc.com/Linux/2014-11/110023.htm
  * https://blog.linuxeye.com/400.html
+
+## sudo
+ * sudo su 与 sudo -i 区别
+```
+su是superuser的前面两字母。
+su root=su
+like you open an interactive shell in root name,
+then only .bashrc will be sourced.
+ su root和su一样:表示与root建立一个链接，通过root执行命令，其实就是进程的有效用户ID变成了root，unix校验进程的权限都是校验的有效用户ID，进程的实际用户ID还是当前登录系统的用户，主目录也还是当前登录系统的用户的主目录。
+sudo -i
+just like login as root, then the shell is login shell,
+which mean it will expericene a login process,
+usually .bash_profile and .bashrc will be sourced
+sudo -i表示以root身份登录，进程的实际用户ID和有效用户ID都变成了root，主目录也切换为root的主目录。
+sudo 命令
+执行该条命令期间，进程的有效用户ID临时更改为root。
+```
 # markup language 标签语言
 ## markdown
  * http://ibruce.info/2013/11/26/markdown/
