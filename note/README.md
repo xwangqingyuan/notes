@@ -192,6 +192,10 @@ https://success.docker.com/Datacenter/Apply/Introduction_to_User_Namespaces_in_D
  * http://blog.chazomatic.us/2014/06/18/multiple-processes-inside-docker/
  * https://valdhaus.co/writings/docker-misconceptions/
 #### docker centos 7
+
+### docker security
+http://www.projectatomic.io/docs/docker-and-selinux/
+
 ```
 docker run --privileged --name mariadb -d -e "container=docker" mariadbcentos:0.5 /usr/sbin/init
 
@@ -541,7 +545,15 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 ### marketplace
  * https://marketplace.openshift.com/
 
-
+##unikernel
+ * https://www.joyent.com/blog/unikernels-are-unfit-for-production
+ * http://stackoverflow.com/questions/30392261/docker-container-compared-with-unikernel
+ * https://news.ycombinator.com/item?id=10619695
+ * https://www.linux.com/news/containers-vs-hypervisors-battle-has-just-begun
+ * http://unikernel.org/
+ * http://wiki.xenproject.org/wiki/Unikernels
+ * https://techcrunch.com/2016/01/21/docker-acquires-unikernel-systems-as-it-looks-beyond-containers/
+ * http://unikernel.org/projects/
 
 ### jenkins
  * https://github.com/openshift/jenkins-plugin
