@@ -52,6 +52,10 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 ### Spring 框架demo
  * 开源电商系统 https://sourceforge.net/projects/broadleaf/
  * spring 开源项目 http://blog.csdn.net/lulin27861/article/details/21371147
+ * spring cloud http://stackoverflow.com/questions/30701673/how-to-use-spring-cloud-from-nodejs
+ * http://stackoverflow.com/questions/33007887/how-to-register-node-app-with-spring-cloud-and-netflixs-eureka
+ * https://spring.io/guides/gs/spring-cloud-and-lattice/
+ * http://lattice.cf/
 ## 中文著名开源项目
  * http://caibaojian.com/top100-source.html
 ## go 框架
@@ -633,6 +637,7 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
   - microservice chassis 微服务底盘 http://microservices.io/patterns/microservice-chassis.html
   - Service discovery
    * One significant suggestion I have would be to generalize the concept of the Service Registry with the idea of a "Service Discovery Mechanism." Using a service registry (of which there is many) is only one type of service discovery mechanism. Further, service registries make certain assumptions about the infrastructure that may not be true, such that it's easy for services to be registered in a central registry, that a registry is consistently available or even that a registry is consistently at the same IP location or DNS name. I would expand the pattens to include a generalization of "Service Discovery Mechanism" with "Service Registry" to be a specialization pattern. The other obvious pattern would include "Service Probes and Responses" such as is provided by a number of "Internet of Things" discovery technologies such as AllJoyn, Multicast-DNS or DNS-Service Discovery (Apple Bonjour and Android Network Service Discovery), WS-Discovery or Simple Service Discovery Protocol (SSDP).
+  - https://www.infoq.com/articles/ddd-contextmapping/
  * Use Case design of micro services
   - http://eventuate.io/exampleapps.html
  * Event sourcing CQRS Command Query Responsibility Segeragation
