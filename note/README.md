@@ -1031,6 +1031,12 @@ deb-src http://mirrors.aliyun.com/ubuntu trusty-updates universe
  * http://mirror.bit.edu.cn/web/
 
 ## linux commands  linux 命令
+## init.d
+### 添加删除服务 init的服务启动
+service --status-all
+添加： sudo update-rc.d 服务名 defaults
+删除：sudo update-rc.d -f 服务名 remove
+
 ### date  
  * https://fukun.org/archives/06112057.html  
 
@@ -1048,6 +1054,8 @@ sed -i "3i nameserver 114.114.114.114" /etc/resolv.conf
 sed -i 3d /etc/resolv.conf
 sed -i 's/Do not change/Do not evet change/' filename
 
+sed -i 's/pcImg\.push/\/\/pcImg\.push/' /tmp/repo/flow.groovy
+sed -i 's/\/\/pcImg\.push/pcImg\.push/' /tmp/repo/flow.groovy
 删除文件行，插入文件行
 ```
 ## systemd
@@ -1157,6 +1165,9 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
  
 #### build the docker command
  * docker client 负责命令行提示，只要替换命令行就可以验证
+
+#### failed to register layer: rename 
+系统问题，需要卸载docker，重新安装docker
 
 #### 环境变量未设置
  * TERM environment variable not set.
