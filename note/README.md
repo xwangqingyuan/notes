@@ -338,6 +338,13 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * start order https://github.com/kubernetes/kubernetes/issues/1589
  * start order https://github.com/kubernetes/kubernetes/issues/2385
 
+### mesos
+#### mesos network
+ * https://git-wip-us.apache.org/repos/asf?p=mesos.git;a=blob_plain;f=CHANGELOG;hb=0.28.2
+ * https://mesosphere.com/blog/2015/12/02/ip-per-container-mesos/
+ * https://github.com/apache/mesos/blob/master/docs/networking-for-mesos-managed-containers.md
+ * https://github.com/apache/mesos/blob/master/docs/docker-containerizer.md
+
 ### kubernetes storage
  * https://docs.openshift.com/enterprise/3.1/install_config/persistent_storage/persistent_storage_ceph_rbd.html
  * https://access.redhat.com/documentation/en/openshift-enterprise/3.1/installation-and-configuration/chapter-14-configuring-persistent-storage
