@@ -346,6 +346,7 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
   - Configuration reconciliation https://github.com/kubernetes/kubernetes/issues/1702
   - reconciliation http://mesos.apache.org/documentation/latest/reconciliation/
   - https://github.com/apache/mesos/blob/master/docs/networking-for-mesos-managed-containers.md
+  - https://issues.apache.org/jira/browse/MESOS-1407
 
 ### mesos
 #### mesos network
