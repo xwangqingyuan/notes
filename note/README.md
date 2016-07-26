@@ -337,6 +337,15 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * http://thenewstack.io/a-brief-comparison-of-mesos-and-kubernetes/
  * start order https://github.com/kubernetes/kubernetes/issues/1589
  * start order https://github.com/kubernetes/kubernetes/issues/2385
+ * kubernetes network http://machinezone.github.io/research/networking-solutions-for-kubernetes/
+ * 模式 https://datasterix.com/2016/07/23/kubernetes-or-docker-swarm/
+ * http://getcloudify.org/2015/06/11/orchestration-docker-cloud-automation-openstack-heat-tosca-kubernetes.html
+ * comparsion swarm mesos kubernetes design
+  - Desired state reconciliation https://docs.docker.com/engine/swarm/key-concepts/
+  - reconciliation controller loop https://queue.acm.org/detail.cfm?id=2898444
+  - Configuration reconciliation https://github.com/kubernetes/kubernetes/issues/1702
+  - reconciliation http://mesos.apache.org/documentation/latest/reconciliation/
+  - https://github.com/apache/mesos/blob/master/docs/networking-for-mesos-managed-containers.md
 
 ### mesos
 #### mesos network
