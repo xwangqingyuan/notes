@@ -329,6 +329,24 @@ docker-machine create \
   * http://kubernetes.io/docs/admin/federation/
   * http://kubernetes.io/docs/admin/multi-cluster/
 
+### ConfigMap
+ * https://github.com/kubernetes/kubernetes/blob/release-1.3/docs/design/configmap.md
+
+### Secret
+ * http://kubernetes.io/docs/user-guide/secrets/
+ * https://github.com/kubernetes/kubernetes/blob/master/docs/design/secrets.md
+ * 
+
+### service account and security context
+ * service account https://github.com/kubernetes/kubernetes/blob/master/docs/design/service_accounts.md
+ * http://kubernetes.io/docs/admin/service-accounts-admin/
+ * http://kubernetes.io/docs/user-guide/security-context/
+ * https://github.com/kubernetes/kubernetes/blob/master/docs/design/security_context.md
+ 
+### RBAC Role Based Access Control
+ * http://kubernetes.io/docs/admin/accessing-the-api/
+ * http://kubernetes.io/docs/admin/authorization/#a-quick-note-on-service-accounts
+
 ### AZ zones regions 可用区
 http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html
 https://cloud.google.com/compute/docs/regions-zones/global-regional-zonal-resources#globalresources
