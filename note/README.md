@@ -317,10 +317,17 @@ docker-machine create \
 ### petset
  * https://github.com/kubernetes/kubernetes/pull/18016/files/cc9eb238517a1873f32a55ceb21667ffba21cb7f?short_path=61f4179#diff-61f41798f4bced6e42e45731c1494cee  
  * https://github.com/kubernetes/kubernetes/issues/260
+ * http://kubernetes.io/docs/user-guide/petset/
+ * https://github.com/kubernetes/kubernetes/tree/master/docs/design　http://kubernetes.io/docs/user-guide/petset/bootstrapping/
 
 ### federation ubernetes federation-lite
  * https://github.com/kubernetes/kubernetes/blob/dae5ac482861382e18b1e7b2943b1b7f333c6a2a/docs/proposals/federation-lite.md   
  * https://github.com/kubernetes/kubernetes/blob/release-1.0/docs/admin/networking.md  kubernetes network model k8s网络模型
+ * learning steps
+  * https://github.com/kubernetes/kubernetes/tree/release-1.3/docs/design
+  * http://kubernetes.io/docs/admin/multiple-zones/
+  * http://kubernetes.io/docs/admin/federation/
+  * http://kubernetes.io/docs/admin/multi-cluster/
 
 ### AZ zones regions 可用区
 http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html
