@@ -288,6 +288,10 @@ docker-machine create \
   * https://github.com/kubernetes/kubernetes/blob/bf0a5e9fac1baab23a1db007bc798e4f9630f4f2/docs/proposals/volume-selectors.md
  * http://dockone.io/article/1153 比较 borg omega
  * http://blog.kubernetes.io/2015/06/the-distributed-system-toolkit-patterns.html  
+ * learn kubernetes links 
+  * http://kubernetes.io/docs/user-guide/petset/
+  * https://github.com/kubernetes/kubernetes/tree/master/docs/design
+  * http://kubernetes.io/docs/user-guide/petset/bootstrapping/
 #### kubernetes paas
  * https://medium.com/@shijuvar/the-evolution-of-cloud-paas-to-container-ecosystem-1943a335c25b#.7gwiv5dc9
  * http://kubernetes.io/docs/whatisk8s/
