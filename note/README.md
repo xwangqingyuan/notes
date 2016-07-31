@@ -289,6 +289,7 @@ docker-machine create \
  * http://dockone.io/article/1153 比较 borg omega
  * http://blog.kubernetes.io/2015/06/the-distributed-system-toolkit-patterns.html  
  * learn kubernetes links 
+  * https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md/#v130
   * http://kubernetes.io/docs/user-guide/petset/
   * https://github.com/kubernetes/kubernetes/tree/master/docs/design
   * http://kubernetes.io/docs/user-guide/petset/bootstrapping/
