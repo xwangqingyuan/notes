@@ -336,7 +336,10 @@ docker-machine create \
  * http://kubernetes.io/docs/user-guide/secrets/
  * https://github.com/kubernetes/kubernetes/blob/master/docs/design/secrets.md
  * 
-
+### level-based vs edge-based
+ * http://stackoverflow.com/questions/31041766/what-does-edge-based-and-level-based-mean
+ * API conventions https://github.com/kubernetes/kubernetes/blob/master/docs/devel/api-conventions.md#resources
+ * 
 ### service account and security context
  * service account https://github.com/kubernetes/kubernetes/blob/master/docs/design/service_accounts.md
  * http://kubernetes.io/docs/admin/service-accounts-admin/
