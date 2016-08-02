@@ -185,6 +185,8 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
 ### 从镜像导出Dockerfile的方法
  * undocker https://github.com/larsks/undocker/
  * docker cp 命令
+### windows docker
+ * https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start
 ### docker security
  * https://docs.docker.com/engine/security/security/
 ### docker content trust image signature docker 镜像签名
