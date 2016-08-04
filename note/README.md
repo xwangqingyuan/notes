@@ -395,6 +395,10 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * https://github.com/apache/mesos/blob/master/docs/networking-for-mesos-managed-containers.md
  * https://github.com/apache/mesos/blob/master/docs/docker-containerizer.md
  * http://mesos.apache.org/documentation/latest/cni/
+### container network solution comparison
+ * https://xelatex.github.io/2015/11/15/Battlefield-Calico-Flannel-Weave-and-Docker-Overlay-Network/
+ * http://paulbakker.io/docker/docker-cloud-network-performance/
+ * https://arjanschaaf.github.io/is-the-network-the-limit/
 #### mesos 1.0
  * http://mesos.apache.org/documentation/latest/cni/
  * http://mesos.apache.org/blog/mesos-1-0-0-released/
