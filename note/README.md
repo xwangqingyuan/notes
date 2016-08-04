@@ -391,6 +391,10 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * https://mesosphere.com/blog/2015/12/02/ip-per-container-mesos/
  * https://github.com/apache/mesos/blob/master/docs/networking-for-mesos-managed-containers.md
  * https://github.com/apache/mesos/blob/master/docs/docker-containerizer.md
+ * http://mesos.apache.org/documentation/latest/cni/
+#### mesos 1.0
+ * http://mesos.apache.org/documentation/latest/cni/
+ * http://mesos.apache.org/blog/mesos-1-0-0-released/
 
 ### kubernetes storage
  * https://docs.openshift.com/enterprise/3.1/install_config/persistent_storage/persistent_storage_ceph_rbd.html
