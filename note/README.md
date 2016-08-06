@@ -863,6 +863,8 @@ https://www.quora.com/topic/Docker
 http://www.infoq.com/architecture-design/
 http://geek.csdn.net/cloud
 http://www.oschina.net/blog
+http://geek.csdn.net/cloud
+https://segmentfault.com/t/docker
 ## 5 famous place_to_technology
 http://alternativeto.net/
 ## 5 famous computer-projects
