@@ -1319,6 +1319,16 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
  * http://zhidao.baidu.com/link?url=J7QM6hwwlOKnnuBkGvW4_AZcA_A8CORk48nFkEcbqcMhgyteUOCj3k-u5HJWi6M19shXwB4tzef40MJkrWgCWa
  * http://zhidao.baidu.com/link?url=gjeUkULSWuwnuQPO_qa2SsJzz9_55B65lHvrq5WwuYgnu7MWAqesxtg3uJ6GvWmGzORS6v0bhln3vAMtbtO7_5ng83pd2tKDt20WEZLdWdS
 
+# soft skills
+### humor 幽默
+#### 幽默
+|方式|例子|条件|环境|
+|---|---|---|---|
+|将计就计，导致荒谬| 采访上帝 | 对方说荒谬的话 | 讨论、辩论、吵架 |
+|寻找其他的解释，寻找其他可能的塞翁失马| 买多个座位 | 意料之外的尴尬 | 会议冷场 |
+|给对方制造同样的处境| 当时你在哪儿 | 难为人的请求 | 问你秘密 |
+|简单、意外、具体、时效、影响每个人的社会变革| 劝人买房、股灾 | 听众注意力分散时 | 演讲主题切换 |
+|自嘲自己的缺点| 马云像坏人、穿着、面、紧张 | 强调自己所推崇的关键因素 | 演讲、自我介绍 |
 # software tools 软件工具  
 ## screen recorder 录屏软件  
 ### 最好用的抓屏
