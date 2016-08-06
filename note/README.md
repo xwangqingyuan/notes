@@ -320,6 +320,10 @@ docker-machine create \
  * http://blog.christianposta.com/posts/
  * http://developers.redhat.com/ticket-monster/
  * http://blog.christianposta.com/microservices/the-real-success-story-of-microservices-architectures/
+#### microservice pattern
+ * https://www.voxxed.com/blog/2015/04/coupling-versus-autonomy-in-microservices/
+ * publish-subscribe to turn MxN dependencis to M+N dependencies
+ * https://www.voxxed.com/blog/2015/04/microservice-design-patterns/
 #### reliability patttern microservice design patterns
 http://www.javaworld.com/article/2824163/application-performance/stability-patterns-applied-in-a-restful-architecture.html?page=3
 http://assets.en.oreilly.com/1/event/79/Stability%20Patterns%20Presentation.pdf
