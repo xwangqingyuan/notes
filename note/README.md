@@ -320,6 +320,7 @@ docker-machine create \
  * http://blog.christianposta.com/posts/
  * http://developers.redhat.com/ticket-monster/
  * http://blog.christianposta.com/microservices/the-real-success-story-of-microservices-architectures/
+ * http://blog.christianposta.com/microservices/netflix-oss-or-kubernetes-how-about-both/
 #### microservice pattern
  * https://www.voxxed.com/blog/2015/04/coupling-versus-autonomy-in-microservices/
  * publish-subscribe to turn MxN dependencis to M+N dependencies
