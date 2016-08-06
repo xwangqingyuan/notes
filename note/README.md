@@ -820,6 +820,11 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 ## mac osx ios
 ### 行首，行尾，上下翻页 fn+left fn+right fn+up fn+down
 
+# English writing
+## phrases
+### spoil pants
+搞砸了
+
 # multimedia 多媒体
 ## 编解码格式
  * http://zhidao.baidu.com/question/371893045.html
