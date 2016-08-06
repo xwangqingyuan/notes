@@ -317,7 +317,7 @@ docker-machine create \
  * https://github.com/mfornos/awesome-microservices
 #### redhat microservice platform
  * https://dzone.com/users/436713/christian.posta.html
- * https://dzone.com/articles/carving-the-java-ee-monolith-into-microservices
+ * http://blog.christianposta.com/posts/
  * http://developers.redhat.com/ticket-monster/
 
 ### probe healthcheck
