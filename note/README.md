@@ -861,10 +861,14 @@ http://www.austintek.com/LVS/LVS-HOWTO/HOWTO/LVS-HOWTO.UDP.html
 ## 5 famous community
 https://www.quora.com/topic/Docker
 http://www.infoq.com/architecture-design/
-http://geek.csdn.net/cloud
 http://www.oschina.net/blog
 http://geek.csdn.net/cloud
 https://segmentfault.com/t/docker
+http://stackoverflow.com/questions/tagged/docker
+http://stackoverflow.com/questions/tagged/kubernetes
+http://www.dockone.io/topic/
+http://www.infoq.com/cn/dockers/?utm_source=infoq&utm_medium=header_graybar&utm_campaign=topic_clk
+
 ## 5 famous place_to_technology
 http://alternativeto.net/
 ## 5 famous computer-projects
