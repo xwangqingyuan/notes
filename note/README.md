@@ -327,6 +327,50 @@ docker-machine create \
 #### reliability patttern microservice design patterns
 http://www.javaworld.com/article/2824163/application-performance/stability-patterns-applied-in-a-restful-architecture.html?page=3
 http://assets.en.oreilly.com/1/event/79/Stability%20Patterns%20Presentation.pdf
+#### spring cloud
+http://stackoverflow.com/questions/30701673/how-to-use-spring-cloud-from-nodejs
+http://stackoverflow.com/questions/33007887/how-to-register-node-app-with-spring-cloud-and-netflixs-eureka
+https://spring.io/guides/gs/spring-cloud-and-lattice/
+http://lattice.cf/
+
+#### 12-factors with Docker
+ * https://prezi.com/e7sdy9rdujgp/12-factor-apps-in-docker/
+ * https://convox.com/blog/modern-twelve-factor-apps-with-docker/
+ * https://github.com/ricardokirkner/django-12factor-docker
+ * https://www.packtpub.com/books/content/how-to-build-12-factor-design-microservices-on-docker-part-2
+ * https://www.packtpub.com/tech/docker
+帮助服务更具弹性的技术
+许诺与保底技术Promises and Fall backs
+消费者合同Consumer contract
+幂等消费者Idempotent consumers
+隔离Isolation
+隔离舱Bulkhead
+分为客户资源隔离，应用资源隔离，操作资源隔离，客户端资源隔离
+负载均衡load-balancing
+服务发现service discovery
+道歉Apologies
+最终一致Eventual consistency
+熔断Curcuit Breaker
+分为客户端熔断和服务端熔断
+超时Timeout
+握手Handshaking
+#### microservice and cloud native application relationship 微服务跟云原生应用的关系
+ * http://thenewstack.io/reactive-frameworks-microservices-docker-and-other-necessities-for-scalable-cloud-native-applications/
+ * http://thenewstack.io/best-practices-for-developing-cloud-native-applications-and-microservice-architectures/
+ * http://www.nirmata.com/2015/03/cloud-native-application-maturity-model/ 成熟模型
+ * http://www.nirmata.com/2015/02/microservices-five-architectural-constraints/ 微服务的架构限制 Elastic 可伸缩的 Resilient 弹性的 Composable 可组装的 Minimal 内聚的cohesive Complete完备的
+ * http://arxiv.org/pdf/1507.08217.pdf
+ * https://www.opendatacenteralliance.org/docs/architecting_cloud_aware_applications.pdf
+ * http://www.cloud-council.org/CSCC-Practical-Guide-to-PaaS.pdf
+ * http://ryanjbaxter.com/2015/07/15/using-microservices-to-build-cloud-native-applications-part-1/   
+ * https://jimmylv.gitbooks.io/learning-microservices/content/translation/Building_Cloud_Native_Applications.html
+ * http://martinfowler.com/articles/microservices.html
+ * http://ryanjbaxter.com/2015/07/13/building-cloud-native-applications/ 12-Factor Applications 12要素应用 Microservices Architecture微服务架构 API Based Collaboration基于REST API的合作 Antifragile反脆弱
+
+#### Apache camel patterns
+ * http://camel.apache.org/enterprise-integration-patterns.html
+ * http://camel.apache.org/camel-dsl.html
+ * http://camel.apache.org/soa-patterns.html
 
 ### probe healthcheck
  * http://kubernetes.io/docs/user-guide/walkthrough/k8s201/#health-checking
