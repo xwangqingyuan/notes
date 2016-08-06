@@ -319,6 +319,7 @@ docker-machine create \
  * https://dzone.com/users/436713/christian.posta.html
  * http://blog.christianposta.com/posts/
  * http://developers.redhat.com/ticket-monster/
+ * http://blog.christianposta.com/microservices/the-real-success-story-of-microservices-architectures/
 
 ### probe healthcheck
  * http://kubernetes.io/docs/user-guide/walkthrough/k8s201/#health-checking
