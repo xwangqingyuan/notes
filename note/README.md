@@ -367,6 +367,7 @@ http://lattice.cf/
  * https://jimmylv.gitbooks.io/learning-microservices/content/translation/Building_Cloud_Native_Applications.html
  * http://martinfowler.com/articles/microservices.html
  * http://ryanjbaxter.com/2015/07/13/building-cloud-native-applications/ 12-Factor Applications 12要素应用 Microservices Architecture微服务架构 API Based Collaboration基于REST API的合作 Antifragile反脆弱
+ * 数据库跟云原生的关系 http://www.confluent.io/blog/turning-the-database-inside-out-with-apache-samza/
 
 #### Apache camel patterns
  * http://camel.apache.org/enterprise-integration-patterns.html
