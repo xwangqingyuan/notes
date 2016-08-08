@@ -734,7 +734,8 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * 冒烟测试（smoke test）、可用性测试（sanity test）和回归测试（regression test）、灰度发布、灰度放量
  * http://martinfowler.com/bliki/BlueGreenDeployment.html
  * http://martinfowler.com/bliki/CanaryRelease.html
- * http://blog.christianposta.com/deploy/blue-green-deployments-a-b-testing-and-canary-releases/ canary deployments  
+ * http://blog.christianposta.com/deploy/blue-green-deployments-a-b-testing-and-canary-releases/ canary deployments
+ * http://blog.christianposta.com/deploy/blue-green-deployments-a-b-testing-and-canary-releases/ 金丝雀发布 蓝绿测试
  * 吆喝科技
    * http://doc.appadhoc.com/firstExp/androidCode.html
    * http://www.csdn.net/article/2015-04-27/2824564
