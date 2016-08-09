@@ -315,6 +315,15 @@ docker-machine create \
  * amalgam8
  * https://www.amalgam8.io/
  * https://github.com/mfornos/awesome-microservices
+#### martin fowler microservices
+ * http://martinfowler.com/articles/microservices.html
+ * http://martinfowler.com/bliki/MicroservicePrerequisites.html
+ * http://martinfowler.com/articles/microservice-trade-offs.html
+ * http://www.rgoarchitects.com/Files/fallacies.pdf 
+#### martin fowler cloud native application
+ * http://martinfowler.com/bliki/CloudComputing.html
+ * Basics of web application security http://martinfowler.com/articles/web-security-basics.html
+ * https://www.infoq.com/articles/transitioning-cloud-native
 #### redhat microservice platform
  * https://dzone.com/users/436713/christian.posta.html
  * http://blog.christianposta.com/posts/
