@@ -1227,12 +1227,16 @@ sudo 命令
 # markup language 标签语言
 ## markdown
  * http://ibruce.info/2013/11/26/markdown/
+ * user guide https://writeapp.me/markdown
+ * user manual http://fletcher.github.io/peg-multimarkdown/mmd-manual.pdf
 ## reStructedText
 ## asciidoc 
 ### ascissdoctor 
  * https://hub.docker.com/r/asciidoctor/docker-asciidoctor/
  * http://asciidoctor.org/docs/render-documents/
  * http://asciidoctor.org/docs/install-toolchain/
+ * adoc user guide http://asciidoctor.org/docs/asciidoc-writers-guide/
+ * syntax http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#tables
 
 # network
 ## dns
