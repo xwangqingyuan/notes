@@ -1229,6 +1229,7 @@ sudo 命令
  * http://ibruce.info/2013/11/26/markdown/
  * user guide https://writeapp.me/markdown
  * user manual http://fletcher.github.io/peg-multimarkdown/mmd-manual.pdf
+ * https://sourceforge.net/p/adoc/wiki/markdown_syntax/
 ## reStructedText
 ## asciidoc 
 ### ascissdoctor 
