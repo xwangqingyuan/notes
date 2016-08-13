@@ -192,6 +192,13 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
 ### docker content trust image signature docker 镜像签名
  * https://docs.docker.com/engine/security/trust/content_trust/
  * https://docs.docker.com/engine/security/trust/trust_automation/
+
+### docker memory with java
+ * https://goldmann.pl/blog/2014/09/11/resource-management-in-docker/#_example_managing_the_cpu_shares_of_a_container
+ * http://matthewkwilliams.com/index.php/2016/03/17/docker-cgroups-memory-constraints-and-java-cautionary-tale/
+ * disk not duplicated http://stackoverflow.com/questions/27280082/java-jvm-on-docker-coreos/27319716
+ * http://serverfault.com/questions/787233/understanding-java-memory-behavior-in-docker
+ * https://dzone.com/articles/java-and-memory-limits-in-containers-lxc-docker-an
 ### docker user namespace
 https://success.docker.com/Datacenter/Apply/Introduction_to_User_Namespaces_in_Docker_Engine
 ### multiple processes
@@ -200,6 +207,13 @@ https://success.docker.com/Datacenter/Apply/Introduction_to_User_Namespaces_in_D
  * http://blog.chazomatic.us/2014/06/18/multiple-processes-inside-docker/
  * https://valdhaus.co/writings/docker-misconceptions/
 #### docker centos 7
+
+### docker overlay file system storage
+ * docker storage user guide https://docs.docker.com/engine/userguide/storagedriver/device-mapper-driver/
+ * performance compare http://developerblog.redhat.com/2014/09/30/overview-storage-scalability-docker/
+ * history discussion https://github.com/docker/docker/issues/443
+ * detail storage introduction https://www.docker.com/sites/default/files/Understanding-Docker-Data-Storage-WP-rev3.pdf
+ * 选择建议 https://docs.docker.com/engine/userguide/storagedriver/selectadriver/
 
 ### docker security
 http://www.projectatomic.io/docs/docker-and-selinux/
