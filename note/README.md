@@ -573,6 +573,11 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * http://cloudinit.readthedocs.org/en/latest/ 通用的配置云主机的脚本
  * windows 安装软件 http://www.bubuko.com/infodetail-705509.html  https://cloudbase.it/cloudbase-init/ https://github.com/openstack/cloudbase-init
 
+### kolla deployment with ansible and docker
+ * https://github.com/openstack/kolla
+ * https://github.com/openstack/kolla/blob/master/doc/quickstart.rst
+ * https://github.com/openstack/kolla/blob/master/doc/deployment-philosophy.rst
+ * https://github.com/openstack/kolla/tree/master/ansible/roles
 ### manila share storage
  * https://netapp.github.io/openstack-deploy-ops-guide/kilo/content/section_manila-key-concepts.html#manila.share.access_rules
  * https://netapp.github.io/openstack-deploy-ops-guide/kilo/content/section_manila-deployment-choices.html#d6e3518
