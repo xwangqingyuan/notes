@@ -326,6 +326,7 @@ docker-machine create \
 #### microservice platform
  * http://wildfly.org/about/
  * http://deis.io/overview/
+ * https://deis.com/docs/workflow/
  * http://www.csdn.net/article/2015-09-28/2825811
  * OpenResty http://hot66hot.iteye.com/blog/2155036
  * Hystrix 
