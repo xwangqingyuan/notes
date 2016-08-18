@@ -192,6 +192,8 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
 ### docker content trust image signature docker 镜像签名
  * https://docs.docker.com/engine/security/trust/content_trust/
  * https://docs.docker.com/engine/security/trust/trust_automation/
+### WebLogic and docker
+ * http://www.dba-oracle.com/t_multitenant_docker.htm
 
 ### docker memory with java
  * https://goldmann.pl/blog/2014/09/11/resource-management-in-docker/#_example_managing_the_cpu_shares_of_a_container
@@ -290,6 +292,9 @@ docker-machine create \
 ```
 #### swarm descovery
  * https://docs.docker.com/swarm/discovery/
+
+#### Swarm Storage Volumn Swarm存储
+ * https://blog.docker.com/2015/11/docker-1-9-production-ready-swarm-multi-host-networking/
 
 ### docker windows
  * https://blog.docker.com/2015/08/tp-docker-engine-windows-server-2016/
@@ -483,6 +488,12 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * https://xelatex.github.io/2015/11/15/Battlefield-Calico-Flannel-Weave-and-Docker-Overlay-Network/
  * http://paulbakker.io/docker/docker-cloud-network-performance/
  * https://arjanschaaf.github.io/is-the-network-the-limit/
+
+#### Mesos 存储 mesos storage
+ * https://dzone.com/articles/exploring-persistent-storage-with-apache-mesos
+ * https://mesosphere.com/blog/2015/10/08/with-help-from-emc-were-bringing-enterprise-storage-to-mesos/
+ * http://stackoverflow.com/questions/28368751/persistent-storage-for-apache-mesos
+
 #### mesos 1.0
  * http://mesos.apache.org/documentation/latest/cni/
  * http://mesos.apache.org/blog/mesos-1-0-0-released/
@@ -542,6 +553,10 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
 ### paas integration
  * https://github.com/fabric8io/fabric8
 
+### PaaS comparesion
+ * https://www.infoq.com/news/2015/11/eisele-microservices
+ * http://mesosphere.github.io/presentations/oscon-mesos-ops-2014/lightning/#/26
+ * multi-tenancy mesos https://www.quora.com/What-is-the-future-of-the-private-cloud-world-Mesos-or-OpenStack
 
 ## openstack  
 ### release notes
@@ -701,9 +716,19 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * http://www.tuicool.com/articles/jEF3iub
  * https://github.com/openshift/openshift-pep/blob/master/openshift-pep-013-openshift-3.md
  * https://github.com/openshift/origin/blob/master/docs/openshift_model.md
+ * https://docs.openshift.org/latest/install_config/native_container_routing.html
+ * https://docs.openshift.org/latest/architecture/core_concepts/routes.html#routers
+ * Openshift https://blog.openshift.com/what-is-devops-really/
+ * https://blog.openshift.com/devops-and-openshift-a-perfect-match/
+ * skydns https://devops.profitbricks.com/tutorials/setup-skydns-on-a-kubernetes-cluster/
+ * 整个基于kubernetes和openshift的持续集成体系 https://blog.openshift.com/openshift-cloudbees-jenkins-enterprise-devops/
+ * OpenShift 架构 https://blog.openshift.com/openshift-v3-deep-dive-docker-kubernetes/
+ * OpenShift文档 	https://docs.openshift.org/latest/dev_guide/projects.html
 
 ### marketplace
  * https://marketplace.openshift.com/
+
+
 
 ##unikernel
  * https://www.joyent.com/blog/unikernels-are-unfit-for-production
@@ -971,7 +996,13 @@ http://alternativeto.net/
 ## 5 famous computer-projects
  * http://www.openstack.org/blog/ 	http://releases.openstack.org/ https://github.com/openstack/nova
  * http://blog.docker.com/ https://github.com/docker/docker
- * https://github.com/kubernetes/kubernetes/releases	http://kubernetes.io/media/ https://github.com/kubernetes/kubernetes
+ * https://github.com/docker/swarm/blob/master/CHANGELOG.md
+ * https://github.com/docker/swarm/blob/master/ROADMAP.md
+ * http://mesos.apache.org/blog/
+ * https://github.com/apache/mesos/blob/master/CHANGELOG
+ * https://github.com/kubernetes/kubernetes/releases	http://kubernetes.io/media/
+ * https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md/
+ * https://github.com/kubernetes/kubernetes
  * https://www.opencontainers.org/
  * https://hadoop.apache.org/ https://github.com/apache/hadoop
  * http://spark.apache.org/ https://github.com/spark/core
