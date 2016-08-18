@@ -996,7 +996,7 @@ http://alternativeto.net/
 ## 5 famous computer-projects
  * http://www.openstack.org/blog/ 	http://releases.openstack.org/ https://github.com/openstack/nova
  * http://blog.docker.com/ https://github.com/docker/docker
- * https://github.com/docker/swarm/blob/master/CHANGELOG.md
+ * https://github.com/docker/docker/blob/master/CHANGELOG.md  https://github.com/docker/swarm/blob/master/CHANGELOG.md
  * https://github.com/docker/swarm/blob/master/ROADMAP.md
  * http://mesos.apache.org/blog/
  * https://github.com/apache/mesos/blob/master/CHANGELOG
