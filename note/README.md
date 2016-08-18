@@ -834,6 +834,8 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
   *  https://github.com/Netflix/eureka
   *  https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture/  服务发现概念
   *  http://www.infoq.com/cn/articles/basis-frameworkto-implement-micro-service  微服务框架介绍
+  *  nginx microservice framwork https://www.nginx.com/blog/event-driven-data-management-microservices/?utm_source=service-discovery-in-a-microservices-architecture&utm_medium=blog
+  *  nginx microservice https://www.nginx.com/blog/improve-app-performance-reliability-nginx-amplify-part-1-features-capabilities/
 
 ## 架构参考 reference architecture  
 ### 电子商务 Ecommerce
