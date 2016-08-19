@@ -641,6 +641,8 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * http://www.nextplatform.com/2015/11/12/inside-ebays-shift-to-kubernetes-and-containers-atop-openstack/ ebay 案例
  * http://docs.openstack.org/developer/magnum/ 工作进度
  * https://wiki.openstack.org/wiki/Magnum/Networking 网络
+ * https://github.com/openstack/magnum/tree/master/doc/source 文档
+ * 用户文档   https://github.com/openstack/magnum/blob/master/doc/source/userguide.rst
 
 ### floating ips
  * http://www.ibm.com/developerworks/cn/cloud/library/cl-openstack-network/
