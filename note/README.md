@@ -643,6 +643,7 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * https://wiki.openstack.org/wiki/Magnum/Networking 网络
  * https://github.com/openstack/magnum/tree/master/doc/source 文档
  * 用户文档   https://github.com/openstack/magnum/blob/master/doc/source/userguide.rst
+ * http://docs.openstack.org/developer/magnum/  不出错的文档
 
 ### floating ips
  * http://www.ibm.com/developerworks/cn/cloud/library/cl-openstack-network/
