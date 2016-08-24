@@ -220,6 +220,13 @@ https://success.docker.com/Datacenter/Apply/Introduction_to_User_Namespaces_in_D
 ### docker security
 http://www.projectatomic.io/docs/docker-and-selinux/
 
+#### Docker compose template
+ * https://dzone.com/articles/docker-compose-environment-variable-binding-exampl
+ * https://github.com/dchqinc/dchq-docker-java-example
+ * http://dchq.co/blog/docker-compose-environment-variable-binding-examples-java-nodejs-php-python-and-ruby-on-rails#docker-nodejs
+
+
+
 ```
 docker run --privileged --name mariadb -d -e "container=docker" mariadbcentos:0.5 /usr/sbin/init
 
@@ -499,6 +506,14 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * http://mesos.apache.org/documentation/latest/cni/
  * http://mesos.apache.org/blog/mesos-1-0-0-released/
 
+#### Mesos template mesos 应用模版
+ * https://github.com/CenturyLinkLabs/panamax-public-templates
+ * https://github.com/CenturyLinkLabs/panamax-contest-templates
+ * https://github.com/CenturyLinkLabs/panamax-kubernetes-adapter/tree/master/spec
+ * https://github.com/CenturyLinkLabs/panamax-ui/wiki
+
+
+
 ### kubernetes storage
  * https://docs.openshift.com/enterprise/3.1/install_config/persistent_storage/persistent_storage_ceph_rbd.html
  * https://access.redhat.com/documentation/en/openshift-enterprise/3.1/installation-and-configuration/chapter-14-configuring-persistent-storage
@@ -513,7 +528,15 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
 
 ### kubectl CLI
  * http://kubernetes.io/docs/user-guide/kubectl-overview/
- * 
+
+#### kubernetes java client
+ * https://github.com/fabric8io/kubernetes-client
+ 
+#### kubernetes python client
+ * https://github.com/kelproject/pykube/blob/master/pykube/objects.py
+ * https://pypi.python.org/pypi/python-k8sclient/0.2.0
+
+
 
 ### kubernetes API
  * http://kubernetes.io/docs/api-reference/v1/operations/
@@ -732,6 +755,12 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 ### marketplace
  * https://marketplace.openshift.com/
 
+#### openshift workflow
+ * https://keithtenzer.com/2015/08/20/openshift-v3-unlocking-the-power-of-persistent-storage/
+ * https://keithtenzer.com/2016/08/11/openshift-v3-basic-release-deployment-scenarios/
+
+
+
 
 
 ##unikernel
@@ -743,6 +772,9 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * http://wiki.xenproject.org/wiki/Unikernels
  * https://techcrunch.com/2016/01/21/docker-acquires-unikernel-systems-as-it-looks-beyond-containers/
  * http://unikernel.org/projects/
+
+#### unikernel security
+ * http://thenewstack.io/unikernels-will-create-security-problems-solve/
 
 ### jenkins
  * https://github.com/openshift/jenkins-plugin
@@ -1103,6 +1135,12 @@ https://github.com/lducas/FHEW
  * http://sshwindows.sourceforge.net/ windows
  * http://security.stackexchange.com/questions/32768/converting-keys-between-openssl-and-openssh key转换
  * https://support.ssl.com/Knowledgebase/Article/View/19/0/der-vs-crt-vs-cer-vs-pem-certificates-and-how-to-convert-them key转换 PEM DER CER CRT
+ 
+#### 在线课程
+ * http://www.51ean.com/securityproduct/security_product_list.html
+
+
+
 
 
 ### openssl
