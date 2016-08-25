@@ -327,6 +327,10 @@ docker-machine create \
  * https://github.com/kubernetes/kubernetes/blob/master/docs/whatisk8s.md#why-do-i-need-kubernetes-and-what-can-it-do
  * https://www.ctl.io/developers/blog/post/what-is-kubernetes-and-how-to-use-it/
  * https://www.sdxcentral.com/articles/news/why-docker-and-google-kubernetes-are-like-paas-done-right/2015/08/
+#### kubernetes template
+ * https://github.com/InQuicker/ktmpl
+ * https://github.com/mustache/mustache
+ * go template http://studygolang.com/articles/1833
 #### kubernetes quick start
  * http://kubernetes.io/docs/getting-started-guides/ubuntu/
  * http://kubernetes.io/docs/getting-started-guides/azure/
@@ -758,10 +762,6 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 #### openshift workflow
  * https://keithtenzer.com/2015/08/20/openshift-v3-unlocking-the-power-of-persistent-storage/
  * https://keithtenzer.com/2016/08/11/openshift-v3-basic-release-deployment-scenarios/
-
-
-
-
 
 ##unikernel
  * https://www.joyent.com/blog/unikernels-are-unfit-for-production
