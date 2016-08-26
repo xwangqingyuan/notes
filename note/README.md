@@ -1188,7 +1188,7 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
 ### pip 安装
 安装不了可以将python2.7目录允许访问。安装openstackclient后可以访问openstack服务
 
-## Go
+## Go golang
 ### 学习
  * learn by example https://gobyexample.com/
  * https://tour.golang.org/basics/1
@@ -1200,6 +1200,9 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
 ### goadesign
  * https://blog.gopheracademy.com/advent-2015/goaUntanglingMicroservices/
  * https://www.infoq.com/news/2015/12/goa-microservice-framework
+
+### go string literals string template 字符串
+ * https://golang.org/ref/spec#String_literals
 
 ## coding problems
 ### Python problems
