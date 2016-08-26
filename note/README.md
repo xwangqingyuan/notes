@@ -906,6 +906,17 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * https://github.com/nanomsg/nanomsg
 ### zeromq
  * http://zeromq.org/
+### kafka
+ * https://cwiki.apache.org/confluence/display/KAFKA/Clients
+ * http://kafka.apache.org/documentation.html
+ * http://www.warski.org/blog/2014/07/evaluating-persistent-replicated-message-queues/
+ * https://blog.linkedin.com/2011/01/11/open-source-linkedin-kafka introduction
+ * https://github.com/nats-io/gnatsd cloudfoundtry mqueue
+ * 
+### redis
+ * http://yaychris.com/blog/2009/11/redis-part-1.html
+ * http://redis.io/clients#bash
+ * 
 
 ## 软件腐蚀 software erosion
  * 原因 https://blog.heroku.com/archives/2011/6/28/the_new_heroku_4_erosion_resistance_explicit_contracts
