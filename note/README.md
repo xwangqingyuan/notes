@@ -586,6 +586,11 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * http://mesosphere.github.io/presentations/oscon-mesos-ops-2014/lightning/#/26
  * multi-tenancy mesos https://www.quora.com/What-is-the-future-of-the-private-cloud-world-Mesos-or-OpenStack
 
+### prometheus 普罗米修斯
+ * http://www.boxever.com/push-vs-pull-for-monitoring
+ * https://prometheus.io/docs/introduction/faq/#why-do-you-pull-rather-than-push?
+ * https://prometheus.io/blog/
+
 ## openstack  
 ### release notes
  * https://wiki.openstack.org/wiki/ReleaseNotes/Liberty
