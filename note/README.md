@@ -579,6 +579,9 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
   * 
  * https://golanglibs.com/top?q=dapper
  * https://github.com/SpirentOrion/trace
+ * http://www.tuicool.com/articles/F3YNrm
+ * http://www.tangrui.net/implement-distributed-tracking-system-with-zipkin-and-brave/?utm_source=tuicool&utm_medium=referral
+ * 集成Spring cloud kubernetes和zippkin http://www.tangrui.net/implement-distributed-tracking-system-with-zipkin-and-brave/?utm_source=tuicool&utm_medium=referral
 
 ### paas integration
  * https://github.com/fabric8io/fabric8
