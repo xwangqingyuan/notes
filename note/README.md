@@ -376,6 +376,8 @@ http://stackoverflow.com/questions/30701673/how-to-use-spring-cloud-from-nodejs
 http://stackoverflow.com/questions/33007887/how-to-register-node-app-with-spring-cloud-and-netflixs-eureka
 https://spring.io/guides/gs/spring-cloud-and-lattice/
 http://lattice.cf/
+#### spring boot
+ * develop with spring boot and kubernetes http://blog.christianposta.com/microservices/spring-boot-microservice-development-on-kubernetes-the-easy-way/
 
 #### 12-factors with Docker
  * https://prezi.com/e7sdy9rdujgp/12-factor-apps-in-docker/
@@ -591,6 +593,8 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * https://prometheus.io/docs/introduction/faq/#why-do-you-pull-rather-than-push?
  * https://prometheus.io/blog/
  * https://www.ctl.io/developers/blog/post/monitoring-docker-services-with-prometheus/
+ * install https://www.digitalocean.com/community/tutorials/how-to-install-prometheus-using-docker-on-ubuntu-14-04
+ * 
 
 ## openstack  
 ### release notes
