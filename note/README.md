@@ -590,6 +590,7 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * http://www.boxever.com/push-vs-pull-for-monitoring
  * https://prometheus.io/docs/introduction/faq/#why-do-you-pull-rather-than-push?
  * https://prometheus.io/blog/
+ * https://www.ctl.io/developers/blog/post/monitoring-docker-services-with-prometheus/
 
 ## openstack  
 ### release notes
