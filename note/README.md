@@ -855,6 +855,10 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 
 ## scheduler 调度器架构发展
  * http://www.firmament.io/blog/scheduler-architectures.html
+
+## hand drawing hand painting manual drawing free-hand drawing 手绘图案
+ * http://www.free-power-point-templates.com/articles/make-awesome-hand-drawn-diagrams-for-powerpoint-with-simplediagrams/
+ * http://www.presentation-process.com/hand-drawn-powerpoint.html#.V8S_go5gRE4
  
 ## micro services 微服务
  * http://dockone.io/article/812 微服务架构
