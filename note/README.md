@@ -224,7 +224,8 @@ http://www.projectatomic.io/docs/docker-and-selinux/
  * https://dzone.com/articles/docker-compose-environment-variable-binding-exampl
  * https://github.com/dchqinc/dchq-docker-java-example
  * http://dchq.co/blog/docker-compose-environment-variable-binding-examples-java-nodejs-php-python-and-ruby-on-rails#docker-nodejs
-
+#### Docker summary
+ * https://www.infoq.com/containers-real-world-hype-curve
 
 
 ```
