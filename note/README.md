@@ -795,7 +795,9 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * https://www.infoq.com/articles/continuous-deployment-containers?utm_source=infoq&utm_medium=related_content_link&utm_campaign=relatedContent_news_clk 持续集成的建议流程 CI/CD
  * https://www.infoq.com/news/2016/02/netflix-spinnaker?utm_source=infoq&utm_medium=related_content_link&utm_campaign=relatedContent_news_clk  hystrix CI/CD
  * http://www.spinnaker.io/v1.0/blog/deploy-to-kubernetes-using-spinnaker 集成kubernetes和spinnaker
- * http://www.spinnaker.io/v1.0/docs/overview
+ * http://www.spinnaker.io/v1.0/docs/overview  http://www.spinnaker.io/docs/frequently-asked-questions
+ * http://www.spinnaker.io/docs/kubernetes-source-to-prod
+ * http://stackoverflow.com/questions/37936967/compare-spinnaker-with-jenkins-2-0-as-a-continuous-delivery-tool/38407442#38407442
 
 #### jenkins errors
  * http://stackoverflow.com/questions/25738061/java-nio-file-directorynotemptyexception-when-deleting-lastsuccessful-laststable
