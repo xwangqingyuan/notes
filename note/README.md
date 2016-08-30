@@ -792,7 +792,10 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 ### jenkins
  * https://github.com/openshift/jenkins-plugin
  * https://blog.openshift.com/continuous-integration-deployment-v3/
- * 
+ * https://www.infoq.com/articles/continuous-deployment-containers?utm_source=infoq&utm_medium=related_content_link&utm_campaign=relatedContent_news_clk 持续集成的建议流程 CI/CD
+ * https://www.infoq.com/news/2016/02/netflix-spinnaker?utm_source=infoq&utm_medium=related_content_link&utm_campaign=relatedContent_news_clk  hystrix CI/CD
+ * http://www.spinnaker.io/v1.0/blog/deploy-to-kubernetes-using-spinnaker 集成kubernetes和spinnaker
+ * http://www.spinnaker.io/v1.0/docs/overview
 
 #### jenkins errors
  * http://stackoverflow.com/questions/25738061/java-nio-file-directorynotemptyexception-when-deleting-lastsuccessful-laststable
@@ -848,6 +851,12 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
    * http://www.csdn.net/article/2015-04-27/2824564
    * https://www.baidu.com/s?wd=Optimizely&rsv_spt=1&rsv_iqid=0xda45047b000354db&issp=1&f=3&rsv_bp=0&rsv_idx=2&ie=utf-8&rqlang=&tn=baiduhome_pg&rsv_enter=0
    * https://www.optimizely.com/
+ * 灰度发布
+   * http://blog.chinaunix.net/uid-30571370-id-5588506.html
+   * https://github.com/boylegu/regal
+   * http://www.linuxidc.com/Linux/2016-05/131288.htm 金丝雀部署 
+ * 灰度发布的工具
+   * fabric python的灰度发布工具，脚本 http://www.fabfile.org/
 
 ## Service Design principals
  * https://github.com/kubernetes/kubernetes/blob/master/docs/design/principles.md
