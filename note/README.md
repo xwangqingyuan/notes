@@ -905,6 +905,16 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
   *  http://www.infoq.com/cn/articles/basis-frameworkto-implement-micro-service  微服务框架介绍
   *  nginx microservice framwork https://www.nginx.com/blog/event-driven-data-management-microservices/?utm_source=service-discovery-in-a-microservices-architecture&utm_medium=blog
   *  nginx microservice https://www.nginx.com/blog/improve-app-performance-reliability-nginx-amplify-part-1-features-capabilities/
+#### Nginx microservice serias
+ * API first http://www.programmableweb.com/news/how-to-design-great-apis-api-first-design-and-raml/how-to/2015/07/10?utm_source=building-microservices-inter-process-communication&utm_medium=blog#apiu
+ * Reactive model http://reactivex.io/?utm_source=building-microservices-using-an-api-gateway&utm_medium=blog
+ * https://www.nginx.com/blog/building-microservices-inter-process-communication/?utm_source=building-microservices-using-an-api-gateway&utm_medium=blog 
+ * talking netflix fault tolerence http://techblog.netflix.com/2012/02/fault-tolerance-in-high-volume.html?utm_source=building-microservices-inter-process-communication&utm_medium=blog
+ * talking comparing Schema evolution in Avro, Protocol Buffers and Thrift http://martin.kleppmann.com/2012/12/05/schema-evolution-in-avro-protocol-buffers-thrift.html?utm_source=building-microservices-inter-process-communication&utm_medium=blog
+ * https://www.nginx.com/blog/event-driven-data-management-microservices/?utm_source=service-discovery-in-a-microservices-architecture&utm_medium=blog talking event sourcing, database maintaining events and transaction log mining
+ * talking database as a message queue http://queue.acm.org/detail.cfm?id=1394128&utm_source=event-driven-data-management-microservices&utm_medium=blog
+ * talking object relational impedance mismatch https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch impedance mismatch阻抗失配 阻抗匹配
+ * VM container serverless deployment https://www.nginx.com/blog/deploying-microservices/?utm_source=event-driven-data-management-microservices&utm_medium=blog
 
 ## 架构参考 reference architecture  
 ### 电子商务 Ecommerce
