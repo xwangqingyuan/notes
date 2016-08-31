@@ -419,7 +419,9 @@ http://lattice.cf/
  * http://camel.apache.org/enterprise-integration-patterns.html
  * http://camel.apache.org/camel-dsl.html
  * http://camel.apache.org/soa-patterns.html
-
+### kubernetes devops
+ * http://blog.udacity.com/2016/05/introducing-scalable-microservices-kubernetes.html
+ * https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615
 ### probe healthcheck
  * http://kubernetes.io/docs/user-guide/walkthrough/k8s201/#health-checking
  * http://kubernetes.io/docs/user-guide/pod-states/#container-probes
