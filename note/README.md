@@ -69,7 +69,28 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 ### infoq famous persons
  * http://2016.qconbeijing.com/track/2769
 
+## use case
+用户画像
+ * http://www.woshipm.com/pmd/107919.html
+数据雷达
+ * http://baike.baidu.com/link?url=w9TGeD2SSCuFnsZi5o3QDwz8TG3uEqgBCCxp6zBfuTTUH_9OYeyTL_Dv1LFIWvLM6F2wZi5AUmT0RuYr6ciTdK
+大数据案例
+ * http://baike.baidu.com/link?url=w9TGeD2SSCuFnsZi5o3QDwz8TG3uEqgBCCxp6zBfuTTUH_9OYeyTL_Dv1LFIWvLM6F2wZi5AUmT0RuYr6ciTdK
+ * http://www.chinacpda.org/%E5%BA%94%E7%94%A8%E5%AE%9E%E4%BE%8B/3661.html
+ * http://labs.chinamobile.com/mblog/109590_233980 49个案例
+详细案例
+ * http://www.ctocio.com/industry/retail/14238.html
+国外地震预测算法
+ * http://www.cyzone.cn/a/20140108/248370.html
+案例解读
+ * http://www.enet.com.cn/article/2015/0519/A20150519000851.html
+ * 公安案例   http://www.raincent.com/content-10-6455-1.html
+税务案例
+ * http://www.ah-l-tax.gov.cn/portal/dsfc/dwjs/llyj/1435852802010903.htm
+ * http://www.thebigdata.cn/YingYongAnLi/5782.html
+ * http://www.kjcity.com/news_109562.html
 ## data visualization 数据可视化  BI business intelligence
+
 ### D3 Data Driven Document
 #### 主页
  * https://d3js.org/
