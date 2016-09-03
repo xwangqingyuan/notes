@@ -1259,6 +1259,9 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * http://www.generatedata.com/
  * http://c2.com/cgi/wiki?TestDataGenerator
 
+## nodejs
+### web command line interface cli
+ * https://www.sitepoint.com/javascript-command-line-interface-cli-node-js/
 ## Python
 ### 学习
  * http://www.jb51.net/article/33991.htm
