@@ -181,6 +181,13 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
  * http://www.theregister.co.uk/2015/04/20/microsoft_azure_service_fabric/ 声明编排
  * http://www.cnblogs.com/redmoon/archive/2015/04/23/4452111.html Service Fabric
 
+## cloud history
+### software history
+ * weblogic http://www.qualogy.com/techblog/oracle/weblogic-how-it-all-began
+ * websphere http://www-03.ibm.com/ibm/history/ibm100/us/en/icons/websphere/
+ * docker http://searchservervirtualization.techtarget.com/feature/A-brief-history-of-Docker-Containers-overnight-success
+ * unikernel https://en.wikipedia.org/wiki/Unikernel  http://cloudacademy.com/blog/unikernels-docker-containers-vms-microservices/
+
 ## PaaS 
 ## solution 架构 解决方案
  * http://www.cloudcomputingpatterns.org/Static_Workload  
