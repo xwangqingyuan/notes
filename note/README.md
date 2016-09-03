@@ -217,6 +217,9 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
  * https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start
 ### docker security
  * https://docs.docker.com/engine/security/security/
+#### docker security concerns
+ * http://www.networkworld.com/article/3018881/tech-primers/moving-target-defense-vs-moving-target-attacks-the-two-faces-of-deception.html
+ * https://www.oreilly.com/ideas/five-security-concerns-when-using-docker
 ### docker content trust image signature docker 镜像签名
  * https://docs.docker.com/engine/security/trust/content_trust/
  * https://docs.docker.com/engine/security/trust/trust_automation/
