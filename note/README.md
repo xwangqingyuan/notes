@@ -366,6 +366,7 @@ docker-machine create \
 #### kubernetes quick start
  * http://kubernetes.io/docs/getting-started-guides/ubuntu/
  * http://kubernetes.io/docs/getting-started-guides/azure/
+ * http://thenewstack.io/tutorial-configuring-ultimate-development-environment-kubernetes/
 #### microservice platform
  * http://wildfly.org/about/
  * http://deis.io/overview/
