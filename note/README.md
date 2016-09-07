@@ -833,6 +833,7 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * http://www.spinnaker.io/v1.0/docs/overview  http://www.spinnaker.io/docs/frequently-asked-questions
  * http://www.spinnaker.io/docs/kubernetes-source-to-prod
  * http://stackoverflow.com/questions/37936967/compare-spinnaker-with-jenkins-2-0-as-a-continuous-delivery-tool/38407442#38407442
+ * 持续集成 持续交付 持续部署 http://www.mindtheproduct.com/2016/02/what-the-hell-are-ci-cd-and-devops-a-cheatsheet-for-the-rest-of-us/
 
 #### jenkins errors
  * http://stackoverflow.com/questions/25738061/java-nio-file-directorynotemptyexception-when-deleting-lastsuccessful-laststable
