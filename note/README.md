@@ -353,6 +353,11 @@ docker-machine create \
   * http://kubernetes.io/docs/user-guide/petset/
   * https://github.com/kubernetes/kubernetes/tree/master/docs/design
   * http://kubernetes.io/docs/user-guide/petset/bootstrapping/
+#### 动态分配存储 provisioner
+ * https://github.com/kubernetes/kubernetes/blob/962d51ec682a14ef2d926175bbc614bac69f3197/pkg/controller/volume/persistentvolume/controller.go
+ * https://github.com/kubernetes/kubernetes/blob/88c977c34ac9c0edc8b6be8034b2d5b47a5735e2/pkg/volume/glusterfs/glusterfs.go
+ * https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-files/
+ * https://azure.microsoft.com/en-us/pricing/details/storage/
 #### kubernetes paas
  * https://medium.com/@shijuvar/the-evolution-of-cloud-paas-to-container-ecosystem-1943a335c25b#.7gwiv5dc9
  * http://kubernetes.io/docs/whatisk8s/
