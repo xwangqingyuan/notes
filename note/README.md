@@ -124,6 +124,15 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 ## flink real time compute framework
  * http://flink.apache.org/
  * http://www.zhihu.com/question/30151872
+#### Flink on kubernetes
+ * https://github.com/melentye/flink-kubernetes example
+ * https://github.com/kubernetes/kubernetes/issues/15817
+ * https://github.com/kubernetes/kubernetes/issues/16517
+ * https://databaseline.wordpress.com/2016/03/12/an-overview-of-apache-streaming-technologies/
+ * http://stackoverflow.com/questions/30699119/what-is-are-the-main-differences-between-flink-and-storm
+ * http://data-artisans.com/high-throughput-low-latency-and-exactly-once-stream-processing-with-apache-flink/
+ * http://stackoverflow.com/questions/30699119/what-is-are-the-main-differences-between-flink-and-storm
+ * http://www.cakesolutions.net/teamblogs/comparison-of-apache-stream-processing-frameworks-part-2
 
 # books
  * https://en.wikipedia.org/wiki/S._%28Dorst_novel%29
@@ -193,6 +202,15 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
  * http://www.cloudcomputingpatterns.org/Static_Workload  
  * http://www.rightscale.com/blog/enterprise-cloud-strategies/identifying-workloads-cloud  
  * solution 架构 https://msdn.microsoft.com/dn630664
+
+#### PaaS vs. CaaS
+ * https://blog.outscale.com/us/docker-may-kill-paas-but-it-needs-iaas/
+ * http://cloudtweaks.com/2014/12/paas-vs-docker-heated-debate/
+ * http://www.infoq.com/cn/news/2015/07/where-is-the-future-of-caas
+ * http://thenewstack.io/google-offers-container-as-a-service-to-define-kubernetes-place-in-the-cloud-economy/ container pattern
+ * https://news.ycombinator.com/item?id=11304420
+ * https://www.sdxcentral.com/articles/news/why-docker-and-google-kubernetes-are-like-paas-done-right/2015/08/
+ * http://www.infoq.com/cn/news/2015/07/where-is-the-future-of-caas
 
 ### 平台云比较
  * http://www.chinacloud.cn/show.aspx?id=20204&cid=14
