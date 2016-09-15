@@ -498,6 +498,13 @@ http://lattice.cf/
  * http://kubernetes.io/docs/admin/accessing-the-api/
  * http://kubernetes.io/docs/admin/authorization/#a-quick-note-on-service-accounts
 
+#### SRE Site Reliability Engineer GIFEE google infrastruction for everyone else
+ * https://speakerdeck.com/garethr/the-two-sides-to-google-infrastructure-for-everyone-else
+ * http://www.morethanseven.net/
+ * https://speakerdeck.com/garethr/the-two-sides-to-google-infrastructure-for-everyone-else
+ * https://www.packet.net/features/for-enterprises/
+ * http://www.nebulaworks.com/blog/2015/12/15/2016-the-year-of-gifee/
+
 ### AZ zones regions 可用区
 http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html
 https://cloud.google.com/compute/docs/regions-zones/global-regional-zonal-resources#globalresources
