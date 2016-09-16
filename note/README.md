@@ -155,6 +155,14 @@ http://www.racemi.com/cloud-migration/
 http://www.corenttech.com/index.html
 http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
 
+#### Hybrid Cloud docker
+ * https://developer.ibm.com/bluemix/2015/06/19/deploy-containers-premises-hybrid-clouds-ibm-docker/ backend on premise frontend in public cloud
+ * https://developer.ibm.com/opentech/2015/06/19/the-power-of-containers-in-bringing-reference-architectures-to-life/
+ * http://www.hedviginc.com/product#cloudscale-reference-architectures
+ * https://azure.microsoft.com/en-us/blog/persistent-docker-volumes-with-azure-file-storage/
+ * http://www.rightscale.com/blog/cloud-management-best-practices/cloud-storage-aws-vs-azure-vs-google-vs-softlayer storage compare
+ * https://clusterhq.com/2014/08/13/data-focused-docker-clustering/ flocker solution
+
 ### openstack API
  * http://developer.openstack.org/api-ref.html
 
