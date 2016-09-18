@@ -564,6 +564,15 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
   - https://github.com/apache/mesos/blob/master/docs/networking-for-mesos-managed-containers.md
   - https://issues.apache.org/jira/browse/MESOS-1407
 
+#### gis spatial database
+ * http://www.bostongis.com/PrinterFriendly.aspx?content_name=postgis_tut01
+ * http://postgis.net/
+ * https://docs.djangoproject.com/en/dev/ref/contrib/gis/db-api/#compatibility-tables
+ * https://en.wikipedia.org/wiki/Spatial_database
+ * https://github.com/ryanj/restify-postGIS openshift example
+ * http://www.jmapping.com/creating-a-node-js-postgis-app-on-openshift/ openshift and postgis
+ * https://github.com/sorintlab/stolon kubernetes postgre
+
 ### mesos
 #### mesos network
  * https://git-wip-us.apache.org/repos/asf?p=mesos.git;a=blob_plain;f=CHANGELOG;hb=0.28.2
