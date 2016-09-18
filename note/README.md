@@ -1559,7 +1559,15 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
 #### VMware虚拟机无法启动
  * Cannot power on a virtual machine because the virtual disk cannot be opened
  * 需要释放主机空间
- 
+
+# project management 项目管理
+## 开源项目管理项目
+### openproject
+ * https://community.openproject.com/topics/3729
+ * https://github.com/opf/openproject/blob/release/5.0/doc/operation_guides/docker/installation-guide.md
+ * http://www.shareable.net/blog/the-top-7-open-source-project-management-tools
+ * https://community.openproject.com/topics/3729
+ * http://www.project-open.com/en/integration-openproj
 # sales 销售
 ## 客户沟通技巧
  * http://zhidao.baidu.com/link?url=J7QM6hwwlOKnnuBkGvW4_AZcA_A8CORk48nFkEcbqcMhgyteUOCj3k-u5HJWi6M19shXwB4tzef40MJkrWgCWa
