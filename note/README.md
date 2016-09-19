@@ -858,6 +858,10 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * https://keithtenzer.com/2015/08/20/openshift-v3-unlocking-the-power-of-persistent-storage/
  * https://keithtenzer.com/2016/08/11/openshift-v3-basic-release-deployment-scenarios/
 
+#### openshift user guide user management
+ * https://docs.openshift.org/latest/architecture/additional_concepts/authentication.html
+ * https://docs.openshift.org/latest/admin_guide/manage_scc.html
+
 ##unikernel
  * https://www.joyent.com/blog/unikernels-are-unfit-for-production
  * http://stackoverflow.com/questions/30392261/docker-container-compared-with-unikernel
