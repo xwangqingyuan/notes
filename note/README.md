@@ -1581,6 +1581,10 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
  * http://www.shareable.net/blog/the-top-7-open-source-project-management-tools
  * https://community.openproject.com/topics/3729
  * http://www.project-open.com/en/integration-openproj
+#### project-management
+ * http://www.sonarqube.org/
+ * https://github.com/SonarSource/sonarqube
+ * http://project-management.zone/system/bugzilla,openproject,trac
 # sales 销售
 ## 客户沟通技巧
  * http://zhidao.baidu.com/link?url=J7QM6hwwlOKnnuBkGvW4_AZcA_A8CORk48nFkEcbqcMhgyteUOCj3k-u5HJWi6M19shXwB4tzef40MJkrWgCWa
