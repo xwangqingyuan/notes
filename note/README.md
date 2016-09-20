@@ -1585,6 +1585,13 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
  * http://www.sonarqube.org/
  * https://github.com/SonarSource/sonarqube
  * http://project-management.zone/system/bugzilla,openproject,trac
+ * http://project-management.zone/system/jira,openproject,phabricator
+ * http://project-management.zone/system/openproject,phabricator,redmine
+
+#### project management CI/CD
+ * http://www.cliqr.com/company/news-events/cliqr-cloudcenter-application-defined-cloud-management-platform-sets-new-industry-standard-in-opening-the-cloud-for-business/
+ * http://www.mamicode.com/info-detail-1424183.html
+ * https://www.infoq.com/news/2016/02/microservice-deploys-spinnaker
 # sales 销售
 ## 客户沟通技巧
  * http://zhidao.baidu.com/link?url=J7QM6hwwlOKnnuBkGvW4_AZcA_A8CORk48nFkEcbqcMhgyteUOCj3k-u5HJWi6M19shXwB4tzef40MJkrWgCWa
