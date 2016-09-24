@@ -284,6 +284,9 @@ http://www.projectatomic.io/docs/docker-and-selinux/
 #### Docker summary
  * https://www.infoq.com/containers-real-world-hype-curve
 
+### docker tools docker工具
+#### docker 简化工具
+ * http://dockone.io/article/1516?utm_source=tuicool&utm_medium=referral
 
 ```
 docker run --privileged --name mariadb -d -e "container=docker" mariadbcentos:0.5 /usr/sbin/init
@@ -1623,3 +1626,12 @@ accounting period/reporting period 会计期 报告期
 basic period/reference period 参考期 统计期 基准期
 sampling frequency 采样频率 sampling rate 采样速率 sample period 采样周期 sampling cycle
 observation period observation duration 观察期
+
+# translation 翻译
+#### Translation auto-translation 自动翻译API
+ * http://www.360doc.com/content/11/1226/21/3508740_175185933.shtml 下载sdcv 命令行翻译 
+ * http://abloz.com/huzheng/stardict-dic/zh_CN/ 下载词典
+ * http://www.oschina.net/code/snippet_578360_51005
+ * http://www.cnblogs.com/chenbjin/p/4001998.html baidu 翻译
+ * http://www.oschina.net/code/snippet_853228_45743 有道翻译
+ * http://blog.sina.com.cn/s/blog_670fb2a80100hiwn.html 翻译方法
