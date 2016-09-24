@@ -236,6 +236,10 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
   - Installation 安装 docker https://docs.docker.com/linux/
   - https://docs.docker.com/linux/step_one
   - https://docs.docker.com/opensource/project/set-up-dev-env/   构建docker 环境
+
+### news 新闻 调查报告
+ * http://www.woshipm.com/it/366183.html
+
 ### 从镜像导出Dockerfile的方法
  * undocker https://github.com/larsks/undocker/
  * docker cp 命令
