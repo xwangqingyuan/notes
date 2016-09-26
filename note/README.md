@@ -492,6 +492,16 @@ http://lattice.cf/
 ### kubernetes devops
  * http://blog.udacity.com/2016/05/introducing-scalable-microservices-kubernetes.html
  * https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615  online-course
+#### docker devops kubernetes openshift devops
+ * http://www.infoworld.com/article/3066058/open-source-tools/kubernetes-powered-paas-focuses-on-devops.html
+ * http://www.kelproject.com/
+ * https://blog.openshift.com/devops-paas-and-modern-it/
+ * https://blog.openshift.com/what-is-devops-really/
+ * https://blog.appdynamics.com/devops/docker-and-devops-why-it-matters/
+ * https://insights.sei.cmu.edu/devops/2015/01/devops-and-docker.html
+ * http://fabric8.io/devops/
+ * https://github.com/fabric8io/fabric8-devops
+ * http://blog.christianposta.com/demo/devops-with-apache-tomcattomee-and-fabric8/
 ### probe healthcheck
  * http://kubernetes.io/docs/user-guide/walkthrough/k8s201/#health-checking
  * http://kubernetes.io/docs/user-guide/pod-states/#container-probes
