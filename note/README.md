@@ -640,6 +640,16 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
 #### kubernetes python client
  * https://github.com/kelproject/pykube/blob/master/pykube/objects.py
  * https://pypi.python.org/pypi/python-k8sclient/0.2.0
+ 
+#### fabric8
+ * http://fabric8.io/guide/getStarted/minishift.html
+ * https://github.com/jenkinsci/job-dsl-plugin/wiki jenkins job pipeline 脚本集成
+ * https://fabric8.io/
+#### web term web shell web ssh
+ * https://www.npmjs.com/package/docker-tty
+ * https://github.com/sourcelair/xterm.js
+ * https://github.com/chjj/term.js/tree/master/example
+ * https://davidwalsh.name/upgrade-nodejs 升级nodejs
 
 
 
