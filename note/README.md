@@ -405,6 +405,13 @@ docker-machine create \
  * http://kubernetes.io/docs/getting-started-guides/ubuntu/
  * http://kubernetes.io/docs/getting-started-guides/azure/
  * http://thenewstack.io/tutorial-configuring-ultimate-development-environment-kubernetes/
+#### 下载kubectl
+ * https://storage.googleapis.com/kubernetes-release/release/v1.3.0/bin/darwin/amd64/kubectl
+#### 下载容器
+ * 更新容器镜像
+```
+ kubectl set image deployment/kubedash kubedash=index.tenxcloud.com/google_containers/kubernetes-dashboard-amd64:v1.4.0
+```
 #### microservice platform
  * http://wildfly.org/about/
  * http://deis.io/overview/
