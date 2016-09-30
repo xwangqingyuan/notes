@@ -424,6 +424,9 @@ root@dev-xwang:~# gluster volume quota glustersample1 limit-usage / 32GB
  kubectl exec -i gogs-2717905640-v96iy -- bash -c '/bin/cat >/tmp/test.txt' < test.txt
  kubectl exec -i gogs-2717905640-v96iy -- bash -c '/bin/cat /tmp/test.txt'
 ```
+#### 安装 kubernetes
+ * http://blog.kubernetes.io/2016/09/how-we-made-kubernetes-easy-to-install.html
+
 #### microservice platform
  * http://wildfly.org/about/
  * http://deis.io/overview/
