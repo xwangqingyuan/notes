@@ -28,6 +28,8 @@
  * 卷积 A CNN is composed of one or more convolutional layers with fully connected layers (matching those in typical artificial neural networks) on top.In machine learning, a convolutional neural network (CNN, or ConvNet) is a type of feed-forward artificial neural network in which the connectivity pattern between its neurons is inspired by the organization of the animal visual cortex, whose individual neurons are arranged in such a way that they respond to overlapping regions tiling the visual field One major advantage of convolutional networks is the use of shared weight in convolutional layers, which means that the same filter (weights bank) is used for each pixel in the layer
   - Compared to other image classification algorithms, convolutional neural networks use relatively little pre-processing. This means that the network is responsible for learning the filters that in traditional algorithms were hand-engineered. The lack of dependence on prior knowledge and human effort in designing features is a major advantage for CNNs.
   - https://en.wikipedia.org/wiki/Convolutional_neural_network
+ * 用Kubernetes 做人工智能 https://openai.com/blog/infrastructure-for-deep-learning/
+
 
 ## Alpha–beta pruning
  * https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning
