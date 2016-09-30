@@ -412,6 +412,16 @@ docker-machine create \
 ```
  kubectl set image deployment/kubedash kubedash=index.tenxcloud.com/google_containers/kubernetes-dashboard-amd64:v1.4.0
 ```
+#### kubectl exec
+ * kubectl exec gogs-2717905640-v96iy -- bash -c '/bin/echo hello > /tmp/result.log'
+ * 往容器里复制文件，https://github.com/kubernetes/kubernetes/issues/13776 
+```
+mount -t glusterfs 192.168.1.133:/glustersample1 /mnt/glustersample1
+192.168.1.133:/glustersample1   32G   27G  5.7G  83% /mnt/glustersample1
+root@dev-xwang:~# gluster volume quota glustersample1 limit-usage / 32GB
+ kubectl exec -i gogs-2717905640-v96iy -- bash -c '/bin/cat >/tmp/test.txt' < test.txt
+ kubectl exec -i gogs-2717905640-v96iy -- bash -c '/bin/cat /tmp/test.txt'
+```
 #### microservice platform
  * http://wildfly.org/about/
  * http://deis.io/overview/
