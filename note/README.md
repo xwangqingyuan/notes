@@ -541,6 +541,9 @@ http://lattice.cf/
   * http://kubernetes.io/docs/admin/multiple-zones/
   * http://kubernetes.io/docs/admin/federation/
   * http://kubernetes.io/docs/admin/multi-cluster/
+#### federation service
+ * https://github.com/kubernetes/kubernetes.github.io/tree/e51b0a40bc98220afdeffd3a63681ff62f5e69f3/docs/user-guide/federation
+ * https://github.com/kubernetes/kubernetes.github.io/blob/e51b0a40bc98220afdeffd3a63681ff62f5e69f3/docs/user-guide/federation/federated-services.md
 
 ### ConfigMap
  * https://github.com/kubernetes/kubernetes/blob/release-1.3/docs/design/configmap.md
