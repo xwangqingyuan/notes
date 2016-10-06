@@ -524,6 +524,10 @@ http://lattice.cf/
  * http://fabric8.io/devops/
  * https://github.com/fabric8io/fabric8-devops
  * http://blog.christianposta.com/demo/devops-with-apache-tomcattomee-and-fabric8/
+#### quickstart 
+ * https://github.com/openshift/origin/tree/master/examples/quickstarts  openshift application template
+ * https://docs.openshift.org/latest/dev_guide/templates.html#dev-guide-templates
+ * https://github.com/fabric8-quickstarts?page=2  fabric8 application template
 ### probe healthcheck
  * http://kubernetes.io/docs/user-guide/walkthrough/k8s201/#health-checking
  * http://kubernetes.io/docs/user-guide/pod-states/#container-probes
