@@ -937,6 +937,12 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * http://www.spinnaker.io/docs/kubernetes-source-to-prod
  * http://stackoverflow.com/questions/37936967/compare-spinnaker-with-jenkins-2-0-as-a-continuous-delivery-tool/38407442#38407442
  * 持续集成 持续交付 持续部署 http://www.mindtheproduct.com/2016/02/what-the-hell-are-ci-cd-and-devops-a-cheatsheet-for-the-rest-of-us/
+#### netflix spinnaker PaaS cluster management and Deployment management
+ * http://www.spinnaker.io/docs/overview
+ * https://github.com/spinnaker/spinnaker
+ * https://www.infoq.com/news/2016/02/microservice-deploys-spinnaker
+ * https://github.com/spinnaker/deck/tree/master/app/scripts/modules/netflix network ui modules
+ * https://github.com/spinnaker/deck/wiki/Conventions spinnaker ui guide
 
 #### jenkins errors
  * http://stackoverflow.com/questions/25738061/java-nio-file-directorynotemptyexception-when-deleting-lastsuccessful-laststable
@@ -1165,6 +1171,10 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 ### spoil pants
 搞砸了
 
+#### 英文缩写
+ * http://www.360doc.com/content/15/1010/15/15077656_504675457.shtml
+
+
 # multimedia 多媒体
 ## 编解码格式
  * http://zhidao.baidu.com/question/371893045.html
@@ -1377,6 +1387,20 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * http://www.pythonchallenge.com/
 ### list comprehesions 列表解析和生成器表达式
  * http://www.jb51.net/article/26520.htm
+
+#### angularjs 
+ * https://github.com/toddmotto/angular-1-5-components-app
+ * https://github.com/toddmotto/angular-styleguide
+ * https://docs.angularjs.org/api/ng/directive/ngStyle 1.5
+ * https://angular.io/docs/ts/latest/
+ * http://blog.angular-university.io/introduction-to-angular2-the-main-goals/
+ * https://angular.io/docs/ts/latest/guide/architecture.html angularjs 2 architecture
+ * https://github.com/angular/quickstart angularjs sample 例子程序
+ * http://www.typescriptlang.org/  typescript脚本语言 http://www.tslang.cn/
+ * http://www.zhihu.com/question/21879449?sort=created
+ * https://dzone.com/articles/typed-front-end-with-angular-2
+ * https://medium.freecodecamp.com/angular-2-versus-react-there-will-be-blood-66595faafd51#.5xor5uejs
+ * http://blog.backand.com/angular-2-vs-react/  有 angularjs 2 和 reactjs 例子
 
 ### pip 安装
 安装不了可以将python2.7目录允许访问。安装openstackclient后可以访问openstack服务
