@@ -293,6 +293,9 @@ http://www.projectatomic.io/docs/docker-and-selinux/
 ### docker tools docker工具
 #### docker 简化工具
  * http://dockone.io/article/1516?utm_source=tuicool&utm_medium=referral
+#### docker 多进程管理
+ * https://yq.aliyun.com/articles/58414 supervisord, s6
+ * http://skarnet.org/software/s6/
 
 ```
 docker run --privileged --name mariadb -d -e "container=docker" mariadbcentos:0.5 /usr/sbin/init
