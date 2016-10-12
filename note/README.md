@@ -522,6 +522,18 @@ http://lattice.cf/
  * http://martinfowler.com/articles/microservices.html
  * http://ryanjbaxter.com/2015/07/13/building-cloud-native-applications/ 12-Factor Applications 12要素应用 Microservices Architecture微服务架构 API Based Collaboration基于REST API的合作 Antifragile反脆弱
  * 数据库跟云原生的关系 http://www.confluent.io/blog/turning-the-database-inside-out-with-apache-samza/
+#### API Gateway
+ * https://github.com/Mashape/kong
+ * https://github.com/Mashape/kong/tree/master/kong
+ * https://github.com/ipedrazas/k8s.uk/blob/master/kubernetes/kong.md
+ * https://github.com/apiman/apiman
+ * http://www.apiman.io/latest/
+ * https://github.com/apiman/apiman
+ * https://tyk.io/
+ * https://github.com/TykTechnologies/tyk
+ * https://medium.com/@jcderr/nginx-api-gateway-in-kubernetes-18695e1d8c#.9je0yum9s
+ * https://kurtstam.github.io/2015/06/15/API-Management-on-Kubernetes.html
+ * https://circleci.com/docs/docker/ 持续集成案例
 
 #### Apache camel patterns
  * http://camel.apache.org/enterprise-integration-patterns.html
