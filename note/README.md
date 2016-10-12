@@ -427,6 +427,19 @@ root@dev-xwang:~# gluster volume quota glustersample1 limit-usage / 32GB
 #### 安装 kubernetes
  * http://blog.kubernetes.io/2016/09/how-we-made-kubernetes-easy-to-install.html
 
+#### kubernetes secret 使用
+ * http://kubernetes.io/docs/user-guide/secrets/
+ * https://github.com/kubernetes/kubernetes/blob/master/docs/design/secrets.md 设计 design
+ * http://blog.ployst.com/development/2015/12/22/letsencrypt-on-kubernetes.html nginx proxy 做SSL认证
+ * https://github.com/kubernetes/kubernetes/issues/10439#issuecomment-162792477 kubernetes secret and vault
+ * https://news.ycombinator.com/item?id=10927043 讨论在微服务架构中如何保证秘密
+ * https://github.com/kubernetes/kubernetes/issues/12742 有关安全存储 etcd的讨论
+ * https://www.bountysource.com/issues/5578080-secret-distribution-in-docker-k8s  k8s 密钥分发的讨论
+#### vault secret management
+ * https://github.com/hashicorp/vault
+ * https://www.hashicorp.com/blog/vault.html
+ * https://www.vaultproject.io/
+
 #### microservice platform
  * http://wildfly.org/about/
  * http://deis.io/overview/
@@ -1472,6 +1485,13 @@ logic paradigm
 ### rust by example
  * http://rustbyexample.com/
  * https://github.com/rust-lang/rust-by-example
+
+## testing 
+ * https://github.com/mozilla/moztrap/  https://moztrap.mozilla.org/results/runs/?
+ * https://github.com/lemonlatte/docker-moztrap https://hub.docker.com/r/lemonlatte/docker-moztrap/
+ * https://github.com/Nitrate/Nitrate
+ * https://github.com/prove/tarantula
+ * https://github.com/TestLinkOpenSourceTRMS/testlink-code
 
 # linux 
 
