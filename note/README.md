@@ -232,7 +232,7 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
 ### VDI
  * http://baike.baidu.com/link?url=bQulh4Ri-8ZYvs1khfiwsPul_rPUK53ZURDdDGIq-R4UqBu8XEywq7LrkgD9yaqn5EkNgjnNO6rhQd1WRIXL3NqPMxeAwreNNzwyUAbpbza
 
-## Docker  
+## ~Docker  
  * docker build
   - docker file reference https://docs.docker.com/engine/reference/builder/
   - Installation 安装 docker https://docs.docker.com/linux/
@@ -301,6 +301,13 @@ http://www.projectatomic.io/docs/docker-and-selinux/
 docker run --privileged --name mariadb -d -e "container=docker" mariadbcentos:0.5 /usr/sbin/init
 
 ```
+#### share docker images across hosts
+ * https://github.com/docker/docker/pull/13777
+ * https://jaxenter.com/how-to-share-docker-volumes-across-hosts-119602.html bittorrent or NFS sharing
+ * https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/
+ * https://blog.giantswarm.io/moving-docker-container-images-around/ moving docker image around
+ *  http://mgreau.com/posts/2015/08/26/copy-docker-images-from-one-docker-machine-to-another.html
+ * https://larrylo.gitbooks.io/distribute-cloud-environment-on-ubuntu-14-04-with/content/export_and_import_a_docker_image_between_nodes_in_cluster.html copy images around
 ### coreos rkt
  * build tool https://coreos.com/blog/rkt-0.10.0-with-new-api-service/
 ### docker network
@@ -792,8 +799,14 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * https://prometheus.io/blog/
  * https://www.ctl.io/developers/blog/post/monitoring-docker-services-with-prometheus/
  * install https://www.digitalocean.com/community/tutorials/how-to-install-prometheus-using-docker-on-ubuntu-14-04
- *
-
+ * https://www.robustperception.io/scaling-and-federating-prometheus/ scale
+ * http://stackoverflow.com/questions/36575902/how-to-use-federation-to-collect-prometheus-metrics-from-multiple-prometheus-in/36576303#36576303
+ * http://stackoverflow.com/questions/35305170/whats-the-difference-between-prometheus-and-zabbix/36477609#36477609
+ * http://stackoverflow.com/questions/36575902/how-to-use-federation-to-collect-prometheus-metrics-from-multiple-prometheus-in?rq=1
+ * https://github.com/prometheus/prometheus/issues/1500
+ * https://prometheus.io/docs/introduction/overview/#when-does-it-not-fit
+ * https://prometheus.io/docs/operating/federation/
+ * https://kartar.net/2015/08/monitoring-survey-2015---metrics/ 监控接受度比较
 ## openstack  
 ### release notes
  * https://wiki.openstack.org/wiki/ReleaseNotes/Liberty
@@ -1080,6 +1093,7 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * http://www.presentation-process.com/circle-in-powerpoint.html#.V8TEVo5gRE4
 
 ## micro services 微服务
+ * https://github.com/mfornos/awesome-microservices 微服务总结
  * http://dockone.io/article/812 微服务架构
  * http://www.csdn.net/article/2014-08-06/2821078
  * http://stackoverflow.com/questions/25501098/difference-between-microservices-architecture-and-soa
