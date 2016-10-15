@@ -24,7 +24,7 @@
   - DNNs are typically designed as feedforward networks, but recent research has successfully applied the deep learning architecture to recurrent neural networks for applications such as language modeling.
    * A feedforward neural network is an artificial neural network where connections between the units do not form a cycle. This is different from recurrent neural networks.
  * 深度信念网络 A deep belief network (DBN) is a probabilistic, generative model made up of multiple layers of hidden units. It can be considered a composition of simple learning modules that make up each layer
-  - Generative models contrast with discriminative models, in that a generative model is a full probabilistic model of all variables, whereas a discriminative model provides a model only for the target variable(s) conditional on the observed variables. 
+  - Generative models contrast with discriminative models, in that a generative model is a full probabilistic model of all variables, whereas a discriminative model provides a model only for the target variable(s) conditional on the observed variables.
  * 卷积 A CNN is composed of one or more convolutional layers with fully connected layers (matching those in typical artificial neural networks) on top.In machine learning, a convolutional neural network (CNN, or ConvNet) is a type of feed-forward artificial neural network in which the connectivity pattern between its neurons is inspired by the organization of the animal visual cortex, whose individual neurons are arranged in such a way that they respond to overlapping regions tiling the visual field One major advantage of convolutional networks is the use of shared weight in convolutional layers, which means that the same filter (weights bank) is used for each pixel in the layer
   - Compared to other image classification algorithms, convolutional neural networks use relatively little pre-processing. This means that the network is responsible for learning the filters that in traditional algorithms were hand-engineered. The lack of dependence on prior knowledge and human effort in designing features is a major advantage for CNNs.
   - https://en.wikipedia.org/wiki/Convolutional_neural_network
@@ -193,7 +193,7 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
  * https://tools.ietf.org/html/rfc6902#page-12
  * https://tools.ietf.org/html/rfc5789
  * http://williamdurand.fr/2014/02/14/please-do-not-patch-like-an-idiot/
- 
+
 ## azure  
  * 编排 http://windowsitpro.com/azure/orchestration-comes-microsoft-azure
  * http://www.codetails.com/2013/06/25/automate-orchestrate-azure-deployment/
@@ -207,7 +207,7 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
  * docker http://searchservervirtualization.techtarget.com/feature/A-brief-history-of-Docker-Containers-overnight-success
  * unikernel https://en.wikipedia.org/wiki/Unikernel  http://cloudacademy.com/blog/unikernels-docker-containers-vms-microservices/
 
-## PaaS 
+## PaaS
 ## solution 架构 解决方案
  * http://www.cloudcomputingpatterns.org/Static_Workload  
  * http://www.rightscale.com/blog/enterprise-cloud-strategies/identifying-workloads-cloud  
@@ -226,7 +226,7 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
  * http://www.chinacloud.cn/show.aspx?id=20204&cid=14
  * Solum 流程
   - http://www.oschina.net/p/solum
-  - 
+  -
 
 ## Desktop as a service
 ### VDI
@@ -307,7 +307,7 @@ docker run --privileged --name mariadb -d -e "container=docker" mariadbcentos:0.
 #### CNI vs CNM
  * http://blog.kubernetes.io/2016/01/why-Kubernetes-doesnt-use-libnetwork.html
  * http://thenewstack.io/google-wont-support-dockers-container-network-model/
-#### contiv 
+#### contiv
  * http://blogs.cisco.com/datacenter/project-contiv  
  * https://github.com/contiv/netplugin  
 
@@ -323,7 +323,7 @@ http://man7.org/linux/man-pages/man5/subuid.5.html
 ### 案例总结 docker cases
  * http://www.chinacloud.cn/show.aspx?id=20351&cid=16
  * http://www.dockone.io/article/1169
- * 
+ *
 
 ### docker dpdk docker network
  * http://developerblog.redhat.com/2015/06/02/can-you-run-intels-data-plane-development-kit-dpdk-in-a-docker-container-yep/
@@ -380,13 +380,13 @@ docker-machine create \
  * https://msdn.microsoft.com/en-us/virtualization/windowscontainers/about/faq
 
 ## Kubernetes  
-### concepts 概念 
- * http://www.infoq.com/cn/articles/Kubernetes-system-architecture-introduction?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global 
+### concepts 概念
+ * http://www.infoq.com/cn/articles/Kubernetes-system-architecture-introduction?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global
  * http://kubernetes.io/docs/user-guide/volumes/
   * https://github.com/kubernetes/kubernetes/blob/bf0a5e9fac1baab23a1db007bc798e4f9630f4f2/docs/proposals/volume-selectors.md
  * http://dockone.io/article/1153 比较 borg omega
  * http://blog.kubernetes.io/2015/06/the-distributed-system-toolkit-patterns.html  
- * learn kubernetes links 
+ * learn kubernetes links
   * https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md/#v130
   * http://kubernetes.io/docs/user-guide/petset/
   * https://github.com/kubernetes/kubernetes/tree/master/docs/design
@@ -419,7 +419,7 @@ docker-machine create \
 ```
 #### kubectl exec
  * kubectl exec gogs-2717905640-v96iy -- bash -c '/bin/echo hello > /tmp/result.log'
- * 往容器里复制文件，https://github.com/kubernetes/kubernetes/issues/13776 
+ * 往容器里复制文件，https://github.com/kubernetes/kubernetes/issues/13776
 ```
 mount -t glusterfs 192.168.1.133:/glustersample1 /mnt/glustersample1
 192.168.1.133:/glustersample1   32G   27G  5.7G  83% /mnt/glustersample1
@@ -449,7 +449,7 @@ root@dev-xwang:~# gluster volume quota glustersample1 limit-usage / 32GB
  * https://deis.com/docs/workflow/
  * http://www.csdn.net/article/2015-09-28/2825811
  * OpenResty http://hot66hot.iteye.com/blog/2155036
- * Hystrix 
+ * Hystrix
  * http://hot66hot.iteye.com/blog/2155036
  * http://www.infoq.com/cn/news/2013/01/netflix-hystrix-fault-tolerance
  * Motan
@@ -462,7 +462,7 @@ root@dev-xwang:~# gluster volume quota glustersample1 limit-usage / 32GB
  * http://martinfowler.com/articles/microservices.html
  * http://martinfowler.com/bliki/MicroservicePrerequisites.html
  * http://martinfowler.com/articles/microservice-trade-offs.html
- * http://www.rgoarchitects.com/Files/fallacies.pdf 
+ * http://www.rgoarchitects.com/Files/fallacies.pdf
 #### martin fowler cloud native application
  * http://martinfowler.com/bliki/CloudComputing.html
  * Basics of web application security http://martinfowler.com/articles/web-security-basics.html
@@ -539,6 +539,13 @@ http://lattice.cf/
  * http://camel.apache.org/enterprise-integration-patterns.html
  * http://camel.apache.org/camel-dsl.html
  * http://camel.apache.org/soa-patterns.html
+ #### integration
+  * http://callistaenterprise.se/blogg/teknik/2015/10/12/apache-camel-vs-spring-integration/ camel
+  * http://blog.christianposta.com/comparison/light-weight-open-source-integration-apache-camel-or-spring-integration
+
+ #### Spring Cloud
+  * http://sail-y.github.io/2016/03/21/Spring-cloud%E9%A1%B9%E7%9B%AE%E5%AE%9E%E8%B7%B5/
+  * http://kubecloud.io/apigatewaypattern/  zull API Gateway
 ### kubernetes devops
  * http://blog.udacity.com/2016/05/introducing-scalable-microservices-kubernetes.html
  * https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615  online-course
@@ -552,7 +559,7 @@ http://lattice.cf/
  * http://fabric8.io/devops/
  * https://github.com/fabric8io/fabric8-devops
  * http://blog.christianposta.com/demo/devops-with-apache-tomcattomee-and-fabric8/
-#### quickstart 
+#### quickstart
  * https://github.com/openshift/origin/tree/master/examples/quickstarts  openshift application template
  * https://docs.openshift.org/latest/dev_guide/templates.html#dev-guide-templates
  * https://github.com/fabric8-quickstarts?page=2  fabric8 application template
@@ -583,17 +590,17 @@ http://lattice.cf/
 ### Secret
  * http://kubernetes.io/docs/user-guide/secrets/
  * https://github.com/kubernetes/kubernetes/blob/master/docs/design/secrets.md
- * 
+ *
 ### level-based vs edge-based
  * http://stackoverflow.com/questions/31041766/what-does-edge-based-and-level-based-mean
  * API conventions https://github.com/kubernetes/kubernetes/blob/master/docs/devel/api-conventions.md#resources
- * 
+ *
 ### service account and security context
  * service account https://github.com/kubernetes/kubernetes/blob/master/docs/design/service_accounts.md
  * http://kubernetes.io/docs/admin/service-accounts-admin/
  * http://kubernetes.io/docs/user-guide/security-context/
  * https://github.com/kubernetes/kubernetes/blob/master/docs/design/security_context.md
- 
+
 ### RBAC Role Based Access Control
  * http://kubernetes.io/docs/admin/accessing-the-api/
  * http://kubernetes.io/docs/admin/authorization/#a-quick-note-on-service-accounts
@@ -693,11 +700,11 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
 
 #### kubernetes java client
  * https://github.com/fabric8io/kubernetes-client
- 
+
 #### kubernetes python client
  * https://github.com/kelproject/pykube/blob/master/pykube/objects.py
  * https://pypi.python.org/pypi/python-k8sclient/0.2.0
- 
+
 #### fabric8
  * http://fabric8.io/guide/getStarted/minishift.html
  * https://github.com/jenkinsci/job-dsl-plugin/wiki jenkins job pipeline 脚本集成
@@ -707,7 +714,22 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * https://github.com/sourcelair/xterm.js
  * https://github.com/chjj/term.js/tree/master/example
  * https://davidwalsh.name/upgrade-nodejs 升级nodejs
-
+ #### maven 仓库
+  * https://www.jfrog.com/open-source/
+  * https://www.jfrog.com/blog/artifactory-vs-nexus-integration-matrix/
+  * http://stackoverflow.com/questions/364775/should-we-use-nexus-or-artifactory-for-a-maven-repo
+  * https://github.com/mholt/caddy/  https://caddyserver.com/  HTTP server for content repository
+ #### maven 其他格式
+  * https://github.com/takari/polyglot-maven-examples
+  * https://www.infoq.com/news/2015/03/maven-polyglot#anch120523
+ #### IRC chat
+  * https://github.com/prawnsalad/KiwiIRC
+  * https://kiwiirc.com/
+ #### apache turnbine
+  * https://turbine.apache.org/turbine-concepts.html
+  * http://forum.spring.io/forum/spring-projects/container/4119-spring-vs-apache-turbine
+ #### expose controller automatically generate ingress and route
+  * https://github.com/fabric8io/exposecontroller
 
 
 ### kubernetes API
@@ -723,7 +745,7 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * https://clusterhq.com/2016/02/11/kubernetes-redis-cluster/
 
 ### jobs on kubernetes
- * https://github.com/kubernetes/kubernetes/issues/14188 
+ * https://github.com/kubernetes/kubernetes/issues/14188
 
 ### 镜像广场 image repository
  * https://hub.tenxcloud.com/repos/google_containers
@@ -742,13 +764,20 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * http://static.googleusercontent.com/external_content/untrusted_dlcp/research.google.com/zh-CN//pubs/archive/36356.pdf
  * https://github.com/openzipkin/zipkin
   * https://twitter.github.io/zipkin/Architecture.html
-  * 
+  *
  * https://golanglibs.com/top?q=dapper
  * https://github.com/SpirentOrion/trace
  * http://www.tuicool.com/articles/F3YNrm
  * http://www.tangrui.net/implement-distributed-tracking-system-with-zipkin-and-brave/?utm_source=tuicool&utm_medium=referral
  * 集成Spring cloud kubernetes和zippkin http://www.tangrui.net/implement-distributed-tracking-system-with-zipkin-and-brave/?utm_source=tuicool&utm_medium=referral
-
+ #### tracing
+  * https://github.com/openzipkin/zipkin http://zipkin.io/pages/architecture.html cassandra elasticsearch https://groups.google.com/forum/#!topic/pinpoint_user/zZklWvroCIk 比较
+  * https://skyao.gitbooks.io/leaning-pinpoint/content/design/technical_overview.html https://github.com/naver/pinpoint/wiki/Technical-Overview-Of-Pinpoint
+  * https://github.com/naver/pinpoint https://github.com/yous/pinpoint hbase https://github.com/naver/pinpoint/wiki/Technical-Overview-Of-Pinpoint
+  * https://github.com/tryfer/node-tryfer zipkin nodejs
+  * https://github.com/Jimdo/hoopak
+  * https://godoc.org/github.com/wadey/go-zipkin  https://github.com/jtolds/go-zipkin-sample https://github.com/elodina/go-zipkin
+  * https://github.com/malakaw/zipkin_php_scribe http://www.tpsort.com/similar-to/41466-top-15-zipkin-alternative-and-similar-softwares
 ### paas integration
  * https://github.com/fabric8io/fabric8
 
@@ -763,7 +792,7 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * https://prometheus.io/blog/
  * https://www.ctl.io/developers/blog/post/monitoring-docker-services-with-prometheus/
  * install https://www.digitalocean.com/community/tutorials/how-to-install-prometheus-using-docker-on-ubuntu-14-04
- * 
+ *
 
 ## openstack  
 ### release notes
@@ -772,7 +801,7 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * http://docs.openstack.org/liberty/config-reference/content/ceph-rados.html  
  * documents http://docs.openstack.org/
  * APIs http://developer.openstack.org/api-ref.html
- * 
+ *
 
 ### 配置模版格式
  * https://github.com/toml-lang/toml/blob/master/examples/example-v0.4.0.toml  类似ini的模版格式
@@ -894,10 +923,10 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * http://specs.openstack.org/openstack/nova-specs/specs/mitaka/implemented/image-verification.html
  * http://specs.openstack.org/openstack/glance-specs/specs/mitaka/implemented/image-signing-and-verification-support.html
 
-### Trove 数据库 
+### Trove 数据库
  * 支持的数据库 https://github.com/openstack/trove/tree/master/trove/templates
 
-### Zaqar 
+### Zaqar
  * 代码 https://github.com/openstack/zaqar
 
 ### Solum PaaS平台云
@@ -1003,7 +1032,7 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * http://www.wzxue.com/ceph-recovery/
 ### ceph GUI
  * https://github.com/ceph/calamari
- 
+
 ## vagrant
  * 下载box  https://vagrantcloud.com/boxes/search?utf8=%E2%9C%93&sort=&provider=&q=openshift
  * base boxes http://www.vagrantbox.es/
@@ -1033,7 +1062,7 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * 灰度发布
    * http://blog.chinaunix.net/uid-30571370-id-5588506.html
    * https://github.com/boylegu/regal
-   * http://www.linuxidc.com/Linux/2016-05/131288.htm 金丝雀部署 
+   * http://www.linuxidc.com/Linux/2016-05/131288.htm 金丝雀部署
  * 灰度发布的工具
    * fabric python的灰度发布工具，脚本 http://www.fabfile.org/
 
@@ -1049,7 +1078,7 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * http://www.presentation-process.com/hand-drawn-powerpoint.html#.V8S_go5gRE4
  * http://webdesignerwall.com/general/60-free-handwritten-script-fonts
  * http://www.presentation-process.com/circle-in-powerpoint.html#.V8TEVo5gRE4
- 
+
 ## micro services 微服务
  * http://dockone.io/article/812 微服务架构
  * http://www.csdn.net/article/2014-08-06/2821078
@@ -1082,7 +1111,7 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 #### Nginx microservice serias
  * API first http://www.programmableweb.com/news/how-to-design-great-apis-api-first-design-and-raml/how-to/2015/07/10?utm_source=building-microservices-inter-process-communication&utm_medium=blog#apiu
  * Reactive model http://reactivex.io/?utm_source=building-microservices-using-an-api-gateway&utm_medium=blog
- * https://www.nginx.com/blog/building-microservices-inter-process-communication/?utm_source=building-microservices-using-an-api-gateway&utm_medium=blog 
+ * https://www.nginx.com/blog/building-microservices-inter-process-communication/?utm_source=building-microservices-using-an-api-gateway&utm_medium=blog
  * talking netflix fault tolerence http://techblog.netflix.com/2012/02/fault-tolerance-in-high-volume.html?utm_source=building-microservices-inter-process-communication&utm_medium=blog
  * talking comparing Schema evolution in Avro, Protocol Buffers and Thrift http://martin.kleppmann.com/2012/12/05/schema-evolution-in-avro-protocol-buffers-thrift.html?utm_source=building-microservices-inter-process-communication&utm_medium=blog
  * https://www.nginx.com/blog/event-driven-data-management-microservices/?utm_source=service-discovery-in-a-microservices-architecture&utm_medium=blog talking event sourcing, database maintaining events and transaction log mining
@@ -1116,7 +1145,7 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 ### thrift
  * https://en.wikipedia.org/wiki/Apache_Thrift
  * http://weibo.com/1798777247/DhjihFBCe?type=comment
- 
+
 ## message queue
 ### nanomsg
  * http://bravenewgeek.com/a-look-at-nanomsg-and-scalability-protocols/
@@ -1129,11 +1158,11 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * http://www.warski.org/blog/2014/07/evaluating-persistent-replicated-message-queues/
  * https://blog.linkedin.com/2011/01/11/open-source-linkedin-kafka introduction
  * https://github.com/nats-io/gnatsd cloudfoundtry mqueue
- * 
+ *
 ### redis
  * http://yaychris.com/blog/2009/11/redis-part-1.html
  * http://redis.io/clients#bash
- * 
+ *
 
 ## 软件腐蚀 software erosion
  * 原因 https://blog.heroku.com/archives/2011/6/28/the_new_heroku_4_erosion_resistance_explicit_contracts
@@ -1247,7 +1276,7 @@ http://www.austintek.com/LVS/LVS-HOWTO/HOWTO/LVS-HOWTO.UDP.html
 
 ## big data streaming architecture
  * http://www.confluent.io/blog/stream-data-platform-1/
- * 
+ *
 
 # 著名网站famous sites
 ## 5 famous community
@@ -1316,7 +1345,7 @@ http://www.lamport.org/
  * GIPS  http://baike.baidu.com/link?url=UraNY50AIdZQgN83ZKKY6wBpxbE6a7guHRCL2o722QD205s70QaiFoYK1LOKyj1pN1LQg4etg1IJ66jJngmCD_
  * http://baike.baidu.com/view/5855785.htm
  * stun turn ice 服务器 http://www.it165.net/admin/html/201503/5062.html http://www.it165.net/admin/html/201503/5062.html
-#### 
+####
 
 # github
 ## github-commands
@@ -1358,7 +1387,7 @@ http://baike.baidu.com/link?url=MRD3fyaa9_kNAf6-p9NSu4bU_UuO1YvDL6O5vsUqe_PFxYmN
 Homomorphic-Encryption
 http://web.townsendsecurity.com/bid/72771/Homomorphic-Encryption-is-Cool-and-You-Should-NOT-Use-It
 
-format-preserving encryption (FPE) refers to encrypting in such a way that the output (the ciphertext) is in the same format as the input (the plaintext). 
+format-preserving encryption (FPE) refers to encrypting in such a way that the output (the ciphertext) is in the same format as the input (the plaintext).
 https://aws.amazon.com/marketplace/pp/B00DC7R7UY/Ref=mkt_wir_porticor
 https://github.com/shaih/HElib
 https://github.com/lducas/FHEW
@@ -1367,7 +1396,7 @@ https://github.com/lducas/FHEW
  * http://sshwindows.sourceforge.net/ windows
  * http://security.stackexchange.com/questions/32768/converting-keys-between-openssl-and-openssh key转换
  * https://support.ssl.com/Knowledgebase/Article/View/19/0/der-vs-crt-vs-cer-vs-pem-certificates-and-how-to-convert-them key转换 PEM DER CER CRT
- 
+
 #### 在线课程
  * http://www.51ean.com/securityproduct/security_product_list.html
 
@@ -1420,7 +1449,7 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
 ### list comprehesions 列表解析和生成器表达式
  * http://www.jb51.net/article/26520.htm
 
-#### angularjs 
+#### angularjs
  * https://github.com/toddmotto/angular-1-5-components-app
  * https://github.com/toddmotto/angular-styleguide
  * https://docs.angularjs.org/api/ng/directive/ngStyle 1.5
@@ -1501,14 +1530,14 @@ logic paradigm
  * http://rustbyexample.com/
  * https://github.com/rust-lang/rust-by-example
 
-## testing 
+## testing
  * https://github.com/mozilla/moztrap/  https://moztrap.mozilla.org/results/runs/?
  * https://github.com/lemonlatte/docker-moztrap https://hub.docker.com/r/lemonlatte/docker-moztrap/
  * https://github.com/Nitrate/Nitrate
  * https://github.com/prove/tarantula
  * https://github.com/TestLinkOpenSourceTRMS/testlink-code
 
-# linux 
+# linux
 
 ## /etc/apt/sources.list
  * ali sources list
@@ -1587,8 +1616,8 @@ sudo 命令
  * user manual http://fletcher.github.io/peg-multimarkdown/mmd-manual.pdf
  * https://sourceforge.net/p/adoc/wiki/markdown_syntax/
 ## reStructedText
-## asciidoc 
-### ascissdoctor 
+## asciidoc
+### ascissdoctor
  * https://hub.docker.com/r/asciidoctor/docker-asciidoctor/
  * http://asciidoctor.org/docs/render-documents/
  * http://asciidoctor.org/docs/install-toolchain/
@@ -1610,7 +1639,7 @@ links
 
 ### SNAT DNAT REDIRECT
  * http://serverfault.com/questions/119365/what-is-the-difference-between-a-source-nat-destination-nat-and-masquerading
- 
+
 
 1. dig
     1. dig -x 210.52.83.228
@@ -1628,12 +1657,12 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
   - http://www.ttlsa.com/linux/dnspod-sr-little-dns/
   - http://www.361way.com/dnspod-sr/4674.html
   - https://github.com/DNSPod/dnspod-sr
- 
+
 
 ### dns information links
  * http://www.dnsstuff.com/tools/
  * http://blog.sina.com.cn/s/blog_4607665901016jyd.html dns服务器地址
- * 
+ *
 
 ## proxy tunnel 代理 穿墙
 ### ssh 代理
@@ -1669,11 +1698,11 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
 #### entrypoint 不起作用
  * docker: Error response from daemon: rpc error: code = 2 desc = "oci runtime error: exec format error"
  * 在脚本前加上脚本命令/bin/bash
- 
+
 #### build the docker command
  * docker client 负责命令行提示，只要替换命令行就可以验证
 
-#### failed to register layer: rename 
+#### failed to register layer: rename
 系统问题，需要卸载docker，重新安装docker
 
 #### 环境变量未设置
@@ -1733,15 +1762,15 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
 
 # statistics 统计学
 ## http://ec.europa.eu/eurostat/statistics-explained/index.php/Category:Glossary
-graph duration 
-accounting period/reporting period 会计期 报告期 
+graph duration
+accounting period/reporting period 会计期 报告期
 basic period/reference period 参考期 统计期 基准期
 sampling frequency 采样频率 sampling rate 采样速率 sample period 采样周期 sampling cycle
 observation period observation duration 观察期
 
 # translation 翻译
 #### Translation auto-translation 自动翻译API
- * http://www.360doc.com/content/11/1226/21/3508740_175185933.shtml 下载sdcv 命令行翻译 
+ * http://www.360doc.com/content/11/1226/21/3508740_175185933.shtml 下载sdcv 命令行翻译
  * http://abloz.com/huzheng/stardict-dic/zh_CN/ 下载词典
  * http://www.oschina.net/code/snippet_578360_51005
  * http://www.cnblogs.com/chenbjin/p/4001998.html baidu 翻译
