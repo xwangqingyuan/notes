@@ -200,6 +200,16 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
  * http://www.theregister.co.uk/2015/04/20/microsoft_azure_service_fabric/ 声明编排
  * http://www.cnblogs.com/redmoon/archive/2015/04/23/4452111.html Service Fabric
 
+## cloud business
+ * http://www.techrepublic.com/article/public-cloud-crushing-private-cloud-in-growth-and-revenue/
+ * http://www.forbes.com/sites/louiscolumbus/2016/03/13/roundup-of-cloud-computing-forecasts-and-market-estimates-2016/#29655a0a74b0
+ * https://www.statista.com/statistics/526120/worldwide-true-private-cloud-vendor-share/
+ * https://www.g2crowd.com/categories/platform-as-a-service-paas
+ * https://www.statista.com/statistics/528665/worldwide-cloud-platform-as-a-service-market-forecast/
+ * https://www.statista.com/statistics/528689/worldwide-cloud-platform-as-a-service-market-forecast-by-major-submarket/
+ * http://www.strategyr.com/MarketResearch/Platform_as_a_Service_PaaS_Market_Trends.asp
+ * http://blog.arungupta.me/xpaas-making-enterprise-paas-ready/ paas category
+ * http://wso2.com/cloud/paas/ paas key features
 ## cloud history
 ### software history
  * weblogic http://www.qualogy.com/techblog/oracle/weblogic-how-it-all-began
@@ -208,6 +218,15 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
  * unikernel https://en.wikipedia.org/wiki/Unikernel  http://cloudacademy.com/blog/unikernels-docker-containers-vms-microservices/
 
 ## PaaS
+### saas enablement
+ * http://www.techcello.com/product/features techcello
+ * https://www.progress.com/openedge/features/multi-tenancy multi-tenancy table database
+ * http://www.corenttech.com/products.html corent saas enablement
+ * https://apprenda.com/platform/ support kubernetes
+ * http://venturebeat.com/2015/05/09/goodbye-saas-hello-containers-as-a-service/ caasi
+ * http://sixteenventures.com/saas-multi-tenancy multitenancy business value https://www.packet.net/blog/shippable-saas-how-docker-is-reshaping-the-way-we-buy-and-consume-software/ docker 改变service和on-premise模型
+#### build saas
+ * https://github.com/nickjj/build-a-saas-app-with-flask
 ## solution 架构 解决方案
  * http://www.cloudcomputingpatterns.org/Static_Workload  
  * http://www.rightscale.com/blog/enterprise-cloud-strategies/identifying-workloads-cloud  
@@ -217,7 +236,7 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
  * https://blog.outscale.com/us/docker-may-kill-paas-but-it-needs-iaas/
  * http://cloudtweaks.com/2014/12/paas-vs-docker-heated-debate/
  * http://www.infoq.com/cn/news/2015/07/where-is-the-future-of-caas
- * http://thenewstack.io/google-offers-container-as-a-service-to-define-kubernetes-place-in-the-cloud-economy/ container pattern
+ *  http://thenewstack.io/google-offers-container-as-a-service-to-define-kubernetes-place-in-the-cloud-economy/ container pattern
  * https://news.ycombinator.com/item?id=11304420
  * https://www.sdxcentral.com/articles/news/why-docker-and-google-kubernetes-are-like-paas-done-right/2015/08/
  * http://www.infoq.com/cn/news/2015/07/where-is-the-future-of-caas
@@ -465,6 +484,7 @@ root@dev-xwang:~# gluster volume quota glustersample1 limit-usage / 32GB
  * amalgam8
  * https://www.amalgam8.io/
  * https://github.com/mfornos/awesome-microservices
+ * http://www.devopsbookmarks.com/ci devopsbookmarks 持续集成技术列表
 #### martin fowler microservices
  * http://martinfowler.com/articles/microservices.html
  * http://martinfowler.com/bliki/MicroservicePrerequisites.html
@@ -785,6 +805,7 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
   * https://github.com/Jimdo/hoopak
   * https://godoc.org/github.com/wadey/go-zipkin  https://github.com/jtolds/go-zipkin-sample https://github.com/elodina/go-zipkin
   * https://github.com/malakaw/zipkin_php_scribe http://www.tpsort.com/similar-to/41466-top-15-zipkin-alternative-and-similar-softwares
+  * https://github.com/hawkular 监控和APM
 ### paas integration
  * https://github.com/fabric8io/fabric8
 
@@ -807,6 +828,8 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * https://prometheus.io/docs/introduction/overview/#when-does-it-not-fit
  * https://prometheus.io/docs/operating/federation/
  * https://kartar.net/2015/08/monitoring-survey-2015---metrics/ 监控接受度比较
+ * https://github.com/openshift/openshift_zabbix https://github.com/cockpit-project/cockpit
+ * https://blog.openshift.com/monitoring-openshift-cluster-using-cockpit/ cockpit demo
 ## openstack  
 ### release notes
  * https://wiki.openstack.org/wiki/ReleaseNotes/Liberty
@@ -1474,8 +1497,15 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * http://www.typescriptlang.org/  typescript脚本语言 http://www.tslang.cn/
  * http://www.zhihu.com/question/21879449?sort=created
  * https://dzone.com/articles/typed-front-end-with-angular-2
- * https://medium.freecodecamp.com/angular-2-versus-react-there-will-be-blood-66595faafd51#.5xor5uejs
+ * https://www.airpair.com/js/javascript-framework-comparison 趋势比较 emberjs liangsheng演讲 https://medium.freecodecamp.com/angular-2-versus-react-there-will-be-blood-66595faafd51#.5xor5uejs
  * http://blog.backand.com/angular-2-vs-react/  有 angularjs 2 和 reactjs 例子
+ * https://github.com/angular/angular
+ * http://blog.yodersolutions.com/why-i-recommend-emberjs-over-angularjs/
+ * https://www.quora.com/Is-Angular-js-or-Ember-js-the-better-choice-for-JavaScript-frameworks
+ * http://singlepageappbook.com/goal.html 单页应用
+ * https://en.wikipedia.org/wiki/Single-page_application
+ * http://noeticforce.com/best-Javascript-frameworks-for-single-page-modern-web-applications
+ * http://angularjs-emberjs-compare.bguiz.com/
 
 ### pip 安装
 安装不了可以将python2.7目录允许访问。安装openstackclient后可以访问openstack服务
