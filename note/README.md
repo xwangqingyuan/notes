@@ -556,6 +556,10 @@ http://lattice.cf/
  * https://github.com/Mashape/kong
  * https://github.com/Mashape/kong/tree/master/kong
  * https://github.com/ipedrazas/k8s.uk/blob/master/kubernetes/kong.md
+ * https://github.com/vikingco/python-kong python-client
+ * https://github.com/bketelsen/kong go-client
+ * http://unirest.io/java.html mashape maintaining client
+ * https://github.com/Mashape/unirest-java unirest java client
  * https://github.com/apiman/apiman
  * http://www.apiman.io/latest/
  * https://github.com/apiman/apiman
@@ -1460,9 +1464,6 @@ https://github.com/lducas/FHEW
  * http://www.51ean.com/securityproduct/security_product_list.html
 
 
-
-
-
 ### openssl
 #### ssl protocol illustration
  * http://www.cisco.com/c/en/us/support/docs/security-vpn/secure-socket-layer-ssl/116181-technote-product-00.html
@@ -1825,6 +1826,10 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
  * http://www.opensourcesoftwaredirectory.com/Utilities/Screen-capture
  * http://elearningindustry.com/top-10-free-camtasia-studio-alternatives
  * http://www.shoutmeloud.com/camtasia-alternatives-free-windwows-mac.html
+
+## software license open source license 开源授权
+ * http://choosealicense.com/licenses/
+ * https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses
 
 # statistics 统计学
 ## http://ec.europa.eu/eurostat/statistics-explained/index.php/Category:Glossary
