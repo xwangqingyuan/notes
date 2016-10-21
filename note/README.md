@@ -240,6 +240,8 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
  * https://news.ycombinator.com/item?id=11304420
  * https://www.sdxcentral.com/articles/news/why-docker-and-google-kubernetes-are-like-paas-done-right/2015/08/
  * http://www.infoq.com/cn/news/2015/07/where-is-the-future-of-caas
+ * https://github.com/brendandburns/metaparticle/tree/master/docs scatter gather pattern
+ *
 
 ### 平台云比较
  * http://www.chinacloud.cn/show.aspx?id=20204&cid=14
@@ -260,6 +262,7 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
 
 ### news 新闻 调查报告
  * http://www.woshipm.com/it/366183.html
+ * http://cloud.it168.com/a2016/1013/2974/000002974720.shtml 阿里和docker战略合作
 
 ### 从镜像导出Dockerfile的方法
  * undocker https://github.com/larsks/undocker/
@@ -561,6 +564,11 @@ http://lattice.cf/
  * https://medium.com/@jcderr/nginx-api-gateway-in-kubernetes-18695e1d8c#.9je0yum9s
  * https://kurtstam.github.io/2015/06/15/API-Management-on-Kubernetes.html
  * https://circleci.com/docs/docker/ 持续集成案例
+ * http://www.pfind.com/api-management
+ * https://getkong.org/about/faq/ kong 用 cassandra做存储
+ * http://www.apiman.io/latest/production-guide.html  apiman 用mysql做存储 elasticsearch存metrics
+ * https://tyk.io/docs/tyk-api-gateway-v1-9/configuration/gateway-configuration-options/ tyk 用mongodb做存储
+ *
 
 #### Apache camel patterns
  * http://camel.apache.org/enterprise-integration-patterns.html
@@ -746,6 +754,9 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
   * https://www.jfrog.com/blog/artifactory-vs-nexus-integration-matrix/
   * http://stackoverflow.com/questions/364775/should-we-use-nexus-or-artifactory-for-a-maven-repo
   * https://github.com/mholt/caddy/  https://caddyserver.com/  HTTP server for content repository
+  * https://github.com/CocoaPods/CocoaPods iOS 仓库
+  * https://github.com/neonichu/bringing-cocoapods-to-linux
+  * https://hub.docker.com/r/mattgruter/artifactory/ android 仓库
  #### maven 其他格式
   * https://github.com/takari/polyglot-maven-examples
   * https://www.infoq.com/news/2015/03/maven-polyglot#anch120523
@@ -1145,6 +1156,17 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
   *  http://www.infoq.com/cn/articles/basis-frameworkto-implement-micro-service  微服务框架介绍
   *  nginx microservice framwork https://www.nginx.com/blog/event-driven-data-management-microservices/?utm_source=service-discovery-in-a-microservices-architecture&utm_medium=blog
   *  nginx microservice https://www.nginx.com/blog/improve-app-performance-reliability-nginx-amplify-part-1-features-capabilities/
+  * http://www.infoworld.com/article/2925047/application-development/build-self-healing-distributed-systems-with-spring-cloud.html?page=2 spring cloud introduction
+  * https://github.com/umermansoor/microservices  flask microservice example
+  * https://github.com/cer/microservices-examples 简单 java
+  * https://github.com/xetys/microservices-sidecar-example  ruby and spring
+  * https://github.com/Lawouach/event-driven-microservice bookshelf 己经有编排
+  * https://github.com/jeffbski/microservices  hapi 演示API gateway
+  * https://github.com/nodezoo/nodezoo-workshop nodejs example
+
+### microservice-example 微服务应用案例
+ * https://github.com/kbastani/spring-cloud-event-sourcing-example 电商案例
+ *
 #### Nginx microservice serias
  * API first http://www.programmableweb.com/news/how-to-design-great-apis-api-first-design-and-raml/how-to/2015/07/10?utm_source=building-microservices-inter-process-communication&utm_medium=blog#apiu
  * Reactive model http://reactivex.io/?utm_source=building-microservices-using-an-api-gateway&utm_medium=blog
