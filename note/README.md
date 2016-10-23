@@ -201,6 +201,8 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
  * http://www.cnblogs.com/redmoon/archive/2015/04/23/4452111.html Service Fabric
 
 ## cloud business
+ * http://tech2ipo.com/94733
+我在 Y Combinator 所度过的噩梦般的日子
  * http://www.techrepublic.com/article/public-cloud-crushing-private-cloud-in-growth-and-revenue/
  * http://www.forbes.com/sites/louiscolumbus/2016/03/13/roundup-of-cloud-computing-forecasts-and-market-estimates-2016/#29655a0a74b0
  * https://www.statista.com/statistics/526120/worldwide-true-private-cloud-vendor-share/
@@ -471,6 +473,10 @@ root@dev-xwang:~# gluster volume quota glustersample1 limit-usage / 32GB
  * https://github.com/hashicorp/vault
  * https://www.hashicorp.com/blog/vault.html
  * https://www.vaultproject.io/
+ * https://github.com/upmc-enterprises/kubernetes-secret-manager  集成的代码
+ * http://www.devoperandi.com/vault-in-kubernetes-take-2/ 在k8s中使用Vault
+ * https://github.com/kubernetes/kubernetes/issues/10439 讨论集成 Vault的issue
+ * https://www.digitalocean.com/company/blog/vault-and-kubernetes/ 通过Vault集成CA
 
 #### microservice platform
  * http://wildfly.org/about/
@@ -843,7 +849,10 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * https://prometheus.io/docs/introduction/overview/#when-does-it-not-fit
  * https://prometheus.io/docs/operating/federation/
  * https://kartar.net/2015/08/monitoring-survey-2015---metrics/ 监控接受度比较
- * https://github.com/openshift/openshift_zabbix https://github.com/cockpit-project/cockpit
+ * https://github.com/openshift/openshift_zabbix monitoring openshift with zabbix
+  https://github.com/cockpit-project/cockpit
+ * https://hub.docker.com/r/zabbix/zabbix-server-mysql/ zabbix server
+ * https://hub.docker.com/r/zabbix/zabbix-agent/ zabbix agent
  * https://blog.openshift.com/monitoring-openshift-cluster-using-cockpit/ cockpit demo
 ## openstack  
 ### release notes
@@ -1353,6 +1362,13 @@ http://stackoverflow.com/questions/tagged/kubernetes
 http://www.dockone.io/topic/
 http://www.infoq.com/cn/dockers/?utm_source=infoq&utm_medium=header_graybar&utm_campaign=topic_clk
 
+## famous 问答网站
+ * news.ycombinator.com
+ * http://stackoverflow.com/
+ * http://stackexchange.com/
+ * https://www.reddit.com/
+ * https://www.zhihu.com/question/21497720
+
 ## 5 famous place_to_technology
 http://alternativeto.net/
 ## 5 famous computer-projects
@@ -1454,7 +1470,34 @@ format-preserving encryption (FPE) refers to encrypting in such a way that the o
 https://aws.amazon.com/marketplace/pp/B00DC7R7UY/Ref=mkt_wir_porticor
 https://github.com/shaih/HElib
 https://github.com/lducas/FHEW
+#### open source library
+ * http://security.stackexchange.com/questions/3893/what-partial-homomorphic-encryption-implementations-exist-and-how-do-i-leverage  列举了几个应用 El Gamal Paillier 可用来加密 提到 Helios Voting 系统
+ * http://security.stackexchange.com/questions/3728/in-what-ways-does-full-or-partial-homomorphic-encryption-benefit-the-cloud 完全同态和部分同态
+ * http://blog.quarkslab.com/a-brief-survey-of-fully-homomorphic-encryption-computing-on-encrypted-data.html 总结当前FHE进展.
+ * https://crypto.stanford.edu/~dwu4/talks/SecurityLunch0214.pdf somewhat homomorphic-encryption
+ * https://en.wikipedia.org/wiki/Paillier_cryptosystem 应用案例 投票付款
+ * https://github.com/roasbeef/go-go-gadget-paillier https://github.com/Roasbeef bitcoin
+ * https://github.com/xcodevn/rust-paillier https://github.com/kunerd/rpaillier
+ * https://en.wikipedia.org/wiki/Malleability_(cryptography) 可更爱
+ * https://github.com/shaih/HElib
+ * https://news.ycombinator.com/item?id=5631138 讲同态加密
+ * https://github.com/mikeivanov/paillier python 实现
+ * https://github.com/kunerd/jpaillier java 实现
+ * https://github.com/NICTA/javallier java 实现 部分同态加密
+ * https://github.com/NICTA/python-paillier/blob/master/docs/alternatives.rst 同态加密总结
+ * 延展性(ductility and malleability) 柔性 https://en.wikipedia.org/wiki/Malleability_(cryptography) 自适应密文攻击
 
+#### 密钥共享 secret sharing
+ * https://en.wikipedia.org/wiki/Homomorphic_secret_sharing
+ * https://en.wikipedia.org/wiki/Secret_sharing
+ * https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing 有javascript例子
+ * https://www.vaultproject.io/docs/concepts/seal.html vault secret sharing
+ * https://github.com/snipsco/rust-threshold-secret-sharing rust 库
+ * https://medium.com/snips-ai/high-volume-secret-sharing-2e7dc5b41e9a#.j32n226e6 rust introduction
+ * https://github.com/timtiemens/secretshare java 库
+ * https://github.com/SSSaaS secret sharing 库
+ * https://github.com/SSSAAS/sssaas-golang golang helper
+ * http://mohamednabeel.blogspot.jp/2011/02/homomorphism-in-shamirs-secret-sharing.html 同态共享密钥介绍
 #### openssh
  * http://sshwindows.sourceforge.net/ windows
  * http://security.stackexchange.com/questions/32768/converting-keys-between-openssl-and-openssh key转换
