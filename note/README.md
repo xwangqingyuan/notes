@@ -1,6 +1,6 @@
 # artificial intelligence 人工智能
 ## famous 问答网站
- * news.ycombinator.com
+ * https://news.ycombinator.com/
  * http://stackoverflow.com/
  * http://stackexchange.com/
  * https://www.reddit.com/
