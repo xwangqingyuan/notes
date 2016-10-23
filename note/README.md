@@ -1,4 +1,10 @@
 # artificial intelligence 人工智能
+## famous 问答网站
+ * news.ycombinator.com
+ * http://stackoverflow.com/
+ * http://stackexchange.com/
+ * https://www.reddit.com/
+ * https://www.zhihu.com/question/21497720
 ## alphago
  * https://en.wikipedia.org/wiki/AlphaGo
  * http://www.dcine.com/2016/01/28/alphago/  
