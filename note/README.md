@@ -529,6 +529,16 @@ https://spring.io/guides/gs/spring-cloud-and-lattice/
 http://lattice.cf/
 #### spring boot
  * develop with spring boot and kubernetes http://blog.christianposta.com/microservices/spring-boot-microservice-development-on-kubernetes-the-easy-way/
+#### micro service example
+ * https://github.com/kbastani/spring-cloud-microservice-example 电影推荐应用
+ * https://github.com/kbastani/spring-cloud-event-sourcing-example 电子商城应用
+ * https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615
+ * https://github.com/kelseyhightower/kubernetes-redis-cluster
+ * https://www.udacity.com/account/auth#!/signin?next=https%3A%2F%2Fclassroom.udacity.com%2Fcourses%2Fud615&enroll=ud615
+ *
+ * https://github.com/zutherb/AppStash/tree/master/kubernetes
+   https://github.com/eventuate-local/eventuate-local/blob/master/eventuate-local-java-embedded-cdc/src/main/java/io/eventuate/local/cdc/debezium/EventTableChangesToAggregateTopicRelay.java event source platform eventuate
+ * http://eventuate.io/exampleapps.html  案例程序
 
 #### 12-factors with Docker
  * https://prezi.com/e7sdy9rdujgp/12-factor-apps-in-docker/
@@ -871,6 +881,10 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
 
 ### 配置模版格式
  * https://github.com/toml-lang/toml/blob/master/examples/example-v0.4.0.toml  类似ini的模版格式
+ * https://github.com/dbohdan/remarshal
+```
+kubectl get svc nginx -o yaml | ./remarshal.py -if yaml -of toml
+```
  * http://kubernetes.io/docs/user-guide/kubectl/kubectl_annotate/  --overwrite 在命令行覆盖配置文件中的属性
 
 ### openstack HA
