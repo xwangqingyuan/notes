@@ -233,6 +233,20 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
  * https://apprenda.com/platform/ support kubernetes
  * http://venturebeat.com/2015/05/09/goodbye-saas-hello-containers-as-a-service/ caasi
  * http://sixteenventures.com/saas-multi-tenancy multitenancy business value https://www.packet.net/blog/shippable-saas-how-docker-is-reshaping-the-way-we-buy-and-consume-software/ docker 改变service和on-premise模型
+### multitenancy support
+ * http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html
+ * http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html
+ * http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_common-scenarios.html
+ * https://azure.microsoft.com/en-us/documentation/articles/billing-add-change-azure-subscription-administrator/
+ * http://stackoverflow.com/questions/14911971/multiple-administrator-of-windows-azure-account
+ * https://blog.kloud.com.au/2013/07/30/good-practices-for-managing-windows-azure-subscriptions/
+ * https://blog.openshift.com/5-reasons-why-paas-is-better-than-shared-hosting-or-vps/
+ * https://github.com/ramr/openshift-multi-tenant-routers
+ * https://lists.openshift.redhat.com/openshift-archives/dev/2014-June/msg00067.html
+ * http://docs.jboss.org/hibernate/orm/4.1/devguide/en-US/html/ch16.html
+ * https://developers.openshift.com/faq/account.html#_how_can_i_transfer_application_ownership_from_one_user_to_another
+ * https://github.com/openshift/training/blob/master/06-Project-Administration.md
+
 #### build saas
  * https://github.com/nickjj/build-a-saas-app-with-flask
 ## solution 架构 解决方案
@@ -484,6 +498,14 @@ root@dev-xwang:~# gluster volume quota glustersample1 limit-usage / 32GB
  * https://github.com/kubernetes/kubernetes/issues/10439 讨论集成 Vault的issue
  * https://www.digitalocean.com/company/blog/vault-and-kubernetes/ 通过Vault集成CA
 
+### kubernetes scheduler
+ * http://kubernetes.io/docs/admin/kube-scheduler/
+ * http://kubernetes.io/docs/admin/multiple-schedulers/  scheduler.alpha.kubernetes.io/name:
+ * https://docs.openshift.org/latest/admin_guide/scheduler.html#use-cases openshift scheduler use cases
+ * https://coreos.com/blog/improving-kubernetes-scheduler-performance.html performance
+ * https://github.com/kubernetes/kubernetes/blob/master/docs/devel/scheduler.md scheduler 原理
+ * https://github.com/kubernetes/kubernetes/blob/2f756e4ebc677c824d495bb5e10aa9d2234de686/plugin/pkg/scheduler/generic_scheduler.go scheduler 基础
+ * https://github.com/kubernetes/kubernetes/blob/2f756e4ebc677c824d495bb5e10aa9d2234de686/plugin/cmd/kube-scheduler/app/server.go 创建scheduler 的地方
 #### microservice platform
  * http://wildfly.org/about/
  * http://deis.io/overview/
@@ -1047,12 +1069,17 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 ### marketplace
  * https://marketplace.openshift.com/
 
+### openshift volumn
+ * https://docs.openshift.org/latest/dev_guide/volumes.html#adding-volumes
+ * https://docs.openshift.com/enterprise/3.1/install_config/persistent_storage/dynamically_provisioning_pvs.html
+ * https://docs.openshift.com/enterprise/3.1/install_config/configuring_openstack.html#install-config-configuring-openstack
 #### openshift workflow
  * https://keithtenzer.com/2015/08/20/openshift-v3-unlocking-the-power-of-persistent-storage/
  * https://keithtenzer.com/2016/08/11/openshift-v3-basic-release-deployment-scenarios/
 
 #### openshift user guide user management
  * https://docs.openshift.org/latest/architecture/additional_concepts/authentication.html
+ * https://docs.openshift.org/latest/install_config/configuring_authentication.html#install-config-configuring-authentication
  * https://docs.openshift.org/latest/admin_guide/manage_scc.html
 
 ##unikernel
@@ -1254,6 +1281,9 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 ### redis
  * http://yaychris.com/blog/2009/11/redis-part-1.html
  * http://redis.io/clients#bash
+ * http://www.360doc.com/content/16/0425/23/16915_553797555.shtml
+ * http://tianya23.blog.51cto.com/1081650/530743 gossip 通信
+ * http://redis.io/presentation/Redis_Cluster.pdf  
  *
 
 ## 软件腐蚀 software erosion
@@ -1534,6 +1564,18 @@ https://github.com/lducas/FHEW
  * https://tools.ietf.org/html/rfc5246
  * http://www.cisco.com/c/en/us/support/docs/security-vpn/secure-socket-layer-ssl/116181-technote-product-00.html
 
+## oauth xacml OpenID Connect
+ * https://en.wikipedia.org/wiki/OAuth
+ * https://en.wikipedia.org/wiki/XACML
+ * http://docs.oasis-open.org/xacml/xacml-json-http/v1.0/cs01/xacml-json-http-v1.0-cs01.html#_Toc406773662
+ * https://en.wikipedia.org/wiki/WSO2#WSO2_Identity_Server
+ *
+
+### single sign on
+ * https://auth0.com/docs/sso/single-page-apps-sso
+ * https://auth0.com/docs/sso/regular-web-apps-sso
+ * https://spring.io/blog/2015/02/03/sso-with-oauth2-angular-js-and-spring-security-part-v
+
 # programming coding 编程
 ## coding styles
 Shell style=
@@ -1666,6 +1708,23 @@ logic paradigm
  * https://github.com/Nitrate/Nitrate
  * https://github.com/prove/tarantula
  * https://github.com/TestLinkOpenSourceTRMS/testlink-code
+
+# high performance computing HPC 高性能计算
+ * http://www.admin-magazine.com/HPC/Articles/Singularity-A-Container-for-HPC 整体介绍
+## shifter
+ * https://www.nersc.gov/research-and-development/user-defined-images/ 通过将操作从共享存储移到节点提高性能
+ * https://github.com/NERSC/shifter code
+ * https://github.com/singularityware/singularity
+ * http://www.nextplatform.com/2016/09/13/will-containers-total-package-hpc/ 科学计算 NAS要求高
+ * http://singularity.lbl.gov/faq#how-does-singularity-relatediffer-from-shifter 可导入docker镜像
+ * http://thenewstack.io/univa-augments-kubernetes-supercomputer-scheduling-technology/
+ * http://www.navops.io/command.html  navops commands for kubernetes
+## Ubercloud
+ * https://www.theubercloud.com/experiments/
+## MPI https://www.open-mpi.org/ 当前开源HPC
+ * https://en.wikipedia.org/wiki/Open_MPI
+ * https://github.com/open-mpi
+
 
 # linux
 
