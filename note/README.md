@@ -431,8 +431,23 @@ docker-machine create \
  * https://msdn.microsoft.com/en-us/virtualization/windowscontainers/about/faq
 
 ## Kubernetes  
+
+### big data on kubernetes
+#### spark on kubernetes
+ * https://hub.docker.com/r/radanalyticsio/openshift-spark/
+ * https://github.com/radanalyticsio/openshift-spark
+ * https://github.com/shekhargulati/spark-openshift-quickstart
+ * https://github.com/mattf/openshift-spark/tree/master/scripts/spark
+ * https://blog.openshift.com/running-analytics-openshift-daikon/
+ * https://github.com/openshift
+#### flink on kubernetes
+ * https://github.com/melentye/flink-kubernetes
+ * https://www.dezyre.com/article/apache-flink-vs-spark-will-one-overtake-the-other/282
+ * https://www.zhihu.com/question/30151872
+ * https://github.com/kubernetes/kubernetes/tree/master/examples/spark
+ * http://blog.kubernetes.io/2016/03/using-Spark-and-Zeppelin-to-process-Big-Data-on-Kubernetes.html
 ### concepts 概念
- * http://www.infoq.com/cn/articles/Kubernetes-system-architecture-introduction?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global
+ *  http://www.infoq.com/cn/articles/Kubernetes-system-architecture-introduction?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global
  * http://kubernetes.io/docs/user-guide/volumes/
   * https://github.com/kubernetes/kubernetes/blob/bf0a5e9fac1baab23a1db007bc798e4f9630f4f2/docs/proposals/volume-selectors.md
  * http://dockone.io/article/1153 比较 borg omega
@@ -442,6 +457,11 @@ docker-machine create \
   * http://kubernetes.io/docs/user-guide/petset/
   * https://github.com/kubernetes/kubernetes/tree/master/docs/design
   * http://kubernetes.io/docs/user-guide/petset/bootstrapping/
+* https://github.com/kubernetes/kubernetes/issues/1201  kubernetes   的annotation和label区别
+* https://github.com/kubernetes/kubernetes/issues/341  kubernetes 的label为什么不支持模糊匹配
+* https://github.com/kubernetes/kubernetes/issues/1348 label反向匹配
+* https://github.com/kubernetes/kubernetes/issues/4817 Efficient lookup by label selection, reverse label selection, uid, and IP addresses
+* https://github.com/kubernetes/kubernetes/issues/22262 schedule slow
 #### 动态分配存储 provisioner
  * https://github.com/kubernetes/kubernetes/blob/962d51ec682a14ef2d926175bbc614bac69f3197/pkg/controller/volume/persistentvolume/controller.go
  * https://github.com/kubernetes/kubernetes/blob/88c977c34ac9c0edc8b6be8034b2d5b47a5735e2/pkg/volume/glusterfs/glusterfs.go
@@ -522,6 +542,11 @@ root@dev-xwang:~# gluster volume quota glustersample1 limit-usage / 32GB
  * https://www.amalgam8.io/
  * https://github.com/mfornos/awesome-microservices
  * http://www.devopsbookmarks.com/ci devopsbookmarks 持续集成技术列表
+#### microservices service discovery and registry 服务发现
+ * http://blog.christianposta.com/microservices/netflix-oss-or-kubernetes-how-about-both/ AP or CP 的问题讨论，用DNS
+ * http://callistaenterprise.se/blogg/teknik/2016/05/27/building-a-microservice-with-golang/  golang connect to spring cloud
+ * https://martin.kleppmann.com/2015/05/11/please-stop-calling-databases-cp-or-ap.html
+ * https://tech.knewton.com/blog/2014/12/eureka-shouldnt-use-zookeeper-service-discovery/
 #### martin fowler microservices
  * http://martinfowler.com/articles/microservices.html
  * http://martinfowler.com/bliki/MicroservicePrerequisites.html
@@ -1357,7 +1382,29 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 #### 英文缩写
  * http://www.360doc.com/content/15/1010/15/15077656_504675457.shtml
 
+# desktop 桌面
+## macbook
+### shortcut 快捷建
+如果你说的是文档pages的翻页，按住fn或是control，同时按方向键，可以半页半页的翻,command+上下键是翻到首和尾
+跳至行首 – Control+A
+跳至行尾 – Control+E
+跳至下一行 – Control+N
+跳至上一行 – Control+P七
+删除上一个单词 – Control+W
+删除当前光标位置到行首的文字 – Control+U
+删除当前光标位置到行尾的文字 – Control+K9
 
+当然，使用最基本的方向键导航是完全可以的。
+七度苹果电脑软件
+3 组用于命令行中剪切和粘贴的快捷键
+命令行拥有独特的剪切和粘贴方式，称为“kill”和“yank”：6 }
+
+剪切当前光标位置到行首的文字 – Control+U/ A
+剪切当前光标位置到行尾的文字 – Control+K
+在光标当前位置粘贴最近一次剪切的内容 – Control+Y
+由于这几个 kill 和 yank 命令并不会影响剪切板的内容，所以可以当作“第二剪切板”来使用，甚至在许多图形界面的 Mac OS X 应用中同样有效。
+
+## windows
 # multimedia 多媒体
 ## 编解码格式
  * http://zhidao.baidu.com/question/371893045.html
@@ -1814,6 +1861,11 @@ sudo 命令
  * syntax http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#tables
 
 # network
+## network debugging tools Image
+ * https://hub.docker.com/r/amouat/network-utils/
+ * https://github.com/drerik/docker-network-debug-tools/blob/master/Dockerfile
+ * https://hub.docker.com/r/tianon/network-toolbox/tags/
+ * https://hub.docker.com/r/drerik/docker-network-debug-tools/~/dockerfile/
 ## dns
 google dns 8.8.8.8 和 8.8.4.4  
 links  
