@@ -341,6 +341,9 @@ http://www.projectatomic.io/docs/docker-and-selinux/
  * https://yq.aliyun.com/articles/58414 supervisord, s6
  * http://skarnet.org/software/s6/
 
+#### 容器综述
+ * https://getcarina.com/docs/best-practices/container-technologies-orchestration-clusters/
+
 ```
 docker run --privileged --name mariadb -d -e "container=docker" mariadbcentos:0.5 /usr/sbin/init
 
@@ -423,6 +426,10 @@ docker-machine create \
 
 #### Swarm Storage Volumn Swarm存储
  * https://blog.docker.com/2015/11/docker-1-9-production-ready-swarm-multi-host-networking/
+#### swarm orchestration
+ * https://docs.docker.com/engine/swarm/how-swarm-mode-works/services/
+ * https://lostechies.com/gabrielschenker/2016/09/11/docker-and-swarm-mode-part-2/
+ *
 
 ### docker windows
  * https://blog.docker.com/2015/08/tp-docker-engine-windows-server-2016/
@@ -430,9 +437,11 @@ docker-machine create \
  * https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server
  * https://msdn.microsoft.com/en-us/virtualization/windowscontainers/about/faq
 
-## Kubernetes  
+## Kubernetes  k8s
 
 ### big data on kubernetes
+### 动态设置docker 和kubelet
+ * https://github.com/kubernetes/kubernetes/issues/27980
 #### spark on kubernetes
  * https://hub.docker.com/r/radanalyticsio/openshift-spark/
  * https://github.com/radanalyticsio/openshift-spark
@@ -481,10 +490,31 @@ docker-machine create \
  * http://kubernetes.io/docs/getting-started-guides/ubuntu/
  * http://kubernetes.io/docs/getting-started-guides/azure/
  * http://thenewstack.io/tutorial-configuring-ultimate-development-environment-kubernetes/
+#### kubernete security context constaints scc
+ * https://github.com/kubernetes/kubernetes/blob/master/docs/design/security_context.md
+ * https://blog.openshift.com/understanding-service-accounts-sccs/
+ * https://docs.openshift.org/latest/admin_guide/manage_scc.html hostPath权限问题
+ * http://man7.org/linux/man-pages/man2/mknod.2.html
+ * http://man7.org/linux/man-pages/man2/chroot.2.html
+ * http://man7.org/linux/man-pages/man2/setuid.2.html
+ * http://man7.org/linux/man-pages/man2/setgid.2.html
+ * http://kubernetes.io/docs/user-guide/pod-security-policy/
+ * http://unix.stackexchange.com/questions/18198/gid-current-primary-supplementary-effective-and-real-group-ids
+#### kubernetes compose
+ * https://github.com/kubernetes-incubator/kompose
+ * https://github.com/redhat-developer/opencompose
+ * http://developers.redhat.com/blog/2016/11/03/container-orchestration-specification-for-better-devops/
 #### 下载kubectl
  * https://storage.googleapis.com/kubernetes-release/release/v1.3.0/bin/darwin/amd64/kubectl
+#### monokube
+ * https://github.com/polvi/monokube 全部打包到一个二进制文件
 #### 下载容器
+ * https://github.com/kubernetes/kubernetes/issues/6888
+ * https://github.com/kubernetes/minikube
  * 更新容器镜像
+```
+  minikube start --extra-config=kubelet.PodInfraContainerImage=docker.io/kubernetes/pause
+```
 ```
  kubectl set image deployment/kubedash kubedash=index.tenxcloud.com/google_containers/kubernetes-dashboard-amd64:v1.4.0
 ```
@@ -518,6 +548,15 @@ root@dev-xwang:~# gluster volume quota glustersample1 limit-usage / 32GB
  * https://github.com/kubernetes/kubernetes/issues/10439 讨论集成 Vault的issue
  * https://www.digitalocean.com/company/blog/vault-and-kubernetes/ 通过Vault集成CA
 
+#### 扩展kubernetes API
+ * https://github.com/kubernetes/kubernetes/blob/master/docs/design/extending-api.md
+ * http://kubernetes.io/docs/user-guide/thirdpartyresources/
+ * https://github.com/coreos/etcd-operator coreos operator
+ * https://coreos.com/press/coreos-introduces-operators.html
+ * https://coreos.com/blog/introducing-operators.html
+ * https://groups.google.com/forum/#!topic/kubernetes-sig-network/7skwy2jXWWk
+ * http://www.devoperandi.com/kubernetes-automation-with-stackstorm-and-thirdpartyresources/
+ * https://storage.googleapis.com/kubernetes-release/release/v1.4.6/bin/darwin/amd64/kubectl 下载
 ### kubernetes scheduler
  * http://kubernetes.io/docs/admin/kube-scheduler/
  * http://kubernetes.io/docs/admin/multiple-schedulers/  scheduler.alpha.kubernetes.io/name:
@@ -543,7 +582,9 @@ root@dev-xwang:~# gluster volume quota glustersample1 limit-usage / 32GB
  * https://github.com/mfornos/awesome-microservices
  * http://www.devopsbookmarks.com/ci devopsbookmarks 持续集成技术列表
 #### microservices service discovery and registry 服务发现
- * http://blog.christianposta.com/microservices/netflix-oss-or-kubernetes-how-about-both/ AP or CP 的问题讨论，用DNS
+ * http://blog.christianposta.com/microservices/netflix-oss-or-kubernetes-how-about-both/ AP or CP 的问题讨论，用DNS,基于kubernetes的服务发现
+ * https://github.com/BuoyantIO/linkerd  
+ * https://linkerd.io/overview/how-to-use-it/  服务发现的中间件 支持熔断
  * http://callistaenterprise.se/blogg/teknik/2016/05/27/building-a-microservice-with-golang/  golang connect to spring cloud
  * https://martin.kleppmann.com/2015/05/11/please-stop-calling-databases-cp-or-ap.html
  * https://tech.knewton.com/blog/2014/12/eureka-shouldnt-use-zookeeper-service-discovery/
@@ -641,7 +682,7 @@ http://lattice.cf/
  * https://getkong.org/about/faq/ kong 用 cassandra做存储
  * http://www.apiman.io/latest/production-guide.html  apiman 用mysql做存储 elasticsearch存metrics
  * https://tyk.io/docs/tyk-api-gateway-v1-9/configuration/gateway-configuration-options/ tyk 用mongodb做存储
- *
+ * https://github.com/pires/kubernetes-elasticsearch-cluster 在kubernetes上的elasticsearch
 
 #### Apache camel patterns
  * http://camel.apache.org/enterprise-integration-patterns.html
@@ -669,7 +710,10 @@ http://lattice.cf/
  * http://blog.christianposta.com/demo/devops-with-apache-tomcattomee-and-fabric8/
 #### quickstart
  * https://github.com/openshift/origin/tree/master/examples/quickstarts  openshift application template
+ * https://github.com/openshift/training/blob/master/09-Templates-Quickstarts-Instant-Apps.md 模板的 training
  * https://docs.openshift.org/latest/dev_guide/templates.html#dev-guide-templates
+ * https://docs.openshift.com/enterprise/3.0/dev_guide/templates.html 创建template 使用案例，图
+ * https://github.com/openshift/training/blob/master/09-Templates-Quickstarts-Instant-Apps.md
  * https://github.com/fabric8-quickstarts?page=2  fabric8 application template
 ### probe healthcheck
  * http://kubernetes.io/docs/user-guide/walkthrough/k8s201/#health-checking
@@ -1096,6 +1140,7 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 
 ### openshift volumn
  * https://docs.openshift.org/latest/dev_guide/volumes.html#adding-volumes
+ * https://access.redhat.com/documentation/en/red-hat-enterprise-linux-atomic-host/7/paged/getting-started-with-kubernetes/chapter-2-get-started-provisioning-storage-in-kubernetes
  * https://docs.openshift.com/enterprise/3.1/install_config/persistent_storage/dynamically_provisioning_pvs.html
  * https://docs.openshift.com/enterprise/3.1/install_config/configuring_openstack.html#install-config-configuring-openstack
 #### openshift workflow
@@ -1509,11 +1554,12 @@ http://www.lamport.org/
   - Yoda Notation（Yoda 表示法），Mental Speedbump（头脑减速杠），Pearl Effect （珍珠效应），Sins of our Forefathers（先辈的罪），Katrina Effect（卡特里娜飓风效应），Workaround（变通），Jenga Code，Higgs-Bugson，Heisenbug
 
 
-
 # network protocol
 ## real time protocol
 ### websocket
  * http://tools.ietf.org/html/rfc6455#page-11  
+ * https://blogs.oracle.com/PavelBucek/entry/websocket_via_http_proxy websocket 穿越 proxy
+ * https://www.infoq.com/articles/Web-Sockets-Proxy-Servers
 
 ### webrtc  
  * http://www.cnblogs.com/lingyunhu/p/4058182.html
@@ -1523,7 +1569,7 @@ http://www.lamport.org/
  * stun turn ice 服务器 http://www.it165.net/admin/html/201503/5062.html http://www.it165.net/admin/html/201503/5062.html
 ####
 
-# github
+# github 代码托管
 ## github-commands
 ```
 git add . && git commit -m "Add all content of $(pwd)" && git push
@@ -1540,6 +1586,11 @@ ssh-keygen -t rsa -C "jenkins1@qingyuanos.com" -f /root/.ssh/id_rsa -P "" -q
 ### git best practice
  * http://programmers.stackexchange.com/questions/165725/git-branching-and-tagging-best-practices
 
+### git upstream downstream github 上游项目 下游项目
+ * https://help.github.com/articles/syncing-a-fork/
+ * https://help.github.com/articles/merging-an-upstream-repository-into-your-fork/
+ * http://stackoverflow.com/questions/9257533/what-is-the-difference-between-origin-and-upstream-on-github
+ * http://stackoverflow.com/questions/2739376/definition-of-downstream-and-upstream/2749166#2749166
 # graph editting
  * http://www.sitepoint.com/5-free-html5-presentation-systems/
 
@@ -1681,6 +1732,12 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * https://en.wikipedia.org/wiki/Single-page_application
  * http://noeticforce.com/best-Javascript-frameworks-for-single-page-modern-web-applications
  * http://angularjs-emberjs-compare.bguiz.com/
+#### angular 2 examples
+ * https://github.com/mgechev/switching-to-angular2
+ * https://github.com/mgechev/angular-seed#examples
+ * https://tests4geeks.com/angular-2-tutorial/
+ * https://github.com/thelgevold/angular-2-samples
+ * 
 
 ### pip 安装
 安装不了可以将python2.7目录允许访问。安装openstackclient后可以访问openstack服务
@@ -1700,6 +1757,15 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
 
 ### go string literals string template 字符串
  * https://golang.org/ref/spec#String_literals
+
+### golang download 下载
+ * https://golang.org/dl/
+ * https://storage.googleapis.com/golang/go1.7.3.linux-amd64.tar.gz
+ * https://storage.googleapis.com/golang/go1.7.3.darwin-amd64.pkg
+
+### golang idea 安装
+ * https://github.com/go-lang-plugin-org/go-lang-idea-plugin
+ * https://www.jetbrains.com/help/idea/2016.2/managing-enterprise-plugin-repositories.html
 
 ## coding problems
 ### Python problems
