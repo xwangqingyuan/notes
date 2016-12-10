@@ -618,6 +618,7 @@ http://lattice.cf/
 #### spring boot
  * develop with spring boot and kubernetes http://blog.christianposta.com/microservices/spring-boot-microservice-development-on-kubernetes-the-easy-way/
 #### micro service example
+
  * https://github.com/kbastani/spring-cloud-microservice-example 电影推荐应用
  * https://github.com/kbastani/spring-cloud-event-sourcing-example 电子商城应用
  * https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615
@@ -627,6 +628,18 @@ http://lattice.cf/
  * https://github.com/zutherb/AppStash/tree/master/kubernetes
    https://github.com/eventuate-local/eventuate-local/blob/master/eventuate-local-java-embedded-cdc/src/main/java/io/eventuate/local/cdc/debezium/EventTableChangesToAggregateTopicRelay.java event source platform eventuate
  * http://eventuate.io/exampleapps.html  案例程序
+#### 有趣应用
+ * https://hub.docker.com/r/daehyeok/freecodecamp/
+ * https://hub.docker.com/r/xblaster/tensor-guess/ 分类程序
+ * https://hub.docker.com/r/moviemasher/angular-moviemasher/ 电影编辑网页
+ * https://hub.docker.com/r/dubuqingfeng/docker-web-game    红白机程序
+ * https://hub.docker.com/r/ardilgulez/html5game    多人小游戏
+ * https://hub.docker.com/r/benb88/game_of_life     生命游戏
+ * http://www.conwaylife.com/wiki/Main_Page  congway game_of_life know how
+ * https://hub.docker.com/r/agoodno/match-game/     closure web page
+ * https://github.com/alexey-ernest/auction-game  拍卖游戏
+ * https://github.com/odoo/odoo     ERP系统   http://www.greenodoo.com/
+ * https://github.com/buke/GreenOdoo        http://demo7.greenodoo.com/     http://git.oschina.net/wangbuke/GreenOdoo
 
 #### 12-factors with Docker
  * https://prezi.com/e7sdy9rdujgp/12-factor-apps-in-docker/
@@ -683,7 +696,13 @@ http://lattice.cf/
  * http://www.apiman.io/latest/production-guide.html  apiman 用mysql做存储 elasticsearch存metrics
  * https://tyk.io/docs/tyk-api-gateway-v1-9/configuration/gateway-configuration-options/ tyk 用mongodb做存储
  * https://github.com/pires/kubernetes-elasticsearch-cluster 在kubernetes上的elasticsearch
-
+ * API Gateway support for WebSockets
+ * https://github.com/Mashape/kong/issues/893
+ * https://tyk.io/docs/tyk-api-gateway-v-2-0/api-management/websockets/
+ * https://github.com/spring-cloud/spring-cloud-netflix/issues/163
+ * https://github.com/jzonthemtn/tyk-java-client
+ * https://tyk.io/docs/tyk-api-gateway-v-2-0/javascript-plugins/tyk-javascript-api/
+ *
 #### Apache camel patterns
  * http://camel.apache.org/enterprise-integration-patterns.html
  * http://camel.apache.org/camel-dsl.html
@@ -1392,6 +1411,16 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 ### galera cluster
  * 负载均衡 http://galeracluster.com/documentation-webpages/haproxy.html#configuration
  * http://www.gpfeng.com/?p=603  https://mariadb.com/kb/en/mariadb/about-galera-replication/
+### postgres psql
+#### psql 客户端程序
+```
+psql -U username 登录客户端
+psql -U username -c 'select * from tablename;'
+psql -U username -c '\d'
+
+```
+#### 错误 postgres error message
+ * 无法初始化,因为磁盘没空间了。
 
 ## document database 文档数据库
 
@@ -1482,6 +1511,7 @@ http://wenku.baidu.com/link?url=HOs2rIl5Z4yJj_MpyHeHdijbwWDJM2XnJBH3qeZrOY2udCTC
 http://dev.dota2.com/showthread.php?t=15261
 https://msdn.microsoft.com/en-us/library/bb742455.aspx
 https://1024monkeys.wordpress.com/2014/04/01/game-servers-udp-vs-tcp/
+
 
 ### UDP load balance
 http://www.austintek.com/LVS/LVS-HOWTO/HOWTO/LVS-HOWTO.UDP.html
@@ -1591,8 +1621,12 @@ ssh-keygen -t rsa -C "jenkins1@qingyuanos.com" -f /root/.ssh/id_rsa -P "" -q
  * https://help.github.com/articles/merging-an-upstream-repository-into-your-fork/
  * http://stackoverflow.com/questions/9257533/what-is-the-difference-between-origin-and-upstream-on-github
  * http://stackoverflow.com/questions/2739376/definition-of-downstream-and-upstream/2749166#2749166
+### 提交本地branch到remote
+ * http://stackoverflow.com/questions/1519006/how-do-you-create-a-remote-git-branch?rq=1
+
 # graph editting
  * http://www.sitepoint.com/5-free-html5-presentation-systems/
+
 
 ## http://demo.qunee.com/#HierarchicLayouter%20Demo
 # security
@@ -1700,6 +1734,8 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * https://www.mockaroo.com/
  * http://www.generatedata.com/
  * http://c2.com/cgi/wiki?TestDataGenerator
+### json在线处理工具
+ *
 
 ## nodejs
 ### web command line interface cli
@@ -1711,6 +1747,9 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * http://www.pythonchallenge.com/
 ### list comprehesions 列表解析和生成器表达式
  * http://www.jb51.net/article/26520.htm
+### developing tool WebStorm
+ * http://idea.lanyus.com/
+ *
 
 #### angularjs
  * https://github.com/toddmotto/angular-1-5-components-app
@@ -1737,7 +1776,8 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * https://github.com/mgechev/angular-seed#examples
  * https://tests4geeks.com/angular-2-tutorial/
  * https://github.com/thelgevold/angular-2-samples
- * 
+ * https://github.com/angular/angular-cli  how to install angular 2
+ * http://www.protractortest.org/#/ end-to-end testing for angular
 
 ### pip 安装
 安装不了可以将python2.7目录允许访问。安装openstackclient后可以访问openstack服务
