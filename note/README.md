@@ -35,6 +35,8 @@
   - Compared to other image classification algorithms, convolutional neural networks use relatively little pre-processing. This means that the network is responsible for learning the filters that in traditional algorithms were hand-engineered. The lack of dependence on prior knowledge and human effort in designing features is a major advantage for CNNs.
   - https://en.wikipedia.org/wiki/Convolutional_neural_network
  * 用Kubernetes 做人工智能 https://openai.com/blog/infrastructure-for-deep-learning/
+ * https://en.wikipedia.org/wiki/Reinforcement_learning  https://en.wikipedia.org/wiki/Q-learning 增强学习
+ * exploration and exploitation 探索和开发
 
 
 ## Alpha–beta pruning
@@ -50,6 +52,12 @@
  * Monte Carlo tree search (MCTS) is a heuristic search algorithm for some kinds of decision processes,
  * Monte Carlo tree search does offer significant advantages over alpha–beta pruning and similar algorithms that minimize the search space.
  * Various modifications of the basic Monte Carlo tree search method have been proposed to shorten the search time. Some employ domain-specific expert knowledge, others do not.
+
+## machine learning 机器学习
+### 机器学习库函数
+ * https://hub.docker.com/r/ermaker/keras-jupyter/
+ * https://hub.docker.com/r/gw000/keras/
+ * https://hub.docker.com/r/tensorflow/tensorflow/
 
 Monte Carlo tree search can use either light or heavy playouts. Light playouts consist of random moves while heavy playouts apply various heuristics to influence the choice of moves.[
 
@@ -406,6 +414,15 @@ chmod +x /usr/local/bin/docker-machine
 
 ```
 ### docker swarm
+#### create dev
+```
+docker-machine create \
+    -d virtualbox \
+    --virtualbox-cpu-count 2 \
+    --virtualbox-disk-size 80000 \
+    --virtualbox-memory 2048 \
+    dev
+```
 #### create swarm
  * https://docs.docker.com/swarm/provision-with-machine/
 ```
@@ -500,6 +517,9 @@ docker-machine create \
  * http://man7.org/linux/man-pages/man2/setgid.2.html
  * http://kubernetes.io/docs/user-guide/pod-security-policy/
  * http://unix.stackexchange.com/questions/18198/gid-current-primary-supplementary-effective-and-real-group-ids
+ * http://kubernetes.io/docs/user-guide/containers/  docker cap 和 linux cap的对应
+ * http://man7.org/linux/man-pages/man7/capabilities.7.html     linux所有权限说明
+ * http://man7.org/linux/man-pages/man1/capsh.1.html  查看权限命令
 #### kubernetes compose
  * https://github.com/kubernetes-incubator/kompose
  * https://github.com/redhat-developer/opencompose
@@ -517,6 +537,11 @@ docker-machine create \
 ```
 ```
  kubectl set image deployment/kubedash kubedash=index.tenxcloud.com/google_containers/kubernetes-dashboard-amd64:v1.4.0
+```
+#### kubectl delete
+```
+# 强制删除pod, 当某些pod 卡死在TERMINATING状态时
+kubectl delete pod NAME --grace-period=0
 ```
 #### kubectl exec
  * kubectl exec gogs-2717905640-v96iy -- bash -c '/bin/echo hello > /tmp/result.log'
@@ -621,6 +646,10 @@ http://lattice.cf/
 
  * https://github.com/kbastani/spring-cloud-microservice-example 电影推荐应用
  * https://github.com/kbastani/spring-cloud-event-sourcing-example 电子商城应用
+ * https://github.com/kbastani/spring-cloud-polyglot-persistence-example 电影推荐应用
+   - https://hub.docker.com/u/dockerniu/    电影推荐应用镜像
+   - https://hub.docker.com/u/docker4tracy/     电影推荐应用镜像
+   - http://www.kennybastani.com/
  * https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615
  * https://github.com/kelseyhightower/kubernetes-redis-cluster
  * https://www.udacity.com/account/auth#!/signin?next=https%3A%2F%2Fclassroom.udacity.com%2Fcourses%2Fud615&enroll=ud615
@@ -628,6 +657,7 @@ http://lattice.cf/
  * https://github.com/zutherb/AppStash/tree/master/kubernetes
    https://github.com/eventuate-local/eventuate-local/blob/master/eventuate-local-java-embedded-cdc/src/main/java/io/eventuate/local/cdc/debezium/EventTableChangesToAggregateTopicRelay.java event source platform eventuate
  * http://eventuate.io/exampleapps.html  案例程序
+ * willb/notebook                              tutorial  hub.qingyuanos.com/game/notebook            tutorial spark tutorial
 #### 有趣应用
  * https://hub.docker.com/r/daehyeok/freecodecamp/
  * https://hub.docker.com/r/xblaster/tensor-guess/ 分类程序
@@ -640,6 +670,7 @@ http://lattice.cf/
  * https://github.com/alexey-ernest/auction-game  拍卖游戏
  * https://github.com/odoo/odoo     ERP系统   http://www.greenodoo.com/
  * https://github.com/buke/GreenOdoo        http://demo7.greenodoo.com/     http://git.oschina.net/wangbuke/GreenOdoo
+ * https://github.com/maxexcloo/Docker  docker应用    http://www.silvergames.com/t/minecraft  minecraft games
 
 #### 12-factors with Docker
  * https://prezi.com/e7sdy9rdujgp/12-factor-apps-in-docker/
@@ -1557,6 +1588,14 @@ http://alternativeto.net/
  * https://hadoop.apache.org/ https://github.com/apache/hadoop
  * http://spark.apache.org/ https://github.com/spark/core
  * https://blog.openshift.com/tag/v3/ https://github.com/openshift/origin
+## release notes and changelogs
+ * https://github.com/kubernetes/kubernetes/releases     https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md/
+ * https://docs.openshift.com/container-platform/3.3/welcome/revhistory_full.html
+ * https://github.com/openshift/origin/releases
+ * https://ci.openshift.redhat.com/releases_overview.html#3.4
+ * https://github.com/docker/docker/releases
+ * https://tectonic.com/enterprise/releases/
+
 ## good blogs  
  * Kubernetes blog http://blog.kubernetes.io/  
  * Open Container Initiative news/blog  https://www.opencontainers.org/news/in-the-news
@@ -1604,6 +1643,12 @@ http://www.lamport.org/
 ```
 git add . && git commit -m "Add all content of $(pwd)" && git push
 ```
+## git checkout
+### 忽略当前分支更改 https://zhidao.baidu.com/question/1047433320341166179.html
+```
+git checkout .
+```
+
 ## git ssh  
 ### git client
  * 生成ssh key
