@@ -1588,6 +1588,8 @@ http://alternativeto.net/
  * https://hadoop.apache.org/ https://github.com/apache/hadoop
  * http://spark.apache.org/ https://github.com/spark/core
  * https://blog.openshift.com/tag/v3/ https://github.com/openshift/origin
+
+ 
 ## release notes and changelogs
  * https://github.com/kubernetes/kubernetes/releases     https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md/
  * https://docs.openshift.com/container-platform/3.3/welcome/revhistory_full.html
