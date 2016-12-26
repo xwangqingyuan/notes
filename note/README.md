@@ -112,6 +112,16 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
  * https://d3js.org/
  * http://idl.cs.washington.edu/  
 
+### clique 小圈子, 完备子图 Complete Subgraph Complete Graph
+ * https://en.wikipedia.org/wiki/Clique_(graph_theory)
+ * https://en.wikipedia.org/wiki/Complete_graph
+ * https://en.wikipedia.org/wiki/Ramsey%27s_theorem 拉姆齐定理 monochromatic 单色的,单频的
+ * http://baike.baidu.com/link?url=p7gDamXezV1BwBNQXCHLBcH1X6YyTsnT0jsfSJG7Zsc4guYniIsNesmRdRGzGrs1GvNxocRJhrXTHyEoCL366EA2JH2o1UAsTsq6Pa7-W-TFhxnuC0vVZ74O9yPUemTlOXYZd7AQLCPVjkppAZLJs_
+ * https://theconversation.com/how-random-is-your-randomness-and-why-does-it-matter-59958
+ * pure random https://theconversation.com/how-random-is-your-randomness-and-why-does-it-matter-59958
+ * http://eccc.hpi-web.de/report/2015/119/
+ * http://www.cut-the-knot.org/Curriculum/Combinatorics/ThreeOrThree.shtml  Party Acquaintances
+
 #### DAG 有向无环图 Directed Graph
  * https://github.com/cpettitt/dagre-d3/wiki
  * https://github.com/nickholub/d3-dag-visualization/tree/master/app
@@ -119,6 +129,7 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 #### Tree 树状图
  * http://mbostock.github.io/d3/talk/20111018/tree.html
  * http://bl.ocks.org/mbostock/4339083
+
 
 #### Relationship 关系图
 
@@ -520,6 +531,24 @@ docker-machine create \
  * http://kubernetes.io/docs/user-guide/containers/  docker cap 和 linux cap的对应
  * http://man7.org/linux/man-pages/man7/capabilities.7.html     linux所有权限说明
  * http://man7.org/linux/man-pages/man1/capsh.1.html  查看权限命令
+#### SCC errors
+```
+Dec 24, 2016 7:55:13 AM org.apache.catalina.startup.Catalina load
+WARNING: Unable to load server configuration from [/usr/local/tomcat/conf/server.xml]
+Dec 24, 2016 7:55:13 AM org.apache.catalina.startup.Catalina load
+WARNING: Permissions incorrect, read permission is not allowed on the file.
+Dec 24, 2016 7:55:13 AM org.apache.catalina.startup.Catalina load
+WARNING: Unable to load server configuration from [/usr/local/tomcat/conf/server.xml]
+Dec 24, 2016 7:55:13 AM org.apache.catalina.startup.Catalina load
+WARNING: Permissions incorrect, read permission is not allowed on the file.
+Dec 24, 2016 7:55:13 AM org.apache.catalina.startup.Catalina start
+SEVERE: Cannot start server. Server instance is not configured.
+
+```
+To fix
+```
+oc adm policy add-scc-to-user anyuid system:serviceaccount:test-stress:default
+```
 #### kubernetes compose
  * https://github.com/kubernetes-incubator/kompose
  * https://github.com/redhat-developer/opencompose
@@ -1188,6 +1217,15 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 ### marketplace
  * https://marketplace.openshift.com/
 
+### minishift
+ * https://marketplace.openshift.com/
+```
+# config files
+cd /mnt/sda1/var/lib/minishift
+ls -aef
+/usr/local/bin/openshift start --master-config=openshift.local.config/master/master-config.yaml --node-config=openshift.local.config/node-minishift/node-config.yaml
+```
+
 ### openshift volumn
  * https://docs.openshift.org/latest/dev_guide/volumes.html#adding-volumes
  * https://access.redhat.com/documentation/en/red-hat-enterprise-linux-atomic-host/7/paged/getting-started-with-kubernetes/chapter-2-get-started-provisioning-storage-in-kubernetes
@@ -1589,7 +1627,7 @@ http://alternativeto.net/
  * http://spark.apache.org/ https://github.com/spark/core
  * https://blog.openshift.com/tag/v3/ https://github.com/openshift/origin
 
- 
+
 ## release notes and changelogs
  * https://github.com/kubernetes/kubernetes/releases     https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md/
  * https://docs.openshift.com/container-platform/3.3/welcome/revhistory_full.html
@@ -1657,6 +1695,11 @@ git checkout .
 ```
 ssh-keygen -t rsa -C "jenkins1@qingyuanos.com" -f /home/var/jenkins_ws/jenkins_home/qykeys/jenkins_id.pem
 ssh-keygen -t rsa -C "jenkins1@qingyuanos.com" -f /root/.ssh/id_rsa -P "" -q
+```
+### git rm
+```
+# 将文件恢复到untracted状态
+git rm -r --cached examples/qypaas/stresstest/tomcat-webapp/stresshello/target
 ```
 ### git tag
  * http://blog.csdn.net/wangjia55/article/details/8793577
@@ -1755,6 +1798,9 @@ https://github.com/lducas/FHEW
  * https://auth0.com/docs/sso/regular-web-apps-sso
  * https://spring.io/blog/2015/02/03/sso-with-oauth2-angular-js-and-spring-security-part-v
 
+### openvpn
+ * https://github.com/ttlequals0/autovpn  Script to create an OpenVPN Endpoint on AWS.
+
 # programming coding 编程
 ## coding styles
 Shell style=
@@ -1825,7 +1871,11 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * https://github.com/thelgevold/angular-2-samples
  * https://github.com/angular/angular-cli  how to install angular 2
  * http://www.protractortest.org/#/ end-to-end testing for angular
-
+#### angular 2 end 2 end testing
+ * http://www.gistia.com/guide-end-end-testing-angular-2/
+ * https://blog.jscrambler.com/getting-started-with-angular-2-end-to-end-testing/
+ * https://github.com/alexpods/angular2-universal-starter
+ * https://dzone.com/articles/getting-started-with-angular-2-end-to-end-testing
 ### pip 安装
 安装不了可以将python2.7目录允许访问。安装openstackclient后可以访问openstack服务
 
@@ -1925,7 +1975,10 @@ logic paradigm
  * https://en.wikipedia.org/wiki/Open_MPI
  * https://github.com/open-mpi
 
-
+### testing
+#### java maen
+ * https://github.com/ligado/hello-world-servlet/tree/master/src/main/docker
+ *
 # linux
 
 ## /etc/apt/sources.list
@@ -1950,6 +2003,8 @@ deb-src http://mirrors.aliyun.com/ubuntu trusty-updates universe
  * http://mirrors.ctyun.cn/
  * http://mirror.bit.edu.cn/web/
 
+## computer operating systems
+https://www.bottomupcs.com/
 ## linux commands  linux 命令
 ## init.d
 ### 添加删除服务 init的服务启动
@@ -1967,6 +2022,15 @@ sudo find /var -name *.xml -type f | sudo xargs grep jenkins1
  * 替换sources.list 可使用/或%只要文本中不出现即可
 ```
 sudo sed -i "s%archive.ubuntu.com%mirrors.aliyun.com%g" /etc/apt/sources.list
+```
+
+### ps
+查找进程命令的工作目录
+```
+ps -efa
+pwdx <PID>
+$ lsof -p <PID> | grep cwd
+$ readlink /proc/<PID>/cwd
 ```
 ### sed
 ```
@@ -2145,6 +2209,11 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
 |给对方制造同样的处境| 当时你在哪儿 | 难为人的请求 | 问你秘密 |
 |简单、意外、具体、时效、影响每个人的社会变革| 劝人买房、股灾 | 听众注意力分散时 | 演讲主题切换 |
 |自嘲自己的缺点| 马云像坏人、穿着、面、紧张 | 强调自己所推崇的关键因素 | 演讲、自我介绍 |
+
+### time management
+ * https://alexvermeer.com/how-to-get-the-most-out-of-the-next-year/
+ * https://www.theguardian.com/technology/2016/dec/22/why-time-management-is-ruining-our-lives
+
 # software tools 软件工具  
 ## screen recorder 录屏软件  
 ### 最好用的抓屏
@@ -2157,6 +2226,12 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
 ## software license open source license 开源授权
  * http://choosealicense.com/licenses/
  * https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses
+
+# science physics 科学 物理学
+## Amplituhedron 宝石几何学
+ * http://www.360doc.com/content/15/1030/22/152409_509555054.shtml
+## 定域性 和 幺正性 locality 幺正性（unitarity）是一种数学表述，指的是微观粒子散射过程和反应过程中几率守恒。微观世界的物质具有波粒二象性，于时刻t在全空间找到粒子的总几率等于1。
+## Holography is the science and practice of making holograms 全息图
 
 # statistics 统计学
 ## http://ec.europa.eu/eurostat/statistics-explained/index.php/Category:Glossary
