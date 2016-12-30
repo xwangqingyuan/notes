@@ -37,7 +37,20 @@
  * 用Kubernetes 做人工智能 https://openai.com/blog/infrastructure-for-deep-learning/
  * https://en.wikipedia.org/wiki/Reinforcement_learning  https://en.wikipedia.org/wiki/Q-learning 增强学习
  * exploration and exploitation 探索和开发
-
+### deep learning problems
+ * http://mt.sohu.com/20151019/n423593175.shtml
+ * https://www.usenix.org/legacy/event/hotpar09/tech/full_papers/ganapathi/ganapathi_html/
+ * https://blog.mixpanel.com/2016/08/03/hard-thing-about-machine-learning/
+ * http://machinelearningmastery.com/mistakes-programmers-make-when-starting-in-machine-learning/
+ * https://www.quora.com/What-is-the-status-of-representing-abstract-concepts-like-the-future-or-human-satisfaction-in-language-that-a-machine-can-understand
+ * http://spectrum.ieee.org/automaton/robotics/artificial-intelligence/deep-learning-ai-listens-to-machines-for-signs-of-trouble
+ * https://arxiv.org/abs/1610.07690 Operational calculus on programming spaces and generalized tensor networks
+### machine learning courses
+ * https://ml.berkeley.edu/blog/2016/11/06/tutorial-1/
+ * http://yerevann.com/a-guide-to-deep-learning/
+ * https://github.com/karandesai-96/maxmin-cnn
+ * https://karandesai-96.github.io/2016/12/21/maxminify-your-cnns/
+ *
 
 ## Alpha–beta pruning
  * https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning
@@ -611,6 +624,8 @@ root@dev-xwang:~# gluster volume quota glustersample1 limit-usage / 32GB
  * https://groups.google.com/forum/#!topic/kubernetes-sig-network/7skwy2jXWWk
  * http://www.devoperandi.com/kubernetes-automation-with-stackstorm-and-thirdpartyresources/
  * https://storage.googleapis.com/kubernetes-release/release/v1.4.6/bin/darwin/amd64/kubectl 下载
+ * https://coreos.com/blog/the-prometheus-operator.html https://github.com/coreos/prometheus-operator
+ * https://coreos.com/blog/introducing-operators.html
 ### kubernetes scheduler
  * http://kubernetes.io/docs/admin/kube-scheduler/
  * http://kubernetes.io/docs/admin/multiple-schedulers/  scheduler.alpha.kubernetes.io/name:
@@ -1802,6 +1817,9 @@ https://github.com/lducas/FHEW
  * https://github.com/ttlequals0/autovpn  Script to create an OpenVPN Endpoint on AWS.
 
 # programming coding 编程
+## c/c++
+### c++ 17
+ * http://www.levelofindirection.com/journal/2016/12/28/c17-why-its-better-than-you-might-think.html
 ## coding styles
 Shell style=
 https://google.github.io/styleguide/shell.xml  
@@ -1933,7 +1951,7 @@ logic paradigm
  * http://blog.csdn.net/on_1y/article/details/8572673#sec-1
  * https://en.wikipedia.org/wiki/Monad_%28functional_programming%29
  * http://stackoverflow.com/questions/18808258/what-does-the-just-syntax-mean-in-haskell
-
+ * http://www.staff.city.ac.uk/~ross/papers/FingerTree.html functional tree
 ## java
 ### maven
  * docker 安装 https://github.com/carlossg/docker-maven/blob/8ab542b907e69c5269942bcc0915d8dffcc7e9fa/jdk-8/Dockerfile
