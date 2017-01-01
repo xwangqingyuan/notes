@@ -48,9 +48,21 @@
 ### machine learning courses
  * https://ml.berkeley.edu/blog/2016/11/06/tutorial-1/
  * http://yerevann.com/a-guide-to-deep-learning/
+ * https://github.com/ZuzooVn/machine-learning-for-software-engineers
+ * http://karpathy.github.io/2016/05/31/rl/
+ * http://machinelearningmastery.com/practice-machine-learning-with-small-in-memory-datasets-from-the-uci-machine-learning-repository/
+ * http://archive.ics.uci.edu/ml/datasets.html?format=&task=reg&att=&area=&numAtt=&numIns=&type=&sort=nameUp&view=table
+ * https://www.nervanasys.com/demystifying-deep-reinforcement-learning/
  * https://github.com/karandesai-96/maxmin-cnn
  * https://karandesai-96.github.io/2016/12/21/maxminify-your-cnns/
  *
+
+### start environment
+ * https://github.com/openai/universe-starter-agent
+ * https://openai.com/blog/universe/
+#### benchmark
+ * Using 16 workers, the agent should be able to solve PongDeterministic-v3 (not VNC) within 30 minutes (often less) on an m4.10xlarge instance. Using 32 workers, the agent is able to solve the same environment in 10 minutes on an m4.16xlarge instance. If you run this experiment on a high-end macbook pro, the above job will take just under 2 hours to solve Pong.
+ * https://aws.amazon.com/cn/ec2/instance-types/  计算实例举例
 
 ## Alpha–beta pruning
  * https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning
@@ -296,6 +308,14 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
  * http://www.infoq.com/cn/news/2015/07/where-is-the-future-of-caas
  * https://github.com/brendandburns/metaparticle/tree/master/docs scatter gather pattern
  *
+
+#### paas user guide
+ * https://docs.openshift.com/enterprise/3.2/welcome/index.html
+ * https://docs.openshift.org/latest/welcome/index.html
+ * https://docs.microsoft.com/en-us/azure/azure-stack/
+ * https://docs.cloudfoundry.org/devguide/deploy-apps/prepare-to-deploy.html
+ * https://docs.cloudfoundry.org/
+
 
 ### 平台云比较
  * http://www.chinacloud.cn/show.aspx?id=20204&cid=14
@@ -1676,7 +1696,7 @@ http://www.lamport.org/
 ## 著名词汇
  * http://www.csdn.net/article/2013-04-16/2814915
   - Yoda Notation（Yoda 表示法），Mental Speedbump（头脑减速杠），Pearl Effect （珍珠效应），Sins of our Forefathers（先辈的罪），Katrina Effect（卡特里娜飓风效应），Workaround（变通），Jenga Code，Higgs-Bugson，Heisenbug
-
+ * wager 赌博 https://en.wikipedia.org/wiki/Daily_double
 
 # network protocol
 ## real time protocol
@@ -2244,7 +2264,14 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
 ## software license open source license 开源授权
  * http://choosealicense.com/licenses/
  * https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses
-
+ * https://opensource.org/faq#commercial
+ * https://en.wikipedia.org/wiki/List_of_commercial_open-source_applications_and_services
+ * http://www.wipo.int/edocs/mdocs/copyright/en/wipo_ip_cm_07/wipo_ip_cm_07_www_82575.pdf
+ * https://en.wikipedia.org/wiki/Business_models_for_open-source_software#Selling_of_required_proprietary_parts_of_a_software_product 如何卖opensource
+ * http://www.cio.com/article/2378859/open-source-tools/7-reasons-not-to-use-open-source-software.html
+ * http://softwareengineering.stackexchange.com/questions/47032/can-i-use-gpl-software-in-a-commercial-application
+ * http://softwareengineering.stackexchange.com/questions/221365/mozilla-public-license-mpl-2-0-vs-lesser-gnu-general-public-license-lgpl-3-0 比较LGPL MPL
+ * https://opensource.com/law/13/1/making-commercial-open-source-software
 # science physics 科学 物理学
 ## Amplituhedron 宝石几何学
  * http://www.360doc.com/content/15/1030/22/152409_509555054.shtml
