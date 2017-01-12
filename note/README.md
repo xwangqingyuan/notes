@@ -37,6 +37,9 @@
  * 用Kubernetes 做人工智能 https://openai.com/blog/infrastructure-for-deep-learning/
  * https://en.wikipedia.org/wiki/Reinforcement_learning  https://en.wikipedia.org/wiki/Q-learning 增强学习
  * exploration and exploitation 探索和开发
+### history
+ * http://www.andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning/
+ * https://news.ycombinator.com/item?id=10910887
 ### deep learning problems
  * http://mt.sohu.com/20151019/n423593175.shtml
  * https://www.usenix.org/legacy/event/hotpar09/tech/full_papers/ganapathi/ganapathi_html/
@@ -45,6 +48,9 @@
  * https://www.quora.com/What-is-the-status-of-representing-abstract-concepts-like-the-future-or-human-satisfaction-in-language-that-a-machine-can-understand
  * http://spectrum.ieee.org/automaton/robotics/artificial-intelligence/deep-learning-ai-listens-to-machines-for-signs-of-trouble
  * https://arxiv.org/abs/1610.07690 Operational calculus on programming spaces and generalized tensor networks
+ * https://sideways-view.com/2016/12/02/crowdsourcing-moderation-without-sacrificing-quality/ 群包项目 AI
+ * https://arxiv.org/abs/1701.01724 德州扑克 texas poker
+ * http://selfdrivingcars.mit.edu/  deep learning for self-driving car
 ### machine learning courses
  * https://ml.berkeley.edu/blog/2016/11/06/tutorial-1/
  * http://yerevann.com/a-guide-to-deep-learning/
@@ -55,7 +61,14 @@
  * https://www.nervanasys.com/demystifying-deep-reinforcement-learning/
  * https://github.com/karandesai-96/maxmin-cnn
  * https://karandesai-96.github.io/2016/12/21/maxminify-your-cnns/
- *
+ * http://terryum.io/ml_practice/2016/04/25/TF-Code-Structure/  tensorflow workflow
+ * https://www.quora.com/How-do-I-understand-Tensorflow-Code-Structure
+ * https://www.tensorflow.org/versions/master/resources/xla_prerelease tensorflow 编译
+ * https://blog.altoros.com/tag/tensorflow tensorflow intro
+ * https://lab.dataos.io/#/console/noplan https://github.com/asiainfoLDP
+### 2016 summary
+ * http://blog.evjang.com/2017/01/nips2016.html   http://blog.evjang.com/2016/06/generative-adversarial-nets-in.html
+
 
 ### start environment
  * https://github.com/openai/universe-starter-agent
@@ -63,6 +76,13 @@
 #### benchmark
  * Using 16 workers, the agent should be able to solve PongDeterministic-v3 (not VNC) within 30 minutes (often less) on an m4.10xlarge instance. Using 32 workers, the agent is able to solve the same environment in 10 minutes on an m4.16xlarge instance. If you run this experiment on a high-end macbook pro, the above job will take just under 2 hours to solve Pong.
  * https://aws.amazon.com/cn/ec2/instance-types/  计算实例举例
+ * https://www.nextplatform.com/2016/09/01/cpu-gpu-put-deep-learning-framework-test/
+#### GPU price
+ * https://www.amazon.com/Nvidia-Tesla-GDDR5-Cores-Graphic/dp/B00Q7O7PQA#HLCXComparisonWidget_feature_div
+ * http://www.pcgamer.com/best-graphics-card-deals-today/
+ * https://developer.nvidia.com/cuda-toolkit-40
+
+
 
 ## Alpha–beta pruning
  * https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning
@@ -83,7 +103,19 @@
  * https://hub.docker.com/r/ermaker/keras-jupyter/
  * https://hub.docker.com/r/gw000/keras/
  * https://hub.docker.com/r/tensorflow/tensorflow/
-
+#### tensorflow
+ * https://github.com/tensorflow/playground
+ * http://abhitopia.com/machine%20learning/2016/05/24/tensor_flow_exploration_2.html  code structure
+ *
+#### bazel
+ * https://bazel.build/faq.html
+ * https://bazel.build/roadmap.html
+ *
+#### GPU code structure
+ *
+#### softmax function
+ * In mathematics, the softmax function, or normalized exponential function,[1]:198 is a generalization of the logistic function that "squashes" a K-dimensional vector z {\displaystyle \mathbf {z} } \mathbf {z} of arbitrary real values to a K-dimensional vector σ ( z ) {\displaystyle \sigma (\mathbf {z} )} \sigma (\mathbf {z} ) of real values in the range (0, 1) that add up to 1. The function is given by
+ * 看名字就知道了，就是如果某一个zj大过其他z,那这个映射的分量就逼近于1,其他就逼近于0，主要应用就是多分类，sigmoid函数只能分两类，而softmax能分多类，softmax是sigmoid的扩展。
 Monte Carlo tree search can use either light or heavy playouts. Light playouts consist of random moves while heavy playouts apply various heuristics to influence the choice of moves.[
 
 # Application framework 开源应用框架
@@ -110,6 +142,18 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 ### infoq famous persons
  * http://2016.qconbeijing.com/track/2769
 
+## spark
+### spark trainings
+ * https://spark-summit.org/east-2015/training/
+### spark devops
+ * https://github.com/juanrh/devops/wiki/Compiling-and-developing-with-the-Spark-source
+ * http://spark.apache.org/docs/1.2.0/building-spark.html
+ * https://spark-summit.org/east-2016/events/continuous-integration-for-spark-apps/
+ * https://databricks.com/blog/2016/04/06/continuous-integration-and-delivery-of-apache-spark-applications-at-metacog.html
+#### spark comparison
+ * http://www.infoworld.com/article/3014440/big-data/five-things-you-need-to-know-about-hadoop-v-apache-spark.html
+ * https://sparkhub.databricks.com/?s=integration&post_type= spark news
+
 ## use case
 用户画像
  * http://www.woshipm.com/pmd/107919.html
@@ -131,6 +175,9 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
  * http://www.thebigdata.cn/YingYongAnLi/5782.html
  * http://www.kjcity.com/news_109562.html
 ## data visualization 数据可视化  BI business intelligence
+
+### 数据可视化新闻
+ * http://dvblogger.com/
 
 ### D3 Data Driven Document
 #### 主页
@@ -315,6 +362,8 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
  * https://docs.microsoft.com/en-us/azure/azure-stack/
  * https://docs.cloudfoundry.org/devguide/deploy-apps/prepare-to-deploy.html
  * https://docs.cloudfoundry.org/
+#### service broker
+ * http://docs.cloudfoundry.org/services/api.html#overview
 
 
 ### 平台云比较
@@ -327,6 +376,11 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
 ### VDI
  * http://baike.baidu.com/link?url=bQulh4Ri-8ZYvs1khfiwsPul_rPUK53ZURDdDGIq-R4UqBu8XEywq7LrkgD9yaqn5EkNgjnNO6rhQd1WRIXL3NqPMxeAwreNNzwyUAbpbza
 
+## Cloud storage 云存储 网盘 云盘
+### owncloud
+ * https://github.com/owncloud/core  github 代码
+ * https://hub.docker.com/_/owncloud/   docker image
+ * https://owncloud.org/faq/   license 版权
 ## ~Docker  
  * docker build
   - docker file reference https://docs.docker.com/engine/reference/builder/
@@ -504,12 +558,24 @@ docker-machine create \
 ### 动态设置docker 和kubelet
  * https://github.com/kubernetes/kubernetes/issues/27980
 #### spark on kubernetes
+ * https://github.com/mattf/openshift-spark/blob/master/Makefile 简单的spark demo
  * https://hub.docker.com/r/radanalyticsio/openshift-spark/
  * https://github.com/radanalyticsio/openshift-spark
+ * https://elmiko.github.io/2016/11/16/spark-on-openshift-with-oshinko.html https://github.com/radanalyticsio/oshinko-webui
+ * spark on openshift 项目 oshinko 日式泡菜
  * https://github.com/shekhargulati/spark-openshift-quickstart
  * https://github.com/mattf/openshift-spark/tree/master/scripts/spark
- * https://blog.openshift.com/running-analytics-openshift-daikon/
+ * https://blog.openshift.com/running-analytics-openshift-daikon/  spark 架构图 daikon 白萝卜
  * https://github.com/openshift
+#### spark on openshift
+ * http://commons.openshift.org/sig/OpenshiftBigData.html Big Data on OpenShift  https://blog.openshift.com/big-data-and-apache-spark-on-openshift-pt-i-openshift-commons-briefing-44/
+ * https://github.com/wattsteve/pyspark-tutorial  https://github.com/wattsteve/ 关注glusterfs,spark on openshift
+ * https://hub.docker.com/r/getwarped/tensorflow-notebook/
+ * https://github.com/getwarped/jupyter-stacks https://github.com/getwarped/jupyter-stacks/tree/master/minimal-notebook https://github.com/getwarped/jupyter-stacks/tree/master/tensorflow-notebook 所有的notebook
+ * https://github.com/getwarped/powershift-cli python for openshift
+#### spark on cloudfoundtry
+ * https://github.com/murraju/spark-boshrelease
+
 #### flink on kubernetes
  * https://github.com/melentye/flink-kubernetes
  * https://www.dezyre.com/article/apache-flink-vs-spark-will-one-overtake-the-other/282
@@ -582,6 +648,10 @@ To fix
 ```
 oc adm policy add-scc-to-user anyuid system:serviceaccount:test-stress:default
 ```
+#### node-problem-detector
+ * https://github.com/kubernetes/node-problem-detector
+ * https://trello.com/c/d9HZmoaR/171-5-node-r-d-adoption-of-node-problem-detector openshift feature
+
 #### kubernetes compose
  * https://github.com/kubernetes-incubator/kompose
  * https://github.com/redhat-developer/opencompose
@@ -1056,6 +1126,20 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * http://mesosphere.github.io/presentations/oscon-mesos-ops-2014/lightning/#/26
  * multi-tenancy mesos https://www.quora.com/What-is-the-future-of-the-private-cloud-world-Mesos-or-OpenStack
 
+### hawkular
+ * http://www.open-open.com/lib/view/open1462924607845.html
+ * https://github.com/hawkular/hawkular-metrics
+ * https://github.com/hawkular/hawkular-apm
+ * http://www.hawkular.org/overview/index.html
+ * http://www.hawkular.org/blog/2016/04/22/collecting-metrics-from-prometheus-endpoints.html
+
+### openshift installation
+#### installation errors
+```
+ImportError: No module named parsing.yaml.dumper
+```
+升级 ansible
+sudo pip install ansible --upgrade
 ### prometheus 普罗米修斯
  * http://www.boxever.com/push-vs-pull-for-monitoring
  * https://prometheus.io/docs/introduction/faq/#why-do-you-pull-rather-than-push?
@@ -1235,6 +1319,9 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * login to server
 
 ## openshift
+### openshift roadmap changelog
+ * https://ci.openshift.redhat.com/releases_overview.html
+
 ### General architecture
  * http://www.tuicool.com/articles/y6B73u
  * http://www.tuicool.com/articles/jEF3iub
@@ -1266,6 +1353,7 @@ ls -aef
  * https://access.redhat.com/documentation/en/red-hat-enterprise-linux-atomic-host/7/paged/getting-started-with-kubernetes/chapter-2-get-started-provisioning-storage-in-kubernetes
  * https://docs.openshift.com/enterprise/3.1/install_config/persistent_storage/dynamically_provisioning_pvs.html
  * https://docs.openshift.com/enterprise/3.1/install_config/configuring_openstack.html#install-config-configuring-openstack
+
 #### openshift workflow
  * https://keithtenzer.com/2015/08/20/openshift-v3-unlocking-the-power-of-persistent-storage/
  * https://keithtenzer.com/2016/08/11/openshift-v3-basic-release-deployment-scenarios/
@@ -1363,6 +1451,10 @@ ls -aef
    * http://blog.chinaunix.net/uid-30571370-id-5588506.html
    * https://github.com/boylegu/regal
    * http://www.linuxidc.com/Linux/2016-05/131288.htm 金丝雀部署
+   * http://itindex.net/detail/55270-%E7%B3%BB%E7%BB%9F
+   * http://baike.baidu.com/view/2563299.htm
+   * http://blog.christianposta.com/deploy/blue-green-deployments-a-b-testing-and-canary-releases/
+
  * 灰度发布的工具
    * fabric python的灰度发布工具，脚本 http://www.fabfile.org/
 
@@ -1505,16 +1597,32 @@ ls -aef
 
 ### Nginx
 
+### 高并发 负载均衡
+ * https://www.usenix.org/conference/lisa16/conference-program/presentation/shuff facebook
+ *
+
 # database 数据库
 ## relational database 关系型数据库
-### mysql  
+### mysql
+#### mysql 客户端
+```
+mysql -uroot -p123456 -e 'show databases;'
+mysql -uroot -p123456 -e 'create database db1;'
+```
 #### tidb
  * http://nosqldb.org/p/563f5780e13823525b000005
  * https://news.ycombinator.com/item?id=10180503
  * https://news.ycombinator.com/item?id=10180822
-### galera cluster
+#### galera cluster
  * 负载均衡 http://galeracluster.com/documentation-webpages/haproxy.html#configuration
  * http://www.gpfeng.com/?p=603  https://mariadb.com/kb/en/mariadb/about-galera-replication/
+#### mysql use case
+ * http://githubengineering.com/moving-persistent-data-out-of-redis/
+ * github mysql tool
+ * http://githubengineering.com/gh-ost-github-s-online-migration-tool-for-mysql/
+ * https://github.com/github/orchestrator
+ * https://github.com/blog/530-how-we-made-github-fast
+ * http://githubengineering.com/rearchitecting-github-pages/
 ### postgres psql
 #### psql 客户端程序
 ```
@@ -1748,9 +1856,36 @@ git rm -r --cached examples/qypaas/stresstest/tomcat-webapp/stresshello/target
  * http://stackoverflow.com/questions/2739376/definition-of-downstream-and-upstream/2749166#2749166
 ### 提交本地branch到remote
  * http://stackoverflow.com/questions/1519006/how-do-you-create-a-remote-git-branch?rq=1
+```
+git checkout -b <branch>
+git push -u origin <branch>
+git push --all -u
+```
+### git diff git merge
+用本地粉质覆盖master分支
+```
+git checkout integration
+git diff integration..master
+git merge -s ours master
+```
+### git reset git revert
+```
+# 看当前分支历史
+git show
+git log
+# 退回某个commit (适合没push的情况)
+git reset --hard 58ae107304e8323d22e3c484140a04d3a4bd2ec6
+# 可以将当前分支新代码checkout 或merge到 另一个 分支 ,再reset当前分支
+# 通过新commit退回某个(适合不是的情况)
+git revert 58ae107304e8323d22e3c484140a04d3a4bd2ec6
+```
+
+### github usage training
+ * https://github.com/github/training-kit
 
 # graph editting
  * http://www.sitepoint.com/5-free-html5-presentation-systems/
+
 
 
 ## http://demo.qunee.com/#HierarchicLayouter%20Demo
@@ -1836,7 +1971,24 @@ https://github.com/lducas/FHEW
 ### openvpn
  * https://github.com/ttlequals0/autovpn  Script to create an OpenVPN Endpoint on AWS.
 
+# hardware
+## qualcomm chips
+ * https://www.fastcompany.com/3066849/the-sensor-revolution/qualcomm-drones-vr-cars-satellites
 # programming coding 编程
+## algorithm 算法
+### graph 图
+#### 图同构问题 GI complete problem
+ * https://en.wikipedia.org/wiki/Graph_isomorphism_problem
+ * 五角星和五边形
+ * subgraph isomorphism problem,[3] which is known to be NP-complete
+ * Subgraph isomorphism is a generalization of both the maximum clique problem and the problem of testing whether a graph contains a Hamiltonian cycle, and is therefore NP-complete.[1] However certain other cases of subgraph isomorphism may be solved in polynomial time
+## programming teaching
+### scratch 教小孩编程
+ * https://scratch.mit.edu/
+### Quine8 Q8 计算机底层演示
+## trend
+ * https://github.com/showcases/programming-languages
+
 ## c/c++
 ### c++ 17
  * http://www.levelofindirection.com/journal/2016/12/28/c17-why-its-better-than-you-might-think.html
@@ -1880,7 +2032,11 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * http://www.jb51.net/article/26520.htm
 ### developing tool WebStorm
  * http://idea.lanyus.com/
- *
+### numpy
+ * http://www.labri.fr/perso/nrougier/from-python-to-numpy/#id53
+ * http://old.sebug.net/paper/books/scipydoc/numpy_intro.html
+### lambdascript
+ * https://github.com/baruchel/lambdascript
 
 #### angularjs
  * https://github.com/toddmotto/angular-1-5-components-app
@@ -1941,6 +2097,9 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
 ### golang idea 安装
  * https://github.com/go-lang-plugin-org/go-lang-idea-plugin
  * https://www.jetbrains.com/help/idea/2016.2/managing-enterprise-plugin-repositories.html
+
+### go pipeline
+ * https://whiskybadger.io/post/introducing-go-pipeline/
 
 ## coding problems
 ### Python problems
@@ -2062,6 +2221,9 @@ sudo find /var -name *.xml -type f | sudo xargs grep jenkins1
 sudo sed -i "s%archive.ubuntu.com%mirrors.aliyun.com%g" /etc/apt/sources.list
 ```
 
+### gnu parallel 并行处理
+#### dgsh
+ * http://www.dmst.aueb.gr/dds/sw/dgsh/
 ### ps
 查找进程命令的工作目录
 ```
@@ -2252,7 +2414,7 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
  * https://alexvermeer.com/how-to-get-the-most-out-of-the-next-year/
  * https://www.theguardian.com/technology/2016/dec/22/why-time-management-is-ruining-our-lives
 
-# software tools 软件工具  
+# software tools 软件工具
 ## screen recorder 录屏软件  
 ### 最好用的抓屏
  * apowersoft screen recorder
@@ -2272,11 +2434,17 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
  * http://softwareengineering.stackexchange.com/questions/47032/can-i-use-gpl-software-in-a-commercial-application
  * http://softwareengineering.stackexchange.com/questions/221365/mozilla-public-license-mpl-2-0-vs-lesser-gnu-general-public-license-lgpl-3-0 比较LGPL MPL
  * https://opensource.com/law/13/1/making-commercial-open-source-software
+
+# quantum computer 量子计算机
+ * http://www.nature.com/news/google-moves-closer-to-a-universal-quantum-computer-1.20032
+ * braid 辫子
 # science physics 科学 物理学
 ## Amplituhedron 宝石几何学
  * http://www.360doc.com/content/15/1030/22/152409_509555054.shtml
 ## 定域性 和 幺正性 locality 幺正性（unitarity）是一种数学表述，指的是微观粒子散射过程和反应过程中几率守恒。微观世界的物质具有波粒二象性，于时刻t在全空间找到粒子的总几率等于1。
 ## Holography is the science and practice of making holograms 全息图
+## 物理学快报
+ * http://phys.org/journals/physical-review-letters/
 
 # statistics 统计学
 ## http://ec.europa.eu/eurostat/statistics-explained/index.php/Category:Glossary
