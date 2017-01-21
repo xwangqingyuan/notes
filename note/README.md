@@ -174,6 +174,25 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
  * http://www.ah-l-tax.gov.cn/portal/dsfc/dwjs/llyj/1435852802010903.htm
  * http://www.thebigdata.cn/YingYongAnLi/5782.html
  * http://www.kjcity.com/news_109562.html
+
+## 医疗大数据 health care
+ * http://it.sohu.com/20160815/n464232473.shtml  林雪婷
+ * https://zhuanlan.zhihu.com/p/19764475?columnSlug=lovemomo
+ * https://www.zhihu.com/question/20605686
+ * https://zhuanlan.zhihu.com/p/20342384?columnSlug=cancertalks
+ * https://www.ibm.com/blogs/watson-health/cognitive-technology-can-revolutionize-oncology/ 帮助医疗的模式
+ * http://www.360doc.com/content/15/0202/20/17132703_445796634.shtml 科普
+ * http://www.hopenoah.com/usa/news/201506011198.html 十大最受关注的癌症临床试验
+ * https://www.cancer.gov/about-cancer/treatment/clinical-trials
+ * https://www.cancer.gov/about-cancer/treatment/clinical-trials/nci-supported
+ * https://medlineplus.gov/clinicaltrials.html
+ * http://china.caixin.com/2016-07-01/100961131.html
+ * https://xueqiu.com/4918021293/70964177
+ * http://tech.qq.com/a/20160422/029334.htm 肝癌的CAR-T疗法  http://www.cellbiomedgroup.com/newsroom/release-of-car-t-for-non-small-cell-lung-cancer-phase-i-clinical-trial-data-at-2015-european-cancer-congress/  https://www.cancer.gov/about-cancer/treatment/research/car-t-cells
+ * http://baike.baidu.com/link?url=YxZ6139QoPuur2WrsKkhY7UeXQcQVl40as_IkddXsIkknCmoApSq7NZ8r7c1k7zQN1H0W4evhchRVc79-6e-Ga http://www.yuaigongwu.com/thread-17035-3-1.html
+### cerebral thrombosis 血栓
+ * cerebral thrombosis
+
 ## data visualization 数据可视化  BI business intelligence
 
 ### 数据可视化新闻
@@ -309,6 +328,9 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
  * http://www.strategyr.com/MarketResearch/Platform_as_a_Service_PaaS_Market_Trends.asp
  * http://blog.arungupta.me/xpaas-making-enterprise-paas-ready/ paas category
  * http://wso2.com/cloud/paas/ paas key features
+
+ ###
+ * http://www.tmtpost.com/2560566.html
 ## cloud history
 ### software history
  * weblogic http://www.qualogy.com/techblog/oracle/weblogic-how-it-all-began
@@ -421,6 +443,11 @@ https://success.docker.com/Datacenter/Apply/Introduction_to_User_Namespaces_in_D
  * http://phusion.github.io/baseimage-docker/
  * http://blog.chazomatic.us/2014/06/18/multiple-processes-inside-docker/
  * https://valdhaus.co/writings/docker-misconceptions/
+### docker os
+#### docker minimal os container openrating system
+ * https://bobcares.com/blog/top-5-operating-systems-for-your-docker-infrastructure/
+ * https://blog.docker.com/2015/02/the-new-minimalist-operating-systems/
+ * https://ostree.readthedocs.io/en/latest/
 #### docker centos 7
 
 ### docker overlay file system storage
@@ -892,6 +919,8 @@ http://lattice.cf/
  * http://fabric8.io/devops/
  * https://github.com/fabric8io/fabric8-devops
  * http://blog.christianposta.com/demo/devops-with-apache-tomcattomee-and-fabric8/
+#### kubernetes training
+ * http://christianposta.com/slides/docker/generated/day2.html#/grouping-concepts
 #### quickstart
  * https://github.com/openshift/origin/tree/master/examples/quickstarts  openshift application template
  * https://github.com/openshift/training/blob/master/09-Templates-Quickstarts-Instant-Apps.md 模板的 training
@@ -1159,6 +1188,8 @@ sudo pip install ansible --upgrade
  * https://hub.docker.com/r/zabbix/zabbix-server-mysql/ zabbix server
  * https://hub.docker.com/r/zabbix/zabbix-agent/ zabbix agent
  * https://blog.openshift.com/monitoring-openshift-cluster-using-cockpit/ cockpit demo
+ * http://cockpit-project.org/  https://github.com/cockpit-project/cockpit linux monitoring
+ * https://blog.serverdensity.com/80-linux-monitoring-tools-know/
 ## openstack  
 ### release notes
  * https://wiki.openstack.org/wiki/ReleaseNotes/Liberty
@@ -1700,6 +1731,19 @@ psql -U username -c '\d'
  * https://support.brightcove.com/en/video-cloud/training-videos/video-cloud-architecture-overview
  * https://code.facebook.com/posts/1653074404941839/under-the-hood-broadcasting-live-video-to-millions/
  * http://www.ctocio.com/ccnews/19652.html
+## online meeting web conference 视频会议
+### 开源视频会议系统
+ * http://www.oschina.net/project/tag/227/video-conferencing  http://blog.csdn.net/chenbang110/article/details/13681419
+ * https://hub.docker.com/r/juanluisbaptiste/bigbluebutton/
+ * https://github.com/apache/openmeetings   https://github.com/accesto/apache-openmeetings-docker
+ * https://github.com/openmeetings http://openmeetings.apache.org/
+ * https://hub.docker.com/r/dramaturg/apache-openmeetings/
+ * https://github.com/ging/licode http://lynckia.com/licode/
+ * https://hub.docker.com/r/lynckia/licode/
+ * https://github.com/docebo
+ * https://github.com/jitsi/jitsi-meet https://hub.docker.com/r/quantumobject/docker-jitsi-meet/
+
+
 
 # Real time bidding 实时竞价广告
 https://cloud.google.com/solutions/real-time-bidder-solution-for-google-cloud-platform#third-party_database_solution
@@ -1940,6 +1984,7 @@ https://github.com/lducas/FHEW
  * https://github.com/SSSaaS secret sharing 库
  * https://github.com/SSSAAS/sssaas-golang golang helper
  * http://mohamednabeel.blogspot.jp/2011/02/homomorphism-in-shamirs-secret-sharing.html 同态共享密钥介绍
+
 #### openssh
  * http://sshwindows.sourceforge.net/ windows
  * http://security.stackexchange.com/questions/32768/converting-keys-between-openssl-and-openssh key转换
@@ -2203,14 +2248,24 @@ deb-src http://mirrors.aliyun.com/ubuntu trusty-updates universe
 ## computer operating systems
 https://www.bottomupcs.com/
 ## linux commands  linux 命令
-## init.d
-### 添加删除服务 init的服务启动
+## bc bash compute 数值计算
+ * https://yq.aliyun.com/articles/15005
+```
+bc <<< "1+2+3+3.3333"
+echo "2+1-5*1.111" | bc
+```
+### init.d
+#### 添加删除服务 init的服务启动
 service --status-all
 添加： sudo update-rc.d 服务名 defaults
 删除：sudo update-rc.d -f 服务名 remove
 
 ### date  
- * https://fukun.org/archives/06112057.html  
+ * https://fukun.org/archives/06112057.html
+ * 利用date做文件名
+```
+touch summary-$(date +%Y%m%d-%H%M).log
+```
 
 ### find
 ```
