@@ -66,6 +66,7 @@
  * https://www.tensorflow.org/versions/master/resources/xla_prerelease tensorflow 编译
  * https://blog.altoros.com/tag/tensorflow tensorflow intro
  * https://lab.dataos.io/#/console/noplan https://github.com/asiainfoLDP
+ * http://www.infoq.com/resource/minibooks/machine-learning-practice/zh/pdf/MachineLearning.pdf infoq 机器学习介绍
 ### 2016 summary
  * http://blog.evjang.com/2017/01/nips2016.html   http://blog.evjang.com/2016/06/generative-adversarial-nets-in.html
 
@@ -403,6 +404,9 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
  * https://github.com/owncloud/core  github 代码
  * https://hub.docker.com/_/owncloud/   docker image
  * https://owncloud.org/faq/   license 版权
+ * https://forum.owncloud.org/viewtopic.php?f=3&t=1889   自动同步文件系统
+### WebDAV
+ * https://en.wikipedia.org/wiki/WebDAV
 ## ~Docker  
  * docker build
   - docker file reference https://docs.docker.com/engine/reference/builder/
@@ -2279,6 +2283,13 @@ sudo sed -i "s%archive.ubuntu.com%mirrors.aliyun.com%g" /etc/apt/sources.list
 ### gnu parallel 并行处理
 #### dgsh
  * http://www.dmst.aueb.gr/dds/sw/dgsh/
+
+### mount
+#### nfs mount
+```
+showmount -e ip
+mount -t nfs 192.168.0.1:/tmp /mnt/nfs
+```
 ### ps
 查找进程命令的工作目录
 ```
