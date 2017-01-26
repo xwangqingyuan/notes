@@ -67,8 +67,21 @@
  * https://blog.altoros.com/tag/tensorflow tensorflow intro
  * https://lab.dataos.io/#/console/noplan https://github.com/asiainfoLDP
  * http://www.infoq.com/resource/minibooks/machine-learning-practice/zh/pdf/MachineLearning.pdf infoq 机器学习介绍
+#### minibatch mini-batch
+ * A compromise between computing the true gradient and the gradient at a single example, is to compute the gradient against more than one training example (called a "mini-batch") at each step.
+ * Stochastic  gradient  descent  (SGD)  is  a  popular  techniqu for  large-scale  optimization  problems  in  machine  learning.
+ * http://www.cs.cmu.edu/~muli/file/minibatch_sgd.pdf  Stochastic gradient descent (often shortened in SGD)
 ### 2016 summary
- * http://blog.evjang.com/2017/01/nips2016.html   http://blog.evjang.com/2016/06/generative-adversarial-nets-in.html
+
+#### GAN
+ * http://blog.evjang.com/2017/01/nips2016.html GAN
+ * http://blog.evjang.com/2016/06/generative-adversarial-nets-in.html GAN
+ * http://www.deeplearningbook.org/ MIT 书
+ * https://arxiv.org/pdf/1511.01844v2.pdf generative model summary
+ *  * https://arxiv.org/pdf/1511.01844v2.pdf generative model summary https://handong1587.github.io/deep_learning/2015/10/09/image-generation.html
+#### PPGN
+ * https://github.com/Evolving-AI-Lab/ppgn
+ * http://www.evolvingai.org/ppgn
 
 
 ### start environment
@@ -317,7 +330,7 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
  * http://www.theregister.co.uk/2015/04/20/microsoft_azure_service_fabric/ 声明编排
  * http://www.cnblogs.com/redmoon/archive/2015/04/23/4452111.html Service Fabric
 
-## cloud business
+## cloud business 云计算市场预测
  * http://tech2ipo.com/94733
 我在 Y Combinator 所度过的噩梦般的日子
  * http://www.techrepublic.com/article/public-cloud-crushing-private-cloud-in-growth-and-revenue/
@@ -329,6 +342,8 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
  * http://www.strategyr.com/MarketResearch/Platform_as_a_Service_PaaS_Market_Trends.asp
  * http://blog.arungupta.me/xpaas-making-enterprise-paas-ready/ paas category
  * http://wso2.com/cloud/paas/ paas key features
+ * http://www.yangqiu.cn/tiananlife-henan/1280159.html 私有云发展趋势
+ *
 
  ###
  * http://www.tmtpost.com/2560566.html
@@ -837,6 +852,11 @@ http://lattice.cf/
  * https://github.com/buke/GreenOdoo        http://demo7.greenodoo.com/     http://git.oschina.net/wangbuke/GreenOdoo
  * https://github.com/maxexcloo/Docker  docker应用    http://www.silvergames.com/t/minecraft  minecraft games
 
+### 智力游戏 intelligent games
+#### 魔方
+ * http://www.rubik.com.cn/beginner.htm  三阶魔方教学
+ * 魔方原则 先确定不变的,中心  棱 角。问题的本质规律融入到了解题模式中,和拼图一样先选定最确定的
+#### 数独
 #### 12-factors with Docker
  * https://prezi.com/e7sdy9rdujgp/12-factor-apps-in-docker/
  * https://convox.com/blog/modern-twelve-factor-apps-with-docker/
@@ -1651,6 +1671,9 @@ mysql -uroot -p123456 -e 'create database db1;'
 #### galera cluster
  * 负载均衡 http://galeracluster.com/documentation-webpages/haproxy.html#configuration
  * http://www.gpfeng.com/?p=603  https://mariadb.com/kb/en/mariadb/about-galera-replication/
+ * https://www.percona.com/software/mysql-database/percona-server/xtradb
+ * http://galeracluster.com/documentation-webpages/ documentation
+ * http://galeracluster.com/documentation-webpages/testingcluster.html testing 测试galerajiqun
 #### mysql use case
  * http://githubengineering.com/moving-persistent-data-out-of-redis/
  * github mysql tool
