@@ -37,6 +37,123 @@
  * 用Kubernetes 做人工智能 https://openai.com/blog/infrastructure-for-deep-learning/
  * https://en.wikipedia.org/wiki/Reinforcement_learning  https://en.wikipedia.org/wiki/Q-learning 增强学习
  * exploration and exploitation 探索和开发
+### deep learning taxomony
+### 应用数学和机器学习基础 Applied Math and Machine Learning Basics
+### Linear Algebra 线性代数
+### Probability and Information Theory 概率论和信息论
+### Numerical Computation 数值计算
+### Machine Learning Basics 机器学习基础
+### Modern Practical Deep Networks 当代深度网络实践
+### Deep Feedforward Networks 深度前馈网络
+```
+kernel trick
+very generic inﬁnite-dimensional 径向基函数(RBF) Radial basis function
+manually engineer
+deep learning right general function
+family
+activation function  激活函数
+back-propagation 反向传播
+MSE is usually not an
+appropriate cost function for modeling binary data.
+aﬃne transformation
+rectiﬁed linear unit or ReLU 修正线性单元 recommended for use with most feedforward neural networkspiecewise linear function 分段线性函数
+There are other equivalent solutions to the XOR problem that gradientdescent could also ﬁnd. The convergence point of gradient descent depends on the initial values of the parameters
+This means we use the
+cross-entropy between the training data and the model’s predictions as the cost
+function. Most modern neural networks are trained using maximum likelihood. This means
+that the cost function is simply the negative log-likelihood, equivalently described
+as the cross-entropy between the training data and the model distribution.
+MSE is usually not an
+appropriate cost function for modeling binary data.
+aﬃne transformation
+rectiﬁed linear unit or ReLU 修正线性单元 recommended for use with most feedforward neural networkspiecewise linear function 分段线性函数
+There are other equivalent solutions to the XOR problem that gradientdescent could also ﬁnd. The convergence point of gradient descent depends on the initial values of the parameters
+This means we use the
+cross-entropy between the training data and the model’s predictions as the cost
+function. Most modern neural networks are trained using maximum likelihood. This means
+that the cost function is simply the negative log-likelihood, equivalently described
+as the cross-entropy between the training data and the model distribution. The name “softmax” can be somewhat confusing. The function is more closely related to the arg max
+function than the max function. The term “soft” derives from the fact that the softmax function is continuous and diﬀerentiable. The
+arg max function, with its result represented as a one-hot vector, is not continuous
+or diﬀerentiable.
+The linear, sigmoid, and softmax output units described above are the most
+common.
+Absolute value rectiﬁcation used for object recognition from images
+leaky ReLU
+Maxout units
+hyperbolic tangent activation function 双曲正切
+When a sigmoidal activation function must be used, the hyperbolic tangent
+activation function typically performs better than the logistic sigmoid
+Softplus compared the softplus and rectiﬁer and found better results with the latter. counterintuitive
+Hard tanh bounded
+As we will see,
+a network with even one hidden layer is suﬃcient to ﬁt the training set. Deeper networks often are able to use far fewer units per layer and far fewer parameters and often generalize to the test set, but are also often harder to optimize.
+universal approximation theorem 万能逼近定理
+Borel measurable continuous function on a closed and bounded subset
+Even if the MLP is able to represent the function, learning
+can fail for two diﬀerent reasons. First, the optimization algorithm used for training
+may not be able to ﬁnd the value of the parameters that corresponds to the desired
+function. Second, the training algorithm might choose the wrong function due to
+overﬁtting.
+```
+### Regularization for Deep Learning 深度学习的正则化
+```
+early stopping
+most commonly
+used form of regularization in deep learning. Its popularity is due both to its
+eﬀectiveness and its simplicity raining steps is just another hyperparameter hyperparameter has a U-shaped validation set
+Parameter Tying and Parameter Sharing
+Bagging(short for bootstrap aggregating)
+model averaging. Techniques employing this strategy are known
+as ensemble methods.
+boosting
+adversarial example
+learning rates
+η
+ decrease with an appropriate rate
+
+
+precision 精确率 精度 查准率 精确度 true positive recall true negative 召回率 查全率 accuracy 准确度 正确度准确率 false negative 假阴性
+false positive 假阳性
+type I error 第一类错误，拒真 type II error 第二类错误 存伪错误  对于医疗检测 第一类 错误更严重，即false negative假阴性更严重
+，也就是查全率，recall更重要 f score,，
+coverage 覆盖率
+拉斯维加斯算法 蒙特卡洛算法
+Las Vegas algorithms can be contrasted with Monte Carlo algorithms, in which the resources used are bounded but the answer is not guaranteed to be correct. By an application of Markov's inequality, a Las Vegas algorithm can be converted into a Monte Carlo algorithm via early termination.  随机化快排算法
+Markov's inequality 马尔可夫 不等式
+
+Chebyshev's inequality 切比雪夫不等式
+
+勒贝格测度和勒贝格积分理论
+Lebesgue measure
+
+黎曼积分，也就是所说的正常积分、定积分，外文名Riemann Integral
+A bounded function on a compact interval [a, b] is Riemann integrable if and only if it is continuous almost everywhere (the set of its points of discontinuity has measure zero, in the sense of Lebesgue measure)the measure of the Lebesgue measurable set A is denoted by λ(A) Lebesgue σ-algebra is strictly contained in the power set of their existence is a non-trivial consequence of the axiom of choice.
+Counting measure计数测度
+
+axiom of choice, or AC, is an axiom of set theory equivalent to the statement that the Cartesian product 笛卡尔积 of a collection of non-empty sets is dnon-empty 选择公理「选择公理」、「良序原理」及「佐恩引理」都是等价的命题 由无限对袜子中，每对选择一只出来的话，我们需要选择公理』，但如果换转是鞋的话，那便不必了。
+The axiom of countable choice (ACω) is strictly weaker than the axiom of dependent choice (DC), (Jech 1973) which in turn is weaker than the axiom of choice (AC).
+point estimator or statistic 点估计 点统计
+频率论（frequentist）和贝叶斯方法(Bayesian methods)
+http://www.cnblogs.com/chaosimple/p/4154009.html
+用错的统计论
+https://www.statisticsdonewrong.com/
+translation, scaling, homothety, similarity transformation, reflection, rotation, shear mapping, and compositions of them in any combination and sequence
+```
+### Optimization for Training Deep Models 深度学习模型的油画
+### Convolutional Networks 卷积网络
+### Sequence Modeling: Recurrent and Recursive Nets 序列模型：循环和递归网络
+### Practical Methodology 实践方法
+### Applications 应用
+### Deep Learning Research 深度学习研究
+### Linear Factor Models 线性分解模型
+### Autoencoders 自动编码器
+### Representation Learning  表达学习
+### Structured Probabilistic Models for Deep Learning 深度学习的结构化概率模型
+### Monte Carlo Methods 蒙特卡洛方法
+### Confronting the Partition Function 应对配分函数
+### Approximate Inference 逼近推理
+### Deep Generative Models 深度生成式模型
 ### history
  * http://www.andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning/
  * https://news.ycombinator.com/item?id=10910887
@@ -91,11 +208,12 @@
  * Using 16 workers, the agent should be able to solve PongDeterministic-v3 (not VNC) within 30 minutes (often less) on an m4.10xlarge instance. Using 32 workers, the agent is able to solve the same environment in 10 minutes on an m4.16xlarge instance. If you run this experiment on a high-end macbook pro, the above job will take just under 2 hours to solve Pong.
  * https://aws.amazon.com/cn/ec2/instance-types/  计算实例举例
  * https://www.nextplatform.com/2016/09/01/cpu-gpu-put-deep-learning-framework-test/
+#### benchmark tools
 #### GPU price
  * https://www.amazon.com/Nvidia-Tesla-GDDR5-Cores-Graphic/dp/B00Q7O7PQA#HLCXComparisonWidget_feature_div
  * http://www.pcgamer.com/best-graphics-card-deals-today/
  * https://developer.nvidia.com/cuda-toolkit-40
-
+#### GPU price
 
 
 ## Alpha–beta pruning
@@ -119,8 +237,25 @@
  * https://hub.docker.com/r/tensorflow/tensorflow/
 #### tensorflow
  * https://github.com/tensorflow/playground
- * http://abhitopia.com/machine%20learning/2016/05/24/tensor_flow_exploration_2.html  code structure
- *
+ * http://abhitopia.com/machine%20learning/2016/05/24/tensor_flow_exploration_2.html  code structur
+#### tensorflow benchmark
+ * https://github.com/tensorflow/benchmarks
+ * https://github.com/soumith/convnet-benchmarks
+ * http://www.bitfusion.io/2016/11/03/quick-comparison-of-tensorflow-gpu-performance-on-aws-p2-and-g2-instances/
+ * https://github.com/tobigithub/tensorflow-deep-learning/wiki/tf-benchmarks
+ * http://add-for.com/deep-learning-benchmarks/caffe-vs-tensorflow
+ * https://indico.io/blog/the-good-bad-ugly-of-tensorflow/ https://news.ycombinator.com/item?id=10545752
+ * http://deliprao.com/archives/168
+#### tensorflow kubernetes
+ * https://github.com/k8sp/k8s-tensorflow
+ * https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/dist_test
+ * http://blog.kubernetes.io/2016/03/scaling-neural-network-image-classification-using-Kubernetes-with-TensorFlow-Serving.html
+ * https://tensorflow.github.io/serving/serving_inception https://github.com/tensorflow/models/tree/master/inception
+#### neon
+ * http://www.leiphone.com/news/201609/EBEJ7AZK60NnSh0c.html
+ * https://hub.docker.com/r/sofianhw/docker-neon-ipython/
+ * https://hub.docker.com/r/injeans/docker-neon/
+ * 数据流架构（DPU） http://mobile.163.com/16/0909/15/C0HH4AJA00118023.html
 #### bazel
  * https://bazel.build/faq.html
  * https://bazel.build/roadmap.html
@@ -188,6 +323,11 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
  * http://www.ah-l-tax.gov.cn/portal/dsfc/dwjs/llyj/1435852802010903.htm
  * http://www.thebigdata.cn/YingYongAnLi/5782.html
  * http://www.kjcity.com/news_109562.html
+ http://www.360doc.com/content/15/0202/20/17132703_445796634.shtml 科普
+ https://www.cancer.gov/about-cancer/treatment/clinical-trials/nci-supported 美国治疗试验
+ https://medlineplus.gov/clinicaltrials.html
+ http://www.yuaigongwu.com/thread-17035-3-1.html CAR-T治疗内幕
+
 
 ## 医疗大数据 health care
  * http://it.sohu.com/20160815/n464232473.shtml  林雪婷
@@ -198,7 +338,7 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
  * http://www.360doc.com/content/15/0202/20/17132703_445796634.shtml 科普
  * http://www.hopenoah.com/usa/news/201506011198.html 十大最受关注的癌症临床试验
  * https://www.cancer.gov/about-cancer/treatment/clinical-trials
- * https://www.cancer.gov/about-cancer/treatment/clinical-trials/nci-supported
+ * https://www.cancer.gov/about-cancer/treatment/clinical-trials/nci-supported 美国治疗试验
  * https://medlineplus.gov/clinicaltrials.html
  * http://china.caixin.com/2016-07-01/100961131.html
  * https://xueqiu.com/4918021293/70964177
@@ -378,9 +518,11 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
 
 #### build saas
  * https://github.com/nickjj/build-a-saas-app-with-flask
-## solution 架构 解决方案
+## solution 架构 解决方案 workload
  * http://www.cloudcomputingpatterns.org/Static_Workload  
- * http://www.rightscale.com/blog/enterprise-cloud-strategies/identifying-workloads-cloud  
+ * http://www.rightscale.com/blog/enterprise-cloud-strategies/identifying-workloads-cloud
+ * http://blogs.perficient.com/microsoft/2014/03/windows-azure-workload-scenario-examples/
+ * http://www.dummies.com/programming/cloud-computing/hybrid-cloud/types-of-workloads-in-a-hybrid-cloud-environment/
  * solution 架构 https://msdn.microsoft.com/dn630664
 
 #### PaaS vs. CaaS
@@ -392,7 +534,14 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
  * https://www.sdxcentral.com/articles/news/why-docker-and-google-kubernetes-are-like-paas-done-right/2015/08/
  * http://www.infoq.com/cn/news/2015/07/where-is-the-future-of-caas
  * https://github.com/brendandburns/metaparticle/tree/master/docs scatter gather pattern
+#### PaaS vs. Orchestration vs. CMP
+ * http://getcloudify.org/2016/08/08/cloud-management-roundup-orchestration-paas-cmp.html
+ * http://getcloudify.org/2015/06/11/orchestration-docker-cloud-automation-openstack-heat-tosca-kubernetes.html orchestration
  *
+#### CMP 云管理平台
+ * https://opennebula.org/openstack-cloudstack-eucalyptus-and-opennebula-which-cloud-platform-is-the-most-open/
+ * https://www.whatmatrix.com/comparison/Cloud-Management-Platforms#
+
 
 #### paas user guide
  * https://docs.openshift.com/enterprise/3.2/welcome/index.html
@@ -500,6 +649,14 @@ http://www.projectatomic.io/docs/docker-and-selinux/
 docker run --privileged --name mariadb -d -e "container=docker" mariadbcentos:0.5 /usr/sbin/init
 
 ```
+#### business agility 业务敏捷
+ * business agility 业务敏捷
+  - business agility 业务敏捷 https://images.search.yahoo.com/images/view;_ylt=AwrTcYO3fZZYbPYAk66JzbkF;_ylu=X3oDMTIzcDNpZG8wBHNlYwNzcgRzbGsDaW1nBG9pZANiYmQ5MTQzMzcyN2NjYzA5M2FjZmVlNTQ5MzMzOTJjOQRncG9zAzE0BGl0A2Jpbmc-?.origin=&back=https%3A%2F%2Fimages.search.yahoo.com%2Fsearch%2Fimages%3Fp%3Ddocker%2Bhelp%2Bbusiness%2Bagility%26fr%3Dyfp-t%26fr2%3Dpiv-web%26tab%3Dorganic%26ri%3D14&w=1024&h=822&imgurl=www.solutionsiq.com%2Fwp-content%2Fuploads%2F2016%2F08%2FBusiness-Agility-Ecosystem-01-1024x822.png&rurl=http%3A%2F%2Fwww.agilevoices.com%2Faggregator%2Fsources%2F89&size=264.8KB&name=%3Cb%3EBusiness%3C%2Fb%3E+%3Cb%3EAgility%3C%2Fb%3E+Ecosystem-01&p=docker+help+business+agility&oid=bbd91433727ccc093acfee54933392c9&fr2=piv-web&fr=yfp-t&tt=%3Cb%3EBusiness%3C%2Fb%3E+%3Cb%3EAgility%3C%2Fb%3E+Ecosystem-01&b=0&ni=21&no=14&ts=&tab=organic&sigr=11ganpv78&sigb=13jbmg86i&sigi=12pu93dt8&sigt=11bspd8bb&sign=11bspd8bb&.crumb=/uwdLEkGa49&fr=yfp-t&fr2=piv-web
+  - https://bbvaopen4u.com/en/actualidad/docker-helps-companies-be-more-agile-and-competitive-and-adopt-new-digital-mentality
+  - http://www.infoworld.com/article/2607128/application-development/4-ways-docker-fundamentally-changes-application-development.html
+  - https://bbvaopen4u.com/en/actualidad/docker-helps-companies-be-more-agile-and-competitive-and-adopt-new-digital-mentality
+  - https://images.search.yahoo.com/images/view;_ylt=AwrTcYO3fZZYbPYAh66JzbkF;_ylu=X3oDMTIybmluYTRhBHNlYwNzcgRzbGsDaW1nBG9pZANmMTUzZmY2NDE4N2RkNDMyYmFjYzcwZjMzM2NkZmNhYgRncG9zAzIEaXQDYmluZw--?.origin=&back=https%3A%2F%2Fimages.search.yahoo.com%2Fsearch%2Fimages%3Fp%3Ddocker%2Bhelp%2Bbusiness%2Bagility%26fr%3Dyfp-t%26fr2%3Dpiv-web%26tab%3Dorganic%26ri%3D2&w=2560&h=1247&imgurl=www.docker.com%2Fsites%2Fdefault%2Ffiles%2FDocker_Survey_DevOps_Alt2-V1.8-01-01.png&rurl=https%3A%2F%2Fwww.docker.com%2Fsurvey-2016&size=537.3KB&name=...+of+the+Modern+Software+Supply+Chain+-+The+%3Cb%3EDocker%3C%2Fb%3E+Survey%2C+2016+%7C+%3Cb%3EDocker%3C%2Fb%3E&p=docker+help+business+agility&oid=f153ff64187dd432bacc70f333cdfcab&fr2=piv-web&fr=yfp-t&tt=...+of+the+Modern+Software+Supply+Chain+-+The+%3Cb%3EDocker%3C%2Fb%3E+Survey%2C+2016+%7C+%3Cb%3EDocker%3C%2Fb%3E&b=0&ni=21&no=2&ts=&tab=organic&sigr=112505uf3&sigb=13i6ohgm5&sigi=12bu67q5h&sigt=12o5jvd20&sign=12o5jvd20&.crumb=/uwdLEkGa49&fr=yfp-t&fr2=piv-web
+
 #### share docker images across hosts
  * https://github.com/docker/docker/pull/13777
  * https://jaxenter.com/how-to-share-docker-volumes-across-hosts-119602.html bittorrent or NFS sharing
@@ -509,6 +666,18 @@ docker run --privileged --name mariadb -d -e "container=docker" mariadbcentos:0.
  * https://larrylo.gitbooks.io/distribute-cloud-environment-on-ubuntu-14-04-with/content/export_and_import_a_docker_image_between_nodes_in_cluster.html copy images around
 ### coreos rkt
  * build tool https://coreos.com/blog/rkt-0.10.0-with-new-api-service/
+### coreos tectonic
+ * https://coreos.com/blog/self-hosted-kubernetes.html
+ * https://coreos.com/tectonic/docs/latest/?_ga=1.222394975.577190327.1449486204#deployments
+ * https://github.com/kubernetes/community/blob/master/contributors/design-proposals/self-hosted-kubernetes.md
+ * https://github.com/kubernetes/community/blob/master/contributors/design-proposals/self-hosted-kubelet.md
+ * https://github.com/kubernetes/kubernetes/issues/246#issuecomment-64533959
+### kubernetes FPGA
+ * http://www.theregister.co.uk/2016/11/30/amazon_to_personalize_vm_offerings/
+ * http://redmonk.com/fryan/2016/12/06/aws-reinvent-elastic-gpus-fpgas-deep-learning-compute/
+ * Orchestration of FPGAs https://www.linuxplumbersconf.org/2016/ocw/proposals/4479.html https://etherpad.openstack.org/p/LPC2016_FPGA
+ * https://etherpad.openstack.org/p/LPC2016_FPGA
+
 ### docker network
 #### CNI vs CNM
  * http://blog.kubernetes.io/2016/01/why-Kubernetes-doesnt-use-libnetwork.html
@@ -598,8 +767,81 @@ docker-machine create \
  * https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server
  * https://msdn.microsoft.com/en-us/virtualization/windowscontainers/about/faq
 
-## Kubernetes  k8s
+## cloud foundry
+### hack code
+ * https://github.com/cloudfoundry/cf-release  main code
+ * https://github.com/cloudfoundry/diego-release
+ * https://github.com/cloudfoundry/diego-design-notes
+ * https://github.com/cloudfoundry/garden go warden code to run container runc
+ * https://github.com/cloudfoundry/garden-runc-release Guardian is a simple single-host OCI container manager. It implements the Garden API which is used in Cloud Foundry.
+#### using docker in cloud foundtry
+ * https://docs.cloudfoundry.org/adminguide/docker.html
+ * https://www.cloudfoundry.org/diego-release-docker-containers-scale-openpower/
+#### environment variable 环境变量
+ * https://docs.cloudfoundry.org/devguide/deploy-apps/environment-variable.html
+ * https://www.ibm.com/watson/developercloud/doc/getting_started/gs-variables.shtml bluemix 环境变量
+ * linux environment variables
+```
+export TEST_JSON_ENV='{"v1":"hello","v2":["world","harry"]}'
+echo $TEST_JSON_ENV | jq
+export VCAP_SERVICES='{"elephantsql": ["hello"]}'
+cat << EOF | export
+VCAP_SERVICES='
+{"elephantsql": ["hello"]}
+'
+EOF
+cat << EOF | export VCAP_SERVICES=
+'
+{
+  "elephantsql": ["hello"]
+}
+'
+EOF
 
+cat << EOF | export VCAP_SERVICES=
+'
+{
+  "elephantsql": [
+    {
+      "name": "elephantsql-c6c60",
+      "label": "elephantsql",
+      "tags": [
+        "postgres",
+        "postgresql",
+        "relational"
+      ],
+      "plan": "turtle",
+      "credentials": {
+        "uri": "postgres://exampleuser:examplepass@babar.elephantsql.com:5432/exampleuser"
+      }
+    }
+  ],
+  "sendgrid": [
+    {
+      "name": "mysendgrid",
+      "label": "sendgrid",
+      "tags": [
+        "smtp"
+      ],
+      "plan": "free",
+      "credentials": {
+        "hostname": "smtp.sendgrid.net",
+        "username": "QvsXMbJ3rK",
+        "password": "HCHMOYluTv"
+      }
+    }
+  ]
+}
+'
+EOF
+```
+## Kubernetes  k8s
+### kubernetes trends
+ * https://www.nextplatform.com/2016/11/08/google-wants-kubernetes-rule-world/
+ * we look at product maturity, enterprise adoption, and community strength. And in all of these areas, Kubernetes significantly outshines
+ * https://www.nextplatform.com/2017/02/01/riding-coattails-google-kubernetes-aws-lambda/  coattails 燕尾
+## kubernetes advertise
+ * http://www.stratoscale.com/blog/kubernetes/container-orchestration-kubernetes-12-key-features/
 ### big data on kubernetes
 ### 动态设置docker 和kubelet
  * https://github.com/kubernetes/kubernetes/issues/27980
@@ -694,6 +936,7 @@ To fix
 ```
 oc adm policy add-scc-to-user anyuid system:serviceaccount:test-stress:default
 ```
+ localpollicy https://github.com/openshift/origin/pull/8428
 #### node-problem-detector
  * https://github.com/kubernetes/node-problem-detector
  * https://trello.com/c/d9HZmoaR/171-5-node-r-d-adoption-of-node-problem-detector openshift feature
@@ -730,10 +973,20 @@ mount -t glusterfs 192.168.1.133:/glustersample1 /mnt/glustersample1
 root@dev-xwang:~# gluster volume quota glustersample1 limit-usage / 32GB
  kubectl exec -i gogs-2717905640-v96iy -- bash -c '/bin/cat >/tmp/test.txt' < test.txt
  kubectl exec -i gogs-2717905640-v96iy -- bash -c '/bin/cat /tmp/test.txt'
+curl -k -v -XPOST  -H "Accept: application/json, */*" -H "Authorization: Bearer lhdBRBj5xeuhnLNKx3oXut1RBrWYdY2fCj7AM6eLzFI" -H "Content-Type: application/json" -H "User-Agent: qy/ (darwin/amd64) openshift/6600efc" --Data "{\"kind\":\"RoleBinding\",\"apiVersion\":\"v1\",\"metadata\":{\"name\":\"cluster1\",\"namespace\":\"roledev\",\"creationTimestamp\":null},\"userNames\":[\"xwang\"],\"groupNames\":null,\"subjects\":[{\"kind\":\"User\",\"name\":\"xwang\"}],\"roleRef\":{\"name\":\"cluster1\"}}" https://192.168.1.168:8443/oapi/v1/namespaces/roledev/rolebindings
+curl -k -v -XPOST  -H "Accept: application/json, */*" -H "Authorization: Bearer lhdBRBj5xeuhnLNKx3oXut1RBrWYdY2fCj7AM6eLzFI" -H "Content-Type: application/json" -H "User-Agent: qy/ (darwin/amd64) openshift/6600efc" --Data "{\"kind\":\"RoleBinding\",\"apiVersion\":\"v1\",\"metadata\":{\"name\":\"role2\",\"namespace\":\"roledev\",\"creationTimestamp\":null},\"userNames\":[\"xwang\"],\"groupNames\":null,\"subjects\":[{\"kind\":\"User\",\"name\":\"xwang\"}],\"roleRef\":{\"name\":\"role2\",\"namespace\":\"roledev\"}}" https://192.168.1.168:8443/oapi/v1/namespaces/roledev/rolebindings
+
 ```
 #### 安装 kubernetes
  * http://blog.kubernetes.io/2016/09/how-we-made-kubernetes-easy-to-install.html
 
+#### platform9
+ * https://platform9.com/managed-kubernetes/
+ * https://platform9.com/managed-openstack/
+ * https://platform9.com/fission/ https://github.com/fission/fission  serverless Functions
+
+#### kubernetes 编排 hypervisor 虚拟机
+ * https://github.com/kubernetes/frakti
 #### kubernetes secret 使用
  * http://kubernetes.io/docs/user-guide/secrets/
  * https://github.com/kubernetes/kubernetes/blob/master/docs/design/secrets.md 设计 design
@@ -770,6 +1023,12 @@ root@dev-xwang:~# gluster volume quota glustersample1 limit-usage / 32GB
  * https://github.com/kubernetes/kubernetes/blob/master/docs/devel/scheduler.md scheduler 原理
  * https://github.com/kubernetes/kubernetes/blob/2f756e4ebc677c824d495bb5e10aa9d2234de686/plugin/pkg/scheduler/generic_scheduler.go scheduler 基础
  * https://github.com/kubernetes/kubernetes/blob/2f756e4ebc677c824d495bb5e10aa9d2234de686/plugin/cmd/kube-scheduler/app/server.go 创建scheduler 的地方
+### kubernetes 1.6
+ * https://github.com/kubernetes/community/blob/master/contributors/design-proposals/taint-toleration-dedicated.md
+ * https://github.com/kubernetes/kubernetes/issues/1574 forgiveness
+ * https://github.com/kubernetes/features/issues/117
+ * https://github.com/kubernetes/features/issues/118
+
 #### microservice platform
  * http://wildfly.org/about/
  * http://deis.io/overview/
@@ -919,6 +1178,22 @@ http://lattice.cf/
  * https://github.com/jzonthemtn/tyk-java-client
  * https://tyk.io/docs/tyk-api-gateway-v-2-0/javascript-plugins/tyk-javascript-api/
  *
+#### netflix api strategy revolution
+ * https://www.infoq.com/presentations/API-Revolution
+ * https://www.quora.com/Why-has-Netflix-closed-its-public-API-program
+ * http://mashable.com/2014/06/19/netflix-public-api/#vfVIh7j76kqS
+ * https://www.infoq.com/news/2016/09/netflix-api
+ * http://techblog.netflix.com/2016/08/engineering-trade-offs-and-netflix-api.html  trade offs (Freedom & Responsibility and leveragability of code)
+ * https://www.infoq.com/presentations/netflix-groovy-scripting
+ * Netflix的体验式API（experience API）和临时API（ephemeral API） http://www.infoq.com/cn/articles/api-facades?utm_campaign=rightbar_v2&utm_source=infoq&utm_medium=articles_link&utm_content=link_text
+ * Netflix的体验式API（experience API）和临时API（ephemeral API） https://www.infoq.com/news/2015/11/daniel-jacobson-ephemeral-apis
+ * http://www.infoq.com/cn/articles/no-more-mvc-frameworks 在使用过React并了解了Angular 2将会是什么样子之后，我感到有些沮丧：这些框架都系统性地强制我使用BFF“页面可替换模式（Screen Scraping）”模式，按照这种模式，每个服务端的API要匹配页面上的数据集，不管是输入的还是输出的。 理解Action的基础知识的话，那么你应该看一下TLA+。TLA代表的是“Action中的逻辑时序（Temporal Logic of Actions）
+ * http://sam.js.org/#timetravel State-Action-Model
+ * https://www.infoq.com/news/2015/11/daniel-jacobson-ephemeral-apis http://samnewman.io/patterns/architectural/bff/ netflix 新 API 模式
+ * http://techblog.netflix.com/2015/10/evolution-of-open-source-at-netflix.html netflix OSS
+ * https://www.infoq.com/articles/api-facades 总结索引
+ * http://samnewman.io/patterns/architectural/bff/  回复 Backends For Frontends  I think it is important to make a distinction between an API and the server (which I call the API gateway) that provides that API.
+ * http://samnewman.io/talks/ microservice  expert
 #### Apache camel patterns
  * http://camel.apache.org/enterprise-integration-patterns.html
  * http://camel.apache.org/camel-dsl.html
@@ -1178,6 +1453,7 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * https://www.infoq.com/news/2015/11/eisele-microservices
  * http://mesosphere.github.io/presentations/oscon-mesos-ops-2014/lightning/#/26
  * multi-tenancy mesos https://www.quora.com/What-is-the-future-of-the-private-cloud-world-Mesos-or-OpenStack
+ * https://platform9.com/blog/compare-kubernetes-vs-docker-swarm/
 
 ### hawkular
  * http://www.open-open.com/lib/view/open1462924607845.html
@@ -1805,6 +2081,11 @@ http://www.austintek.com/LVS/LVS-HOWTO/HOWTO/LVS-HOWTO.UDP.html
  * http://www.confluent.io/blog/stream-data-platform-1/
  *
 
+# financial 金融
+## finance assistant 金融
+ * http://tech.163.com/15/1112/10/B87BVS4E00094P40.html
+ * http://mt.sohu.com/20150323/n410144911.shtml
+
 # 著名网站famous sites
 ## 5 famous community
 https://www.quora.com/topic/Docker
@@ -1848,7 +2129,8 @@ http://alternativeto.net/
  * https://github.com/openshift/origin/releases
  * https://ci.openshift.redhat.com/releases_overview.html#3.4
  * https://github.com/docker/docker/releases
- * https://tectonic.com/enterprise/releases/
+ * https://tectonic.com/enterprise/releases/  https://coreos.com/tectonic/releases/
+ * https://coreos.com/tectonic/docs/latest/ user guide
 
 ## good blogs  
  * Kubernetes blog http://blog.kubernetes.io/  
@@ -1872,9 +2154,19 @@ https://pages.lip6.fr/Marc.Shapiro/
 lamport
 http://www.lamport.org/
 
+## technical interview questions
+ * http://career.guru99.com/top-23-openstack-interview-questions/
+ * http://www.javatpoint.com/cloud-computing-interview-questions
+ * https://intellipaat.com/interview-question/data-science-interview-questions/
+ * http://tekslate.com/docker-interview-questions/
+### questions topics
+ * openstack docker python go java kubernete machine learning
+
+
 ## 著名词汇
  * http://www.csdn.net/article/2013-04-16/2814915
   - Yoda Notation（Yoda 表示法），Mental Speedbump（头脑减速杠），Pearl Effect （珍珠效应），Sins of our Forefathers（先辈的罪），Katrina Effect（卡特里娜飓风效应），Workaround（变通），Jenga Code，Higgs-Bugson，Heisenbug
+
  * wager 赌博 https://en.wikipedia.org/wiki/Daily_double
 
 # network protocol
@@ -2296,6 +2588,7 @@ touch summary-$(date +%Y%m%d-%H%M).log
 
 ### find
 ```
+sudo find /var -name *.xml -type f | sudo xargs grep jenkins1
 sudo find /var -name *.xml -type f | sudo xargs grep jenkins1
 ```
  * 替换sources.list 可使用/或%只要文本中不出现即可
