@@ -347,6 +347,12 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 ### cerebral thrombosis 血栓
  * cerebral thrombosis
 
+## logging 日志
+ * http://www.infoq.com/cn/news/2015/04/on-premises-saas
+ * https://www.zhihu.com/question/43872401 http://elasticsearch.cn/question/346 https://www.zhihu.com/question/43872401/answer/101987190
+ * http://api1024.com/archives/120 日志易服务初体验
+ *
+
 ## data visualization 数据可视化  BI business intelligence
 
 ### 数据可视化新闻
@@ -1023,6 +1029,8 @@ curl -k -v -XPOST  -H "Accept: application/json, */*" -H "Authorization: Bearer 
  * https://github.com/kubernetes/kubernetes/blob/master/docs/devel/scheduler.md scheduler 原理
  * https://github.com/kubernetes/kubernetes/blob/2f756e4ebc677c824d495bb5e10aa9d2234de686/plugin/pkg/scheduler/generic_scheduler.go scheduler 基础
  * https://github.com/kubernetes/kubernetes/blob/2f756e4ebc677c824d495bb5e10aa9d2234de686/plugin/cmd/kube-scheduler/app/server.go 创建scheduler 的地方
+### kubernetes performance k8s性能
+ * https://github.com/openshift/svt
 ### kubernetes 1.6
  * https://github.com/kubernetes/community/blob/master/contributors/design-proposals/taint-toleration-dedicated.md
  * https://github.com/kubernetes/kubernetes/issues/1574 forgiveness
@@ -1204,7 +1212,7 @@ http://lattice.cf/
 
  #### Spring Cloud
   * http://sail-y.github.io/2016/03/21/Spring-cloud%E9%A1%B9%E7%9B%AE%E5%AE%9E%E8%B7%B5/
-  * http://kubecloud.io/apigatewaypattern/  zull API Gateway
+  * http://kubecloud.io/apigatewaypattern/  zuul API Gateway
 ### kubernetes devops
  * http://blog.udacity.com/2016/05/introducing-scalable-microservices-kubernetes.html
  * https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615  online-course
