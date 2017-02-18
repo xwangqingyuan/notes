@@ -202,6 +202,8 @@ translation, scaling, homothety, similarity transformation, reflection, rotation
  * https://arxiv.org/pdf/1511.01844v2.pdf generative model summary
  * https://arxiv.org/pdf/1511.01844v2.pdf generative model summary https://handong1587.github.io/deep_learning/2015/10/09/image-generation.html
  * http://www.wtoutiao.com/p/172tUtn.html
+ * https://github.com/carpedm20/DCGAN-tensorflow
+ * https://github.com/timsainb/Tensorflow-MultiGPU-VAE-GAN
 #### PPGN
  * https://github.com/Evolving-AI-Lab/ppgn
  * http://www.evolvingai.org/ppgn
@@ -241,6 +243,15 @@ translation, scaling, homothety, similarity transformation, reflection, rotation
  * https://hub.docker.com/r/ermaker/keras-jupyter/
  * https://hub.docker.com/r/gw000/keras/
  * https://hub.docker.com/r/tensorflow/tensorflow/
+#### OpenCL
+ * https://www.khronos.org/opencl/ https://github.com/KhronosGroup/OpenCL-Headers/
+ * https://en.wikipedia.org/wiki/OpenCL
+ * https://www.codeplay.com/portal/02-14-17-bringing-the-acceleration-of-opencl-to-tensorflow-with-sycl
+ * https://github.com/benoitsteiner/tensorflow-opencl/
+ * https://github.com/tensorflow/tensorflow/issues/22
+ * https://www.codeplay.com/portal/02-14-17-bringing-the-acceleration-of-opencl-to-tensorflow-with-sycl
+ * http://eigen.tuxfamily.org/index.php?title=Main_Page
+ * https://www.servethehome.com/google-tensorflow-asic-impact/  https://www.servethehome.com/google-tensorflow-asic-impact/
 #### tensorflow
  * https://github.com/tensorflow/playground
  * http://abhitopia.com/machine%20learning/2016/05/24/tensor_flow_exploration_2.html  code structur
