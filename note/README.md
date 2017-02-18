@@ -20,6 +20,9 @@
  * https://jaredforsyth.com/2014/03/22/rust-vs-go/
 
 ## deep learning
+### tooling review
+ * http://www.svds.com/getting-started-deep-learning/
+ * https://github.com/terryum/awesome-deep-learning-papers
  * https://en.wikipedia.org/wiki/Deep_learning#Deep_neural_networks
  * 解释
   - Universal approximation theorem interpretation广义逼近理论解释
@@ -37,6 +40,7 @@
  * 用Kubernetes 做人工智能 https://openai.com/blog/infrastructure-for-deep-learning/
  * https://en.wikipedia.org/wiki/Reinforcement_learning  https://en.wikipedia.org/wiki/Q-learning 增强学习
  * exploration and exploitation 探索和开发
+### deep learning brain
 ### deep learning taxomony
 ### 应用数学和机器学习基础 Applied Math and Machine Learning Basics
 ### Linear Algebra 线性代数
@@ -190,12 +194,14 @@ translation, scaling, homothety, similarity transformation, reflection, rotation
  * http://www.cs.cmu.edu/~muli/file/minibatch_sgd.pdf  Stochastic gradient descent (often shortened in SGD)
 ### 2016 summary
 
-#### GAN
+#### GAN 生成式对抗网络
+ * https://openai.com/blog/adversarial-example-research/ ai security
  * http://blog.evjang.com/2017/01/nips2016.html GAN
  * http://blog.evjang.com/2016/06/generative-adversarial-nets-in.html GAN
  * http://www.deeplearningbook.org/ MIT 书
  * https://arxiv.org/pdf/1511.01844v2.pdf generative model summary
- *  * https://arxiv.org/pdf/1511.01844v2.pdf generative model summary https://handong1587.github.io/deep_learning/2015/10/09/image-generation.html
+ * https://arxiv.org/pdf/1511.01844v2.pdf generative model summary https://handong1587.github.io/deep_learning/2015/10/09/image-generation.html
+ * http://www.wtoutiao.com/p/172tUtn.html
 #### PPGN
  * https://github.com/Evolving-AI-Lab/ppgn
  * http://www.evolvingai.org/ppgn
@@ -1053,6 +1059,9 @@ curl -k -v -XPOST  -H "Accept: application/json, */*" -H "Authorization: Bearer 
  * https://www.amalgam8.io/
  * https://github.com/mfornos/awesome-microservices
  * http://www.devopsbookmarks.com/ci devopsbookmarks 持续集成技术列表
+#### design pattern
+ * https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/README.md#behavioral-design-patterns
+ *
 #### microservices service discovery and registry 服务发现
  * http://blog.christianposta.com/microservices/netflix-oss-or-kubernetes-how-about-both/ AP or CP 的问题讨论，用DNS,基于kubernetes的服务发现
  * https://github.com/BuoyantIO/linkerd  
@@ -2362,6 +2371,8 @@ https://github.com/lducas/FHEW
  * https://github.com/showcases/programming-languages
 
 ## c/c++
+### online book
+ * https://www.ossblog.org/master-c-programming-with-open-source-books/
 ### c++ 17
  * http://www.levelofindirection.com/journal/2016/12/28/c17-why-its-better-than-you-might-think.html
 ## coding styles
@@ -2804,6 +2815,9 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
  * https://alexvermeer.com/how-to-get-the-most-out-of-the-next-year/
  * https://www.theguardian.com/technology/2016/dec/22/why-time-management-is-ruining-our-lives
 
+### story telling
+ * https://www.khanacademy.org/partner-content/pixar/storytelling/we-are-all-storytellers/v/storytelling-introb
+
 # software tools 软件工具
 ## screen recorder 录屏软件  
 ### 最好用的抓屏
@@ -2814,6 +2828,8 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
  * http://www.shoutmeloud.com/camtasia-alternatives-free-windwows-mac.html
 
 ## software license open source license 开源授权
+ * https://github.com/blog/2318-announcing-open-source-guides
+ * https://opensource.guide/
  * http://choosealicense.com/licenses/
  * https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses
  * https://opensource.org/faq#commercial
