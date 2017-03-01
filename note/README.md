@@ -20,6 +20,7 @@
  * https://jaredforsyth.com/2014/03/22/rust-vs-go/
 
 ## deep learning
+### https://www.humandx.org/ OPEN HUMAN DIAGNOSIS project
 ### tooling review
  * http://www.svds.com/getting-started-deep-learning/
  * https://github.com/terryum/awesome-deep-learning-papers
@@ -41,7 +42,9 @@
  * https://en.wikipedia.org/wiki/Reinforcement_learning  https://en.wikipedia.org/wiki/Q-learning 增强学习
  * exploration and exploitation 探索和开发
 ### deep learning brain
+### humzn
 ### deep learning taxomony
+### xuo
 ### 应用数学和机器学习基础 Applied Math and Machine Learning Basics
 ### Linear Algebra 线性代数
 ### Probability and Information Theory 概率论和信息论
@@ -493,6 +496,11 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
  * http://www.theregister.co.uk/2015/04/20/microsoft_azure_service_fabric/ 声明编排
  * http://www.cnblogs.com/redmoon/archive/2015/04/23/4452111.html Service Fabric
 
+## cloud applications 云应用
+### 电信云应用
+#### clearwater
+ * https://github.com/Metaswitch/clearwater-infrastructure
+ * http://www.projectclearwater.org/  http://www.projectclearwater.org/technical/clearwater-architecture/
 ## cloud business 云计算市场预测
  * http://tech2ipo.com/94733
 我在 Y Combinator 所度过的噩梦般的日子
@@ -878,6 +886,8 @@ EOF
  * https://github.com/mattf/openshift-spark/tree/master/scripts/spark
  * https://blog.openshift.com/running-analytics-openshift-daikon/  spark 架构图 daikon 白萝卜
  * https://github.com/openshift
+ * https://github.com/kubernetes/kubernetes/issues/34377 https://github.com/apache-spark-on-k8s/spark
+ * https://github.com/kubernetes-incubator/application-images/issues/12
 #### spark on openshift
  * http://commons.openshift.org/sig/OpenshiftBigData.html Big Data on OpenShift  https://blog.openshift.com/big-data-and-apache-spark-on-openshift-pt-i-openshift-commons-briefing-44/
  * https://github.com/wattsteve/pyspark-tutorial  https://github.com/wattsteve/ 关注glusterfs,spark on openshift
@@ -1054,6 +1064,8 @@ curl -k -v -XPOST  -H "Accept: application/json, */*" -H "Authorization: Bearer 
  * https://github.com/kubernetes/features/issues/117
  * https://github.com/kubernetes/features/issues/118
 
+#### high availability
+ * http://www.infoq.com/cn/news/2013/04/BOC-Downtime/
 #### microservice platform
  * http://wildfly.org/about/
  * http://deis.io/overview/
@@ -1497,6 +1509,11 @@ ImportError: No module named parsing.yaml.dumper
 ```
 升级 ansible
 sudo pip install ansible --upgrade
+#### openshift 高可用升级
+ * https://blog.openshift.com/tag/upgrade/
+ * https://blog.openshift.com/zero-downtime-cluster-upgrades-openshift-container-platform/
+ * https://blog.openshift.com/zero-downtime-upgrades-with-openshift-ansible/
+
 ### prometheus 普罗米修斯
  * http://www.boxever.com/push-vs-pull-for-monitoring
  * https://prometheus.io/docs/introduction/faq/#why-do-you-pull-rather-than-push?
@@ -2024,6 +2041,8 @@ psql -U username -c '\d'
 
 # English writing
 ## phrases
+OEM、ODM、OBM有什么区别
+https://zhidao.baidu.com/question/1945983678126952268.html
 ### spoil pants
 搞砸了
 
@@ -2281,6 +2300,10 @@ git revert 58ae107304e8323d22e3c484140a04d3a4bd2ec6
 
 ## http://demo.qunee.com/#HierarchicLayouter%20Demo
 # security
+##
+ * http://www.csoonline.com/article/3020459/security/antivirus-software-could-make-your-company-more-vulnerable.html
+ * https://www.technologyreview.com/s/428166/the-antivirus-era-is-over/
+ * http://baike.baidu.com/link?url=CxrMQEJ0ZrWIMq56NAzIGur5FCF98t6RL2_5f-GEQob00nP0bQ3oxl4B8zG1BI6ec6FhgQlfaDEn8uD-0vH1YYz06P3UU2t8pnPcR30NgwEJBupxxIdRnqLsO2ppxhP9 http://tech.qq.com/a/20120529/000213.htm 火焰病毒
 ## cloud-security
 ## 安全名词
 ### cc攻击
@@ -2368,6 +2391,21 @@ https://github.com/lducas/FHEW
  * https://www.fastcompany.com/3066849/the-sensor-revolution/qualcomm-drones-vr-cars-satellites
 # programming coding 编程
 ## algorithm 算法
+### generic interface
+#### file
+file is the generic interface of binary data access
+#### http
+http is the generic interface internet resources
+#### command line interface
+command line is the generic interface of intention
+#### sql
+sql is the generic interface to access relational data
+####
+semantic and syntactic 语义的和语法的
+semanctics 语义 syntax 语法 mechanism 机制
+intentional programming 意图式编程
+declarative programming  声明 imperative programming 命令式biancheng
+Referential transparency 参照透明 deterministic 确定性的 rewriting systems (also known as rewrite systems, rewrite engines 重写系统
 ### graph 图
 #### 图同构问题 GI complete problem
  * https://en.wikipedia.org/wiki/Graph_isomorphism_problem
@@ -2384,6 +2422,8 @@ https://github.com/lducas/FHEW
 ## c/c++
 ### online book
  * https://www.ossblog.org/master-c-programming-with-open-source-books/
+ * https://devfreebooks.github.io/ free book
+ * https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md
 ### c++ 17
  * http://www.levelofindirection.com/journal/2016/12/28/c17-why-its-better-than-you-might-think.html
 ## coding styles
@@ -2464,10 +2504,14 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * https://blog.jscrambler.com/getting-started-with-angular-2-end-to-end-testing/
  * https://github.com/alexpods/angular2-universal-starter
  * https://dzone.com/articles/getting-started-with-angular-2-end-to-end-testing
+#### Web GUI recorder
+ * https://github.com/tebelorg/TA.Gui
 ### pip 安装
 安装不了可以将python2.7目录允许访问。安装openstackclient后可以访问openstack服务
 
 ## Go golang
+### go is not good
+ * https://github.com/ksimka/go-is-not-good
 ### 学习
  * learn by example https://gobyexample.com/
  * https://tour.golang.org/basics/1
@@ -2539,9 +2583,11 @@ logic paradigm
  * https://play.rust-lang.org/
  * https://github.com/rust-lang/rust
  * https://github.com/rust-lang/cargo/
+ * https://www.rust-lang.org/en-US/install.html
 ### rust by example
  * http://rustbyexample.com/
  * https://github.com/rust-lang/rust-by-example
+ * https://github.com/PumpkinDB/PumpkinDB
 
 ## testing
  * https://github.com/mozilla/moztrap/  https://moztrap.mozilla.org/results/runs/?
@@ -2841,6 +2887,7 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
 ## software license open source license 开源授权
  * https://github.com/blog/2318-announcing-open-source-guides
  * https://opensource.guide/
+ * https://opensource.com/
  * http://choosealicense.com/licenses/
  * https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses
  * https://opensource.org/faq#commercial
@@ -2859,10 +2906,18 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
 ## Amplituhedron 宝石几何学
  * http://www.360doc.com/content/15/1030/22/152409_509555054.shtml
 ## 定域性 和 幺正性 locality 幺正性（unitarity）是一种数学表述，指的是微观粒子散射过程和反应过程中几率守恒。微观世界的物质具有波粒二象性，于时刻t在全空间找到粒子的总几率等于1。
+
 ## Holography is the science and practice of making holograms 全息图
+## math
+ * https://en.wikipedia.org/wiki/List_of_large_cardinal_properties
+ * cardinals 基数 Ordinal 序数
+ * transfinite 超穷基数
 ## 物理学快报
  * http://phys.org/journals/physical-review-letters/
 
+## philosophy 哲学
+### 人和动物
+ * https://www.theatlantic.com/science/archive/2017/02/what-do-animals-see-in-the-mirror/516348/?single_page=true  Chimps 非洲） 黑猩猩 and 猩猩 orang-utans Monkeys gorillas doesnot  Self-recognition 自身识别 Self-awareness  自知 自我认知
 # statistics 统计学
 ## http://ec.europa.eu/eurostat/statistics-explained/index.php/Category:Glossary
 graph duration
