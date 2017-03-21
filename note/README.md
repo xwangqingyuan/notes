@@ -21,6 +21,11 @@
 
 ## deep learning
 ### https://www.humandx.org/ OPEN HUMAN DIAGNOSIS project
+### Uncertainty in Deep Learning
+ * http://mlg.eng.cam.ac.uk/yarin/blog_2248.html
+### RNN
+ * http://karpathy.github.io/2015/05/21/rnn-effectiveness/
+ * https://github.com/karpathy/char-rnn
 ### tooling review
  * http://www.svds.com/getting-started-deep-learning/
  * https://github.com/terryum/awesome-deep-learning-papers
@@ -51,6 +56,7 @@
 ### Numerical Computation 数值计算
 ### Machine Learning Basics 机器学习基础
 ### Modern Practical Deep Networks 当代深度网络实践
+##
 ### Deep Feedforward Networks 深度前馈网络
 ```
 kernel trick
@@ -175,6 +181,11 @@ translation, scaling, homothety, similarity transformation, reflection, rotation
  * https://sideways-view.com/2016/12/02/crowdsourcing-moderation-without-sacrificing-quality/ 群包项目 AI
  * https://arxiv.org/abs/1701.01724 德州扑克 texas poker
  * http://selfdrivingcars.mit.edu/  deep learning for self-driving car
+### OCR resources
+ * http://cs231n.stanford.edu/reports/zyh_project.pdf
+ * https://github.com/wanghaisheng/awesome-ocr'
+ * https://github.com/hs105/Deep-Learning-for-OCR
+ * https://github.com/pannous/tensorflow-ocr
 ### machine learning courses
  * https://ml.berkeley.edu/blog/2016/11/06/tutorial-1/
  * http://yerevann.com/a-guide-to-deep-learning/
@@ -191,6 +202,7 @@ translation, scaling, homothety, similarity transformation, reflection, rotation
  * https://blog.altoros.com/tag/tensorflow tensorflow intro
  * https://lab.dataos.io/#/console/noplan https://github.com/asiainfoLDP
  * http://www.infoq.com/resource/minibooks/machine-learning-practice/zh/pdf/MachineLearning.pdf infoq 机器学习介绍
+ * http://web.stanford.edu/class/cs20si/syllabus.html CS 20SI: Tensorflow for Deep Learning Research
 #### minibatch mini-batch
  * A compromise between computing the true gradient and the gradient at a single example, is to compute the gradient against more than one training example (called a "mini-batch") at each step.
  * Stochastic  gradient  descent  (SGD)  is  a  popular  techniqu for  large-scale  optimization  problems  in  machine  learning.
@@ -226,6 +238,7 @@ translation, scaling, homothety, similarity transformation, reflection, rotation
  * https://developer.nvidia.com/cuda-toolkit-40
 #### GPU price
 
+#### openshift price
 
 ## Alpha–beta pruning
  * https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning
@@ -287,6 +300,8 @@ translation, scaling, homothety, similarity transformation, reflection, rotation
  * 看名字就知道了，就是如果某一个zj大过其他z,那这个映射的分量就逼近于1,其他就逼近于0，主要应用就是多分类，sigmoid函数只能分两类，而softmax能分多类，softmax是sigmoid的扩展。
 Monte Carlo tree search can use either light or heavy playouts. Light playouts consist of random moves while heavy playouts apply various heuristics to influence the choice of moves.[
 
+#### huber loss function
+ * http://blog.csdn.net/lanchunhui/article/details/50427055
 # Application framework 开源应用框架
 ## PHP 框架
 ### tracker
@@ -305,6 +320,11 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 ## go 框架
 ### Go framewor
 ### Hugo
+#### gitbook
+ * https://github.com/GitbookIO/gitbook-convert
+ * https://github.com/billryan/docker-gitbook
+ * https://hub.docker.com/r/billryan/gitbook/
+ * https://hub.docker.com/r/gitbook/convert/
 
 # big data 大数据  
 ## famous persons
@@ -322,6 +342,9 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 #### spark comparison
  * http://www.infoworld.com/article/3014440/big-data/five-things-you-need-to-know-about-hadoop-v-apache-spark.html
  * https://sparkhub.databricks.com/?s=integration&post_type= spark news
+
+#### deepspark
+ * https://github.com/deepspark/deepspark deep learning to review code
 
 ## use case
 用户画像
@@ -708,14 +731,17 @@ docker run --privileged --name mariadb -d -e "container=docker" mariadbcentos:0.
  * http://redmonk.com/fryan/2016/12/06/aws-reinvent-elastic-gpus-fpgas-deep-learning-compute/
  * Orchestration of FPGAs https://www.linuxplumbersconf.org/2016/ocw/proposals/4479.html https://etherpad.openstack.org/p/LPC2016_FPGA
  * https://etherpad.openstack.org/p/LPC2016_FPGA
-
+### pivotal kubernetes kubo
+ * https://github.com/pivotal-cf-experimental/kubo-deployment
+ * https://github.com/pivotal-cf-experimental/kubo-release
+ * https://pivotal.io/kubo
 ### docker network
 #### CNI vs CNM
  * http://blog.kubernetes.io/2016/01/why-Kubernetes-doesnt-use-libnetwork.html
  * http://thenewstack.io/google-wont-support-dockers-container-network-model/
 #### contiv
- * http://blogs.cisco.com/datacenter/project-contiv  
- * https://github.com/contiv/netplugin  
+ * http://blogs.cisco.com/datacenter/project-contiv
+ * https://github.com/contiv/netplugin
 
 ### programming docker  compile docker
  * https://docs.docker.com/opensource/project/set-up-dev-env/
@@ -924,6 +950,9 @@ EOF
  * https://github.com/kubernetes/kubernetes/blob/88c977c34ac9c0edc8b6be8034b2d5b47a5735e2/pkg/volume/glusterfs/glusterfs.go
  * https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-files/
  * https://azure.microsoft.com/en-us/pricing/details/storage/
+#### kubernetes DAG kubernetes workflow
+ * https://github.com/sdminonne/workflow-controller/tree/master/examples/two_steps
+ * https://github.com/kubernetes/kubernetes/pull/18827
 #### kubernetes paas
  * https://medium.com/@shijuvar/the-evolution-of-cloud-paas-to-container-ecosystem-1943a335c25b#.7gwiv5dc9
  * http://kubernetes.io/docs/whatisk8s/
@@ -976,6 +1005,7 @@ oc adm policy add-scc-to-user anyuid system:serviceaccount:test-stress:default
 
 #### kubernetes compose
  * https://github.com/kubernetes-incubator/kompose
+ * http://kompose.io/index
  * https://github.com/redhat-developer/opencompose
  * http://developers.redhat.com/blog/2016/11/03/container-orchestration-specification-for-better-devops/
 #### 下载kubectl
@@ -1058,6 +1088,7 @@ curl -k -v -XPOST  -H "Accept: application/json, */*" -H "Authorization: Bearer 
  * https://github.com/kubernetes/kubernetes/blob/2f756e4ebc677c824d495bb5e10aa9d2234de686/plugin/cmd/kube-scheduler/app/server.go 创建scheduler 的地方
 ### kubernetes performance k8s性能
  * https://github.com/openshift/svt
+ * https://github.com/distributed-system-analysis/pbench
 ### kubernetes 1.6
  * https://github.com/kubernetes/community/blob/master/contributors/design-proposals/taint-toleration-dedicated.md
  * https://github.com/kubernetes/kubernetes/issues/1574 forgiveness
@@ -1228,6 +1259,7 @@ http://lattice.cf/
  * Netflix的体验式API（experience API）和临时API（ephemeral API） http://www.infoq.com/cn/articles/api-facades?utm_campaign=rightbar_v2&utm_source=infoq&utm_medium=articles_link&utm_content=link_text
  * Netflix的体验式API（experience API）和临时API（ephemeral API） https://www.infoq.com/news/2015/11/daniel-jacobson-ephemeral-apis
  * http://www.infoq.com/cn/articles/no-more-mvc-frameworks 在使用过React并了解了Angular 2将会是什么样子之后，我感到有些沮丧：这些框架都系统性地强制我使用BFF“页面可替换模式（Screen Scraping）”模式，按照这种模式，每个服务端的API要匹配页面上的数据集，不管是输入的还是输出的。 理解Action的基础知识的话，那么你应该看一下TLA+。TLA代表的是“Action中的逻辑时序（Temporal Logic of Actions）
+ * http://lamport.azurewebsites.net/video/smintla.html  TLA+ training
  * http://sam.js.org/#timetravel State-Action-Model
  * https://www.infoq.com/news/2015/11/daniel-jacobson-ephemeral-apis http://samnewman.io/patterns/architectural/bff/ netflix 新 API 模式
  * http://techblog.netflix.com/2015/10/evolution-of-open-source-at-netflix.html netflix OSS
@@ -1287,7 +1319,18 @@ http://lattice.cf/
 #### federation service
  * https://github.com/kubernetes/kubernetes.github.io/tree/e51b0a40bc98220afdeffd3a63681ff62f5e69f3/docs/user-guide/federation
  * https://github.com/kubernetes/kubernetes.github.io/blob/e51b0a40bc98220afdeffd3a63681ff62f5e69f3/docs/user-guide/federation/federated-services.md
-
+#### federation hybrid cloud
+ * http://www.techrepublic.com/article/3-areas-of-hybrid-infrastructure-your-company-should-prioritize-in-2017/
+ * http://res.cdn.sys-con.com/session/3234/Dan_Choquette.pdf
+ * https://apprenda.com/blog/what-is-enterprise-hybrid-paas-anyway/ In order for a PaaS to be hybrid, it should
+ * https://www.redhat.com/en/files/resources/en-rhc-why-future-cloud-open-10781697.pdf
+ * https://blog.openshift.com/gartner-mq-validates-hybrid-cloud-with-openshift/ Is it about hybrid infrastructure underneath an unified platform abstraction? Or is it about seamlessly moving applications between private and public PaaS?
+ * http://www.eweek.com/cloud/red-hat-openshift-container-platform-3.4-improves-storage.html storage cross infrastructure
+ * http://www.computerweekly.com/tip/Building-a-hybrid-cloud-on-SaaS-PaaS-and-IaaS-for-IT-efficiencies  paas
+ * http://www.techrepublic.com/article/3-areas-of-hybrid-infrastructure-your-company-should-prioritize-in-2017/ Data center teams must examine existing workflows and process bottlenecks. It's these process areas that are the best investment for automation.
+ * https://sanwen8.cn/p/2204WWh.html 中国移动Kubernetes多集群
+ * http://www.tuicool.com/articles/UzmiMz 跨区高可用
+ * http://blog.csdn.net/ebay/article/details/52798074  ebay federation
 ### ConfigMap
  * https://github.com/kubernetes/kubernetes/blob/release-1.3/docs/design/configmap.md
 
@@ -1432,6 +1475,12 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  #### IRC chat
   * https://github.com/prawnsalad/KiwiIRC
   * https://kiwiirc.com/
+  * https://github.com/hansode/chatops-demo-hubot-hipchat
+ #### wechat ops
+  * https://zhuanlan.zhihu.com/p/25670072?utm_medium=social&utm_source=wechat_timeline  https://github.com/QuantumLiu/wechat_callback
+  * https://zhuanlan.zhihu.com/p/25597975?group_id=822180572054048768
+  * https://github.com/littlecodersh/ItChat
+  *
  #### apache turnbine
   * https://turbine.apache.org/turbine-concepts.html
   * http://forum.spring.io/forum/spring-projects/container/4119-spring-vs-apache-turbine
@@ -1494,6 +1543,12 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * http://mesosphere.github.io/presentations/oscon-mesos-ops-2014/lightning/#/26
  * multi-tenancy mesos https://www.quora.com/What-is-the-future-of-the-private-cloud-world-Mesos-or-OpenStack
  * https://platform9.com/blog/compare-kubernetes-vs-docker-swarm/
+ * https://platform9.com/blog/compare-kubernetes-vs-mesos/
+ * https://medium.com/@mustwin/a-handy-guide-to-the-mesos-kubernetes-swarm-jungle-ad6bc086c736#.hjh9xsjwe
+ * https://www.socallinuxexpo.org/sites/default/files/presentations/SCALE_14_Docker_Kubernetes_Mesos_Compared_0.pdf
+ * http://rancher.com/cattle-swarm-kubernetes-side-side/
+ * http://rancher.com/comparing-rancher-orchestration-engine-options/
+ *
 
 ### hawkular
  * http://www.open-open.com/lib/view/open1462924607845.html
@@ -1885,6 +1940,13 @@ ls -aef
   * https://github.com/jeffbski/microservices  hapi 演示API gateway
   * https://github.com/nodezoo/nodezoo-workshop nodejs example
 
+### JVM microservice framework
+ * https://github.com/dropwizard/dropwizard
+ * https://github.com/vert-x3/vertx-examples/tree/master/docker-examples
+ * http://vertx.io/ https://github.com/eclipse/vert.x/tree/master/src/main
+ *
+
+
 ### microservice-example 微服务应用案例
  * https://github.com/kbastani/spring-cloud-event-sourcing-example 电商案例
  *
@@ -2081,6 +2143,7 @@ https://zhidao.baidu.com/question/1945983678126952268.html
  * https://support.brightcove.com/en/video-cloud/training-videos/video-cloud-architecture-overview
  * https://code.facebook.com/posts/1653074404941839/under-the-hood-broadcasting-live-video-to-millions/
  * http://www.ctocio.com/ccnews/19652.html
+ * http://www.10tiao.com/html/529/201605/2656298605/2.html
 ## online meeting web conference 视频会议
 ### 开源视频会议系统
  * http://www.oschina.net/project/tag/227/video-conferencing  http://blog.csdn.net/chenbang110/article/details/13681419
@@ -2206,6 +2269,8 @@ http://www.lamport.org/
  * http://www.javatpoint.com/cloud-computing-interview-questions
  * https://intellipaat.com/interview-question/data-science-interview-questions/
  * http://tekslate.com/docker-interview-questions/
+ * https://organizationsandmarkets.com/2010/08/31/how-to-read-an-academic-article/
+ * https://github.com/papers-we-love/papers-we-love
 ### questions topics
  * openstack docker python go java kubernete machine learning
 
@@ -2222,6 +2287,15 @@ http://www.lamport.org/
  * http://tools.ietf.org/html/rfc6455#page-11  
  * https://blogs.oracle.com/PavelBucek/entry/websocket_via_http_proxy websocket 穿越 proxy
  * https://www.infoq.com/articles/Web-Sockets-Proxy-Servers
+ * https://github.com/pweil-/hello-websockets
+ * https://github.com/hpaluch/websocket-jq-openshift
+ * https://codedump.io/share/9eF5dw3whUqp/1/websocket-failure-in-openshift--nodejs
+ * https://github.com/nodebooks/socketio-openshift-example
+ * https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_client_applications
+ * https://github.com/Lawouach/WebSocket-for-Python
+ * http://blog.haproxy.com/2012/11/07/websockets-load-balancing-with-haproxy/
+ * https://github.com/hangyan/docker-ws-client http://hiroakis.com:8888/  https://github.com/hiroakis/tornado-websocket-example/blob/master/app.py websock example
+
 
 ### webrtc  
  * http://www.cnblogs.com/lingyunhu/p/4058182.html
@@ -2313,7 +2387,8 @@ http://baike.baidu.com/link?url=MRD3fyaa9_kNAf6-p9NSu4bU_UuO1YvDL6O5vsUqe_PFxYmN
 ## network security
  * http://2016.qconbeijing.com/track/2801
 
-
+### Security 101 for SaaS startups
+ * https://github.com/forter/security-101-for-saas-startups
 ### ssh
  * http://www.cnblogs.com/lzjsky/archive/2010/11/14/1877143.html
  * http://stackoverflow.com/questions/1011572/convert-pem-key-to-ssh-rsa-format  
@@ -2389,8 +2464,12 @@ https://github.com/lducas/FHEW
 # hardware
 ## qualcomm chips
  * https://www.fastcompany.com/3066849/the-sensor-revolution/qualcomm-drones-vr-cars-satellites
+## Quantum Computers
+ * http://www-03.ibm.com/press/us/en/pressrelease/51740.wss
 # programming coding 编程
+
 ## algorithm 算法
+
 ### generic interface
 #### file
 file is the generic interface of binary data access
@@ -2412,6 +2491,8 @@ Referential transparency 参照透明 deterministic 确定性的 rewriting syste
  * 五角星和五边形
  * subgraph isomorphism problem,[3] which is known to be NP-complete
  * Subgraph isomorphism is a generalization of both the maximum clique problem and the problem of testing whether a graph contains a Hamiltonian cycle, and is therefore NP-complete.[1] However certain other cases of subgraph isomorphism may be solved in polynomial time
+### dsl
+ * https://anydsl.github.io/index.html  https://en.wikipedia.org/wiki/Continuation_passing_style
 ## programming teaching
 ### scratch 教小孩编程
  * https://scratch.mit.edu/
@@ -2912,8 +2993,12 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
  * https://en.wikipedia.org/wiki/List_of_large_cardinal_properties
  * cardinals 基数 Ordinal 序数
  * transfinite 超穷基数
+### Mathematics for Computer Science
+ * https://courses.csail.mit.edu/6.042/spring17/mcs.pdf Mathematics for Computer Science
 ## 物理学快报
  * http://phys.org/journals/physical-review-letters/
+## 未解之谜
+ * http://nautil.us/blog/7-major-experiments-that-still-havent-found-what-theyre-looking-for
 
 ## philosophy 哲学
 ### 人和动物
@@ -2925,6 +3010,8 @@ accounting period/reporting period 会计期 报告期
 basic period/reference period 参考期 统计期 基准期
 sampling frequency 采样频率 sampling rate 采样速率 sample period 采样周期 sampling cycle
 observation period observation duration 观察期
+## sawdust 锯沫理论
+ * http://www.thegrumpyprogrammer.com/2017/03/arithmetic-vs-reality-sawdust-principle.html
 
 # translation 翻译
 #### Translation auto-translation 自动翻译API
