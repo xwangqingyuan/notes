@@ -345,7 +345,15 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 
 #### deepspark
  * https://github.com/deepspark/deepspark deep learning to review code
-
+#### soark multi-tenant
+ * https://www.slideshare.net/BlueDataInc/how-to-deploy-apache-spark-in-a-multitenant-onpremises-environment
+ * databricks
+  No, not at the moment. However, we are continuously investigating other deployment scenarios, some of them involving on-premise clusters.
+ * https://databricks.com/product/faq Databricks is not a multi-tenant platform. Apache Spark clusters get deployed entirely within each customer’s own AWS account. Each customer has a separate deployment with separate infrastructure, which includes S3 and EC2 instances, to provide an additional layer of security and isolation.
+ * https://www.slideshare.net/BlueDataInc/how-to-deploy-apache-spark-in-a-multitenant-onpremises-environment bluedata
+ * https://www.slideshare.net/HadoopSummit/effective-spark-on-multitenant-clusters?next_slideshow=1 cloudera
+ * https://www.bluedata.com/wp-content/uploads/2014/09/bluedata-hortonworks-solution-brief.pdf
+ * https://www.cloudera.com/documentation/enterprise/5-8-x/topics/admin_howto_multitenancy.html Share Nothing Share Management Share Data
 ## use case
 用户画像
  * http://www.woshipm.com/pmd/107919.html
@@ -670,6 +678,9 @@ https://success.docker.com/Datacenter/Apply/Introduction_to_User_Namespaces_in_D
  * https://bobcares.com/blog/top-5-operating-systems-for-your-docker-infrastructure/
  * https://blog.docker.com/2015/02/the-new-minimalist-operating-systems/
  * https://ostree.readthedocs.io/en/latest/
+ * https://www.youtube.com/watch?v=sHFQbA7GWMc  https://blog.codeship.com/container-os-comparison/
+ * https://github.com/codedellemc/training/blob/master/accreditation/container-os-comparison.md
+ * https://www.inovex.de/blog/docker-a-comparison-of-minimalistic-operating-systems/
 #### docker centos 7
 
 ### docker overlay file system storage
@@ -902,6 +913,7 @@ EOF
 ### big data on kubernetes
 ### 动态设置docker 和kubelet
  * https://github.com/kubernetes/kubernetes/issues/27980
+
 #### spark on kubernetes
  * https://github.com/mattf/openshift-spark/blob/master/Makefile 简单的spark demo
  * https://hub.docker.com/r/radanalyticsio/openshift-spark/
@@ -945,6 +957,9 @@ EOF
 * https://github.com/kubernetes/kubernetes/issues/1348 label反向匹配
 * https://github.com/kubernetes/kubernetes/issues/4817 Efficient lookup by label selection, reverse label selection, uid, and IP addresses
 * https://github.com/kubernetes/kubernetes/issues/22262 schedule slow
+#### Reconciliation Loop 调和循环
+ * http://freecontent.manning.com/kubernetes-in-action-introducing-replication-controllers/
+ * https://www.slideshare.net/SatnamSingh67/2015-0605-cluster-management-with-kubernetes keep scheduler simple
 #### 动态分配存储 provisioner
  * https://github.com/kubernetes/kubernetes/blob/962d51ec682a14ef2d926175bbc614bac69f3197/pkg/controller/volume/persistentvolume/controller.go
  * https://github.com/kubernetes/kubernetes/blob/88c977c34ac9c0edc8b6be8034b2d5b47a5735e2/pkg/volume/glusterfs/glusterfs.go
@@ -1097,6 +1112,10 @@ curl -k -v -XPOST  -H "Accept: application/json, */*" -H "Authorization: Bearer 
 
 #### high availability
  * http://www.infoq.com/cn/news/2013/04/BOC-Downtime/
+#### hyper
+ * https://github.com/hyperhq
+ * https://github.com/kubernetes/frakti
+ * https://thenewstack.io/hyper-sh-mixes-containers-hypervisors-something-called-hypernetes/
 #### microservice platform
  * http://wildfly.org/about/
  * http://deis.io/overview/
@@ -1511,6 +1530,11 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * https://github.com/kubernetes/heapster
  * http://stackoverflow.com/questions/33749911/a-combination-for-monitoring-system-for-container-grafanaheapsterinfluxdbcad
  * https://github.com/grafana/grafana  http://grafana.org/  http://www.dockone.io/article/569
+ * https://www.packetmischief.ca/2017/02/15/why-i-enthusiastically-switched-from-cacti-to-zabbix-for-system-monitoring/
+ * http://stackoverflow.com/questions/35428606/difference-between-time-series-database-and-relational-database 2-10 vs 30-100 (rdbms
+ * https://www.robustperception.io/scaling-and-federating-prometheus/
+ * 高可用方案: https://gitlab.com/gitlab-com/infrastructure/issues/760  https://gitlab.com/gitlab-com/runbooks/blob/master/howto/monitoring-overview.md
+ * https://github.com/prometheus/alertmanager
 ### tracer &&monitoring
  * https://www.weave.works/blog/
  * https://github.com/weaveworks/scope
@@ -1565,11 +1589,14 @@ ImportError: No module named parsing.yaml.dumper
 升级 ansible
 sudo pip install ansible --upgrade
 #### openshift 高可用升级
- * https://blog.openshift.com/tag/upgrade/
+ * https://blog.openshift.com/ktag/upgrade/
  * https://blog.openshift.com/zero-downtime-cluster-upgrades-openshift-container-platform/
  * https://blog.openshift.com/zero-downtime-upgrades-with-openshift-ansible/
 
 ### prometheus 普罗米修斯
+ * https://www.slideshare.net/brianbrazil/microservices-and-prometheus-microservices-nyc-2016  tips
+ * https://www.weave.works/monitoring-kubernetes-infrastructure/ 基础设施监控
+ * https://www.weave.works/prometheus-and-kubernetes-monitoring-your-applications/ 应用监控
  * http://www.boxever.com/push-vs-pull-for-monitoring
  * https://prometheus.io/docs/introduction/faq/#why-do-you-pull-rather-than-push?
  * https://prometheus.io/blog/
@@ -1590,6 +1617,7 @@ sudo pip install ansible --upgrade
  * https://blog.openshift.com/monitoring-openshift-cluster-using-cockpit/ cockpit demo
  * http://cockpit-project.org/  https://github.com/cockpit-project/cockpit linux monitoring
  * https://blog.serverdensity.com/80-linux-monitoring-tools-know/
+ * https://repo.zabbix.com/zabbix/
 ## openstack  
 ### release notes
  * https://wiki.openstack.org/wiki/ReleaseNotes/Liberty
@@ -1866,6 +1894,7 @@ ls -aef
  * http://mirrors.hypo.cn/
  * https://vagrantcloud.com/ubuntu/boxes/trusty64
 
+## cloud terms 云词汇
 # design prinsipals
 ## A/B Test A/B测试
  * 冒烟测试（smoke test）、可用性测试（sanity test）和回归测试（regression test）、灰度发布、灰度放量
@@ -2604,7 +2633,9 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
 ### goadesign
  * https://blog.gopheracademy.com/advent-2015/goaUntanglingMicroservices/
  * https://www.infoq.com/news/2015/12/goa-microservice-framework
-
+#### error handling
+ * https://davidnix.io/post/error-handling-in-go/
+ * https://blog.golang.org/errors-are-values
 ### go string literals string template 字符串
  * https://golang.org/ref/spec#String_literals
 
