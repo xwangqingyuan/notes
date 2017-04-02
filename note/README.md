@@ -5,6 +5,26 @@
  * http://stackexchange.com/
  * https://www.reddit.com/
  * https://www.zhihu.com/question/21497720
+## research site
+### gartner
+### forrester
+### voum
+### wikibon
+ * https://wikibon.com/recipe-for-an-iot-ready-analytic-pipeline/
+ * https://wikibon.com/technical-dive-into-cloud-native-application-platforms/
+ * https://wikibon.com/cloud-native-application-platforms-structured-and-unstructured/
+ * https://wikibon.com/evolving-container-architectures/
+ * https://wikibon.com/realities-of-the-new-infrastructure-stack/
+ * https://wikibon.com/aligning-application-portfolios-with-hybrid-cloud-strategies/
+ * https://wikibon.com/crowdchat-summary-simplify-hybrid-cloud-hybridcloud/
+ * https://wikibon.com/avoid-cloud-cul-de-sacs-follow-your-hybrid-cloud-manifesto/
+ * https://wikibon.com/evolving-converged-infrastructure-towards-true-private-cloud/
+
+## startup database
+ * http://www.cyzone.cn/event/list-764-0-1/
+ * https://www.crunchbase.com/organization/
+ * https://index.co/company/
+
 ## alphago
  * https://en.wikipedia.org/wiki/AlphaGo
  * http://www.dcine.com/2016/01/28/alphago/  
