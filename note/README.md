@@ -494,6 +494,7 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 
 ### kubernetes API
  * http://kubernetes.io/docs/api/
+ * https://www.gitbook.com/book/chaibaoyang/kubernetes/details
 
 ### docker API
  * https://docs.docker.com/engine/reference/api/docker_remote_api_v1.23/
@@ -709,7 +710,14 @@ https://success.docker.com/Datacenter/Apply/Introduction_to_User_Namespaces_in_D
  * history discussion https://github.com/docker/docker/issues/443
  * detail storage introduction https://www.docker.com/sites/default/files/Understanding-Docker-Data-Storage-WP-rev3.pdf
  * 选择建议 https://docs.docker.com/engine/userguide/storagedriver/selectadriver/
+### container storage
+ * https://news.ycombinator.com/item?id=13678979
+ * https://portworx.com/portworx-survey-container-users-really-want-storage/
+ * https://thenewstack.io/methods-dealing-container-storage/
+ * http://searchstorage.techtarget.com/feature/Twelve-data-storage-company-startups-to-watch-in-2016
 
+### container trend
+ * https://www.slideshare.net/vmblog/2017-containers-predictions-from-15-industry-experts
 ### docker security
 http://www.projectatomic.io/docs/docker-and-selinux/
 
@@ -1002,8 +1010,32 @@ EOF
  * http://kubernetes.io/docs/getting-started-guides/ubuntu/
  * http://kubernetes.io/docs/getting-started-guides/azure/
  * http://thenewstack.io/tutorial-configuring-ultimate-development-environment-kubernetes/
+#### openshift devops
+##### diagnostics
+##### e2e testing
+##### node problem detector
+##### performance test
+ * openshift/svt/applications_scalability/app-scalability.sh shell e2e commands
+ * openshift/svt/openshift_scalability/pyconfig.yaml project template example
+ * kubernetes/perf-tests performance tests
+##### docker registry
+##### upstream upgrade
+##### gRPC
+ * github.com/openshift/origin/hack/update-generated-protobuf.sh
+ * github.com/openshift/origin/tools/genprotobuf/protobuf.go
+ * github.com/openshift/origin/tools/genprotobuf/protoc-gen-gogo/main.go
+ * types - genprotobuf - generated.proto - protoc-gen-gogo - generated.pb.go
+##### document generation
+ * github.com/openshift/origin/hack/update-generated-swagger-descriptions.sh  types - swagger_doc.go
+ * hack/update-generated-swagger-spec.sh  api/swagger-spec/openshift-openapi-spec.json and api/protobuf-spec publish
+ * hack/update-generated-swagger-docs.sh swagger-spec - _output/local/docs/swagger/api/v1/md
+##### image scan
+ * https://github.com/openshift/image-inspector
+ * https://seven.centos.org/2016/11/introducing-centos-container-image-scanners/
 #### kubernete security context constaints scc
  * https://github.com/kubernetes/kubernetes/blob/master/docs/design/security_context.md
+ * https://kubernetes.io/docs/concepts/policy/container-capabilities/#capabilities
+ * 基于角色的安全 https://kubernetes.io/docs/concepts/policy/pod-security-policy/  https://github.com/kubernetes/kubernetes/blob/master/examples/podsecuritypolicy/rbac/README.md
  * https://blog.openshift.com/understanding-service-accounts-sccs/
  * https://docs.openshift.org/latest/admin_guide/manage_scc.html hostPath权限问题
  * http://man7.org/linux/man-pages/man2/mknod.2.html
@@ -1015,6 +1047,42 @@ EOF
  * http://kubernetes.io/docs/user-guide/containers/  docker cap 和 linux cap的对应
  * http://man7.org/linux/man-pages/man7/capabilities.7.html     linux所有权限说明
  * http://man7.org/linux/man-pages/man1/capsh.1.html  查看权限命令
+#### selinux references
+ * https://wiki.centos.org/HowTos/SELinux#head-563ca75234163cdfa0ef056f1f82d4d396526d2b troubleshooting
+ * https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Security-Enhanced_Linux/sect-Security-Enhanced_Linux-SELinux_Contexts-SELinux_Contexts_for_Processes.html
+ * https://wiki.centos.org/HowTos/SELinux
+```
+semanage login -l
+semanage user -l
+semanage port -l | grep http
+semanage fcontext -l | grep ssh
+Multi-Category Security (MCS) When an access vector is computed for a process that is associated with mcs_constrained_type, only the MCS compartments of the high level are compared. The second point is due to the fact that MLS is not in use.
+```
+#### apparmor
+ * https://www.cyberciti.biz/tips/selinux-vs-apparmor-vs-grsecurity.html
+ * https://wiki.ubuntu.com/AppArmor
+ * https://help.ubuntu.com/14.04/serverguide/apparmor.html
+ * https://wiki.ubuntu.com/DebuggingApparmor
+ * http://wiki.apparmor.net/index.php/AppArmor_Core_Policy_Reference#Capability_rules
+ * https://docs.docker.com/engine/security/apparmor/#understand-the-policies
+ * https://kubernetes.io/docs/tutorials/clusters/apparmor/
+ * http://www.insanitybit.com/2012/06/01/why-i-like-apparmor-more-than-selinux-5/
+ * https://github.com/kubernetes/community/blob/master/contributors/design-proposals/apparmor.md
+
+```
+apt-get install apparmor-utils 安装aa-genprof
+apparmor_status
+cat /etc/apparmor.d/usr.sbin.libvirtd
+aa-complain /path/to/bin
+aa-enforce /path/to/bin
+docker run --rm -it --security-opt apparmor=docker-default hello-world
+cat /sys/module/apparmor/parameters/enabled
+```
+#### seccomp
+ * seccomp (short for secure computing mode) is a computer security facility
+ * https://github.com/docker/docker/blob/master/profiles/seccomp/default.json
+ * https://docs.openshift.com/container-platform/3.3/admin_guide/seccomp.html
+ * https://github.com/kubernetes/community/blob/master/contributors/design-proposals/seccomp.md
 #### SCC errors
 ```
 Dec 24, 2016 7:55:13 AM org.apache.catalina.startup.Catalina load
@@ -1207,6 +1275,7 @@ http://lattice.cf/
    https://github.com/eventuate-local/eventuate-local/blob/master/eventuate-local-java-embedded-cdc/src/main/java/io/eventuate/local/cdc/debezium/EventTableChangesToAggregateTopicRelay.java event source platform eventuate
  * http://eventuate.io/exampleapps.html  案例程序
  * willb/notebook                              tutorial  hub.qingyuanos.com/game/notebook            tutorial spark tutorial
+
 #### 有趣应用
  * https://hub.docker.com/r/daehyeok/freecodecamp/
  * https://hub.docker.com/r/xblaster/tensor-guess/ 分类程序
@@ -1913,7 +1982,12 @@ ls -aef
 #### vagrant vbox download
  * http://mirrors.hypo.cn/
  * https://vagrantcloud.com/ubuntu/boxes/trusty64
-
+#### vagrant errors
+#####
+```
+A VirtualBox machine with the name already exists Pleas
+```
+分别启动各个节点
 ## cloud terms 云词汇
 # design prinsipals
 ## A/B Test A/B测试
@@ -2113,6 +2187,25 @@ mysql -uroot -p123456 -e 'create database db1;'
  * https://github.com/github/orchestrator
  * https://github.com/blog/530-how-we-made-github-fast
  * http://githubengineering.com/rearchitecting-github-pages/
+#### mysql protocol
+ * https://dev.mysql.com/doc/internals/en/binary-protocol-resultset.html
+ * https://github.com/tencent-wechat/phxsql
+ * https://github.com/alibaba/oceanbase/tree/master/oceanbase_0.4 https://www.zhihu.com/question/53795813 https://github.com/alibaba/OceanBase-0.5
+ * https://github.com/alibaba/AliSQL
+ * https://www.zhihu.com/question/52039700?sort=created alisql
+ * https://github.com/siddontang/go-mysql
+ * https://github.com/Go-SQL-Driver/MySQL/
+ * https://dev.mysql.com/downloads/connector/
+ * https://github.com/pingcap/tidb
+##### mysql python
+ * https://github.com/PyMySQL/mysqlclient-python
+##### c mysql
+ * https://github.com/ketzusaka/mysql-connector-c
+ * https://github.com/golddiamonds/cmysql
+##### rust mysql
+ * https://github.com/nutsi/rust-mysql
+ * https://github.com/blackbeam/rust-mysql-simple
+
 ### postgres psql
 #### psql 客户端程序
 ```
@@ -2123,7 +2216,16 @@ psql -U username -c '\d'
 ```
 #### 错误 postgres error message
  * 无法初始化,因为磁盘没空间了。
+#### postgres protocol
+ * https://www.postgresql.org/docs/current/static/protocol.html
+ * https://github.com/JackC/pgx go client  32 MIT
+ * https://github.com/lxn/go-pgsql/ BSD
+ * https://www.postgresql.org/about/license/ https://github.com/postgres/postgres BSD license
+ * https://github.com/sfackler/rust-postgres MIT license https://github.com/RestfulDesign/postrest rest client
 
+
+## tencent open source 腾讯开源
+ * http://blog.csdn.net/ajwdwl/article/details/52873970
 ## document database 文档数据库
 
 ## column-oriented database 列式数据库
@@ -2851,6 +2953,19 @@ usually .bash_profile and .bashrc will be sourced
 sudo -i表示以root身份登录，进程的实际用户ID和有效用户ID都变成了root，主目录也切换为root的主目录。
 sudo 命令
 执行该条命令期间，进程的有效用户ID临时更改为root。
+```
+## uname
+```
+### kernel name
+uname -a
+cat  /etc/issue
+lsb_release -a
+cat /etc/lsb-release
+cat /proc/version
+### centos release name 版本
+cat /etc/centos-release
+cat /proc/version
+cat /etc/redhat-release
 ```
 # markup language 标签语言
 ## markdown
