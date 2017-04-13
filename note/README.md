@@ -40,6 +40,15 @@
  * https://jaredforsyth.com/2014/03/22/rust-vs-go/
 
 ## deep learning
+### ANN
+#### A self-organizing map (SOM) or self-organizing feature map (SOFM)
+##### Competitive learning is a form of unsupervised learning in artificial neural networks, in which nodes compete for the right to respond to a subset of the input data
+ * Models and algorithms based on the principle of competitive learning include vector quantization and self-organizing maps (Kohonen maps).
+##### VQ Vector quantization
+ * Vector quantization is based on the competitive learning paradigm, so it is closely related to the self-organizing map model and to sparse coding models used in deep learning algorithms such as autoencoder.
+##### autoencoder
+ * An autoencoder, autoassociator or Diabolo network[1]:19 is an artificial neural network used for unsupervised learning of efficient codings.[2][3] The aim of an autoencoder is to learn a representation (encoding) for a set of data, typically for the purpose of dimensionality reduction. Recently, the autoencoder concept has become more widely used for learning generative models of data.
+ * Generative models contrast with discriminative models also called conditional models most discriminative models are inherently supervised
 ### https://www.humandx.org/ OPEN HUMAN DIAGNOSIS project
 ### Uncertainty in Deep Learning
  * http://mlg.eng.cam.ac.uk/yarin/blog_2248.html
@@ -351,6 +360,27 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 ### infoq famous persons
  * http://2016.qconbeijing.com/track/2769
 
+### hadoop 发行版
+#### cloudera CDH
+ * https://www.cloudera.com/documentation.html
+ * https://github.com/cloudera/cdk/releases
+ * https://www.cloudera.com/documentation/enterprise/5-6-x/topics/quickstart_docker_container.html  http://community.cloudera.com/t5/Hadoop-101-Training-Quickstart/how-to-deploy-loudera-in-kubernetes-with-docker/td-p/49238 https://blog.cloudera.com/blog/2016/08/multi-node-clusters-with-cloudera-quickstart-for-docker/
+ * https://hub.docker.com/u/cloudera/ https://github.com/cloudera/clusterdock  https://github.com/caioquirino/docker-cloudera-quickstart
+ * https://www.cloudera.com/documentation/enterprise/5-8-x/topics/admin_howto_multitenancy.html    https://www.slideshare.net/cloudera/multitenant-operations-with-cloudera-57-bt  https://www.slideshare.net/cloudera/strata-hw-barca2014
+#### hortonworks HDP
+ * https://hortonworks.com/products/data-center/hdp/ http://docs.hortonworks.com/HDPDocuments/HDF2/HDF-2.1.2/bk_dataflow-user-guide/content/introduction.html dataflow=NiFi
+ * http://docs.hortonworks.com/index.html  http://docs.hortonworks.com/HDPDocuments/HDP2/HDP-2.6.0/bk_release-notes/content/new_features.html
+ * https://github.com/hortonworks/spark-release/releases
+ * https://hub.docker.com/u/hortonworks/?page=1
+ * https://www.slideshare.net/HadoopSummit/toward-better-multitenancy-support-from-hdfs  https://www.slideshare.net/StampedeCon/apache-hadoop-yarn-multitenancy-capacity-scheduler-preemption-stampedecon-2015
+##### cloudbreak
+ * https://thenewstack.io/docker-will-change-hadoop-making-it-easier-and-faster/ https://hortonworks.com/blog/docker-ships-hdp-cloud/
+#### sequenceiq
+ * https://github.com/sequenceiq/docker-spark https://hub.docker.com/r/sequenceiq/hadoop-docker/  https://hub.docker.com/r/sequenceiq/spark/ https://thenewstack.io/running-hadoop-docker-production-scale/ https://www.bluedata.com/article/bluedata-announces-support-for-hadoop-and-spark-on-docker-containers/
+ * https://www.bluedata.com/blog/2016/01/qos-for-hadoop-docker-containers/
+ * https://www.bluedata.com/blog/2015/07/secure-multi-tenant-hadoop-architecture/
+#### redsqirl is a drag & drop data mining tool for Hadoop
+ * https://www.redsqirl.com/index.html https://hub.docker.com/r/redsqirl/hortonworks-hdp/
 ## spark
 ### spark trainings
  * https://spark-summit.org/east-2015/training/
@@ -1174,6 +1204,7 @@ curl -k -v -XPOST  -H "Accept: application/json, */*" -H "Authorization: Bearer 
  * https://github.com/kubernetes/kubernetes/blob/master/docs/design/extending-api.md
  * http://kubernetes.io/docs/user-guide/thirdpartyresources/
  * https://github.com/coreos/etcd-operator coreos operator
+ * https://github.com/upmc-enterprises/elasticsearch-operator  https://github.com/sapcc/kubernetes-operators openstack operator
  * https://coreos.com/press/coreos-introduces-operators.html
  * https://coreos.com/blog/introducing-operators.html
  * https://groups.google.com/forum/#!topic/kubernetes-sig-network/7skwy2jXWWk
@@ -1378,16 +1409,18 @@ http://lattice.cf/
  * http://camel.apache.org/enterprise-integration-patterns.html
  * http://camel.apache.org/camel-dsl.html
  * http://camel.apache.org/soa-patterns.html
- #### integration
+#### integration
   * http://callistaenterprise.se/blogg/teknik/2015/10/12/apache-camel-vs-spring-integration/ camel
   * http://blog.christianposta.com/comparison/light-weight-open-source-integration-apache-camel-or-spring-integration
 
- #### Spring Cloud
+#### Spring Cloud
   * http://sail-y.github.io/2016/03/21/Spring-cloud%E9%A1%B9%E7%9B%AE%E5%AE%9E%E8%B7%B5/
   * http://kubecloud.io/apigatewaypattern/  zuul API Gateway
+#### Spring Cloud on kubernetes
+  * https://github.com/spring-cloud-incubator/spring-cloud-kubernetes
 ### kubernetes devops
  * http://blog.udacity.com/2016/05/introducing-scalable-microservices-kubernetes.html
- * https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615  online-course
+ * https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615  online-cours
 #### docker devops kubernetes openshift devops
  * http://www.infoworld.com/article/3066058/open-source-tools/kubernetes-powered-paas-focuses-on-devops.html
  * http://www.kelproject.com/
@@ -1856,7 +1889,7 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 
 ### magnum
  * 中文介绍 http://blog.csdn.net/lyq2013/article/details/48849411
-
+ *
 
 ### openstack client 客户端
  * http://docs.openstack.org/developer/python-openstackclient/index.html
@@ -1865,7 +1898,16 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * floating ips
   - subnet show ext_sub 显示floating ip分配池
  * login to server
-
+### virtualization
+ * http://hazt1011.blog.51cto.com/1072107/1102327/
+#### SRIOV
+ * http://docs.oracle.com/cd/E38902_01/html/E38873/glbzi.html    SR-IOV  SRIOV Single Root I/O Virtualization, SR-IOV
+ * https://github.com/clearcontainers/sriov docker sriov https://groups.google.com/forum/#!topic/docker-user/wg7LUMuvtbY
+ * http://jason.digitalinertia.net/exposing-docker-containers-with-sr-iov/
+ * https://github.com/docker/libnetwork/issues/1023 SRIOV for docker
+ * https://software.intel.com/en-us/articles/single-root-inputoutput-virtualization-sr-iov-with-linux-containers
+ * https://github.com/hustcat/sriov-cni  https://clearlinux.org/documentation/clear-containers.html  https://github.com/clearcontainers/sriov
+ * https://groups.google.com/forum/#!msg/kubernetes-sig-network/b55amANyCNo/INHD0yvzBAAJ  DPDK and SR-IOV with Kubernetes
 ## openshift
 ### openshift roadmap changelog
  * https://ci.openshift.redhat.com/releases_overview.html
@@ -1941,6 +1983,9 @@ ls -aef
  * https://github.com/spinnaker/deck/tree/master/app/scripts/modules/netflix network ui modules
  * https://github.com/spinnaker/deck/wiki/Conventions spinnaker ui guide
 
+#### jenkins multi-tenancy
+ * https://www.cloudbees.com/blog/multi-tenancy-jenkins
+ * https://trello.com/c/ucGKOKnt/1158-5-support-folders-organization-folders-and-multibranch-pipelines-pipeline-integration
 #### jenkins errors
  * http://stackoverflow.com/questions/25738061/java-nio-file-directorynotemptyexception-when-deleting-lastsuccessful-laststable
   - .file.DirectoryNotEmptyException 由于复制Jenkins目录造成
