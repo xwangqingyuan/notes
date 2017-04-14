@@ -1,5 +1,5 @@
 # artificial intelligence 人工智能
-## famous 问答网站
+## famous 问答网站l
  * https://news.ycombinator.com/
  * http://stackoverflow.com/
  * http://stackexchange.com/
@@ -49,6 +49,9 @@
 ##### autoencoder
  * An autoencoder, autoassociator or Diabolo network[1]:19 is an artificial neural network used for unsupervised learning of efficient codings.[2][3] The aim of an autoencoder is to learn a representation (encoding) for a set of data, typically for the purpose of dimensionality reduction. Recently, the autoencoder concept has become more widely used for learning generative models of data.
  * Generative models contrast with discriminative models also called conditional models most discriminative models are inherently supervised
+##### insightfinder
+ * http://dance.csc.ncsu.edu/papers/UBL.pdf
+ * http://dance.csc.ncsu.edu/publications.htm
 ### https://www.humandx.org/ OPEN HUMAN DIAGNOSIS project
 ### Uncertainty in Deep Learning
  * http://mlg.eng.cam.ac.uk/yarin/blog_2248.html
@@ -355,6 +358,14 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
  * https://hub.docker.com/r/billryan/gitbook/
  * https://hub.docker.com/r/gitbook/convert/
 
+# cmdb
+## open source cmdb
+ * https://github.com/Tencent/bk-cmdb
+ * https://github.com/sibiaoluo/pycmdb
+ * https://github.com/hongshenghe/django-cmdb https://github.com/zhuima/django-cmdb/tree/master/django_cmdb
+ * https://github.com/shengxinjing/woniu-cmdb 写配置文件生成增删改查系统 https://github.com/gqdw/cmdb
+ * https://github.com/fboender/ansible-cmdb https://github.com/cartoque/cartoque https://github.com/ServiceNowITOM/snitom-cmdb-vmwrt
+ * http://www.findbestopensource.com/tagged/cmdb
 # big data 大数据  
 ## famous persons
 ### infoq famous persons
