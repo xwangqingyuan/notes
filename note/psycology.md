@@ -4,6 +4,8 @@
  * 惩罚型 自残型 末日型 引诱型
 ### Transactional analysis 交易分析
  * https://en.wikipedia.org/wiki/Transactional_analysis
+ * http://www.ericberne.com/games-people-play/life-games/
+ * http://www.itaaworld.org/
 ### Psychological manipulation 心理操纵
  * https://en.wikipedia.org/wiki/Psychological_manipulation
 #### 弱点

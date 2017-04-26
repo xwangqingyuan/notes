@@ -220,3 +220,22 @@ ls -aef
 ## enterprise applications
  * https://personifycorp.com/resources/blog/2015/5-characteristics-of-true-enterprise-applications/
  * 企业级软件特点 Multi-faceted integration多面集成 Cross-channel capabilities跨渠道能力 Mobility as a core feature核心功能支持移动 In-house or hosted service支持私有部署共有云部署 Superior IT support system强运维支撑能力
+
+
+## 负载均衡 load balance
+### Haproxy
+ * http://www.oschina.net/translate/haproxy-ssl-termation-pass-through?cmp
+### bamboo
+ * https://github.com/QubitProducts/bamboo
+ * http://www.open-open.com/lib/view/open1415511980137.html
+
+### Nginx
+
+### traefik
+ * https://github.com/containous/traefik/
+ * https://news.ycombinator.com/item?id=13572033
+### envoy
+ * https://github.com/lyft/envoy/
+ * https://news.ycombinator.com/item?id=14194026
+#### 比较
+ * https://lyft.github.io/envoy/docs/intro/comparison.html#id7

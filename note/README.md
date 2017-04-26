@@ -1275,9 +1275,12 @@ curl -k -v -XPOST  -H "Accept: application/json, */*" -H "Authorization: Bearer 
 #### design pattern
  * https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/README.md#behavioral-design-patterns
  *
+#####
+ * http://houzhe11.iteye.com/blog/494296 　ActiveRecord TableGateway Table Module
 #### microservices service discovery and registry 服务发现
  * http://blog.christianposta.com/microservices/netflix-oss-or-kubernetes-how-about-both/ AP or CP 的问题讨论，用DNS,基于kubernetes的服务发现
- * https://github.com/BuoyantIO/linkerd  
+ * http://blog.christianposta.com/microservices/microservices-2-0/ https://github.com/lyft/envoy/ microservice proxy sidecar https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/
+ * https://github.com/BuoyantIO/linkerd
  * https://linkerd.io/overview/how-to-use-it/  服务发现的中间件 支持熔断
  * http://callistaenterprise.se/blogg/teknik/2016/05/27/building-a-microservice-with-golang/  golang connect to spring cloud
  * https://martin.kleppmann.com/2015/05/11/please-stop-calling-databases-cp-or-ap.html
@@ -1408,7 +1411,8 @@ http://lattice.cf/
  * https://github.com/spring-cloud/spring-cloud-netflix/issues/163
  * https://github.com/jzonthemtn/tyk-java-client
  * https://tyk.io/docs/tyk-api-gateway-v-2-0/javascript-plugins/tyk-javascript-api/
- *
+ * https://github.com/containous/traefik/ reverse proxy
+ * https://github.com/containous/flaeg go command cli tool https://github.com/containous/staert merging configuration
 #### netflix api strategy revolution
  * https://www.infoq.com/presentations/API-Revolution
  * https://www.quora.com/Why-has-Netflix-closed-its-public-API-program
@@ -2003,14 +2007,7 @@ A VirtualBox machine with the name already exists Pleas
 ## 并发编程
  * http://www.infoq.com/cn/articles/exterminating-heisenbugs
 
-## 负载均衡 load balance  
-### Haproxy
- * http://www.oschina.net/translate/haproxy-ssl-termation-pass-through?cmp
-### bamboo
- * https://github.com/QubitProducts/bamboo
- * http://www.open-open.com/lib/view/open1415511980137.html
 
-### Nginx
 
 ### 高并发 负载均衡
  * https://www.usenix.org/conference/lisa16/conference-program/presentation/shuff facebook
