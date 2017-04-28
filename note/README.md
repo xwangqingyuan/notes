@@ -58,6 +58,8 @@
 ### RNN
  * http://karpathy.github.io/2015/05/21/rnn-effectiveness/
  * https://github.com/karpathy/char-rnn
+### 框架比较  TensorFlow、MXNet、PaddlePaddle三个开源库对比
+ https://chenrudan.github.io/blog/2017/02/25/comparetfmxpd.html
 ### tooling review
  * http://www.svds.com/getting-started-deep-learning/
  * https://github.com/terryum/awesome-deep-learning-papers
@@ -351,6 +353,18 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
  * http://lattice.cf/
 ## 中文著名开源项目
  * http://caibaojian.com/top100-source.html
+### netty
+ * http://wen66.iteye.com/blog/1441224 Netty的一个缺点
+ * http://www.doc88.com/p-6025537715202.html netty
+ * https://dzone.com/articles/rx-netty-and-netflix-karyon rx
+### jetty
+ * http://colobu.com/2014/08/22/Benchmark-of-some-popular-frameworks/ jetty vert.x
+### tomcat nio
+ * https://www.oschina.net/question/54100_16195
+ * http://blog.csdn.net/wanglei_storage/article/details/50225779 bio nio apr比较
+### Undertow
+ * http://undertow.io/index.html
+ * https://dzone.com/articles/benchmarking-high-concurrency-http-servers-on-the Undertow jetty
 ## go 框架
 ### Go framewor
 ### Hugo
@@ -525,6 +539,7 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
  * http://data-artisans.com/high-throughput-low-latency-and-exactly-once-stream-processing-with-apache-flink/
  * http://stackoverflow.com/questions/30699119/what-is-are-the-main-differences-between-flink-and-storm
  * http://www.cakesolutions.net/teamblogs/comparison-of-apache-stream-processing-frameworks-part-2
+ * https://github.com/melentye/flink-kubernetes
 
 # books
  * https://en.wikipedia.org/wiki/S._%28Dorst_novel%29
@@ -611,7 +626,8 @@ http://www.riscnetworks.com/cloud-2/stop-cloud-migrations/
  * http://www.yangqiu.cn/tiananlife-henan/1280159.html 私有云发展趋势
  *
 
- ###
+### tmt
+
  * http://www.tmtpost.com/2560566.html
 ## cloud history
 ### enterprise applications qingye
@@ -981,369 +997,6 @@ cat << EOF | export VCAP_SERVICES=
 '
 EOF
 ```
-## Kubernetes  k8s
-### kubernetes trends
- * https://www.nextplatform.com/2016/11/08/google-wants-kubernetes-rule-world/
- * we look at product maturity, enterprise adoption, and community strength. And in all of these areas, Kubernetes significantly outshines
- * https://www.nextplatform.com/2017/02/01/riding-coattails-google-kubernetes-aws-lambda/  coattails 燕尾
-## kubernetes advertise
- * http://www.stratoscale.com/blog/kubernetes/container-orchestration-kubernetes-12-key-features/
-### big data on kubernetes
-### 动态设置docker 和kubelet
- * https://github.com/kubernetes/kubernetes/issues/27980
-
-#### spark on kubernetes
- * https://github.com/mattf/openshift-spark/blob/master/Makefile 简单的spark demo
- * https://hub.docker.com/r/radanalyticsio/openshift-spark/
- * https://github.com/radanalyticsio/openshift-spark
- * https://elmiko.github.io/2016/11/16/spark-on-openshift-with-oshinko.html https://github.com/radanalyticsio/oshinko-webui
- * spark on openshift 项目 oshinko 日式泡菜
- * https://github.com/shekhargulati/spark-openshift-quickstart
- * https://github.com/mattf/openshift-spark/tree/master/scripts/spark
- * https://blog.openshift.com/running-analytics-openshift-daikon/  spark 架构图 daikon 白萝卜
- * https://github.com/openshift
- * https://github.com/kubernetes/kubernetes/issues/34377 https://github.com/apache-spark-on-k8s/spark
- * https://github.com/kubernetes-incubator/application-images/issues/12
-#### spark on openshift
- * http://commons.openshift.org/sig/OpenshiftBigData.html Big Data on OpenShift  https://blog.openshift.com/big-data-and-apache-spark-on-openshift-pt-i-openshift-commons-briefing-44/
- * https://github.com/wattsteve/pyspark-tutorial  https://github.com/wattsteve/ 关注glusterfs,spark on openshift
- * https://hub.docker.com/r/getwarped/tensorflow-notebook/
- * https://github.com/getwarped/jupyter-stacks https://github.com/getwarped/jupyter-stacks/tree/master/minimal-notebook https://github.com/getwarped/jupyter-stacks/tree/master/tensorflow-notebook 所有的notebook
- * https://github.com/getwarped/powershift-cli python for openshift
-#### spark on cloudfoundtry
- * https://github.com/murraju/spark-boshrelease
-
-#### flink on kubernetes
- * https://github.com/melentye/flink-kubernetes
- * https://www.dezyre.com/article/apache-flink-vs-spark-will-one-overtake-the-other/282
- * https://www.zhihu.com/question/30151872
- * https://github.com/kubernetes/kubernetes/tree/master/examples/spark
- * http://blog.kubernetes.io/2016/03/using-Spark-and-Zeppelin-to-process-Big-Data-on-Kubernetes.html
-### concepts 概念
- *  http://www.infoq.com/cn/articles/Kubernetes-system-architecture-introduction?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global
- * http://kubernetes.io/docs/user-guide/volumes/
-  * https://github.com/kubernetes/kubernetes/blob/bf0a5e9fac1baab23a1db007bc798e4f9630f4f2/docs/proposals/volume-selectors.md
- * http://dockone.io/article/1153 比较 borg omega
- * http://blog.kubernetes.io/2015/06/the-distributed-system-toolkit-patterns.html  
- * learn kubernetes links
-  * https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md/#v130
-  * http://kubernetes.io/docs/user-guide/petset/
-  * https://github.com/kubernetes/kubernetes/tree/master/docs/design
-  * http://kubernetes.io/docs/user-guide/petset/bootstrapping/
-* https://github.com/kubernetes/kubernetes/issues/1201  kubernetes   的annotation和label区别
-* https://github.com/kubernetes/kubernetes/issues/341  kubernetes 的label为什么不支持模糊匹配
-* https://github.com/kubernetes/kubernetes/issues/1348 label反向匹配
-* https://github.com/kubernetes/kubernetes/issues/4817 Efficient lookup by label selection, reverse label selection, uid, and IP addresses
-* https://github.com/kubernetes/kubernetes/issues/22262 schedule slow
-#### Reconciliation Loop 调和循环
- * http://freecontent.manning.com/kubernetes-in-action-introducing-replication-controllers/
- * https://www.slideshare.net/SatnamSingh67/2015-0605-cluster-management-with-kubernetes keep scheduler simple
-#### 动态分配存储 provisioner
- * https://github.com/kubernetes/kubernetes/blob/962d51ec682a14ef2d926175bbc614bac69f3197/pkg/controller/volume/persistentvolume/controller.go
- * https://github.com/kubernetes/kubernetes/blob/88c977c34ac9c0edc8b6be8034b2d5b47a5735e2/pkg/volume/glusterfs/glusterfs.go
- * https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-files/
- * https://azure.microsoft.com/en-us/pricing/details/storage/
-#### kubernetes DAG kubernetes workflow
- * https://github.com/sdminonne/workflow-controller/tree/master/examples/two_steps
- * https://github.com/kubernetes/kubernetes/pull/18827
-#### kubernetes paas
- * https://medium.com/@shijuvar/the-evolution-of-cloud-paas-to-container-ecosystem-1943a335c25b#.7gwiv5dc9
- * http://kubernetes.io/docs/whatisk8s/
- * https://github.com/kubernetes/kubernetes/blob/master/docs/whatisk8s.md#why-do-i-need-kubernetes-and-what-can-it-do
- * https://www.ctl.io/developers/blog/post/what-is-kubernetes-and-how-to-use-it/
- * https://www.sdxcentral.com/articles/news/why-docker-and-google-kubernetes-are-like-paas-done-right/2015/08/
-#### kubernetes template
- * https://github.com/InQuicker/ktmpl
- * https://github.com/mustache/mustache
- * go template http://studygolang.com/articles/1833
-#### kubernetes quick start
- * http://kubernetes.io/docs/getting-started-guides/ubuntu/
- * http://kubernetes.io/docs/getting-started-guides/azure/
- * http://thenewstack.io/tutorial-configuring-ultimate-development-environment-kubernetes/
-#### openshift devops
-##### diagnostics
-##### e2e testing
-##### node problem detector
-##### performance test
- * openshift/svt/applications_scalability/app-scalability.sh shell e2e commands
- * openshift/svt/openshift_scalability/pyconfig.yaml project template example
- * kubernetes/perf-tests performance tests
-##### docker registry
-##### upstream upgrade
-##### gRPC
- * github.com/openshift/origin/hack/update-generated-protobuf.sh
- * github.com/openshift/origin/tools/genprotobuf/protobuf.go
- * github.com/openshift/origin/tools/genprotobuf/protoc-gen-gogo/main.go
- * types - genprotobuf - generated.proto - protoc-gen-gogo - generated.pb.go
- * github.com/openshift/origin/vendor/k8s.io/kubernetes/pkg/runtime/serializer/protobuf/protobuf.go serializer
-##### document generation
- * github.com/openshift/origin/hack/update-generated-swagger-descriptions.sh  types - swagger_doc.go
- * hack/update-generated-swagger-spec.sh  api/swagger-spec/openshift-openapi-spec.json and api/protobuf-spec publish
- * hack/update-generated-swagger-docs.sh swagger-spec - _output/local/docs/swagger/api/v1/md
-##### image scan
- * https://github.com/openshift/image-inspector
- * https://seven.centos.org/2016/11/introducing-centos-container-image-scanners/
-#### kubernete security context constaints scc
- * https://github.com/kubernetes/kubernetes/blob/master/docs/design/security_context.md
- * https://kubernetes.io/docs/concepts/policy/container-capabilities/#capabilities
- * 基于角色的安全 https://kubernetes.io/docs/concepts/policy/pod-security-policy/  https://github.com/kubernetes/kubernetes/blob/master/examples/podsecuritypolicy/rbac/README.md
- * https://blog.openshift.com/understanding-service-accounts-sccs/
- * https://docs.openshift.org/latest/admin_guide/manage_scc.html hostPath权限问题
- * http://man7.org/linux/man-pages/man2/mknod.2.html
- * http://man7.org/linux/man-pages/man2/chroot.2.html
- * http://man7.org/linux/man-pages/man2/setuid.2.html
- * http://man7.org/linux/man-pages/man2/setgid.2.html
- * http://kubernetes.io/docs/user-guide/pod-security-policy/
- * http://unix.stackexchange.com/questions/18198/gid-current-primary-supplementary-effective-and-real-group-ids
- * http://kubernetes.io/docs/user-guide/containers/  docker cap 和 linux cap的对应
- * http://man7.org/linux/man-pages/man7/capabilities.7.html     linux所有权限说明
- * http://man7.org/linux/man-pages/man1/capsh.1.html  查看权限命令
-#### selinux references
- * https://wiki.centos.org/HowTos/SELinux#head-563ca75234163cdfa0ef056f1f82d4d396526d2b troubleshooting
- * https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Security-Enhanced_Linux/sect-Security-Enhanced_Linux-SELinux_Contexts-SELinux_Contexts_for_Processes.html
- * https://wiki.centos.org/HowTos/SELinux
-```
-semanage login -l
-semanage user -l
-semanage port -l | grep http
-semanage fcontext -l | grep ssh
-Multi-Category Security (MCS) When an access vector is computed for a process that is associated with mcs_constrained_type, only the MCS compartments of the high level are compared. The second point is due to the fact that MLS is not in use.
-```
-#### apparmor
- * https://www.cyberciti.biz/tips/selinux-vs-apparmor-vs-grsecurity.html
- * https://wiki.ubuntu.com/AppArmor
- * https://help.ubuntu.com/14.04/serverguide/apparmor.html
- * https://wiki.ubuntu.com/DebuggingApparmor
- * http://wiki.apparmor.net/index.php/AppArmor_Core_Policy_Reference#Capability_rules
- * https://docs.docker.com/engine/security/apparmor/#understand-the-policies
- * https://kubernetes.io/docs/tutorials/clusters/apparmor/
- * http://www.insanitybit.com/2012/06/01/why-i-like-apparmor-more-than-selinux-5/
- * https://github.com/kubernetes/community/blob/master/contributors/design-proposals/apparmor.md
-
-```
-apt-get install apparmor-utils 安装aa-genprof
-apparmor_status
-cat /etc/apparmor.d/usr.sbin.libvirtd
-aa-complain /path/to/bin
-aa-enforce /path/to/bin
-docker run --rm -it --security-opt apparmor=docker-default hello-world
-cat /sys/module/apparmor/parameters/enabled
-```
-#### seccomp
- * seccomp (short for secure computing mode) is a computer security facility
- * https://github.com/docker/docker/blob/master/profiles/seccomp/default.json
- * https://docs.openshift.com/container-platform/3.3/admin_guide/seccomp.html
- * https://github.com/kubernetes/community/blob/master/contributors/design-proposals/seccomp.md
-#### SCC errors
-```
-Dec 24, 2016 7:55:13 AM org.apache.catalina.startup.Catalina load
-WARNING: Unable to load server configuration from [/usr/local/tomcat/conf/server.xml]
-Dec 24, 2016 7:55:13 AM org.apache.catalina.startup.Catalina load
-WARNING: Permissions incorrect, read permission is not allowed on the file.
-Dec 24, 2016 7:55:13 AM org.apache.catalina.startup.Catalina load
-WARNING: Unable to load server configuration from [/usr/local/tomcat/conf/server.xml]
-Dec 24, 2016 7:55:13 AM org.apache.catalina.startup.Catalina load
-WARNING: Permissions incorrect, read permission is not allowed on the file.
-Dec 24, 2016 7:55:13 AM org.apache.catalina.startup.Catalina start
-SEVERE: Cannot start server. Server instance is not configured.
-
-```
-To fix
-```
-oc adm policy add-scc-to-user anyuid system:serviceaccount:test-stress:default
-```
- localpollicy https://github.com/openshift/origin/pull/8428
-#### node-problem-detector
- * https://github.com/kubernetes/node-problem-detector
- * https://trello.com/c/d9HZmoaR/171-5-node-r-d-adoption-of-node-problem-detector openshift feature
-
-#### kubernetes compose
- * https://github.com/kubernetes-incubator/kompose
- * http://kompose.io/index
- * https://github.com/redhat-developer/opencompose
- * http://developers.redhat.com/blog/2016/11/03/container-orchestration-specification-for-better-devops/
-#### 下载kubectl
- * https://storage.googleapis.com/kubernetes-release/release/v1.3.0/bin/darwin/amd64/kubectl
-#### monokube
- * https://github.com/polvi/monokube 全部打包到一个二进制文件
-#### 下载容器
- * https://github.com/kubernetes/kubernetes/issues/6888
- * https://github.com/kubernetes/minikube
- * 更新容器镜像
-```
-  minikube start --extra-config=kubelet.PodInfraContainerImage=docker.io/kubernetes/pause
-```
-```
- kubectl set image deployment/kubedash kubedash=index.tenxcloud.com/google_containers/kubernetes-dashboard-amd64:v1.4.0
-```
-#### kubectl delete
-```
-# 强制删除pod, 当某些pod 卡死在TERMINATING状态时
-kubectl delete pod NAME --grace-period=0
-```
-#### kubectl exec
- * kubectl exec gogs-2717905640-v96iy -- bash -c '/bin/echo hello > /tmp/result.log'
- * 往容器里复制文件，https://github.com/kubernetes/kubernetes/issues/13776
-```
-mount -t glusterfs 192.168.1.133:/glustersample1 /mnt/glustersample1
-192.168.1.133:/glustersample1   32G   27G  5.7G  83% /mnt/glustersample1
-root@dev-xwang:~# gluster volume quota glustersample1 limit-usage / 32GB
- kubectl exec -i gogs-2717905640-v96iy -- bash -c '/bin/cat >/tmp/test.txt' < test.txt
- kubectl exec -i gogs-2717905640-v96iy -- bash -c '/bin/cat /tmp/test.txt'
-curl -k -v -XPOST  -H "Accept: application/json, */*" -H "Authorization: Bearer lhdBRBj5xeuhnLNKx3oXut1RBrWYdY2fCj7AM6eLzFI" -H "Content-Type: application/json" -H "User-Agent: qy/ (darwin/amd64) openshift/6600efc" --Data "{\"kind\":\"RoleBinding\",\"apiVersion\":\"v1\",\"metadata\":{\"name\":\"cluster1\",\"namespace\":\"roledev\",\"creationTimestamp\":null},\"userNames\":[\"xwang\"],\"groupNames\":null,\"subjects\":[{\"kind\":\"User\",\"name\":\"xwang\"}],\"roleRef\":{\"name\":\"cluster1\"}}" https://192.168.1.168:8443/oapi/v1/namespaces/roledev/rolebindings
-curl -k -v -XPOST  -H "Accept: application/json, */*" -H "Authorization: Bearer lhdBRBj5xeuhnLNKx3oXut1RBrWYdY2fCj7AM6eLzFI" -H "Content-Type: application/json" -H "User-Agent: qy/ (darwin/amd64) openshift/6600efc" --Data "{\"kind\":\"RoleBinding\",\"apiVersion\":\"v1\",\"metadata\":{\"name\":\"role2\",\"namespace\":\"roledev\",\"creationTimestamp\":null},\"userNames\":[\"xwang\"],\"groupNames\":null,\"subjects\":[{\"kind\":\"User\",\"name\":\"xwang\"}],\"roleRef\":{\"name\":\"role2\",\"namespace\":\"roledev\"}}" https://192.168.1.168:8443/oapi/v1/namespaces/roledev/rolebindings
-
-```
-#### 安装 kubernetes
- * http://blog.kubernetes.io/2016/09/how-we-made-kubernetes-easy-to-install.html
-
-#### platform9
- * https://platform9.com/managed-kubernetes/
- * https://platform9.com/managed-openstack/
- * https://platform9.com/fission/ https://github.com/fission/fission  serverless Functions
-
-#### kubernetes 编排 hypervisor 虚拟机
- * https://github.com/kubernetes/frakti
-#### kubernetes secret 使用
- * http://kubernetes.io/docs/user-guide/secrets/
- * https://github.com/kubernetes/kubernetes/blob/master/docs/design/secrets.md 设计 design
- * http://blog.ployst.com/development/2015/12/22/letsencrypt-on-kubernetes.html nginx proxy 做SSL认证
- * https://github.com/kubernetes/kubernetes/issues/10439#issuecomment-162792477 kubernetes secret and vault
- * https://news.ycombinator.com/item?id=10927043 讨论在微服务架构中如何保证秘密
- * https://github.com/kubernetes/kubernetes/issues/12742 有关安全存储 etcd的讨论
- * https://www.bountysource.com/issues/5578080-secret-distribution-in-docker-k8s  k8s 密钥分发的讨论
-#### vault secret management
- * https://github.com/hashicorp/vault
- * https://www.hashicorp.com/blog/vault.html
- * https://www.vaultproject.io/
- * https://github.com/upmc-enterprises/kubernetes-secret-manager  集成的代码
- * http://www.devoperandi.com/vault-in-kubernetes-take-2/ 在k8s中使用Vault
- * https://github.com/kubernetes/kubernetes/issues/10439 讨论集成 Vault的issue
- * https://www.digitalocean.com/company/blog/vault-and-kubernetes/ 通过Vault集成CA
-
-#### 扩展kubernetes API
- * https://github.com/kubernetes/kubernetes/blob/master/docs/design/extending-api.md
- * http://kubernetes.io/docs/user-guide/thirdpartyresources/
- * https://github.com/coreos/etcd-operator coreos operator
- * https://github.com/upmc-enterprises/elasticsearch-operator  https://github.com/sapcc/kubernetes-operators openstack operator
- * https://coreos.com/press/coreos-introduces-operators.html
- * https://coreos.com/blog/introducing-operators.html
- * https://groups.google.com/forum/#!topic/kubernetes-sig-network/7skwy2jXWWk
- * http://www.devoperandi.com/kubernetes-automation-with-stackstorm-and-thirdpartyresources/
- * https://storage.googleapis.com/kubernetes-release/release/v1.4.6/bin/darwin/amd64/kubectl 下载
- * https://coreos.com/blog/the-prometheus-operator.html https://github.com/coreos/prometheus-operator
- * https://coreos.com/blog/introducing-operators.html
-### kubernetes scheduler
- * http://kubernetes.io/docs/admin/kube-scheduler/
- * http://kubernetes.io/docs/admin/multiple-schedulers/  scheduler.alpha.kubernetes.io/name:
- * https://docs.openshift.org/latest/admin_guide/scheduler.html#use-cases openshift scheduler use cases
- * https://coreos.com/blog/improving-kubernetes-scheduler-performance.html performance
- * https://github.com/kubernetes/kubernetes/blob/master/docs/devel/scheduler.md scheduler 原理
- * https://github.com/kubernetes/kubernetes/blob/2f756e4ebc677c824d495bb5e10aa9d2234de686/plugin/pkg/scheduler/generic_scheduler.go scheduler 基础
- * https://github.com/kubernetes/kubernetes/blob/2f756e4ebc677c824d495bb5e10aa9d2234de686/plugin/cmd/kube-scheduler/app/server.go 创建scheduler 的地方
-### kubernetes performance k8s性能
- * https://github.com/openshift/svt
- * https://github.com/distributed-system-analysis/pbench
-### kubernetes 1.6
- * https://github.com/kubernetes/community/blob/master/contributors/design-proposals/taint-toleration-dedicated.md
- * https://github.com/kubernetes/kubernetes/issues/1574 forgiveness
- * https://github.com/kubernetes/features/issues/117
- * https://github.com/kubernetes/features/issues/118
-
-#### high availability
- * http://www.infoq.com/cn/news/2013/04/BOC-Downtime/
-#### hyper
- * https://github.com/hyperhq
- * https://github.com/kubernetes/frakti
- * https://thenewstack.io/hyper-sh-mixes-containers-hypervisors-something-called-hypernetes/
-#### microservice platform
- * http://wildfly.org/about/
- * http://deis.io/overview/
- * https://deis.com/docs/workflow/
- * http://www.csdn.net/article/2015-09-28/2825811
- * OpenResty http://hot66hot.iteye.com/blog/2155036
- * Hystrix
- * http://hot66hot.iteye.com/blog/2155036
- * http://www.infoq.com/cn/news/2013/01/netflix-hystrix-fault-tolerance
- * Motan
- * http://www.tuicool.com/articles/qEvENr
- * http://tech.comnews.cn/rjzx/2016-05-10/184948.html
- * amalgam8
- * https://www.amalgam8.io/
- * https://github.com/mfornos/awesome-microservices
- * http://www.devopsbookmarks.com/ci devopsbookmarks 持续集成技术列表
-#### design pattern
- * https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/README.md#behavioral-design-patterns
- *
-#####
- * http://houzhe11.iteye.com/blog/494296 　ActiveRecord TableGateway Table Module
-#### microservices service discovery and registry 服务发现
- * http://blog.christianposta.com/microservices/netflix-oss-or-kubernetes-how-about-both/ AP or CP 的问题讨论，用DNS,基于kubernetes的服务发现
- * http://blog.christianposta.com/microservices/microservices-2-0/ https://github.com/lyft/envoy/ microservice proxy sidecar https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/
- * https://github.com/BuoyantIO/linkerd
- * https://linkerd.io/overview/how-to-use-it/  服务发现的中间件 支持熔断
- * http://callistaenterprise.se/blogg/teknik/2016/05/27/building-a-microservice-with-golang/  golang connect to spring cloud
- * https://martin.kleppmann.com/2015/05/11/please-stop-calling-databases-cp-or-ap.html
- * https://tech.knewton.com/blog/2014/12/eureka-shouldnt-use-zookeeper-service-discovery/
-#### martin fowler microservices
- * http://martinfowler.com/articles/microservices.html
- * http://martinfowler.com/bliki/MicroservicePrerequisites.html
- * http://martinfowler.com/articles/microservice-trade-offs.html
- * http://www.rgoarchitects.com/Files/fallacies.pdf
-#### martin fowler cloud native application
- * http://martinfowler.com/bliki/CloudComputing.html
- * Basics of web application security http://martinfowler.com/articles/web-security-basics.html
- * https://www.infoq.com/articles/transitioning-cloud-native
-#### redhat microservice platform
- * https://dzone.com/users/436713/christian.posta.html
- * http://blog.christianposta.com/posts/
- * http://developers.redhat.com/ticket-monster/
- * http://blog.christianposta.com/microservices/the-real-success-story-of-microservices-architectures/
- * http://blog.christianposta.com/microservices/netflix-oss-or-kubernetes-how-about-both/
-#### microservice pattern
- * https://www.voxxed.com/blog/2015/04/coupling-versus-autonomy-in-microservices/
- * publish-subscribe to turn MxN dependencis to M+N dependencies
- * https://www.voxxed.com/blog/2015/04/microservice-design-patterns/
-#### reliability patttern microservice design patterns
-http://www.javaworld.com/article/2824163/application-performance/stability-patterns-applied-in-a-restful-architecture.html?page=3
-http://assets.en.oreilly.com/1/event/79/Stability%20Patterns%20Presentation.pdf
-#### spring cloud
-http://stackoverflow.com/questions/30701673/how-to-use-spring-cloud-from-nodejs
-http://stackoverflow.com/questions/33007887/how-to-register-node-app-with-spring-cloud-and-netflixs-eureka
-https://spring.io/guides/gs/spring-cloud-and-lattice/
-http://lattice.cf/
-#### spring boot
- * develop with spring boot and kubernetes http://blog.christianposta.com/microservices/spring-boot-microservice-development-on-kubernetes-the-easy-way/
-#### micro service example
-
- * https://github.com/kbastani/spring-cloud-microservice-example 电影推荐应用
- * https://github.com/kbastani/spring-cloud-event-sourcing-example 电子商城应用
- * https://github.com/kbastani/spring-cloud-polyglot-persistence-example 电影推荐应用
-   - https://hub.docker.com/u/dockerniu/    电影推荐应用镜像
-   - https://hub.docker.com/u/docker4tracy/     电影推荐应用镜像
-   - http://www.kennybastani.com/
- * https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615
- * https://github.com/kelseyhightower/kubernetes-redis-cluster
- * https://www.udacity.com/account/auth#!/signin?next=https%3A%2F%2Fclassroom.udacity.com%2Fcourses%2Fud615&enroll=ud615
- *
- * https://github.com/zutherb/AppStash/tree/master/kubernetes
-   https://github.com/eventuate-local/eventuate-local/blob/master/eventuate-local-java-embedded-cdc/src/main/java/io/eventuate/local/cdc/debezium/EventTableChangesToAggregateTopicRelay.java event source platform eventuate
- * http://eventuate.io/exampleapps.html  案例程序
- * willb/notebook                              tutorial  hub.qingyuanos.com/game/notebook            tutorial spark tutorial
-
-#### 有趣应用
- * https://hub.docker.com/r/daehyeok/freecodecamp/
- * https://hub.docker.com/r/xblaster/tensor-guess/ 分类程序
- * https://hub.docker.com/r/moviemasher/angular-moviemasher/ 电影编辑网页
- * https://hub.docker.com/r/dubuqingfeng/docker-web-game    红白机程序
- * https://hub.docker.com/r/ardilgulez/html5game    多人小游戏
- * https://hub.docker.com/r/benb88/game_of_life     生命游戏
- * http://www.conwaylife.com/wiki/Main_Page  congway game_of_life know how
- * https://hub.docker.com/r/agoodno/match-game/     closure web page
- * https://github.com/alexey-ernest/auction-game  拍卖游戏
- * https://github.com/odoo/odoo     ERP系统   http://www.greenodoo.com/
- * https://github.com/buke/GreenOdoo        http://demo7.greenodoo.com/     http://git.oschina.net/wangbuke/GreenOdoo
- * https://github.com/maxexcloo/Docker  docker应用    http://www.silvergames.com/t/minecraft  minecraft games
 
 ### 智力游戏 intelligent games
 #### 魔方
