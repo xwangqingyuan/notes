@@ -5,6 +5,9 @@
  * http://stackexchange.com/
  * https://www.reddit.com/
  * https://www.zhihu.com/question/21497720
+ * https://getawesomeness.herokuapp.com/get/ml
+ * https://github.com/mfornos/awesome-microservices
+ * https://github.com/ramitsurana/awesome-kubernetes#operators
 ## research site
 ### gartner
 ### forrester
@@ -1752,6 +1755,9 @@ psql -U username -c '\d'
 #### 图数据库设计模式
  * 如何决定一个对象是实体还是关系：原则1:两个实体之间同一类关系只能发生一次，所以只有有没有关系，没有多次关系纪录。关系不会单独持久化，只会在实体中持久化。被动关系不需要在非聚合根实体中持久化，而只需要在聚合根持久化主动方聚合根和统计结果。
 
+### TSDB
+ * http://akumuli.org/akumuli/2017/04/29/nbplustree/ Storage engine design
+ * https://en.wikipedia.org/wiki/Log-structured_merge-tree LSM key value store
 # desktop skills 桌面操作技巧
 ## mac osx ios
 ### 行首，行尾，上下翻页 fn+left fn+right fn+up fn+down
@@ -2033,6 +2039,23 @@ git revert 58ae107304e8323d22e3c484140a04d3a4bd2ec6
  * http://www.csoonline.com/article/3020459/security/antivirus-software-could-make-your-company-more-vulnerable.html
  * https://www.technologyreview.com/s/428166/the-antivirus-era-is-over/
  * http://baike.baidu.com/link?url=CxrMQEJ0ZrWIMq56NAzIGur5FCF98t6RL2_5f-GEQob00nP0bQ3oxl4B8zG1BI6ec6FhgQlfaDEn8uD-0vH1YYz06P3UU2t8pnPcR30NgwEJBupxxIdRnqLsO2ppxhP9 http://tech.qq.com/a/20120529/000213.htm 火焰病毒
+## Palo Alto Networks
+ * http://blog.sina.com.cn/s/blog_9aa5318e0101b912.html
+### SP3（Single-Pass Parallel Processing）的单程并行处理技术
+#### DPI（深度包检测）
+ * http://wiki.dzsc.com/info/8656.html
+ * https://github.com/ntop/nDPI
+ * https://github.com/thomasbhatia/OpenDPI
+##### SALT工具（Satisfiability Application Logic Translator）将每个特征码表达式转化为CNF（Simplified Conjunctive Normal Form）
+ * Boolean Satisfiability Problem (sometimes called Propositional Satisfiability Problem and abbreviated as SATISFIABILITY or SAT)
+ * https://en.wikipedia.org/wiki/Binary_decision_diagram
+#### Binary Decision Diagrams
+ * https://en.wikipedia.org/wiki/Binary_decision_diagram compressed representation of sets or relations
+ * http://www.cnblogs.com/2010Freeze/articles/2221382.html
+ * BDDs are extensively used in CAD software to synthesize circuits (logic synthesis) and in formal verification. There are several lesser known applications of BDD, including fault tree analysis, Bayesian reasoning, product configuration, and private information retrieval
+#### 每个BDD就相当与一个DFA（deterministic finite automaton）实现 确定有限状态自动机
+ * deterministic finite automaton (DFA)—also known as a deterministic finite acceptor (DFA) and a deterministic finite state machine (DFSM)
+ *
 ## cloud-security
 ## 安全名词
 ### cc攻击
@@ -2139,243 +2162,8 @@ https://github.com/lducas/FHEW
 社交
 LBS
 应用内搜索
-# programming coding 编程
 
 
-## algorithm 算法
-
-### generic interface
-#### file
-file is the generic interface of binary data access
-#### http
-http is the generic interface internet resources
-#### command line interface
-command line is the generic interface of intention
-#### sql
-sql is the generic interface to access relational data
-####
-semantic and syntactic 语义的和语法的
-semanctics 语义 syntax 语法 mechanism 机制
-intentional programming 意图式编程
-declarative programming  声明 imperative programming 命令式biancheng
-Referential transparency 参照透明 deterministic 确定性的 rewriting systems (also known as rewrite systems, rewrite engines 重写系统
-### graph 图
-#### 图同构问题 GI complete problem
- * https://en.wikipedia.org/wiki/Graph_isomorphism_problem
- * 五角星和五边形
- * subgraph isomorphism problem,[3] which is known to be NP-complete
- * Subgraph isomorphism is a generalization of both the maximum clique problem and the problem of testing whether a graph contains a Hamiltonian cycle, and is therefore NP-complete.[1] However certain other cases of subgraph isomorphism may be solved in polynomial time
-### dsl
- * https://anydsl.github.io/index.html  https://en.wikipedia.org/wiki/Continuation_passing_style
-## programming teaching
-### scratch 教小孩编程
- * https://scratch.mit.edu/
-### Quine8 Q8 计算机底层演示
-## trend
- * https://github.com/showcases/programming-languages
-
-## c/c++
-### online book
- * https://www.ossblog.org/master-c-programming-with-open-source-books/
- * https://devfreebooks.github.io/ free book
- * https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md
-### c++ 17
- * http://www.levelofindirection.com/journal/2016/12/28/c17-why-its-better-than-you-might-think.html
-## coding styles
-Shell style=
-https://google.github.io/styleguide/shell.xml  
-Python style=  
-https://google.github.io/styleguide/pyguide.html  
-https://www.python.org/dev/peps/pep-0008/  
-https://wiki.openstack.org/wiki/Python3  
-Python reference  
-https://docs.python.org/2/library/copy.html  
-go style=  
-https://golang.org/doc/effective_go.html  
-https://github.com/golang/go/wiki/CodeReviewComments  
-Java style=  
-https://google.github.io/styleguide/javaguide.html  
-http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.html  
-
-## coding programming online test
- * http://www.pskills.org/cinterview.jsp
-
-## data generator 数据生成  
- * https://pypi.python.org/pypi/fake-factory
- * http://www.json-generator.com/
- * https://www.mockaroo.com/
- * http://www.generatedata.com/
- * http://c2.com/cgi/wiki?TestDataGenerator
-### json在线处理工具
- *
-
-## line  of code 代码统计
- * https://github.com/AlDanial/cloc
- * https://github.com/hotei/sloc
-## nodejs
-### web command line interface cli
- * https://www.sitepoint.com/javascript-command-line-interface-cli-node-js/
-## Python
-### 学习
- * http://www.jb51.net/article/33991.htm
- * http://docs.python.org/tutorial/index.html
- * http://www.pythonchallenge.com/
-### list comprehesions 列表解析和生成器表达式
- * http://www.jb51.net/article/26520.htm
-### developing tool WebStorm
- * http://idea.lanyus.com/
-### numpy
- * http://www.labri.fr/perso/nrougier/from-python-to-numpy/#id53
- * http://old.sebug.net/paper/books/scipydoc/numpy_intro.html
-### lambdascript
- * https://github.com/baruchel/lambdascript
-
-#### angularjs
- * https://github.com/toddmotto/angular-1-5-components-app
- * https://github.com/toddmotto/angular-styleguide
- * https://docs.angularjs.org/api/ng/directive/ngStyle 1.5
- * https://angular.io/docs/ts/latest/
- * http://blog.angular-university.io/introduction-to-angular2-the-main-goals/
- * https://angular.io/docs/ts/latest/guide/architecture.html angularjs 2 architecture
- * https://github.com/angular/quickstart angularjs sample 例子程序
- * http://www.typescriptlang.org/  typescript脚本语言 http://www.tslang.cn/
- * http://www.zhihu.com/question/21879449?sort=created
- * https://dzone.com/articles/typed-front-end-with-angular-2
- * https://www.airpair.com/js/javascript-framework-comparison 趋势比较 emberjs liangsheng演讲 https://medium.freecodecamp.com/angular-2-versus-react-there-will-be-blood-66595faafd51#.5xor5uejs
- * http://blog.backand.com/angular-2-vs-react/  有 angularjs 2 和 reactjs 例子
- * https://github.com/angular/angular
- * http://blog.yodersolutions.com/why-i-recommend-emberjs-over-angularjs/
- * https://www.quora.com/Is-Angular-js-or-Ember-js-the-better-choice-for-JavaScript-frameworks
- * http://singlepageappbook.com/goal.html 单页应用
- * https://en.wikipedia.org/wiki/Single-page_application
- * http://noeticforce.com/best-Javascript-frameworks-for-single-page-modern-web-applications
- * http://angularjs-emberjs-compare.bguiz.com/
-#### angular 2 examples
- * https://github.com/mgechev/switching-to-angular2
- * https://github.com/mgechev/angular-seed#examples
- * https://tests4geeks.com/angular-2-tutorial/
- * https://github.com/thelgevold/angular-2-samples
- * https://github.com/angular/angular-cli  how to install angular 2
- * http://www.protractortest.org/#/ end-to-end testing for angular
-#### angular 2 end 2 end testing
- * http://www.gistia.com/guide-end-end-testing-angular-2/
- * https://blog.jscrambler.com/getting-started-with-angular-2-end-to-end-testing/
- * https://github.com/alexpods/angular2-universal-starter
- * https://dzone.com/articles/getting-started-with-angular-2-end-to-end-testing
-#### Web GUI recorder
- * https://github.com/tebelorg/TA.Gui
-### pip 安装
-安装不了可以将python2.7目录允许访问。安装openstackclient后可以访问openstack服务
-
-## Go golang
-### go is not good
- * https://github.com/ksimka/go-is-not-good
-### 学习
- * learn by example https://gobyexample.com/
- * https://tour.golang.org/basics/1
-### go frameworks packages library
- * http://libs.club/golang/
- * http://gorevel.cn/docs/index.html
- * https://github.com/gorilla/handlers
- * http://goa.design/design/
-### goadesign
- * https://blog.gopheracademy.com/advent-2015/goaUntanglingMicroservices/
- * https://www.infoq.com/news/2015/12/goa-microservice-framework
-#### error handling
- * https://davidnix.io/post/error-handling-in-go/
- * https://blog.golang.org/errors-are-values
-### go string literals string template 字符串
- * https://golang.org/ref/spec#String_literals
-
-### golang download 下载
- * https://golang.org/dl/
- * https://storage.googleapis.com/golang/go1.7.3.linux-amd64.tar.gz
- * https://storage.googleapis.com/golang/go1.7.3.darwin-amd64.pkg
-
-### golang idea 安装
- * https://github.com/go-lang-plugin-org/go-lang-idea-plugin
- * https://www.jetbrains.com/help/idea/2016.2/managing-enterprise-plugin-repositories.html
-
-### go pipeline
- * https://whiskybadger.io/post/introducing-go-pipeline/
-
-## coding problems
-### Python problems
- * http://www.toptal.com/python/interview-questions
- * https://segmentfault.com/a/1190000000618513
-
-## programming paradigms 编程范式
-
-https://en.wikipedia.org/wiki/Comparison_of_programming_paradigms
-结构化编程
-Structured programming
-过程化编程; 过程式编程
-Procedural programming
-Procedural programming languages are also imperative languages, because they make explicit references to the state of the execution environment.
-In logic programming, a program is a set of premises, and computation is performed by attempting to prove candidate theorems. From this point of view, logic programs are declarative, focusing on what the problem is, rather than on how to solve it.
-Functional
-函数式编程
-命令式编程
-Imperative
-Event-driven including time driven 事件驱动式编程
-Object-oriented
-面向对象编程
-Declarative
-声明式编程
-logic paradigm
-逻辑式编程
-## haskell functional programming
- * http://blog.csdn.net/on_1y/article/details/8572673#sec-1
- * https://en.wikipedia.org/wiki/Monad_%28functional_programming%29
- * http://stackoverflow.com/questions/18808258/what-does-the-just-syntax-mean-in-haskell
- * http://www.staff.city.ac.uk/~ross/papers/FingerTree.html functional tree
-## java
-### maven
- * docker 安装 https://github.com/carlossg/docker-maven/blob/8ab542b907e69c5269942bcc0915d8dffcc7e9fa/jdk-8/Dockerfile
-
-## html 网页
-## CSS
-  * http://www.114la.com/other/rgb.htm
-  * http://tool.ganchang.cn/getcolortool.html
-
-## rust language
-### rust playground
- * https://play.rust-lang.org/
- * https://github.com/rust-lang/rust
- * https://github.com/rust-lang/cargo/
- * https://www.rust-lang.org/en-US/install.html
-### rust by example
- * http://rustbyexample.com/
- * https://github.com/rust-lang/rust-by-example
- * https://github.com/PumpkinDB/PumpkinDB
-
-## testing
- * https://github.com/mozilla/moztrap/  https://moztrap.mozilla.org/results/runs/?
- * https://github.com/lemonlatte/docker-moztrap https://hub.docker.com/r/lemonlatte/docker-moztrap/
- * https://github.com/Nitrate/Nitrate
- * https://github.com/prove/tarantula
- * https://github.com/TestLinkOpenSourceTRMS/testlink-code
-
-# high performance computing HPC 高性能计算
- * http://www.admin-magazine.com/HPC/Articles/Singularity-A-Container-for-HPC 整体介绍
-## shifter
- * https://www.nersc.gov/research-and-development/user-defined-images/ 通过将操作从共享存储移到节点提高性能
- * https://github.com/NERSC/shifter code
- * https://github.com/singularityware/singularity
- * http://www.nextplatform.com/2016/09/13/will-containers-total-package-hpc/ 科学计算 NAS要求高
- * http://singularity.lbl.gov/faq#how-does-singularity-relatediffer-from-shifter 可导入docker镜像
- * http://thenewstack.io/univa-augments-kubernetes-supercomputer-scheduling-technology/
- * http://www.navops.io/command.html  navops commands for kubernetes
-## Ubercloud
- * https://www.theubercloud.com/experiments/
-## MPI https://www.open-mpi.org/ 当前开源HPC
- * https://en.wikipedia.org/wiki/Open_MPI
- * https://github.com/open-mpi
-
-### testing
-#### java maen
- * https://github.com/ligado/hello-world-servlet/tree/master/src/main/docker
- *
 # linux
 
 ## /etc/apt/sources.list
@@ -2460,6 +2248,10 @@ sed -i 's/pcImg\.push/\/\/pcImg\.push/' /tmp/repo/flow.groovy
 sed -i 's/\/\/pcImg\.push/pcImg\.push/' /tmp/repo/flow.groovy
 删除文件行，插入文件行
 ```
+## shared memory
+ * http://rubenlaguna.com/wp/2015/02/22/posix-slash-system-v-shared-memory-vs-threads-shared-memory/
+ * http://stackoverflow.com/questions/4582968/system-v-ipc-vs-posix-ipc
+ * http://www.hildstrom.com/projects/ipc_sysv_posix/index.html
 ## systemd
  * http://www.linuxidc.com/Linux/2014-11/110023.htm
  * https://blog.linuxeye.com/400.html
@@ -2571,6 +2363,11 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
  * http://serverfault.com/questions/660035/redhat-iptables-forwarding-to-virtualbox-windows-server-20120-vm-for-rdp
  * http://www.systutorials.com/816/port-forwarding-using-iptables/
 
+## TCP
+### TCP BBR
+ * https://www.zhihu.com/question/53559433 TCP BBR intro
+ * https://github.com/google/bbr/blob/master/Documentation/bbr-quick-start.md
+ * http://blog.cerowrt.org/post/bbrs_basic_beauty/
 # questions and answers debug
 #### go 无法访问目录
  * golang.org/x/tools/cmd/stringer: unrecognized import path "golang.org/x/tools/cmd/stringer
@@ -2625,8 +2422,12 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
  * http://www.cliqr.com/company/news-events/cliqr-cloudcenter-application-defined-cloud-management-platform-sets-new-industry-standard-in-opening-the-cloud-for-business/
  * http://www.mamicode.com/info-detail-1424183.html
  * https://www.infoq.com/news/2016/02/microservice-deploys-spinnaker
-# sales 销售
-## 客户沟通技巧
+# 心理学  psycology
+## 思考
+ * http://www.newyorker.com/tech/elements/walking-helps-us-think
+ * https://blogs.scientificamerican.com/guest-blog/programming-as-a-way-of-thinking/
+## sales 销售
+### 客户沟通技巧
  * http://zhidao.baidu.com/link?url=J7QM6hwwlOKnnuBkGvW4_AZcA_A8CORk48nFkEcbqcMhgyteUOCj3k-u5HJWi6M19shXwB4tzef40MJkrWgCWa
  * http://zhidao.baidu.com/link?url=gjeUkULSWuwnuQPO_qa2SsJzz9_55B65lHvrq5WwuYgnu7MWAqesxtg3uJ6GvWmGzORS6v0bhln3vAMtbtO7_5ng83pd2tKDt20WEZLdWdS
 
@@ -2675,6 +2476,7 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
 # quantum computer 量子计算机
  * http://www.nature.com/news/google-moves-closer-to-a-universal-quantum-computer-1.20032
  * braid 辫子
+
 # science physics 科学 物理学
 ## Amplituhedron 宝石几何学
  * http://www.360doc.com/content/15/1030/22/152409_509555054.shtml
@@ -2687,8 +2489,14 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
  * transfinite 超穷基数
 ### Mathematics for Computer Science
  * https://courses.csail.mit.edu/6.042/spring17/mcs.pdf Mathematics for Computer Science
+### 数学论文
+ * http://web.stonehill.edu/compsci/History_Math/math-read.htm
 ## 物理学快报
  * http://phys.org/journals/physical-review-letters/
+## 热力学geming
+ * https://www.quantamagazine.org/quantum-thermodynamics-revolution/?platform=hootsuite
+ * http://mt.sohu.com/20170401/n486027891.shtml
+ * http://www.edu.cn/rd/kexuetansuo/zui_xin_dong_tai/wu_li_yan_jiu/201512/t20151203_1344661.shtml 热力学过程在量子尺度不可逆被首次证实
 ## 未解之谜
  * http://nautil.us/blog/7-major-experiments-that-still-havent-found-what-theyre-looking-for
 

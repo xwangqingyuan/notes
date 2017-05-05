@@ -220,6 +220,12 @@ curl -k -v -XPOST  -H "Accept: application/json, */*" -H "Authorization: Bearer 
  * https://platform9.com/managed-openstack/
  * https://platform9.com/fission/ https://github.com/fission/fission  serverless Functions
 
+#### kubernetes network
+ * https://www.slideshare.net/CJCullen/kubernetes-networking-55835829
+ * http://dockone.io/article/1935 calico vs contiv
+ * http://www.opencontrail.org/opencontrail-architecture-documentation/#section1 opencontrail
+ * http://feisky.xyz/sdn/container/kubernetes.html ovn  Romana LVS DPDK ...
+ * http://www.nirmata.com/2016/05/networking-microservices-with-cisco-contiv-and-nirmata/ service isolation
 #### kubernetes 编排 hypervisor 虚拟机
  * https://github.com/kubernetes/frakti
 #### kubernetes secret 使用
@@ -306,7 +312,21 @@ curl -k -v -XPOST  -H "Accept: application/json, */*" -H "Authorization: Bearer 
  * https://github.com/kubernetes/kubernetes/issues/1574 forgiveness
  * https://github.com/kubernetes/features/issues/117
  * https://github.com/kubernetes/features/issues/118
-
+### Xeon Phi intel mic
+ * https://software.intel.com/en-us/forums/intel-many-integrated-core/topic/597934  Running Xeon Phi using dockers
+ * https://github.com/intel/caffe Intel Xeon Phi processor  docker
+ * http://www.univa.com/about/news/press_2016/06202016.php  Xeon Phi Docker containers
+ * https://en.wikipedia.org/wiki/Xeon_Phi  http://www.devoperandi.com/kubernetes-not-just-cpu-and-ram-opaque-integer-resources/
+#### HPC docker
+ * http://insidehpc.com/tag/docker/ workflow for building and testing Docker containers and their deployment on an HPC system using Shifter
+ * http://insidehpc.com/2017/02/video-singularity-containers-science-reproducibility-hpc/
+### pachyderm (大家伙) dockerized data platform
+ * https://github.com/pachyderm
+ * https://github.com/kalugny/pypachy
+ * https://thenewstack.io/pachyderm-aims-displace-hadoop-container-based-collaborative-data-analysis-platform/
+### kubernetes operations
+#### Bring it Together
+ * https://sematext.com/spm/
 #### high availability
  * http://www.infoq.com/cn/news/2013/04/BOC-Downtime/
 #### hyper
@@ -653,9 +673,9 @@ ls -aef
  * http://containerjournal.com/2016/03/23/serverless-applications-future-microservices/
 ##### FaaS framework
  * https://news.ycombinator.com/item?id=13522541 比较  swarm FaaS https://github.com/alexellis/funker-dispatch/
- * https://github.com/funktionio/funktion
- * https://github.com/fission/fission  k8s FaaS platform9
- * https://github.com/openwhisk/openwhisk
+ * https://github.com/funktionio/funktion https://funktion.fabric8.io/docs/#how-it-works  https://github.com/funktionio/funktion/blob/master/pkg/funktion/operator.go
+ * https://github.com/fission/fission  k8s FaaS platform9 https://github.com/fission/fission/blob/master/Documentation/Architecture.md
+ * https://github.com/openwhisk/openwhisk  https://github.com/openwhisk/openwhisk/blob/master/docs/reference.md Synchronous and asynchronous behavior blocking or non-blocking.
  * https://github.com/stackvana/microcule  100+ Working Service Examples https://github.com/stackvana/microcule-examples
  * https://github.com/Azure/Azure-Functions https://github.com/Azure/azure-webjobs-sdk-script/
  * https://github.com/serverless/examples serverless examples https://blog.fugue.co/2016-05-05-architecting-a-serverless-web-application-in-aws.html
@@ -686,8 +706,277 @@ Real world example:
  * https://github.com/larsks/dockerize A tool for creating minimal docker images from dynamic ELF binaries
  *
 
+# programming coding 编程
+## algorithm 算法
+
+### generic interface
+#### file
+file is the generic interface of binary data access
+#### http
+http is the generic interface internet resources
+#### command line interface
+command line is the generic interface of intention
+#### sql
+sql is the generic interface to access relational data
+####
+semantic and syntactic 语义的和语法的
+semanctics 语义 syntax 语法 mechanism 机制
+intentional programming 意图式编程
+declarative programming  声明 imperative programming 命令式biancheng
+Referential transparency 参照透明 deterministic 确定性的 rewriting systems (also known as rewrite systems, rewrite engines 重写系统
+### graph 图
+#### 图同构问题 GI complete problem
+ * https://en.wikipedia.org/wiki/Graph_isomorphism_problem
+ * 五角星和五边形
+ * subgraph isomorphism problem,[3] which is known to be NP-complete
+ * Subgraph isomorphism is a generalization of both the maximum clique problem and the problem of testing whether a graph contains a Hamiltonian cycle, and is therefore NP-complete.[1] However certain other cases of subgraph isomorphism may be solved in polynomial time
+### dsl
+ * https://anydsl.github.io/index.html
+### CPS 继续传递形式
+ * https://en.wikipedia.org/wiki/Continuation_passing_style
+ * https://en.wikipedia.org/wiki/Continuation Programming language support
+ * http://pypy.readthedocs.io/en/latest/stackless.html
+ * https://blogs.msdn.microsoft.com/ericlippert/2005/08/08/recursion-part-four-continuation-passing-style/
 #### continuation
  * http://community.schemewiki.org/?call-with-current-continuation
  * http://blog.sina.com.cn/s/blog_698213630101bj0q.html
  * http://blog.sina.com.cn/s/blog_4dff871201018wtz.html
  * https://en.wikipedia.org/wiki/Continuation
+### Coroutine 协程
+ * https://en.wikipedia.org/wiki/Coroutine#Implementations_for_Python
+### Generator 生成器
+ * https://en.wikipedia.org/wiki/Generator_(computer_programming)
+### 生成器 Generators also known as semicoroutines,半xiecheng
+### Simulated annealing 模拟退火算法
+ * https://en.wikipedia.org/wiki/Simulated_annealing For problems where finding an approximate global optimum is more important than finding a precise local optimum in a fixed amount of time, simulated annealing may be preferable to alternatives such as gradient descent.
+ * http://blog.csdn.net/xianlingmao/article/details/7798647 模拟退火算法
+ * https://www.autodeskresearch.com/publications/samestats 图形转换
+## programming teaching
+### scratch 教小孩编程
+ * https://scratch.mit.edu/
+### Quine8 Q8 计算机底层演示
+## trend
+ * https://github.com/showcases/programming-languages
+
+## c/c++
+### online book
+ * https://www.ossblog.org/master-c-programming-with-open-source-books/
+ * https://devfreebooks.github.io/ free book
+ * https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md
+### c++ 17
+ * http://www.levelofindirection.com/journal/2016/12/28/c17-why-its-better-than-you-might-think.html
+## coding styles
+Shell style=
+https://google.github.io/styleguide/shell.xml
+Python style=
+https://google.github.io/styleguide/pyguide.html
+https://www.python.org/dev/peps/pep-0008/
+https://wiki.openstack.org/wiki/Python3
+Python reference
+https://docs.python.org/2/library/copy.html
+go style=
+https://golang.org/doc/effective_go.html
+https://github.com/golang/go/wiki/CodeReviewComments
+Java style=
+https://google.github.io/styleguide/javaguide.html
+http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.html
+
+## coding programming online test
+ * http://www.pskills.org/cinterview.jsp
+
+## data generator 数据生成
+ * https://pypi.python.org/pypi/fake-factory
+ * http://www.json-generator.com/
+ * https://www.mockaroo.com/
+ * http://www.generatedata.com/
+ * http://c2.com/cgi/wiki?TestDataGenerator
+### json在线处理工具
+ *
+
+## line  of code 代码统计
+ * https://github.com/AlDanial/cloc
+ * https://github.com/hotei/sloc
+## nodejs
+### web command line interface cli
+ * https://www.sitepoint.com/javascript-command-line-interface-cli-node-js/
+## Python
+### 学习
+ * http://www.jb51.net/article/33991.htm
+ * http://docs.python.org/tutorial/index.html
+ * http://www.pythonchallenge.com/
+### list comprehesions 列表解析和生成器表达式
+ * http://www.jb51.net/article/26520.htm
+### developing tool WebStorm
+ * http://idea.lanyus.com/
+### numpy
+ * http://www.labri.fr/perso/nrougier/from-python-to-numpy/#id53
+ * http://old.sebug.net/paper/books/scipydoc/numpy_intro.html
+### lambdascript
+ * https://github.com/baruchel/lambdascript
+### pypy
+#### Application-level Stackless features
+ * http://pypy.readthedocs.io/en/latest/stackless.html
+
+#### angularjs
+ * https://github.com/toddmotto/angular-1-5-components-app
+ * https://github.com/toddmotto/angular-styleguide
+ * https://docs.angularjs.org/api/ng/directive/ngStyle 1.5
+ * https://angular.io/docs/ts/latest/
+ * http://blog.angular-university.io/introduction-to-angular2-the-main-goals/
+ * https://angular.io/docs/ts/latest/guide/architecture.html angularjs 2 architecture
+ * https://github.com/angular/quickstart angularjs sample 例子程序
+ * http://www.typescriptlang.org/  typescript脚本语言 http://www.tslang.cn/
+ * http://www.zhihu.com/question/21879449?sort=created
+ * https://dzone.com/articles/typed-front-end-with-angular-2
+ * https://www.airpair.com/js/javascript-framework-comparison 趋势比较 emberjs liangsheng演讲 https://medium.freecodecamp.com/angular-2-versus-react-there-will-be-blood-66595faafd51#.5xor5uejs
+ * http://blog.backand.com/angular-2-vs-react/  有 angularjs 2 和 reactjs 例子
+ * https://github.com/angular/angular
+ * http://blog.yodersolutions.com/why-i-recommend-emberjs-over-angularjs/
+ * https://www.quora.com/Is-Angular-js-or-Ember-js-the-better-choice-for-JavaScript-frameworks
+ * http://singlepageappbook.com/goal.html 单页应用
+ * https://en.wikipedia.org/wiki/Single-page_application
+ * http://noeticforce.com/best-Javascript-frameworks-for-single-page-modern-web-applications
+ * http://angularjs-emberjs-compare.bguiz.com/
+#### angular 2 examples
+ * https://github.com/mgechev/switching-to-angular2
+ * https://github.com/mgechev/angular-seed#examples
+ * https://tests4geeks.com/angular-2-tutorial/
+ * https://github.com/thelgevold/angular-2-samples
+ * https://github.com/angular/angular-cli  how to install angular 2
+ * http://www.protractortest.org/#/ end-to-end testing for angular
+#### angular 2 end 2 end testing
+ * http://www.gistia.com/guide-end-end-testing-angular-2/
+ * https://blog.jscrambler.com/getting-started-with-angular-2-end-to-end-testing/
+ * https://github.com/alexpods/angular2-universal-starter
+ * https://dzone.com/articles/getting-started-with-angular-2-end-to-end-testing
+#### Web GUI recorder
+ * https://github.com/tebelorg/TA.Gui
+### pip 安装
+安装不了可以将python2.7目录允许访问。安装openstackclient后可以访问openstack服务
+
+## Go golang
+### go is not good
+ * https://github.com/ksimka/go-is-not-good
+ * http://www.yinwang.org/blog-cn/2014/04/18/golang
+### 学习
+ * learn by example https://gobyexample.com/
+ * https://tour.golang.org/basics/1
+### go frameworks packages library
+ * http://libs.club/golang/
+ * http://gorevel.cn/docs/index.html
+ * https://github.com/gorilla/handlers
+ * http://goa.design/design/
+### goadesign
+ * https://blog.gopheracademy.com/advent-2015/goaUntanglingMicroservices/
+ * https://www.infoq.com/news/2015/12/goa-microservice-framework
+#### error handling
+ * https://davidnix.io/post/error-handling-in-go/
+ * https://blog.golang.org/errors-are-values
+### go string literals string template 字符串
+ * https://golang.org/ref/spec#String_literals
+### go with dll
+ * http://stackoverflow.com/questions/19431296/building-and-linking-dynamically-from-a-go-binary
+ * https://golang.org/cmd/cgo/#hdr-C_references_to_Go
+#### problem
+```
+一定要import "C"
+//export
+
+```
+
+### golang download 下载
+ * https://golang.org/dl/
+ * https://storage.googleapis.com/golang/go1.7.3.linux-amd64.tar.gz
+ * https://storage.googleapis.com/golang/go1.7.3.darwin-amd64.pkg
+
+### golang idea 安装
+ * https://github.com/go-lang-plugin-org/go-lang-idea-plugin
+ * https://www.jetbrains.com/help/idea/2016.2/managing-enterprise-plugin-repositories.html
+
+### go pipeline
+ * https://whiskybadger.io/post/introducing-go-pipeline/
+
+## coding problems
+### Python problems
+ * http://www.toptal.com/python/interview-questions
+ * https://segmentfault.com/a/1190000000618513
+
+## programming paradigms 编程范式
+
+https://en.wikipedia.org/wiki/Comparison_of_programming_paradigms
+结构化编程
+Structured programming
+过程化编程; 过程式编程
+Procedural programming
+Procedural programming languages are also imperative languages, because they make explicit references to the state of the execution environment.
+In logic programming, a program is a set of premises, and computation is performed by attempting to prove candidate theorems. From this point of view, logic programs are declarative, focusing on what the problem is, rather than on how to solve it.
+Functional
+函数式编程
+命令式编程
+Imperative
+Event-driven including time driven 事件驱动式编程
+Object-oriented
+面向对象编程
+Declarative
+声明式编程
+logic paradigm
+逻辑式编程
+## haskell functional programming
+ * http://blog.csdn.net/on_1y/article/details/8572673#sec-1
+ * https://en.wikipedia.org/wiki/Monad_%28functional_programming%29
+ * http://stackoverflow.com/questions/18808258/what-does-the-just-syntax-mean-in-haskell
+ * http://www.staff.city.ac.uk/~ross/papers/FingerTree.html functional tree
+## java
+### maven
+ * docker 安装 https://github.com/carlossg/docker-maven/blob/8ab542b907e69c5269942bcc0915d8dffcc7e9fa/jdk-8/Dockerfile
+
+## html 网页
+## CSS
+  * http://www.114la.com/other/rgb.htm
+  * http://tool.ganchang.cn/getcolortool.html
+
+## rust language
+### rust vs. C++
+ * https://www.viva64.com/en/b/0324/  Criticizing the Rust Language, and Why C/C++ Will Never Die
+ * https://www.quora.com/What-do-C-C++-systems-programmers-think-of-Rust
+ * https://news.ycombinator.com/item?id=9329506 More Rust compared to C++
+ * https://www.zhihu.com/question/27608498 Rust 和 C++ 有哪些优劣？
+ * https://news.ycombinator.com/item?id=12744317 Long time C++ dev here(~15 years) currently loving Rust
+ * http://stackoverflow.com/questions/37362640/why-does-rust-compile-a-simple-program-5-10-times-slower-than-gcc-clang
+ * http://stackoverflow.com/questions/39186802/why-is-this-rust-program-so-slow-did-i-miss-something
+### rust playground
+ * https://play.rust-lang.org/
+ * https://github.com/rust-lang/rust
+ * https://github.com/rust-lang/cargo/
+ * https://www.rust-lang.org/en-US/install.html
+### rust by example
+ * http://rustbyexample.com/
+ * https://github.com/rust-lang/rust-by-example
+ * https://github.com/PumpkinDB/PumpkinDB
+
+## testing
+ * https://github.com/mozilla/moztrap/  https://moztrap.mozilla.org/results/runs/?
+ * https://github.com/lemonlatte/docker-moztrap https://hub.docker.com/r/lemonlatte/docker-moztrap/
+ * https://github.com/Nitrate/Nitrate
+ * https://github.com/prove/tarantula
+ * https://github.com/TestLinkOpenSourceTRMS/testlink-code
+
+# high performance computing HPC 高性能计算
+ * http://www.admin-magazine.com/HPC/Articles/Singularity-A-Container-for-HPC 整体介绍
+## shifter
+ * https://www.nersc.gov/research-and-development/user-defined-images/ 通过将操作从共享存储移到节点提高性能
+ * https://github.com/NERSC/shifter code
+ * https://github.com/singularityware/singularity
+ * http://www.nextplatform.com/2016/09/13/will-containers-total-package-hpc/ 科学计算 NAS要求高
+ * http://singularity.lbl.gov/faq#how-does-singularity-relatediffer-from-shifter 可导入docker镜像
+ * http://thenewstack.io/univa-augments-kubernetes-supercomputer-scheduling-technology/
+ * http://www.navops.io/command.html  navops commands for kubernetes
+## Ubercloud
+ * https://www.theubercloud.com/experiments/
+## MPI https://www.open-mpi.org/ 当前开源HPC
+ * https://en.wikipedia.org/wiki/Open_MPI
+ * https://github.com/open-mpi
+
+### testing
+#### java maen
+ * https://github.com/ligado/hello-world-servlet/tree/master/src/main/docker
