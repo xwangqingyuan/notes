@@ -226,6 +226,9 @@ curl -k -v -XPOST  -H "Accept: application/json, */*" -H "Authorization: Bearer 
  * http://www.opencontrail.org/opencontrail-architecture-documentation/#section1 opencontrail
  * http://feisky.xyz/sdn/container/kubernetes.html ovn  Romana LVS DPDK ...
  * http://www.nirmata.com/2016/05/networking-microservices-with-cisco-contiv-and-nirmata/ service isolation
+#### kubernetes network practice
+ * http://mt.sohu.com/20170222/n481366309.shtml 京东
+ * http://sanwen.net/a/gulwwbo.html 一个适合 Kubernetes 的最佳网络互联方案
 #### kubernetes 编排 hypervisor 虚拟机
  * https://github.com/kubernetes/frakti
 #### kubernetes secret 使用
@@ -679,6 +682,7 @@ ls -aef
  * https://github.com/stackvana/microcule  100+ Working Service Examples https://github.com/stackvana/microcule-examples
  * https://github.com/Azure/Azure-Functions https://github.com/Azure/azure-webjobs-sdk-script/
  * https://github.com/serverless/examples serverless examples https://blog.fugue.co/2016-05-05-architecting-a-serverless-web-application-in-aws.html
+ * https://github.com/serverless/serverless/issues/3268
 #### serverless data pipeline
  * https://aws.amazon.com/cn/blogs/compute/ad-hoc-big-data-processing-made-simple-with-serverless-mapreduce/
  * https://cloudonaut.io/serverless-big-data-pipeline-on-aws/
@@ -799,24 +803,6 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
 ## nodejs
 ### web command line interface cli
  * https://www.sitepoint.com/javascript-command-line-interface-cli-node-js/
-## Python
-### 学习
- * http://www.jb51.net/article/33991.htm
- * http://docs.python.org/tutorial/index.html
- * http://www.pythonchallenge.com/
-### list comprehesions 列表解析和生成器表达式
- * http://www.jb51.net/article/26520.htm
-### developing tool WebStorm
- * http://idea.lanyus.com/
-### numpy
- * http://www.labri.fr/perso/nrougier/from-python-to-numpy/#id53
- * http://old.sebug.net/paper/books/scipydoc/numpy_intro.html
-### lambdascript
- * https://github.com/baruchel/lambdascript
-### pypy
-#### Application-level Stackless features
- * http://pypy.readthedocs.io/en/latest/stackless.html
-
 #### angularjs
  * https://github.com/toddmotto/angular-1-5-components-app
  * https://github.com/toddmotto/angular-styleguide
@@ -849,8 +835,36 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * https://blog.jscrambler.com/getting-started-with-angular-2-end-to-end-testing/
  * https://github.com/alexpods/angular2-universal-starter
  * https://dzone.com/articles/getting-started-with-angular-2-end-to-end-testing
+#### app generator
+ * https://github.com/swagger-api/swagger-codegen/tree/master/samples/client/petstore/typescript-angular
+ * https://jhipster.github.io/
+ * https://github.com/yeoman/generator-angular
+ * https://github.com/teerapap/generator-go-angular not active
+ * http://stackoverflow.com/questions/29649578/available-yeoman-generator-for-angular-2
+### redux
+ * http://redux.js.org/docs/introduction/Examples.html
+ * https://github.com/angular-redux/store
 #### Web GUI recorder
  * https://github.com/tebelorg/TA.Gui
+## Python
+### 学习
+ * http://www.jb51.net/article/33991.htm
+ * http://docs.python.org/tutorial/index.html
+ * http://www.pythonchallenge.com/
+### list comprehesions 列表解析和生成器表达式
+ * http://www.jb51.net/article/26520.htm
+### developing tool WebStorm
+ * http://idea.lanyus.com/
+### numpy
+ * http://www.labri.fr/perso/nrougier/from-python-to-numpy/#id53
+ * http://old.sebug.net/paper/books/scipydoc/numpy_intro.html
+### lambdascript
+ * https://github.com/baruchel/lambdascript
+### pypy
+#### Application-level Stackless features
+ * http://pypy.readthedocs.io/en/latest/stackless.html
+
+
 ### pip 安装
 安装不了可以将python2.7目录允许访问。安装openstackclient后可以访问openstack服务
 

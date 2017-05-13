@@ -4,10 +4,12 @@
  * http://stackoverflow.com/
  * http://stackexchange.com/
  * https://www.reddit.com/
+ * https://connect.thoughtworks.com/radar/a-z
  * https://www.zhihu.com/question/21497720
  * https://getawesomeness.herokuapp.com/get/ml
  * https://github.com/mfornos/awesome-microservices
  * https://github.com/ramitsurana/awesome-kubernetes#operators
+ * https://cloudmesh.github.io/classes/i524/technologies.html#application-and-analytics
 ## research site
 ### gartner
 ### forrester
@@ -1645,14 +1647,17 @@ A VirtualBox machine with the name already exists Pleas
  * http://tianya23.blog.51cto.com/1081650/530743 gossip 通信
  * http://redis.io/presentation/Redis_Cluster.pdf  
  *
-
+#### redis 缓存
+ * http://www.cnblogs.com/lsx1993/p/4702568.html 缓存与数据库的一致性
 ## 软件腐蚀 software erosion
  * 原因 https://blog.heroku.com/archives/2011/6/28/the_new_heroku_4_erosion_resistance_explicit_contracts
   － https://en.wikipedia.org/wiki/Software_rot
   － 环境变化 Environment change，没用的代码 Unused code，疏于维护 Rarely updated
  * http://12factor.net/
   － 代码库 codebase， 依赖 dependencies，配置 config，后台服务 backing services，构建，发布，运行，Build，Release/Shop，Run，进程 Stateless processes，端口绑定 Porting binding，并发 Concurrency，死掉无污染人畜无害 Disposability，开发生产环境等同 Dev/Prod parity，日志 Logs，管理流程 Admin processes
-
+ * http://mt.sohu.com/20160511/n448786204.shtml  缓存穿透、缓存并发、缓存失效
+ * https://en.wikipedia.org/wiki/Database_caching
+ * http://www.cnblogs.com/wcd144140/p/6232772.html Redis集群案例与场景分析
 ## Application Integration
  * http://www.enterpriseintegrationpatterns.com/patterns/messaging/toc.html
 ## scatter and gather pattern
@@ -2306,6 +2311,19 @@ cat /etc/redhat-release
  * https://github.com/drerik/docker-network-debug-tools/blob/master/Dockerfile
  * https://hub.docker.com/r/tianon/network-toolbox/tags/
  * https://hub.docker.com/r/drerik/docker-network-debug-tools/~/dockerfile/
+## CDN
+ * http://blog.sina.com.cn/s/blog_5b8ffabd010194wp.html  CDN动态内容加速
+ * http://www.techweb.com.cn/prnews/dongfangyuanlin/archives/303.html  CDN动态内容加速
+ * http://www.globaldots.com/next-billion-dollar-market-cdn-industry-dns-glue-records-weeks-news/   Bizety EC-CDN
+ * https://www.bizety.com/tag/cdn-in-the-docker/ Meet Appcito, The First “CDN-in-the-Docker” Service
+ * http://go.catonetworks.com/rs/245-RJK-441/images/Convergence-of-WAN-CDN-and-Cloud-Security.pdf Aryaka Networks, Cato Networks, PerimeterX, Viptela and Zscaler
+ * http://www.cnblogs.com/losbyday/p/5843960.html  CDN技术详解
+ * http://543210.com/html/we21cto/817665.html  从淘宝到云端的高可用架构演进
+ * http://www.open-open.com/lib/view/open1415887998945.html  淘宝架构框架
+### SD-WAN
+ * https://en.wikipedia.org/wiki/SD-WAN
+ * https://en.wikipedia.org/wiki/Application_delivery_network application delivery network (ADN)
+
 ## dns
 google dns 8.8.8.8 和 8.8.4.4  
 links  
@@ -2364,14 +2382,27 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
  * http://www.systutorials.com/816/port-forwarding-using-iptables/
 
 ## TCP
-### TCP BBR
+### TCP BBR (Linux 4.9)
  * https://www.zhihu.com/question/53559433 TCP BBR intro
  * https://github.com/google/bbr/blob/master/Documentation/bbr-quick-start.md
  * http://blog.cerowrt.org/post/bbrs_basic_beauty/
+ * http://blog.csdn.net/dog250/article/details/53730374 BBR将不得不承受“带宽无法充分
+ * http://blog.csdn.net/dog250/article/details/52962727 TCP BBR算法与Reno/CUBIC的对比
+ * https://segmentfault.com/a/1190000008395823 实测TCP BBR算法加速效果
+#### Cloud perspective and non-cloud perspective
+ *
+#### 锐速
+ * https://blog.deartanker.com/post/3659.html Appex/锐速TCP加速 ServerSpeeder 是一款内嵌 ZetaTCP 加速引擎的加速
+ * http://www.appexnetworks.com.cn/tech/zetatcp-tec.html
+ * http://www.tcpedge.com/
+
+#### Vultr
+ * https://since1989.org/vultr/vps-review-digitalocean.html Vultr超高性价比
 # questions and answers debug
 #### go 无法访问目录
  * golang.org/x/tools/cmd/stringer: unrecognized import path "golang.org/x/tools/cmd/stringer
  * clone https://github.com/golang/tools 到GOROOT 目录
+
 
 #### 容器内无法使用SSL curl
  * curl: (56) SSL read: error:00000000:lib(0):func(0):reason(0), errno 104
@@ -2403,6 +2434,10 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
  * Cannot power on a virtual machine because the virtual disk cannot be opened
  * 需要释放主机空间
 
+#### TCP Problems
+#####
+ * http://www.cnblogs.com/lulu/p/4149312.html tw_reuse，tw_recycle
+ * http://blog.csdn.net/caianye/article/details/38540867 tcp_tw_recycle和tcp_timestamps的文章汇总
 # project management 项目管理
 ## 开源项目管理项目
 ### openproject
