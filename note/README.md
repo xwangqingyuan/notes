@@ -298,6 +298,8 @@ translation, scaling, homothety, similarity transformation, reflection, rotation
  * https://hub.docker.com/r/ermaker/keras-jupyter/
  * https://hub.docker.com/r/gw000/keras/
  * https://hub.docker.com/r/tensorflow/tensorflow/
+#### scikit-learn
+ * http://scikit-learn.org/stable/index.html
 #### OpenCL
  * https://www.khronos.org/opencl/ https://github.com/KhronosGroup/OpenCL-Headers/
  * https://en.wikipedia.org/wiki/OpenCL
@@ -2556,3 +2558,5 @@ observation period observation duration 观察期
  * http://www.cnblogs.com/chenbjin/p/4001998.html baidu 翻译
  * http://www.oschina.net/code/snippet_853228_45743 有道翻译
  * http://blog.sina.com.cn/s/blog_670fb2a80100hiwn.html 翻译方法
+# training
+ * https://www.zhihu.com/question/20086677 IT training

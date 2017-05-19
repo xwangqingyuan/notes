@@ -43,6 +43,9 @@
   * https://github.com/kubernetes/kubernetes/blob/bf0a5e9fac1baab23a1db007bc798e4f9630f4f2/docs/proposals/volume-selectors.md
  * http://dockone.io/article/1153 比较 borg omega
  * http://blog.kubernetes.io/2015/06/the-distributed-system-toolkit-patterns.html
+ * API design guide
+ * https://cloud.google.com/apis/design/resources
+ * https://github.com/archnotes/gitbook/tree/master/API-design-guide
  * learn kubernetes links
   * https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md/#v130
   * http://kubernetes.io/docs/user-guide/petset/
@@ -56,6 +59,7 @@
 #### Reconciliation Loop 调和循环
  * http://freecontent.manning.com/kubernetes-in-action-introducing-replication-controllers/
  * https://www.slideshare.net/SatnamSingh67/2015-0605-cluster-management-with-kubernetes keep scheduler simple
+
 #### 动态分配存储 provisioner
  * https://github.com/kubernetes/kubernetes/blob/962d51ec682a14ef2d926175bbc614bac69f3197/pkg/controller/volume/persistentvolume/controller.go
  * https://github.com/kubernetes/kubernetes/blob/88c977c34ac9c0edc8b6be8034b2d5b47a5735e2/pkg/volume/glusterfs/glusterfs.go
@@ -70,6 +74,11 @@
  * https://github.com/kubernetes/kubernetes/blob/master/docs/whatisk8s.md#why-do-i-need-kubernetes-and-what-can-it-do
  * https://www.ctl.io/developers/blog/post/what-is-kubernetes-and-how-to-use-it/
  * https://www.sdxcentral.com/articles/news/why-docker-and-google-kubernetes-are-like-paas-done-right/2015/08/
+#### kubernetes configmap
+ * http://stackoverflow.com/questions/36187624/kubernetes-configmap-volume-doesnt-create-file-in-container
+ * https://github.com/kubernetes/kubernetes/issues/22368 Facilitate ConfigMap rollouts / management
+ * https://github.com/eBay/Kubernetes/blob/master/docs/proposals/configmap.md
+ * https://kubernetes.io/docs/tasks/configure-pod-container/configmap/
 #### kubernetes template
  * https://github.com/InQuicker/ktmpl
  * https://github.com/mustache/mustache
@@ -78,6 +87,11 @@
  * http://kubernetes.io/docs/getting-started-guides/ubuntu/
  * http://kubernetes.io/docs/getting-started-guides/azure/
  * http://thenewstack.io/tutorial-configuring-ultimate-development-environment-kubernetes/
+#### kubernetes python client
+##### ssl io error
+ * http://stackoverflow.com/questions/38670295/homebrew-refusing-to-link-openssl
+ * http://stackoverflow.com/questions/34386527/symbol-not-found-pycodecinfo-getincrementaldecoder
+ * https://github.com/kelproject/pykube/issues/80
 #### openshift devops
 ##### diagnostics
 ##### e2e testing
@@ -116,6 +130,10 @@
  * http://kubernetes.io/docs/user-guide/containers/  docker cap 和 linux cap的对应
  * http://man7.org/linux/man-pages/man7/capabilities.7.html     linux所有权限说明
  * http://man7.org/linux/man-pages/man1/capsh.1.html  查看权限命令
+#### federation RBAC
+ * https://github.com/kubernetes/kubernetes/issues/43433
+ * https://docs.google.com/document/d/1O2SEr_TDtgXzndh5lHPuAZmT-haylB9NaBRSo4DsUdk/edit#heading=h.chxbd5h0cu1x
+ *
 #### selinux references
  * https://wiki.centos.org/HowTos/SELinux#head-563ca75234163cdfa0ef056f1f82d4d396526d2b troubleshooting
  * https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Security-Enhanced_Linux/sect-Security-Enhanced_Linux-SELinux_Contexts-SELinux_Contexts_for_Processes.html
@@ -225,6 +243,7 @@ curl -k -v -XPOST  -H "Accept: application/json, */*" -H "Authorization: Bearer 
  * http://dockone.io/article/1935 calico vs contiv
  * http://www.opencontrail.org/opencontrail-architecture-documentation/#section1 opencontrail
  * http://feisky.xyz/sdn/container/kubernetes.html ovn  Romana LVS DPDK ...
+ * https://www.percona.com/blog/2016/08/03/testing-docker-multi-host-network-performance/
  * http://www.nirmata.com/2016/05/networking-microservices-with-cisco-contiv-and-nirmata/ service isolation
 #### kubernetes network practice
  * http://mt.sohu.com/20170222/n481366309.shtml 京东
@@ -627,7 +646,11 @@ cd /mnt/sda1/var/lib/minishift
 ls -aef
 /usr/local/bin/openshift start --master-config=openshift.local.config/master/master-config.yaml --node-config=openshift.local.config/node-minishift/node-config.yaml
 ```
-
+### openshift deployment DeploymentTriggerController
+```
+pkg/cmd/server/origin/run_components.go
+	controller := triggercontroller.NewDeploymentTriggerController(
+```
 ### openshift volumn
  * https://docs.openshift.org/latest/dev_guide/volumes.html#adding-volumes
  * https://access.redhat.com/documentation/en/red-hat-enterprise-linux-atomic-host/7/paged/getting-started-with-kubernetes/chapter-2-get-started-provisioning-storage-in-kubernetes
@@ -943,7 +966,25 @@ logic paradigm
 ## java
 ### maven
  * docker 安装 https://github.com/carlossg/docker-maven/blob/8ab542b907e69c5269942bcc0915d8dffcc7e9fa/jdk-8/Dockerfile
-
+ * http://www.thinkplexx.com/learn/article/maven-learn-material/maven3/maven3-pom-using-groovy-ruby-scala-yaml-sonatype-polyglot
+ * https://github.com/mrdon/maven-yamlpom-plugin/wiki
+ *
+#### nexus
+ * https://dzone.com/articles/maven-repository-manager-nexus
+ * http://stackoverflow.com/questions/364775/should-we-use-nexus-or-artifactory-for-a-maven-repo
+ * https://github.com/JFrogDev/nexus2artifactory
+ * https://dzone.com/articles/why-nexus-and-not-artifactory
+ * http://wakaleo.com/blog/a-tale-of-two-repository-managers-nexus-and-artifactory-compared-and-contrasted
+ * http://stackoverflow.com/questions/364775/should-we-use-nexus-or-artifactory-for-a-maven-repo
+ * http://www.sonatype.org/nexus/2016/04/12/why-i-chose-nexus-over-artifactory-when-using-docker/
+### gradle
+ * https://support.sonatype.com/hc/en-us/articles/213465358-How-do-I-configure-my-Gradle-build-to-download-artifacts-from-Nexus-
+ * https://howtoprogram.xyz/2016/10/10/convert-maven-pom-file-to-gradle-build-file/
+ * https://docs.gradle.org/current/userguide/build_init_plugin.html
+ * http://stackoverflow.com/questions/20862275/how-to-convert-a-maven-build-to-gradle
+#### gocd
+ * https://www.gocd.io/2015/12/28/gocd-continuous-delivery-through-pipelines.html
+ * https://highops.com/insights/continuous-delivery-pipelines-gocd-vs-jenkins/
 ## html 网页
 ## CSS
   * http://www.114la.com/other/rgb.htm
@@ -974,6 +1015,9 @@ logic paradigm
  * https://github.com/Nitrate/Nitrate
  * https://github.com/prove/tarantula
  * https://github.com/TestLinkOpenSourceTRMS/testlink-code
+### UI testing
+ * https://github.com/galenframework/galen/graphs/code-frequency
+ * https://github.com/nightwatchjs/nightwatch/graphs/code-frequency
 
 # high performance computing HPC 高性能计算
  * http://www.admin-magazine.com/HPC/Articles/Singularity-A-Container-for-HPC 整体介绍
