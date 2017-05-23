@@ -1,6 +1,7 @@
 # cloud
 ## Kubernetes  k8s
 ### kubernetes trends
+ * https://groups.google.com/forum/#!search/redis$203.0$20kubernetes/kubernetes-users/JqvIuUmt5fk/OYjZrWtKCgAJ
  * https://www.nextplatform.com/2016/11/08/google-wants-kubernetes-rule-world/
  * we look at product maturity, enterprise adoption, and community strength. And in all of these areas, Kubernetes significantly outshines
  * https://www.nextplatform.com/2017/02/01/riding-coattails-google-kubernetes-aws-lambda/  coattails 燕尾
@@ -9,7 +10,18 @@
 ### big data on kubernetes
 ### 动态设置docker 和kubelet
  * https://github.com/kubernetes/kubernetes/issues/27980
-
+### kubernetes kubelet
+```
+kubelet syncLoop->syncLoopIteration resyncInterval:                 kubeCfg.SyncFrequency.Duration,
+```
+### aggregated api servers
+ * https://groups.google.com/forum/#!msg/kubernetes-sig-apps/0gbmMNvZWUo/fgYSHNoWCQAJ
+ * https://www.slideshare.net/sttts/extend-and-build-on-kubernetes
+ * https://github.com/kubernetes/community/blob/master/sig-api-machinery/api-extensions-position-statement.md#q-should-kube-aggregator-be-a-separate-binaryprocess-than-kube-apiserver
+ * https://github.com/kubernetes/community/blob/master/contributors/design-proposals/aggregated-api-servers.md
+ * https://github.com/kubernetes/kube-aggregator
+ * https://github.com/kubernetes/sample-apiserver
+ * https://kubernetes.io/docs/tasks/access-kubernetes-api/extend-api-third-party-resource/
 #### spark on kubernetes
  * https://github.com/mattf/openshift-spark/blob/master/Makefile 简单的spark demo
  * https://hub.docker.com/r/radanalyticsio/openshift-spark/
@@ -46,11 +58,13 @@
  * API design guide
  * https://cloud.google.com/apis/design/resources
  * https://github.com/archnotes/gitbook/tree/master/API-design-guide
+ * https://groups.google.com/forum/#!forum/kubernetes-users k8s users
  * learn kubernetes links
   * https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md/#v130
   * http://kubernetes.io/docs/user-guide/petset/
   * https://github.com/kubernetes/kubernetes/tree/master/docs/design
   * http://kubernetes.io/docs/user-guide/petset/bootstrapping/
+  * https://github.com/openshift/training deprecated openshift training
 * https://github.com/kubernetes/kubernetes/issues/1201  kubernetes   的annotation和label区别
 * https://github.com/kubernetes/kubernetes/issues/341  kubernetes 的label为什么不支持模糊匹配
 * https://github.com/kubernetes/kubernetes/issues/1348 label反向匹配
@@ -96,10 +110,6 @@
 ##### diagnostics
 ##### e2e testing
 ##### node problem detector
-##### performance test
- * openshift/svt/applications_scalability/app-scalability.sh shell e2e commands
- * openshift/svt/openshift_scalability/pyconfig.yaml project template example
- * kubernetes/perf-tests performance tests
 ##### docker registry
 ##### upstream upgrade
 ##### gRPC
@@ -238,16 +248,6 @@ curl -k -v -XPOST  -H "Accept: application/json, */*" -H "Authorization: Bearer 
  * https://platform9.com/managed-openstack/
  * https://platform9.com/fission/ https://github.com/fission/fission  serverless Functions
 
-#### kubernetes network
- * https://www.slideshare.net/CJCullen/kubernetes-networking-55835829
- * http://dockone.io/article/1935 calico vs contiv
- * http://www.opencontrail.org/opencontrail-architecture-documentation/#section1 opencontrail
- * http://feisky.xyz/sdn/container/kubernetes.html ovn  Romana LVS DPDK ...
- * https://www.percona.com/blog/2016/08/03/testing-docker-multi-host-network-performance/
- * http://www.nirmata.com/2016/05/networking-microservices-with-cisco-contiv-and-nirmata/ service isolation
-#### kubernetes network practice
- * http://mt.sohu.com/20170222/n481366309.shtml 京东
- * http://sanwen.net/a/gulwwbo.html 一个适合 Kubernetes 的最佳网络互联方案
 #### kubernetes 编排 hypervisor 虚拟机
  * https://github.com/kubernetes/frakti
 #### kubernetes secret 使用
@@ -326,9 +326,6 @@ curl -k -v -XPOST  -H "Accept: application/json, */*" -H "Authorization: Bearer 
  * https://github.com/kubernetes/kubernetes/blob/master/docs/devel/scheduler.md scheduler 原理
  * https://github.com/kubernetes/kubernetes/blob/2f756e4ebc677c824d495bb5e10aa9d2234de686/plugin/pkg/scheduler/generic_scheduler.go scheduler 基础
  * https://github.com/kubernetes/kubernetes/blob/2f756e4ebc677c824d495bb5e10aa9d2234de686/plugin/cmd/kube-scheduler/app/server.go 创建scheduler 的地方
-### kubernetes performance k8s性能
- * https://github.com/openshift/svt
- * https://github.com/distributed-system-analysis/pbench
 ### kubernetes 1.6
  * https://github.com/kubernetes/community/blob/master/contributors/design-proposals/taint-toleration-dedicated.md
  * https://github.com/kubernetes/kubernetes/issues/1574 forgiveness
@@ -429,7 +426,49 @@ http://lattice.cf/
    https://github.com/eventuate-local/eventuate-local/blob/master/eventuate-local-java-embedded-cdc/src/main/java/io/eventuate/local/cdc/debezium/EventTableChangesToAggregateTopicRelay.java event source platform eventuate
  * http://eventuate.io/exampleapps.html  案例程序
  * willb/notebook                              tutorial  hub.qingyuanos.com/game/notebook            tutorial spark tutorial
+#### kubernetes network
+ * https://www.slideshare.net/CJCullen/kubernetes-networking-55835829
+ * http://dockone.io/article/1935 calico vs contiv
+ * http://www.opencontrail.org/opencontrail-architecture-documentation/#section1 opencontrail
+ * http://feisky.xyz/sdn/container/kubernetes.html ovn  Romana LVS DPDK ...
+ * http://blog.gingergeek.com/2016/09/container-networking-a-breakdown-explanation-and-analysis/ MACvlan and IPvlan
+ * http://www.youruncloud.com/blog/95.html MACVLAN IPvLan
+ * http://blog.sflow.com/2016/06/docker-networking-with-ipvlan-and.html
+ * http://www.nirmata.com/2016/05/networking-microservices-with-cisco-contiv-and-nirmata/ service isolation
+ * https://www.slideshare.net/kubecon/container-network-interface-network-plugins-for-kubernetes-and-beyond
+ * https://thenewstack.io/hackers-guide-kubernetes-networking/
+#### kubernetes network practice
+ * http://mt.sohu.com/20170222/n481366309.shtml 京东
+ * http://sanwen.net/a/gulwwbo.html 一个适合 Kubernetes 的最佳网络互联方案
+#### docker network
+ * https://github.com/moby/moby/blob/master/experimental/vlan-networks.md
+### kubernetes performance k8s性能
+ * https://github.com/openshift/svt
+ * https://github.com/distributed-system-analysis/pbench
+ * https://github.com/kubernetes/perf-tests/tree/master/network/benchmarks/netperf
 
+#### test result
+ * https://www.percona.com/blog/2016/08/03/testing-docker-multi-host-network-performance/
+ * http://machinezone.github.io/research/networking-solutions-for-kubernetes/
+ * https://news.ycombinator.com/item?id=11132574 Comparison of Networking Solutions for Kubernetes (machinezone.github.io)
+##### performance test
+ * openshift/svt/applications_scalability/app-scalability.sh shell e2e commands
+ * openshift/svt/openshift_scalability/pyconfig.yaml project template example
+ * kubernetes/perf-tests performance tests
+##### redis performance tuning
+ * https://redis.io/topics/latency  https://dzone.com/articles/redis-performance-benchmarks https://matt.sh/redis-benchmark-compilers https://blog.newrelic.com/2015/05/11/redis-performance-metrics/ https://matt.sh/redis-benchmark-compilers
+ * http://shokunin.co/blog/2014/11/11/operational_redis.html
+##### mongodb performance tuning
+ * http://blog.kubernetes.io/2017/01/running-mongodb-on-kubernetes-with-statefulsets.html
+##### rabbitmq performance tuning
+##### kafka performance tuning
+##### cassandra performance tuning
+##### MySQL performance tuning
+##### production experiences
+ * https://acotten.com/post/1year-kubernetes
+ * http://blog.kubernetes.io/2016/09/high-performance-network-policies-kubernetes.html High performance network policies in Kubernetes clusters
+##### 长连接与负载均衡
+ * http://www.sunchangming.com/blog/post/4658.html 长连接与负载均衡
 #### 有趣应用
  * https://hub.docker.com/r/daehyeok/freecodecamp/
  * https://hub.docker.com/r/xblaster/tensor-guess/ 分类程序
@@ -634,7 +673,10 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * 整个基于kubernetes和openshift的持续集成体系 https://blog.openshift.com/openshift-cloudbees-jenkins-enterprise-devops/
  * OpenShift 架构 https://blog.openshift.com/openshift-v3-deep-dive-docker-kubernetes/
  * OpenShift文档 	https://docs.openshift.org/latest/dev_guide/projects.html
-
+#### coredns
+ * https://github.com/coredns/coredns
+ * https://github.com/blachniet/coredns-docker
+ * http://www.zonefile.org/?lang=en#zonefile https://en.wikipedia.org/wiki/Zone_file https://en.wikipedia.org/wiki/List_of_DNS_record_types
 ### marketplace
  * https://marketplace.openshift.com/
 
@@ -778,6 +820,10 @@ Referential transparency 参照透明 deterministic 确定性的 rewriting syste
  * https://en.wikipedia.org/wiki/Simulated_annealing For problems where finding an approximate global optimum is more important than finding a precise local optimum in a fixed amount of time, simulated annealing may be preferable to alternatives such as gradient descent.
  * http://blog.csdn.net/xianlingmao/article/details/7798647 模拟退火算法
  * https://www.autodeskresearch.com/publications/samestats 图形转换
+### code lint static analysis
+ * https://github.com/mre/awesome-static-analysis
+ * https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis
+ * https://github.com/Qafoo/QualityAnalyzer
 ## programming teaching
 ### scratch 教小孩编程
  * https://scratch.mit.edu/
@@ -785,6 +831,10 @@ Referential transparency 参照透明 deterministic 确定性的 rewriting syste
 ## trend
  * https://github.com/showcases/programming-languages
 
+## architecture
+ * http://stackoverflow.com/questions/8535703/recommend-source-code-comprehension-tool
+ * https://softvis.wordpress.com/tools/   Structure101  Software Visualization
+ * http://windows7themes.net/en-us/architecture-development-environment-top-5-alternatives-to-structure101/  ArchStudio
 ## c/c++
 ### online book
  * https://www.ossblog.org/master-c-programming-with-open-source-books/
@@ -874,6 +924,13 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * http://www.jb51.net/article/33991.htm
  * http://docs.python.org/tutorial/index.html
  * http://www.pythonchallenge.com/
+#### fabric
+ * http://www.fabfile.org/
+ * https://pypi.python.org/pypi/Fabric3
+### ansible
+#### molecule 分子 atom 原子
+ * https://github.com/metacloud/molecule
+ * https://molecule.readthedocs.io/en/stable-1.24/
 ### list comprehesions 列表解析和生成器表达式
  * http://www.jb51.net/article/26520.htm
 ### developing tool WebStorm
@@ -968,7 +1025,13 @@ logic paradigm
  * docker 安装 https://github.com/carlossg/docker-maven/blob/8ab542b907e69c5269942bcc0915d8dffcc7e9fa/jdk-8/Dockerfile
  * http://www.thinkplexx.com/learn/article/maven-learn-material/maven3/maven3-pom-using-groovy-ruby-scala-yaml-sonatype-polyglot
  * https://github.com/mrdon/maven-yamlpom-plugin/wiki
- *
+ * Use Nexus to cache files http://stackoverflow.com/questions/27767264/how-to-dockerize-maven-project-and-how-many-ways-to-accomplish-it
+#### docker-maven
+ * https://github.com/carlossg/docker-maven
+ * https://github.com/spotify/dockerfile-maven
+ * https://hub.docker.com/r/sonatype/nexus/
+ * https://hub.docker.com/r/sonatype/nexus3/
+
 #### nexus
  * https://dzone.com/articles/maven-repository-manager-nexus
  * http://stackoverflow.com/questions/364775/should-we-use-nexus-or-artifactory-for-a-maven-repo
@@ -977,6 +1040,9 @@ logic paradigm
  * http://wakaleo.com/blog/a-tale-of-two-repository-managers-nexus-and-artifactory-compared-and-contrasted
  * http://stackoverflow.com/questions/364775/should-we-use-nexus-or-artifactory-for-a-maven-repo
  * http://www.sonatype.org/nexus/2016/04/12/why-i-chose-nexus-over-artifactory-when-using-docker/
+##### upload to nexus
+ * https://support.sonatype.com/hc/en-us/articles/213465818-How-can-I-programatically-upload-an-artifact-into-Nexus-
+ * http://www.softqe.com/maven-upload-artifact-to-nexus/
 ### gradle
  * https://support.sonatype.com/hc/en-us/articles/213465358-How-do-I-configure-my-Gradle-build-to-download-artifacts-from-Nexus-
  * https://howtoprogram.xyz/2016/10/10/convert-maven-pom-file-to-gradle-build-file/

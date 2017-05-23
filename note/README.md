@@ -348,6 +348,15 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 # Application framework 开源应用框架
 ## PHP 框架
 ### tracker
+### social aware AI assistant
+ * https://news.developer.nvidia.com/virtual-agent-understands-your-social-cues/
+ * http://articulab.hcii.cs.cmu.edu/projects/sara/
+ * https://wenku.baidu.com/view/a63c4e5bad51f01dc281f1d8.html
+ * http://robotics.usc.edu/~gaurav/CS546/presentations/cence-me-cs546.pdf
+#### anti social social club ASSC Neek Lurk
+ * https://www.ishuo.cn/doc/drsvffqf.html
+ * http://www.flightclub.cn/fashion/view/11483
+ * https://hypebae.com/2016/5/anti-social-social-club-popular-with-girls
 
 ### word press
 ## Java 框架
@@ -1773,6 +1782,7 @@ psql -U username -c '\d'
 ## phrases
 OEM、ODM、OBM有什么区别
 https://zhidao.baidu.com/question/1945983678126952268.html
+genesis 起源
 ### spoil pants
 搞砸了
 
@@ -2136,7 +2146,8 @@ https://github.com/lducas/FHEW
  * https://en.wikipedia.org/wiki/XACML
  * http://docs.oasis-open.org/xacml/xacml-json-http/v1.0/cs01/xacml-json-http-v1.0-cs01.html#_Toc406773662
  * https://en.wikipedia.org/wiki/WSO2#WSO2_Identity_Server
- *
+### OpenID Connect provider gluu
+ * https://github.com/GluuFederation/oxAuth
 
 ### single sign on
  * https://auth0.com/docs/sso/single-page-apps-sso
@@ -2292,6 +2303,16 @@ cat /etc/centos-release
 cat /proc/version
 cat /etc/redhat-release
 ```
+### linux kernel tuning
+ * http://www.lognormal.com/blog/2012/09/27/linux-tcpip-tuning/
+ * https://korekontrol.eu/blog/linux-network-performance-tuning
+ * http://www.linux-admins.net/2010/09/linux-tcp-tuning.html
+```
+sysctl -a
+TCP_TW_RECYCLE
+TCP_TW_REUSE
+nf_conntrack_max
+```
 # markup language 标签语言
 ## markdown
  * http://ibruce.info/2013/11/26/markdown/
@@ -2330,6 +2351,7 @@ cat /etc/redhat-release
 google dns 8.8.8.8 和 8.8.4.4  
 links  
  * etc/resolv.con配置 http://www.jb51.net/LINUXjishu/63310.html http://www.centoscn.com/CentOS/config/2013/0723/443.html
+DNSPod  https://www.dnspod.cn/
 ### dns commands
 links
  * http://blog.sina.com.cn/s/blog_65f27fc20101fhmn.html  
@@ -2344,6 +2366,7 @@ links
 
 1. dig
     1. dig -x 210.52.83.228
+    2. dig domainname.xx +trace
 2. nslookup
     1. 查询所有 nslookup type=any
 3. host
@@ -2358,6 +2381,7 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
   - http://www.ttlsa.com/linux/dnspod-sr-little-dns/
   - http://www.361way.com/dnspod-sr/4674.html
   - https://github.com/DNSPod/dnspod-sr
+ * coredns
 
 
 ### dns information links
