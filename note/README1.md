@@ -876,6 +876,18 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
 ## nodejs
 ### web command line interface cli
  * https://www.sitepoint.com/javascript-command-line-interface-cli-node-js/
+### nodejs repository
+ * https://www.npmjs.com/package/sinopia https://hub.docker.com/r/bankiru/sinopia/  latest https://github.com/rlidwka/sinopia https://github.com/RnbWd/sinopia-docker https://hub.docker.com/r/rnbwd/sinopia/
+ * https://www.jfrog.com/confluence/display/RTF/Npm+Registry
+ * https://github.com/krakenjs/kappa
+ * https://stackoverflow.com/questions/7575627/can-you-host-a-private-repository-for-your-organization-to-use-with-npm
+### node yarn
+ * https://blog.risingstack.com/yarn-vs-npm-node-js-package-managers/
+ * https://stackoverflow.com/documentation/node.js/9441/yarn-package-manager#t=201705252331490762897
+ * https://www.pluralsight.com/guides/node-js/yarn-a-package-manager-for-node-js
+ * https://stackoverflow.com/questions/40057469/what-is-the-difference-between-yarn-lock-and-npm-shrinkwrap
+ * http://www.infoworld.com/article/3172725/javascript/npm-or-yarn-nodejs-devs-pick-their-package-manager.html
+ * https://stackoverflow.com/questions/40057469/what-is-the-difference-between-yarn-lock-and-npm-shrinkwrap
 #### angularjs
  * https://github.com/toddmotto/angular-1-5-components-app
  * https://github.com/toddmotto/angular-styleguide
@@ -896,6 +908,9 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * https://en.wikipedia.org/wiki/Single-page_application
  * http://noeticforce.com/best-Javascript-frameworks-for-single-page-modern-web-applications
  * http://angularjs-emberjs-compare.bguiz.com/
+#### angular 2 error
+##### You have to be inside an angular-cli project in order to use the serve command harbor
+ * https://github.com/angular/angular-cli/issues/4379
 #### angular 2 examples
  * https://github.com/mgechev/switching-to-angular2
  * https://github.com/mgechev/angular-seed#examples
@@ -943,11 +958,16 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
 ### pypy
 #### Application-level Stackless features
  * http://pypy.readthedocs.io/en/latest/stackless.html
+### pypi python package index repo
+ * http://doc.devpi.net/latest/userman/devpi_concepts.html
+ * https://hub.docker.com/r/muccg/devpi/
 
 
 ### pip 安装
 安装不了可以将python2.7目录允许访问。安装openstackclient后可以访问openstack服务
-
+### python finite state machine FSM
+ * https://wiki.python.org/moin/FiniteStateMachine
+ *
 ## Go golang
 ### go is not good
  * https://github.com/ksimka/go-is-not-good

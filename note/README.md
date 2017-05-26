@@ -276,7 +276,19 @@ translation, scaling, homothety, similarity transformation, reflection, rotation
  * http://www.pcgamer.com/best-graphics-card-deals-today/
  * https://developer.nvidia.com/cuda-toolkit-40
 #### GPU price
-
+### waston
+ * https://m.xkcd.com/1619/
+ * https://www.explainxkcd.com/wiki/index.php/1619:_Watson_Medical_Algorithm
+ * http://medicalfuturist.com/can-an-algorithm-diagnose-better-than-a-doctor/
+ * http://researcher.watson.ibm.com/researcher/view_group.php?id=2099
+ * https://en.wikipedia.org/wiki/Watson_(computer)
+#### DeepQA
+ * https://github.com/Conchylicultor/DeepQA My tensorflow implementation of "A neural conversational model", a Deep learning based chatbot
+ * http://www.guokr.com/article/17295/ DeepQA近距离观察 http://www.baike.com/wiki/DeepQA
+ * https://github.com/allenai/deep_qa A deep NLP library, based on Keras / tf, focused on question answering (but useful for other NLP too)
+ * https://github.com/aseveryn/deep-qa theano
+ * https://github.com/jiasenlu/HieCoAttenVQA https://github.com/VT-vision-lab/VQA_LSTM_CNN This code is written in Lua and requires Torch.
+ * https://en.wikipedia.org/wiki/Question_answering
 #### openshift price
 
 ## Alpha–beta pruning
