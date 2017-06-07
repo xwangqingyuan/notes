@@ -1,10 +1,29 @@
 # cloud
+## docker swarm
+### portainer Simple management UI for Docker
+ * https://github.com/portainer/portainer
+### docker network
+ * https://forums.docker.com/t/multiple-host-ips-to-docker-container/3371/2 port mapping
+ * https://docs.docker.com/engine/reference/commandline/network/
+ * https://github.com/docker/libnetwork/tree/master/drivers
+### cni containernetworking
+ * https://github.com/containernetworking/cni
+ * https://github.com/containernetworking/plugins/tree/master/plugins/main/ipvlan
+### macvlan ipvlan
+ * https://hicu.be/macvlan-vs-ipvlan http://www.pocketnix.org/posts/Linux%20Networking:%20MAC%20VLANs%20and%20Virtual%20Ethernets
+### docker and moby
+ * http://mobyproject.org/#moby-and-docker
+ * https://blog.docker.com/2017/05/get-involved-moby-project-attending-upcoming-moby-summits/
 ## Kubernetes  k8s
 ### kubernetes trends
  * https://groups.google.com/forum/#!search/redis$203.0$20kubernetes/kubernetes-users/JqvIuUmt5fk/OYjZrWtKCgAJ
  * https://www.nextplatform.com/2016/11/08/google-wants-kubernetes-rule-world/
  * we look at product maturity, enterprise adoption, and community strength. And in all of these areas, Kubernetes significantly outshines
  * https://www.nextplatform.com/2017/02/01/riding-coattails-google-kubernetes-aws-lambda/  coattails 燕尾
+### kubernetes sponsors
+ * https://github.com/dchen1107 https://github.com/lavalamp https://github.com/smarterclayton https://github.com/thockin
+### docker sponsors
+ * https://github.com/jpetazzo
 ## kubernetes advertise
  * http://www.stratoscale.com/blog/kubernetes/container-orchestration-kubernetes-12-key-features/
 ### big data on kubernetes
@@ -59,6 +78,7 @@ kubelet syncLoop->syncLoopIteration resyncInterval:                 kubeCfg.Sync
  * https://cloud.google.com/apis/design/resources
  * https://github.com/archnotes/gitbook/tree/master/API-design-guide
  * https://groups.google.com/forum/#!forum/kubernetes-users k8s users
+ * http://semver.org/ Semantic Versioning 2.0.0
  * learn kubernetes links
   * https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md/#v130
   * http://kubernetes.io/docs/user-guide/petset/
@@ -74,6 +94,23 @@ kubelet syncLoop->syncLoopIteration resyncInterval:                 kubeCfg.Sync
  * http://freecontent.manning.com/kubernetes-in-action-introducing-replication-controllers/
  * https://www.slideshare.net/SatnamSingh67/2015-0605-cluster-management-with-kubernetes keep scheduler simple
 
+#### kubernetes network
+ * https://kubernetes.io/docs/concepts/cluster-administration/addons/
+ * https://github.com/Huawei-PaaS/CNI-Genie
+##### openshift ingress
+ * https://playbooks-rhtconsulting.rhcloud.com/playbooks/operationalizing/ingress.html#configuring-the-service-to-be-highly-available
+ * https://access.redhat.com/documentation/en-us/openshift_container_platform/3.5/html/cluster_administration/admin-guide-unique-external-ips-ingress-traffic
+ * https://docs.openshift.com/container-platform/3.3/admin_guide/tcp_ingress_external_ports.html#unique-external-ips-ingress-traffic-configure-service
+ * https://docs.openshift.com/container-platform/3.3/dev_guide/getting_traffic_into_cluster.html
+ * openshift/origin/pkg/service/controller/ingressip/service_ingressip_controller.go
+##### kubernetes network traffic control
+ * https://ci.openshift.redhat.com/releases_overview.html 3.7
+ * https://bugzilla.redhat.com/show_bug.cgi?id=1258296
+ * https://github.com/kubernetes/kubernetes/pull/12187 Add resource types for ingress and egress bandwidth
+ * https://cloudnativeeu2017.sched.com/event/9Tc5/schednet-a-network-aware-kubernetes-scheduler-i-akash-gangil-salvatore-orlando-vmware
+ * https://kubernetes.io/docs/api-reference/v1.6/#networkpolicypeer-v1beta1-extensions
+ * https://github.com/weaveworks-plugins/scope-traffic-control
+ * https://github.com/kinvolk/tcd https://kinvolk.io/blog/2016/05/testing-web-services-with-traffic-control-on-kubernetes/
 #### 动态分配存储 provisioner
  * https://github.com/kubernetes/kubernetes/blob/962d51ec682a14ef2d926175bbc614bac69f3197/pkg/controller/volume/persistentvolume/controller.go
  * https://github.com/kubernetes/kubernetes/blob/88c977c34ac9c0edc8b6be8034b2d5b47a5735e2/pkg/volume/glusterfs/glusterfs.go
@@ -106,6 +143,9 @@ kubelet syncLoop->syncLoopIteration resyncInterval:                 kubeCfg.Sync
  * http://stackoverflow.com/questions/38670295/homebrew-refusing-to-link-openssl
  * http://stackoverflow.com/questions/34386527/symbol-not-found-pycodecinfo-getincrementaldecoder
  * https://github.com/kelproject/pykube/issues/80
+### kubernetes GPU
+ * http://blog.clarifai.com/how-to-scale-your-gpu-cloud-infrastructure-with-kubernetes/#.WTUCUcklFE4
+
 #### openshift devops
 ##### diagnostics
 ##### e2e testing
@@ -212,6 +252,15 @@ oc adm policy add-scc-to-user anyuid system:serviceaccount:test-stress:default
  * https://storage.googleapis.com/kubernetes-release/release/v1.3.0/bin/darwin/amd64/kubectl
 #### monokube
  * https://github.com/polvi/monokube 全部打包到一个二进制文件
+### vertical scale up
+ * https://docs.docker.com/engine/reference/commandline/update/#update-a-containers-kernel-memory-constraints  https://stackoverflow.com/questions/34654697/update-the-limitation-of-memory-cpu-for-existing-container-in-docker
+ * https://github.com/kubernetes/kubernetes/issues/42752 Workload API v1 requirements umbrella issue
+ * https://github.com/kubernetes/kubernetes/issues/39060#issuecomment-268449812
+ * https://github.com/kubernetes/kubernetes/issues/9043 In-place rolling updates  https://github.com/kubernetes/kubernetes/issues/39060#issuecomment-268449812
+ * https://github.com/kubernetes/kubernetes/issues/28706  Pet set upgrades
+ * https://github.com/kubernetes/kubernetes/issues/5774 Support pod resource updates
+ * https://dzone.com/articles/truth-about-paas-vertical
+ * https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 #### 下载容器
  * https://github.com/kubernetes/kubernetes/issues/6888
  * https://github.com/kubernetes/minikube
@@ -266,9 +315,18 @@ curl -k -v -XPOST  -H "Accept: application/json, */*" -H "Authorization: Bearer 
  * http://www.devoperandi.com/vault-in-kubernetes-take-2/ 在k8s中使用Vault
  * https://github.com/kubernetes/kubernetes/issues/10439 讨论集成 Vault的issue
  * https://www.digitalocean.com/company/blog/vault-and-kubernetes/ 通过Vault集成CA
+#### kubernetes helm
+##### eroor Error building Helm: "hg is not installed"
+ * https://github.com/kubernetes/helm/issues/2343
+ * https://github.com/kubernetes/helm/pull/2344
+```
+install https://github.com/kubernetes/helm/pull/2344
+```
 #### awesome kubernetes
  * https://github.com/ramitsurana/awesome-kubernetes#operators
 #### 扩展kubernetes API
+ * https://github.com/kubernetes-incubator/service-catalog/wiki/Roadmap
+ * https://github.com/kubernetes/features https://github.com/kubernetes/features/blob/master/OWNERS
  * https://github.com/kubernetes/kubernetes/blob/master/docs/design/extending-api.md
  * http://kubernetes.io/docs/user-guide/thirdpartyresources/
  * https://github.com/coreos/etcd-operator coreos operator
@@ -280,6 +338,12 @@ curl -k -v -XPOST  -H "Accept: application/json, */*" -H "Authorization: Bearer 
  * https://storage.googleapis.com/kubernetes-release/release/v1.4.6/bin/darwin/amd64/kubectl 下载
  * https://coreos.com/blog/the-prometheus-operator.html https://github.com/coreos/prometheus-operator
  * https://coreos.com/blog/introducing-operators.html
+#### kubernetes etcd
+ * https://coreos.com/blog/migrating-applications-etcd-v3.html
+ * https://coreos.com/etcd/docs/latest/getting-started-with-etcd.html
+ * https://www.digitalocean.com/community/tutorials/how-to-use-etcdctl-and-etcd-coreos-s-distributed-key-value-store
+ * https://github.com/coreos/etcd/blob/master/Documentation/rfc/v3api.md
+ * https://coreos.com/blog/migrating-applications-etcd-v3.html
 #### operators ecosystem
  * https://coreos.com/blog/kubernetes-operators-ecosystem.html
 #### openstack operator vcenter operator
@@ -291,6 +355,32 @@ curl -k -v -XPOST  -H "Accept: application/json, */*" -H "Authorization: Bearer 
 #### mysql operator
  * https://github.com/ipedrazas/mysql-operator
  * https://github.com/weixinhost/litedb
+#### redis template
+##### redis commands
+ * https://redis.io/commands
+ *
+##### redis cluster
+ * https://github.com/sobotklp/kubernetes-redis-cluster
+##### redis GUI web UI
+ * http://fastoredis.com/download.html  desktop manager
+ * modern https://hub.docker.com/r/faktiva/php-redis-admin/ https://github.com/faktiva/php-redis-adminhttps://github.com/erikdubbelboer/phpRedisAdmin  have dockerfile
+ * https://github.com/steelThread/redmon
+ * https://redislabs.com/blog/so-youre-looking-for-the-redis-gui/
+ * https://stackoverflow.com/questions/7716446/redis-administration-panel
+##### awesome redis
+ * https://github.com/JamzyWang/awesome-redis
+ * https://github.com/junegunn/redis-stat active
+ * https://github.com/nkrode/RedisLive/graphs/contributors  inactive
+ * https://github.com/no13bus/redispapa simple
+ * https://github.com/facebookarchive/redis-faina command line analysis
+##### redis cluster Web UI
+ * https://github.com/HunanTV/redis-ctl https://github.com/sunyi00/centos-redis-ctl
+ * https://github.com/zhengfc/redis-cluster-monitor     (simple CLI monitor) https://hub.docker.com/r/tuananhpham/redis-cluster-monitor/
+##### redis sentinel
+ * https://github.com/kelseyhightower/kubernetes-redis-cluster
+ * https://github.com/corybuecker/redis-stateful-set
+ * https://github.com/CommercialTribe/kube-redis
+ * https://github.com/bdimcheff/rediskube
 #### rook Operator
  * https://github.com/rook/rook
  * https://blog.rook.io/rook-operator-first-class-storage-for-kubernetes-2d0288831175
@@ -419,7 +509,6 @@ http://lattice.cf/
    - https://hub.docker.com/u/docker4tracy/     电影推荐应用镜像
    - http://www.kennybastani.com/
  * https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615
- * https://github.com/kelseyhightower/kubernetes-redis-cluster
  * https://www.udacity.com/account/auth#!/signin?next=https%3A%2F%2Fclassroom.udacity.com%2Fcourses%2Fud615&enroll=ud615
  *
  * https://github.com/zutherb/AppStash/tree/master/kubernetes
@@ -440,13 +529,17 @@ http://lattice.cf/
 #### kubernetes network practice
  * http://mt.sohu.com/20170222/n481366309.shtml 京东
  * http://sanwen.net/a/gulwwbo.html 一个适合 Kubernetes 的最佳网络互联方案
-#### docker network
- * https://github.com/moby/moby/blob/master/experimental/vlan-networks.md
+#### docker networky/blob/master/experimental/vlan-networks.md
 ### kubernetes performance k8s性能
  * https://github.com/openshift/svt
  * https://github.com/distributed-system-analysis/pbench
  * https://github.com/kubernetes/perf-tests/tree/master/network/benchmarks/netperf
-
+### kubernetes service dependency
+ * https://github.com/Mirantis/k8s-AppController  https://github.com/kubernetes/kubernetes/issues/29804
+ * https://github.com/kubernetes/kubernetes/issues/2385 https://github.com/kubernetes/kubernetes/issues/2385
+ * https://github.com/kubernetes/kubernetes/issues/7365 https://github.com/kubernetes/community/pull/176
+ * https://github.com/kubernetes/kubernetes/pull/37612  https://github.com/kubernetes/kubernetes/pull/37612/files/b02b15bc7aab8b7ff428858b631ecac6c13ff2f8#diff-d09e3fda26611bdf9557d4227edb79d2
+ * https://github.com/kubernetes/community/pull/176
 #### test result
  * https://www.percona.com/blog/2016/08/03/testing-docker-multi-host-network-performance/
  * http://machinezone.github.io/research/networking-solutions-for-kubernetes/
@@ -469,6 +562,10 @@ http://lattice.cf/
  * http://blog.kubernetes.io/2016/09/high-performance-network-policies-kubernetes.html High performance network policies in Kubernetes clusters
 ##### 长连接与负载均衡
  * http://www.sunchangming.com/blog/post/4658.html 长连接与负载均衡
+#### kubernetes statefulset
+#####  statefulset mysql example
+ * https://kubernetes.io/docs/tasks/run-application/run-replicated-stateful-application/
+ * https://hub.docker.com/r/ist0ne/xtrabackup/tags/
 #### 有趣应用
  * https://hub.docker.com/r/daehyeok/freecodecamp/
  * https://hub.docker.com/r/xblaster/tensor-guess/ 分类程序
@@ -656,6 +753,7 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * https://software.intel.com/en-us/articles/single-root-inputoutput-virtualization-sr-iov-with-linux-containers
  * https://github.com/hustcat/sriov-cni  https://clearlinux.org/documentation/clear-containers.html  https://github.com/clearcontainers/sriov
  * https://groups.google.com/forum/#!msg/kubernetes-sig-network/b55amANyCNo/INHD0yvzBAAJ  DPDK and SR-IOV with Kubernetes
+
 ## openshift
 ### openshift roadmap changelog
  * https://ci.openshift.redhat.com/releases_overview.html
@@ -685,13 +783,38 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 ```
 # config files
 cd /mnt/sda1/var/lib/minishift
-ls -aef
+ps -aef
 /usr/local/bin/openshift start --master-config=openshift.local.config/master/master-config.yaml --node-config=openshift.local.config/node-minishift/node-config.yaml
+/var/lib/origin/openshift.local.config/master/master-config.yaml
 ```
 ### openshift deployment DeploymentTriggerController
 ```
 pkg/cmd/server/origin/run_components.go
 	controller := triggercontroller.NewDeploymentTriggerController(
+```
+####
+```
+cat /mnt/sda1/var/lib/boot2docker/docker.log
+```
+##### expose openshift registry
+```
+oc expose dc/docker-registry --name=external-docker-registry --port=5000 --target-port=5000 --type=NodePort
+dockerd -D -g /var/lib/docker -H unix:// -H tcp://0.0.0.0:2376 \
+--label provider=virtualbox \
+--insecure-registry 172.30.0.0/16 \
+--insecure-registry 192.168.99.100 \
+--tlsverify --tlscacert=/var/lib/boot2docker/ca.pem \
+--tlscert=/var/lib/boot2docker/server.pem \
+--tlskey=/var/lib/boot2docker/server-key.pem -s aufs >> /var/lib/boot2docker/docker.log &
+minishift start --insecure-registry=192.168.99.100 --insecure-registry=172.30.0.0/16 --vm-driver=virtualbox
+docker login 172.30.231.67:5000 -u admin -p ZJNpd7Qejzs_59tt04I2dN1w1ufpS-sv4r4qhfJF8ys
+docker login 192.168.99.100:31000 -u admin -p ZJNpd7Qejzs_59tt04I2dN1w1ufpS-sv4r4qhfJF8ys
+vi /var/lib/boot2docker/docker.log
+cat /var/lib/boot2docker/docker.log | grep insecure
+minikube start --insecure-registry 192.168.99.100 --insecure-registry 172.30.0.0/16 --vm-driver=virtualbox -v 5
+docker-machine create -d virtualbox --engine-insecure-registry 192.168.99.100 --engine-insecure-registry 172.30.0.0/16 dev
+docker-machine create -d virtualbox --engine-insecure-registry 192.168.99.100:31000 --engine-insecure-registry 172.30.0.0/16 default
+minikube start --vm-driver=virtualbox --extra-config apiserver.cors-allowed-origins=*
 ```
 ### openshift volumn
  * https://docs.openshift.org/latest/dev_guide/volumes.html#adding-volumes
@@ -911,6 +1034,9 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
 #### angular 2 error
 ##### You have to be inside an angular-cli project in order to use the serve command harbor
  * https://github.com/angular/angular-cli/issues/4379
+```
+npm install -g @angular/cli
+```
 #### angular 2 examples
  * https://github.com/mgechev/switching-to-angular2
  * https://github.com/mgechev/angular-seed#examples
@@ -918,6 +1044,26 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * https://github.com/thelgevold/angular-2-samples
  * https://github.com/angular/angular-cli  how to install angular 2
  * http://www.protractortest.org/#/ end-to-end testing for angular
+ * https://akveo.github.io/ng2-admin/articles/002-installation-guidelines/
+ * https://github.com/akveo/ng2-admin examples
+ * https://www.akveo.com/products.html
+ * https://github.com/AngularClass/awesome-angular
+ * https://www.dunebook.com/5-best-open-source-project-examples-built-using-angular-2/  https://github.com/ng-book/angular2-rxjs-chat
+##### ng2-admin structure
+ * src/app/app.translation.module.ts src/assets/i18n/CN/zh.json translation path
+ * https://akveo.github.io/ng2-admin/articles/011-changing-color-scheme/
+#### angular 2 templat syntax
+ * https://embed.plnkr.co/?show=preview
+ * https://angular.io/docs/ts/latest/guide/architecture.html#!#modules
+#### angular 2 trainings
+ * http://onehungrymind.com/build-a-simple-website-with-angular-2/
+ * https://www.udemy.com/angular-2-projects/
+ * https://www.sitepoint.com/ultimate-angular-cli-reference/
+ * https://www.ibm.com/developerworks/library/wa-implement-a-single-page-application-with-angular2/index.html
+#### package manager
+ * http://gulpjs.com/ https://www.npmjs.com/package/gulp-yarn
+ * https://www.sitepoint.com/yarn-vs-npm/ Everything You Need to Know
+ * https://www.webpagefx.com/blog/web-design/grunt-vs-gulp/
 #### angular 2 end 2 end testing
  * http://www.gistia.com/guide-end-end-testing-angular-2/
  * https://blog.jscrambler.com/getting-started-with-angular-2-end-to-end-testing/
@@ -925,7 +1071,7 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * https://dzone.com/articles/getting-started-with-angular-2-end-to-end-testing
 #### app generator
  * https://github.com/swagger-api/swagger-codegen/tree/master/samples/client/petstore/typescript-angular
- * https://jhipster.github.io/
+ * https://jhipster.github.io/  angular + spring cloud
  * https://github.com/yeoman/generator-angular
  * https://github.com/teerapap/generator-go-angular not active
  * http://stackoverflow.com/questions/29649578/available-yeoman-generator-for-angular-2
@@ -986,6 +1132,7 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
 #### error handling
  * https://davidnix.io/post/error-handling-in-go/
  * https://blog.golang.org/errors-are-values
+
 ### go string literals string template 字符串
  * https://golang.org/ref/spec#String_literals
 ### go with dll
@@ -997,7 +1144,15 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
 //export
 
 ```
-
+##### alpine no bash error
+```
+anic: standard_init_linux.go:175: exec user process caused "no such file or directory" [recovered]
+	panic: standard_init_linux.go:175: exec user process caused "no such file or directory"
+```
+ * https://github.com/moby/moby/issues/27940
+ * https://golang.org/cmd/link/ http://blog.hashbangbash.com/2014/04/linking-golang-statically/
+ * https://stackoverflow.com/questions/33113190/how-to-create-a-statically-linked-golang-executable-with-go-1-5
+ * http://blog.hashbangbash.com/2014/04/linking-golang-statically/
 ### golang download 下载
  * https://golang.org/dl/
  * https://storage.googleapis.com/golang/go1.7.3.linux-amd64.tar.gz

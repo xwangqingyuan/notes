@@ -1518,15 +1518,29 @@ sudo pip install ansible --upgrade
 
 #### vagrant guide
  * http://www.tuicool.com/articles/NbqYFrz
+ * https://www.vagrantup.com/docs/cli/package.html  vagrant cli doc
+ *
 #### vagrant vbox download
  * http://mirrors.hypo.cn/
  * https://vagrantcloud.com/ubuntu/boxes/trusty64
+#### vagrant packers
+  * http://blog.ruilopes.com/from-iso-to-vagrant-box.html
+  * https://github.com/jedi4ever/veewee/blob/master/doc/installation.md
+  * https://stackoverflow.com/questions/15243405/is-it-possible-for-vagrant-to-use-an-os-iso-install-image-directly-or-create-a
 #### vagrant errors
+#### linux isos
+ * http://releases.ubuntu.com/
+ * http://mirror.bit.edu.cn/web/
+ * http://mirrors.aliyun.com/
+ *
 #####
 ```
 A VirtualBox machine with the name already exists Pleas
 ```
 分别启动各个节点
+## virtualbox
+### virtualbox download
+ * https://virtualboxes.org/images/
 ## cloud terms 云词汇
 # design prinsipals
 ## A/B Test A/B测试
@@ -1668,8 +1682,12 @@ A VirtualBox machine with the name already exists Pleas
  * http://redis.io/clients#bash
  * http://www.360doc.com/content/16/0425/23/16915_553797555.shtml
  * http://tianya23.blog.51cto.com/1081650/530743 gossip 通信
- * http://redis.io/presentation/Redis_Cluster.pdf  
- *
+ * http://redis.io/presentation/Redis_Cluster.pdf
+#### redis 测试
+```
+echo -e "SET test1 10 \r\nQUIT\r\n" | curl telnet://192.168.99.100:6379
+echo -e "GET test1 \r\nQUIT\r\n" | curl telnet://192.168.99.100:6379
+```
 #### redis 缓存
  * http://www.cnblogs.com/lsx1993/p/4702568.html 缓存与数据库的一致性
 ## 软件腐蚀 software erosion
@@ -2053,10 +2071,20 @@ git reset --hard 58ae107304e8323d22e3c484140a04d3a4bd2ec6
 # 通过新commit退回某个(适合不是的情况)
 git revert 58ae107304e8323d22e3c484140a04d3a4bd2ec6
 ```
-
+### git export copy working tree
+```
+git archive --format=tar --prefix=angular2-k8s/ HEAD |\
+ (cd /Users/xwang/Downloads/gitws/github.com/xwangqingyuan/angular2-sample/ && tar xf -)
+git archive --format=tar --prefix=angular2-k8s/ HEAD |\
+ (cd /Users/xwang/Downloads/gitws/github.com/xwangqingyuan/angular2-sample/ && tar xf -)
+```
 ### github usage training
  * https://github.com/github/training-kit
 
+### git vs mercurial
+ * https://www.atlassian.com/blog/git/git-vs-mercurial-why-git
+ * https://www.atlassian.com/blog/software-teams/mercurial-vs-git-why-mercurial
+ * https://www.mercurial-scm.org/ quickstart
 # graph editting
  * http://www.sitepoint.com/5-free-html5-presentation-systems/
 
@@ -2160,7 +2188,8 @@ https://github.com/lducas/FHEW
  * https://en.wikipedia.org/wiki/WSO2#WSO2_Identity_Server
 ### OpenID Connect provider gluu
  * https://github.com/GluuFederation/oxAuth
-
+### oauth proxy with provider
+ * https://github.com/openshift/oauth-proxy
 ### single sign on
  * https://auth0.com/docs/sso/single-page-apps-sso
  * https://auth0.com/docs/sso/regular-web-apps-sso
@@ -2315,6 +2344,12 @@ cat /etc/centos-release
 cat /proc/version
 cat /etc/redhat-release
 ```
+## linux errors
+### change locale
+```
+-bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+echo 'export LC_CTYPE="en_US.UTF-8"' >> /etc/environment
+```
 ### linux kernel tuning
  * http://www.lognormal.com/blog/2012/09/27/linux-tcpip-tuning/
  * https://korekontrol.eu/blog/linux-network-performance-tuning
@@ -2418,6 +2453,18 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
  * windows forwarding http://serverfault.com/questions/210755/forwarding-rdp-via-a-linux-machine-using-iptables-not-working
  * http://serverfault.com/questions/660035/redhat-iptables-forwarding-to-virtualbox-windows-server-20120-vm-for-rdp
  * http://www.systutorials.com/816/port-forwarding-using-iptables/
+### ip addr
+```
+sudo ip link add mymacvlan1 link eth0 type macvlan mode bridge
+sudo ip link add mymacvlan2 link eth0 type macvlan mode bridge
+ip link delete mymacvlan1 type macvlan
+sudo ifconfig mymacvlan1 up
+ip link set dev mymacvlan1 up
+ip link add myipvlan1 link enp0s3 type ipvlan mode l2
+sudo ifconfig mymacvlan2 up
+ip link set dev mymacvlan2 up
+
+```
 
 ## TCP
 ### TCP BBR (Linux 4.9)
@@ -2503,7 +2550,8 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
 ### 客户沟通技巧
  * http://zhidao.baidu.com/link?url=J7QM6hwwlOKnnuBkGvW4_AZcA_A8CORk48nFkEcbqcMhgyteUOCj3k-u5HJWi6M19shXwB4tzef40MJkrWgCWa
  * http://zhidao.baidu.com/link?url=gjeUkULSWuwnuQPO_qa2SsJzz9_55B65lHvrq5WwuYgnu7MWAqesxtg3uJ6GvWmGzORS6v0bhln3vAMtbtO7_5ng83pd2tKDt20WEZLdWdS
-
+### coherencetherapy
+ * http://www.coherencetherapy.org/discover/examples.htm
 # soft skills
 ### humor 幽默
 #### 幽默
@@ -2556,7 +2604,7 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
 ## 定域性 和 幺正性 locality 幺正性（unitarity）是一种数学表述，指的是微观粒子散射过程和反应过程中几率守恒。微观世界的物质具有波粒二象性，于时刻t在全空间找到粒子的总几率等于1。
 
 ## Holography is the science and practice of making holograms 全息图
-## math
+## math 数学
  * https://en.wikipedia.org/wiki/List_of_large_cardinal_properties
  * cardinals 基数 Ordinal 序数
  * transfinite 超穷基数
@@ -2564,6 +2612,47 @@ http://blog.sina.com.cn/s/blog_56294d0a0100zuxg.html
  * https://courses.csail.mit.edu/6.042/spring17/mcs.pdf Mathematics for Computer Science
 ### 数学论文
  * http://web.stonehill.edu/compsci/History_Math/math-read.htm
+### real number 实数
+#### 连续性 continuity rational numbers irrational numbers
+ * Real numbers are used to measure continuous quantities
+##### Baire space 贝利空间
+ * product space product topology 积拓扑 积空间
+ * 描述集合论（Descriptive set theory） 波兰空间 Polish space “能行描述集合论”（Effective descriptive set theory）
+ * 集合论中的树用集合表示对应图论中的树
+ * In these areas, recursion theory overlaps with proof theory and effective descriptive set theory.
+ * https://en.wikipedia.org/wiki/Theory_of_computation
+ * 可计算性理论 递归理论 能行描述集合论 proof theory 证明理论 μ-recursive functions are precisely the functions that can be computed by Turing machines
+ * partial function 偏函数 部份函数(X的子集到Y的映射 full function 全 Recursive humor
+ * cardinal number 基数 ordinal numbers 序数
+ * 2:={0, 1}={0,{1}}  N->{0, 1}=2^N
+ * http://www.matrix67.com/blog/archives/4812 http://blog.csdn.net/pongba/article/details/621723 图灵机杂思
+ * Intuitionistic logic constructive logic  Intuitionistic logic is weaker than classical logic
+####  formal logics 形式逻辑
+##### Classical logic (or standard logic 经典逻辑 传统逻辑 标准 逻辑
+ * Law of excluded middle 排中律 and double negative elimination 双重否定即肯定
+ * Law of noncontradiction不矛盾律, and the principle of explosion爆炸律
+ * Monotonicity of entailment 单调的蕴涵 (monotonic logics 单调逻辑))and idempotency of entailment幂等的蕴涵
+ * Commutativity of conjunction 连接交换律
+ * DeMorgan'slaws　德摩根定律
+ * 非单调推理是人工智能领域中一类重要的常识推理,其中包含缺省逻辑默认逻辑、自认知逻辑等内容  工程师，物理学家和数学家，白羊 可废止推理 defeasible reasoning
+ * Nonmonotonic reasoning systems including default logic and autoepistemic logic are important in the commonsense reasoning of artificial intelligence.
+ * structural rule 结构性规则 Weakening Contraction(幂等蕴涵等于缩减规则) Exchange 交换规则 Substructural logic子结构逻辑
+ * Linear logic 线性逻辑contraction缩减 and weakening弱化 are carefully controlled. 相干逻辑
+ * Unlike linear logic, most relevance logics相关逻辑 permit the contraction rule, but not the weakening rule. Thus in a sense they are the “dual” of affine logic 仿射逻辑which permits weakening but not contraction.
+ * logical connective 逻辑连接符(also called a logical operator)逻辑操作符
+ * sequent calculus 矢列演算 sequent接续而来的 线性矢列演算(linear sequent calculus)线性逻辑 turnstile symbol " ⊢ {\displaystyle \vdash } \vdash " 旋杆
+ *  propositional calculus 逻辑命题演算
+ * Answer set programming (ASP) is a form of declarative programming oriented towards difficult (primarily NP-hard) search problems The stable model semantics is the basis of answer set programming答案集编程
+##### Negation as failure 否定为失败 寻找失败即认为否
+* Planner semantics Planner语义
+* Prolog semantics Prolog语义
+* Completion semantics 完成语义
+* Autoepistemic semantics 自知性语义
+closed-world assumption (CWA) 封闭世界假设 信息全或必须要有答案时open-world assumption 开放世界假设 信息不全时
+Well-founded Semantics 良序模型语义 Thus the well-founded model of a logic program provides a lower bound on the intersection of its stable models and an upper bound on their union.
+##### blogs
+ * http://mindhacks.cn/2015/01/27/escape-from-your-shawshank-part5-2-platos-cave/ 逃出你的肖申克
+ * https://book.douban.com/subject/6709809/reading/ 《暗时间》试读
 ## 物理学快报
  * http://phys.org/journals/physical-review-letters/
 ## 热力学geming
