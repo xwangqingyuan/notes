@@ -346,6 +346,24 @@ translation, scaling, homothety, similarity transformation, reflection, rotation
  * https://bazel.build/faq.html
  * https://bazel.build/roadmap.html
  *
+## AI software engineering
+ * http://www0.cs.ucl.ac.uk/staff/mharman/raise12.pdf
+### AI testing
+ * http://www.aiwebtesting.com/
+ * https://www.stickyminds.com/interview/role-artificial-intelligence-testing-interview-jason-arbon?page=0%2C2
+ * http://www.tesabot.com/
+ * http://www.aiwebtesting.com/
+ * https://github.com/EvoSuite/evosuite
+### AI projects
+ * https://en.wikipedia.org/wiki/List_of_artificial_intelligence_projects
+ * https://github.com/GoodAI/BrainSimulator/tree/master/Doc/BrainSimulator%20Guide
+ * https://github.com/alfredfrancis/ai-chatbot-framework
+ * https://github.com/opencog/opencog
+ * https://github.com/aimacode
+### software prototyping
+ * https://github.com/prikhi/pencil
+ * https://blog.thegrid.io/
+ * https://kite.com/
 #### GPU code structure
  *
 #### softmax function
@@ -2552,6 +2570,10 @@ ip link set dev mymacvlan2 up
  * http://zhidao.baidu.com/link?url=gjeUkULSWuwnuQPO_qa2SsJzz9_55B65lHvrq5WwuYgnu7MWAqesxtg3uJ6GvWmGzORS6v0bhln3vAMtbtO7_5ng83pd2tKDt20WEZLdWdS
 ### coherencetherapy
  * http://www.coherencetherapy.org/discover/examples.htm
+## 用户体验设计中心
+ * http://uedc.163.com/
+ * http://isux.tencent.com/
+ * http://www.aliued.cn/category/1%e4%ba%a4%e4%ba%92%e8%ae%be%e8%ae%a1
 # soft skills
 ### humor 幽默
 #### 幽默
@@ -2650,6 +2672,26 @@ ip link set dev mymacvlan2 up
 * Autoepistemic semantics 自知性语义
 closed-world assumption (CWA) 封闭世界假设 信息全或必须要有答案时open-world assumption 开放世界假设 信息不全时
 Well-founded Semantics 良序模型语义 Thus the well-founded model of a logic program provides a lower bound on the intersection of its stable models and an upper bound on their union.
+#### fuzzy logic 模糊逻辑
+ * https://thecustomizewindows.com/2014/06/machine-learning-data-center-automation/
+ * Google SEO Still is Backlinking Google Panda 是Google针对网站内容页
+ * sixth senses zengqiangxianshi https://thecustomizewindows.com/2013/05/sixthsense-get-more-advanced-and-cheap-device-than-google-glass/
+##### 隶属度函数
+#### Collective Intelligence 集体智慧; 群体智慧; 群体智能
+ * https://thecustomizewindows.com/2013/03/robobees-where-microrobotics-meet-bees/
+ * DMOZ网站是一个著名的开放式分类目录（Open DirectoryProject），之所以称为开放式分类目录
+ * http://cci.mit.edu/
+#### Multi Agent System (MAS) Multi-Agent系统(MAS)是多个Agent组成的集合
+ * https://thecustomizewindows.com/2012/01/multi-agent-system-mas-and-robotics/ Google Bots
+ * http://google.trueland.net/googletuiguangjiqiao/googlebots.shtml
+##### Machine Learning : Data Center Management
+ * http://info.sunbirddcim.com/data-center-monitoring?utm_source=bing&utm_medium=cpc&utm_campaign=DCIM (US) - Phrase&utm_term=data center monitoring&utm_content=Data Center Monitoring
+ * https://thecustomizewindows.com/2014/10/belief-network-machine-learning-rackspace-cloud-intelligence/
+ * https://logentries.com/logentries-announces-machine-learning-analytics-for-ops-monitoring-real-time-alerting/
+ * New Cloud Service for Anomaly Detection and Inactivity Alerting Improves System Up-time and Accelerates Issue Resolution
+####
+ * http://www.primaryobjects.com/2013/01/27/using-artificial-intelligence-to-write-self-modifying-improving-programs/
+ * http://www.primaryobjects.com/2015/01/05/self-programming-artificial-intelligence-learns-to-use-functions/
 ##### blogs
  * http://mindhacks.cn/2015/01/27/escape-from-your-shawshank-part5-2-platos-cave/ 逃出你的肖申克
  * https://book.douban.com/subject/6709809/reading/ 《暗时间》试读

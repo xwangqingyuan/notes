@@ -14,6 +14,10 @@
 ### docker and moby
  * http://mobyproject.org/#moby-and-docker
  * https://blog.docker.com/2017/05/get-involved-moby-project-attending-upcoming-moby-summits/
+### docker compose example
+ * https://github.com/dockersamples
+ * https://github.com/gravityrail/wordpress-docker-compose-example
+ * https://github.com/docker/libcompose
 ## Kubernetes  k8s
 ### kubernetes trends
  * https://groups.google.com/forum/#!search/redis$203.0$20kubernetes/kubernetes-users/JqvIuUmt5fk/OYjZrWtKCgAJ
@@ -896,9 +900,24 @@ Real world example:
  * https://github.com/fiunchinho/dockerize-me
  * https://github.com/jwilder/dockerize jasonwilder.com/blog/2014/10/13/a-simple-way-to-dockerize-applications/
  * https://github.com/larsks/dockerize A tool for creating minimal docker images from dynamic ELF binaries
- *
+ * https://yipee.io/ Visual Modeling for Microservice Applications
+ * http://cloudify.co/container-docker-kubernetes-orchestration-management-cloud-deployment-automation
+ * https://platform9.com/ https://thenewstack.io/containers-container-orchestration/
+ * http://www.midvision.com/blog/10-open-source-docker-tools-you-should-be-using
+### docker visualiser
+ * https://github.com/veggiemonk/awesome-docker https://github.com/dockersamples/docker-swarm-visualizer have good box
+ * https://yipee.io/ Visual Modeling for Microservice Applications https://puppet.com/product/capabilities/orchestration
+ * https://github.com/CenturyLinkLabs/panamax-ui
+ * http://containerjournal.com/2016/04/27/7-web-interfaces-container-management-orchestration/
+ * https://github.com/portainer/portainer
 
 # programming coding 编程
+## programming contests
+ * https://www.thoughtco.com/list-of-programming-contests-challenges-958193
+ * https://www.webpagefx.com/blog/web-design/10-puzzle-websites-to-sharpen-your-programming-skills/
+ * https://github.com/timfenney/contest/tree/master/uva/contest%20volumes
+## hardware contest
+ * https://hackaday.io/
 ## algorithm 算法
 
 ### generic interface
@@ -1031,6 +1050,10 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * https://en.wikipedia.org/wiki/Single-page_application
  * http://noeticforce.com/best-Javascript-frameworks-for-single-page-modern-web-applications
  * http://angularjs-emberjs-compare.bguiz.com/
+#### angular 2 components
+ * https://github.com/brillout/awesome-angular-components
+ * https://github.com/AngularClass/awesome-angular
+ * https://github.com/maiyaporn/angular2-wizard https://www.cc28tech.com/angular-2-multi-step-wizard-ui-router-part-1/
 #### angular 2 error
 ##### You have to be inside an angular-cli project in order to use the serve command harbor
  * https://github.com/angular/angular-cli/issues/4379
