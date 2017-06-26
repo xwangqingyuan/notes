@@ -24,7 +24,26 @@
  * https://wikibon.com/crowdchat-summary-simplify-hybrid-cloud-hybridcloud/
  * https://wikibon.com/avoid-cloud-cul-de-sacs-follow-your-hybrid-cloud-manifesto/
  * https://wikibon.com/evolving-converged-infrastructure-towards-true-private-cloud/
-
+## Applications 应用
+### AI career sites
+ * https://blog.insightdatascience.com/how-emerging-ai-roles-fit-in-the-data-landscape-d4cd922c389b
+ * https://blog.insightdatascience.com/data-science-vs-data-engineering-62da7678adaa
+ * https://www.eiuperspectives.economist.com/sites/default/files/Artificial_intelligence_in_the_real_world_1.pdf
+ * http://xyz.insightdatascience.com/Insight_AI_White_Paper.pdf
+ * https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence
+## 自动编程 coding programming programme
+ * https://github.com/facebook/infer http://fbinfer.com/
+ * https://databricks.com/blog/2016/04/01/unreasonable-effectiveness-of-deep-learning-on-apache-spark.html
+ * https://github.com/databricks/spark-deep-learning
+ * https://github.com/deepspark/deepspark
+## Symbolic data analysis (SDA)
+ * https://www.rocq.inria.fr/axis/modulad/sda11/HCSDA11-Diday.PDF
+ * https://en.wikipedia.org/wiki/Symbolic_data_analysis
+ * https://www.slideshare.net/butest/ch-91machine-learning-symbolbased
+ * https://www.rocq.inria.fr/axis/modulad/sda11/HCSDA11-Diday.PDF
+ * https://news.ycombinator.com/item?id=13259880
+ * http://languagengine.co/blog/
+ * https://arxiv.org/pdf/1609.05518.pdf  Towards Deep Symbolic Reinforcement Learning
 ## startup database
  * http://www.cyzone.cn/event/list-764-0-1/
  * https://www.crunchbase.com/organization/
@@ -196,7 +215,6 @@ translation, scaling, homothety, similarity transformation, reflection, rotation
 ### Convolutional Networks 卷积网络
 ### Sequence Modeling: Recurrent and Recursive Nets 序列模型：循环和递归网络
 ### Practical Methodology 实践方法
-### Applications 应用
 ### Deep Learning Research 深度学习研究
 ### Linear Factor Models 线性分解模型
 ### Autoencoders 自动编码器
@@ -419,6 +437,24 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
  * https://github.com/billryan/docker-gitbook
  * https://hub.docker.com/r/billryan/gitbook/
  * https://hub.docker.com/r/gitbook/convert/
+
+# blockchain
+## https://www.hyperledger.org/
+### https://github.com/hyperledger/fabric
+ * http://blog.csdn.net/bluecloudmatrix/article/details/51859333 http://blog.csdn.net/xjmtxwd24/article/details/52777814?locationNum=2
+ *
+## https://en.wikipedia.org/wiki/Ethereum
+ * https://github.com/ethereum/ https://www.ethereum.org/
+ * http://www.8btc.com/smart-contract-myths
+## Use cases
+ * https://wiki.hyperledger.org/groups/requirements/use-case-inventory
+### blockchain in insurance
+ * https://www2.deloitte.com/us/en/pages/life-sciences-and-health-care/articles/blockchain-in-insurance.html
+ * http://www.coindesk.com/accenture-blockchain-major-technology-insurers/
+ * https://dailyfintech.com/2016/01/14/what-does-the-future-hold-for-blockchain-and-insurance/
+ * https://tierion.com/blog/improving-insurance-with-the-blockchain/
+### haritable giving
+ * https://www.cryptocoinsnews.com/report-block-chain-will-revolutionize-charitable-giving/
 
 # cmdb
 ## open source cmdb
@@ -1734,7 +1770,29 @@ echo -e "GET test1 \r\nQUIT\r\n" | curl telnet://192.168.99.100:6379
  *
 
 # database 数据库
+## CRDT
+ * https://github.com/share/sharedb OT system https://stackoverflow.com/questions/26694359/differences-between-ot-and-crdt
+ * https://en.wikipedia.org/wiki/Operational_transformation
+ * https://medium.com/@raphlinus/towards-a-unified-theory-of-operational-transformation-and-crdt-70485876f72f
+ * https://pages.lip6.fr/Marek.Zawirski/papers/SwiftCloud-RR-8347.pdf
+ * https://github.com/refset/crdt-monotonic-dag
+ * https://github.com/dominictarr/crdt  replicating documents
+ * https://news.ycombinator.com/item?id=12303100 CRDT OT discussion you would use the right CRDT to fit the problem space, provided the problem space can be modeled using commutative operations. CRDTs require the problem space to be defined in terms of commutative operations. That's just a requirement of the data structure, just like binary search requires a sorted list. If that requirement is met, then there would be no conflicts and no merges by design. That's the beauty of CRDTs. They are perfect for multi-master distributed settings.
+ * http://hal.upmc.fr/file/index/docid/555588/filename/techreport.pdf
 ## relational database 关系型数据库
+### data binding 数据转换工具
+ * https://github.com/OmniDB/OmniDB  
+ * https://github.com/dflemstr/rq Record Query - A tool for doing record analysis and transformation  rust
+ * https://github.com/knq/xo Command line tool to generate idiomatic Go code for SQL databases supporting PostgreSQL, MySQL, SQLite, Oracle, and Microsoft SQL Server
+ * https://github.com/catherinedevlin/ddl-generator Guesses table DDL based on data
+ * http://doctrine.readthedocs.io/en/latest/en/manual/yaml-schema-files.html
+ * https://github.com/stedolan/jq
+ * https://github.com/timmattison/proto2sql Use Protobufs with SQL databases without creating DTOs
+ * https://github.com/ghodss/yaml
+ * https://pythonhosted.org/Pyrseas/yamltodb.html#examples  https://pythonhosted.org/Pyrseas/dbtoyaml.html
+ * https://github.com/emolch/guts  xml to yaml
+#### json process tools
+ * http://json.org/
 ### mysql
 #### mysql 客户端
 ```
@@ -1989,6 +2047,8 @@ Marc.Shapiro
 https://pages.lip6.fr/Marc.Shapiro/
 lamport
 http://www.lamport.org/
+jeff dean
+plus.google.com/+JeffDean  http://blog.jobbole.com/51607/ http://blog.jobbole.com/47726/
 
 ## technical interview questions
  * http://career.guru99.com/top-23-openstack-interview-questions/
@@ -2092,9 +2152,14 @@ git revert 58ae107304e8323d22e3c484140a04d3a4bd2ec6
 ### git export copy working tree
 ```
 git archive --format=tar --prefix=angular2-k8s/ HEAD |\
- (cd /Users/xwang/Downloads/gitws/github.com/xwangqingyuan/angular2-sample/ && tar xf -)
+ (cd /Users/xwang/Downloads/gopath/src/github.com/xwangqingyuan/angular2-sample/ && tar xf -)
 git archive --format=tar --prefix=angular2-k8s/ HEAD |\
- (cd /Users/xwang/Downloads/gitws/github.com/xwangqingyuan/angular2-sample/ && tar xf -)
+ (cd /Users/xwang/Downloads/gopath/src/github.com/xwangqingyuan/angular2-sample/ && tar xf -)
+ git archive --format=tar --prefix=compose2k8s/ HEAD |\
+  (cd /Users/xwang/Downloads/gopath/src/pbin.net/ && tar xf -)
+git archive --format=tar --prefix=compose2k8s/ HEAD |\
+  (cd /tmp/ && tar xf -)
+cp -r /Users/xwang/Downloads/gopath/src/github.com/kubernetes-incubator/kompose/vendor/github.com/kubernetes-incubator ./
 ```
 ### github usage training
  * https://github.com/github/training-kit
@@ -2206,6 +2271,10 @@ https://github.com/lducas/FHEW
  * https://en.wikipedia.org/wiki/WSO2#WSO2_Identity_Server
 ### OpenID Connect provider gluu
  * https://github.com/GluuFederation/oxAuth
+ * https://github.com/mitreid-connect/OpenID-Connect-Java-Spring-Server/tree/master/openid-connect-client
+ * https://github.com/mitreid-connect/OpenID-Connect-Java-Spring-Server
+ * https://github.com/simpledynamics/openid-connect-server-spring-boot
+ * https://github.com/fromi/spring-google-openidconnect
 ### oauth proxy with provider
  * https://github.com/openshift/oauth-proxy
 ### single sign on
@@ -2231,7 +2300,23 @@ https://github.com/lducas/FHEW
  * https://www.fastcompany.com/3066849/the-sensor-revolution/qualcomm-drones-vr-cars-satellites
 ## Quantum Computers
  * http://www-03.ibm.com/press/us/en/pressrelease/51740.wss
-
+### Quantum annealing 量子退火
+ * https://en.wikipedia.org/wiki/Quantum_annealing
+ * https://people.eecs.berkeley.edu/~vazirani/pubs/adiabatic.pdf
+ * http://iopscience.iop.org/article/10.1088/1367-2630/aa59c4/pdf http://iopscience.iop.org/article/10.1088/1367-2630/aa59c4/pdf
+### Shor's algorithm 彼得•秀尔
+ * quantum Fourier transform https://en.wikipedia.org/wiki/Quantum_Fourier_transform
+#### 离散对数问题
+ * https://en.wikipedia.org/wiki/Euclidean_algorithm 求最大公约数
+#### 椭圆曲线密码算法(ECC)
+ * dh算法和ecc算法时，算法安全依赖离散对数难题
+### Grover's algorithm 格罗弗
+ *  Amplitude amplification 振幅放大 can be used to obtain a quadratic speedup over several classical algorithms
+#### Quantum superposition 量子叠加态
+### black box
+#### black box
+ * oracle machine is an abstract machine used to study decision problems
+ * 量子叠加态
 # mobile
 
 
@@ -2255,6 +2340,8 @@ deb-src http://mirrors.aliyun.com/ubuntu trusty universe
 deb http://mirrors.aliyun.com/ubuntu trusty-updates universe
 deb-src http://mirrors.aliyun.com/ubuntu trusty-updates universe
 ```
+### Linux key persons
+ *
 #### Software mirrors
  * 镜像源汇总 https://segmentfault.com/a/1190000000375848#articleHeader2
  * 汇总 https://www.douban.com/note/375227086/   http://www.linuxdiyf.com/linux/15609.html
@@ -2324,6 +2411,9 @@ sed -i 's/Do not change/Do not evet change/' filename
 sed -i 's/pcImg\.push/\/\/pcImg\.push/' /tmp/repo/flow.groovy
 sed -i 's/\/\/pcImg\.push/pcImg\.push/' /tmp/repo/flow.groovy
 删除文件行，插入文件行
+sed -i "" 's/github\.com\/kubernetes-incubator\/kompose/pbin\.net\/compose2k8s/' *.*
+sed -i "" 's/compose2k8s/kubernetes-incubator/' compose.go
+http://xiaorui.cc/2016/01/14/%e8%ae%bamac%e4%bd%bf%e7%94%a8sed%e4%bf%ae%e6%94%b9%e6%96%87%e4%bb%b6%e7%9a%84%e6%ad%a3%e7%a1%ae%e5%a7%bf%e5%8a%bf/
 ```
 ## shared memory
  * http://rubenlaguna.com/wp/2015/02/22/posix-slash-system-v-shared-memory-vs-threads-shared-memory/
@@ -2573,7 +2663,10 @@ ip link set dev mymacvlan2 up
 ## 用户体验设计中心
  * http://uedc.163.com/
  * http://isux.tencent.com/
+ * http://www.woshipm.com/
  * http://www.aliued.cn/category/1%e4%ba%a4%e4%ba%92%e8%ae%be%e8%ae%a1
+## mental strength 心灵力量
+ * http://www.lifehack.org/articles/communication/13-things-mentally-strong-people-dont.html
 # soft skills
 ### humor 幽默
 #### 幽默

@@ -45,10 +45,15 @@ kubelet syncLoop->syncLoopIteration resyncInterval:                 kubeCfg.Sync
  * https://github.com/kubernetes/kube-aggregator
  * https://github.com/kubernetes/sample-apiserver
  * https://kubernetes.io/docs/tasks/access-kubernetes-api/extend-api-third-party-resource/
-#### spark on kubernetes
+### kubernetes authentication openid connect
+ * https://kubernetes.io/docs/admin/authentication/#openid-connect-tokens
+ * http://www.devoperandi.com/kubernetes-authentication-openid-connect/
+#### spark on kubernetesspark
+ * http://rootsongjc.github.io/projects/yarn-on-docker/ talking data spark solution
  * https://github.com/mattf/openshift-spark/blob/master/Makefile 简单的spark demo
- * https://hub.docker.com/r/radanalyticsio/openshift-spark/
- * https://github.com/radanalyticsio/openshift-spark
+ * 演示案例 https://github.com/nicolaferraro/voxxed-bigdata-spark  https://hub.docker.com/r/radanalyticsio/openshift-spark/
+ * https://www.slideshare.net/nicolaferraro/extending-devops-to-big-data-applications-with-kubernetes
+ * https://github.com/radanalyticsio/openshift-spark https://github.com/radanalyticsio/oshinko-webui
  * https://elmiko.github.io/2016/11/16/spark-on-openshift-with-oshinko.html https://github.com/radanalyticsio/oshinko-webui
  * spark on openshift 项目 oshinko 日式泡菜
  * https://github.com/shekhargulati/spark-openshift-quickstart
@@ -116,6 +121,8 @@ kubelet syncLoop->syncLoopIteration resyncInterval:                 kubeCfg.Sync
  * https://github.com/weaveworks-plugins/scope-traffic-control
  * https://github.com/kinvolk/tcd https://kinvolk.io/blog/2016/05/testing-web-services-with-traffic-control-on-kubernetes/
 #### 动态分配存储 provisioner
+ * https://github.com/kubernetes/community/blob/master/contributors/design-proposals/local-storage-overview.md local strorage
+ * https://github.com/kubernetes/kubernetes/issues/7562#issuecomment-281469904
  * https://github.com/kubernetes/kubernetes/blob/962d51ec682a14ef2d926175bbc614bac69f3197/pkg/controller/volume/persistentvolume/controller.go
  * https://github.com/kubernetes/kubernetes/blob/88c977c34ac9c0edc8b6be8034b2d5b47a5735e2/pkg/volume/glusterfs/glusterfs.go
  * https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-files/
@@ -149,7 +156,8 @@ kubelet syncLoop->syncLoopIteration resyncInterval:                 kubeCfg.Sync
  * https://github.com/kelproject/pykube/issues/80
 ### kubernetes GPU
  * http://blog.clarifai.com/how-to-scale-your-gpu-cloud-infrastructure-with-kubernetes/#.WTUCUcklFE4
-
+#### kubernetes API watch cache
+ * apiserver/pkg/storage/cacher.go apiserver/pkg/registry/generic/registry/storage_factory.go apiserver/pkg/registry/generic/storage_decorator.go
 #### openshift devops
 ##### diagnostics
 ##### e2e testing
@@ -188,6 +196,12 @@ kubelet syncLoop->syncLoopIteration resyncInterval:                 kubeCfg.Sync
  * https://github.com/kubernetes/kubernetes/issues/43433
  * https://docs.google.com/document/d/1O2SEr_TDtgXzndh5lHPuAZmT-haylB9NaBRSo4DsUdk/edit#heading=h.chxbd5h0cu1x
  *
+#### Ubernetes Lite  single cluster across multiple data centers
+ * https://kubernetes.io/docs/admin/multiple-zones/
+ * https://stackoverflow.com/questions/34194602/single-kubernetes-openshift-cluster-instance-across-datacenters
+ * https://serverfault.com/questions/742063/single-kubernetes-openshift-cluster-instance-across-datacenters
+ * https://lists.openshift.redhat.com/openshift-archives/dev/2015-December/msg00023.html
+ * https://lists.openshift.redhat.com/openshift-archives/dev/2015-December/msg00021.html  
 #### selinux references
  * https://wiki.centos.org/HowTos/SELinux#head-563ca75234163cdfa0ef056f1f82d4d396526d2b troubleshooting
  * https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Security-Enhanced_Linux/sect-Security-Enhanced_Linux-SELinux_Contexts-SELinux_Contexts_for_Processes.html
@@ -591,8 +605,9 @@ http://lattice.cf/
  * http://docs.openstack.org/liberty/config-reference/content/ceph-rados.html
  * documents http://docs.openstack.org/
  * APIs http://developer.openstack.org/api-ref.html
- *
-
+### openstack federated identity
+ * https://docs.openstack.org/developer/keystone/federation/federated_identity.html
+ * https://specs.openstack.org/openstack/keystone-specs/specs/kilo/openid-connect.html
 ### 配置模版格式
  * https://github.com/toml-lang/toml/blob/master/examples/example-v0.4.0.toml  类似ini的模版格式
  * https://github.com/dbohdan/remarshal
@@ -782,6 +797,19 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 ### marketplace
  * https://marketplace.openshift.com/
 
+## openshift sso
+### openshift jenkins sso
+ * https://github.com/openshift/jenkins-openshift-login-plugin
+ * http://blog.andyserver.com/2016/10/integrating-openshift-authentication-jenkins/
+### openshift jenkins fabric8 jenkins
+ * https://fabric8.io/presentations/JenkinsWorld-CD-Jenkins-Docker-Kubernetes.pdf
+ * https://github.com/fabric8io/fabric8-pipeline-library https://github.com/fabric8io/fabric8-jenkinsfile-library
+ * https://jenkins.io/doc/book/architecting-for-scale/
+ * https://blog.openshift.com/openshift-3-3-pipelines-deep-dive/ https://github.com/openshift/jenkins
+ * https://blog.openshift.com/cicd-with-openshift/
+ * https://github.com/openshift/jenkins-plugin
+ * https://github.com/openshift/jenkins-client-plugin Experimental
+
 ### minishift
  * https://marketplace.openshift.com/
 ```
@@ -911,11 +939,50 @@ Real world example:
  * http://containerjournal.com/2016/04/27/7-web-interfaces-container-management-orchestration/
  * https://github.com/portainer/portainer
 
+##
+### Intel RSD
+ * https://github.com/01org/intelRSD
+ *
+### UEFI
+ * http://www.uefi.org/
+ * https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface
+ * https://software.intel.com/en-us/blogs/2016/05/25/firmware-modern-data-center
+ * http://www.uefi.org/sites/default/files/resources/UEFI_Plugfest_May_2015_HTTP_Boot_Redfish_Samer_El-Haj_ver1.2.pdf
+#### StackIQ
+ * https://github.com/StackIQ/stacki-kubernetes
+#### OpenStack Baremetal ironic
+ * http://superuser.openstack.org/articles/manage-multi-node-kubernetes-deployment-bare-metal-cluster/
+ * https://docs.openstack.org/developer/ironic/deploy/user-guide.html ironic boot sequence chart
+ * http://www.infosysblogs.com/application-services/2016/07/my_experience_with_bare_metal_.html
+### RedFish
+ * https://www.packet.net/blog/redfish-and-the-future-of-bare-metal-server-automation/
+ * http://www.infoworld.com/article/2692393/servers/redfish-spec-wiggles-servers-free-from-vendor-lockin.html
+ * https://www.infoq.com/news/2015/08/redfish
+ * http://redfish.dmtf.org/
+ * http://redfish.dmtf.org/schemas/DSP0266_1.2.0.html schema
+ * https://github.com/DMTF/Redfish-Tools  tools
+ * http://redfish.dmtf.org/redfish/v1/mockup/767 mockup
+#### openstack RedFish
+ * https://www.openstack.org/summit/barcelona-2016/summit-schedule/events/16231/empowering-ironic-with-redfish-support
+#### OData
+ * http://www.odata.org/
+ * https://en.wikipedia.org/wiki/Open_Data_Protocol
+
 # programming coding 编程
 ## programming contests
  * https://www.thoughtco.com/list-of-programming-contests-challenges-958193
  * https://www.webpagefx.com/blog/web-design/10-puzzle-websites-to-sharpen-your-programming-skills/
  * https://github.com/timfenney/contest/tree/master/uva/contest%20volumes
+## language comparison
+### benchmarks
+ * https://github.com/kostya/benchmarks
+ * http://benchmarksgame.alioth.debian.org/
+ * https://benchmarksgame.alioth.debian.org/u64q/go.html
+### Comparing Golang with Java
+ * https://news.ycombinator.com/item?id=10402307
+ * https://news.ycombinator.com/item?id=2532995
+ * https://javax0.wordpress.com/2016/04/27/comparing-golang-with-java/
+ * https://www.quora.com/What-advantages-does-Go-have-compared-to-Java-or-Python
 ## hardware contest
  * https://hackaday.io/
 ## algorithm 算法
@@ -966,6 +1033,18 @@ Referential transparency 参照透明 deterministic 确定性的 rewriting syste
  * https://github.com/mre/awesome-static-analysis
  * https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis
  * https://github.com/Qafoo/QualityAnalyzer
+## programming paradigm 编程范式
+ * http://people.cs.aau.dk/~normark/prog3-03/html/notes/paradigms_themes-paradigm-overview-section.html
+```
+imperative paradigm 命令式First do this and next do that
+functional paradigm 函数式Evaluate an expression and use the resulting value for something
+logic paradigm 逻辑式     Answer a question via search for a solution
+object-oriented paradigm 面向对象式Send messages between objects to simulate the temporal evolution of a set of real world phenomena
+procedure oriented 面向过程
+structural programme 结构化编程
+computer algebra, also called symbolic computation or algebraic computation,  symbolic programming
+https://en.wikipedia.org/wiki/GNU_Multiple_Precision_Arithmetic_Library
+```
 ## programming teaching
 ### scratch 教小孩编程
  * https://scratch.mit.edu/
@@ -1030,6 +1109,16 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * https://stackoverflow.com/questions/40057469/what-is-the-difference-between-yarn-lock-and-npm-shrinkwrap
  * http://www.infoworld.com/article/3172725/javascript/npm-or-yarn-nodejs-devs-pick-their-package-manager.html
  * https://stackoverflow.com/questions/40057469/what-is-the-difference-between-yarn-lock-and-npm-shrinkwrap
+### grunt
+#### grunt errors
+##### Error: Cannot find module 'coffee-script'
+ * https://stackoverflow.com/questions/13011290/cannot-find-module-coffee-script
+##### Local Npm module "grunt-contrib-concat" not found. Is it installed?
+ * https://stackoverflow.com/questions/23767122/grunt-getting-local-npm-module-xxx-not-found-is-it-installed-whats-caus
+```
+delete the node_modules folder (or back it up somewhere)
+and then run npm install
+```
 #### angularjs
  * https://github.com/toddmotto/angular-1-5-components-app
  * https://github.com/toddmotto/angular-styleguide
@@ -1138,6 +1227,7 @@ npm install -g @angular/cli
  * https://wiki.python.org/moin/FiniteStateMachine
  *
 ## Go golang
+ * https://github.com/golang/go/releases
 ### go is not good
  * https://github.com/ksimka/go-is-not-good
  * http://www.yinwang.org/blog-cn/2014/04/18/golang
@@ -1149,6 +1239,10 @@ npm install -g @angular/cli
  * http://gorevel.cn/docs/index.html
  * https://github.com/gorilla/handlers
  * http://goa.design/design/
+### awesome golangs
+ * https://github.com/avelino/awesome-go may image processing libs
+ * https://github.com/lk-geimfari/awesomo/blob/master/languages/GOLANG.md
+ *
 ### goadesign
  * https://blog.gopheracademy.com/advent-2015/goaUntanglingMicroservices/
  * https://www.infoq.com/news/2015/12/goa-microservice-framework
@@ -1161,6 +1255,9 @@ npm install -g @angular/cli
 ### go with dll
  * http://stackoverflow.com/questions/19431296/building-and-linking-dynamically-from-a-go-binary
  * https://golang.org/cmd/cgo/#hdr-C_references_to_Go
+### golang functional go function golang 函数式编程
+ * https://golang.org/doc/codewalk/functions/
+ * https://github.com/rShetty/functional-go
 #### problem
 ```
 一定要import "C"
@@ -1229,6 +1326,16 @@ logic paradigm
  * https://github.com/spotify/dockerfile-maven
  * https://hub.docker.com/r/sonatype/nexus/
  * https://hub.docker.com/r/sonatype/nexus3/
+### java8
+#### default method
+ * https://stackoverflow.com/questions/19998454/interface-with-default-methods-vs-abstract-class-in-java-8
+##### default method in golang
+ * https://github.com/golang/go/issues/16254
+ * https://groups.google.com/forum/#!topic/golang-nuts/OYpSVcqlHDc
+### java9
+ * http://www.journaldev.com/13121/java-9-features-with-examples
+ * https://dzone.com/articles/java-9-features-announced
+ * https://bentolor.github.io/java9-in-action/#/
 
 #### nexus
  * https://dzone.com/articles/maven-repository-manager-nexus
