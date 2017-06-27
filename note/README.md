@@ -31,11 +31,83 @@
  * https://www.eiuperspectives.economist.com/sites/default/files/Artificial_intelligence_in_the_real_world_1.pdf
  * http://xyz.insightdatascience.com/Insight_AI_White_Paper.pdf
  * https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence
+ * https://www.forbes.com/sites/bernardmarr/2016/09/30/what-are-the-top-10-use-cases-for-machine-learning-and-ai/#1e786f6e94c9
+#### top Top 10 AI And Machine Learning Use Cases
+ * Data Security
+ * Personal Security
+ * Financial Trading
+ * Healthcare
+ * Marketing Personalization
+ * Fraud Detection
+ * Recommendations
+ * Online Search
+ * Natural Language Processing (NLP)  ranslate obscure legalese in contracts into plain language and help attorneys
+ * Smart Cars
+#### 10 Artificial Intelligence Trends to Watch in 2017
+ * AI Chatbots
+ * App Development
+ * Intelligent Things
+ * Medical Research
+ * Biological Models
+ * AI Hardware
+ * AI Startups
+ * AI Workforce Impacts
+ * Backlash
+ * Improved Prediction Capabilities
+### Application to algorithms application to models
+#### OCR
+##### Automatic Recognition of Handwritten Postal Codes
+#### Pattern recognition algorithms
+##### computer-aided diagnosis
+ * Supervised learning
+ * Bayesian classifier,
+ * artificial neural network,
+ * radial basis function network, radial basis function network is an artificial neural network
+ * support vector machine
+#### Computer Vision
+##### Robot Soccer World Cup
+##### Driverless Cars
+##### Face Recognition and Security
+#### Speech Recognition
+##### video captioning and court reporting.
+#### Text mining
+##### Business intelligence
+##### National security
+##### Life sciences
+##### Those related to sentiment classification
+##### Automated placement of advertisement
+##### Automated classification of news articles
+##### Social media monitoring
+##### Spam filter
+#### Where Text and Image Data Can Be Used Together
+##### author identification
+ * Handwriting detection
+ * Writing style detection: text mining
+#####  identification of unwanted material in a video
+ * video images - Computer Vision
+ * comments from social media - text mining
+#### Text to animation
+ * http://www.topbestalternatives.com/plotagon/ https://www.fastcodesign.com/3020128/type-your-own-animated-movie-with-this-crazy-software
+ * CrazyTalk Animator
+ * https://www.animaker.com/
+ * https://techcrunch.com/2015/08/11/ikinema-intimate/
+ * https://www.youtube.com/watch?v=7tsFxfZxR5o  Animation Generation From Natural Language- AUI
+ * Animation Generation from Natural Language
+#### language model based on recurrent neural network
+##### chatbot
+#### deepblue
+#### IBM’s Watson
+#####  healthcare, finance, legal, and retail sector.
+#### Google Now  Apple’s Siri Microsoft’s Cortana
+
 ## 自动编程 coding programming programme
  * https://github.com/facebook/infer http://fbinfer.com/
  * https://databricks.com/blog/2016/04/01/unreasonable-effectiveness-of-deep-learning-on-apache-spark.html
  * https://github.com/databricks/spark-deep-learning
  * https://github.com/deepspark/deepspark
+## concept mining
+### ontology and DAG
+ * http://geneontology.org/page/ontology-structure
 ## Symbolic data analysis (SDA)
  * https://www.rocq.inria.fr/axis/modulad/sda11/HCSDA11-Diday.PDF
  * https://en.wikipedia.org/wiki/Symbolic_data_analysis
@@ -48,7 +120,6 @@
  * http://www.cyzone.cn/event/list-764-0-1/
  * https://www.crunchbase.com/organization/
  * https://index.co/company/
-
 ## alphago
  * https://en.wikipedia.org/wiki/AlphaGo
  * http://www.dcine.com/2016/01/28/alphago/  
@@ -513,6 +584,39 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
  * https://www.slideshare.net/HadoopSummit/effective-spark-on-multitenant-clusters?next_slideshow=1 cloudera
  * https://www.bluedata.com/wp-content/uploads/2014/09/bluedata-hortonworks-solution-brief.pdf
  * https://www.cloudera.com/documentation/enterprise/5-8-x/topics/admin_howto_multitenancy.html Share Nothing Share Management Share Data
+### greenplum
+ * https://github.com/greenplum-db/gpdb
+#### storage model
+ * Append-Optimized table AO table
+ * Vacuum
+ * Distribution Keys 分布键  data skew 数据倾斜 data join 本地连接
+### ignite
+ * https://apacheignite.readme.io/docs/kubernetes-deployment
+ * https://www.vishnu-tech.com/blog/apache-ignite-deployment-using-kubernetes/
+ * https://apacheignite.readme.io/docs/page-memory  ignite architecture
+ * https://dzone.com/articles/deploying-apache-ignite-in-kubernetes-on-microsoft
+ * https://github.com/pires/apache-ignite-discovery-kubernetes
+ * https://db-engines.com/en/system/Geode%3BGreenplum%3BIgnite
+ * https://news.ycombinator.com/item?id=10596859 Apache Geode: Distributed, in-memory database based on gemfire
+#### web interface web console
+ * https://hub.docker.com/r/apacheignite/web-console-standalone/
+ *
+#### ignite client
+ * https://github.com/dany74q/python-apache-ignite
+ * https://apacheignite.readme.io/v1.1/docs/python
+ * https://apacheignite.readme.io/docs/clients-vs-servers
+ * https://github.com/amsokol/go-ignite-client
+#### ignite examples
+ * https://github.com/vert-x3/vertx-examples/tree/master/ignite-examples
+ * https://github.com/dmagda/MicroServicesExample https://dzone.com/articles/running-microservices-on-top-of-in-memory-data-gri-1
+##### ignite for spark/hadoop
+ * https://apacheignite-fs.readme.io/docs
+##### industrial case study
+ * https://www.gridgain.com/customers/case-studies/case-study-bank
+#### benchmarks
+ * https://hazelcast.com/competitor-benchmarks/
+ * https://www.gridgain.com/resources/benchmarks/gridgain-vs-hazelcast-benchmarks
+ * https://dzone.com/articles/benchmarking-data-grids-apache
 ## use case
 用户画像
  * http://www.woshipm.com/pmd/107919.html
