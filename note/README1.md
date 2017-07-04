@@ -159,6 +159,8 @@ kubelet syncLoop->syncLoopIteration resyncInterval:                 kubeCfg.Sync
 #### kubernetes API watch cache
  * apiserver/pkg/storage/cacher.go apiserver/pkg/registry/generic/registry/storage_factory.go apiserver/pkg/registry/generic/storage_decorator.go
 #### openshift devops
+##### DevOps learning resources
+ * https://news.ycombinator.com/item?id=14652993 DevOps learning resources
 ##### diagnostics
 ##### e2e testing
 ##### node problem detector
@@ -597,7 +599,7 @@ http://lattice.cf/
  * https://github.com/odoo/odoo     ERP系统   http://www.greenodoo.com/
  * https://github.com/buke/GreenOdoo        http://demo7.greenodoo.com/     http://git.oschina.net/wangbuke/GreenOdoo
  * https://github.com/maxexcloo/Docker  docker应用    http://www.silvergames.com/t/minecraft  minecraft games
-
+ * codeowl https://medium.com/code-owl/solving-note-taking-for-devs-finally-5516b5397be7
 ## openstack
 ### release notes
  * https://wiki.openstack.org/wiki/ReleaseNotes/Liberty
@@ -638,7 +640,17 @@ kubectl get svc nginx -o yaml | ./remarshal.py -if yaml -of toml
  * https://cloudpundit.com/2012/04/06/ecosystems-in-conflict-amazon-vs-vmware-and-openstak/
  * http://www.tomsitpro.com/articles/private-cloud-providers-comparison,2-899.html
  * https://www.mirantis.com/blog/cloud-prizefight-vmware-vs-openstack/
-
+#### openstack manage vmware
+ * https://www.nextplatform.com/2015/08/18/platform9-melds-openstack-cloud-vmware-virtualization/ openstack instead of vRealize
+ * https://github.com/vmware/pyvmomi
+ * https://github.com/vmware/govmomi
+ * https://docs.openstack.org/mitaka/config-reference/compute/hypervisor-vmware.html
+ * https://platform9.com/blog/guide-to-understanding-openstack-esxi/
+ * https://blogs.vmware.com/openstack/tag/vmware-vsphere/ vSphere Templates as OpenStack Images
+ * https://docs.vmware.com/en/VMware-Integrated-OpenStack/3.1/com.vmware.openstack.admin.doc/GUID-D1B401FA-4A32-488A-A9D5-C032FA231A76.html
+ * https://www.mirantis.com/blog/integrating-vmware-esxi-openstack-opencontrail/
+ * Self-service and automation using OpenStack for VMware vSphere
+ * https://cloudarchitectmusings.com/2015/09/11/how-to-create-the-best-openstack-cloud-for-vmware-vsphere/
 ### Openstack 子项目
  * http://www.openstack.org/software/project-navigator/
 
@@ -973,6 +985,8 @@ Real world example:
  * https://www.thoughtco.com/list-of-programming-contests-challenges-958193
  * https://www.webpagefx.com/blog/web-design/10-puzzle-websites-to-sharpen-your-programming-skills/
  * https://github.com/timfenney/contest/tree/master/uva/contest%20volumes
+ * https://news.ycombinator.com/item?id=14661595 http://blog.thefirehoseproject.com/posts/learn-to-code-and-be-self-reliant/
+
 ## language comparison
 ### benchmarks
  * https://github.com/kostya/benchmarks
@@ -1192,6 +1206,10 @@ npm install -g @angular/cli
  * https://github.com/angular-redux/store
 #### Web GUI recorder
  * https://github.com/tebelorg/TA.Gui
+## OCaml
+ * https://en.wikipedia.org/wiki/OCaml https://ocaml.org/
+ * https://en.wikipedia.org/wiki/Standard_ML
+ * https://github.com/facebook/infer https://en.wikipedia.org/wiki/Standard_ML
 ## Python
 ### 学习
  * http://www.jb51.net/article/33991.htm

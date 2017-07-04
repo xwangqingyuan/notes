@@ -54,6 +54,21 @@
  * AI Workforce Impacts
  * Backlash
  * Improved Prediction Capabilities
+#### http://www.iamwire.com/2017/05/major-startup-trends/152338 Major Startup Trends From 2000 to 2020
+#### http://www.cio.com/article/3145457/startups/8-tech-startup-trends-to-watch-in-2017.html
+#### https://www.entrepreneur.com/slideshow/253265
+#### tech trends
+##### 2016 tech trend summary
+ * https://www.forbes.com/sites/jaysondemers/2016/12/15/the-top-7-technology-trends-that-dominated-2016/2/#469a07d66072
+ * https://hbr.org/2015/12/8-tech-trends-to-watch-in-2016
+ * https://www.forbes.com/sites/jaysondemers/2016/12/15/the-top-7-technology-trends-that-dominated-2016/2/#469a07d66072
+ * https://www.forrester.com/search?tmtxt=techradar&searchOption=10001&source=typed
+##### Major Startup Trends From 2000 to 2020
+ * http://www.iamwire.com/2017/05/major-startup-trends/152338
+#### MIT tech review
+ * https://www.technologyreview.com/s/608112/who-is-winning-the-ai-race/
+#### Cloud computing trend
+ * http://www.rightscale.com/blog/cloud-industry-insights/cloud-computing-trends-2017-state-cloud-survey
 ### Application to algorithms application to models
 #### OCR
 ##### Automatic Recognition of Handwritten Postal Codes
@@ -151,13 +166,23 @@
 ### Uncertainty in Deep Learning
  * http://mlg.eng.cam.ac.uk/yarin/blog_2248.html
 ### RNN
- * http://karpathy.github.io/2015/05/21/rnn-effectiveness/
+ * http://karpathy.git大脑认知机制是贝叶斯式的吗？
+ * http://www.36dsj.com/archives/49247 大胆假设，小心求证 不断试错，快速迭代hub.io/2015/05/21/rnn-effectiveness/
  * https://github.com/karpathy/char-rnn
 ### 框架比较  TensorFlow、MXNet、PaddlePaddle三个开源库对比
  https://chenrudan.github.io/blog/2017/02/25/comparetfmxpd.html
+### 算法比较
+ * https://www.zhihu.com/question/26726794 种机器学习的应用场景分别是什么？例如，k近邻,贝叶斯，决策树，svm，逻辑斯蒂回归和最大熵模型
+ * https://zhuanlan.zhihu.com/p/25327755 机器学习算法集锦：从贝叶斯到深度学习及各自优缺点
+ * https://stackoverflow.com/questions/10317885/decision-tree-vs-naive-bayes-classifier
+### bayes 大脑
+ * https://sanwen8.cn/p/16dGIwa.html 两位博士向我们揭示了一个惊人的事实，那便是人脑中储存得有各种各样的先验概率分布
+ * https://baijia.baidu.com/s?old_id=291493 大脑认知机制是贝叶斯式的吗？
+ * http://www.36dsj.com/archives/49247 大胆假设，小心求证 不断试错，快速迭代
 ### tooling review
  * http://www.svds.com/getting-started-deep-learning/
  * https://github.com/terryum/awesome-deep-learning-papers
+ * https://github.com/josephmisiti/awesome-machine-learning
  * https://en.wikipedia.org/wiki/Deep_learning#Deep_neural_networks
  * 解释
   - Universal approximation theorem interpretation广义逼近理论解释
@@ -449,6 +474,10 @@ translation, scaling, homothety, similarity transformation, reflection, rotation
  * https://github.com/alfredfrancis/ai-chatbot-framework
  * https://github.com/opencog/opencog
  * https://github.com/aimacode
+#### AI chatbot
+ * https://chatbotsmagazine.com/the-complete-beginner-s-guide-to-chatbots-8280b7b906ca
+#### AI music
+ *  https://www.theparisreview.org/blog/2017/06/29/in-stargoons-car/?utm_source=Boomtrain&utm_medium=manual&utm_campaign=Paris+Review+Daily+Weekly+20170702&utm_term=Paris+Review+Daily+Weekly+20170702&utm_content=Paris+Review+Daily+Weekly+20170702&bt_ee=/CeGRlN2Sp6DBPdo3s8etN+MDYo58q2xiIGOK/XyFsw/zoUO6mCtR0VHRKtiAsbT&bt_ts=1499001081597
 ### software prototyping
  * https://github.com/prikhi/pencil
  * https://blog.thegrid.io/
@@ -541,6 +570,8 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
  * http://2016.qconbeijing.com/track/2769
 
 ### hadoop 发行版
+#### sahara
+ * https://www.youtube.com/watch?v=Lpqgp_iE2LM OpenStack and Hadoop 101 - Getting Your Big Data Cloud Done Right
 #### cloudera CDH
  * https://www.cloudera.com/documentation.html
  * https://github.com/cloudera/cdk/releases
@@ -572,7 +603,17 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 #### spark comparison
  * http://www.infoworld.com/article/3014440/big-data/five-things-you-need-to-know-about-hadoop-v-apache-spark.html
  * https://sparkhub.databricks.com/?s=integration&post_type= spark news
-
+#### spark for video analytics
+ *  https://www.slideshare.net/SparkSummit/online-security-analytics-on-large-scale-video-surveillance-system-by-yu-cao-and-xiaoyan-guo
+ * https://www.reddit.com/r/apachespark/comments/4m1gx0/spark_for_video_stream_analysis/
+ * https://github.com/CiscoDevNet
+ * https://www.datanami.com/2016/05/26/analyzing-video-biggest-data/
+ * https://lintool.github.io/SparkTutorial/slides/day1_context.pdf
+#### kafka
+ * https://scotch.io/tutorials/build-a-distributed-streaming-system-with-apache-kafka-and-python
+ * https://github.com/josedab/kafka-video-streaming-example
+ * https://www.confluent.io/blog/introducing-kafka-streams-stream-processing-made-simple/
+ * https://mapr.com/blog/real-time-streaming-data-pipelines-apache-apis-kafka-spark-streaming-and-hbase/
 #### deepspark
  * https://github.com/deepspark/deepspark deep learning to review code
 #### soark multi-tenant
@@ -586,10 +627,34 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
  * https://www.cloudera.com/documentation/enterprise/5-8-x/topics/admin_howto_multitenancy.html Share Nothing Share Management Share Data
 ### greenplum
  * https://github.com/greenplum-db/gpdb
+ * http://www.dataguru.cn/article-8731-1.html
+ * http://storage.chinabyte.com/473/12317973.shtml 硬件设备的需求
 #### storage model
  * Append-Optimized table AO table
  * Vacuum
  * Distribution Keys 分布键  data skew 数据倾斜 data join 本地连接
+#### critics
+ * https://www.ness.com/big-data-101-the-rise-and-fall-of-greenplum-2/
+ * https://content.pivotal.io/blog/large-scale-video-analytics-on-hadoop
+ * https://content.pivotal.io/blog/why-mpp-based-analytical-databases-are-still-key-for-enterprises
+#### performance benchmark
+ * https://blog.cloudera.com/blog/2017/04/apache-impala-leads-traditional-analytic-database/
+ * https://clickhouse.yandex/benchmark.html#[1000000000,["ClickHouse","Vertica","Vertica (x3)","Vertica (x6)","Greenplum(x2)"],["0","1"]]
+#### talend
+ * https://github.com/Talend/ui https://hub.docker.com/r/full360/talend/
+ * https://github.com/Talend/components
+ * https://github.com/Talend/data-quality
+#### pentaho
+ * https://github.com/pentaho/pentaho-kettle
+ * https://github.com/pentaho/pentaho-platform
+##### pentaho Greenplum
+ * http://wiki.pentaho.com/display/EAI/Greenplum
+ * https://www.gartner.com/doc/reprints?id=1-3RTAT4N&ct=170124&st=sb
+ * Magic Quadrant for Business Intelligence and Analytics Platforms
+#### visualization
+ * https://opensource.com/business/16/6/top-business-intelligence-reporting-tools
+ * https://dzone.com/articles/16-free-and-open-source-business-intelligence-tool
+ * https://github.com/SpagoBILabs/SpagoBI
 ### ignite
  * https://apacheignite.readme.io/docs/kubernetes-deployment
  * https://www.vishnu-tech.com/blog/apache-ignite-deployment-using-kubernetes/
@@ -598,6 +663,8 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
  * https://github.com/pires/apache-ignite-discovery-kubernetes
  * https://db-engines.com/en/system/Geode%3BGreenplum%3BIgnite
  * https://news.ycombinator.com/item?id=10596859 Apache Geode: Distributed, in-memory database based on gemfire
+#### in-memory processing
+ * https://en.wikipedia.org/wiki/In-memory_processing
 #### web interface web console
  * https://hub.docker.com/r/apacheignite/web-console-standalone/
  *
@@ -609,6 +676,7 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 #### ignite examples
  * https://github.com/vert-x3/vertx-examples/tree/master/ignite-examples
  * https://github.com/dmagda/MicroServicesExample https://dzone.com/articles/running-microservices-on-top-of-in-memory-data-gri-1
+ * https://go.gridgain.com/rs/491-TWR-806/images/Empowering_Fintech_with_In_Memory_Computing_vF.pdf 1 billion TPS
 ##### ignite for spark/hadoop
  * https://apacheignite-fs.readme.io/docs
 ##### industrial case study
@@ -616,7 +684,13 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 #### benchmarks
  * https://hazelcast.com/competitor-benchmarks/
  * https://www.gridgain.com/resources/benchmarks/gridgain-vs-hazelcast-benchmarks
+ * https://www.gridgain.com/resources/benchmarks/gridgain-benchmarks-results
  * https://dzone.com/articles/benchmarking-data-grids-apache
+ * https://github.com/benstopford/awesome-db-benchmarks
+ * https://github.com/coreos/dbtester etcd zookeeper consul performance
+ * https://github.com/memsql/dbbench go benchmark tool
+ * http://stssoft.com/benchmarks/
+ * https://hazelcast.com/resources/benchmark-redis-vs-hazelcast/ https://hazelcast.com/resources/benchmark-gridgain/
 ## use case
 用户画像
  * http://www.woshipm.com/pmd/107919.html
@@ -2771,6 +2845,7 @@ ip link set dev mymacvlan2 up
  * http://www.aliued.cn/category/1%e4%ba%a4%e4%ba%92%e8%ae%be%e8%ae%a1
 ## mental strength 心灵力量
  * http://www.lifehack.org/articles/communication/13-things-mentally-strong-people-dont.html
+ * https://journal.thriveglobal.com/21-behaviors-that-will-make-you-brilliant-at-creativity-relationships-315d7dd94699
 # soft skills
 ### humor 幽默
 #### 幽默
@@ -2821,7 +2896,8 @@ ip link set dev mymacvlan2 up
 ## Amplituhedron 宝石几何学
  * http://www.360doc.com/content/15/1030/22/152409_509555054.shtml
 ## 定域性 和 幺正性 locality 幺正性（unitarity）是一种数学表述，指的是微观粒子散射过程和反应过程中几率守恒。微观世界的物质具有波粒二象性，于时刻t在全空间找到粒子的总几率等于1。
-
+## Science-based games
+ * https://github.com/stared/science-based-games-list
 ## Holography is the science and practice of making holograms 全息图
 ## math 数学
  * https://en.wikipedia.org/wiki/List_of_large_cardinal_properties
