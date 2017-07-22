@@ -2,6 +2,16 @@
 ## docker swarm
 ### portainer Simple management UI for Docker
  * https://github.com/portainer/portainer
+## docker maven plugin
+ * https://github.com/spotify/docker-client/
+ * https://github.com/spotify/dockerfile-maven
+ * https://github.com/fabric8io/docker-maven-plugin
+ *  https://github.com/fabric8io/docker-maven-plugin/blob/master/src/main/java/io/fabric8/maven/docker/access/hc/DockerAccessWithHcClient.java
+## docker gradle plugin
+ * https://github.com/bmuschko/gradle-docker-plugin
+## docker sprint cloud
+ * https://spring.io/guides/gs/spring-boot-docker/
+ * https://github.com/spring-projects/spring-boot https://github.com/dsyer/gs-spring-boot-docker https://github.com/spring-projects/spring-boot https://github.com/spring-projects/spring-petclinic/
 ### docker network
  * https://forums.docker.com/t/multiple-host-ips-to-docker-container/3371/2 port mapping
  * https://docs.docker.com/engine/reference/commandline/network/
@@ -19,6 +29,9 @@
  * https://github.com/gravityrail/wordpress-docker-compose-example
  * https://github.com/docker/libcompose
 ## Kubernetes  k8s
+### ansible Kubernetes
+ * https://github.com/kubernetes/contrib/tree/master/ansible/vagrant
+ * https://github.com/ansible/ansible-kubernetes-modules
 ### kubernetes trends
  * https://groups.google.com/forum/#!search/redis$203.0$20kubernetes/kubernetes-users/JqvIuUmt5fk/OYjZrWtKCgAJ
  * https://www.nextplatform.com/2016/11/08/google-wants-kubernetes-rule-world/
@@ -45,6 +58,7 @@ kubelet syncLoop->syncLoopIteration resyncInterval:                 kubeCfg.Sync
  * https://github.com/kubernetes/kube-aggregator
  * https://github.com/kubernetes/sample-apiserver
  * https://kubernetes.io/docs/tasks/access-kubernetes-api/extend-api-third-party-resource/
+
 ### kubernetes authentication openid connect
  * https://kubernetes.io/docs/admin/authentication/#openid-connect-tokens
  * http://www.devoperandi.com/kubernetes-authentication-openid-connect/
@@ -441,6 +455,10 @@ install https://github.com/kubernetes/helm/pull/2344
  * https://github.com/kubernetes/kubernetes/issues/1574 forgiveness
  * https://github.com/kubernetes/features/issues/117
  * https://github.com/kubernetes/features/issues/118
+### monitor
+#### hawkular
+ * http://www.hawkular.org/blog/2017/01/17/obst-hosa.html
+ * http://www.hawkular.org/blog/2016/10/24/hawkular-metrics-openshift-and-grafana.html Setup Hawkular Datasource in Grafana
 ### Xeon Phi intel mic
  * https://software.intel.com/en-us/forums/intel-many-integrated-core/topic/597934  Running Xeon Phi using dockers
  * https://github.com/intel/caffe Intel Xeon Phi processor  docker
@@ -449,7 +467,7 @@ install https://github.com/kubernetes/helm/pull/2344
 #### HPC docker
  * http://insidehpc.com/tag/docker/ workflow for building and testing Docker containers and their deployment on an HPC system using Shifter
  * http://insidehpc.com/2017/02/video-singularity-containers-science-reproducibility-hpc/
-### pachyderm (大家伙) dockerized data platform
+### pachyderm (大家伙) dockerized data platform big data on kubernetes
  * https://github.com/pachyderm
  * https://github.com/kalugny/pypachy
  * https://thenewstack.io/pachyderm-aims-displace-hadoop-container-based-collaborative-data-analysis-platform/
@@ -618,6 +636,9 @@ kubectl get svc nginx -o yaml | ./remarshal.py -if yaml -of toml
 ```
  * http://kubernetes.io/docs/user-guide/kubectl/kubectl_annotate/  --overwrite 在命令行覆盖配置文件中的属性
 
+## openstack on kubernetes
+ * https://github.com/stackanetes/stackanetes
+ * https://github.com/rackn/digitalrebar-ux
 ### openstack HA
  * https://www.mirantis.com/blog/ha-platform-components-mysql-rabbitmq/
  * https://wiki.openstack.org/wiki/OpenStack_cascading_solution
@@ -651,6 +672,26 @@ kubectl get svc nginx -o yaml | ./remarshal.py -if yaml -of toml
  * https://www.mirantis.com/blog/integrating-vmware-esxi-openstack-opencontrail/
  * Self-service and automation using OpenStack for VMware vSphere
  * https://cloudarchitectmusings.com/2015/09/11/how-to-create-the-best-openstack-cloud-for-vmware-vsphere/
+ * https://docs.vmware.com/en/vRealize-Automation/index.html
+#### VMWARE vRealize product line
+ * https://docs.vmware.com/en/vRealize-Automation/index.html UserGuide
+ * http://searchservervirtualization.techtarget.com/feature/Comparing-the-top-virtualization-systems-management-products
+ compare
+ * http://searchservervirtualization.techtarget.com/feature/Comparing-the-top-virtualization-systems-management-products Self-service provisioning
+ * https://blogs.vmware.com/management/2017/03/managing-sddc-vrealize-code-stream-management-pack-devops.html code stream
+ * https://blogs.vmware.com/management/2017/06/introducing-vrealize-automation-7-3.html vRealize automation
+ * https://blogs.vmware.com/management/2017/06/whats-new-in-vrealize-intelligent-operations.html vRealize Operations
+##### Self-service and automation feature
+ * vRealize Automation
+ * Embotics vCommander  https://www.youtube.com/watch?v=5KZXirntT4g  Getting Started with Cloud Automation
+ * http://docs.embotics.com/index.html?manage_requests_newvms.htm
+ * VMTurbo Operations Manager offers built-in automation capabilities
+##### Monitoring and reporting tool
+ * XenCenter has some really good search and reporting capabilities
+ * VMware's primary reporting tool is vRealize Operations Embotics vCommander
+ * https://docs.vmware.com/en/vRealize-Operations-Manager/index.html
+ * http://docs.embotics.com/index.html?tasks_alerts.htm
+ * Reporting might just be VMTurbo Operations Manager's best feature
 ### Openstack 子项目
  * http://www.openstack.org/software/project-navigator/
 
@@ -999,8 +1040,15 @@ Real world example:
  * https://www.quora.com/What-advantages-does-Go-have-compared-to-Java-or-Python
 ## hardware contest
  * https://hackaday.io/
-## algorithm 算法
-
+## thm 算法
+### generic design workflow
+#### design an extensible northward interface, southward interface
+#### implement north-worth API command, future support SDK, Go, Java, Python
+#### Support Web Interface
+#### Support a Deployment and Installation toolkit for default south-ward
+#### Support a minimized D & I toolkit
+#### Northward API should be irrelevant to D & I toolkit
+#### Addon product is based on Northward API
 ### generic interface
 #### file
 file is the generic interface of binary data access
@@ -1065,6 +1113,12 @@ https://en.wikipedia.org/wiki/GNU_Multiple_Precision_Arithmetic_Library
 ### Quine8 Q8 计算机底层演示
 ## trend
  * https://github.com/showcases/programming-languages
+## development tools
+### theia
+ * https://github.com/theia-ide/theia/blob/master/doc/Developing.md
+ * https://hub.docker.com/r/stoyanovd/theia/
+ * https://typefox.io/theia-one-ide-for-desktop-cloud
+### atom
 
 ## architecture
  * http://stackoverflow.com/questions/8535703/recommend-source-code-comprehension-tool
@@ -1123,17 +1177,32 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * https://stackoverflow.com/questions/40057469/what-is-the-difference-between-yarn-lock-and-npm-shrinkwrap
  * http://www.infoworld.com/article/3172725/javascript/npm-or-yarn-nodejs-devs-pick-their-package-manager.html
  * https://stackoverflow.com/questions/40057469/what-is-the-difference-between-yarn-lock-and-npm-shrinkwrap
+### nexe  create a single executable out of your node.js apps
+ * https://github.com/nexe/nexe
+#### nexe errors
+##### Cannnot find module
+ * use absolute path source file
+#### exec nodejs script directly
+```
+#!/usr/bin/env node
+```
 ### grunt
 #### grunt errors
 ##### Error: Cannot find module 'coffee-script'
- * https://stackoverflow.com/questions/13011290/cannot-find-module-coffee-script
+ * https://stackoverflow.com/questihttps://www.npmjs.com/package/generator-nodejs-cli-typescriptons/13011290/cannot-find-module-coffee-script
 ##### Local Npm module "grunt-contrib-concat" not found. Is it installed?
  * https://stackoverflow.com/questions/23767122/grunt-getting-local-npm-module-xxx-not-found-is-it-installed-whats-caus
 ```
 delete the node_modules folder (or back it up somewhere)
 and then run npm install
 ```
-#### angularjs
+### typescript
+#### typescript Command Line interface CLI
+ * https://libraries.io/search?keywords=cli&languages=TypeScript
+ * https://github.com/vilic/clime https://github.com/vilic/baseman typescript testing
+ * https://www.npmjs.com/package/generator-nodejs-cli-typescript
+ * https://www.npmjs.com/package/inquirer
+### angularjs
  * https://github.com/toddmotto/angular-1-5-components-app
  * https://github.com/toddmotto/angular-styleguide
  * https://docs.angularjs.org/api/ng/directive/ngStyle 1.5
@@ -1157,12 +1226,31 @@ and then run npm install
  * https://github.com/brillout/awesome-angular-components
  * https://github.com/AngularClass/awesome-angular
  * https://github.com/maiyaporn/angular2-wizard https://www.cc28tech.com/angular-2-multi-step-wizard-ui-router-part-1/
+#### webpack
+  * https://github.com/webpack/webpack
+  * http://www.dotnetcurry.com/angularjs/1320/using-webpack-bundling-with-angular-2
+  * https://github.com/AngularClass/angular2-universal-starter
+  * https://www.quora.com/What-is-the-difference-between-Angular-CLI-Webpack-Browsersync-etc
+  * https://github.com/AngularClass/angular2-webpack-starter
+  * https://react-etc.net/entry/angular-2-cli-moves-from-systemjs-to-webpack
+#### typescript vs coffee-script
+ * https://www.slideshare.net/NeilGreen1/type-script-vs-coffeescript-vs-es6
+ * https://bytescout.com/blog/2016/07/javascript-vs-coffeescript-vs-typescript.html
+#### angular 2 chatbot
+ * https://github.com/lilia-simeonova/chatbot-for-learning-angular
+ * https://github.com/ng-book/angular2-rxjs-chat
+ * https://medium.com/@RecastAI/a-nodejs-chatbot-tutorial-part-1-a2abd1b1c715
 #### angular 2 error
 ##### You have to be inside an angular-cli project in order to use the serve command harbor
  * https://github.com/angular/angular-cli/issues/4379
 ```
 npm install -g @angular/cli
 ```
+#### angular 2 d3 angular charts
+ * https://github.com/datencia/d3js-angular2-example
+ * https://github.com/tomwanzek/d3-ng2-service
+ * https://github.com/swimlane/ngx-charts
+ * https://www.angularjs4u.com/angularjs2/top-20-angular-2-charts-graphs/
 #### angular 2 examples
  * https://github.com/mgechev/switching-to-angular2
  * https://github.com/mgechev/angular-seed#examples
@@ -1195,6 +1283,17 @@ npm install -g @angular/cli
  * https://blog.jscrambler.com/getting-started-with-angular-2-end-to-end-testing/
  * https://github.com/alexpods/angular2-universal-starter
  * https://dzone.com/articles/getting-started-with-angular-2-end-to-end-testing
+#### angular 2 with MockBackend
+ * https://www.sitepoint.com/angular-2-mockbackend/
+ * http://www.thejoemorgan.com/blog/2016/11/21/testing-apis-in-angular-2/
+ * http://restlet.com/company/blog/2016/04/08/interacting-efficiently-with-a-restful-service-with-angular2-and-rxjs-part-1/   https://stackoverflow.com/questions/43114801/angular2-simulate-rest-service
+ * http://blog.rangle.io/testing-your-angular-2-application-part2/
+ * https://angular-2-training-book.rangle.io/handout/testing/services/mockbackend.html
+#### angular openstack
+ * https://blueprints.launchpad.net/horizon?searchtext=angular
+#### angular 4
+ * https://www.udemy.com/the-complete-guide-to-angular-2/
+ * https://github.com/panacloud https://github.com/panacloud/learn-angular
 #### app generator
  * https://github.com/swagger-api/swagger-codegen/tree/master/samples/client/petstore/typescript-angular
  * https://jhipster.github.io/  angular + spring cloud
@@ -1237,8 +1336,25 @@ npm install -g @angular/cli
 ### pypi python package index repo
  * http://doc.devpi.net/latest/userman/devpi_concepts.html
  * https://hub.docker.com/r/muccg/devpi/
-
-
+### ansible tower a web interface for ansible
+ * https://github.com/pearsonappeng/tensor-ui https://github.com/pearsonappeng/tensor
+ * https://github.com/ansible-semaphore/semaphore
+ * https://hub.docker.com/r/gcavalcante8808/semaphore/
+ * https://github.com/OpenMake-Software/DeployHub
+### ansible best practice
+ * https://www.youtube.com/watch?v=5BhAJ4mEfZ8 don't just start service
+### ansible galaxy
+ * https://github.com/ansible/galaxy
+#### ansible galaxy ansible role usage
+ * https://opencredo.com/reusing-ansible-roles-with-private-git-repos-and-dependencies/
+ * https://www.jeffgeerling.com/blog/using-ansible-galaxy
+ * https://www.reddit.com/r/ansible/comments/3o1zqu/local_galaxy_instance/
+### ansible playbooks
+ * https://docs.ansible.com/ansible/playbooks_conditionals.html
+ * https://stackoverflow.com/questions/29156146/how-to-validate-that-a-file-has-a-specific-substring-with-ansible
+### ansible errors
+#### privilege output closed while waiting for password prompt
+ * use remote host instead of local connection
 ### pip 安装
 安装不了可以将python2.7目录允许访问。安装openstackclient后可以访问openstack服务
 ### python finite state machine FSM

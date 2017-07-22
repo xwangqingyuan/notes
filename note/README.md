@@ -476,6 +476,22 @@ translation, scaling, homothety, similarity transformation, reflection, rotation
  * https://github.com/aimacode
 #### AI chatbot
  * https://chatbotsmagazine.com/the-complete-beginner-s-guide-to-chatbots-8280b7b906ca
+##### wechat chatbot weixin chatbot
+ * https://www.slideshare.net/AIFrontiers/intelligent-chatbot-on-wechat
+ * https://chatbotsmagazine.com/building-chatbots-for-wechat-part-1-dba8f160349
+ * https://chatbotsmagazine.com/china-wechat-and-the-origins-of-chatbots-89c481f15a44
+ * https://www.rebotify.com/
+ * http://createchatbot.com/wechat
+ * https://github.com/Chatie/wechaty
+#### awesome chatbot
+ * https://github.com/BotCube/awesome-bots#messaging-platforms
+ * https://github.com/shaohua/awesome-chatbot
+ * https://chatbotslife.com/top-10-best-chatbot-platform-tools-to-build-chatbots-for-your-business-66073c33fcf8
+##### comparison of mobile chatting platform
+ * http://expandedramblings.com/index.php/how-many-people-use-chat-apps/
+ * http://neurogadget.net/2017/02/02/whatsapp-vs-line-vs-wechat-best-features-improvements-comparison/54378
+ * http://www.hongkiat.com/blog/whatsapp-viber-wechat-comparison/
+ * https://www.quora.com/What-is-the-difference-between-WeChat-and-WhatsApp
 #### AI music
  *  https://www.theparisreview.org/blog/2017/06/29/in-stargoons-car/?utm_source=Boomtrain&utm_medium=manual&utm_campaign=Paris+Review+Daily+Weekly+20170702&utm_term=Paris+Review+Daily+Weekly+20170702&utm_content=Paris+Review+Daily+Weekly+20170702&bt_ee=/CeGRlN2Sp6DBPdo3s8etN+MDYo58q2xiIGOK/XyFsw/zoUO6mCtR0VHRKtiAsbT&bt_ts=1499001081597
 ### software prototyping
@@ -540,12 +556,38 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
 
 # blockchain
 ## https://www.hyperledger.org/
+
 ### https://github.com/hyperledger/fabric
  * http://blog.csdn.net/bluecloudmatrix/article/details/51859333 http://blog.csdn.net/xjmtxwd24/article/details/52777814?locationNum=2
- *
+### web
+ * https://hyperledger.github.io/composer/tutorials/developer-guide.html
+ * https://www.npmjs.com/package/generator-hyperledger-composer
 ## https://en.wikipedia.org/wiki/Ethereum
  * https://github.com/ethereum/ https://www.ethereum.org/
  * http://www.8btc.com/smart-contract-myths
+### white paper yellow paper
+ * https://github.com/ethereum/wiki/wiki/%5B%E4%B8%AD%E6%96%87%5D-%E4%BB%A5%E5%A4%AA%E5%9D%8A%E7%99%BD%E7%9A%AE%E4%B9%A6
+ * https://github.com/ethereum/wiki/wiki/White-Paper
+ * https://ethereum.github.io/yellowpaper/paper.pdf
+### Schelling point
+ * 谢林点（英语：Schelling point，又译为薛林点，或称为聚焦点），是博弈论中人们在没有沟通的情况下的选择倾向
+ * 协调博弈（en:Coordination game）问题
+ * http://www.doc88.com/p-947563853292.html 谢林点
+ * http://forum.bitcoinhivemind.com/index.php?topic=112.0 SchellingCoin vs TruthCoin
+### dapp framework
+#### truffle
+ * https://github.com/trufflesuite/truffle he most popular Ethereum development framework
+ * https://medium.com/metamask/developing-ethereum-dapps-with-truffle-and-metamask-aa8ad7e363ba
+#### embark
+ * https://github.com/iurimatias/embark-framework
+#### dapple
+ * https://dapp.readthedocs.io/en/latest/
+ * https://github.com/dapphub/dapp
+#### metamask
+ * https://github.com/MetaMask
+#### comparison
+ * https://karl.tech/5-essential-ethereum-dapp-tools/
+ * https://www.quora.com/Is-Meteor-the-best-framework-to-build-Ethereum-Dapps
 ## Use cases
  * https://wiki.hyperledger.org/groups/requirements/use-case-inventory
 ### blockchain in insurance
@@ -1765,7 +1807,8 @@ sudo pip install ansible --upgrade
  * http://mirror.bit.edu.cn/web/
  * http://mirrors.aliyun.com/
  *
-#####
+##### Too many open files - getcwd
+ * https://github.com/mitchellh/vagrant/issues/2435 It seems that on OS X Mavericks the default ulimit -n was set to 200. Increasing it to 1024 did the trick.
 ```
 A VirtualBox machine with the name already exists Pleas
 ```
@@ -2099,6 +2142,11 @@ genesis 起源
 # multimedia 多媒体
 ## 编解码格式
  * http://zhidao.baidu.com/question/371893045.html
+## video convertors
+ * https://github.com/FFmpeg/FFmpeg
+ * https://github.com/HandBrake/HandBrake/
+ * https://github.com/mean00/avidemux2
+ * https://en.wikipedia.org/wiki/Comparison_of_video_converters
 ## 视频直播架构
  * http://highscalability.com/blog/2010/3/16/justintvs-live-video-broadcasting-architecture.html  
  * http://highscalability.com/youtube-architecture
@@ -2473,6 +2521,10 @@ https://github.com/lducas/FHEW
 ### openvpn
  * https://github.com/ttlequals0/autovpn  Script to create an OpenVPN Endpoint on AWS.
 
+#### download
+##### youtube downloader
+ * http://en.savefrom.net/1-how-to-download-youtube-video/
+
 # hardware
 ## qualcomm chips
  * https://www.fastcompany.com/3066849/the-sensor-revolution/qualcomm-drones-vr-cars-satellites
@@ -2592,7 +2644,17 @@ sed -i 's/\/\/pcImg\.push/pcImg\.push/' /tmp/repo/flow.groovy
 sed -i "" 's/github\.com\/kubernetes-incubator\/kompose/pbin\.net\/compose2k8s/' *.*
 sed -i "" 's/compose2k8s/kubernetes-incubator/' compose.go
 http://xiaorui.cc/2016/01/14/%e8%ae%bamac%e4%bd%bf%e7%94%a8sed%e4%bf%ae%e6%94%b9%e6%96%87%e4%bb%b6%e7%9a%84%e6%ad%a3%e7%a1%ae%e5%a7%bf%e5%8a%bf/
+
 ```
+#### 注释掉某行
+```
+sed '/Strict/s/^/# /' ~/.ssh/config
+sed '/Strict/s/^# /^/' ~/.ssh/config
+sed '/Strict/s/$/ # Disable host key check/' ~/.ssh/config
+```
+#### Error messages
+##### extra characters at the end of x command
+ * mac error use sed -i "" '/Strict/s/^/# /' ~/.ssh/config
 ## shared memory
  * http://rubenlaguna.com/wp/2015/02/22/posix-slash-system-v-shared-memory-vs-threads-shared-memory/
  * http://stackoverflow.com/questions/4582968/system-v-ipc-vs-posix-ipc
@@ -2899,6 +2961,8 @@ ip link set dev mymacvlan2 up
 ## Science-based games
  * https://github.com/stared/science-based-games-list
 ## Holography is the science and practice of making holograms 全息图
+### quantum number
+### complex field
 ## math 数学
  * https://en.wikipedia.org/wiki/List_of_large_cardinal_properties
  * cardinals 基数 Ordinal 序数
