@@ -32,6 +32,16 @@
 ### ansible Kubernetes
  * https://github.com/kubernetes/contrib/tree/master/ansible/vagrant
  * https://github.com/ansible/ansible-kubernetes-modules
+### kubernetes events
+ * https://github.com/kubernetes/kubernetes/issues/4432 Consider moving events out of etcd
+ * https://stackoverflow.com/questions/36345413/timeline-of-kubernetes-events Timeline of kubernetes events
+ * Kubelet will perform garbage collection for containers every minute and garbage collection for images every five minutes.
+ * https://github.com/kayrus/elk-kubernetes#forward-kubernetes-events-into-kibanaelasticsearch
+ * https://github.com/caicloud/event_exporter Kuberentes events to Prometheus bridge
+ * https://github.com/kayrus/prometheus-kubernetes https://github.com/kayrus/elk-kubernetes#forward-kubernetes-events-into-kibanaelasticsearch
+#### elasticsearch archive
+ * https://www.elastic.co/blog/curator-tending-your-time-series-indices
+ * https://www.elastic.co/guide/en/elasticsearch/guide/current/retiring-data.html
 ### kubernetes trends
  * https://groups.google.com/forum/#!search/redis$203.0$20kubernetes/kubernetes-users/JqvIuUmt5fk/OYjZrWtKCgAJ
  * https://www.nextplatform.com/2016/11/08/google-wants-kubernetes-rule-world/
@@ -58,7 +68,7 @@ kubelet syncLoop->syncLoopIteration resyncInterval:                 kubeCfg.Sync
  * https://github.com/kubernetes/kube-aggregator
  * https://github.com/kubernetes/sample-apiserver
  * https://kubernetes.io/docs/tasks/access-kubernetes-api/extend-api-third-party-resource/
-
+### bosh release of kubernetes
 ### kubernetes authentication openid connect
  * https://kubernetes.io/docs/admin/authentication/#openid-connect-tokens
  * http://www.devoperandi.com/kubernetes-authentication-openid-connect/
@@ -84,6 +94,8 @@ kubelet syncLoop->syncLoopIteration resyncInterval:                 kubeCfg.Sync
  * https://github.com/getwarped/powershift-cli python for openshift
 #### spark on cloudfoundtry
  * https://github.com/murraju/spark-boshrelease
+#### spark use cases
+ * https://rstudio-pubs-static.s3.amazonaws.com/190581_5edd87c937f2489c86c1b9b567a62b6e.html Predicting the NBA Playoffs with Machine Learning
 
 #### flink on kubernetes
  * https://github.com/melentye/flink-kubernetes
@@ -120,6 +132,35 @@ kubelet syncLoop->syncLoopIteration resyncInterval:                 kubeCfg.Sync
 #### kubernetes network
  * https://kubernetes.io/docs/concepts/cluster-administration/addons/
  * https://github.com/Huawei-PaaS/CNI-Genie
+##### docker infiniband
+ * https://www.slideshare.net/syoyo/docker-infiniband
+ * https://github.com/jumanjihouse/docker-infiniband
+ * https://serverfault.com/questions/638710/passing-through-rdma-network-devices-to-docker-containers
+ * https://en.wikipedia.org/wiki/List_of_device_bit_rates
+ * https://en.wikipedia.org/wiki/RDMA_over_Converged_Ethernet The RoCE protocol allows lower latencies than its predecessor, the iWARP protocol
+ * https://www.mellanox.com/solutions/machine-learning/ Baidu, Facebook, JD.com, NVIDIA, PayPal, Tencent, Yahoo deeplearning
+ * https://www.mellanox.com/solutions/machine-learning/tensorflow.php
+ * https://community.mellanox.com/docs/DOC-2852 Reference Deployment Guide for RDMA accelerated TensorFlow with an NVIDIA GPU Card over 100Gb Infiniband Network
+ * https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/verbs How to compile and use RDMA-enabled TensorFlow
+ * https://github.com/CGCL-codes/Tensorflow-RDMA which can get about 4.5x speedup on two nodes comparing with TCP/IP.
+ * https://yahoo.tumblr.com/post/157196637189/open-sourcing-tensorflowonspark-distributed-deep python TensorFlow with RDMA
+ * http://hpcadvisorycouncil.com/events/2016/china-conference/wp-content/uploads/2016/09/12_Tong_RDMA_Competition_Ceremony.pdf
+ * https://github.com/zrlio High-performance IO Research Group at IBM Research Lab, Zurich
+ * https://github.com/accelio/accelio RPC  
+ * http://www.globalcis.org/jcis/ppl/04%20JCISVol2No2_part3.pdf a chinese paper
+ * https://www.systutorials.com/docs/linux/man/7-rsocket/ linux rsocket
+ * https://github.com/ofiwg/librdmacm/blob/master/docs/rsocket
+#### RDMA on OpenStack
+ * https://wiki.openstack.org/wiki/Mellanox-Cinder
+ * https://wiki.openstack.org/wiki/Mellanox-OpenStack
+ * https://www.youtube.com/watch?v=FzD87qSJee0
+#### IBM Cloud private
+ * https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/W1559b1be149d_43b0_881e_9783f38faaff
+ * https://www.ibm.com/blogs/bluemix/2017/06/ibm-announces-kubernetes-base-ibm-cloud-private-platform/
+ * https://github.com/IBM/charts https://www.ibm.com/developerworks/community/groups/service/html/communityoverview?communityUuid=fe25b4ef-ea6a-4d86-a629-6f87ccf4649e
+ * https://www.ibm.com/support/knowledgecenter/SSBS6K_1.2.0/getting_started/whats_new.html
+ * https://stackoverflow.com/questions/33098306/java-sockets-on-rdma-jsor-vs-jverbs-performance-in-infiniband
+ * https://news.ycombinator.com/item?id=9726185 	How to receive a million packets per second
 ##### openshift ingress
  * https://playbooks-rhtconsulting.rhcloud.com/playbooks/operationalizing/ingress.html#configuring-the-service-to-be-highly-available
  * https://access.redhat.com/documentation/en-us/openshift_container_platform/3.5/html/cluster_administration/admin-guide-unique-external-ips-ingress-traffic
@@ -144,10 +185,21 @@ kubelet syncLoop->syncLoopIteration resyncInterval:                 kubeCfg.Sync
 #### kubernetes DAG kubernetes workflow
  * https://github.com/sdminonne/workflow-controller/tree/master/examples/two_steps
  * https://github.com/kubernetes/kubernetes/pull/18827
+#### cloudnativelabs
+ * https://github.com/cloudnativelabs/kube-shell
+ * https://hub.docker.com/r/cloudnativelabs/kube-router/
+ * https://blog.codeship.com/kernel-load-balancing-for-docker-containers-using-ipvs/
+##### ipvs lvs load-balancing
+ * http://www.austintek.com/LVS/LVS-HOWTO/HOWTO/LVS-HOWTO.performance.html
+ * http://www.austintek.com/LVS/LVS-HOWTO/HOWTO/LVS-HOWTO.LVS-NAT.html#one_network
+##### nftables
+ * https://en.wikipedia.org/wiki/Nftables nftables is intended to replace Netfilter
+ * https://www.zevenet.com/blog/nftables-load-balancing-10x-faster-lvs/
+ * https://www.slideshare.net/azilian/nftables-the-evolution-of-linux-firewall
 #### kubernetes paas
  * https://medium.com/@shijuvar/the-evolution-of-cloud-paas-to-container-ecosystem-1943a335c25b#.7gwiv5dc9
  * http://kubernetes.io/docs/whatisk8s/
- * https://github.com/kubernetes/kubernetes/blob/master/docs/whatisk8s.md#why-do-i-need-kubernetes-and-what-can-it-do
+ * https://cloudnativelabs.github.io/post/2017-05-10-kube-network-service-proxy/ https://github.com/kubernetes/kubernetes/blob/master/docs/whatisk8s.md#why-do-i-need-kubernetes-and-what-can-it-do
  * https://www.ctl.io/developers/blog/post/what-is-kubernetes-and-how-to-use-it/
  * https://www.sdxcentral.com/articles/news/why-docker-and-google-kubernetes-are-like-paas-done-right/2015/08/
 #### kubernetes configmap
@@ -295,6 +347,11 @@ oc adm policy add-scc-to-user anyuid system:serviceaccount:test-stress:default
  * https://github.com/kubernetes/kubernetes/issues/5774 Support pod resource updates
  * https://dzone.com/articles/truth-about-paas-vertical
  * https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
+#### minikube build
+ * https://github.com/boot2docker/boot2docker boot2docker build
+ * https://github.com/minishift/minishift-b2d-iso/blob/master/Makefile minishift-b2d build
+ * https://github.com/minishift/minishift-centos-iso centos iso build
+ *
 #### 下载容器
  * https://github.com/kubernetes/kubernetes/issues/6888
  * https://github.com/kubernetes/minikube
@@ -480,6 +537,9 @@ install https://github.com/kubernetes/helm/pull/2344
  * https://github.com/hyperhq
  * https://github.com/kubernetes/frakti
  * https://thenewstack.io/hyper-sh-mixes-containers-hypervisors-something-called-hypernetes/
+##### hyper openstack
+ * https://www.openstack.org/videos/video/hyperhq-hyper-deploy-containers-in-seconds-to-cloud
+ * https://github.com/hyperhq/hypernova hyper for nova 
 #### microservice platform
  * http://wildfly.org/about/
  * http://deis.io/overview/
@@ -499,6 +559,10 @@ install https://github.com/kubernetes/helm/pull/2344
 #### design pattern
  * https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/README.md#behavioral-design-patterns
  *
+#### Object-relational mapping
+ * https://en.wikipedia.org/wiki/List_of_object-relational_mapping_software
+##### data mapping patterns
+#####
 #####
  * http://houzhe11.iteye.com/blog/494296 　ActiveRecord TableGateway Table Module
 #### microservices service discovery and registry 服务发现
@@ -618,6 +682,27 @@ http://lattice.cf/
  * https://github.com/buke/GreenOdoo        http://demo7.greenodoo.com/     http://git.oschina.net/wangbuke/GreenOdoo
  * https://github.com/maxexcloo/Docker  docker应用    http://www.silvergames.com/t/minecraft  minecraft games
  * codeowl https://medium.com/code-owl/solving-note-taking-for-devs-finally-5516b5397be7
+### kubernetes errors
+#### pod debugging-hook-handlers
+ * https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#debugging-hook-handlers
+ *
+## other CMP cloud management platform
+### OpenNebula
+ * https://github.com/OpenNebula/one https://opennebula.org/
+### selfbits
+ * https://github.com/selfbits/scp-ng2-sdk
+### foreman
+ * https://github.com/theforeman/foreman
+#### smart-proxy
+ * https://github.com/theforeman/smart-proxy
+### appscale
+ * https://www.appscale.com/why-appscale/
+ * https://www.appscale.com/get-started/deploy-appscale/
+### Embotics
+ * http://www.embotics.com/
+### comparison
+ * https://en.wikipedia.org/wiki/Cloud_computing_comparison
+ * https://pdfs.semanticscholar.org/8c6d/859bede8b0a0676ac3f9291ae34b9481c1eb.pdf
 ## openstack
 ### release notes
  * https://wiki.openstack.org/wiki/ReleaseNotes/Liberty
@@ -996,6 +1081,12 @@ Real world example:
 ### Intel RSD
  * https://github.com/01org/intelRSD
  *
+### Awesome provisioning
+ * https://github.com/epcim/awesome-sysadmin2
+ * https://www.quora.com/What-are-some-good-bare-metal-provisioning-tools
+ * https://www.cyberciti.biz/tips/server-provisioning-software.html
+ * https://ifireball.wordpress.com/2013/01/08/quick-list-of-server-deploymentlife-cycle-management-systems/
+ * https://devops.com/flap-part-1-server-provisioning/
 ### UEFI
  * http://www.uefi.org/
  * https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface
@@ -1003,6 +1094,7 @@ Real world example:
  * http://www.uefi.org/sites/default/files/resources/UEFI_Plugfest_May_2015_HTTP_Boot_Redfish_Samer_El-Haj_ver1.2.pdf
 #### StackIQ
  * https://github.com/StackIQ/stacki-kubernetes
+
 #### OpenStack Baremetal ironic
  * http://superuser.openstack.org/articles/manage-multi-node-kubernetes-deployment-bare-metal-cluster/
  * https://docs.openstack.org/developer/ironic/deploy/user-guide.html ironic boot sequence chart
@@ -1050,6 +1142,7 @@ Real world example:
 #### Northward API should be irrelevant to D & I toolkit
 #### Addon product is based on Northward API
 ### generic interface
+### Simplex algorithm  单纯形法
 #### file
 file is the generic interface of binary data access
 #### http

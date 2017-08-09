@@ -389,6 +389,14 @@ translation, scaling, homothety, similarity transformation, reflection, rotation
  * https://www.amazon.com/Nvidia-Tesla-GDDR5-Cores-Graphic/dp/B00Q7O7PQA#HLCXComparisonWidget_feature_div
  * http://www.pcgamer.com/best-graphics-card-deals-today/
  * https://developer.nvidia.com/cuda-toolkit-40
+ * http://www.nvidia.com/object/grid-certified-servers.html GPU 板卡支持数
+ * http://www.dianqi8.cn/pro/AI/1984.html DGX-1
+ * Volta is the codename for a GPU microarchitecture developed by Nvidia as the successor to the Pascal
+ * https://www.zhihu.com/question/42770716?sort=created NVIDIA 发布的 DGX-1
+ * http://mxnet.io/how_to/perf.html#nvidia-gpu 性能 benchmark
+#### blockchain mining asic resistance
+ * https://ethereum.stackexchange.com/questions/16811/is-ethereum-asic-resistant
+ *
 #### GPU price
 ### waston
  * https://m.xkcd.com/1619/
@@ -554,25 +562,105 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
  * https://hub.docker.com/r/billryan/gitbook/
  * https://hub.docker.com/r/gitbook/convert/
 
+## distributed training 分布式训练
+ * http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks Decentralized Asychronous Stochastic Gradient Descent
+ * https://deeplearning4j.org/compare-dl4j-torch7-pylearn comparisons
+ * https://research.googleblog.com/2017/04/federated-learning-collaborative.html mobile device and cloud training
+ * https://www.cs.cmu.edu/~muli/file/mu-thesis.pdf co-design
+ * https://github.com/EderSantana/Awesome-Distributed-ML
+ * https://github.com/dmlc  http://dmlc.ml/
+ * https://www.dmtk.io/slides/distributedML-aaai2017.pdf tutorial
+ * https://www.slideshare.net/yuhuang/large-scale-machine-learning-for-big-data
+### dmtk
+ * https://www.dmtk.io/slides/distributedML-aaai2017.pdf Recent Advances in
+Distributed Machine Learning https://github.com/Microsoft/DMTK
+ * https://www.dmtk.io/ Distributed Machine Learning Toolkit Microsoft  
+### distributed draining with kubernetes
+ * https://hackernoon.com/gpus-kubernetes-for-deep-learning-part-1-3-d8eebe0dd6fe
+ * https://medium.com/intuitionmachine/kubernetes-gpus-tensorflow-8696232862ca
+ * https://github.com/Langhalsdino/Kubernetes-GPU-Guide
+### Geo Distributed Machine Learning
+ * https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/hsieh video
+ * https://www.usenix.org/system/files/conference/nsdi17/nsdi17-hsieh.pdf
+
 # blockchain
 ## https://www.hyperledger.org/
 
 ### https://github.com/hyperledger/fabric
  * http://blog.csdn.net/bluecloudmatrix/article/details/51859333 http://blog.csdn.net/xjmtxwd24/article/details/52777814?locationNum=2
+### ico
+#### 小蚁 AntShares NEO Smart Economy
+ * https://github.com/neo-project/neo
+ * http://www.sohu.com/a/153761809_505914 NEO张铮文
+ * http://www.shizheba.com/show/zcxavbee.html 张铮文-区块链资产模型的实践与设计建议
+ * http://www.jinse.com/news/blockchain/36117.html 小蚁区块链品牌升级为“NEO”
+#### ico guide
+ * https://www.forbes.com/sites/jonathanchester/2017/06/12/a-new-way-to-raise-money-the-initial-coin-offering/4/#5272505443cf
+ * https://steemit.com/steemit/@belidged/a-guide-on-how-to-ico
+ * https://openledger.info/
+ * http://cryptorials.io/beginners-guide-ico-crowdsales/
+ * https://www.icoalert.com/ico-alert-reports/
+ * http://www.icocountdown.com/
+ * https://tokenmarket.net/  https://tokenmarket.net/ico-calendar
+### insurance blockchain
+ * https://github.com/mtsvr/insurex-app https://insurex.co/
+ * https://www.cryptocoinsnews.com/insurance-blockchain-startup-insurex-halts-crowdsale-due-security-attacks/
+ * http://www.the-blockchain.com/2017/04/14/21221/  https://etherisc.com/
 ### web
  * https://hyperledger.github.io/composer/tutorials/developer-guide.html
  * https://www.npmjs.com/package/generator-hyperledger-composer
 ## https://en.wikipedia.org/wiki/Ethereum
  * https://github.com/ethereum/ https://www.ethereum.org/
  * http://www.8btc.com/smart-contract-myths
+ * https://github.com/ethereum/go-ethereum
+ * https://github.com/paritytech/parity
+ * https://github.com/Scanate/EthList  https://blog.coinbase.com/a-beginners-guide-to-ethereum-46dd486ceecf (good examples)
 ### white paper yellow paper
  * https://github.com/ethereum/wiki/wiki/%5B%E4%B8%AD%E6%96%87%5D-%E4%BB%A5%E5%A4%AA%E5%9D%8A%E7%99%BD%E7%9A%AE%E4%B9%A6
  * https://github.com/ethereum/wiki/wiki/White-Paper
  * https://ethereum.github.io/yellowpaper/paper.pdf
+ * https://github.com/ethereum/wiki/wiki/Proof-of-Stake-FAQ
+#### ethereum casper
+ * https://www.ethnews.com/proof-of-stake-vitalik-buterin-shares-casper-contract-code
+ * https://github.com/ethereum/casper/tree/master/casper
+### Proof of Stake 权益证明 工作量证明
+ * https://github.com/ethereum/wiki/wiki/Proof-of-Stake-FAQ Bounds on fault tolerance
+ * Byzantine Fault Tolerance BFT-style
+ * https://download.wpsoftware.net/bitcoin/pos.pdf
+ * https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51 Bitshares’ delegated proof of stake presents another coherent philosophy, The “one-sentence philosophy” of proof of stake is thus not “security comes from burning energy”, but rather “security comes from putting up economic value-at-loss”.
+#### qtum
+ * http://qtum.org/en/ first proof of stake blockchain
+ * https://tokenmarket.net/blockchain/bitcoin/assets/qtum/
+#### Incentive compatibility
+ * https://en.wikipedia.org/wiki/Incentive_compatibility
+ * Typical examples of DSIC mechanisms are majority voting between two alternatives, and second-price auction. majority voting
+ * Winner-takes-all Plurality voting single-choice voting, simple plurality or relative/simple majority 简单多数
+ * Typical examples of a mechanisms that are not DSIC are plurality voting between three or more alternatives and first-price auction.
+ * Bayesian Nash equilibrium
+ * revelation principle https://en.wikipedia.org/wiki/Revelation_principle 信息揭示原理
+#####
+ * https://zhidao.baidu.com/question/120736954.html English auction 英式拍卖 公开增价拍卖
+ * 荷兰式拍卖，也称为公开降价拍卖。
+ * Sealed first-price auction 首价密封拍卖
+ * Vickrey auction 维克瑞拍卖 第二价格密封拍卖
+#### Tendermint Core (BFT Consensus) in Go Byzantine-Fault Tolerant State Machine Replication. Or Blockchain for short.
+ * https://github.com/tendermint/tendermint Ethereum on top of Tendermint
+ * 其Tendermint共识算法已经被以太坊客户端Parity采用 http://api.btckan.com/news/topic/30619
+##### cosmos ethermint
+ * https://github.com/cosmos/cosmos
+ * https://blog.cosmos.network/ethermint/home
+ * https://blog.cosmos.network/introducing-ethermint-part-1-385ba9a148d3
+ * https://github.com/cosmos/cosmos/blob/master/FAQ.md peg zones 桩脚
+##### cosmos vs polkadot
+ * https://www.reddit.com/r/ethtrader/comments/63sy19/cosmospolkadot_ico/
+ * https://blockchainhub.net/blog/events/the-internet-of-blockchain-cosmos-polkadot/
+ * https://www.youtube.com/watch?v=wsNh6ePeuX8 video
+ * https://www.reddit.com/r/ethereum/comments/5g2ij0/internet_of_blockchains_cosmos_vs_polkadot_the/ FYI there were like 10 other "internet of blockchains" projects.
 ### Schelling point
  * 谢林点（英语：Schelling point，又译为薛林点，或称为聚焦点），是博弈论中人们在没有沟通的情况下的选择倾向
  * 协调博弈（en:Coordination game）问题
- * http://www.doc88.com/p-947563853292.html 谢林点
+ * 套期保值(Hedging)也有译作"对冲交易"  套头交易，对冲买卖，套期保值; https://blog.ethereum.org/2014/03/28/schellingcoin-a-minimal-trust-universal-data-feed/
+ * http://www.doc88.com/p-947563853292.html 谢林点 用博弈结构之外的信息对纳什均衡进行精炼，比如，如果可以区分几个纳什均衡的出现概率，那么最大概率的纳什均衡就是“聚点”。拉斯缪森的书上有比较生动的例子。
  * http://forum.bitcoinhivemind.com/index.php?topic=112.0 SchellingCoin vs TruthCoin
 ### dapp framework
 #### truffle
@@ -656,8 +744,13 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
  * https://github.com/josedab/kafka-video-streaming-example
  * https://www.confluent.io/blog/introducing-kafka-streams-stream-processing-made-simple/
  * https://mapr.com/blog/real-time-streaming-data-pipelines-apache-apis-kafka-spark-streaming-and-hbase/
+ * https://github.com/confluentinc confluent-kafka-go confluent-kafka-python kafka-connect-elasticsearch
 #### deepspark
  * https://github.com/deepspark/deepspark deep learning to review code
+#### spark machinelearning
+ * http://keystone-ml.org/
+ * http://spark.apache.org/mllib/
+ * https://github.com/MiyainNYC/Distributed-Machine-Learning
 #### soark multi-tenant
  * https://www.slideshare.net/BlueDataInc/how-to-deploy-apache-spark-in-a-multitenant-onpremises-environment
  * databricks
@@ -1396,6 +1489,9 @@ EOF
 #### Spring Cloud
   * http://sail-y.github.io/2016/03/21/Spring-cloud%E9%A1%B9%E7%9B%AE%E5%AE%9E%E8%B7%B5/
   * http://kubecloud.io/apigatewaypattern/  zuul API Gateway
+  * https://www.baidu.com/home/news/data/newspage?nid=16661420478364485804&n_type=0&p_from=1&dtype=-1 诱人却非万能，理性看待Serverless的落地
+  * https://github.com/spring-cloud/spring-cloud-function serverless framework
+  * https://github.com/spring-cloud/spring-cloud-function/tree/master/spring-cloud-function-samples
 #### Spring Cloud on kubernetes
   * https://github.com/spring-cloud-incubator/spring-cloud-kubernetes
 ### kubernetes devops
@@ -1720,7 +1816,10 @@ sudo pip install ansible --upgrade
  * http://cockpit-project.org/  https://github.com/cockpit-project/cockpit linux monitoring
  * https://blog.serverdensity.com/80-linux-monitoring-tools-know/
  * https://repo.zabbix.com/zabbix/
-
+#### prometheus openstack
+ * https://github.com/CanonicalLtd/prometheus-openstack-exporter/blob/master/prometheus-openstack-exporter.yaml
+ * https://github.com/gvauter/prometheus_openstack
+ * https://blog.zhaw.ch/icclab/monitoring-an-openstack-deployment-with-prometheus-and-grafana/
 ##unikernel
  * https://www.joyent.com/blog/unikernels-are-unfit-for-production
  * http://stackoverflow.com/questions/30392261/docker-container-compared-with-unikernel
@@ -1797,16 +1896,35 @@ sudo pip install ansible --upgrade
 #### vagrant vbox download
  * http://mirrors.hypo.cn/
  * https://vagrantcloud.com/ubuntu/boxes/trusty64
+ * https://stackoverflow.com/questions/19872591/how-to-use-vagrant-in-a-proxy-environment vagrant proxy
+ * download as file https://stackoverflow.com/questions/24958110/download-vagrant-box-from-vagrantcloud-com
+https://atlas.hashicorp.com/ubuntu/boxes/trusty64/versions/14.04/providers/virtualbox.box
+https://atlas.hashicorp.com/flixtech/boxes/kubernetes/versions/1.7.1/providers/virtualbox.box
 #### vagrant packers
   * http://blog.ruilopes.com/from-iso-to-vagrant-box.html
   * https://github.com/jedi4ever/veewee/blob/master/doc/installation.md
   * https://stackoverflow.com/questions/15243405/is-it-possible-for-vagrant-to-use-an-os-iso-install-image-directly-or-create-a
-#### vagrant errors
+#### vagrant performance vagrant slow
+##### /etc/ssh/sshd_config
+UseDNS no
+##### use NFS instead of syncdir
+https://stefanwrobel.com/how-to-make-vagrant-performance-not-suck
 #### linux isos
  * http://releases.ubuntu.com/
  * http://mirror.bit.edu.cn/web/
  * http://mirrors.aliyun.com/
- *
+#### vagrant errors
+##### Volume group metadata archive failed
+delete some files from /var/log /tmp/ /var/tmp
+http://forums.fedoraforum.org/archive/index.php/t-255968.html
+step by step resize your disk
+https://gist.github.com/christopher-hopper/9755310
+##### Bad magic number in super-block while trying to
+After a bit of trial and error... as mentioned in the possible answers, it turned out to require xfs_growfs rather than resize2fs
+https://stackoverflow.com/questions/26305376/resize2fs-bad-magic-number-in-super-block-while-trying-to-open
+
+##### is already locked for a session
+Stderr: VBoxManage: error: The machine 'vagrantkubeadm_kube-master-1_1500081738186_70567' is already locked for a session (or being unlocked)
 ##### Too many open files - getcwd
  * https://github.com/mitchellh/vagrant/issues/2435 It seems that on OS X Mavericks the default ulimit -n was set to 200. Increasing it to 1024 did the trick.
 ```
@@ -2603,7 +2721,11 @@ service --status-all
 ```
 touch summary-$(date +%Y%m%d-%H%M).log
 ```
-
+### du tree 查看目录总空间大小
+```
+du -hs ~/Downloads/vboxvms/*
+tree -s ~/Downloads/vboxvms/
+```
 ### find
 ```
 sudo find /var -name *.xml -type f | sudo xargs grep jenkins1
@@ -2645,7 +2767,13 @@ sed -i "" 's/github\.com\/kubernetes-incubator\/kompose/pbin\.net\/compose2k8s/'
 sed -i "" 's/compose2k8s/kubernetes-incubator/' compose.go
 http://xiaorui.cc/2016/01/14/%e8%ae%bamac%e4%bd%bf%e7%94%a8sed%e4%bf%ae%e6%94%b9%e6%96%87%e4%bb%b6%e7%9a%84%e6%ad%a3%e7%a1%ae%e5%a7%bf%e5%8a%bf/
 
-```
+抽取字符串
+curl https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v172 | grep 'Downloads for v1.7.2' -A 50 | grep -o 'https.*gz'
+curl https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v172 | grep 'Downloads for v1.7.2' -A 50 | grep -o "\"https.*gz\""
+curl https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v172 | grep 'Downloads for v1.7.2' -A 50 | grep -o '"https.*gz"'
+curl https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v172 | grep 'Downloads for v1.7.2' -A 150 | grep -o '"https.*gz"' | grep -o https.*server.*amd64.*gz
+抽取出特定连接字符串
+curl https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v172 | grep 'Downloads for v1.7.2' -A 150 | perl -n -e'/"(https.*gz)"/ && print "$1\n"'
 #### 注释掉某行
 ```
 sed '/Strict/s/^/# /' ~/.ssh/config
@@ -2655,6 +2783,14 @@ sed '/Strict/s/$/ # Disable host key check/' ~/.ssh/config
 #### Error messages
 ##### extra characters at the end of x command
  * mac error use sed -i "" '/Strict/s/^/# /' ~/.ssh/config
+### curl
+```
+curl -L -k -x https://127.0.0.1:49895 https://www.google.co.jp
+```
+### wget
+```
+wget -e "https_proxy=https://127.0.0.1:49895" https://www.google.co.jp
+```
 ## shared memory
  * http://rubenlaguna.com/wp/2015/02/22/posix-slash-system-v-shared-memory-vs-threads-shared-memory/
  * http://stackoverflow.com/questions/4582968/system-v-ipc-vs-posix-ipc
@@ -2702,11 +2838,18 @@ echo 'export LC_CTYPE="en_US.UTF-8"' >> /etc/environment
  * http://www.lognormal.com/blog/2012/09/27/linux-tcpip-tuning/
  * https://korekontrol.eu/blog/linux-network-performance-tuning
  * http://www.linux-admins.net/2010/09/linux-tcp-tuning.html
+ * http://blog.csdn.net/wireless_tech/article/details/6405755 tcp_tw_recycle参数引发的故障
+ * https://github.com/moby/moby/issues/25519 Docker 1.12 has a docker run --sysctl=...
+ * http://www.lognormal.com/blog/2012/09/27/linux-tcpip-tuning/ Linux TCP/IP tuning for scalability
 ```
 sysctl -a
 TCP_TW_RECYCLE
 TCP_TW_REUSE
 nf_conntrack_max
+cat /etc/sysctl.conf
+cat /proc/sys/net/ipv4/tcp_tw_reuse
+minikube start --vm-driver=virtualbox --docker-env=privileged=true (默认为true)
+docker run --privileged=true 可以导致docker inspect xxx | grep rivileg
 ```
 # markup language 标签语言
 ## markdown
@@ -2971,6 +3114,8 @@ ip link set dev mymacvlan2 up
  * https://courses.csail.mit.edu/6.042/spring17/mcs.pdf Mathematics for Computer Science
 ### 数学论文
  * http://web.stonehill.edu/compsci/History_Math/math-read.htm
+### 自行车
+ * http://www.tepintehui.com/detail/38992?ce 自行车骑行为何不倒
 ### real number 实数
 #### 连续性 continuity rational numbers irrational numbers
  * Real numbers are used to measure continuous quantities
