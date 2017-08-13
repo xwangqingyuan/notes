@@ -2453,6 +2453,12 @@ git checkout .
 ssh-keygen -t rsa -C "jenkins1@qingyuanos.com" -f /home/var/jenkins_ws/jenkins_home/qykeys/jenkins_id.pem
 ssh-keygen -t rsa -C "jenkins1@qingyuanos.com" -f /root/.ssh/id_rsa -P "" -q
 ```
+### git different user
+ * https://stackoverflow.com/questions/29776439/username-and-password-in-command-for-git-push
+ * https://help.github.com/articles/setting-your-commit-email-address-in-git/
+```
+https://username:password@myrepository.biz/file.git
+```
 ### git rm
 ```
 # 将文件恢复到untracted状态
@@ -2702,7 +2708,7 @@ virt-what
  * https://stackoverflow.com/questions/20010199/determining-if-a-process-runs-inside-lxc-docker
  * http://tuhrig.de/how-to-know-you-are-inside-a-docker-container/
 ```
-cat /proc/1/cgroup 
+cat /proc/1/cgroup
 ```
 #### Software mirrors
  * 镜像源汇总 https://segmentfault.com/a/1190000000375848#articleHeader2
