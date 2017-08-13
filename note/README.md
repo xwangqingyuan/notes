@@ -2690,6 +2690,20 @@ deb-src http://mirrors.aliyun.com/ubuntu trusty-updates universe
 ```
 ### Linux key persons
  *
+### detect virtualization tech hypervisor tech
+ * https://unix.stackexchange.com/questions/89714/easy-way-to-determine-virtualization-technology
+ * https://unix.stackexchange.com/questions/89714/easy-way-to-determine-virtualization-technology
+```
+dmesg |grep 'irtual\|ypervisor'
+dmidecode -t system|grep 'Manufacturer\|Product'
+systemd-detect-virt
+virt-what
+```
+ * https://stackoverflow.com/questions/20010199/determining-if-a-process-runs-inside-lxc-docker
+ * http://tuhrig.de/how-to-know-you-are-inside-a-docker-container/
+```
+cat /proc/1/cgroup 
+```
 #### Software mirrors
  * 镜像源汇总 https://segmentfault.com/a/1190000000375848#articleHeader2
  * 汇总 https://www.douban.com/note/375227086/   http://www.linuxdiyf.com/linux/15609.html
@@ -2772,6 +2786,7 @@ curl https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v172 | gr
 curl https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v172 | grep 'Downloads for v1.7.2' -A 50 | grep -o "\"https.*gz\""
 curl https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v172 | grep 'Downloads for v1.7.2' -A 50 | grep -o '"https.*gz"'
 curl https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v172 | grep 'Downloads for v1.7.2' -A 150 | grep -o '"https.*gz"' | grep -o https.*server.*amd64.*gz
+kubectl get po | grep -o -e 'ubuntu\-[a-z0-9\-]\{16\}'
 抽取出特定连接字符串
 curl https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v172 | grep 'Downloads for v1.7.2' -A 150 | perl -n -e'/"(https.*gz)"/ && print "$1\n"'
 #### 注释掉某行
@@ -3037,6 +3052,13 @@ ip link set dev mymacvlan2 up
 ## 思考
  * http://www.newyorker.com/tech/elements/walking-helps-us-think
  * https://blogs.scientificamerican.com/guest-blog/programming-as-a-way-of-thinking/
+##  Hypnagogia   
+lucid thought清醒思维, lucid dreaming 清醒梦, hallucinations 幻觉 sleep paralysis 睡眠麻痹
+cathartic 通便的，导泻的 trippy幻觉的
+https://en.wikipedia.org/wiki/Hypnagogia
+Many other artists, writers, scientists and inventors — including Beethoven, Richard Wagner, Walter Scott, Salvador Dalí, Thomas Edison, Nikola Tesla and Isaac Newton — have credited hypnagogia and related states with enhancing their creativity
+https://www.reddit.com/r/WeAreTheMusicMakers/comments/3anvzf/does_anyone_else_hear_fully_structured_original/
+http://www.world-of-lucid-dreaming.com/hypnagogic-state.html
 ## sales 销售
 ### 客户沟通技巧
  * http://zhidao.baidu.com/link?url=J7QM6hwwlOKnnuBkGvW4_AZcA_A8CORk48nFkEcbqcMhgyteUOCj3k-u5HJWi6M19shXwB4tzef40MJkrWgCWa

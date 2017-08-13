@@ -2,6 +2,10 @@
 ## docker swarm
 ### portainer Simple management UI for Docker
  * https://github.com/portainer/portainer
+### federated swarm
+ * https://medium.com/on-docker/federated-clusters-with-docker-swarm-dce5516ecc8d
+ * https://docs.docker.com/engine/swarm/how-swarm-mode-works/services/ swarm architecture
+ * https://success.docker.com/Architecture/Docker_Reference_Architecture%3A_Docker_EE_Best_Practices_and_Design_Considerations
 ## docker maven plugin
  * https://github.com/spotify/docker-client/
  * https://github.com/spotify/dockerfile-maven
@@ -32,6 +36,11 @@
 ### ansible Kubernetes
  * https://github.com/kubernetes/contrib/tree/master/ansible/vagrant
  * https://github.com/ansible/ansible-kubernetes-modules
+### kubernetes playground
+ * https://www.katacoda.com/
+ * https://kubernetes.io/docs/tasks/administer-cluster/memory-default-namespace/
+ * https://www.katacoda.com/courses/kubernetes/playground
+ * http://labs.play-with-k8s.com/
 ### kubernetes events
  * https://github.com/kubernetes/kubernetes/issues/4432 Consider moving events out of etcd
  * https://stackoverflow.com/questions/36345413/timeline-of-kubernetes-events Timeline of kubernetes events
@@ -507,6 +516,8 @@ install https://github.com/kubernetes/helm/pull/2344
  * https://github.com/kubernetes/kubernetes/blob/master/docs/devel/scheduler.md scheduler 原理
  * https://github.com/kubernetes/kubernetes/blob/2f756e4ebc677c824d495bb5e10aa9d2234de686/plugin/pkg/scheduler/generic_scheduler.go scheduler 基础
  * https://github.com/kubernetes/kubernetes/blob/2f756e4ebc677c824d495bb5e10aa9d2234de686/plugin/cmd/kube-scheduler/app/server.go 创建scheduler 的地方
+### virtual machine in kubernetes
+ * https://github.com/kubevirt/kubevirt
 ### kubernetes 1.6
  * https://github.com/kubernetes/community/blob/master/contributors/design-proposals/taint-toleration-dedicated.md
  * https://github.com/kubernetes/kubernetes/issues/1574 forgiveness
@@ -539,7 +550,8 @@ install https://github.com/kubernetes/helm/pull/2344
  * https://thenewstack.io/hyper-sh-mixes-containers-hypervisors-something-called-hypernetes/
 ##### hyper openstack
  * https://www.openstack.org/videos/video/hyperhq-hyper-deploy-containers-in-seconds-to-cloud
- * https://github.com/hyperhq/hypernova hyper for nova 
+ * hyper_ https://www.openstack.org/videos/video/hyperhq-hyper-deploy-containers-in-seconds-to-cloud Hyper_ provides a new container environment based on Hyper Container and OpenStack Neutron & Cinder, where the users can launch containers on an “infinite” daemon.
+ * https://github.com/hyperhq/hypernova hyper for nova
 #### microservice platform
  * http://wildfly.org/about/
  * http://deis.io/overview/
@@ -592,6 +604,10 @@ install https://github.com/kubernetes/helm/pull/2344
  * https://www.voxxed.com/blog/2015/04/coupling-versus-autonomy-in-microservices/
  * publish-subscribe to turn MxN dependencis to M+N dependencies
  * https://www.voxxed.com/blog/2015/04/microservice-design-patterns/
+##### service mesh patterns
+ * http://blog.christianposta.com/microservices/application-network-functions-with-esbs-api-management-and-now-service-mesh/   https://twitter.com/tef_ebooks/status/875888701246722048 https://istio.io/docs/concepts/
+ * http://philcalcado.com/2017/08/03/pattern_service_mesh.html
+ * http://web.mit.edu/Saltzer/www/publications/endtoend/endtoend.pdf
 #### reliability patttern microservice design patterns
 http://www.javaworld.com/article/2824163/application-performance/stability-patterns-applied-in-a-restful-architecture.html?page=3
 http://assets.en.oreilly.com/1/event/79/Stability%20Patterns%20Presentation.pdf
@@ -600,6 +616,9 @@ http://stackoverflow.com/questions/30701673/how-to-use-spring-cloud-from-nodejs
 http://stackoverflow.com/questions/33007887/how-to-register-node-app-with-spring-cloud-and-netflixs-eureka
 https://spring.io/guides/gs/spring-cloud-and-lattice/
 http://lattice.cf/
+##### eureka
+ * https://github.com/Netflix/eureka/wiki/Eureka-REST-operations
+ * https://github.com/Netflix/eureka/wiki/Understanding-eureka-client-server-communication
 #### spring boot
  * develop with spring boot and kubernetes http://blog.christianposta.com/microservices/spring-boot-microservice-development-on-kubernetes-the-easy-way/
 #### micro service example
@@ -939,6 +958,9 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 ### openshift jenkins sso
  * https://github.com/openshift/jenkins-openshift-login-plugin
  * http://blog.andyserver.com/2016/10/integrating-openshift-authentication-jenkins/
+#### openshift jenins integration
+ * https://docs.openshift.org/latest/using_images/other_images/jenkins.html#using-the-jenkins-kubernetes-plug-in-to-run-jobs https://github.com/openshift/jenkins-sync-plugin
+ * https://docs.openshift.org/latest/dev_guide/builds/build_strategies.html#pipeline-strategy-options
 ### openshift jenkins fabric8 jenkins
  * https://fabric8.io/presentations/JenkinsWorld-CD-Jenkins-Docker-Kubernetes.pdf
  * https://github.com/fabric8io/fabric8-pipeline-library https://github.com/fabric8io/fabric8-jenkinsfile-library
@@ -1021,6 +1043,9 @@ minikube start --vm-driver=virtualbox --extra-config apiserver.cors-allowed-orig
 ### envoy
  * https://github.com/lyft/envoy/
  * https://news.ycombinator.com/item?id=14194026
+#### istio
+ * https://istio.io/docs/
+ * https://istio.io/docs/samples/bookinfo.html
 #### 比较
  * https://lyft.github.io/envoy/docs/intro/comparison.html#id7
 #### serverless framework
