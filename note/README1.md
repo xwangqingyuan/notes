@@ -343,6 +343,8 @@ oc adm policy add-scc-to-user anyuid system:serviceaccount:test-stress:default
  * http://kompose.io/index
  * https://github.com/redhat-developer/opencompose
  * http://developers.redhat.com/blog/2016/11/03/container-orchestration-specification-for-better-devops/
+#### kubeadm
+ * https://medium.com/@SystemMining/setup-kubenetes-cluster-on-ubuntu-16-04-with-kubeadm-336f4061d929
 #### 下载kubectl
  * https://storage.googleapis.com/kubernetes-release/release/v1.3.0/bin/darwin/amd64/kubectl
 #### monokube
@@ -498,6 +500,17 @@ install https://github.com/kubernetes/helm/pull/2344
  * https://thenewstack.io/apcera-nats-moves-real-time-message-stream-brokering/
  * https://www.cloudkarafka.com/blog/2016-12-05-apachekafka-vs-rabbitmq.html https://www.quora.com/What-are-the-differences-between-Apache-Kafka-and-RabbitMQ
  * http://blog.csdn.net/linsongbin1/article/details/47781187  性能比较
+##### Kafka and microservice
+ * https://content.pivotal.io/blog/messaging-patterns-for-event-driven-microservices
+ * https://content.pivotal.io/blog/understanding-when-to-use-rabbitmq-or-apache-kafka
+ * https://tech.knewton.com/blog/2016/04/distributed-tracing-design-architecture/ rpc and kafka tracing
+ * https://dzone.com/articles/exploring-message-brokers
+#### message queue tracing
+ * https://github.com/spring-cloud/spring-cloud-sleuth
+ * https://github.com/Laures/demo-spring-sleuth-zipkin
+ * https://github.com/openzipkin/zipkin/issues/1614 RabbitMQ transport/collector support
+ * https://github.com/openzipkin/zipkin/tree/master/zipkin-collector
+ * http://ryanjbaxter.com/cloud/spring%20cloud/spring/2016/07/07/spring-cloud-sleuth.html
 #### memcached operator
  * https://github.com/kbst/memcached
  * https://www.kubestack.com/catalog/memcached
@@ -568,6 +581,14 @@ install https://github.com/kubernetes/helm/pull/2344
  * https://www.amalgam8.io/
  * https://github.com/mfornos/awesome-microservices
  * http://www.devopsbookmarks.com/ci devopsbookmarks 持续集成技术列表
+#### WAS microservices WebSphere microservices
+ * https://www.slideshare.net/davidcurrie/building-out-a-microservices-architecture-with-websphere-liberty-profile-and-netflix-open-source
+ * https://www.ibm.com/developerworks/cloud/library/cl-bluemix-microservices-in-action-part-1-trs/index.html
+ * https://developer.ibm.com/wasdev/docs/microservices/
+#### weblogic microservices
+ * https://www.slideshare.net/KellyGoetsch/microservices-oracle-a-bright-future
+ * https://blogs.oracle.com/developers/getting-started-with-microservices-part-three
+ * https://technology.amis.nl/2016/11/01/microservices-in-the-world-of-the-red-giant-report-from-oracle-openworld-2016/
 #### design pattern
  * https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/README.md#behavioral-design-patterns
  *
@@ -604,10 +625,20 @@ install https://github.com/kubernetes/helm/pull/2344
  * https://www.voxxed.com/blog/2015/04/coupling-versus-autonomy-in-microservices/
  * publish-subscribe to turn MxN dependencis to M+N dependencies
  * https://www.voxxed.com/blog/2015/04/microservice-design-patterns/
+ * http://blog.kubernetes.io/2017/05/managing-microservices-with-istio-service-mesh.html pretty figure
 ##### service mesh patterns
  * http://blog.christianposta.com/microservices/application-network-functions-with-esbs-api-management-and-now-service-mesh/   https://twitter.com/tef_ebooks/status/875888701246722048 https://istio.io/docs/concepts/
  * http://philcalcado.com/2017/08/03/pattern_service_mesh.html
  * http://web.mit.edu/Saltzer/www/publications/endtoend/endtoend.pdf
+ * https://news.ycombinator.com/item?id=14410533  Google and IBM announce Istio – easily secure and manage microservices
+ * https://www.getambassador.io/user-guide/with-istio.html
+ * https://content.pivotal.io/blog/pivotal-and-istio-advancing-the-ecosystem-for-microservices-in-the-enterprise
+ * http://redmonk.com/jgovernor/2017/05/31/so-what-even-is-a-service-mesh-hot-take-on-istio-and-linkerd/
+##### linkerd vs istio
+ * https://lyft.github.io/envoy/docs/intro/comparison.html
+ * https://buoyant.io/2017/07/11/linkerd-istio/
+ * https://medium.com/@jeffzzq/linkerd-vs-istio-my-2-1e16557891a6
+ * https://abhishek-tiwari.com/post/a-sidecar-for-your-service-mesh
 #### reliability patttern microservice design patterns
 http://www.javaworld.com/article/2824163/application-performance/stability-patterns-applied-in-a-restful-architecture.html?page=3
 http://assets.en.oreilly.com/1/event/79/Stability%20Patterns%20Presentation.pdf
