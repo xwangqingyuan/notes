@@ -42,6 +42,8 @@
  * https://www.katacoda.com/courses/kubernetes/playground
  * http://labs.play-with-k8s.com/
 ### kubernetes events
+ * https://github.com/kayrus/elk-kubernetes This repo shows how to configure complete EFK stack on top of Kubernetes
+ * https://github.com/kayrus/elk-kubernetes/blob/master/k8s-events-printer.yaml store events to elasticsearch
  * https://github.com/kubernetes/kubernetes/issues/4432 Consider moving events out of etcd
  * https://stackoverflow.com/questions/36345413/timeline-of-kubernetes-events Timeline of kubernetes events
  * Kubelet will perform garbage collection for containers every minute and garbage collection for images every five minutes.
@@ -77,6 +79,15 @@ kubelet syncLoop->syncLoopIteration resyncInterval:                 kubeCfg.Sync
  * https://github.com/kubernetes/kube-aggregator
  * https://github.com/kubernetes/sample-apiserver
  * https://kubernetes.io/docs/tasks/access-kubernetes-api/extend-api-third-party-resource/
+#### Tool to build an extended API server
+ * https://github.com/kubernetes-incubator/apiserver-builder/blob/master/docs/concepts/aggregation.md
+```
+curl --cacert /tmp/the-ca.crt --cert /path/to/proxy-client.crt --key /path/to/proxy-client.key \
+  --resolve <service>.<namespace>.svc:443:<clusterIP> -v \
+  https://<service>.<namespace>.svc/apis/wardle/v1alpha1/namespaces/default/flunders/theflundinator
+Test API server with curl
+```
+ * https://github.com/Kubernetes-incubator/apiserver-builder/blob/master/README.md tool to generate API server
 ### bosh release of kubernetes
 ### kubernetes authentication openid connect
  * https://kubernetes.io/docs/admin/authentication/#openid-connect-tokens
@@ -273,6 +284,9 @@ kubelet syncLoop->syncLoopIteration resyncInterval:                 kubeCfg.Sync
  * https://github.com/kubernetes/kubernetes/issues/43433
  * https://docs.google.com/document/d/1O2SEr_TDtgXzndh5lHPuAZmT-haylB9NaBRSo4DsUdk/edit#heading=h.chxbd5h0cu1x
  *
+#### openshift federation
+ * https://bugzilla.redhat.com/show_bug.cgi?id=1470046 trello task
+ * https://blog.openshift.com/looking-ahead-to-2017/ https://lists.openshift.redhat.com/openshift-archives/users/2017-April/msg00087.html
 #### Ubernetes Lite  single cluster across multiple data centers
  * https://kubernetes.io/docs/admin/multiple-zones/
  * https://stackoverflow.com/questions/34194602/single-kubernetes-openshift-cluster-instance-across-datacenters
@@ -417,6 +431,14 @@ curl -k -v -XPOST  -H "Accept: application/json, */*" -H "Authorization: Bearer 
  * http://www.devoperandi.com/vault-in-kubernetes-take-2/ 在k8s中使用Vault
  * https://github.com/kubernetes/kubernetes/issues/10439 讨论集成 Vault的issue
  * https://www.digitalocean.com/company/blog/vault-and-kubernetes/ 通过Vault集成CA
+#### Rescheduler  
+ * https://github.com/kubernetes/kubernetes/blob/master/cluster/saltbase/salt/rescheduler/rescheduler.manifest
+ * https://kubernetes.io/docs/tasks/administer-cluster/guaranteed-scheduling-critical-addon-pods/
+##### basic bash scheduler
+ * http://blog.kubernetes.io/2017/03/advanced-scheduling-in-kubernetes.html
+ * https://github.com/rothgar/bashScheduler
+ * https://github.com/philipn/kubernetes-sticky-node-scheduler/blob/master/scheduler.py a python scheduler
+
 #### kubernetes helm
 ##### eroor Error building Helm: "hg is not installed"
  * https://github.com/kubernetes/helm/issues/2343
@@ -588,6 +610,7 @@ install https://github.com/kubernetes/helm/pull/2344
 #### weblogic microservices
  * https://www.slideshare.net/KellyGoetsch/microservices-oracle-a-bright-future
  * https://blogs.oracle.com/developers/getting-started-with-microservices-part-three
+ * https://blogs.oracle.com/developers/getting-started-with-microservices-part-four good introduction for devOps
  * https://technology.amis.nl/2016/11/01/microservices-in-the-world-of-the-red-giant-report-from-oracle-openworld-2016/
 #### design pattern
  * https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/README.md#behavioral-design-patterns
@@ -718,6 +741,13 @@ http://lattice.cf/
 #####  statefulset mysql example
  * https://kubernetes.io/docs/tasks/run-application/run-replicated-stateful-application/
  * https://hub.docker.com/r/ist0ne/xtrabackup/tags/
+##### federated statefulset
+ * https://github.com/kubernetes/community/pull/437/files#diff-edff396d2a534e6a4d33a98d56df7b6d
+#### kubernetes backup
+ * https://github.com/mhausenblas/reshifter https://github.com/mhausenblas/reshifter/blob/master/docs/strategies.md https://github.com/mhausenblas/reshifter/blob/master/docs/architecture.md
+ * https://github.com/pieterlange/kube-backup
+ * https://github.com/kubernetes/kubernetes/issues/24229
+ * https://kubernetes.io/docs/getting-started-guides/ubuntu/backups/
 #### 有趣应用
  * https://hub.docker.com/r/daehyeok/freecodecamp/
  * https://hub.docker.com/r/xblaster/tensor-guess/ 分类程序
@@ -891,6 +921,9 @@ kubectl get svc nginx -o yaml | ./remarshal.py -if yaml -of toml
  * https://blog.zhaw.ch/icclab/evaluating-the-performance-of-ceph-and-swift-for-object-storage-on-small-clusters/
  * https://swiftstack.com/blog/2013/04/18/openstack-summit-benchmarking-swift/
 
+#### DAS NAS SAN
+ * https://www.slideshare.net/gsmida/das-raid-nas-san
+
 #### 异地
 http://docs.openstack.org/developer/swift/replication_network.html#dedicated-replication-network
 http://docs.openstack.org/arch-design/multi-site-architecture.html
@@ -1000,7 +1033,9 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * https://blog.openshift.com/cicd-with-openshift/
  * https://github.com/openshift/jenkins-plugin
  * https://github.com/openshift/jenkins-client-plugin Experimental
-
+#### jenkins pipeline steps
+ * https://jenkins.io/doc/pipeline/steps/
+ * https://jenkins.io/doc/book/pipeline/syntax/
 ### minishift
  * https://marketplace.openshift.com/
 ```
