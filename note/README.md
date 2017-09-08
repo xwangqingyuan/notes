@@ -467,7 +467,14 @@ translation, scaling, homothety, similarity transformation, reflection, rotation
 #### bazel
  * https://bazel.build/faq.html
  * https://bazel.build/roadmap.html
- *
+##### bazel docker
+ * https://hub.docker.com/r/insready/bazel/ https://github.com/INsReady/docker-bazel
+ * https://hub.docker.com/r/deepgnosis/tensorflow-bazel/ tensoflow builder
+ * https://github.com/nadirizr/dazel Run Google's bazel inside a docker container via a seamless proxy.
+ * https://github.com/bazelbuild/rules_docker
+##### envoy bazel builder
+ * https://github.com/lyft/envoy/tree/master/bazel quickstart guide
+ * https://docs.bazel.build/versions/master/install-ubuntu.html bazel installation guide
 ## AI software engineering
  * http://www0.cs.ucl.ac.uk/staff/mharman/raise12.pdf
 ### AI testing
@@ -2452,12 +2459,18 @@ git checkout .
 ```
 ssh-keygen -t rsa -C "jenkins1@qingyuanos.com" -f /home/var/jenkins_ws/jenkins_home/qykeys/jenkins_id.pem
 ssh-keygen -t rsa -C "jenkins1@qingyuanos.com" -f /root/.ssh/id_rsa -P "" -q
+# 复制ssh公钥到指定服务器
+ssh-copy-id -i ~/.ssh/id_rsa.pub aliceB@hostB
 ```
 ### git different user
  * https://stackoverflow.com/questions/29776439/username-and-password-in-command-for-git-push
  * https://help.github.com/articles/setting-your-commit-email-address-in-git/
 ```
 https://username:password@myrepository.biz/file.git
+```
+### ssh ignore
+```
+ssh -i key -o StrictHostKeyChecking=no -q user@10.0.0.1
 ```
 ### git rm
 ```
@@ -2518,6 +2531,11 @@ cp -r /Users/xwang/Downloads/gopath/src/github.com/kubernetes-incubator/kompose/
  * https://www.atlassian.com/blog/git/git-vs-mercurial-why-git
  * https://www.atlassian.com/blog/software-teams/mercurial-vs-git-why-mercurial
  * https://www.mercurial-scm.org/ quickstart
+
+## TFS Team Foundation Server repository
+ * https://www.codeplex.com/  http://geekswithblogs.net/TarunArora/archive/2012/10/14/set-up-a-tfs-serverservice-demo-environment-in-less-than.aspx
+ * https://tfs-1.visualstudio.com/MyFirstProject/_home  https://stackoverflow.com/questions/1368458/how-to-access-team-foundation-server-tfs-from-linux
+ * https://github.com/Microsoft/tfs-cli
 # graph editting
  * http://www.sitepoint.com/5-free-html5-presentation-systems/
 
@@ -2681,7 +2699,9 @@ LBS
 
 
 # linux
-
+## bash script
+### bpkg
+ * https://github.com/bpkg/bpkg
 ## /etc/apt/sources.list
  * ali sources list
 ```
@@ -2760,6 +2780,11 @@ sudo sed -i "s%archive.ubuntu.com%mirrors.aliyun.com%g" /etc/apt/sources.list
 #### dgsh
  * http://www.dmst.aueb.gr/dds/sw/dgsh/
 
+### heredoc 嵌入文档
+```
+cat << EOF 可以替换变量
+cat << 'EOF' 不会替换变量
+```
 ### mount
 #### nfs mount
 ```
@@ -2774,6 +2799,25 @@ pwdx <PID>
 $ lsof -p <PID> | grep cwd
 $ readlink /proc/<PID>/cwd
 ```
+### linux performance
+#### disk performance
+##### iostat
+ * https://dom.as/2009/03/11/iostat/  iostat -x
+ * https://www.computerhope.com/unix/iostat.htm
+ * https://serverfault.com/questions/645541/evaluating-the-cpu-i-o-wait-on-linux
+ * http://www.thegeekstuff.com/2011/07/iostat-vmstat-mpstat-examples/?utm_source=feedburner
+##### iotop
+ *
+##### dstat
+ *
+#### java performance
+ * https://developers.redhat.com/blog/2017/03/14/java-inside-docker/
+ * http://blog.takipi.com/docker-monitoring-5-methods-for-monitoring-java-applications-in-docker/
+ * https://github.com/moby/moby/issues/21485
+ * https://kapost-files-prod.s3.amazonaws.com/published/566083912edb724d0e00002d/ebook-top-5-docker-performance-tips.pdf
+### make Makefile
+#### .PHONY
+false target, a target that is always executed
 ### sed
 ```
 sed -i "3i nameserver 114.114.114.114" /etc/resolv.conf
@@ -2786,7 +2830,7 @@ sed -i 's/\/\/pcImg\.push/pcImg\.push/' /tmp/repo/flow.groovy
 sed -i "" 's/github\.com\/kubernetes-incubator\/kompose/pbin\.net\/compose2k8s/' *.*
 sed -i "" 's/compose2k8s/kubernetes-incubator/' compose.go
 http://xiaorui.cc/2016/01/14/%e8%ae%bamac%e4%bd%bf%e7%94%a8sed%e4%bf%ae%e6%94%b9%e6%96%87%e4%bb%b6%e7%9a%84%e6%ad%a3%e7%a1%ae%e5%a7%bf%e5%8a%bf/
-
+sed 's/\./_/' <<< 'gcr.io'
 抽取字符串
 curl https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v172 | grep 'Downloads for v1.7.2' -A 50 | grep -o 'https.*gz'
 curl https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v172 | grep 'Downloads for v1.7.2' -A 50 | grep -o "\"https.*gz\""
@@ -2836,6 +2880,16 @@ sudo -i表示以root身份登录，进程的实际用户ID和有效用户ID都�
 sudo 命令
 执行该条命令期间，进程的有效用户ID临时更改为root。
 ```
+### group
+#### in linux
+```
+getent group <group>
+```
+#### in mac
+```
+dscl . list /groups
+dscacheutil -q group -a name admin
+```
 ## uname
 ```
 ### kernel name
@@ -2848,14 +2902,55 @@ cat /proc/version
 cat /etc/centos-release
 cat /proc/version
 cat /etc/redhat-release
+#### centos repo mirror rpm repo
+ * https://hub.docker.com/r/dgutierrez1287/yum-repo/
+ * https://github.com/dgutierrez1287/docker-yum-repo/blob/master/Dockerfile
+ * https://hub.docker.com/r/sjoeboo/docker-yum-mirror/
+ * https://github.com/sjoeboo/docker-yum-mirror
+##### publish to a repo
 ```
+yum repolist
+yum --disablerepo="*" --enablerepo="google" list available
+```
+#### deb repo ubuntu repo mirror
+ * https://hub.docker.com/r/itherz/debian-repository/
+ * https://github.com/it-herz/docker-debian-repository
+### build rpm and deb packages
+#### FPM in docker  Effing package management 该死的package management
+ * https://github.com/alanfranz/fpm-within-docker
+ * https://hub.docker.com/r/alanfranz/fpm-within-docker/tags/
+ * https://github.com/jordansissel/fpm
+ * https://fpm.readthedocs.io/en/latest/installing.html
+ * http://ftp.rpm.org/max-rpm/ rpm package
+ * https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/sec-Yum_Repository.html  createrepo --database /mnt/local_repo
+ * https://www.if-not-true-then-false.com/2010/query-available-packages-from-specific-yum-repository-on-fedora-centos-red-hat/ add repo example
+ * https://stackoverflow.com/questions/42261557/how-to-publish-a-rpm-package-to-yum
+```
+# yumdownloader <package>
+## inspect rpm file
+$ rpm -qlp ./path/to/test.rpm
+# yum install --downloadonly --downloaddir=<directory> <package>
+rpm2cpio ./packagecloud-test-1.1-1.x86_64.rpm | cpio -idmv
+rpm -qp --scripts ./packagecloud-test-1.1-1.x86_64.rpm
+# where is rpm cached rpm stored
+find /var/cache/yum -iname '*.rpm' –
+where is deb cached dev stored
+# /var/cache/apt/archives/
+#locate *.deb
+find /var/cache/apt/archives/ -iname '*.deb'
+# inspect deb file
+dpkg-deb --info <deb file>
+apt-file list packageName
+```
+#### debian package
+ * https://wiki.debian.org/Packaging/Intro?action=show&redirect=IntroDebianPackaging
 ## linux errors
 ### change locale
 ```
 -bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
 echo 'export LC_CTYPE="en_US.UTF-8"' >> /etc/environment
 ```
-### linux kernel tuning
+### linux kernel tuning 内核调优  
  * http://www.lognormal.com/blog/2012/09/27/linux-tcpip-tuning/
  * https://korekontrol.eu/blog/linux-network-performance-tuning
  * http://www.linux-admins.net/2010/09/linux-tcp-tuning.html
@@ -2872,6 +2967,7 @@ cat /proc/sys/net/ipv4/tcp_tw_reuse
 minikube start --vm-driver=virtualbox --docker-env=privileged=true (默认为true)
 docker run --privileged=true 可以导致docker inspect xxx | grep rivileg
 ```
+
 # markup language 标签语言
 ## markdown
  * http://ibruce.info/2013/11/26/markdown/
@@ -2915,7 +3011,17 @@ DNSPod  https://www.dnspod.cn/
 links
  * http://blog.sina.com.cn/s/blog_65f27fc20101fhmn.html  
  * http://tool.chinaz.com/dns/
-
+### 反向域名解析
+```
+host 10.0.3.101
+dig -x 114.114.114.114
+nsloop 10.0.3.101
+114.114.114.114.in-addr.arpa. 565 IN	PTR	public1.114dns.com.
+```
+#### 解析自己
+```
+ping 10.0.3.101.nip.io
+```
 ### calico
  * http://www.tuicool.com/articles/quUfAjJ
 
@@ -3100,7 +3206,10 @@ http://www.world-of-lucid-dreaming.com/hypnagogic-state.html
 # software tools 软件工具
 ## screen recorder 录屏软件  
 ### 最好用的抓屏
+ * handbrake
  * apowersoft screen recorder
+### 抓屏成gif图
+
 ### 开源软件  
  * http://www.opensourcesoftwaredirectory.com/Utilities/Screen-capture
  * http://elearningindustry.com/top-10-free-camtasia-studio-alternatives

@@ -6,6 +6,8 @@
  * https://medium.com/on-docker/federated-clusters-with-docker-swarm-dce5516ecc8d
  * https://docs.docker.com/engine/swarm/how-swarm-mode-works/services/ swarm architecture
  * https://success.docker.com/Architecture/Docker_Reference_Architecture%3A_Docker_EE_Best_Practices_and_Design_Considerations
+### docker swarm scheduling
+ * https://www.slideshare.net/AtharvaChauthaiwale/docker-swarm-scheduling-in-112
 ## docker maven plugin
  * https://github.com/spotify/docker-client/
  * https://github.com/spotify/dockerfile-maven
@@ -36,6 +38,21 @@
 ### ansible Kubernetes
  * https://github.com/kubernetes/contrib/tree/master/ansible/vagrant
  * https://github.com/ansible/ansible-kubernetes-modules
+### kubernetes code
+#### start container
+```
+kubelet/kuberuntime/kuberuntime_container.go#startContainer->kubelet/dockershim/docker_container.go
+->docker/engine-api/types#ContainerCreateConfig
+可以在docker_container.go#CreateContainer 和dockershim/helpers_linux.go#updateCreateConfig处添加代码扩展功能
+docker/daemon/create.go->处添加代码扩展功能
+```
+##### docker REST API
+```
+Engine API v1.24 对应 docker 1.12.3 https://docs.docker.com/engine/api/v1.24/
+Engine API v1.27 docker 17.03.1-ce
+```
+##### HTTP REST API Interceptor
+ * https://blog.paw.cloud/tools-for-restful-api/ https://www.packtpub.com/books/content/debugging-rest-web-services
 ### kubernetes playground
  * https://www.katacoda.com/
  * https://kubernetes.io/docs/tasks/administer-cluster/memory-default-namespace/
@@ -49,7 +66,10 @@
  * Kubelet will perform garbage collection for containers every minute and garbage collection for images every five minutes.
  * https://github.com/kayrus/elk-kubernetes#forward-kubernetes-events-into-kibanaelasticsearch
  * https://github.com/caicloud/event_exporter Kuberentes events to Prometheus bridge
- * https://github.com/kayrus/prometheus-kubernetes https://github.com/kayrus/elk-kubernetes#forward-kubernetes-events-into-kibanaelasticsearch
+ * https://github.com/kayrus/prometheus-kubernetes
+ * https://github.com/PerfectMemory/openshift-prometheus  good kube openshift prometheus example
+ * involve hawkualr https://github.com/akram/openshift-prometheus-grafana/blob/master/grafana-metrics-full-template.yaml https://github.com/akram/openshift-prometheus-grafana/blob/master/grafana-metrics-full-template.yaml
+ * https://github.com/kayrus/elk-kubernetes#forward-kubernetes-events-into-kibanaelasticsearch
 #### elasticsearch archive
  * https://www.elastic.co/blog/curator-tending-your-time-series-indices
  * https://www.elastic.co/guide/en/elasticsearch/guide/current/retiring-data.html
@@ -227,6 +247,19 @@ Test API server with curl
  * https://github.com/kubernetes/kubernetes/issues/22368 Facilitate ConfigMap rollouts / management
  * https://github.com/eBay/Kubernetes/blob/master/docs/proposals/configmap.md
  * https://kubernetes.io/docs/tasks/configure-pod-container/configmap/
+##### confd and kubernetes configmap
+ * https://github.com/kubernetes/kubernetes/issues/30716 proposal
+ * https://github.com/kubernetes/kubernetes/issues/2068 https://github.com/kubernetes/kubernetes/issues/831 related proposal
+ * https://github.com/kubernetes/kubernetes/issues/29607 issue triggering proposal
+ * https://github.com/kelseyhightower/confd confd github
+ * https://github.com/micro-webapps/kubernetes-confd/blob/master/kubernetes-confd shell integration
+ * https://www.digitalocean.com/community/tutorials/how-to-use-confd-and-etcd-to-dynamically-reconfigure-services-in-coreos confd example https://github.com/kubernetes/charts/tree/master/stable/datadog/templates
+ * http://www.mricho.com/confd-and-docker-separating-config-and-code-for-containers/ install confd in a docker image
+##### configmap errors
+```
+MountVolume.SetUp failed for volume ..... with: references non-existent config key
+ConfigMap中的key,如果匹配不上很可能使用configmap对应的整个目录
+```
 #### kubernetes template
  * https://github.com/InQuicker/ktmpl
  * https://github.com/mustache/mustache
@@ -240,6 +273,10 @@ Test API server with curl
  * http://stackoverflow.com/questions/38670295/homebrew-refusing-to-link-openssl
  * http://stackoverflow.com/questions/34386527/symbol-not-found-pycodecinfo-getincrementaldecoder
  * https://github.com/kelproject/pykube/issues/80
+### kubernetes CPU bind and NUMA  Non-uniform memory access
+ * https://en.wikipedia.org/wiki/Non-uniform_memory_access
+ * Version 3.8 of the Linux kernel brought a new NUMA foundation that allowed development of more efficient NUMA policies in later kernel releases Java 7 added support for NUMA-aware
+ * https://news.ycombinator.com/item?id=12459508 	NUMA-aware scheduler for Go
 ### kubernetes GPU
  * http://blog.clarifai.com/how-to-scale-your-gpu-cloud-infrastructure-with-kubernetes/#.WTUCUcklFE4
 #### kubernetes API watch cache
@@ -283,7 +320,22 @@ Test API server with curl
 #### federation RBAC
  * https://github.com/kubernetes/kubernetes/issues/43433
  * https://docs.google.com/document/d/1O2SEr_TDtgXzndh5lHPuAZmT-haylB9NaBRSo4DsUdk/edit#heading=h.chxbd5h0cu1x
- *
+#### container security landscape
+##### Aqua Container Security
+ * http://blog.aquasec.com/topic/vault
+ * Continuous Image Assurance Runtime Protection Docker Security Network Nano-Segmentation User Access Control Auditing & Compliance
+ * Secrets Management Integrated with HashiCorp Vault
+##### Vulnerability Static Analysis for Containers
+ * https://github.com/coreos/clair
+ * https://coreos.com/blog/celebrating-clair2.0
+##### Notary
+ * Notary is a Docker project that allows anyone to have trust over arbitrary collections
+ * https://github.com/docker/notary
+##### Twistlock
+ * https://www.twistlock.com/2017/07/06/ultimate-guide-container-security/
+ * https://www.twistlock.com/products/enterprise-container-security/
+##### NeuVector
+ * https://neuvector.com/products/
 #### openshift federation
  * https://bugzilla.redhat.com/show_bug.cgi?id=1470046 trello task
  * https://blog.openshift.com/looking-ahead-to-2017/ https://lists.openshift.redhat.com/openshift-archives/users/2017-April/msg00087.html
@@ -323,6 +375,13 @@ aa-complain /path/to/bin
 aa-enforce /path/to/bin
 docker run --rm -it --security-opt apparmor=docker-default hello-world
 cat /sys/module/apparmor/parameters/enabled
+```
+#### docker debug
+```
+docker run -ti -v /bin/sh:/hostbin/sh --entrypoint /hostbin/sh openshift/origin-haproxy-router:v3.6.0
+```
+docker run -ti --entrypoint /bin/sh openshift/origin-haproxy-router:v3.6.0
+curl -u admin:0ZBELXFCFe http://10.0.2.15:1936/metrics
 ```
 #### seccomp
  * seccomp (short for secure computing mode) is a computer security facility
@@ -424,6 +483,8 @@ curl -k -v -XPOST  -H "Accept: application/json, */*" -H "Authorization: Bearer 
  * https://github.com/kubernetes/kubernetes/issues/12742 有关安全存储 etcd的讨论
  * https://www.bountysource.com/issues/5578080-secret-distribution-in-docker-k8s  k8s 密钥分发的讨论
 #### vault secret management
+ * https://github.com/upmc-enterprises/kubernetes-secret-manager
+ * https://github.com/Boostport/kubernetes-vault
  * https://github.com/hashicorp/vault
  * https://www.hashicorp.com/blog/vault.html
  * https://www.vaultproject.io/
@@ -533,6 +594,12 @@ install https://github.com/kubernetes/helm/pull/2344
  * https://github.com/openzipkin/zipkin/issues/1614 RabbitMQ transport/collector support
  * https://github.com/openzipkin/zipkin/tree/master/zipkin-collector
  * http://ryanjbaxter.com/cloud/spring%20cloud/spring/2016/07/07/spring-cloud-sleuth.html
+#### tracing
+ * https://github.com/jaegertracing/jaeger-kubernetes
+ * https://github.com/uber/jaeger/blob/master/CONTRIBUTING.md
+#### monitoring logging and tracing
+ * https://www.slideshare.net/MartinEtmajer/challenges-in-a-microservices-age-monitoring-logging-and-tracing-on-red-hat-openshift
+ *
 #### memcached operator
  * https://github.com/kbst/memcached
  * https://www.kubestack.com/catalog/memcached
@@ -551,6 +618,9 @@ install https://github.com/kubernetes/helm/pull/2344
  * https://github.com/kubernetes/kubernetes/blob/master/docs/devel/scheduler.md scheduler 原理
  * https://github.com/kubernetes/kubernetes/blob/2f756e4ebc677c824d495bb5e10aa9d2234de686/plugin/pkg/scheduler/generic_scheduler.go scheduler 基础
  * https://github.com/kubernetes/kubernetes/blob/2f756e4ebc677c824d495bb5e10aa9d2234de686/plugin/cmd/kube-scheduler/app/server.go 创建scheduler 的地方
+### kubernetes labels
+#### built-in node labels
+ * https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#nodeselector
 ### virtual machine in kubernetes
  * https://github.com/kubevirt/kubevirt
 ### kubernetes 1.6
@@ -583,6 +653,7 @@ install https://github.com/kubernetes/helm/pull/2344
  * https://github.com/hyperhq
  * https://github.com/kubernetes/frakti
  * https://thenewstack.io/hyper-sh-mixes-containers-hypervisors-something-called-hypernetes/
+ * https://www.karllhughes.com/posts/hyper-sh-weekend https://news.ycombinator.com/item?id=12891584 https://blog.hyper.sh/hyper-best-value.html
 ##### hyper openstack
  * https://www.openstack.org/videos/video/hyperhq-hyper-deploy-containers-in-seconds-to-cloud
  * hyper_ https://www.openstack.org/videos/video/hyperhq-hyper-deploy-containers-in-seconds-to-cloud Hyper_ provides a new container environment based on Hyper Container and OpenStack Neutron & Cinder, where the users can launch containers on an “infinite” daemon.
@@ -732,6 +803,14 @@ http://lattice.cf/
 ##### kafka performance tuning
 ##### cassandra performance tuning
 ##### MySQL performance tuning
+ * 性能指标
+ * http://www.clusterdb.com/mysql-cluster/mysql-cluster-database-7-performance-benchmark
+ * https://www.mysql.com/why-mysql/benchmarks/mysql-cluster/
+ * http://www.fromdual.com/mysql-single-query-performance-the-truth
+ * http://blog.takipi.com/amazon-ec2-2015-benchmark-testing-speeds-between-aws-ec2-and-s3-regions/
+ * https://lg.io/2015/10/25/real-world-benchmarking-of-s3-azure-google-cloud-storage.html
+ * https://www.nuxeo.com/blog/some-glusterfs-experiments-and-benchmarks/
+ * https://www.slideshare.net/Red_Hat_Storage/red-hat-gluster-storage-performance
 ##### production experiences
  * https://acotten.com/post/1year-kubernetes
  * http://blog.kubernetes.io/2016/09/high-performance-network-policies-kubernetes.html High performance network policies in Kubernetes clusters
@@ -1095,17 +1174,38 @@ minikube start --vm-driver=virtualbox --extra-config apiserver.cors-allowed-orig
 
 
 ## 负载均衡 load balance
+### benchmark and comparison
+#### benchmarks
+ * https://github.com/observing/balancerbattle
+ * https://news.ycombinator.com/item?id=5517258 Balancer Battle – Load testing HAproxy, Nginx and HTTP-Proxy's WebSocket support (github.com)
+ * a real-life test-case of what happens  https://www.youtube.com/watch?v=yQvcHy_tPjI
+#### comparisons
+ * https://distinctplace.com/2017/04/20/haproxy-vs-nginx/
+ * https://thehftguy.com/2016/10/03/haproxy-vs-nginx-why-you-should-never-use-nginx-for-load-balancing/
 ### Haproxy
  * http://www.oschina.net/translate/haproxy-ssl-termation-pass-through?cmp
+#### stick server sticky session
+ * http://www.haproxy.com/blog/load-balancing-affinity-persistence-sticky-sessions-what-you-need-to-know/
+ * https://www.haproxy.com/blog/client-ip-persistence-or-source-ip-hash-load-balancing/
+#### open source load testing tool
+ * https://github.com/locustio/locust Python
+ * https://github.com/tsenart/vegeta golang
 ### bamboo
  * https://github.com/QubitProducts/bamboo
  * http://www.open-open.com/lib/view/open1415511980137.html
 
 ### Nginx
+####
+ * https://nginx.org/en/CHANGES
+ * https://hub.docker.com/r/centos/nginx-18-centos7/tags/
+ * https://github.com/CentOS/CentOS-Dockerfiles/blob/master/nginx/centos7/Dockerfile
+ * https://nginx.org/en/docs/beginners_guide.html
+ * https://www.nginx.com/resources/wiki/start/topics/examples/full/
 
 ### traefik
  * https://github.com/containous/traefik/
  * https://news.ycombinator.com/item?id=13572033
+ * https://hub.docker.com/r/philippallgeuer/openshift-traefik/ https://github.com/philall/openshift-traefik
 ### envoy
  * https://github.com/lyft/envoy/
  * https://news.ycombinator.com/item?id=14194026
@@ -1161,6 +1261,9 @@ Real world example:
  * http://cloudify.co/container-docker-kubernetes-orchestration-management-cloud-deployment-automation
  * https://platform9.com/ https://thenewstack.io/containers-container-orchestration/
  * http://www.midvision.com/blog/10-open-source-docker-tools-you-should-be-using
+#### docker files
+##### centos dockerfiles
+ * https://github.com/CentOS/CentOS-Dockerfiles
 ### docker visualiser
  * https://github.com/veggiemonk/awesome-docker https://github.com/dockersamples/docker-swarm-visualizer have good box
  * https://yipee.io/ Visual Modeling for Microservice Applications https://puppet.com/product/capabilities/orchestration
@@ -1291,6 +1394,18 @@ structural programme 结构化编程
 computer algebra, also called symbolic computation or algebraic computation,  symbolic programming
 https://en.wikipedia.org/wiki/GNU_Multiple_Precision_Arithmetic_Library
 ```
+## template engines
+### go template
+ * https://siongui.github.io/2015/02/24/python-jinja2-vs-go-html-template-2/
+ * https://github.com/subfuzion/envtpl
+### java templates
+ * https://dzone.com/articles/template-engines-at-one-spring-boot-and-engines-se
+ * https://github.com/jreijn/spring-comparing-template-engines
+### python template
+ * https://siongui.github.io/2015/02/24/python-jinja2-vs-go-html-template-2/
+### bash template
+ * https://github.com/hairyhenderson/gomplate
+ * envsubst https://www.gnu.org/software/gettext/manual/html_node/envsubst-Invocation.html
 ## programming teaching
 ### scratch 教小孩编程
  * https://scratch.mit.edu/
@@ -1456,7 +1571,7 @@ npm install -g @angular/cli
 #### angular 2 trainings
  * http://onehungrymind.com/build-a-simple-website-with-angular-2/
  * https://www.udemy.com/angular-2-projects/
- * https://www.sitepoint.com/ultimate-angular-cli-reference/
+ * https//www.sitepoint.com/ultimate-angular-cli-reference/
  * https://www.ibm.com/developerworks/library/wa-implement-a-single-page-application-with-angular2/index.html
 #### package manager
  * http://gulpjs.com/ https://www.npmjs.com/package/gulp-yarn
@@ -1654,7 +1769,9 @@ logic paradigm
  * http://www.journaldev.com/13121/java-9-features-with-examples
  * https://dzone.com/articles/java-9-features-announced
  * https://bentolor.github.io/java9-in-action/#/
-
+### JMX
+#### jolokia JMX to JSON
+ * https://jolokia.org/features-nb.html
 #### nexus
  * https://dzone.com/articles/maven-repository-manager-nexus
  * http://stackoverflow.com/questions/364775/should-we-use-nexus-or-artifactory-for-a-maven-repo
@@ -1691,7 +1808,7 @@ logic paradigm
 ### rust playground
  * https://play.rust-lang.org/
  * https://github.com/rust-lang/rust
- * https://github.com/rust-lang/cargo/
+ * https://github.com/rust-lang/cargo
  * https://www.rust-lang.org/en-US/install.html
 ### rust by example
  * http://rustbyexample.com/
