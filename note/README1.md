@@ -306,6 +306,7 @@ ConfigMap中的key,如果匹配不上很可能使用configmap对应的整个目�
  * https://github.com/kubernetes/kubernetes/blob/master/docs/design/security_context.md
  * https://kubernetes.io/docs/concepts/policy/container-capabilities/#capabilities
  * 基于角色的安全 https://kubernetes.io/docs/concepts/policy/pod-security-policy/  https://github.com/kubernetes/kubernetes/blob/master/examples/podsecuritypolicy/rbac/README.md
+ * https://kubernetes.io/docs/admin/authorization/rbac/  Permissive RBAC Permissions Privilege Escalation Prevention and Bootstrapping
  * https://blog.openshift.com/understanding-service-accounts-sccs/
  * https://docs.openshift.org/latest/admin_guide/manage_scc.html hostPath权限问题
  * http://man7.org/linux/man-pages/man2/mknod.2.html
@@ -507,6 +508,11 @@ curl -k -v -XPOST  -H "Accept: application/json, */*" -H "Authorization: Bearer 
 ```
 install https://github.com/kubernetes/helm/pull/2344
 ```
+#### service catalog
+ * https://docs.openshift.com/container-platform/3.6/architecture/service_catalog/index.html
+ * origin/pkg/template/servicebroker/provision.go
+ * https://github.com/kubernetes-incubator/service-catalog/wiki/Roadmap
+ * https://github.com/kubernetes-incubator/service-catalog/blob/master/docs/v1/use-cases.md
 #### awesome kubernetes
  * https://github.com/ramitsurana/awesome-kubernetes#operators
 #### 扩展kubernetes API
@@ -529,6 +535,12 @@ install https://github.com/kubernetes/helm/pull/2344
  * https://www.digitalocean.com/community/tutorials/how-to-use-etcdctl-and-etcd-coreos-s-distributed-key-value-store
  * https://github.com/coreos/etcd/blob/master/Documentation/rfc/v3api.md
  * https://coreos.com/blog/migrating-applications-etcd-v3.html
+#### kubernetes resource quota
+#### Opaque Integer Resources to a Container
+ * https://kubernetes.io/docs/tasks/administer-cluster/opaque-integer-resource-node/
+ * https://kubernetes.io/docs/tasks/configure-pod-container/opaque-integer-resource/
+#### Configure Quality of Service for Pods
+ * https://kubernetes.io/docs/tasks/configure-pod-container/quality-service-pod/
 #### operators ecosystem
  * https://coreos.com/blog/kubernetes-operators-ecosystem.html
 #### openstack operator vcenter operator
@@ -616,8 +628,30 @@ install https://github.com/kubernetes/helm/pull/2344
  * https://docs.openshift.org/latest/admin_guide/scheduler.html#use-cases openshift scheduler use cases
  * https://coreos.com/blog/improving-kubernetes-scheduler-performance.html performance
  * https://github.com/kubernetes/kubernetes/blob/master/docs/devel/scheduler.md scheduler 原理
- * https://github.com/kubernetes/kubernetes/blob/2f756e4ebc677c824d495bb5e10aa9d2234de686/plugin/pkg/scheduler/generic_scheduler.go scheduler 基础
+  https://github.com/kubernetes/kubernetes/blob/2f756e4ebc677c824d495bb5e10aa9d2234de686/plugin/pkg/scheduler/generic_scheduler.go scheduler 基础
  * https://github.com/kubernetes/kubernetes/blob/2f756e4ebc677c824d495bb5e10aa9d2234de686/plugin/cmd/kube-scheduler/app/server.go 创建scheduler 的地方
+#### hilbert space-filling curve
+ * https://pdfs.semanticscholar.org/237b/eb5636b4337398dc12ef460f9ec15b1b216c.pdf
+ * https://en.wikipedia.org/wiki/Hilbert_curve_scheduling
+##### fractal 分形
+```
+one of the essential features of a fractal is that its Hausdorff dimension 维数 strictly exceeds its topological dimension.
+豪斯多夫（Felix Hausdorff ）拓扑学的开创者
+fractal dimension主要描述分形最主要的参量。简称分维
+直线基于平面是4维、直线基于体是6维、平面基于体是9维 topological dimension拓扑维度
+```
+##### Hilbert curve
+ * https://en.wikipedia.org/wiki/Hilbert_curve
+ * https://en.wikipedia.org/wiki/Z-order_curve 亨利·勒贝格 Lebesgue curve
+ * https://en.wikipedia.org/wiki/Hilbert_R-tree
+ * https://en.wikipedia.org/wiki/List_of_fractals_by_Hausdorff_dimension
+```
+ Hilbert curve has been suggested as it has a better order-preserving behaviour, but here the calculations are much more complicated
+ Dynamic Hilbert R-trees The dynamic Hilbert R-tree is suitable for dynamic databases where insertions, deletions, or updates may occur in real time
+```
+##### code library
+ * https://github.com/google/hilbert
+ * https://github.com/samuel/go-spacecurves
 ### kubernetes labels
 #### built-in node labels
  * https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#nodeselector
@@ -728,6 +762,15 @@ install https://github.com/kubernetes/helm/pull/2344
  * https://www.getambassador.io/user-guide/with-istio.html
  * https://content.pivotal.io/blog/pivotal-and-istio-advancing-the-ecosystem-for-microservices-in-the-enterprise
  * http://redmonk.com/jgovernor/2017/05/31/so-what-even-is-a-service-mesh-hot-take-on-istio-and-linkerd/
+##### service mesh and API gateways
+ * https://www.slideshare.net/kasun04/service-meshes-the-landscape/1
+ * https://www.slideshare.net/kasun04/bridging-microservices-apis-and-integration the new monolith API Gateway
+##### new service integration programming language
+ * https://github.com/ballerinalang/ballerina
+ * https://dzone.com/articles/ballerinawhy-it-is-different-from-other-programmin
+ * https://medium.com/coderscorner/mule-esb-vs-ballerina-language-concepts-e4bec4fdf9d1
+ * https://dzone.com/articles/ballerina-dances-onto-the-integration-stage
+ * https://github.com/Dwolla/open-source-developer-portal
 ##### linkerd vs istio
  * https://lyft.github.io/envoy/docs/intro/comparison.html
  * https://buoyant.io/2017/07/11/linkerd-istio/
@@ -816,6 +859,8 @@ http://lattice.cf/
  * http://blog.kubernetes.io/2016/09/high-performance-network-policies-kubernetes.html High performance network policies in Kubernetes clusters
 ##### 长连接与负载均衡
  * http://www.sunchangming.com/blog/post/4658.html 长连接与负载均衡
+#### well known labels annotations and taints
+ * https://kubernetes.io/docs/reference/labels-annotations-taints/
 #### kubernetes statefulset
 #####  statefulset mysql example
  * https://kubernetes.io/docs/tasks/run-application/run-replicated-stateful-application/
@@ -1115,6 +1160,11 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 #### jenkins pipeline steps
  * https://jenkins.io/doc/pipeline/steps/
  * https://jenkins.io/doc/book/pipeline/syntax/
+#### jenkins error
+##### not com.microsoft.tfs.core.exceptions.TECoreException:  Hudson-dspb2_cicd-MASTER; jenkins-1-kb701
+https://issues.jenkins-ci.org/browse/JENKINS-33487
+https://github.com/Microsoft/team-explorer-everywhere/blob/294180f7a4d471fb9a2bfda012fb420bd404c499/source/com.microsoft.tfs.core.ws.runtime/src/com/microsoft/tfs/core/ws/runtime/client/SOAP12Service.java
+#####
 ### minishift
  * https://marketplace.openshift.com/
 ```
@@ -1223,6 +1273,8 @@ minikube start --vm-driver=virtualbox --extra-config apiserver.cors-allowed-orig
  * https://github.com/apex/apex Build, deploy, and manage AWS Lambda functions with ease (with Go support!)
  * https://www.slideshare.net/AlexCasalboni/serverless-machine-learning-on-aws-serverless-meetup-milano
  * http://containerjournal.com/2016/03/23/serverless-applications-future-microservices/
+##### serverless programming language
+ * https://www.quora.com/Which-programming-languages-are-used-in-serverless-computing-What-are-the-market-shares-for-Python-and-JavaScript
 ##### FaaS framework
  * https://news.ycombinator.com/item?id=13522541 比较  swarm FaaS https://github.com/alexellis/funker-dispatch/
  * https://github.com/funktionio/funktion https://funktion.fabric8.io/docs/#how-it-works  https://github.com/funktionio/funktion/blob/master/pkg/funktion/operator.go
@@ -1464,6 +1516,10 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
 ## nodejs
 ### web command line interface cli
  * https://www.sitepoint.com/javascript-command-line-interface-cli-node-js/
+#### nodejs visual programming Flow-based programming serverless programming
+ * https://github.com/noflo/noflo
+ * http://www.jpaulmorrison.com/fbp/noflo.html
+ * https://github.com/jpaulm flow-based programming language
 ### nodejs repository
  * https://www.npmjs.com/package/sinopia https://hub.docker.com/r/bankiru/sinopia/  latest https://github.com/rlidwka/sinopia https://github.com/RnbWd/sinopia-docker https://hub.docker.com/r/rnbwd/sinopia/
  * https://www.jfrog.com/confluence/display/RTF/Npm+Registry
@@ -1659,6 +1715,9 @@ npm install -g @angular/cli
 ### python finite state machine FSM
  * https://wiki.python.org/moin/FiniteStateMachine
  *
+### python visual editer
+ * https://github.com/ikotler/pythonect
+ * https://en.wikipedia.org/wiki/Visual_programming_language
 ## Go golang
  * https://github.com/golang/go/releases
 ### go is not good

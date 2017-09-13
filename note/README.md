@@ -2452,7 +2452,11 @@ git add . && git commit -m "Add all content of $(pwd)" && git push
 ```
 git checkout .
 ```
-
+### fork a go project
+ * proxy.org/download/1.5/doc/configuration.txt
+ * http://blog.campoy.cat/2014/03/github-and-go-forking-pull-requests-and.html
+ * https://www.reddit.com/r/golang/comments/2jdcw1/how_do_you_deal_with_github_forking/
+ * https://github.com/golang/go/wiki/PackageManagementTools
 ## git ssh  
 ### git client
  * 生成ssh key
@@ -2837,6 +2841,8 @@ curl https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v172 | gr
 curl https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v172 | grep 'Downloads for v1.7.2' -A 50 | grep -o '"https.*gz"'
 curl https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v172 | grep 'Downloads for v1.7.2' -A 150 | grep -o '"https.*gz"' | grep -o https.*server.*amd64.*gz
 kubectl get po | grep -o -e 'ubuntu\-[a-z0-9\-]\{16\}'
+递归搜索某个目录，也包括隐藏子目录和文件
+grep -nr hello ./
 抽取出特定连接字符串
 curl https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v172 | grep 'Downloads for v1.7.2' -A 150 | perl -n -e'/"(https.*gz)"/ && print "$1\n"'
 #### 注释掉某行
