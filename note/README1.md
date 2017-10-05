@@ -1,5 +1,11 @@
 # cloud
+## docker merge docker image discovery
+ * https://github.com/moby/moby/issues/3378 How do I combine several images into one via Dockerfile
+ * https://stackoverflow.com/questions/39711924/merge-two-docker-images
+ * https://abdelrahmanhosny.com/2015/07/11/how-to-merge-two-docker-images/
 ## docker swarm
+### garbage collection container remove 垃圾回收
+ * https://github.com/docker/swarmkit/issues/1372
 ### portainer Simple management UI for Docker
  * https://github.com/portainer/portainer
 ### federated swarm
@@ -8,6 +14,10 @@
  * https://success.docker.com/Architecture/Docker_Reference_Architecture%3A_Docker_EE_Best_Practices_and_Design_Considerations
 ### docker swarm scheduling
  * https://www.slideshare.net/AtharvaChauthaiwale/docker-swarm-scheduling-in-112
+#### docker swarm label
+ * https://docs.docker.com/datacenter/ucp/2.2/guides/admin/configure/add-labels-to-cluster-nodes/#apply-labels-to-a-node
+ * http://thingsoncloud.com/2016/09/docker-swarm-internal/
+ * https://docs.docker.com/engine/reference/commandline/service_create/#specify-service-placement-preferences-placement-pref scheduler
 ## docker maven plugin
  * https://github.com/spotify/docker-client/
  * https://github.com/spotify/dockerfile-maven
@@ -53,6 +63,15 @@ Engine API v1.27 docker 17.03.1-ce
 ```
 ##### HTTP REST API Interceptor
  * https://blog.paw.cloud/tools-for-restful-api/ https://www.packtpub.com/books/content/debugging-rest-web-services
+### kubernetes swarm mesos comparison
+ * https://blog.outlyer.com/kubernetes-vs.-mesos-vs.-swarm interview best features
+ * https://gist.github.com/jonathan-kosgei/dac620fed9d9aeec35050bcc0a146647 why-i'm-leaving-kubernetes-for-swarm.md
+ * https://www.upcloud.com/blog/docker-swarm-vs-kubernetes/
+ * https://news.ycombinator.com/item?id=12462261 Why Kubernetes is winning the container war
+ * https://hackernoon.com/lessons-learned-from-moving-my-side-project-to-kubernetes-c28161a16c69
+ * https://dzone.com/articles/docker-vs-kubernetes-prons-and-cons
+ * http://blog.kubernetes.io/2017/01/how-we-run-kubernetes-in-kubernetes-kubeception.html
+ * https://blog.netsil.com/kubernetes-vs-docker-swarm-vs-dc-os-may-2017-orchestrator-shootout-fdc59c28ec16
 ### kubernetes playground
  * https://www.katacoda.com/
  * https://kubernetes.io/docs/tasks/administer-cluster/memory-default-namespace/
@@ -340,12 +359,28 @@ ConfigMap中的key,如果匹配不上很可能使用configmap对应的整个目�
 #### openshift federation
  * https://bugzilla.redhat.com/show_bug.cgi?id=1470046 trello task
  * https://blog.openshift.com/looking-ahead-to-2017/ https://lists.openshift.redhat.com/openshift-archives/users/2017-April/msg00087.html
+ * https://trello.com/c/xEBlcYgK/3-1-federation-update-federation-to-release-17-alpha
+#### storage federation
+ * https://trello.com/c/jrx1SP1O/512-storage-federation-replication
+ * https://github.com/LINBIT/drbd-flexvolume http://docs.linbit.com/docs/users-guide-8.4/
+ * https://en.wikipedia.org/wiki/Distributed_Replicated_Block_Device a shared disk file system such as GFS2 or OCFS2 applicable for Jenkins Master Style service
 #### Ubernetes Lite  single cluster across multiple data centers
  * https://kubernetes.io/docs/admin/multiple-zones/
  * https://stackoverflow.com/questions/34194602/single-kubernetes-openshift-cluster-instance-across-datacenters
  * https://serverfault.com/questions/742063/single-kubernetes-openshift-cluster-instance-across-datacenters
  * https://lists.openshift.redhat.com/openshift-archives/dev/2015-December/msg00023.html
  * https://lists.openshift.redhat.com/openshift-archives/dev/2015-December/msg00021.html  
+#### global load balancing GLB GSLB
+ * https://blog.newrelic.com/2016/04/13/understanding-global-load-balancing/
+ * https://www.loadbalancer.org/blog/gslb-why-do-global-server-load-balancers-suck/
+ * https://en.wikipedia.org/wiki/Anycast
+ * https://blog.cloudflare.com/cloudflares-architecture-eliminating-single-p/
+ * http://www.tenereillo.com/GSLBPageOfShame.htm DNS failures
+ * https://engineering.linkedin.com/network-performance/tcp-over-ip-anycast-pipe-dream-or-reality TCP over anycast
+ * https://blog.thousandeyes.com/using-anycast-for-internet-services/ anycast and dns monitoring
+ ＊ https://www.zhihu.com/question/28884646
+ * https://www.v2ex.com/t/273605
+ * https://www.zhihu.com/question/20536932 国内
 #### selinux references
  * https://wiki.centos.org/HowTos/SELinux#head-563ca75234163cdfa0ef056f1f82d4d396526d2b troubleshooting
  * https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Security-Enhanced_Linux/sect-Security-Enhanced_Linux-SELinux_Contexts-SELinux_Contexts_for_Processes.html
@@ -416,6 +451,7 @@ oc adm policy add-scc-to-user anyuid system:serviceaccount:test-stress:default
  * https://github.com/kubernetes-incubator/kompose
  * http://kompose.io/index
  * https://github.com/redhat-developer/opencompose
+ * https://github.com/kedgeproject/kedge  kubernetes 的 compose 应用编排
  * http://developers.redhat.com/blog/2016/11/03/container-orchestration-specification-for-better-devops/
 #### kubeadm
  * https://medium.com/@SystemMining/setup-kubenetes-cluster-on-ubuntu-16-04-with-kubeadm-336f4061d929
@@ -513,6 +549,8 @@ install https://github.com/kubernetes/helm/pull/2344
  * origin/pkg/template/servicebroker/provision.go
  * https://github.com/kubernetes-incubator/service-catalog/wiki/Roadmap
  * https://github.com/kubernetes-incubator/service-catalog/blob/master/docs/v1/use-cases.md
+ * https://github.com/google/helm-broker https://trello.com/c/5MA7C2NB/1321-5-helm-rd
+ * https://github.com/ansibleplaybookbundle/ansible-playbook-bundle APB comparison to Helm, Mesosphere, Atomicapp
 #### awesome kubernetes
  * https://github.com/ramitsurana/awesome-kubernetes#operators
 #### 扩展kubernetes API
@@ -655,7 +693,7 @@ fractal dimension主要描述分形最主要的参量。简称分维
 ### kubernetes labels
 #### built-in node labels
  * https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#nodeselector
-### virtual machine in kubernetes
+### virtual machine in kubernetes virtual machine
  * https://github.com/kubevirt/kubevirt
 ### kubernetes 1.6
  * https://github.com/kubernetes/community/blob/master/contributors/design-proposals/taint-toleration-dedicated.md
@@ -723,7 +761,11 @@ fractal dimension主要描述分形最主要的参量。简称分维
 #### Object-relational mapping
  * https://en.wikipedia.org/wiki/List_of_object-relational_mapping_software
 ##### data mapping patterns
-#####
+##### microservices pioneers settlers town planners PST 革命先锋 新移民（拓荒者） 和 城市规划师
+ * http://blog.christianposta.com/microservices/when-not-to-do-microservices/
+ * http://blog.gardeviance.org/2012/06/pioneers-settlers-and-town-planners.html
+ * http://blog.gardeviance.org/2012/03/tens-graphs-on-organisational-warfare.html
+ * http://ai.stanford.edu/~ronnyk/ExPThinkWeek2009Public.pdf experimental
 #####
  * http://houzhe11.iteye.com/blog/494296 　ActiveRecord TableGateway Table Module
 #### microservices service discovery and registry 服务发现
@@ -754,6 +796,7 @@ fractal dimension主要描述分形最主要的参量。简称分维
  * publish-subscribe to turn MxN dependencis to M+N dependencies
  * https://www.voxxed.com/blog/2015/04/microservice-design-patterns/
  * http://blog.kubernetes.io/2017/05/managing-microservices-with-istio-service-mesh.html pretty figure
+ * http://microservices.io/patterns/data/api-composition.html microservice patterns
 ##### service mesh patterns
  * http://blog.christianposta.com/microservices/application-network-functions-with-esbs-api-management-and-now-service-mesh/   https://twitter.com/tef_ebooks/status/875888701246722048 https://istio.io/docs/concepts/
  * http://philcalcado.com/2017/08/03/pattern_service_mesh.html
@@ -765,6 +808,9 @@ fractal dimension主要描述分形最主要的参量。简称分维
 ##### service mesh and API gateways
  * https://www.slideshare.net/kasun04/service-meshes-the-landscape/1
  * https://www.slideshare.net/kasun04/bridging-microservices-apis-and-integration the new monolith API Gateway
+ * https://tyk.io/docs/ensure-high-availability/service-discovery/examples/ tyk API gateway features Transform traffic compose APIs Virtual Endpoints  MPL 2.0 license
+ * https://github.com/Mashape/kong APL license https://getkong.org/plugins/ https://github.com/Mashape/kong/tree/master/kong/plugins/response-transformer/migrations https://getkong.org/docs/
+ * https://github.com/apiman/apiman https://github.com/apiman/apiman-plugins APL license
 ##### new service integration programming language
  * https://github.com/ballerinalang/ballerina
  * https://dzone.com/articles/ballerinawhy-it-is-different-from-other-programmin
@@ -780,10 +826,11 @@ fractal dimension主要描述分形最主要的参量。简称分维
 http://www.javaworld.com/article/2824163/application-performance/stability-patterns-applied-in-a-restful-architecture.html?page=3
 http://assets.en.oreilly.com/1/event/79/Stability%20Patterns%20Presentation.pdf
 #### spring cloud
-http://stackoverflow.com/questions/30701673/how-to-use-spring-cloud-from-nodejs
-http://stackoverflow.com/questions/33007887/how-to-register-node-app-with-spring-cloud-and-netflixs-eureka
-https://spring.io/guides/gs/spring-cloud-and-lattice/
-http://lattice.cf/
+ * http://stackoverflow.com/questions/30701673/how-to-use-spring-cloud-from-nodejs
+ * http://stackoverflow.com/questions/33007887/how-to-register-node-app-with-spring-cloud-and-netflixs-eureka
+ * https://spring.io/guides/gs/spring-cloud-and-lattice/
+ * http://lattice.cf/
+ * https://piotrminkowski.wordpress.com/2017/02/05/part-1-creating-microservice-using-spring-cloud-eureka-and-zuul/
 ##### eureka
  * https://github.com/Netflix/eureka/wiki/Eureka-REST-operations
  * https://github.com/Netflix/eureka/wiki/Understanding-eureka-client-server-communication
@@ -854,6 +901,36 @@ http://lattice.cf/
  * https://lg.io/2015/10/25/real-world-benchmarking-of-s3-azure-google-cloud-storage.html
  * https://www.nuxeo.com/blog/some-glusterfs-experiments-and-benchmarks/
  * https://www.slideshare.net/Red_Hat_Storage/red-hat-gluster-storage-performance
+ * https://www.percona.com/blog/2017/01/06/millions-queries-per-second-postgresql-and-mysql-peaceful-battle-at-modern-demanding-workloads/
+##### dockerized database
+ * http://www.davidmkerr.com/2014/06/postgresql-performance-on-docker.html docker better
+ * http://mysqlserverteam.com/mysql-with-docker-performance-characteristics/ docker impose small overhead
+ * https://savaslabs.com/2017/02/15/docker-mysql-performance.html docker better
+##### benchmark tools
+ * https://hub.docker.com/r/dotnetdr/sysbench/
+ * https://github.com/mattkernow/dbfit-docker
+ * https://www.percona.com/blog/2017/01/06/millions-queries-per-second-postgresql-and-mysql-peaceful-battle-at-modern-demanding-workloads/
+#####
+ * https://dzone.com/articles/debunking-myths-about-voltdb
+ * https://www.gridgain.com/resources/blog/in-memory-database-vs-in-memory-data-grid-revisited#tldr
+ *
+##### benchmark comparison
+| DB | Query | Insert| Range Scan |Link |
+|----|---|---|---|---|
+|VoltDB| 285k TPS/3 nodes   | 32 logical processors/60GB each of memory 2 x 320GB SSD 182k TPS/3node | |https://www.voltdb.com/blog/2014/05/07/voltdb-memory-database-achieves-best-class-results-running-cloud-ycsb-benchmark/|
+| Ignite |  65,657  | 8vCPU 61 Gib 56,120 4 server (SQL Query Put) | | https://www.gridgain.com/resources/benchmarks/gridgain-vs-hazelcast-benchmarks |
+|hazelcast |  | 8vCPU 15GiB 102209 (put/get) 4 server | | https://hazelcast.com/resources/benchmark-gridgain-apache-ignite-1-5/ |
+|redis    |   |  CPU E5520 4 core  | | https://redis.io/topics/benchmarks |
+|memcache |   | CPU cores: 2 Set 10000 times with string 5000 chars  | | https://github.com/lokechenlin/memcached-redis-benchmark |
+| mysql | 4x18 core 800,000 QPS   | 30,000-45,000 TPS | | https://www.percona.com/blog/2017/01/06/millions-queries-per-second-postgresql-and-mysql-peaceful-battle-at-modern-demanding-workloads/ |
+| postgre |8core 256G 100,000 QPS | 1000 TPS | | https://www.phoronix.com/scan.php?page=news_item&px=PostgreSQL-10-Beta-Benchmarks |
+| oracle | |  | |http://it.toolbox.com/blogs/database-soup/postgresql-publishes-first-real-benchmark-17470 http://www.tpc.org/tpcc/results/tpcc_results.asp |
+| mongodb |1Node QPS | 8,000/1Node TPS | 939 | https://www.datastax.com/nosql-databases/benchmarks-cassandra-vs-mongodb-vs-hbase |
+| Cassandra |1Node QPS | 18,683/1Node TPS | 4,690 | https://www.datastax.com/nosql-databases/benchmarks-cassandra-vs-mongodb-vs-hbase  https://academy.datastax.com/planet-cassandra/nosql-performance-benchmarks https://www.slideshare.net/Athiqurraza/benchmarking-top-nosql-databases-apache-cassandra-apache-hbase-and-mongodb https://www.infoq.com/news/2013/04/NoSQL-Benchmark|
+| HBase |1Node QPS | 5,617/1Node TPS | 269 | https://www.datastax.com/nosql-databases/benchmarks-cassandra-vs-mongodb-vs-hbase |
+| Couchbase |1Node QPS | 13,761.12/1Node TPS | | https://www.datastax.com/nosql-databases/benchmarks-cassandra-vs-mongodb-vs-hbase |
+| Voldemort/ |1Node QPS | 13,761.12/1Node TPS | | https://academy.datastax.com/planet-cassandra/nosql-performance-benchmarks |
+
 ##### production experiences
  * https://acotten.com/post/1year-kubernetes
  * http://blog.kubernetes.io/2016/09/high-performance-network-policies-kubernetes.html High performance network policies in Kubernetes clusters
@@ -872,6 +949,10 @@ http://lattice.cf/
  * https://github.com/pieterlange/kube-backup
  * https://github.com/kubernetes/kubernetes/issues/24229
  * https://kubernetes.io/docs/getting-started-guides/ubuntu/backups/
+#### kubernetes volume backup
+ * https://github.com/miracle2k/k8s-snapshots
+ * https://github.com/osodevops/kubernetes-volume-snapshots
+ * https://github.com/blackwoodseven/kubernetes-volume-backup
 #### 有趣应用
  * https://hub.docker.com/r/daehyeok/freecodecamp/
  * https://hub.docker.com/r/xblaster/tensor-guess/ 分类程序
@@ -1164,7 +1245,13 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 ##### not com.microsoft.tfs.core.exceptions.TECoreException:  Hudson-dspb2_cicd-MASTER; jenkins-1-kb701
 https://issues.jenkins-ci.org/browse/JENKINS-33487
 https://github.com/Microsoft/team-explorer-everywhere/blob/294180f7a4d471fb9a2bfda012fb420bd404c499/source/com.microsoft.tfs.core.ws.runtime/src/com/microsoft/tfs/core/ws/runtime/client/SOAP12Service.java
-#####
+##### jenkins REST API remote access build with parameters
+ * https://wiki.jenkins.io/display/jenkins/remote+access+api
+ * https://wiki.jenkins.io/display/JENKINS/Parameterized+Build
+ * https://stackoverflow.com/questions/25661362/where-can-i-find-jenkins-restful-api-reference
+```
+Get job delete a job trigger a build trigger a parameterized job
+```
 ### minishift
  * https://marketplace.openshift.com/
 ```
@@ -1387,6 +1474,19 @@ Real world example:
 #### Support a minimized D & I toolkit
 #### Northward API should be irrelevant to D & I toolkit
 #### Addon product is based on Northward API
+#### Donald Norman’s Three Levels of Design  https://www.interaction-design.org/literature/topics/emotional-design
+ * The Visceral Design gut 本能，直觉 发自内心的设计 Visceral  It’s immediate and often beyond our control.
+ * The Behavioural Design  
+ * The Reflective Design
+### reactive design
+ * https://livebook.manning.com/#!/book/reactive-design-patterns/chapter-1/4
+```
+It must react to its users (responsive).
+It must react to failure and stay available (resilient).
+It must react to variable load conditions (elastic).
+It must react to inputs (message-driven).
+elastic 弹性伸缩的 resilient 弹性抗压的 自动恢复的
+```
 ### generic interface
 ### Simplex algorithm  单纯形法
 #### file
@@ -1403,6 +1503,29 @@ semanctics 语义 syntax 语法 mechanism 机制
 intentional programming 意图式编程
 declarative programming  声明 imperative programming 命令式biancheng
 Referential transparency 参照透明 deterministic 确定性的 rewriting systems (also known as rewrite systems, rewrite engines 重写系统
+### 多边形相交 多面体相交 polygon intersection polyhedron intersection  
+ * https://stackoverflow.com/questions/29295626/algorithm-for-area-of-polygons-intersection
+ * https://gamedevelopment.tutsplus.com/tutorials/understanding-sutherland-hodgman-clipping-for-physics-engines--gamedev-11917
+ * https://en.wikipedia.org/wiki/Sutherland%E2%80%93Hodgman_algorithm
+ * https://www.npmjs.com/package/box-intersect  https://github.com/vrd/js-intersect https://mathematica.stackexchange.com/questions/51980/difference-or-intersection-of-two-convex-polyhedra
+ * https://www.mathsisfun.com/geometry/polyhedron.html
+ * https://en.wikipedia.org/wiki/Polyhedron
+ * https://en.wikipedia.org/wiki/3D_data_acquisition_and_object_reconstruction
+#### simple polygon 简单多边形
+ * jordan curve 约当曲线 jordan polygons 约当多边形 Concave polygon 凹多边形  Convex polygon 凸多边形
+ * A simple polygon that is not convex is called concave,[1] non-convex[2] or reentrant凹角.
+ * If a collection of non-crossing line segments 无交叉线段 forms the boundary of a region of the plane that is topologically equivalent to a disk, then this boundary is called a weakly simple polygon 弱简单多边形
+ * Simple polygons are also called Jordan polygons, because the Jordan curve theorem can be used to prove that such a polygon divides the plane into two regions, the region inside it and the region outside it. A polygon in the plane is simple if and only if it is topologically equivalent to a circle. Its interior is topologically equivalent to a disk.
+ * disk disc 圆盘 circle 圆形 圆周 一圈 圆圈
+ * https://en.wikipedia.org/wiki/Simple_polygon Computational problems
+ * 维诺图(Voronoi Diagram)分析 They are also known as Thiessen polygons 泰森多边形
+ * 凸包（Convex Hull） convex envelope
+#### simple polytope simple polyhedron
+ * d-dimensional simple polytope is a d-dimensional polytope each of whose vertices are adjacent to exactly d edges (also d facets)
+ * Some authors use the terms "convex polytope" and "convex polyhedron" interchangeably, while others prefer to draw a distinction between the notions of a polyhedron n=3 多面体 and a polytope n=N 多面体 多胞形.
+ * simplex (plural: simplexes or simplices) 单纯形 is a generalization of the notion of a triangle 三角形or tetrahedron四面体 k-simplex is a k-dimensional polytope which is the convex hull of its k + 1 vertices
+ * 单纯多面体 simplicial polytope 单纯多边形 二位多边形都是单纯多边形，因为它的侧面（侧边）线段都是单纯的。
+ * regular polytope 规矩形 is a polytope whose symmetry group acts transitively on its flags, thus giving it the highest degree of symmetry.
 ### graph 图
 #### 图同构问题 GI complete problem
  * https://en.wikipedia.org/wiki/Graph_isomorphism_problem
@@ -1458,6 +1581,9 @@ https://en.wikipedia.org/wiki/GNU_Multiple_Precision_Arithmetic_Library
 ### bash template
  * https://github.com/hairyhenderson/gomplate
  * envsubst https://www.gnu.org/software/gettext/manual/html_node/envsubst-Invocation.html
+#### kubernetes template
+ * https://github.com/InQuicker/ktmpl
+ * https://github.com/kubernetes/features/issues/35 template issue
 ## programming teaching
 ### scratch 教小孩编程
  * https://scratch.mit.edu/
@@ -1520,6 +1646,9 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * https://github.com/noflo/noflo
  * http://www.jpaulmorrison.com/fbp/noflo.html
  * https://github.com/jpaulm flow-based programming language
+ * https://github.com/node-red
+ * http://www.jpaulmorrison.com/fbp/software.html#DrawFBP
+ * http://www.jpaulmorrison.com/fbp/concat.html
 ### nodejs repository
  * https://www.npmjs.com/package/sinopia https://hub.docker.com/r/bankiru/sinopia/  latest https://github.com/rlidwka/sinopia https://github.com/RnbWd/sinopia-docker https://hub.docker.com/r/rnbwd/sinopia/
  * https://www.jfrog.com/confluence/display/RTF/Npm+Registry
@@ -1532,6 +1661,7 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * https://stackoverflow.com/questions/40057469/what-is-the-difference-between-yarn-lock-and-npm-shrinkwrap
  * http://www.infoworld.com/article/3172725/javascript/npm-or-yarn-nodejs-devs-pick-their-package-manager.html
  * https://stackoverflow.com/questions/40057469/what-is-the-difference-between-yarn-lock-and-npm-shrinkwrap
+
 ### nexe  create a single executable out of your node.js apps
  * https://github.com/nexe/nexe
 #### nexe errors
@@ -1558,6 +1688,7 @@ and then run npm install
  * https://www.npmjs.com/package/generator-nodejs-cli-typescript
  * https://www.npmjs.com/package/inquirer
 ### angularjs
+ * https://weblog.west-wind.com/posts/2016/Sep/12/External-JavaScript-dependencies-in-Typescript-and-Angular-2
  * https://github.com/toddmotto/angular-1-5-components-app
  * https://github.com/toddmotto/angular-styleguide
  * https://docs.angularjs.org/api/ng/directive/ngStyle 1.5
@@ -1581,6 +1712,9 @@ and then run npm install
  * https://github.com/brillout/awesome-angular-components
  * https://github.com/AngularClass/awesome-angular
  * https://github.com/maiyaporn/angular2-wizard https://www.cc28tech.com/angular-2-multi-step-wizard-ui-router-part-1/
+#### angular 2 apps
+ * https://medium.com/aviabird/10-amazing-open-source-angular-2-x-apps-825fb169dce3
+ *
 #### webpack
   * https://github.com/webpack/webpack
   * http://www.dotnetcurry.com/angularjs/1320/using-webpack-bundling-with-angular-2
@@ -1600,6 +1734,11 @@ and then run npm install
  * https://github.com/angular/angular-cli/issues/4379
 ```
 npm install -g @angular/cli
+```
+#### npm
+```
+npm config set proxy http://localhost:49895
+npm config set https-proxy http://localhost:49895
 ```
 #### angular 2 d3 angular charts
  * https://github.com/datencia/d3js-angular2-example
@@ -1621,7 +1760,7 @@ npm install -g @angular/cli
 ##### ng2-admin structure
  * src/app/app.translation.module.ts src/assets/i18n/CN/zh.json translation path
  * https://akveo.github.io/ng2-admin/articles/011-changing-color-scheme/
-#### angular 2 templat syntax
+#### angular 2 template syntax
  * https://embed.plnkr.co/?show=preview
  * https://angular.io/docs/ts/latest/guide/architecture.html#!#modules
 #### angular 2 trainings
@@ -1649,6 +1788,13 @@ npm install -g @angular/cli
 #### angular 4
  * https://www.udemy.com/the-complete-guide-to-angular-2/
  * https://github.com/panacloud https://github.com/panacloud/learn-angular
+#### angular 4 example
+ * https://github.com/gothinkster/angular-realworld-example-app
+ * https://github.com/Ismaestro/angular4-example-app
+ * https://github.com/jakblak/ng4_CRUD
+ * https://github.com/AngularClass/angular-starter
+ * https://github.com/start-angular/SB-Admin-BS4-Angular-4
+ * https://github.com/dancancro/great-big-example-application
 #### app generator
  * https://github.com/swagger-api/swagger-codegen/tree/master/samples/client/petstore/typescript-angular
  * https://jhipster.github.io/  angular + spring cloud
@@ -1714,10 +1860,29 @@ npm install -g @angular/cli
 安装不了可以将python2.7目录允许访问。安装openstackclient后可以访问openstack服务
 ### python finite state machine FSM
  * https://wiki.python.org/moin/FiniteStateMachine
- *
 ### python visual editer
  * https://github.com/ikotler/pythonect
  * https://en.wikipedia.org/wiki/Visual_programming_language
+### distributed system deployer
+#### jenkins
+ * https://wiki.jenkins.io/display/JENKINS/Ansible+Plugin
+ * https://wiki.jenkins.io/display/JENKINS/Publish+Over+SSH+Plugin
+ * https://wiki.jenkins.io/display/JENKINS/SSH2Easy+Plugin
+ * jenkinsci/jenkins/src/site/resources/jenkins_logo.png
+#### ansible
+ * https://github.com/ansible/ansible
+#### golang provisioning
+ * https://github.com/digitalrebar/provision  codeowl.io
+ * https://robhirschfeld.com/tag/digital-rebar/
+ * https://www.packet.net/developers/guides/ditch-cobbler-for-rackn/
+ * https://github.com/walter-cd/walter http://ainoya.io/walter
+#### kubernetes volumes plugins
+ * /kubernetes/cmd/kubelet/app/plugins.go /kubernetes/pkg/volume/flexvolume/driver-call.go
+ * https://github.com/kubernetes/kubernetes/tree/master/examples/volumes/flexvolume
+ * https://github.com/rothgar/bashScheduler bash scheduler
+#### kubernetes network plugins
+ * /kubernetes/vendor/github.com/containernetworking/cni/libcni/api.go /kubernetes/vendor/github.com/containernetworking/cni/pkg/invoke/exec.go
+ * /kubernetes/pkg/kubelet/network/cni/cni.go
 ## Go golang
  * https://github.com/golang/go/releases
 ### go is not good
@@ -1734,7 +1899,12 @@ npm install -g @angular/cli
 ### awesome golangs
  * https://github.com/avelino/awesome-go may image processing libs
  * https://github.com/lk-geimfari/awesomo/blob/master/languages/GOLANG.md
- *
+### golang test
+ * https://medium.com/@thejasbabu/testing-in-golang-c378b351002d general
+ * https://medium.com/@matryer/5-simple-tips-and-tricks-for-writing-unit-tests-in-golang-619653f90742 https://github.com/golang/go/wiki/TableDrivenTests table driven test
+ * https://medium.com/@matryer/meet-moq-easily-mock-interfaces-in-go-476444187d10 mock test by func code github.com/matryer/moq
+ * https://golang.org/pkg/testing/ example
+ * http://route.run/MatRyerBooks
 ### goadesign
  * https://blog.gopheracademy.com/advent-2015/goaUntanglingMicroservices/
  * https://www.infoq.com/news/2015/12/goa-microservice-framework
@@ -1765,6 +1935,12 @@ anic: standard_init_linux.go:175: exec user process caused "no such file or dire
  * https://golang.org/cmd/link/ http://blog.hashbangbash.com/2014/04/linking-golang-statically/
  * https://stackoverflow.com/questions/33113190/how-to-create-a-statically-linked-golang-executable-with-go-1-5
  * http://blog.hashbangbash.com/2014/04/linking-golang-statically/
+##### method has a pointer receiver
+ * https://stackoverflow.com/questions/40823315/go-x-does-not-implement-y-method-has-a-pointer-receiver
+```
+Go, X does not implement Y (… method has a pointer receiver)
+
+```
 ### golang download 下载
  * https://golang.org/dl/
  * https://storage.googleapis.com/golang/go1.7.3.linux-amd64.tar.gz
@@ -1818,6 +1994,15 @@ logic paradigm
  * https://github.com/spotify/dockerfile-maven
  * https://hub.docker.com/r/sonatype/nexus/
  * https://hub.docker.com/r/sonatype/nexus3/
+### java performance
+ * http://menelic.com/2016/01/06/java-rest-api-benchmark-tomcat-vs-jetty-vs-grizzly-vs-undertow/
+ * https://github.com/orangy/http-benchmarks netty vs. jetty
+ * https://www.slideshare.net/brendangregg/rxnetty-vs-tomcat-performance-results netty better
+ * https://dzone.com/articles/benchmarking-high-concurrency-http-servers-on-the
+#### load test tool
+* https://github.com/pinterest/jbender
+#### netty example
+ * https://gist.github.com/jwkfreedom/9112184 http://www.seepingmatter.com/2016/03/30/a-simple-standalone-http-server-with-netty.html
 ### java8
 #### default method
  * https://stackoverflow.com/questions/19998454/interface-with-default-methods-vs-abstract-class-in-java-8
@@ -1847,6 +2032,13 @@ logic paradigm
  * https://howtoprogram.xyz/2016/10/10/convert-maven-pom-file-to-gradle-build-file/
  * https://docs.gradle.org/current/userguide/build_init_plugin.html
  * http://stackoverflow.com/questions/20862275/how-to-convert-a-maven-build-to-gradle
+### kotlin
+#### kotlin server adoption
+ * https://medium.com/@napperley/kotlin-server-side-adoption-d160ede1877c
+#### Good kotlin projects
+ * https://github.com/tipsy/
+ * https://kotlinlang.org/docs/tutorials/
+ * http://kotlinlang.org/docs/reference/basic-syntax.html#defining-functions language learn page
 #### gocd
  * https://www.gocd.io/2015/12/28/gocd-continuous-delivery-through-pipelines.html
  * https://highops.com/insights/continuous-delivery-pipelines-gocd-vs-jenkins/

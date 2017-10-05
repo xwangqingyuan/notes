@@ -25,6 +25,14 @@
  * https://wikibon.com/avoid-cloud-cul-de-sacs-follow-your-hybrid-cloud-manifesto/
  * https://wikibon.com/evolving-converged-infrastructure-towards-true-private-cloud/
 ## Applications 应用
+### IOT 物联网
+#### OpenFog
+ * https://www.openfogconsortium.org/about-us/#member-companies
+ * https://www.forbes.com/sites/janakirammsv/2016/04/18/is-fog-computing-the-next-big-thing-in-internet-of-things/#49c940db608d
+ * https://github.com/OpenFog/white-papers/blob/master/Architecture/OpenFog-Architecture-Overview-WP-2-2016.pdf
+#### EdgeX Foundry
+ * https://github.com/edgexfoundry
+ * https://twitter.com/EdgeXFoundry
 ### AI career sites
  * https://blog.insightdatascience.com/how-emerging-ai-roles-fit-in-the-data-landscape-d4cd922c389b
  * https://blog.insightdatascience.com/data-science-vs-data-engineering-62da7678adaa
@@ -43,6 +51,14 @@
  * Online Search
  * Natural Language Processing (NLP)  ranslate obscure legalese in contracts into plain language and help attorneys
  * Smart Cars
+##### Small business application
+ * https://www.entrepreneur.com/article/294492
+ * https://www.business.com/articles/small-business-artificial-intelligence-tips-strategies/
+ * https://www.salesforceiq.com/blog/infographic-customer-facing-ai-use-cases-abound-across-sales-service-and-marketing
+ * https://www.salesforceiq.com/blog/how-small-businesses-can-use-ai
+ * https://www.infoworld.com/article/3176485/artificial-intelligence/how-ai-could-affect-the-world-of-corporate-training.html
+ * http://minutehack.com/guides/how-small-businesses-can-use-existing-ai-technology tasks:LegalRobot Chatfuel Conversica Gluru
+ * https://smallbiztrends.com/2017/07/small-business-really-need-ai.html
 #### 10 Artificial Intelligence Trends to Watch in 2017
  * AI Chatbots
  * App Development
@@ -110,6 +126,14 @@
  * Animation Generation from Natural Language
 #### language model based on recurrent neural network
 ##### chatbot
+##### chatbot business
+ * https://iq.intel.com/chatbots-power-superior-service/
+ * https://www.entrepreneur.com/article/289973 Top 7 Chatbot Monetization Strategies You Need to Know
+ * https://venturebeat.com/2016/06/09/how-will-bots-make-money-here-are-7-business-models/
+ * https://chatbotslife.com/revenue-models-for-bots-and-chatbots-702ca78a1b07 Growbot  Statsbot. instant articles Swelly
+ * https://medium.com/@omeedrz/chatbot-business-models-250fed69f6aa AI Chatbots Marketing Chatbots HUMINT Chatbots
+ * https://chatbotsmagazine.com/whats-it-like-to-build-run-a-chatbot-business-751935913300 百分比
+ * http://dataunion.org/21645.html 一篇文章看懂聊天机器人的历史、技术和研究进展
 #### deepblue
 #### IBM’s Watson
 #####  healthcare, finance, legal, and retail sector.
@@ -150,6 +174,8 @@
  * https://jaredforsyth.com/2014/03/22/rust-vs-go/
 
 ## deep learning
+### ai 轮子
+ * https://www.zhihu.com/question/38737972 计算机领域有哪些短小精悍的轮子
 ### ANN
 #### A self-organizing map (SOM) or self-organizing feature map (SOFM)
 ##### Competitive learning is a form of unsupervised learning in artificial neural networks, in which nodes compete for the right to respond to a subset of the input data
@@ -1866,6 +1892,9 @@ sudo pip install ansible --upgrade
 ```
 
 ```
+#### CI integration comparison
+ * https://hackernoon.com/continuous-integration-circleci-vs-travis-ci-vs-jenkins-41a1c2bd95f5
+ * https://strongloop.com/strongblog/node-js-travis-circle-codeship-compare/
 #### jenkins workflow
  * https://jenkins.io/doc/pipeline/
  * https://jenkins.io/blog/2015/07/24/integrating-kubernetes-and-jenkins/
@@ -2235,6 +2264,10 @@ psql -U username -c '\d'
 OEM、ODM、OBM有什么区别
 https://zhidao.baidu.com/question/1945983678126952268.html
 genesis 起源
+cornerstone 基石 支柱 柱石
+prometheus 先知
+epimetheus 后知
+atlas 支柱
 ### spoil pants
 搞砸了
 
@@ -2747,6 +2780,7 @@ cat /proc/1/cgroup
 ## computer operating systems
 https://www.bottomupcs.com/
 ## linux commands  linux 命令
+ * https://github.com/jlevy/the-art-of-command-line
 ## bc bash compute 数值计算
  * https://yq.aliyun.com/articles/15005
 ```
@@ -2788,6 +2822,34 @@ sudo sed -i "s%archive.ubuntu.com%mirrors.aliyun.com%g" /etc/apt/sources.list
 ```
 cat << EOF 可以替换变量
 cat << 'EOF' 不会替换变量
+```
+### 标点符号 ; () {}
+```
+A; B    Run A and then B, regardless of success of A
+A && B  Run B if A succeeded
+A || B  Run B if A failed
+A &     Run A in background.
+If ‘|&’ is used, command1’s standard error, in addition to its standard output, is connected to command2’s standard input through the pipe; it is shorthand for 2>&1 |. This implicit redirection of the standard error to the standard output is performed after any redirections specified by the command.
+```
+### jq command
+ * https://stedolan.github.io/jq/manual/#join(str)
+```
+jq '.lastBuild.number'
+jq '.builds[0].number'
+## 将换行换成, 输出数组格式
+ls | jq -R . | jq -s . 先变成string 在合并成数组
+ls | jq -R . | sed ':a;N;$!ba;s/\n/,/g'
+echo "[$(ls | jq -R . | sed ':a;N;$!ba;s/\n/,/g')]" | jq
+### 处理linux output
+netstat -nr | awk '{print "{\"Iface\":\""$8"\"}"}'
+netstat -nr | awk '{print "{\"Iface\":\""$8"\"}"}' | jq -s .
+netstat -nr | awk '{print "{\"Iface\":\""$8"\"}"}' | jq -s .[1:]
+netstat -nr | awk '{print "{\"Iface\":\""$6"\"}"}' | jq -s .[1:] | json2csv | csvlook
+netstat -nr | awk '{print "{\"Destination\":\""$1"\",\"Gateway\":\""$2"\"}"}' | jq -s .[1:] | json2csv | csvlook
+## 合并成一个带换行的string
+ls | jq -R . | jq -s . | jq -r 'join("\n")'
+echo "[$(ls | jq -R . | sed ':a;N;$!ba;s/\n/,/g')]" | jq tojson | jq fromjson
+echo '["dd","dd","ass","dcccc"]' |  jq 'reduce .[] as $item (""; . + $item)'
 ```
 ### mount
 #### nfs mount
