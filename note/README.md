@@ -10,8 +10,39 @@
  * https://github.com/mfornos/awesome-microservices
  * https://github.com/ramitsurana/awesome-kubernetes#operators
  * https://cloudmesh.github.io/classes/i524/technologies.html#application-and-analytics
+ * http://blog.kaggle.com/category/data-science-news/ https://www.kaggle.com/kernels https://octoverse.github.com/ github state of arts
+ * https://github.com/topics/
 ## research site
 ### gartner
+ * https://www.gartner.com/doc/3811368?refval=&pcp=mpe Top 10 Strategic Technology Trends for 2018
+#### Gartner Hype Cycle 炒作轮回
+ * Innovation Trigger 触发创新 Peak of Inflated Expectations 幻想膨胀的顶峰 Trough of Disillusionment 梦想幻灭槽 Slope of Enlightenment 希望启示坡 Plateau of Productivity 生产力高原
+ * https://www.gartner.com/smarterwithgartner/top-trends-in-the-gartner-hype-cycle-for-emerging-technologies-2017/
+ * https://www.gartner.com/smarterwithgartner/3-trends-appear-in-the-gartner-hype-cycle-for-emerging-technologies-2016/
+ * https://www.gartner.com/newsroom/id/3114217 2015
+ * https://www.gartner.com/newsroom/id/2819918 2014
+ * https://www.gartner.com/newsroom/id/2575515 2013
+ * https://www.gartner.com/newsroom/id/2124315 2012
+ * https://www.gartner.com/newsroom/id/1763814 2011
+ * https://blogs.gartner.com/hypecyclebook/2010/09/07/2010-emerging-technologies-hype-cycle-is-here/ 2010
+##### smart data discovery
+ * http://www.jenunderwood.com/2017/08/01/tellius-smart-data-discovery/
+ * http://www.dataversity.net/augmented-analytics-matter/
+ * http://www.jenunderwood.com/2017/02/28/automating-analytics-tellius/
+#### Gartner Magic Quadrant  魔力四象限
+ * https://www.gartner.com/technology/research/methodologies/research_mq.jsp
+ * 比较竞争者
+#### Critical Capabilities 关键能力比较
+#### IT Market Clock 市场时钟
+#### 市场导引 Market Guide
+ * 指示市场
+##### business of artificial intelligence
+ * https://hbr.org/cover-story/2017/07/the-business-of-artificial-intelligence
+ * https://www.cio.com/article/3223191/artificial-intelligence/a-practical-guide-to-machine-learning-in-business.html
+ * https://www.strategy-business.com/article/A-Strategists-Guide-to-Artificial-Intelligence?gko=0abb5 农业保险
+ * https://www.cio.com/article/3223191/artificial-intelligence/a-practical-guide-to-machine-learning-in-business.html?page=2
+#### 市场份额 Market Share
+#### 市场预测 Market Forecast
 ### forrester
 ### voum
 ### wikibon
@@ -26,13 +57,79 @@
  * https://wikibon.com/evolving-converged-infrastructure-towards-true-private-cloud/
 ## Applications 应用
 ### IOT 物联网
+ * https://www.iottechnews.com/
+ * http://mattturck.com/2016-iot-landscape/
+#### AI 地图
+ * https://cbi-blog.s3.amazonaws.com/blog/wp-content/uploads/2017/01/AI_100_market_map_2017-NEW.png
+ * https://hbr.org/resources/pdfs/hbr-articles/2016/11/the_state_of_machine_intelligence.pdf
+ * https://www.techemergence.com/artificial-intelligence-industry-an-overview-by-segment/
+ * http://tech.sina.com.cn/roll/2017-10-28/doc-ifynffnz3045510.shtml
+#### edge computing
+ * https://www.tockos.org/ Programmable IoT starts at the edge
+ * http://bernardgolden.com/2017/10/edge-computing-and-the-death-of-cloud-nonsense/ edge computing nonsense
 #### OpenFog
  * https://www.openfogconsortium.org/about-us/#member-companies
  * https://www.forbes.com/sites/janakirammsv/2016/04/18/is-fog-computing-the-next-big-thing-in-internet-of-things/#49c940db608d
  * https://github.com/OpenFog/white-papers/blob/master/Architecture/OpenFog-Architecture-Overview-WP-2-2016.pdf
 #### EdgeX Foundry
+ * https://en.wikipedia.org/wiki/Linux_Foundation
  * https://github.com/edgexfoundry
  * https://twitter.com/EdgeXFoundry
+ * https://wiki.edgexfoundry.org/display/FA/Architecture--Core+Services--Configuration+and+Registry#Architecture--CoreServices--ConfigurationandRegistry-RunningonDocker  https://hub.docker.com/u/edgexfoundry/
+ * https://www.edgexfoundry.org/news/blog/ user cases
+ * https://www.foghorn.io/technology/ http://themanufacturingconnection.com/2017/07/another-iot-platform-this-one-with-machine-learning/
+##### EdgeX Rule Engine
+ * https://www.infoq.com/articles/Rule-Engines
+ * https://github.com/vjache/klips kotlin rule engine
+ * https://wiki.edgexfoundry.org/display/FA/Architecture--Supporting+Services--Rules+Engine Rules Engine Example
+##### Smart contract and business rule
+ * https://www.ibm.com/developerworks/library/mw-1708-mery-blockchain/1708-mery.html
+ * https://allquantor.at/blockchainbib/pdf/idelberger2016evaluation.pdf
+ * https://developer.ibm.com/odm/2017/09/05/blockchain-smart-contracts-with-odm/
+ * https://www.infoq.com/articles/Rule-Engines
+##### constraint programming and solvers, artificial intelligence, workflow engines, decision tables
+ * https://en.wikipedia.org/wiki/Constraint_programming
+ * https://en.wikipedia.org/wiki/Decision_table good for select scenarios
+ * http://archive.oreilly.com/pub/post/workflow_and_business_rules_wh.html
+ * https://stackoverflow.com/questions/848862/business-rule-and-process-management
+ ```
+ 工作流是短周期的，基于事务的，基于交易案例，
+ ```
+#### AWS IoT
+ * https://aws.amazon.com/freertos/ https://news.ycombinator.com/item?id=15811213
+#### modbus
+ * https://www.cnblogs.com/luomingui/archive/2013/06/14/Modbus.html
+ * Modbus是由Modicon（现为施耐德电气公司的一个品牌）在1979年发明的，是全球
+#### OPC UA
+ * opc统一架构
+ * https://en.wikipedia.org/wiki/OPC_Unified_Architecture
+ * http://www.matrikonopc.cn/opc-ua/
+#### BACnet
+ * https://baike.baidu.com/item/BACnet
+ * BACnet 是用于智能建筑的通信协议，是国际标准化组织（ISO）、美国国家标准协会（ANSI）及美国采暖、制冷与空调工程师学会（ASHRAE）定义的通信协议。BACnet针对智能建筑及控制系统的应用所设计的通信，可用在暖通空调系统（HVAC，包括暖气、通风、空气调节）也可以用在照明控制、门禁系统、火警侦测系统及其相关的设备
+#### BLE
+ * 蓝牙低能耗(BLE)技术是低成本、短距离、可互操作的鲁棒性无线技术
+#### IoT nonsense
+ * http://info.ovum.com/uploads/files/The_Internet_of_Things_webinar.pdf
+   * Smart Metering Healthcare Automotive Smart Cities
+ * https://ovum.informa.com/resources/thought-leadership/analysis analysis home page
+ * https://simplisafe.com/home-4 https://www.forbes.com/sites/thomasbrewster/2016/02/17/simplisafe-alarm-attacks/#10062d863b00 keep it simplee
+ * http://www.computerweekly.com/news/2240238915/Lot-of-nonsense-touted-about-IoT-says-analyst
+ * https://www.theverge.com/circuitbreaker/2016/7/12/12159766/internet-of-things-iot-internet-of-shit-twitter internet of shit commitment
+##### Industrial Internet of Things
+ * https://www.ge.com/digital/blog/everything-you-need-know-about-industrial-internet-things Industrial Internet
+##### Consumer Electronics Show (CES),
+ * http://www.information-age.com/death-iot-123465272/ The Internet of Things (IoT) is dead. Events such as CES this year proved it very well, and this idea will continue throughout the rest of 2017
+ * Mass market value is based on simplicity and quality.
+##### gartner hype cycle
+ * https://www.gartner.com/technology/research/methodologies/hype-cycle.jsp
+ * https://www.gartner.com/smarterwithgartner/top-trends-in-the-gartner-hype-cycle-for-emerging-technologies-2017/
+#### IoT ElasticSearch
+ * https://www.elastic.co/elasticon/2015/sf/if-it-moves-measure-it-logging-iot-with-elk
+ * http://www.zdnet.com/article/seebo-virtualizing-things-on-the-internet/ https://www.crunchbase.com/organization/seebo http://pages.seebo.com/hubfs/PDFs2017/The%20Handbook%20of%20IoT%20Case%20Studies.pdf?t=1510758367644
+ * https://www.energy.gov/sites/prod/files/2017/06/f34/5c.%20Herr%20-%20Intellimation.pdf IoT big data
+#### IoT startups
+ * https://www.siliconrepublic.com/machines/iot-startups-2017-europe-startup-100
 ### AI career sites
  * https://blog.insightdatascience.com/how-emerging-ai-roles-fit-in-the-data-landscape-d4cd922c389b
  * https://blog.insightdatascience.com/data-science-vs-data-engineering-62da7678adaa
@@ -40,6 +137,18 @@
  * http://xyz.insightdatascience.com/Insight_AI_White_Paper.pdf
  * https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence
  * https://www.forbes.com/sites/bernardmarr/2016/09/30/what-are-the-top-10-use-cases-for-machine-learning-and-ai/#1e786f6e94c9
+#### meta AI AI to build AI
+ * https://www.nytimes.com/2017/11/05/technology/machine-learning-artificial-intelligence-ai.html?rref=collection%2Fsectioncollection%2Ftechnology&action=click&contentCollection=technology&region=rank&module=package&version=highlights&contentPlacement=2&pgtype=sectionfront
+#### AI progress metrics
+ * https://www.eff.org/files/AI-progress-metrics.html https://jupyter.org/#about-notebook
+ * https://github.com/ai-metrics/ai-metrics https://www.eff.org/files/AI-progress-metrics.html#Reading-Comprehension
+ * https://srconstantin.wordpress.com/2017/01/28/performance-trends-in-ai/
+ * https://arxiv.org/pdf/1705.08807.pdf When Will AI Exceed Human Performance? Evidence from AI Experts
+ * https://srconstantin.wordpress.com/2017/01/28/performance-trends-in-ai/
+ * https://www.forbes.com/sites/louiscolumbus/2017/07/09/mckinseys-state-of-machine-learning-and-ai-2017/#3e94b7d175b6
+#### Reading comprehension 阅读理解
+ * https://www.neowin.net/news/microsoft-has-developed-an-ai-that-teaches-reading-comprehension-to-other-
+ * http://blog.ayoungprogrammer.com/2015/09/a-simple-artificial-intelligence.html/
 #### top Top 10 AI And Machine Learning Use Cases
  * Data Security
  * Personal Security
@@ -70,6 +179,8 @@
  * AI Workforce Impacts
  * Backlash
  * Improved Prediction Capabilities
+#### A Berkeley View of Systems Challenges for AI
+ * https://www2.eecs.berkeley.edu/Pubs/TechRpts/2017/EECS-2017-159.pdf A Berkeley View of Systems Challenges for AI
 #### http://www.iamwire.com/2017/05/major-startup-trends/152338 Major Startup Trends From 2000 to 2020
 #### http://www.cio.com/article/3145457/startups/8-tech-startup-trends-to-watch-in-2017.html
 #### https://www.entrepreneur.com/slideshow/253265
@@ -96,6 +207,7 @@
  * radial basis function network, radial basis function network is an artificial neural network
  * support vector machine
 #### Computer Vision
+ * http://www.themtank.org/a-year-in-computer-vision https://news.ycombinator.com/item?id=15784537
 ##### Robot Soccer World Cup
 ##### Driverless Cars
 ##### Face Recognition and Security
@@ -125,7 +237,12 @@
  * https://www.youtube.com/watch?v=7tsFxfZxR5o  Animation Generation From Natural Language- AUI
  * Animation Generation from Natural Language
 #### language model based on recurrent neural network
+#### AI Colaboratory
+ * https://qz.com/1113999/nerds-rejoice-google-just-released-its-internal-tool-to-collaborate-on-ai/
 ##### chatbot
+ * https://github.com/minimalchat/client Client library for Minimal Chat
+ * https://github.com/wireapp/bot-sdk-node
+ * https://github.com/wireapp/bot-sdk-node/commit/8d51f9bec734866fd604a8c46104a9fede282c14
 ##### chatbot business
  * https://iq.intel.com/chatbots-power-superior-service/
  * https://www.entrepreneur.com/article/289973 Top 7 Chatbot Monetization Strategies You Need to Know
@@ -134,6 +251,9 @@
  * https://medium.com/@omeedrz/chatbot-business-models-250fed69f6aa AI Chatbots Marketing Chatbots HUMINT Chatbots
  * https://chatbotsmagazine.com/whats-it-like-to-build-run-a-chatbot-business-751935913300 百分比
  * http://dataunion.org/21645.html 一篇文章看懂聊天机器人的历史、技术和研究进展
+ * https://www.cio.com/article/3234351/artificial-intelligence/the-chatbot-startup-that-has-the-fortune-500-listening.html?nsdr=true#tk.cioendnote
+ * https://zhuanlan.zhihu.com/p/25749274 http://conversable.com/ 中国版的聊天机器人地图 Chatbots
+ * https://blog.keyreply.com/the-chatbot-landscape-2017-edition-ff2e3d2a0bdb
 #### deepblue
 #### IBM’s Watson
 #####  healthcare, finance, legal, and retail sector.
@@ -162,7 +282,13 @@
 ## alphago
  * https://en.wikipedia.org/wiki/AlphaGo
  * http://www.dcine.com/2016/01/28/alphago/  
-
+### alphago zero
+ * https://news.ycombinator.com/item?id=15500836 AlphaGo Zero: Learning from scratch (deepmind.com)
+ * https://deepmind.com/blog/alphago-zero-learning-scratch/
+ * https://www.nature.com/nature/journal/v550/n7676/full/nature24270.html
+ * https://news.ycombinator.com/item?id=15627340 Alpha Go Zero: How and Why It Works
+ * https://github.com/gcp/leela-zero  Go engine with no human-provided knowledge, modeled after the AlphaGo Zero paper.
+ * http://timharford.com/2017/11/what-alphago-zero-teaches-us-about-whats-going-wrong-with-innovation/
 ## machine learning go libraries
  * https://www.quora.com/Is-Go-the-best-programming-language-for-next-generation-A-I-and-machine-learning-applications
  * http://www.fodop.com/ar-1002
@@ -188,9 +314,38 @@
 ##### insightfinder
  * http://dance.csc.ncsu.edu/papers/UBL.pdf
  * http://dance.csc.ncsu.edu/publications.htm
+ * https://github.com/insightfinder/InsightAgent/wiki
+##### anodot
+ * https://www.anodot.com/resources/
+ * https://go.anodot.com/wp-why-anomaly-detection-business-essential
+ * https://www.anodot.com/resource/video-using-machine-learning-to-monitor-machine-learning/
+##### logstash plugins
+ * https://github.com/logstash-plugins/logstash-output-influxdb/tree/master/lib/logstash/outputs
+##### fluent plugins
+ * https://github.com/fluent/fluent-plugins
+##### influxdb plugins
+ * https://github.com/influxdata/telegraf/tree/master/plugins
+##### 监控与日志
+ * 监控关注对象，日志关注事件，发邮件，两个账户是监控关注的对象，邮件是日志关注的对象
+ * https://msdn.microsoft.com/en-us/library/dn749790.aspx
+ * https://www.influxdata.com/blog/influxdb-markedly-elasticsearch-in-time-series-data-metrics-benchmark/ https://github.com/influxdata/influxdb-comparisons monitoring 与 logging 比较 full-text search or log management
+ * the time-series use cases involving custom monitoring and metrics collection, real-time analytics, Internet of Things (IoT) and sensor data, plus container or virtualization infrastructure metrics.
+ * http://cds.cern.ch/record/2011172/files/LHCb-TALK-2015-060.pdf
+ * https://www.elastic.co/blog/elasticsearch-as-a-time-series-data-store
+### capsule network
+ * https://medium.com/@pechyonkin/understanding-hintons-capsule-networks-part-i-intuition-b4b559d1159b
+ * http://www.cs.toronto.edu/~tijmen/tijmen_thesis.pdf
+ * https://github.com/mrkulk/Unsupervised-Capsule-Network https://en.wikipedia.org/wiki/Geoffrey_Hinton
+ * https://www.youtube.com/watch?v=33P2V_8J2zE&feature=youtu.be How to Find Meaningful Work In Life
+ * https://www.youtube.com/watch?v=nxWfZP6eslM How to Learn Advanced Concepts Fast
+ * https://hackernoon.com/what-is-a-capsnet-or-capsule-network-2bfbe48769cc
+ * https://news.ycombinator.com/item?id=15690121
+ * https://github.com/XifengGuo/CapsNet-Keras
 ### https://www.humandx.org/ OPEN HUMAN DIAGNOSIS project
 ### Uncertainty in Deep Learning
  * http://mlg.eng.cam.ac.uk/yarin/blog_2248.html
+### PBT Population based training
+ * https://deepmind.com/blog/population-based-training-neural-networks/
 ### RNN
  * http://karpathy.git大脑认知机制是贝叶斯式的吗？
  * http://www.36dsj.com/archives/49247 大胆假设，小心求证 不断试错，快速迭代hub.io/2015/05/21/rnn-effectiveness/
@@ -226,6 +381,11 @@
  * 用Kubernetes 做人工智能 https://openai.com/blog/infrastructure-for-deep-learning/
  * https://en.wikipedia.org/wiki/Reinforcement_learning  https://en.wikipedia.org/wiki/Q-learning 增强学习
  * exploration and exploitation 探索和开发
+### explaination
+ * http://colah.github.io/posts/2014-03-NN-Manifolds-Topology/ The Manifold Hypothesis
+The manifold hypothesis is that natural data forms lower-dimensional manifolds in its embedding space. There are both theoretical3 and experimental4 reasons to believe this to be true. If you believe this, then the task of a classification algorithm is fundamentally to separate a bunch of tangled manifolds.
+ * https://www.quora.com/What-is-the-Manifold-Hypothesis-in-Deep-Learning
+ * https://github.com/colah/
 ### deep learning brain
 ### humzn
 ### deep learning taxomony
@@ -269,6 +429,9 @@ as the cross-entropy between the training data and the model distribution. The n
 function than the max function. The term “soft” derives from the fact that the softmax function is continuous and diﬀerentiable. The
 arg max function, with its result represented as a one-hot vector, is not continuous
 or diﬀerentiable.
+#### 激励函数
+ * http://blog.csdn.net/hyman_yx/article/details/51789186 通俗理解神经网络之激励函数(Activation Function)
+ * https://zhuanlan.zhihu.com/p/25110450 聊一聊深度学习的activation function
 The linear, sigmoid, and softmax output units described above are the most
 common.
 Absolute value rectiﬁcation used for object recognition from images
@@ -288,7 +451,10 @@ can fail for two diﬀerent reasons. First, the optimization algorithm used for 
 may not be able to ﬁnd the value of the parameters that corresponds to the desired
 function. Second, the training algorithm might choose the wrong function due to
 overﬁtting.
+ * https://stats.stackexchange.com/questions/115258/comprehensive-list-of-activation-functions-in-neural-networks-with-pros-cons Comprehensive list of activation functions in neural networks with pros/cons
 ```
+ * https://stats.stackexchange.com/questions/115258/comprehensive-list-of-activation-functions-in-neural-networks-with-pros-cons
+"What neuron type should I use?" Use the ReLU non-linearity, be careful with your learning rates and possibly monitor the fraction of "dead" units in a network. If this concerns you, give Leaky ReLU or Maxout a try. Never use sigmoid. Try tanh, but expect it to work worse than ReLU/Maxout.
 ### Regularization for Deep Learning 深度学习的正则化
 ```
 early stopping
@@ -366,6 +532,7 @@ translation, scaling, homothety, similarity transformation, reflection, rotation
  * https://github.com/hs105/Deep-Learning-for-OCR
  * https://github.com/pannous/tensorflow-ocr
 ### machine learning courses
+ * https://news.ycombinator.com/item?id=15689399 Best way to get started with AI?
  * https://ml.berkeley.edu/blog/2016/11/06/tutorial-1/
  * http://yerevann.com/a-guide-to-deep-learning/
  * https://github.com/ZuzooVn/machine-learning-for-software-engineers
@@ -382,12 +549,19 @@ translation, scaling, homothety, similarity transformation, reflection, rotation
  * https://lab.dataos.io/#/console/noplan https://github.com/asiainfoLDP
  * http://www.infoq.com/resource/minibooks/machine-learning-practice/zh/pdf/MachineLearning.pdf infoq 机器学习介绍
  * http://web.stanford.edu/class/cs20si/syllabus.html CS 20SI: Tensorflow for Deep Learning Research
+### deep learning camera
+#### Amazon eep learning enabled video
+ * https://aws.amazon.com/deeplens/ https://news.ycombinator.com/item?id=15808968
+ * https://aws.amazon.com/sagemaker/ training service
+##### Amazon Industrial IoT and Machine Learning use case
+ * https://aws.amazon.com/solutions/case-studies/all/ case study https://aws.amazon.com/blogs/mobile/predictive-maintenance-with-aws-iot-and-amazon-machine-learning/ https://aws.amazon.com/blogs/ai/your-guide-to-machine-learning-at-reinvent-2017/
 #### minibatch mini-batch
  * A compromise between computing the true gradient and the gradient at a single example, is to compute the gradient against more than one training example (called a "mini-batch") at each step.
  * Stochastic  gradient  descent  (SGD)  is  a  popular  techniqu for  large-scale  optimization  problems  in  machine  learning.
  * http://www.cs.cmu.edu/~muli/file/minibatch_sgd.pdf  Stochastic gradient descent (often shortened in SGD)
 ### 2016 summary
-
+#### Recent advances
+ * https://github.com/ChristosChristofidis/awesome-deep-learning#researchers
 #### GAN 生成式对抗网络
  * https://openai.com/blog/adversarial-example-research/ ai security
  * http://blog.evjang.com/2017/01/nips2016.html GAN
@@ -398,6 +572,34 @@ translation, scaling, homothety, similarity transformation, reflection, rotation
  * http://www.wtoutiao.com/p/172tUtn.html
  * https://github.com/carpedm20/DCGAN-tensorflow
  * https://github.com/timsainb/Tensorflow-MultiGPU-VAE-GAN
+##### awesome GAN
+ * https://github.com/nashory/gans-awesome-applications/blob/master/README.md
+##### Image-to-Image Translation
+ * https://github.com/yunjey/StarGAN  StarGAN: Unified Generative Adversarial Networks for Multi-Domain Image-to-Image Translation
+#### Vicarious
+ * https://www.zhihu.com/question/52674873/answer/131622833 如何评价硅谷研究强人工智能的公司Vicarious？
+##### Recursive Cortical Network (RCN)
+ * https://news.ycombinator.com/item?id=15584086
+ * https://news.ycombinator.com/item?id=15564922
+ * https://www.vicarious.com/2017/10/26/common-sense-cortex-and-captcha/
+##### message passing Message passing based approximate inference
+ * https://en.wikipedia.org/wiki/Variational_message_passing
+ * http://www.johnwinn.org/Publications/papers/VMP2004.pdf
+##### latent variables 潜在的 潜在变量
+n statistics, latent variables (from Latin: present participle of lateo (“lie hidden”), as opposed to observable variables), are variables that are not directly observed but are rather inferred (through a mathematical model) from other variables that are observed (directly measured). Mathematical models that aim to explain observed variables in terms of latent variables are called latent variable models.
+n the former purpose (that of approximating a posterior probability), variational Bayes is an alternative to Monte Carlo sampling methods — particularly, Markov chain Monte Carlo methods such as Gibbs sampling
+expectation–maximization (EM) algorithm is an iterative method to find maximum likelihood or maximum a posteriori (MAP) estimates of parameters in statistical models, where the model depends on unobserved latent variables.
+#### Winograd Schema
+ * http://weibo.com/2691893572/EqWoOARmY?sudaref=www.baidu.com&retcode=6102&type=comment
+ * https://www.leiphone.com/news/201411/x3CquxTnm4wai9p0.html
+```
+机器的成绩只比随机选择好一点点，这并不出乎我的预料。”那是因为，赋予计算机以常识极其困难。
+They named “A robot puts away the dishes from a dishwasher without breaking them”, and Winograd schemas. Specifically, “I feel quite confident that the Winograd schemas—where we recently had a result that was in the 50, 60% range—in the next two years, we will not get 80, 90% on that regardless of the techniques people use.”
+```
+#### Multi-Objective Machine Learning
+ * http://roijers.info/pub/hossamBNAIC.pdf
+ * https://www.researchgate.net/publication/308981137_Multi-Objective_Deep_Reinforcement_Learning
+ * pareto deep learning http://jmlr.org/papers/volume15/vanmoffaert14a/vanmoffaert14a.pdf
 #### PPGN
  * https://github.com/Evolving-AI-Lab/ppgn
  * http://www.evolvingai.org/ppgn
@@ -422,8 +624,14 @@ translation, scaling, homothety, similarity transformation, reflection, rotation
  * http://mxnet.io/how_to/perf.html#nvidia-gpu 性能 benchmark
 #### blockchain mining asic resistance
  * https://ethereum.stackexchange.com/questions/16811/is-ethereum-asic-resistant
- *
+##### blockchain programming language
+ * https://blockstream.com/simplicity.pdf
 #### GPU price
+### Neural Networks in a web browser
+ * https://news.ycombinator.com/item?id=15643173 Juggernaut: Neural Networks in a web browser (aylien.com)
+ * http://blog.aylien.com/juggernaut-neural-networks-in-a-web-browser/?utm_content=62779807&utm_medium=social&utm_source=twitter
+### Feature Visualization
+ * https://distill.pub/2017/feature-visualization/
 ### waston
  * https://m.xkcd.com/1619/
  * https://www.explainxkcd.com/wiki/index.php/1619:_Watson_Medical_Algorithm
@@ -437,8 +645,44 @@ translation, scaling, homothety, similarity transformation, reflection, rotation
  * https://github.com/aseveryn/deep-qa theano
  * https://github.com/jiasenlu/HieCoAttenVQA https://github.com/VT-vision-lab/VQA_LSTM_CNN This code is written in Lua and requires Torch.
  * https://en.wikipedia.org/wiki/Question_answering
+##### NLP
+ * https://tomassetti.me/guide-natural-language-processing/ A Guide to Natural Language Processing
+ * http://ofir.io/Neural-Language-Modeling-From-Scratch/ Neural Language Modeling From Scratch
+ * http://colah.github.io/posts/2015-08-Understanding-LSTMs/ LSTM Recurrent Neural Networks
+ * https://news.ycombinator.com/item?id=15705440 The GRU is a much simpler unit (easier to explain) and usually works better than the LSTM
+ * Soft cosine measure https://en.wikipedia.org/wiki/Cosine_similarity#Definition natural language processing (NLP) the similarity among features is quite intuitive. Features such as words, n-grams or syntactic n-grams[9] can be quite similar, though formally they are considered as different features in the VSM.
+ computational linguistics and probability, an n-gram size 2 is a "bigram" (or, less commonly, a "digram"); size 3 is a "trigram". In information theory, Linguistics and computer science, the Levenshtein distance 编辑距离——莱文斯坦距离 is a string metric for measuring the difference between two sequences. Informally, the Levenshtein distance between two words is the minimum number of single-character edits
+ Syntactic 语法and semantic 语义processing from a linguistic and an algorithmic perspective 从语言和算法角度的句法和语义处理
+ weight tying 权重绑定 权值捆绑 input embedding输入嵌入层, output embedding输出嵌入层
+ perplexity 困惑; 混乱; 复杂; 困难 困惑度指标
+##### NLP blog
+ * http://blog.indigoresearch.xyz/become-a-mocha-uson-commenter-using-lstm/
+ * https://www.datasciencecentral.com/profiles/blogs/overview-of-artificial-intelligence-and-role-of-natural-language
+##### NLP data set
+ * http://lic.nlp.cornell.edu/nlvr/
+##### chinesecup NLP tensorflow
+ * https://github.com/topics/chinese-word-segmentation
+ * https://github.com/rockingdingo/deepnlp Deep Learning NLP Pipeline implemented on Tensorflow
+ * https://github.com/nicholaslocascio/tensorflow-nlp-tutorial
+ * https://github.com/crownpku/Awesome-Chinese-NLP
+##### NLP steps
+ * tutorials
+ * https://github.com/nicholaslocascio/tensorflow-nlp-tutorial https://docs.google.com/presentation/d/1Pte6kCCE42i573f-kOnzbfWlbYLwqQWlmbIEDWeBIjY/edit#slide=id.g136eba0a6f_0_50
+ * https://github.com/crownpku/Awesome-Chinese-NLP
+ * SOM https://github.com/spiglerg/Kohonen_SOM_Tensorflow https://codesachin.wordpress.com/2015/11/28/self-organizing-maps-with-googles-tensorflow/
+ https://wonikjang.github.io/deeplearning_unsupervised_som/2017/06/30/som.html
+ https://stackoverflow.com/questions/43170905/animate-self-organizing-map-in-tensorflow
+ https://iamthevastidledhitchhiker.github.io/2015-12-29-exploring_simcity_pt1
+##### NLP elastic
+ * https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-smartcn.html
+ * https://lucene.apache.org/core/4_0_0/analyzers-smartcn/org/apache/lucene/analysis/cn/smart/package-summary.html
+ * https://github.com/elastic/elasticsearch-analysis-smartcn
+ * https://hub.docker.com/r/toddalia/elasticsearch-smartcn/
 #### openshift price
-
+## auto programming
+ * https://arxiv.org/abs/1711.03543 DLPaper2Code: Auto-generation of Code from Deep Learning Research Papers
+#### Evolution
+ * http://blog.otoro.net/2017/10/29/visual-evolution-strategies/
 ## Alpha–beta pruning
  * https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning
  * Minimax
@@ -472,6 +716,13 @@ translation, scaling, homothety, similarity transformation, reflection, rotation
 #### tensorflow
  * https://github.com/tensorflow/playground
  * http://abhitopia.com/machine%20learning/2016/05/24/tensor_flow_exploration_2.html  code structur
+##### tensor maths
+ * https://en.wikipedia.org/wiki/Tensor 张量
+```
+Tensor product 张量
+SxT=(l, k)x(n, m)=(l+n, k+m)
+Tensor contraction 张量压缩
+```
 #### tensorflow benchmark
  * https://github.com/tensorflow/benchmarks
  * https://github.com/soumith/convnet-benchmarks
@@ -485,6 +736,8 @@ translation, scaling, homothety, similarity transformation, reflection, rotation
  * https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/dist_test
  * http://blog.kubernetes.io/2016/03/scaling-neural-network-image-classification-using-Kubernetes-with-TensorFlow-Serving.html
  * https://tensorflow.github.io/serving/serving_inception https://github.com/tensorflow/models/tree/master/inception
+#### Embedded Learning Library
+ * https://news.ycombinator.com/item?id=15623739 TensorFlow on a 256K RAM microcontroller (github.com)
 #### neon
  * http://www.leiphone.com/news/201609/EBEJ7AZK60NnSh0c.html
  * https://hub.docker.com/r/sofianhw/docker-neon-ipython/
@@ -524,6 +777,7 @@ translation, scaling, homothety, similarity transformation, reflection, rotation
  * https://www.rebotify.com/
  * http://createchatbot.com/wechat
  * https://github.com/Chatie/wechaty
+ * https://www.zhihu.com/question/20060159 设计和构造一个自动应答聊天机器人都涉及到哪些技术？
 #### awesome chatbot
  * https://github.com/BotCube/awesome-bots#messaging-platforms
  * https://github.com/shaohua/awesome-chatbot
@@ -545,6 +799,39 @@ translation, scaling, homothety, similarity transformation, reflection, rotation
  * In mathematics, the softmax function, or normalized exponential function,[1]:198 is a generalization of the logistic function that "squashes" a K-dimensional vector z {\displaystyle \mathbf {z} } \mathbf {z} of arbitrary real values to a K-dimensional vector σ ( z ) {\displaystyle \sigma (\mathbf {z} )} \sigma (\mathbf {z} ) of real values in the range (0, 1) that add up to 1. The function is given by
  * 看名字就知道了，就是如果某一个zj大过其他z,那这个映射的分量就逼近于1,其他就逼近于0，主要应用就是多分类，sigmoid函数只能分两类，而softmax能分多类，softmax是sigmoid的扩展。
 Monte Carlo tree search can use either light or heavy playouts. Light playouts consist of random moves while heavy playouts apply various heuristics to influence the choice of moves.[
+#####  logistic regression
+ S形的 sigmoid https://www.zhihu.com/question/35322351 为什么 LR 模型要使用 sigmoid 函数，背后的数学原理是什么
+ 后勤学 数理逻辑 logistic regression 逻辑回归法
+ Logit和Probit没有本质的区别 区别在于采用的分布函数不同，前者假设随机变量服从逻辑概率分布，而后者假设随机变量服从正态分布。如果因变量是序次变量，回归时只能用有序Probit模型。有序Probit可以看作是Logit的扩展。
+The softmax function is used in various multiclass classification methods, such as multinomial logistic regression
+Multinomial logistic regression is known by a variety of other names, including polytomous LR,[2][3] multiclass LR, softmax regression, multinomial logit, maximum entropy (MaxEnt) classifier, conditional maximum entropy model
+generalized linear model (GLM) 广义线性模型
+Probit model probability + unit P
+The reason for the use of the probit model is that a constant scaling of the input variable to a normal CDF (which can be absorbed through equivalent scaling of all of the parameters) yields a function that is practically identical to the logit function, but probit models are more tractable in some situations than logit models.
+Gibbs sampling is commonly used as a means of statistical inference, especially Bayesian inference. It is a randomized algorithm (i.e. an algorithm that makes use of random numbers), and is an alternative to deterministic algorithms for statistical inference such as the expectation-maximization algorithm (EM).
+受限因变量模型主要包括两类 Truncated regression models 截断回归模型 are often confused with censored regression models 删截回归模型 （墙回归模型，审查回归）where only the value of the dependent variable is clustered at a lower threshold, an upper threshold, or both, while the value for independent variables is available.
+A model commonly used to deal with censored data is the Tobit model Tobit模型用来处理
+Tobit latent (i.e. unobservable) variable 隐藏变量
+自变量(independent variables)是因,而因变量(dependent variables)(翻译不好)是果
+#### SLAM robotic mapping and navigation,
+同步定位绘图
+SLAM stands for simultaneous localization and mapping.
+ Kalman filters, particle filters (aka. Monte Carlo methods) and scan matching of range data
+ * https://github.com/open-robot/open-robot
+ * https://en.wikipedia.org/wiki/List_of_SLAM_Methods
+##### Particle filters
+Particle filters 粒子滤波 or Sequential Monte Carlo (SMC) methods are a set of genetic, Monte Carlo algorithms used to solve filtering problems arising in signal processing and Bayesian statistical inference.
+https://www.zhihu.com/question/25371476 怎样从实际场景上理解粒子滤波（Particle Filter）？
+these methods do not perform well when applied to very high-dimensional systems.
+##### extended Kalman filter (EKF)
+卡尔曼滤波器 Kalman filtering, also known as linear quadratic estimation (LQE) 线性二次方估计
+extended Kalman filter (EKF) is the nonlinear version of the Kalman filter
+There is a strong duality between the equations of the Kalman Filter and those of the hidden Markov model
+ * https://en.wikipedia.org/wiki/Extended_Kalman_filter
+##### Hidden Markov Model (HMM)
+"隐含马尔可夫模型" (HiddenMarkovModel)
+The hidden markov model can be represented as the simplest dynamic Bayesian network.
+Hidden Markov models are especially known for their application in reinforcement learning and temporal pattern recognition such as speech, handwriting, gesture recognition,[7] part-of-speech tagging, musical score following,[8] partial discharges[9] and bioinformatics.
 ### cafee 2
  * https://github.com/caffe2/caffe2
  * http://caffe2.ai/docs/tutorials
@@ -595,6 +882,32 @@ Monte Carlo tree search can use either light or heavy playouts. Light playouts c
  * https://hub.docker.com/r/billryan/gitbook/
  * https://hub.docker.com/r/gitbook/convert/
 
+##### gitbook examples
+ * https://github.com/huanglizhuo/kotlin-in-chinese
+ * https://github.com/rootsongjc/kubernetes-handbook/tree/master/concepts
+ * https://github.com/NEUMSC/BotFramework_Node.js_SDK_Chinese https://neumsc.gitbooks.io/botframework_node-js_sdk_/content/translation_guide.md
+ * https://ericyeh92094.gitbooks.io/a-simple-wechat-chatbot-generator/content/%E4%BD%BF%E7%94%A8%E4%B9%8B%E6%9C%8D%E5%8B%99%E5%85%83%E4%BB%B6.html
+##### gitbook errors
+```
+gitbook pdf . ./kubernetes-handbook.pdf
+npm install svgexport -g
+InstallRequiredError: "ebook-convert" is not installed.
+Install it from Calibre: https://calibre-ebook.com
+npm install ebook-convert -g
+npm install gitbook-pdf -g
+Failed at the phantomjs@1.9.7-5
+export PATH="~/Applications/calibre.app/Contents/MacOS/:$PATH"
+export PATH="~/Downloads/calibretools/Contents/MacOS/:$PATH"
+echo 'export PATH="~/Downloads/calibretools/Contents/MacOS/:$PATH"' >> ~/.profile
+install calibre
+calibre code
+https://gist.github.com/AaronO/9962667 install calibre
+https://github.com/kovidgoyal/calibre
+open xxx.file 直接在命令行下打开文件
+http://blog.csdn.net/tterminator/article/details/48207651 在terminal中用命令打开PDF
+```
+
+
 ## distributed training 分布式训练
  * http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks Decentralized Asychronous Stochastic Gradient Descent
  * https://deeplearning4j.org/compare-dl4j-torch7-pylearn comparisons
@@ -618,9 +931,54 @@ Distributed Machine Learning https://github.com/Microsoft/DMTK
 
 # blockchain
 ## https://www.hyperledger.org/
-
+## awesome blockchain
+ * https://github.com/imbaniac/awesome-blockchain
+ * https://github.com/igorbarinov/awesome-blockchain
+ * https://hbr.org/2017/01/the-truth-about-blockchain#
+ * https://www.blockchaintechnology-news.com/category/applications/
+ * https://github.com/openblockchains/awesome-blockchains#articles
+### Build Your Own Blockchain bitcoin prototype
+ * http://byjakt.com/blockchain-development-nyc-complete-guide/
+ * https://github.com/openblockchains/awesome-blockchains#do-it-yourself-diy---build-your-own-blockchain
+ * https://bigishdata.com/2017/10/17/write-your-own-blockchain-part-1-creating-storing-syncing-displaying-mining-and-proving-work/
+ * https://bitcoin.stackexchange.com/questions/19287/how-to-fork-bitcoin-and-build-own-cryptocurrency
+ * https://bitcointalk.org/index.php?topic=225690.0 Complete Guide on How to Create a New Alt Coin ***
+#### The UTXO Set Merkle Tree SPV security P2PKH
+ * https://jeiwan.cc/posts/building-blockchain-in-go-part-6/
+### blockchain and diminishing return diminishing value
+ * fast diminishing value of digital assets relationship is the long term value
+ * solution: buy the relationship of the contributors buy the stake of the producer, not the content
+ * digital ledger is recording the immutable identity
+### IOTA
+ * http://www.tangleblog.com/what-is-iota-what-is-the-tangle/
+ * https://medium.com/@MartinRosulek/how-iota-makes-future-for-internet-of-things-af14fd77d2a3
+### blockchain application on media
+ * https://www.ibc.org/tech-advances/what-blockchain-could-mean-for-media-and-entertainment/2069.article
+### blockchain advertising
+ * https://basicattentiontoken.org/
+ * https://www.ibc.org/tech-advances/can-blockchain-deliver-for-the-media-industry-/2026.article
 ### https://github.com/hyperledger/fabric
  * http://blog.csdn.net/bluecloudmatrix/article/details/51859333 http://blog.csdn.net/xjmtxwd24/article/details/52777814?locationNum=2
+### blockchain prove of stake
+ * http://pfrazee.github.io/blog/secure-ledgers-dont-require-proof-of-work
+### finance blockchain
+ * https://bitsonblocks.net/2017/09/04/the-hype-around-central-banks-digital-currencies-and-blockchains/
+ * https://www.ibm.com/blockchain/financial-services/?S_PKG=AW&cm_mmc=Search_Google-_-Blockchain_Blockchain-_-WW_NA-_-+Banks++Blockchain_Broad_AW&cm_mmca1=000020YK&cm_mmca2=10005803&cm_mmca7=9003475&cm_mmca8=aud-371978962534:kwd-354828618141&cm_mmca9=58e83dfd-8aed-42fa-ba15-b5d035683554&cm_mmca10=218843302225&cm_mmca11=b&mkwid=58e83dfd-8aed-42fa-ba15-b5d035683554|1298|295&cvosrc=ppc.google.%2Bbanks%20%2Bblockchain&cvo_campaign=000020YK&cvo_crid=218843302225&Matchtype=b
+ * https://www.temenos.com/en/blog/2016/october/blockchain-unlocking-its-potential-in-commercial-banking/
+ * https://www.ft.com/content/615b3bd8-97a9-11e7-a652-cde3f882dd7b
+### ipfs
+ * https://github.com/ipfs-shipyard/peerpad https://news.ycombinator.com/item?id=15624158 	PeerPad – A realtime P2P collaborative editing tool powered by IPFS (peerpad.net)
+ * https://github.com/alexsicart/Decentralized-Cloud
+ * https://github.com/ipfs/notes/issues/146 Proposal for the Trusted Private Network feature https://github.com/ipfs/faq/issues/181 https://github.com/ipfs/faq/issues/4
+ * https://ipfs.io/ipfs/QmR7GSQM93Cx5eAg6a6yRzNde1FQv7uL6X1o4k7zrJa3LX/ipfs.draft3.pdf http://decentralized.blog/understanding-the-ipfs-white-paper-part-1.html
+ * https://www.netlify.com/blog/2017/08/17/a-complete-cms-with-no-server-and-18-lines-of-code/ A Complete CMS with No Server and 18 Lines of Code
+### video integrity
+ * https://gipp.com/wp-content/papercite-data/pdf/gipp2016a.pdf
+ * https://kth.diva-portal.org/smash/get/diva2:1129877/FULLTEXT01.pdf
+### Using Blockchain Technology To Prove Existence Of A Document
+ * https://bravenewcoin.com/news/using-blockchain-technology-to-prove-existence-of-a-document/
+ * http://www.newsbtc.com/proof-of-existence/
+ * https://www.factom.com/ https://poex.io/ https://www.blockchain-council.org/development/document-verification-system-using-blockchain/
 ### ico
 #### 小蚁 AntShares NEO Smart Economy
  * https://github.com/neo-project/neo
@@ -642,12 +1000,33 @@ Distributed Machine Learning https://github.com/Microsoft/DMTK
 ### web
  * https://hyperledger.github.io/composer/tutorials/developer-guide.html
  * https://www.npmjs.com/package/generator-hyperledger-composer
-## https://en.wikipedia.org/wiki/Ethereum
+## Ethereum
+ * https://en.wikipedia.org/wiki/Ethereum
  * https://github.com/ethereum/ https://www.ethereum.org/
  * http://www.8btc.com/smart-contract-myths
  * https://github.com/ethereum/go-ethereum
  * https://github.com/paritytech/parity
  * https://github.com/Scanate/EthList  https://blog.coinbase.com/a-beginners-guide-to-ethereum-46dd486ceecf (good examples)
+ * https://github.com/ethereum/wiki/wiki/White-Paper https://ethereum.github.io/yellowpaper/paper.pdf
+### quick start
+ * https://medium.com/@WWWillems/how-to-set-up-a-private-ethereum-testnet-blockchain-using-geth-and-homebrew-1106a27e8e1e setup a private testnet for ethereum
+ * https://medium.com/@andrenit/building-an-ethereum-playground-with-docker-part-4-provisioning-65bea0f4a6
+ * http://www.gjermundbjaanes.com/understanding-ethereum-smart-contracts/
+ * https://ethereum.org/cli
+ * https://github.com/ethereum/go-ethereum/wiki/Contracts-and-Transactions
+ * http://www.gjermundbjaanes.com/understanding-ethereum-smart-contracts/
+#### Ethereum testnet 
+ * https://testnet.etherscan.io/
+#### geth console javascript console
+ * https://github.com/ethereum/go-ethereum/wiki/Management-APIs List of management APIs
+ * https://github.com/ethereum/go-ethereum/wiki/JavaScript-Console console quick start
+ * https://github.com/ethereum/go-ethereum/wiki/Contracts-and-Transactions most simple contract
+```
+geth console 2>> /dev/null
+https://github.com/ethereum/go-ethereum/wiki/Managing-your-accounts
+eth.accounts
+
+```
 ### white paper yellow paper
  * https://github.com/ethereum/wiki/wiki/%5B%E4%B8%AD%E6%96%87%5D-%E4%BB%A5%E5%A4%AA%E5%9D%8A%E7%99%BD%E7%9A%AE%E4%B9%A6
  * https://github.com/ethereum/wiki/wiki/White-Paper
@@ -656,11 +1035,29 @@ Distributed Machine Learning https://github.com/Microsoft/DMTK
 #### ethereum casper
  * https://www.ethnews.com/proof-of-stake-vitalik-buterin-shares-casper-contract-code
  * https://github.com/ethereum/casper/tree/master/casper
+#### The DAO
+ * https://www.cryptocompare.com/coins/guides/the-dao-the-hack-the-soft-fork-and-the-hard-fork/
+ * https://www.coindesk.com/understanding-dao-hack-journalists/
+ * https://en.wikipedia.org/wiki/The_DAO_(organization)
+ * https://en.wikipedia.org/wiki/Decentralized_autonomous_organization Issues
+### security privacy secrecy 安全 隐私 保密
+ * https://illinoisblockchain.tech/blockchain-cook-county-final-report-1f56ab3bf89 Blockchain” is not an all-or-nothing approach; aspects of the component technology can be implemented individually or selectively to improve recordkeeping outcomes.
+#### video integrity blockchain
+ * http://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1129877&dswid=-6120 Video Integrity through Blockchain Technology
+ * https://gipp.com/wp-content/papercite-data/pdf/gipp2016a.pdf SECURING VIDEO INTEGRITY USING DECENTRALIZED TRUSTED TIMESTAMPING ON THE BITCOIN BLOCKCHAIN
+ * https://illinoisblockchain.tech/blockchain-cook-county-final-report-1f56ab3bf89 Summary of Findings 区块链应用效果
+ * https://www.pcmag.com/article/351486/blockchain-the-invisible-technology-thats-changing-the-wor internet of value
 ### Proof of Stake 权益证明 工作量证明
  * https://github.com/ethereum/wiki/wiki/Proof-of-Stake-FAQ Bounds on fault tolerance
  * Byzantine Fault Tolerance BFT-style
  * https://download.wpsoftware.net/bitcoin/pos.pdf
  * https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51 Bitshares’ delegated proof of stake presents another coherent philosophy, The “one-sentence philosophy” of proof of stake is thus not “security comes from burning energy”, but rather “security comes from putting up economic value-at-loss”.
+ * https://bitcoin.org/bitcoin.pdf bitcoin whitepaper
+ * https://www.fool.sg/2017/11/22/bitcoin-is-15-times-more-expensive-to-keep-safe-than-gold/ Bitcoin Is 15 Times More Expensive to Keep Safe Than Gold
+### social discussion of bitcoin
+ * https://news.ycombinator.com/item?id=15812247 https://www.bloomberg.com/news/articles/2017-11-29/bitcoin-ought-to-be-outlawed-nobel-prize-winner-stiglitz-says-jal10hxd
+ * Bitcoin ‘Ought to Be Outlawed,’ Nobel Prize Winner Stiglitz Says
+ * http://kiddynamitesworld.com/lets-talk-arbitrage-bitcoin-futures-edition/ Let’s Talk About Arbitrage – Bitcoin Futures Edition http://kiddynamitesworld.com/so-you-want-to-understand-sp-futures-basis-trades-aka-index-arb/
 #### qtum
  * http://qtum.org/en/ first proof of stake blockchain
  * https://tokenmarket.net/blockchain/bitcoin/assets/qtum/
@@ -689,6 +1086,8 @@ Distributed Machine Learning https://github.com/Microsoft/DMTK
  * https://blockchainhub.net/blog/events/the-internet-of-blockchain-cosmos-polkadot/
  * https://www.youtube.com/watch?v=wsNh6ePeuX8 video
  * https://www.reddit.com/r/ethereum/comments/5g2ij0/internet_of_blockchains_cosmos_vs_polkadot_the/ FYI there were like 10 other "internet of blockchains" projects.
+### dark web
+ * https://motherboard.vice.com/en_us/article/7x4g4b/theres-now-a-dark-web-version-of-wikipedia-tor-alec-muffett
 ### Schelling point
  * 谢林点（英语：Schelling point，又译为薛林点，或称为聚焦点），是博弈论中人们在没有沟通的情况下的选择倾向
  * 协调博弈（en:Coordination game）问题
@@ -823,6 +1222,8 @@ Distributed Machine Learning https://github.com/Microsoft/DMTK
  * https://opensource.com/business/16/6/top-business-intelligence-reporting-tools
  * https://dzone.com/articles/16-free-and-open-source-business-intelligence-tool
  * https://github.com/SpagoBILabs/SpagoBI
+### good images
+ * https://github.com/ufoym/deepo
 ### ignite
  * https://apacheignite.readme.io/docs/kubernetes-deployment
  * https://www.vishnu-tech.com/blog/apache-ignite-deployment-using-kubernetes/
@@ -830,7 +1231,7 @@ Distributed Machine Learning https://github.com/Microsoft/DMTK
  * https://dzone.com/articles/deploying-apache-ignite-in-kubernetes-on-microsoft
  * https://github.com/pires/apache-ignite-discovery-kubernetes
  * https://db-engines.com/en/system/Geode%3BGreenplum%3BIgnite
- * https://news.ycombinator.com/item?id=10596859 Apache Geode: Distributed, in-memory database based on gemfire
+ * https://news.ycombinator.com/item?id=10596859 Apache Geode: Distributed, in-memory database based on gemfir
 #### in-memory processing
  * https://en.wikipedia.org/wiki/In-memory_processing
 #### web interface web console
@@ -883,7 +1284,102 @@ Distributed Machine Learning https://github.com/Microsoft/DMTK
  https://www.cancer.gov/about-cancer/treatment/clinical-trials/nci-supported 美国治疗试验
  https://medlineplus.gov/clinicaltrials.html
  http://www.yuaigongwu.com/thread-17035-3-1.html CAR-T治疗内幕
+### Realtime big data use case 实时大数据案例
+#### 电商
+ * https://blog.ometria.com/is-realtime-ecommerce-analytics-data-useful
+ * https://www.segmentify.com/blog/real-time-analytics-best-practice-use-cases/
+ * https://www.zhihu.com/question/40720286?rf=33081381 电商平台应该分析哪些数据？具体怎么去分析？
+ ```
+ 电商网站的运营节奏非常快，尤其是活动专区的“秒杀”、“抢购”等活动，需要实时监测 SKU 的更新变化。
+ ```
+#### smart grid 电力行业 智慧电力
+ * http://engineering.tamu.edu/news/2017/07/26/researchers-develop-model-to-predict-and-prevent-power-outages-using-big-data
+##### smart grid dataset 智慧电力数据
+ * https://openei.org/datasets/dataset?sectors=smartgrid Open Energy Information (OpenEI) https://openei.org/wiki/Main_Page
+ * https://catalog.data.gov/dataset?tags=smart-grid
+ * https://smartmicrogrid.blogspot.com/2014/07/greend-energy-consumption-dataset-of.html
+ * https://researchdata.ands.org.au/smart-grid-smart-customer-trial/644597 research australia
+##### 智慧家庭电力数据
+ * http://traces.cs.umass.edu/index.php/Smart/Smart
+```
+天气预测，砍树
+```
+ * https://www.nema.org/Storm-Disaster-Recovery/Smart-Grid-Solutions/Pages/Smart-Meters-Can-Reduce-Power-Outages-and-Restoration-Time.aspx
+```
+天气 瞬间断电出现
+```
+ * https://www.sciencedirect.com/science/article/pii/S1877050915029993
+```
+Real-time Complex Event Processing and Analytics for Smart Grid 实时电力数据监测
+```
+#### 常见数据来源
+ * https://www.analyticsvidhya.com/blog/2016/11/25-websites-to-find-datasets-for-data-science-projects/
+ * https://www.kdnuggets.com/datasets/index.html
+ * https://www.dataquest.io/blog/free-datasets-for-projects/
+ * https://www.forbes.com/sites/bernardmarr/2016/02/12/big-data-35-brilliant-and-free-data-sources-for-2016/#47095a5ab54d
+#### 制造业 数据
+ * https://www.kaggle.com/c/bosch-production-line-performance/data
+ * https://www.reddit.com/r/datasets/comments/5c424a/industrial_manufacturing_data/
+#### 制造业 solution
+ * https://www.liaison.com/blog/2017/09/20/big-data-analytics-tools-manufacturing-industry/
+ * http://www.ingrammicroadvisor.com/data-center/4-big-data-use-cases-in-the-manufacturing-industry
+ * https://www.machinemetrics.com/ Simple Machine Monitoring Software
+#### 直播
+ * https://www.ustream.tv/blog/streaming-product-updates/stream-analytics-monitor-live-stream-in-real-time/
+```
+Active viewers 活跃用户
+Geographic distribution 地区分布
+Embedding domains 嵌入区域
+Devices 设备
+```
+#### gaming 游戏
+ * https://aws.amazon.com/gaming/analytics/  10:41秒
 
+```
+数据分析的演化
+Descriptive 描述性 report 报告
+Predictive 预测性 Forecast 预报
+Prescriptive 程序性惯例性有序性智慧性  automation 自动
+kinesis 触动 反应 应激反应
+```
+ * https://www.computing.co.uk/ctg/opinion/2419625/gaming-and-the-power-of-real-time-data
+##### 实时用法
+Traffic Sources 跟踪源头
+Locations 地理定位
+Content/Screens: 内容筛选
+Overview 概览
+Events 活动
+Conversion 转化率
+#### 通用
+ * https://dzone.com/articles/need-for-using-real-time-stream-processing-systems
+```
+Fraud detection 欺诈检测 https://wenku.baidu.com/view/a1932781763231126edb11e3.html 反欺诈架构图 神经网络模型 异常模型
+Sentiment Analysis 舆情分析 情感分析
+Log Monitoring 日志监控
+Processing Customer Behaviour 客户行为处理
+
+```
+ * http://www.element61.be/en/resource/batch-real-time-reporting-and-analytics
+```
+Credit card fraud 信用卡反欺诈
+E-commerce campaign 电子商务大促活动
+Broadcasting 直播实时社交媒体反馈
+production line failures 生产线故障预防
+electricity grid 电力系统实时监控
+交通系统实时监控
+```
+#### 技术关键
+Data Streams 流式数据
+Scaling 扩张
+Fault Tolerance 容错
+Guaranteed Message Processing 可靠消息处理
+Programming Language Agnostic 支持任何编程语言
+##### 架构
+ * https://www.youtube.com/watch?v=XSXvPNEykb4 Real Time Analytics at UBER Scale
+ * https://www.youtube.com/watch?v=pHZxA3eFr-E AWS
+#### 比较
+批量：大数据量，老旧系统，大型机 不需要实时分析结果 30分钟
+欺诈检测
 
 ## 医疗大数据 health care
  * http://it.sohu.com/20160815/n464232473.shtml  林雪婷
@@ -933,9 +1429,12 @@ Distributed Machine Learning https://github.com/Microsoft/DMTK
  * https://github.com/cpettitt/dagre-d3/wiki
  * https://github.com/nickholub/d3-dag-visualization/tree/master/app
  * http://bl.ocks.org/mbostock/1153292
+ * https://github.com/nickholub/d3-dag-visualization
+ * https://github.com/swimlane/ngx-charts-dag
 #### Tree 树状图
  * http://mbostock.github.io/d3/talk/20111018/tree.html
  * http://bl.ocks.org/mbostock/4339083
+ * http://bl.ocks.org/robschmuecker/7880033 D3.js Drag and Drop, Zoomable, Panning, Collapsible Tree with auto-sizing.
 
 
 #### Relationship 关系图
@@ -1427,6 +1926,9 @@ EOF
 ```
 
 ### 智力游戏 intelligent games
+### 程序员的游戏
+ * http://www.techug.com/post/programmers-games.html
+ * http://www.hackerforever.com/guest.php
 #### 魔方
  * http://www.rubik.com.cn/beginner.htm  三阶魔方教学
  * 魔方原则 先确定不变的,中心  棱 角。问题的本质规律融入到了解题模式中,和拼图一样先选定最确定的
@@ -1506,6 +2008,7 @@ EOF
  * http://www.infoq.com/cn/articles/no-more-mvc-frameworks 在使用过React并了解了Angular 2将会是什么样子之后，我感到有些沮丧：这些框架都系统性地强制我使用BFF“页面可替换模式（Screen Scraping）”模式，按照这种模式，每个服务端的API要匹配页面上的数据集，不管是输入的还是输出的。 理解Action的基础知识的话，那么你应该看一下TLA+。TLA代表的是“Action中的逻辑时序（Temporal Logic of Actions）
  * http://lamport.azurewebsites.net/video/smintla.html  TLA+ training
  * http://sam.js.org/#timetravel State-Action-Model
+ * http://lamport.azurewebsites.net/video/videos.html
  * https://www.infoq.com/news/2015/11/daniel-jacobson-ephemeral-apis http://samnewman.io/patterns/architectural/bff/ netflix 新 API 模式
  * http://techblog.netflix.com/2015/10/evolution-of-open-source-at-netflix.html netflix OSS
  * https://www.infoq.com/articles/api-facades 总结索引
@@ -1662,24 +2165,18 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * https://xelatex.github.io/2015/11/15/Battlefield-Calico-Flannel-Weave-and-Docker-Overlay-Network/
  * http://paulbakker.io/docker/docker-cloud-network-performance/
  * https://arjanschaaf.github.io/is-the-network-the-limit/
-
 #### Mesos 存储 mesos storage
  * https://dzone.com/articles/exploring-persistent-storage-with-apache-mesos
  * https://mesosphere.com/blog/2015/10/08/with-help-from-emc-were-bringing-enterprise-storage-to-mesos/
  * http://stackoverflow.com/questions/28368751/persistent-storage-for-apache-mesos
-
 #### mesos 1.0
  * http://mesos.apache.org/documentation/latest/cni/
  * http://mesos.apache.org/blog/mesos-1-0-0-released/
-
 #### Mesos template mesos 应用模版
  * https://github.com/CenturyLinkLabs/panamax-public-templates
  * https://github.com/CenturyLinkLabs/panamax-contest-templates
  * https://github.com/CenturyLinkLabs/panamax-kubernetes-adapter/tree/master/spec
  * https://github.com/CenturyLinkLabs/panamax-ui/wiki
-
-
-
 ### kubernetes storage
  * https://docs.openshift.com/enterprise/3.1/install_config/persistent_storage/persistent_storage_ceph_rbd.html
  * https://access.redhat.com/documentation/en/openshift-enterprise/3.1/installation-and-configuration/chapter-14-configuring-persistent-storage
@@ -1711,27 +2208,32 @@ http://www.devoperandi.com/kubernetesterraform-multiple-availability-zone-deploy
  * https://github.com/sourcelair/xterm.js
  * https://github.com/chjj/term.js/tree/master/example
  * https://davidwalsh.name/upgrade-nodejs 升级nodejs
- #### maven 仓库
-  * https://www.jfrog.com/open-source/
-  * https://www.jfrog.com/blog/artifactory-vs-nexus-integration-matrix/
-  * http://stackoverflow.com/questions/364775/should-we-use-nexus-or-artifactory-for-a-maven-repo
-  * https://github.com/mholt/caddy/  https://caddyserver.com/  HTTP server for content repository
-  * https://github.com/CocoaPods/CocoaPods iOS 仓库
-  * https://github.com/neonichu/bringing-cocoapods-to-linux
-  * https://hub.docker.com/r/mattgruter/artifactory/ android 仓库
- #### maven 其他格式
-  * https://github.com/takari/polyglot-maven-examples
-  * https://www.infoq.com/news/2015/03/maven-polyglot#anch120523
- #### IRC chat
-  * https://github.com/prawnsalad/KiwiIRC
-  * https://kiwiirc.com/
-  * https://github.com/hansode/chatops-demo-hubot-hipchat
- #### wechat ops
-  * https://zhuanlan.zhihu.com/p/25670072?utm_medium=social&utm_source=wechat_timeline  https://github.com/QuantumLiu/wechat_callback
-  * https://zhuanlan.zhihu.com/p/25597975?group_id=822180572054048768
-  * https://github.com/littlecodersh/ItChat
-  *
- #### apache turnbine
+##### device ssh
+ * https://news.ycombinator.com/item?id=15785333 Ondevice SSH – Terminal emulator for devices without public IP address  https://ondevice.io/
+#### maven 仓库
+* https://www.jfrog.com/open-source/
+* https://www.jfrog.com/blog/artifactory-vs-nexus-integration-matrix/
+* http://stackoverflow.com/questions/364775/should-we-use-nexus-or-artifactory-for-a-maven-repo
+* https://github.com/mholt/caddy/  https://caddyserver.com/  HTTP server for content repository
+* https://github.com/CocoaPods/CocoaPods iOS 仓库
+* https://github.com/neonichu/bringing-cocoapods-to-linux
+* https://hub.docker.com/r/mattgruter/artifactory/ android 仓库
+#### maven 其他格式
+* https://github.com/takari/polyglot-maven-examples
+* https://www.infoq.com/news/2015/03/maven-polyglot#anch120523
+#### IRC chat
+* https://github.com/prawnsalad/KiwiIRC
+* https://kiwiirc.com/
+* https://github.com/hansode/chatops-demo-hubot-hipchat
+#### wechat ops
+* https://zhuanlan.zhihu.com/p/25670072?utm_medium=social&utm_source=wechat_timeline  https://github.com/QuantumLiu/wechat_callback
+* https://zhuanlan.zhihu.com/p/25597975?group_id=822180572054048768
+* https://github.com/littlecodersh/ItChat
+* https://pay.weixin.qq.com/wiki/doc/api/index.html https://pay.weixin.qq.com/wiki/doc/api/jsapi.php?chapter=7_4
+#### alipay API
+ * https://docs.open.alipay.com/200/105529/
+#####
+#### apache turnbine
   * https://turbine.apache.org/turbine-concepts.html
   * http://forum.spring.io/forum/spring-projects/container/4119-spring-vs-apache-turbine
  #### expose controller automatically generate ingress and route
@@ -1853,6 +2355,9 @@ sudo pip install ansible --upgrade
  * https://github.com/CanonicalLtd/prometheus-openstack-exporter/blob/master/prometheus-openstack-exporter.yaml
  * https://github.com/gvauter/prometheus_openstack
  * https://blog.zhaw.ch/icclab/monitoring-an-openstack-deployment-with-prometheus-and-grafana/
+#### openshift errors
+#####
+Invalid value: "Initialized": field is immutable, try updating the namespace
 ##unikernel
  * https://www.joyent.com/blog/unikernels-are-unfit-for-production
  * http://stackoverflow.com/questions/30392261/docker-container-compared-with-unikernel
@@ -2071,7 +2576,8 @@ A VirtualBox machine with the name already exists Pleas
  * http://www.csdn.net/article/2015-01-15/2823577 京东
  * http://www.csdn.net/article/1970-01-01/2825203 京东
  * http://www.csdn.net/article/2015-04-03/2824410
-
+### 电子商务模式
+ * https://www.zhihu.com/question/54059060 中央仓、微仓、前置仓、仓店一体、前店后仓是什么意思？
 ## distributed RPC framework
  * http://www.cnblogs.com/fxjwind/archive/2013/05/16/3082219.html
  * http://www.open-open.com/lib/view/open1438237185863.html
@@ -2145,6 +2651,24 @@ echo -e "GET test1 \r\nQUIT\r\n" | curl telnet://192.168.99.100:6379
  *
 
 # database 数据库
+## embedded database
+ * https://en.wikipedia.org/wiki/Embedded_database
+ * https://en.wikipedia.org/wiki/Mobile_database Couchbase Lite Couchbase has supported software developers' kits for the programming languages .Net, PHP, Ruby, Python, C, Node.js, Java, and Go.
+### boltDB
+ * https://github.com/boltdb/bolt https://github.com/asdine/storm
+ * https://github.com/coreos/bbolt
+### LevelDB
+ * https://en.wikipedia.org/wiki/LevelDB
+### RocksDB
+ * https://en.wikipedia.org/wiki/RocksDB
+### TerarkDB
+ * https://terark.com/en/blog/detail/14 https://www.indiatimes.com/technology/news/terark-a-chinese-startup-may-have-just-revolutionized-how-data-is-stored-accessed-analyzed-324651.html
+ * https://db-engines.com/en/system/LevelDB%3BRocksDB%3BTerarkDB
+### LMDB
+ * https://github.com/lmdbjava/benchmarks/blob/master/results/20160630/README.md
+ * https://en.wikipedia.org/wiki/Lightning_Memory-Mapped_Database LightningDB Lightning Memory-Mapped Database
+ * https://github.com/LMDB/lmdb
+ * https://github.com/szferi/gomdb https://github.com/bmatsuo/lmdb-go go binding of LMDB
 ## CRDT
  * https://github.com/share/sharedb OT system https://stackoverflow.com/questions/26694359/differences-between-ot-and-crdt
  * https://en.wikipedia.org/wiki/Operational_transformation
@@ -2481,6 +3005,8 @@ plus.google.com/+JeffDean  http://blog.jobbole.com/51607/ http://blog.jobbole.co
 git add . && git commit -m "Add all content of $(pwd)" && git push
 ```
 ## git checkout
+## A Complete CMS with No Server and 18 Lines of Code
+ * https://www.netlify.com/blog/2017/08/17/a-complete-cms-with-no-server-and-18-lines-of-code/
 ### 忽略当前分支更改 https://zhidao.baidu.com/question/1047433320341166179.html
 ```
 git checkout .
@@ -2490,6 +3016,11 @@ git checkout .
  * http://blog.campoy.cat/2014/03/github-and-go-forking-pull-requests-and.html
  * https://www.reddit.com/r/golang/comments/2jdcw1/how_do_you_deal_with_github_forking/
  * https://github.com/golang/go/wiki/PackageManagementTools
+## git subtree move dir in a repo to another repo
+ * https://jrsmith3.github.io/merging-a-subdirectory-from-another-repo-via-git-subtree.html
+```
+将目录从一个repo移动到另一个repo
+```
 ## git ssh  
 ### git client
  * 生成ssh key
@@ -2580,6 +3111,10 @@ cp -r /Users/xwang/Downloads/gopath/src/github.com/kubernetes-incubator/kompose/
 
 ## http://demo.qunee.com/#HierarchicLayouter%20Demo
 # security
+## linux and security
+ * https://lkml.org/lkml/2017/11/21/356 	Linus Torvalds Do no harm.
+ * https://en.wikipedia.org/wiki/Grsecurity
+ * https://www.reddit.com/r/linux/comments/6j7saq/linus_torvalds_opinion_on_grsecurity/
 ##
  * http://www.csoonline.com/article/3020459/security/antivirus-software-could-make-your-company-more-vulnerable.html
  * https://www.technologyreview.com/s/428166/the-antivirus-era-is-over/
@@ -2600,7 +3135,18 @@ cp -r /Users/xwang/Downloads/gopath/src/github.com/kubernetes-incubator/kompose/
  * BDDs are extensively used in CAD software to synthesize circuits (logic synthesis) and in formal verification. There are several lesser known applications of BDD, including fault tree analysis, Bayesian reasoning, product configuration, and private information retrieval
 #### 每个BDD就相当与一个DFA（deterministic finite automaton）实现 确定有限状态自动机
  * deterministic finite automaton (DFA)—also known as a deterministic finite acceptor (DFA) and a deterministic finite state machine (DFSM)
- *
+##### DFA DFA  deterministic finite automaton
+ * https://zh.wikipedia.org/wiki/%E7%A1%AE%E5%AE%9A%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E8%87%AA%E5%8A%A8%E6%9C%BA https://zh.wikipedia.org/wiki/%E9%9D%9E%E7%A1%AE%E5%AE%9A%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E8%87%AA%E5%8A%A8%E6%9C%BA
+ * http://www.bijishequ.com/detail/283032 把自动机用作 Key-Value 存储
+ * 最小自动机 最小自动机上的任意状态都可以通过一个同构函数变换成等价类自动机 能识别一个正则语言的等价类自动机是唯一的，因此能识别该语言的最小自动机也是唯一的。两种类型的自动机只识别正则语言。对于任何给定NFA，都可以构造一个等价的DFA，反之亦然：通过使用幂集构造。 正则语言
+ * https://news.ycombinator.com/item?id=14628263 	Terark (YC W17) is a profitable database compression company based in Beijing https://www.techinasia.com/real-pied-piper-silicon-valley
+ * http://www.jishux.com/plus/view-77744-1.html TerarkDB 数据库的性能报告与技术解析
+ * http://www.geeksforgeeks.org/succinct-encoding-of-binary-tree/ https://en.wikipedia.org/wiki/Succinct_data_structure 紧凑数据结构 http://www.geeksforgeeks.org/succinct-encoding-of-binary-tree/
+ * https://github.com/amplab/succinct/blob/master/core/src/main/java/edu/berkeley/cs/succinct/util/bitmap/BitMap.java
+#### Net Neutrality will die
+ * https://www.cringely.com/2017/11/22/15471/
+ * https://www.wired.com/story/heres-how-the-end-of-net-neutrality-will-change-the-internet/
+ * https://news.ycombinator.com/item?id=15754287 Comparing China to the US is a false equivalency
 ## cloud-security
 ## 安全名词
 ### cc攻击
@@ -2618,12 +3164,25 @@ http://baike.baidu.com/link?url=MRD3fyaa9_kNAf6-p9NSu4bU_UuO1YvDL6O5vsUqe_PFxYmN
 
 ### homomophic
 Homomorphic-Encryption
+https://arxiv.org/pdf/1704.03578.pdf A Survey on Homomorphic Encryption Schemes: Theory and Implementation
 http://web.townsendsecurity.com/bid/72771/Homomorphic-Encryption-is-Cool-and-You-Should-NOT-Use-It
 
 format-preserving encryption (FPE) refers to encrypting in such a way that the output (the ciphertext) is in the same format as the input (the plaintext).
 https://aws.amazon.com/marketplace/pp/B00DC7R7UY/Ref=mkt_wir_porticor
-https://github.com/shaih/HElib
+https://github.com/shaih/HElib https://github.com/tfhe/tfhe
 https://github.com/lducas/FHEW
+https://www.microsoft.com/en-us/research/project/simple-encrypted-arithmetic-library-seal-2/ https://github.com/shohkhan/SEAL_Client_Server_Template https://www.microsoft.com/en-us/research/publication/manual-for-using-homomorphic-encryption-for-bioinformatics/ https://stackoverflow.com/questions/1023981/practical-applications-of-homomorphic-encryption-algorithms
+* http://iot.stanford.edu/seminar/sitp-w15-wu.pdf Secure Internet of Things Seminar
+* https://www.wired.com/2015/06/mits-bitcoin-inspired-enigma-lets-computers-mine-encrypted-data/
+https://github.com/sobolevn/awesome-cryptography
+* https://www.enigma.co/enigma_full.pdf http://www.sohu.com/a/111846240_465935 同态加密竟然也被破解
+* https://psg.hitachi-solutions.com/credeon/blog/searchable-encryption-allows-for-complete-cloud-file-protection 可查询加密
+* Mitsubishi hitachi searchable encryption device
+http://article.sciencepublishinggroup.com/html/10.11648.j.iotcc.20160402.12.html In 2012, Jian Li, Danjie Song et al. [6] proposed a simple FHE derived from Gentry cryptosystem to ensure the privacy in cloud storage. They called the scheme is SDC.
+* https://crypto.stackexchange.com/questions/37943/applying-machine-learning-algorithms-to-homomorphic-encrypted-data Applying machine learning algorithms to homomorphic encrypted data https://www.microsoft.com/en-us/research/wp-content/uploads/2016/04/CryptonetsTechReport.pdf
+http://blog.vdcresearch.com/embedded_sw/2015/08/iot-use-cases-for-enigma-homomorphic-encryption.html
+ * https://psg.hitachi-solutions.com/credeon/blog/searchable-encryption-allows-for-complete-cloud-file-protection 同态加密 查询 预览
+ * Lattice-based cryptography is the generic term for constructions of cryptographic primitives that involve lattices, either in the construction itself or in the security proof. Lattice-based constructions are currently important candidates for post-quantum cryptography.
 #### open source library
  * http://security.stackexchange.com/questions/3893/what-partial-homomorphic-encryption-implementations-exist-and-how-do-i-leverage  列举了几个应用 El Gamal Paillier 可用来加密 提到 Helios Voting 系统
  * http://security.stackexchange.com/questions/3728/in-what-ways-does-full-or-partial-homomorphic-encryption-benefit-the-cloud 完全同态和部分同态
@@ -2640,6 +3199,7 @@ https://github.com/lducas/FHEW
  * https://github.com/NICTA/javallier java 实现 部分同态加密
  * https://github.com/NICTA/python-paillier/blob/master/docs/alternatives.rst 同态加密总结
  * 延展性(ductility and malleability) 柔性 https://en.wikipedia.org/wiki/Malleability_(cryptography) 自适应密文攻击
+ * http://iot.stanford.edu/seminar/sitp-w15-wu.pdf
 
 #### 密钥共享 secret sharing
  * https://en.wikipedia.org/wiki/Homomorphic_secret_sharing
@@ -2715,17 +3275,45 @@ https://github.com/lducas/FHEW
  * http://iopscience.iop.org/article/10.1088/1367-2630/aa59c4/pdf http://iopscience.iop.org/article/10.1088/1367-2630/aa59c4/pdf
 ### Shor's algorithm 彼得•秀尔
  * quantum Fourier transform https://en.wikipedia.org/wiki/Quantum_Fourier_transform
+ * integer factorization problem can be efficiently solved on a quantum computer and is thus in the complexity class BQP
+
+ asymptotically optimal  渐进最优
 #### 离散对数问题
  * https://en.wikipedia.org/wiki/Euclidean_algorithm 求最大公约数
 #### 椭圆曲线密码算法(ECC)
  * dh算法和ecc算法时，算法安全依赖离散对数难题
 ### Grover's algorithm 格罗弗
  *  Amplitude amplification 振幅放大 can be used to obtain a quadratic speedup over several classical algorithms
+ * Although the purpose of Grover's algorithm is usually described as "searching a database",
+### Deutsch–Jozsa_algorithm
+ * https://en.wikipedia.org/wiki/Deutsch%E2%80%93Jozsa_algorithm
+ * Since the problem is easy to solve on a probabilistic classical computer, it does not yield an oracle separation with BPP, the class of problems that can be solved with bounded error in polynomial time on a probabilistic classical computer. Simon's problem is an example of a problem that yields an oracle separation between BQP and BPP. BQP and BPP bounded-error probabilistic polynomial time
+ BQP (bounded-error quantum polynomial time) is the class of decision problems solvable by a quantum computer in polynomial time, with an error probability of at most 1/3 for all instances.
+ * PP is the class of decision problems solvable by a probabilistic Turing machine in polynomial time, with an error probability of less than 1/2 for all instances
+ PP also contains NP The class of polynomial time on quantum computers with postselection, PostBQP, is equal to PP
+ QMA is related to other known complexity classes by the following relations: P ⊆ N P ⊆ M A ⊆ Q C M A ⊆ Q M A ⊆ P P ⊆ P S P A C E  
+ https://arxiv.org/pdf/quant-ph/0412187.pdf Quantum Computing, Postselection, and Probabilistic
+Polynomial-Time
+####
+ * http://blog.sina.com.cn/s/blog_606aba7d0102vh1r.html 预选取和后选择分别是过去和未来的事件 pre-selection post-selection 弱测量场景下的后选择
+ * Probability and the Monty Hall problem 三门问题
+#### Quantum Monte Carlo
+ * Quantum Monte Carlo Many-body problem多体运动
+#### 量子退火
+ * http://www.stat.phys.titech.ac.jp/~nishimori/QA/q-annealing_e.html
+ * https://www.microsoft.com/en-us/research/wp-content/uploads/2013/01/troyer_matthias_quantumannealing.pdf
+ * http://www.quantum.physics.sk/rcqi/research/publications/2012/rcqi2012_nagaj_kieferova_prl.pdf
+ * https://www.microsoft.com/en-us/research/wp-content/uploads/2013/01/troyer_matthias_quantumannealing.pdf
+ * http://tech.qq.com/a/20151217/013116.htm
 #### Quantum superposition 量子叠加态
 ### black box
 #### black box
  * oracle machine is an abstract machine used to study decision problems
  * 量子叠加态
+## 类脑芯片 neuromorphic chip
+ * neuromorphic chip — a new breed of computer circuitry modeled after the brain
+ * asynchronous systems 异步芯片 asynchronous circuits 异步电路
+ * https://news.yale.edu/2017/11/28/new-research-creates-computer-chip-emulates-human-cognition
 # mobile
 
 
@@ -2750,6 +3338,22 @@ deb http://mirrors.aliyun.com/ubuntu trusty universe
 deb-src http://mirrors.aliyun.com/ubuntu trusty universe
 deb http://mirrors.aliyun.com/ubuntu trusty-updates universe
 deb-src http://mirrors.aliyun.com/ubuntu trusty-updates universe
+```
+### echo
+echo ${VAR} 丢失换行 echo "${VAR}" 保留换行
+### here document
+ * http://www.linuxtopia.org/online_books/advanced_bash_scripting_guide/here-docs.html
+ * http://blog.csdn.net/diy534/article/details/6998775
+ * https://stackoverflow.com/questions/7729023/how-do-i-break-up-an-extremely-long-string-literal-in-bash
+ * https://bash.cyberciti.biz/guide/$IFS <space><tab><newline>
+```
+# Here document: note don't use val=$() in : dummy command here document
+: <<COMMENTBLOCK
+oc get project -o 'jsonpath={range .items[*]}[{.metadata.name},{.metadata.resourceVersion}]{"\n"} {end}'
+COMMENTBLOCK
+ile=extremely/long/file/name
+file+=/that/i/would/like/to/be/able/to/break
+file+=/up/if/possible
 ```
 ### Linux key persons
  *
@@ -2851,6 +3455,8 @@ ls | jq -R . | jq -s . | jq -r 'join("\n")'
 echo "[$(ls | jq -R . | sed ':a;N;$!ba;s/\n/,/g')]" | jq tojson | jq fromjson
 echo '["dd","dd","ass","dcccc"]' |  jq 'reduce .[] as $item (""; . + $item)'
 ```
+####
+ * https://github.com/jedwards1211/lambduh
 ### mount
 #### nfs mount
 ```
@@ -2907,6 +3513,7 @@ kubectl get po | grep -o -e 'ubuntu\-[a-z0-9\-]\{16\}'
 grep -nr hello ./
 抽取出特定连接字符串
 curl https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v172 | grep 'Downloads for v1.7.2' -A 150 | perl -n -e'/"(https.*gz)"/ && print "$1\n"'
+Invalid value: "Initialized": field is immutable, try updating the namespace
 #### 注释掉某行
 ```
 sed '/Strict/s/^/# /' ~/.ssh/config
@@ -2920,6 +3527,10 @@ sed '/Strict/s/$/ # Disable host key check/' ~/.ssh/config
 ```
 curl -L -k -x https://127.0.0.1:49895 https://www.google.co.jp
 ```
+#### resty simple client
+ * https://github.com/micha/resty
+#### httpie
+ * https://github.com/jakubroztocil/httpie/
 ### wget
 ```
 wget -e "https_proxy=https://127.0.0.1:49895" https://www.google.co.jp
@@ -3228,10 +3839,32 @@ ip link set dev mymacvlan2 up
  * http://www.cliqr.com/company/news-events/cliqr-cloudcenter-application-defined-cloud-management-platform-sets-new-industry-standard-in-opening-the-cloud-for-business/
  * http://www.mamicode.com/info-detail-1424183.html
  * https://www.infoq.com/news/2016/02/microservice-deploys-spinnaker
+# 法律 law lawyer 律师
+## 律师助手软件
+ * https://blog.capterra.com/law-practice-management-software-6-popular-choices-compared/
+ * https://www.practicepanther.com/comparison/clio-alternative/
+ * https://comparisons.financesonline.com/quickbooks-pro-vs-practicepanther
+ * https://www.zhihu.com/question/46284778/answer/143600686 律师一般会使用哪些APP
+ * https://www.zhihu.com/question/41321086/answer/111460443 现在都有哪些互联网法律服务平台？这些平台都怎么样？
 # 心理学  psycology
 ## 思考
  * http://www.newyorker.com/tech/elements/walking-helps-us-think
  * https://blogs.scientificamerican.com/guest-blog/programming-as-a-way-of-thinking/
+## 20 hours 20小时定律
+ * http://www.jianshu.com/p/8e8c250ae5b0
+## Getting Things Done
+ * https://blog.zenkit.com/a-beginners-guide-to-getting-things-done-3cc1a5123b98
+## Miller's Law
+ * https://blog.prototypr.io/the-most-important-rule-in-ux-design-that-everyone-breaks-1c1cb188931
+```
+Organizing to 5-9
+Concept of flow
+Actionable Insights
+```
+### 逆向思维
+逆向思维也叫求异思维，它是对司空见惯的似乎已成定论的事物或观点反过来思考的一种思维方式。敢于“反其道而思之”，让思维向对立面的方向发展，从问题的相反面深入地进行探索，树立新思想，创立新形象。
+## Morning person evening person
+ * http://www.bbc.com/capital/story/20171114-why-you-shouldnt-try-to-be-a-morning-person
 ##  Hypnagogia   
 lucid thought清醒思维, lucid dreaming 清醒梦, hallucinations 幻觉 sleep paralysis 睡眠麻痹
 cathartic 通便的，导泻的 trippy幻觉的
@@ -3239,6 +3872,11 @@ https://en.wikipedia.org/wiki/Hypnagogia
 Many other artists, writers, scientists and inventors — including Beethoven, Richard Wagner, Walter Scott, Salvador Dalí, Thomas Edison, Nikola Tesla and Isaac Newton — have credited hypnagogia and related states with enhancing their creativity
 https://www.reddit.com/r/WeAreTheMusicMakers/comments/3anvzf/does_anyone_else_hear_fully_structured_original/
 http://www.world-of-lucid-dreaming.com/hypnagogic-state.html
+## 有意义的工作 当前工作到最终工作的路径 想好完成后的下一步
+ * https://listed.standardnotes.org/@mo/408/why-you-re-resistant-to-being-productive https://news.ycombinator.com/item?id=15758070 	Resistance to Being Productive
+### free will
+ * http://nautil.us/issue/52/the-hive/modern-media-is-a-dos-attack-on-your-free-will DoS on free will https://news.ycombinator.com/item?id=15741565
+ * https://theconversation.com/what-if-consciousness-is-not-what-drives-the-human-mind-86785
 ## sales 销售
 ### 客户沟通技巧
  * http://zhidao.baidu.com/link?url=J7QM6hwwlOKnnuBkGvW4_AZcA_A8CORk48nFkEcbqcMhgyteUOCj3k-u5HJWi6M19shXwB4tzef40MJkrWgCWa
@@ -3293,6 +3931,7 @@ http://www.world-of-lucid-dreaming.com/hypnagogic-state.html
  * https://en.wikipedia.org/wiki/List_of_commercial_open-source_applications_and_services
  * http://www.wipo.int/edocs/mdocs/copyright/en/wipo_ip_cm_07/wipo_ip_cm_07_www_82575.pdf
  * https://en.wikipedia.org/wiki/Business_models_for_open-source_software#Selling_of_required_proprietary_parts_of_a_software_product 如何卖opensource
+ * https://github.com/nayafia/lemonade-stand A handy guide to financial support for open source.
  * http://www.cio.com/article/2378859/open-source-tools/7-reasons-not-to-use-open-source-software.html
  * http://softwareengineering.stackexchange.com/questions/47032/can-i-use-gpl-software-in-a-commercial-application
  * http://softwareengineering.stackexchange.com/questions/221365/mozilla-public-license-mpl-2-0-vs-lesser-gnu-general-public-license-lgpl-3-0 比较LGPL MPL
@@ -3301,7 +3940,8 @@ http://www.world-of-lucid-dreaming.com/hypnagogic-state.html
 # quantum computer 量子计算机
  * http://www.nature.com/news/google-moves-closer-to-a-universal-quantum-computer-1.20032
  * braid 辫子
-
+## quantum AI
+ * https://research.google.com/pubs/QuantumAI.html https://research.google.com/pubs/QuantumAI.html
 # science physics 科学 物理学
 ## Amplituhedron 宝石几何学
  * http://www.360doc.com/content/15/1030/22/152409_509555054.shtml
@@ -3321,7 +3961,13 @@ http://www.world-of-lucid-dreaming.com/hypnagogic-state.html
  * http://web.stonehill.edu/compsci/History_Math/math-read.htm
 ### 自行车
  * http://www.tepintehui.com/detail/38992?ce 自行车骑行为何不倒
+### 电路设计
+ * https://en.wikipedia.org/wiki/Photomask
+ * https://semiengineering.com/next-gen-mask-writer-race-begins/ https://semiengineering.com/kc/technology.php?tid=31058
+#### electronics
+ * http://lcamtuf.coredump.cx/electronics/ Concise electronics for geeks
 ### real number 实数
+
 #### 连续性 continuity rational numbers irrational numbers
  * Real numbers are used to measure continuous quantities
 ##### Baire space 贝利空间
@@ -3359,6 +4005,22 @@ http://www.world-of-lucid-dreaming.com/hypnagogic-state.html
 * Autoepistemic semantics 自知性语义
 closed-world assumption (CWA) 封闭世界假设 信息全或必须要有答案时open-world assumption 开放世界假设 信息不全时
 Well-founded Semantics 良序模型语义 Thus the well-founded model of a logic program provides a lower bound on the intersection of its stable models and an upper bound on their union.
+#### semantic web
+ * https://en.wikipedia.org/wiki/Knowledge_Graph
+ * https://github.com/schemaorg/schemaorg/tree/master/docs
+#### knowledge map
+ * https://en.wikipedia.org/wiki/Concept_map concept map topic map knowledge map mind map
+ * https://learn-anything.xyz/databases/distributed-databases/blockchain
+ * https://my.mindnode.com/KdeMPbxs8KPixsa5YUq5cphqJnQg81vpHaXcDX2i#-48.5,-680.3,0
+ * https://metacademy.org/graphs/concepts/deep_belief_networks#focus=deep_belief_networks&mode=explore
+##### mind map
+ * https://en.wikipedia.org/wiki/List_of_concept-_and_mind-mapping_software
+##### tab tree to json
+ * https://stackoverflow.com/questions/21031651/how-can-i-convert-a-tabbed-tree-to-json-in-javascript
+##### web scraping
+ * https://news.ycombinator.com/item?id=15611605 	Show HN: Link.fish – API to extract data from websites as JSON
+ * https://bigishdata.com/2017/05/11/general-tips-for-web-scraping-with-python/
+ * https://news.ycombinator.com/item?id=15784599 	Stacks-cli: Analyze a website’s stack from the terminal https://github.com/WeiChiaChang/stacks-cli https://github.com/rverton/webanalyze
 #### fuzzy logic 模糊逻辑
  * https://thecustomizewindows.com/2014/06/machine-learning-data-center-automation/
  * Google SEO Still is Backlinking Google Panda 是Google针对网站内容页
@@ -3388,6 +4050,17 @@ Well-founded Semantics 良序模型语义 Thus the well-founded model of a logic
  * https://www.quantamagazine.org/quantum-thermodynamics-revolution/?platform=hootsuite
  * http://mt.sohu.com/20170401/n486027891.shtml
  * http://www.edu.cn/rd/kexuetansuo/zui_xin_dong_tai/wu_li_yan_jiu/201512/t20151203_1344661.shtml 热力学过程在量子尺度不可逆被首次证实
+## potential energy 势能
+ * 势能是由两个作用体共同拥有的，增加势能的动力更直接的作用在哪个物体上，则这个物体更有主动性。
+## medical 医学
+### 感冒
+####
+ * Mycoplasma 支原体 衣原体 Chlamydia 病毒 Viruses 细菌 Bacteria  感冒 Cold
+ * 病因 Pathogeny  鼻病毒 picornavirus coronavirus 冠状病毒  influenza viruses 流感病毒
+ * 普通感冒，你真的了解它吗？ http://www.guokr.com/article/439305/
+ * 复方氨酚烷胺 其作用机制是通过抑制下视丘体温调节中枢前列腺素(PGE2)合成和释放而产生周围血管扩张，引起出汗以达到解热作用，同时能抑制缓激肽等的作用，提高痛阈而产生镇痛作用。金刚烷胺抗病毒谱较窄，主要是用于亚洲A型流感的预防，对于B型流感病毒与风疹病毒、麻疹病毒、流行性腮腺炎病毒及单纯疱疹病毒感染均无效。马来酸氯苯那敏制剂有片剂、注射剂，又名扑尔敏，抗组胺类药，本品通过对H1受体的拮抗起到抗过敏作用。主要用于鼻炎、皮肤黏膜过敏及缓解流泪、打喷嚏、流涕等感冒症状。
+ * https://zh.wikihow.com/%E8%87%AA%E5%B7%B1%E5%9C%A8%E5%AE%B6%E6%B2%BB%E7%96%97%E7%97%85%E6%AF%92%E6%84%9F%E6%9F%93 使用扩香器 洗鼻壶
+ * 甘菊、接骨木、甘草、紫锥花、橄榄根、百里香和牛至 甘菊 甘草、紫锥花、百里香 牛至
 ## 未解之谜
  * http://nautil.us/blog/7-major-experiments-that-still-havent-found-what-theyre-looking-for
 

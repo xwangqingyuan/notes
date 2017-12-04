@@ -1,4 +1,25 @@
 # cloud
+## public cloud comparison
+### chinese public cloud
+ * http://bbs.51cto.com/thread-1491456-1.html 阿里、Ucloud、Cloudin......谁才是真正的王者
+ *
+## cloud migration
+ * https://dl.acm.org/citation.cfm?id=1985505 Application migration to cloud: a taxonomy of critical factors
+ * https://thesai.org/Downloads/Volume7No5/Paper_79-A_Survey_of_Cloud_Migration_Methods_A_Comparison_and_Proposition.pdf
+ * https://us.nttdata.com/en/-/media/nttdataamerica/files/nttservicesd2/nttd1130-cloud-adoption-white-paper.pdf
+ * https://www.computer.org/csdl/proceedings/cloud/2015/7287/00/7287a025.pdf
+ * Towards Automatic Application Migration to Clouds
+ * https://arxiv.org/pdf/1507.08217.pdf Migrating to Cloud-Native Architectures Using Microservices: An Experience Report
+ * https://gigaom.com/2014/12/12/are-we-moving-to-autonomous-self-migrating-containers-for-cloud-application-automation-i-think-so/ We’re finally headed towards autonomous, self-migrating containers for cloud-application automation
+ * https://bib.irb.hr/datoteka/594474.ceciis_FinalPaper_Automatic_Conversion_of_Desktop_Applications_to_Java_Web_Technology.pdf
+ * https://www.cockroachlabs.com/docs/stable/demo-automatic-cloud-migration.html
+ * https://gartnerinfo.com/futureofit2011/MEX38L_A2%20mex38l_a2.pdf Five Options for Migrating Applications to the Cloud: Rehost, Refactor, Revise, Rebuild or Replace
+ * https://www.carbonite.com/data-protection/data-migration-software/?catid=&mkwid=Y40r6i7d|dc&adnumber=76553526100258&pkw=%2Bserver%20%2Bmigration&pmt=bb&pct-network-name=marin&pct-network-pid=Y40r6i7d&utm_medium=paid-search&utm_source=bing&utm_campaign=10604&utmcontent=3374&crb-cid=  https://www.carbonite.com/products/doubletake-migration-software/
+ * https://www.uni-bamberg.de/fileadmin/uni/fakultaeten/wiai_lehrstuehle/praktische_informatik/Dateien/Publikationen/cloud15-application-migration-effort-in-the-cloud.pdf
+ * https://en.wikipedia.org/wiki/EVault  https://en.wikipedia.org/wiki/Carbonite_  https://www.marketwatch.com/investing/stock/carb https://en.wikipedia.org/wiki/Comparison_of_online_backup_services
+ * https://www.forbes.com/sites/louiscolumbus/2017/04/29/roundup-of-cloud-computing-forecasts-2017/#26f4127131e8 market forcast
+## docker small images fro scratch
+ * https://embano1.github.io/post/scratch/ Inside Docker's "FROM scratch"
 ## docker merge docker image discovery
  * https://github.com/moby/moby/issues/3378 How do I combine several images into one via Dockerfile
  * https://stackoverflow.com/questions/39711924/merge-two-docker-images
@@ -18,6 +39,11 @@
  * https://docs.docker.com/datacenter/ucp/2.2/guides/admin/configure/add-labels-to-cluster-nodes/#apply-labels-to-a-node
  * http://thingsoncloud.com/2016/09/docker-swarm-internal/
  * https://docs.docker.com/engine/reference/commandline/service_create/#specify-service-placement-preferences-placement-pref scheduler
+#### docker swarm events
+ * https://docs.docker.com/engine/api/v1.33/ https://docs.docker.com/engine/api/v1.33/#operation/SystemEvents
+ * https://github.com/vfarcic/docker-flow-swarm-listener
+ * https://github.com/moby/moby/blob/master/CHANGELOG.md remote API version
+ * https://docs.docker.com/engine/api/v1.24/ docker 1.12 event API
 ## docker maven plugin
  * https://github.com/spotify/docker-client/
  * https://github.com/spotify/dockerfile-maven
@@ -35,6 +61,8 @@
 ### cni containernetworking
  * https://github.com/containernetworking/cni
  * https://github.com/containernetworking/plugins/tree/master/plugins/main/ipvlan
+### calico
+ * https://docs.projectcalico.org/v2.0/usage/troubleshooting/faq
 ### macvlan ipvlan
  * https://hicu.be/macvlan-vs-ipvlan http://www.pocketnix.org/posts/Linux%20Networking:%20MAC%20VLANs%20and%20Virtual%20Ethernets
 ### docker and moby
@@ -83,12 +111,31 @@ Engine API v1.27 docker 17.03.1-ce
  * https://github.com/kubernetes/kubernetes/issues/4432 Consider moving events out of etcd
  * https://stackoverflow.com/questions/36345413/timeline-of-kubernetes-events Timeline of kubernetes events
  * Kubelet will perform garbage collection for containers every minute and garbage collection for images every five minutes.
+#### kubernetes garbage collection
+ * https://kubernetes.io/docs/concepts/workloads/controllers/garbage-collection/
+ * k8s.io/apimachinery/pkg/apis/meta/v1/types.go
  * https://github.com/kayrus/elk-kubernetes#forward-kubernetes-events-into-kibanaelasticsearch
  * https://github.com/caicloud/event_exporter Kuberentes events to Prometheus bridge
  * https://github.com/kayrus/prometheus-kubernetes
  * https://github.com/PerfectMemory/openshift-prometheus  good kube openshift prometheus example
  * involve hawkualr https://github.com/akram/openshift-prometheus-grafana/blob/master/grafana-metrics-full-template.yaml https://github.com/akram/openshift-prometheus-grafana/blob/master/grafana-metrics-full-template.yaml
  * https://github.com/kayrus/elk-kubernetes#forward-kubernetes-events-into-kibanaelasticsearch
+#### prometheus
+##### prometheus storage
+ * https://pracucci.com/kubecon-2017-prometheus-takeaways.html Prometheus Takeaways
+ * https://prometheus.io/docs/operating/storage/
+ * https://coreos.com/blog/prometheus-2.0-storage-layer-optimization
+ * https://prometheus.io/docs/operating/storage/
+ * https://www.infoworld.com/article/3192397/cloud-computing/prometheus-20-promises-faster-more-economical-cloud-monitoring.html http://container-solutions.com/microservice-monitoring-with-prometheus/
+ * https://promcon.io/2017-munich/talks/analyze-prometheus-metrics-like-a-data-scientist/ prometheus machine learning
+##### prometheus kubernets configuration
+ * https://github.com/prometheus/prometheus/blob/master/documentation/examples/prometheus-kubernetes.yml
+ * https://github.com/camilb/prometheus-kubernetes/tree/master/manifests/prometheus use operator
+ * https://www.weave.works/blog/aggregating-pod-resource-cpu-memory-usage-arbitrary-labels-prometheus/
+ * https://prometheus.io/docs/prometheus/latest/configuration/configuration/
+ * https://prometheus.io/docs/prometheus/latest/federation/
+##### comparison
+ * https://blog.outlyer.com/top10-open-source-time-series-databases
 #### elasticsearch archive
  * https://www.elastic.co/blog/curator-tending-your-time-series-indices
  * https://www.elastic.co/guide/en/elasticsearch/guide/current/retiring-data.html
@@ -171,6 +218,7 @@ Test API server with curl
  * API design guide
  * https://cloud.google.com/apis/design/resources
  * https://github.com/archnotes/gitbook/tree/master/API-design-guide
+ * https://blog.keras.io/user-experience-design-for-apis.html User experience design for APIs
  * https://groups.google.com/forum/#!forum/kubernetes-users k8s users
  * http://semver.org/ Semantic Versioning 2.0.0
  * learn kubernetes links
@@ -187,7 +235,15 @@ Test API server with curl
 #### Reconciliation Loop 调和循环
  * http://freecontent.manning.com/kubernetes-in-action-introducing-replication-controllers/
  * https://www.slideshare.net/SatnamSingh67/2015-0605-cluster-management-with-kubernetes keep scheduler simple
-
+#### Workload Replication Workload synchronization
+##### TCPCopy HTTPCopy
+ * https://github.com/session-replay-tools/tcpcopy
+ * https://github.com/session-replay-tools/mysql-replay-module
+##### http replay
+ * https://github.com/buger/goreplay
+ * https://github.com/Gonzih/log-replay go
+ * https://github.com/agnoster/duplicator
+ * https://stackoverflow.com/questions/7247668/duplicate-tcp-traffic-with-a-proxy
 #### kubernetes network
  * https://kubernetes.io/docs/concepts/cluster-administration/addons/
  * https://github.com/Huawei-PaaS/CNI-Genie
@@ -279,10 +335,19 @@ Test API server with curl
 MountVolume.SetUp failed for volume ..... with: references non-existent config key
 ConfigMap中的key,如果匹配不上很可能使用configmap对应的整个目录
 ```
+##### deployment error
+```
+Deployment in version "v1beta1" cannot be handled as a Deployment: only encoded map or array can be decoded into a struct
+有数组写成了对象
+```
 #### kubernetes template
  * https://github.com/InQuicker/ktmpl
  * https://github.com/mustache/mustache
  * go template http://studygolang.com/articles/1833
+ * https://blog.openshift.com/kubernetes-state-app-templating/ summary  https://github.com/kubernetes/kubernetes/issues/23896
+ *
+##### openshift template
+ * https://blog.openshift.com/part-2-creating-a-template-a-technical-walkthrough/ how to use and author template https://docs.openshift.org/latest/dev_guide/templates.html
 #### kubernetes quick start
  * http://kubernetes.io/docs/getting-started-guides/ubuntu/
  * http://kubernetes.io/docs/getting-started-guides/azure/
@@ -300,7 +365,28 @@ ConfigMap中的key,如果匹配不上很可能使用configmap对应的整个目�
  * http://blog.clarifai.com/how-to-scale-your-gpu-cloud-infrastructure-with-kubernetes/#.WTUCUcklFE4
 #### kubernetes API watch cache
  * apiserver/pkg/storage/cacher.go apiserver/pkg/registry/generic/registry/storage_factory.go apiserver/pkg/registry/generic/storage_decorator.go
+#### openshift project template project request
+ * https://docs.openshift.org/latest/admin_guide/managing_projects.html
 #### openshift devops
+##### devops multiple release 多版本 CICD devops pipeline
+ * https://docs.microsoft.com/en-us/vsts/articles/effective-tfvc-branching-strategies-for-devops 多版本图
+ * https://www.linkedin.com/pulse/branching-merging-strategy-managing-releases-vijay-hajare 开分支原则
+ * https://www.thoughtworks.com/insights/blog/architecting-continuous-delivery 价值流图
+ * https://www.testingexcellence.com/delivery-pipeline-agile-project/
+```
+Unit Test 单元测试
+Sonar质量检查
+集成测试 API测试 接口测试
+集成自动冒烟测试Automate Smoke Test
+集成自动UAT，英文User Acceptance Test的简写，也就是用户验收测试，或用户可接受测试
+QA自动冒烟测试
+QA手动测试 UAT
+Stage自动冒烟测试
+sanity check sanity test 合理性检查
+生产冒烟测试
+```
+##### Development Testing Staging Production
+ * https://www.thoughtworks.com/insights/blog/architecting-continuous-delivery
 ##### DevOps learning resources
  * https://news.ycombinator.com/item?id=14652993 DevOps learning resources
 ##### diagnostics
@@ -309,14 +395,33 @@ ConfigMap中的key,如果匹配不上很可能使用configmap对应的整个目�
 ##### docker registry
 ##### upstream upgrade
 ##### gRPC
+ * https://github.com/bojand/awesome-grpc https://github.com/src-d/proteus https://github.com/kubernetes/code-generator/tree/master/cmd
  * github.com/openshift/origin/hack/update-generated-protobuf.sh
  * github.com/openshift/origin/tools/genprotobuf/protobuf.go
  * github.com/openshift/origin/tools/genprotobuf/protoc-gen-gogo/main.go
  * types - genprotobuf - generated.proto - protoc-gen-gogo - generated.pb.go
  * github.com/openshift/origin/vendor/k8s.io/kubernetes/pkg/runtime/serializer/protobuf/protobuf.go serializer
+##### gRPC quick start
+ * https://grpc.io/docs/quickstart/python.html
+ * https://grpc.io/docs/quickstart/go.html
+ * https://grpc.io/blog/coreos
+##### gRPC errors
+```
+google/api/annotations.proto: File not found
+https://github.com/grpc-ecosystem/grpc-gateway/issues/283 --go_out=Mgoogle/api/annotations.proto=github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis/google/api,plugins=grpc:.
+https://github.com/google/protobuf-gradle-plugin/issues/51 annotations.proto is not in the build/extracted-include-protos directory
+https://github.com/grpc-ecosystem/grpc-gateway ./autogen.sh ./configure
+```
+
+```
+/autogen.sh: autoreconf: not found
+apt-get install dh-autoreconf
+```
+
 ##### document generation
  * github.com/openshift/origin/hack/update-generated-swagger-descriptions.sh  types - swagger_doc.go
  * hack/update-generated-swagger-spec.sh  api/swagger-spec/openshift-openapi-spec.json and api/protobuf-spec publish
+ * https://github.com/Mermade/awesome-openapi3 https://github.com/swagger-api/swagger-codegen
  * hack/update-generated-swagger-docs.sh swagger-spec - _output/local/docs/swagger/api/v1/md
 ##### image scan
  * https://github.com/openshift/image-inspector
@@ -559,6 +664,13 @@ install https://github.com/kubernetes/helm/pull/2344
  * https://github.com/kubernetes/kubernetes/blob/master/docs/design/extending-api.md
  * http://kubernetes.io/docs/user-guide/thirdpartyresources/
  * https://github.com/coreos/etcd-operator coreos operator
+```
+cluster#run--reconcile--reconcileMembers--resize--removeOneMember--removeMember--removePodAndService
+utils to create pod pkg/util/k8sutil/k8sutil.go
+createPod--NewEtcdPod
+/etcd-operator/pkg/controller/controller.go# etcd operator watch register
+pkg/client/monitoring/v1alpha1/prometheus.go#watch operator watch register
+```
  * https://github.com/upmc-enterprises/elasticsearch-operator  https://github.com/sapcc/kubernetes-operators openstack operator
  * https://coreos.com/press/coreos-introduces-operators.html
  * https://coreos.com/blog/introducing-operators.html
@@ -591,31 +703,70 @@ install https://github.com/kubernetes/helm/pull/2344
  * https://github.com/ipedrazas/mysql-operator
  * https://github.com/weixinhost/litedb
 #### redis template
+ * https://github.com/ereOn/kredis redis operator
+ *
 ##### redis commands
  * https://redis.io/commands
  *
 ##### redis cluster
  * https://github.com/sobotklp/kubernetes-redis-cluster
+ * https://docs.microsoft.com/en-us/azure/redis-cache/cache-how-to-premium-clustering
+ * https://redis.io/topics/cluster-tutorial
+ * https://redis.io/topics/cluster-spec#keys-hash-tags
+ * http://blog.csdn.net/xiaoguaihu12/article/details/62215198 测试结果
+ * https://redis.io/topics/benchmarks
+ * https://yq.aliyun.com/articles/68593 redis4.0、codis、阿里云redis 3种redis集群对比分析
+##### redis multi data center
+ * https://github.com/Netflix/dynomite
+ * https://www.reddit.com/r/redis/comments/48lp6m/is_there_a_way_to_have_a_cross_datacenter_redis/
+ * https://cachecloud.github.io/2016/11/03/Redis%20Cluster%E5%A4%9A%E6%9C%BA%E6%88%BF%E9%AB%98%E5%8F%AF%E7%94%A8%E5%AE%9E%E7%8E%B0/ Redis Cluster多机房高可用实现--基于客户端
+ * https://serverfault.com/questions/717406/redis-multi-master-replication
+##### redis cluster client
+ * https://github.com/Grokzen/redis-py-cluster
+ * https://github.com/antirez/redis-rb-cluster
+ * https://www.npmjs.com/package/redis-clustering-client
+ * https://redislabs.com/lp/redis-java/ https://github.com/lettuce-io/lettuce-core https://github.com/xetorthio/jedis
+##### questions for redis cluster
+ *
 ##### redis GUI web UI
+ * https://github.com/zhengfc/redis-cluster-monitor Latest commit 21ca5b6 on 9 Aug fczheng fczheng delete email pic
  * http://fastoredis.com/download.html  desktop manager
  * modern https://hub.docker.com/r/faktiva/php-redis-admin/ https://github.com/faktiva/php-redis-adminhttps://github.com/erikdubbelboer/phpRedisAdmin  have dockerfile
  * https://github.com/steelThread/redmon
  * https://redislabs.com/blog/so-youre-looking-for-the-redis-gui/
  * https://stackoverflow.com/questions/7716446/redis-administration-panel
 ##### awesome redis
+ * http://www.360doc.com/content/16/0302/08/30278942_538719621.shtml redis的坑
+ * http://www.jianshu.com/p/ee2aa7fe341b 唯品会Redis cluster
+ * http://blog.csdn.net/dc_726/article/details/48552531 Redis Cluster使用经验
  * https://github.com/JamzyWang/awesome-redis
  * https://github.com/junegunn/redis-stat active
  * https://github.com/nkrode/RedisLive/graphs/contributors  inactive
+ * https://github.com/ju59199nahpx/awesome-redis
  * https://github.com/no13bus/redispapa simple
  * https://github.com/facebookarchive/redis-faina command line analysis
 ##### redis cluster Web UI
  * https://github.com/HunanTV/redis-ctl https://github.com/sunyi00/centos-redis-ctl
  * https://github.com/zhengfc/redis-cluster-monitor     (simple CLI monitor) https://hub.docker.com/r/tuananhpham/redis-cluster-monitor/
+ * https://hub.docker.com/r/lawrips/redis-live/ https://github.com/lawrips/redis-live
 ##### redis sentinel
  * https://github.com/kelseyhightower/kubernetes-redis-cluster
  * https://github.com/corybuecker/redis-stateful-set
  * https://github.com/CommercialTribe/kube-redis
  * https://github.com/bdimcheff/rediskube
+ * https://scalegrid.io/blog/high-availability-with-redis-sentinels-connecting-to-redis-masterslave-sets/
+#### Operator framework
+##### admission controller
+ * https://kubernetes.io/docs/admin/admission-controllers/#alwayspullimages
+ * https://kubernetes.io/docs/admin/extensible-admission-controllers/ Initializers External Admission Webhooks
+ * example https://github.com/kelseyhightower/kubernetes-initializer-tutorial/blob/master/envoy-initializer/main.go
+ * https://github.com/kubernetes/kubernetes/blob/master/pkg/kubeapiserver/admission/initializer.go code
+ * https://github.com/kelseyhightower/kubernetes-initializer-tutorial/tree/master/helloworld
+```
+k8s.io/apiserver/pkg/admission#Register--k8s.io/apiserver/pkg/admission/handler.go#NewHandler--
+plugin/pkg/admission/initialization/initialization.go#Admit
+/storage/storagebackend/factory/factory.go#Create(--
+```
 #### rook Operator
  * https://github.com/rook/rook
  * https://blog.rook.io/rook-operator-first-class-storage-for-kubernetes-2d0288831175
@@ -647,9 +798,26 @@ install https://github.com/kubernetes/helm/pull/2344
 #### tracing
  * https://github.com/jaegertracing/jaeger-kubernetes
  * https://github.com/uber/jaeger/blob/master/CONTRIBUTING.md
+##### tracing product features
+ * https://comparisons.financesonline.com/appdynamics-vs-new-relic
+ * http://blog.takipi.com/appdynamics-vs-new-relic-which-tool-is-right-for-you-the-complete-guide/#backend
 #### monitoring logging and tracing
  * https://www.slideshare.net/MartinEtmajer/challenges-in-a-microservices-age-monitoring-logging-and-tracing-on-red-hat-openshift
- *
+#### event correlation
+ * https://www.elastic.co/products/x-pack/machine-learning
+##### abnormaly detection
+ * In anomaly detection, the local outlier factor (LOF) is an rithm 局部离群因子 http://scikit-learn.org/stable/auto_examples/neighbors/plot_lof.html https://en.wikipedia.org/wiki/Local_outlier_factor
+ * https://github.com/twitter/AnomalyDetection 开源 https://github.com/etsy/skyline
+ * https://www.hindawi.com/journals/mpe/2016/3570305/ An Anomaly Detection rithm of Cloud Platform Based on Self-Organizing Maps
+ * https://www.hindawi.com/journals/misy/2017/5674086/ Mobile Anomaly Detection Based on Improved Self-Organizing Maps
+ * https://hal.archives-ouvertes.fr/hal-01169573/document Anomaly Detection Based on Confidence Intervals Using
+SOM with an Application to Health Monitoring
+##### prelert
+ * https://www.esecurityplanet.com/network-security/startup-spotlight-prelerts-anomaly-detection.html DNS tunneling
+ * https://cdn2.hubspot.net/hubfs/208516/Assets/Prelert_Technical_Brief_Holt_Winters.pdf?t=1458845167081  
+https://thenewstack.io/monitoring-reset-containers/
+ * https://bigpanda.io/blog/a-practical-guide-to-anomaly-detection/ https://github.com/numenta/nupic Numenta Platform for Intelligent Computing is an implementation of Hierarchical Temporal Memory (HTM) neocortex 大脑）皮层 http://ischlag.github.io/2016/04/25/on-hierarchical-temporal-memory/ https://en.wikipedia.org/wiki/Hierarchical_temporal_memory
+ * https://thenewstack.io/monitoring-reset-containers/
 #### memcached operator
  * https://github.com/kbst/memcached
  * https://www.kubestack.com/catalog/memcached
@@ -746,6 +914,8 @@ fractal dimension主要描述分形最主要的参量。简称分维
  * https://www.amalgam8.io/
  * https://github.com/mfornos/awesome-microservices
  * http://www.devopsbookmarks.com/ci devopsbookmarks 持续集成技术列表
+##### go microservice
+ * http://callistaenterprise.se/blogg/teknik/2017/02/27/go-blog-series-part3/
 #### WAS microservices WebSphere microservices
  * https://www.slideshare.net/davidcurrie/building-out-a-microservices-architecture-with-websphere-liberty-profile-and-netflix-open-source
  * https://www.ibm.com/developerworks/cloud/library/cl-bluemix-microservices-in-action-part-1-trs/index.html
@@ -755,6 +925,11 @@ fractal dimension主要描述分形最主要的参量。简称分维
  * https://blogs.oracle.com/developers/getting-started-with-microservices-part-three
  * https://blogs.oracle.com/developers/getting-started-with-microservices-part-four good introduction for devOps
  * https://technology.amis.nl/2016/11/01/microservices-in-the-world-of-the-red-giant-report-from-oracle-openworld-2016/
+#### weblogic on kubernetes
+ * https://blogs.oracle.com/weblogicserver/weblogic-on-kubernetes%2c-try-it
+ * https://github.com/oracle/docker-images/tree/master/OracleWebLogic/samples/wls-K8s
+ *
+ * https://github.com/jeqo/talk-scale-wls-k8s-way
 #### design pattern
  * https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/README.md#behavioral-design-patterns
  *
@@ -811,6 +986,11 @@ fractal dimension主要描述分形最主要的参量。简称分维
  * https://tyk.io/docs/ensure-high-availability/service-discovery/examples/ tyk API gateway features Transform traffic compose APIs Virtual Endpoints  MPL 2.0 license
  * https://github.com/Mashape/kong APL license https://getkong.org/plugins/ https://github.com/Mashape/kong/tree/master/kong/plugins/response-transformer/migrations https://getkong.org/docs/
  * https://github.com/apiman/apiman https://github.com/apiman/apiman-plugins APL license
+##### API Gateway function feature
+ * http://www.infoq.com/cn/news/2016/07/API-background-architecture-floo
+ * https://help.aliyun.com/document_detail/29484.html?spm=5176.doc29483.6.578.CMqpxX
+ * https://aws.amazon.com/cn/api-gateway/faqs/
+ * http://blog.csdn.net/walkerjong/article/details/50912214 常用的几个开源 API网关管理系统
 ##### new service integration programming language
  * https://github.com/ballerinalang/ballerina
  * https://dzone.com/articles/ballerinawhy-it-is-different-from-other-programmin
@@ -836,6 +1016,8 @@ http://assets.en.oreilly.com/1/event/79/Stability%20Patterns%20Presentation.pdf
  * https://github.com/Netflix/eureka/wiki/Understanding-eureka-client-server-communication
 #### spring boot
  * develop with spring boot and kubernetes http://blog.christianposta.com/microservices/spring-boot-microservice-development-on-kubernetes-the-easy-way/
+#### spring boot admin
+ * https://codecentric.github.io/spring-boot-admin/1.5.0/#_what_is_spring_boot_admin
 #### micro service example
 
  * https://github.com/kbastani/spring-cloud-microservice-example 电影推荐应用
@@ -884,6 +1066,10 @@ http://assets.en.oreilly.com/1/event/79/Stability%20Patterns%20Presentation.pdf
  * openshift/svt/applications_scalability/app-scalability.sh shell e2e commands
  * openshift/svt/openshift_scalability/pyconfig.yaml project template example
  * kubernetes/perf-tests performance tests
+##### performance test tools
+ * https://github.com/wg/wrk
+ * https://github.com/buger/goreplay
+ * jmeter
 ##### redis performance tuning
  * https://redis.io/topics/latency  https://dzone.com/articles/redis-performance-benchmarks https://matt.sh/redis-benchmark-compilers https://blog.newrelic.com/2015/05/11/redis-performance-metrics/ https://matt.sh/redis-benchmark-compilers
  * http://shokunin.co/blog/2014/11/11/operational_redis.html
@@ -971,6 +1157,21 @@ http://assets.en.oreilly.com/1/event/79/Stability%20Patterns%20Presentation.pdf
 #### pod debugging-hook-handlers
  * https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#debugging-hook-handlers
  *
+####
+```
+error: failed to run Kubelet: Running with swap on is not supported, please disable swap! or set --fail-swap-on
+add --fail-swap-on=false to 10-kubeadm.conf
+```
+ * https://github.com/kubernetes/kubernetes/issues/50373 KUBELET_FLAGS=${KUBELET_FLAGS:-"--fail-swap-on=false"
+#### kubelet.service
+```
+kubelet.service has more than one ExecStart= setting, which is only allowed for Type=oneshot services. Refusing
+Add one more ExecStart= to 10-kubeadm.conf
+```
+#### pod-eviction-timeout 自动迁移Pod
+ * https://kubernetes.io/docs/concepts/architecture/nodes/
+ * https://forums.rancher.com/t/kubernetes-faster-node-failure-detection/5243 https://fatalfailure.wordpress.com/2016/06/10/improving-kubernetes-reliability-quicker-detection-of-a-node-down/
+ * https://kubernetes.io/docs/reference/generated/kube-controller-manager/ --pod-eviction-timeout duration  The grace period for deleting pods on failed nodes. (default 5m0s)
 ## other CMP cloud management platform
 ### OpenNebula
  * https://github.com/OpenNebula/one https://opennebula.org/
@@ -1216,13 +1417,32 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
  * 整个基于kubernetes和openshift的持续集成体系 https://blog.openshift.com/openshift-cloudbees-jenkins-enterprise-devops/
  * OpenShift 架构 https://blog.openshift.com/openshift-v3-deep-dive-docker-kubernetes/
  * OpenShift文档 	https://docs.openshift.org/latest/dev_guide/projects.html
+#### CICD product
+ * https://help.aliyun.com/document_detail/56534.html?spm=5176.doc56526.6.561.PPZIut 部署到容器服务
+ * http://docs.aws.amazon.com/codepipeline/latest/userguide/concepts.html
+#### global DNS service
+ * http://os.51cto.com/art/201709/551443.htm GitHub的DNS基础设施
+ * https://www.digitalocean.com/community/tutorials/a-comparison-of-dns-server-types-how-to-choose-the-right-dns-configuration
+ * https://en.wikipedia.org/wiki/Comparison_of_DNS_server_software https://en.wikipedia.org/wiki/PowerDNS
+ * https://hub.docker.com/r/mvance/unbound/ https://github.com/jedisct1/unbound
+ * https://hub.docker.com/r/pschiffe/pdns-mysql/ https://hub.docker.com/r/pschiffe/pdns-admin/ https://hub.docker.com/r/pbertera/pdns/ https://github.com/PowerDNS/pdns https://github.com/PowerDNS/pdns/wiki/WebFrontends
+ * https://github.com/NLnetLabs/NSD
+ * https://github.com/coredns/coredns  https://coredns.io/plugins/kubernetes/ kubernetes federation
+ * https://github.com/kubernetes/dns/blob/master/docs/specification.md kubernetes dns spec
 #### coredns
  * https://github.com/coredns/coredns
  * https://github.com/blachniet/coredns-docker
  * http://www.zonefile.org/?lang=en#zonefile https://en.wikipedia.org/wiki/Zone_file https://en.wikipedia.org/wiki/List_of_DNS_record_types
+#### External dns
+ * https://github.com/kubernetes-incubator/external-dns
+#### openshift external dns
+ * https://developers.redhat.com/blog/2015/11/19/dns-your-openshift-v3-cluster/
+ * https://coredns.io/2017/05/08/custom-dns-entries-for-kubernetes/
 ### marketplace
  * https://marketplace.openshift.com/
-
+### openshift router
+ * https://github.com/openshift/origin/issues/6914 Path-based routing does not work as expected
+ * To deal with situations like this (and others), I made a modified router with support for regular expressions in the paths. Here's the GitHub repo and it's on the Docker Hub as elyscape/origin-haproxy-router-regexp. https://docs.traefik.io/user-guide/kubernetes/#path-based-routing
 ## openshift sso
 ### openshift jenkins sso
  * https://github.com/openshift/jenkins-openshift-login-plugin
@@ -1241,6 +1461,10 @@ http://docs.openstack.org/arch-design/multi-site-architecture.html
 #### jenkins pipeline steps
  * https://jenkins.io/doc/pipeline/steps/
  * https://jenkins.io/doc/book/pipeline/syntax/
+#### jenkins pipeline dsl shared libraries
+ * https://jenkins.io/doc/book/pipeline/shared-libraries/
+ * https://jenkins.io/blog/2017/10/02/pipeline-templates-with-shared-libraries/
+ * https://dzone.com/articles/groovy-dsl-simple-example
 #### jenkins error
 ##### not com.microsoft.tfs.core.exceptions.TECoreException:  Hudson-dspb2_cicd-MASTER; jenkins-1-kb701
 https://issues.jenkins-ci.org/browse/JENKINS-33487
@@ -1360,6 +1584,7 @@ minikube start --vm-driver=virtualbox --extra-config apiserver.cors-allowed-orig
  * https://github.com/apex/apex Build, deploy, and manage AWS Lambda functions with ease (with Go support!)
  * https://www.slideshare.net/AlexCasalboni/serverless-machine-learning-on-aws-serverless-meetup-milano
  * http://containerjournal.com/2016/03/23/serverless-applications-future-microservices/
+ * https://github.com/metrue/fx Poor man's serverless framework based on Docker, Function as a Service with painless.
 ##### serverless programming language
  * https://www.quora.com/Which-programming-languages-are-used-in-serverless-computing-What-are-the-market-shares-for-Python-and-JavaScript
 ##### FaaS framework
@@ -1487,8 +1712,27 @@ It must react to variable load conditions (elastic).
 It must react to inputs (message-driven).
 elastic 弹性伸缩的 resilient 弹性抗压的 自动恢复的
 ```
+### coding convention
+milk tree apple key shoe flower
+#### logbook
+ * https://routley.io/tech/2017/11/23/logbook.html
+### constraint satisfaction 约束满足 constraint propogation 约束传播
+#### Local consistency 局部一致性
+ * node consistency, 节点一致性  unary constraint 一元约束
+ * arc consistency, 弧一致性 binary constraint 二元约束 2-consistency coincides with arc consistency
+ * and path consistency 路径一致性 .
+##### Look-ahead Backtracking 回溯 backjumping 回跳算法
+ * Backtracking 回溯 Backtracking can be applied only for problems which admit the concept of a "partial candidate solution" and a relatively quick test of whether it can possibly be completed to a valid solution.  It is useless, for locating a given value in an unordered table
+##### Local search 局部搜索
+ * Two classes of local search algorithms greedy or non-randomized algorithms 贪婪算法 非随机性算法
+贪婪算法 Hill climbing 爬山法 Constraint weighting or breakout method 约束加权 Tabu search
+Random walk 随机游走  GSAT and WalkSat are local search algorithms to solve Boolean satisfiability problems.
+Simulated annealing 模拟退火
+
+#### algorithm book
+ * http://www.parallel-algorithms-book.com/ Algorithm Design: Parallel and Sequential
 ### generic interface
-### Simplex algorithm  单纯形法
+### Simplex rithm  单纯形法
 #### file
 file is the generic interface of binary data access
 #### http
@@ -1504,9 +1748,9 @@ intentional programming 意图式编程
 declarative programming  声明 imperative programming 命令式biancheng
 Referential transparency 参照透明 deterministic 确定性的 rewriting systems (also known as rewrite systems, rewrite engines 重写系统
 ### 多边形相交 多面体相交 polygon intersection polyhedron intersection  
- * https://stackoverflow.com/questions/29295626/algorithm-for-area-of-polygons-intersection
+ * https://stackoverflow.com/questions/29295626/rithm-for-area-of-polygons-intersection
  * https://gamedevelopment.tutsplus.com/tutorials/understanding-sutherland-hodgman-clipping-for-physics-engines--gamedev-11917
- * https://en.wikipedia.org/wiki/Sutherland%E2%80%93Hodgman_algorithm
+ * https://en.wikipedia.org/wiki/Sutherland%E2%80%93Hodgman_rithm
  * https://www.npmjs.com/package/box-intersect  https://github.com/vrd/js-intersect https://mathematica.stackexchange.com/questions/51980/difference-or-intersection-of-two-convex-polyhedra
  * https://www.mathsisfun.com/geometry/polyhedron.html
  * https://en.wikipedia.org/wiki/Polyhedron
@@ -1569,6 +1813,12 @@ structural programme 结构化编程
 computer algebra, also called symbolic computation or algebraic computation,  symbolic programming
 https://en.wikipedia.org/wiki/GNU_Multiple_Precision_Arithmetic_Library
 ```
+### code style best programming style
+ * https://news.ycombinator.com/item?id=11005003 What's the most elegant piece of code you've seen?
+ * http://norvig.com/sudoku.html Sudoku 数独 https://github.com/xboard/sudoku_solver
+ * http://blog.faroo.com/2012/06/07/improved-edit-distance-based-spelling-correction/
+ * https://hn.svelte.technology/item/15377147 "Design patterns are bug reports filed against the language" (Peter Norvig, iirc).
+ * https://github.com/norvig/pytudes
 ## template engines
 ### go template
  * https://siongui.github.io/2015/02/24/python-jinja2-vs-go-html-template-2/
@@ -1596,18 +1846,37 @@ https://en.wikipedia.org/wiki/GNU_Multiple_Precision_Arithmetic_Library
  * https://hub.docker.com/r/stoyanovd/theia/
  * https://typefox.io/theia-one-ide-for-desktop-cloud
 ### atom
-
+ * https://blog.atom.io/2017/11/15/code-together-in-real-time-with-teletype-for-atom.html teletype
+###  Language Server Protocol
+ * https://langserver.org/ LSP
 ## architecture
  * http://stackoverflow.com/questions/8535703/recommend-source-code-comprehension-tool
  * https://softvis.wordpress.com/tools/   Structure101  Software Visualization
  * http://windows7themes.net/en-us/architecture-development-environment-top-5-alternatives-to-structure101/  ArchStudio
+### Enterprise architecture framework 企业架构框架
+ * https://en.wikipedia.org/wiki/Enterprise_architecture_framework
+ * https://en.wikipedia.org/wiki/Architecture_domain 架构领域
+ * https://en.wikipedia.org/wiki/Business_architecture 业务架构
+ * https://en.wikipedia.org/wiki/Applications_architecture 应用架构 https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/managed-web-app/scalable-web-app
+ * http://storm81.com/business/marketing-technology-architecture 技术架构 digital consultants can use in developing and documenting marketing technology architectures. marketing function SEO, conversion rate optimisation, lead nurture or content production. Are they concerned about security, scalability or ROI
+```
+Lead nurturing 标杆客户培养
+```
+ * http://cdn.chiefmartec.com/wp-content/uploads/2016/03/marketing_technology_landscape_2016_3000px.jpg
+ * https://en.wikipedia.org/wiki/Solution_architecture 解决方案架构
+ *
 ## c/c++
 ### online book
  * https://www.ossblog.org/master-c-programming-with-open-source-books/
  * https://devfreebooks.github.io/ free book
  * https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md
+### c99
+ * https://en.wikipedia.org/wiki/C99
+ * https://en.wikipedia.org/wiki/C11_(C_standard_revision)
 ### c++ 17
  * http://www.levelofindirection.com/journal/2016/12/28/c17-why-its-better-than-you-might-think.html
+### Interactive Workflows for C++ with Jupyter
+ * https://blog.jupyter.org/interactive-workflows-for-c-with-jupyter-fe9b54227d92
 ## coding styles
 Shell style=
 https://google.github.io/styleguide/shell.xml
@@ -1634,11 +1903,14 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * http://www.generatedata.com/
  * http://c2.com/cgi/wiki?TestDataGenerator
 ### json在线处理工具
- *
 
 ## line  of code 代码统计
  * https://github.com/AlDanial/cloc
  * https://github.com/hotei/sloc
+## ahk autohotkey https://autohotkey.com/
+ * https://en.wikipedia.org/wiki/AutoHotkey
+ * https://github.com/ahkscript/awesome-AutoHotkey
+ * https://apple.stackexchange.com/questions/153930/autohotkey-equivalent-for-os-x
 ## nodejs
 ### web command line interface cli
  * https://www.sitepoint.com/javascript-command-line-interface-cli-node-js/
@@ -1661,7 +1933,13 @@ http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.h
  * https://stackoverflow.com/questions/40057469/what-is-the-difference-between-yarn-lock-and-npm-shrinkwrap
  * http://www.infoworld.com/article/3172725/javascript/npm-or-yarn-nodejs-devs-pick-their-package-manager.html
  * https://stackoverflow.com/questions/40057469/what-is-the-difference-between-yarn-lock-and-npm-shrinkwrap
-
+### nodejs error
+#### Sass
+```
+Node Sass could not find a binding for your current environment: Linux 64-bit with Node.js 8.x
+ * https://www.npmjs.com/package/node-sass
+切换环境后，删除node_modules然后重新npm install
+```
 ### nexe  create a single executable out of your node.js apps
  * https://github.com/nexe/nexe
 #### nexe errors
@@ -1708,13 +1986,31 @@ and then run npm install
  * https://en.wikipedia.org/wiki/Single-page_application
  * http://noeticforce.com/best-Javascript-frameworks-for-single-page-modern-web-applications
  * http://angularjs-emberjs-compare.bguiz.com/
+#### ui prototype
+ * https://rauchg.com/2015/pure-ui
+ * opensource justinmind pencil
+ *
+#### ECMAScript 2018
+ * https://tc39.github.io/ecma262/?ref=HN
+#### angular 2 load external scripts
+ * https://microsoft.github.io/TypeSearch/ search for types
+ * https://hackernoon.com/how-to-use-javascript-libraries-in-angular-2-apps-ff274ba601af step by step underscore
+ * https://medium.com/@s_eschweiler/using-external-libraries-with-angular-2-87e06db8e5d1 understore
+ * https://stackoverflow.com/questions/44817349/how-to-include-external-js-file-in-angular-4-and-call-function-from-angular-to-j
+##### angular 2 d3
+ * https://www.npmjs.com/package/@types/d3 https://github.com/tomwanzek https://github.com/borisyankov https://github.com/gustavderdrache
+ * https://github.com/tomwanzek/d3-ng2-demo
+##### migrate from javascript to typescript
+ * https://stackoverflow.com/questions/31228565/how-to-write-literal-javascript-in-typescript
+ * https://www.typescriptlang.org/docs/handbook/migrating-from-javascript.html
+ * http://www.codemag.com/article/1511051
 #### angular 2 components
  * https://github.com/brillout/awesome-angular-components
  * https://github.com/AngularClass/awesome-angular
  * https://github.com/maiyaporn/angular2-wizard https://www.cc28tech.com/angular-2-multi-step-wizard-ui-router-part-1/
 #### angular 2 apps
  * https://medium.com/aviabird/10-amazing-open-source-angular-2-x-apps-825fb169dce3
- *
+ * https://github.com/brillout/awesome-angular-components#admin-panel awesome angular
 #### webpack
   * https://github.com/webpack/webpack
   * http://www.dotnetcurry.com/angularjs/1320/using-webpack-bundling-with-angular-2
@@ -1740,6 +2036,13 @@ npm install -g @angular/cli
 npm config set proxy http://localhost:49895
 npm config set https-proxy http://localhost:49895
 ```
+#### nodejs errors  node errors
+```
+503 Service Unavailable 检查proxy
+npm config list -l | grep proxy
+npm config delete
+```
+ * http://www.runoob.com/nodejs/nodejs-npm.html NPM 使用介绍
 #### angular 2 d3 angular charts
  * https://github.com/datencia/d3js-angular2-example
  * https://github.com/tomwanzek/d3-ng2-service
@@ -1760,6 +2063,14 @@ npm config set https-proxy http://localhost:49895
 ##### ng2-admin structure
  * src/app/app.translation.module.ts src/assets/i18n/CN/zh.json translation path
  * https://akveo.github.io/ng2-admin/articles/011-changing-color-scheme/
+ * https://github.com/start-angular/SB-Admin-BS4-Angular-5 Simple Dashboard Admin App built using Angular 5 and Bootstrap 4
+##### angular ecommerce
+ * https://github.com/aviabird/angularspree
+```
+spu standard product unit
+sku stock keeping unit
+arpu Average Revenue Per User(每用户平均收入)
+```
 #### angular 2 template syntax
  * https://embed.plnkr.co/?show=preview
  * https://angular.io/docs/ts/latest/guide/architecture.html#!#modules
@@ -1777,6 +2088,8 @@ npm config set https-proxy http://localhost:49895
  * https://blog.jscrambler.com/getting-started-with-angular-2-end-to-end-testing/
  * https://github.com/alexpods/angular2-universal-starter
  * https://dzone.com/articles/getting-started-with-angular-2-end-to-end-testing
+#### webssh
+ * https://github.com/xsank/webssh
 #### angular 2 with MockBackend
  * https://www.sitepoint.com/angular-2-mockbackend/
  * http://www.thejoemorgan.com/blog/2016/11/21/testing-apis-in-angular-2/
@@ -1876,6 +2189,8 @@ npm config set https-proxy http://localhost:49895
  * https://robhirschfeld.com/tag/digital-rebar/
  * https://www.packet.net/developers/guides/ditch-cobbler-for-rackn/
  * https://github.com/walter-cd/walter http://ainoya.io/walter
+#### go message
+ * https://github.com/tidwall/evio
 #### kubernetes volumes plugins
  * /kubernetes/cmd/kubelet/app/plugins.go /kubernetes/pkg/volume/flexvolume/driver-call.go
  * https://github.com/kubernetes/kubernetes/tree/master/examples/volumes/flexvolume
@@ -1885,29 +2200,71 @@ npm config set https-proxy http://localhost:49895
  * /kubernetes/pkg/kubelet/network/cni/cni.go
 ## Go golang
  * https://github.com/golang/go/releases
+### golang DSL
+ * https://www.npmjs.com/package/denada
+ * https://github.com/xogeny/denada-go Denada is based on a project I once worked on where we needed to build and quickly evolve a simple domain-specific language (DSL)
+ * https://fntlnz.wtf/downloads/golang-dsls-codemotion-rome-17.pdf yacc go
+ * https://github.com/cznic/goyacc https://godoc.org/github.com/cznic/goyacc
+ * Lex is a computer program that generates lexical analyzers ("scanners" or "lexers"). Lex and parser generators, such as Yacc or Bison, are commonly used together. Parser generators use a formal grammar to parse an input stream, something which Lex cannot do using simple regular expressions
+ * https://en.wikipedia.org/wiki/Comparison_of_parser_generators
+```
+parser:
+  Bottom-up parsing:
+    LR parser:
+      SLR:
+      LALR parser (Look-Ahead):
+      Canonical LR parser (LR(1)):
+      GLR parser (Generalized):
+    agorithm:
+      shift-reduce parser:
+        LALR:
+      Backtracking:
+  Top-down parsing:
+    LL parser is a top-down parser for a subset of context-free languages
+```
+#### Language Workbench
+ * https://www.martinfowler.com/articles/languageWorkbench.html#simpleExample concrete syntax and abstract syntax
+ * https://www.martinfowler.com/bliki/IllustrativeProgramming.html
+ * symbolic barrier
+##### Active Data Models vs Adaptive Object Models ADM vs. AOM
+ * http://adaptiveobjectmodel.com/adaptive-projects/ Anything you can do, I can do meta
 ### go is not good
  * https://github.com/ksimka/go-is-not-good
  * http://www.yinwang.org/blog-cn/2014/04/18/golang
+### 分布式 distributed
+ * https://www.youtube.com/watch?v=lhHtiBpDa54 A Case Study in LASP and Distribution at Scale | London Erlang User Group https://news.ycombinator.com/item?id=15759787
 ### 学习
+ * https://gophercises.com/?flash=%F0%9F%92%A5%20Check%20your%20email%20for%20a%20message%20from%20jon%40calhoun.io.%20It%20will%20have%20instructions%20on%20how%20to%20access%20the%20course.%20%F0%9F%92%A5%0A
+  https://news.ycombinator.com/item?id=15761537
  * learn by example https://gobyexample.com/
  * https://tour.golang.org/basics/1
+ * http://www.jb51.net/article/62728.htm 五步让你成为GO 语言高手
+ * https://www.reddit.com/r/golang/comments/2u2ke0/share_your_golang_antipatterns/
+ * https://www.golang-book.com/books/intro/9
+### ide
+ * https://www.jetbrains.com/go/
 ### go frameworks packages library
  * http://libs.club/golang/
  * http://gorevel.cn/docs/index.html
  * https://github.com/gorilla/handlers
  * http://goa.design/design/
 ### awesome golangs
- * https://github.com/avelino/awesome-go may image processing libs
+ * https://github.com/avelino/awesome-go many image processing libs
  * https://github.com/lk-geimfari/awesomo/blob/master/languages/GOLANG.md
+ * https://github.com/go-ego/riot/graphs/contributors
 ### golang test
  * https://medium.com/@thejasbabu/testing-in-golang-c378b351002d general
  * https://medium.com/@matryer/5-simple-tips-and-tricks-for-writing-unit-tests-in-golang-619653f90742 https://github.com/golang/go/wiki/TableDrivenTests table driven test
  * https://medium.com/@matryer/meet-moq-easily-mock-interfaces-in-go-476444187d10 mock test by func code github.com/matryer/moq
  * https://golang.org/pkg/testing/ example
  * http://route.run/MatRyerBooks
+###
+* https://lwn.net/SubscriberLink/738649/81007748bf15c1e5/ Replacing x86 firmware with Linux and Go https://news.ycombinator.com/item?id=15748900
 ### goadesign
  * https://blog.gopheracademy.com/advent-2015/goaUntanglingMicroservices/
  * https://www.infoq.com/news/2015/12/goa-microservice-framework
+### golang cli ui
+ * https://github.com/manifoldco/promptui
 #### error handling
  * https://davidnix.io/post/error-handling-in-go/
  * https://blog.golang.org/errors-are-values
@@ -1917,9 +2274,18 @@ npm config set https-proxy http://localhost:49895
 ### go with dll
  * http://stackoverflow.com/questions/19431296/building-and-linking-dynamically-from-a-go-binary
  * https://golang.org/cmd/cgo/#hdr-C_references_to_Go
+#### golang binding to c++
+ * http://siganakis.com/linking-c-libraries-with-go-lang-and-stdc99
+ * https://golang.org/cmd/cgo/#hdr-Go_references_to_C
 ### golang functional go function golang 函数式编程
  * https://golang.org/doc/codewalk/functions/
  * https://github.com/rShetty/functional-go
+ * https://github.com/xlab/c-for-go
+#### pass method to function pass method as function 将方法按照方法去
+ * https://stackoverflow.com/questions/38897529/golang-pass-method-to-function
+ * https://nathanleclaire.com/blog/2014/08/09/dont-get-bitten-by-pointer-vs-non-pointer-method-receivers-in-golang/
+#### golang webhook
+ * https://github.com/adnanh/webhook webhook is a lightweight configurable tool written in Go, that allows you to easily create HTTP endpoints (hooks) on your server, which you can use to execute configured commands.
 #### problem
 ```
 一定要import "C"
@@ -1952,6 +2318,8 @@ Go, X does not implement Y (… method has a pointer receiver)
 
 ### go pipeline
  * https://whiskybadger.io/post/introducing-go-pipeline/
+#### golang receiver pointer value
+ * https://stackoverflow.com/questions/27775376/value-receiver-vs-pointer-receiver-in-golang
 
 ## coding problems
 ### Python problems
@@ -1978,6 +2346,7 @@ Declarative
 声明式编程
 logic paradigm
 逻辑式编程
+https://news.ycombinator.com/item?id=15756054 Low Hanging Fruit of Programming Language Design  wrong abstractions are worse than duplication
 ## haskell functional programming
  * http://blog.csdn.net/on_1y/article/details/8572673#sec-1
  * https://en.wikipedia.org/wiki/Monad_%28functional_programming%29
@@ -2033,15 +2402,45 @@ logic paradigm
  * https://docs.gradle.org/current/userguide/build_init_plugin.html
  * http://stackoverflow.com/questions/20862275/how-to-convert-a-maven-build-to-gradle
 ### kotlin
+ * https://www.zhihu.com/question/25289041 如何评价 Kotlin 语言？
+ * https://zhuanlan.zhihu.com/p/27284201 一张图让你了解Kotlin的过去、现在和将来
+ * https://github.com/KotlinBy/awesome-kotlin
+ * https://github.com/mcxiaoke/awesome-kotlin
+ * Kotlin playground https://try.kotlinlang.org/#/Examples/Hello,%20world!/Simplest%20version/Simplest%20version.kt
+ * https://blog.jetbrains.com/kotlin/2017/11/kotlinnative-v0-4-released-objective-c-interop-webassembly-and-more/ kotlin native
+#### kotlin web
+ * https://javalin.io/news/javalin-1.0.0-stable.html
 #### kotlin server adoption
  * https://medium.com/@napperley/kotlin-server-side-adoption-d160ede1877c
+#### kotlin dsl
+ * https://confluence.jetbrains.com/display/TCD10/Kotlin+DSL
 #### Good kotlin projects
  * https://github.com/tipsy/
  * https://kotlinlang.org/docs/tutorials/
  * http://kotlinlang.org/docs/reference/basic-syntax.html#defining-functions language learn page
+#### Create React apps using Kotlin with no build configuration
+ * https://github.com/JetBrains/create-react-kotlin-app
 #### gocd
  * https://www.gocd.io/2015/12/28/gocd-continuous-delivery-through-pipelines.html
  * https://highops.com/insights/continuous-delivery-pipelines-gocd-vs-jenkins/
+#### kotlin api
+##### kotlin kubernetes
+ * https://github.com/fkorotkov/k8s-kotlin-dsl
+ * https://hackernoon.com/deploying-kotlin-application-on-docker-kubernetes-da5563c376d1
+##### kotlin machine learning
+ * https://github.com/qoncept/tensor-kotlin
+ * https://github.com/JetBrains/kotlin-native/tree/master/samples/tensorflow
+ * https://discuss.kotlinlang.org/t/ai-and-deep-learning-define-the-future-of-programming-will-kotlin-fly-or-die/2264
+ * https://github.com/KotlinNLP/SimpleDNN
+#### swig
+##### kotlin to c/c++ swig
+ * https://discuss.kotlinlang.org/t/kotlin-native-with-c-libraries/2490
+ * https://github.com/ligee/kotlin-ffi-samples/tree/master/native
+##### swig code
+ * https://github.com/swig/swig/tree/master/Source
+ * https://en.wikipedia.org/wiki/SWIG
+##### paddlepaddle wrapper
+ * https://github.com/PaddlePaddle/Paddle/issues/258
 ## html 网页
 ## CSS
   * http://www.114la.com/other/rgb.htm
@@ -2091,7 +2490,8 @@ logic paradigm
 ## MPI https://www.open-mpi.org/ 当前开源HPC
  * https://en.wikipedia.org/wiki/Open_MPI
  * https://github.com/open-mpi
-
+## operating system
+ * https://news.ycombinator.com/item?id=15711418 https://news.ycombinator.com/item?id=15711418
 ### testing
 #### java maen
  * https://github.com/ligado/hello-world-servlet/tree/master/src/main/docker
